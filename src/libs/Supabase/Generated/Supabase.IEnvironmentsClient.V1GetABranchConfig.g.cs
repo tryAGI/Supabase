@@ -1,0 +1,20 @@
+#nullable enable
+
+#pragma warning disable CS0618 // Type or member is obsolete
+
+namespace Supabase
+{
+    public partial interface IEnvironmentsClient
+    {
+        /// <summary>
+        /// Get database branch config<br/>
+        /// Fetches configurations of the specified database branch
+        /// </summary>
+        /// <param name="branchIdOrRef"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Supabase.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Supabase.BranchDetailResponse> V1GetABranchConfigAsync(
+            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

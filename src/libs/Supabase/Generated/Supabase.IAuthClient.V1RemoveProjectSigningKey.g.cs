@@ -1,0 +1,19 @@
+#nullable enable
+
+namespace Supabase
+{
+    public partial interface IAuthClient
+    {
+        /// <summary>
+        /// Remove a signing key from a project. Only possible if the key has been in revoked status for a while.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="ref"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Supabase.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Supabase.SigningKeyResponse> V1RemoveProjectSigningKeyAsync(
+            global::System.Guid id,
+            string @ref,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

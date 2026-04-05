@@ -1,0 +1,45 @@
+
+#nullable enable
+
+namespace Supabase
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public enum CreateSigningKeyBodyPrivateJwkVariant1Use
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        Sig,
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class CreateSigningKeyBodyPrivateJwkVariant1UseExtensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this CreateSigningKeyBodyPrivateJwkVariant1Use value)
+        {
+            return value switch
+            {
+                CreateSigningKeyBodyPrivateJwkVariant1Use.Sig => "sig",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
+        }
+        /// <summary>
+        /// Converts an string to a enum.
+        /// </summary>
+        public static CreateSigningKeyBodyPrivateJwkVariant1Use? ToEnum(string value)
+        {
+            return value switch
+            {
+                "sig" => CreateSigningKeyBodyPrivateJwkVariant1Use.Sig,
+                _ => null,
+            };
+        }
+    }
+}

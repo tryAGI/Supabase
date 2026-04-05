@@ -1,0 +1,37 @@
+#nullable enable
+
+namespace Supabase
+{
+    public partial interface IDomainsClient
+    {
+        /// <summary>
+        /// [Beta] Updates project's custom hostname configuration
+        /// </summary>
+        /// <param name="ref"></param>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Supabase.ApiException"></exception>
+#if NET8_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
+#endif
+        global::System.Threading.Tasks.Task<global::Supabase.UpdateCustomHostnameResponse> V1UpdateHostnameConfigAsync(
+            string @ref,
+
+            global::Supabase.UpdateCustomHostnameBody request,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// [Beta] Updates project's custom hostname configuration
+        /// </summary>
+        /// <param name="ref"></param>
+        /// <param name="customHostname"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+#if NET8_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
+#endif
+        global::System.Threading.Tasks.Task<global::Supabase.UpdateCustomHostnameResponse> V1UpdateHostnameConfigAsync(
+            string @ref,
+            string customHostname,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}
