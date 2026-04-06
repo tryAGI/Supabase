@@ -12,7 +12,8 @@ namespace Supabase.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -44,7 +45,9 @@ namespace Supabase.JsonConverters
                 {
                     try
                     {
-                        specific = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1).Name}");
+                        specific = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -57,7 +60,9 @@ namespace Supabase.JsonConverters
                 {
                     try
                     {
-                        smartGroup = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.V1CreateProjectBodyRegionSelectionVariant2>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.V1CreateProjectBodyRegionSelectionVariant2> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2).Name}");
+                        smartGroup = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -72,7 +77,9 @@ namespace Supabase.JsonConverters
             {
                 try
                 {
-                    specific = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1).Name}");
+                    specific = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -83,7 +90,9 @@ namespace Supabase.JsonConverters
 
                 try
                 {
-                    smartGroup = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.V1CreateProjectBodyRegionSelectionVariant2>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.V1CreateProjectBodyRegionSelectionVariant2> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2).Name}");
+                    smartGroup = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -108,15 +117,20 @@ namespace Supabase.JsonConverters
             global::Supabase.RegionSelection value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsSpecific)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Specific, typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Specific!, typeInfo);
             }
             else if (value.IsSmartGroup)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SmartGroup, typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.V1CreateProjectBodyRegionSelectionVariant2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SmartGroup!, typeInfo);
             }
         }
     }

@@ -206,7 +206,7 @@ namespace Supabase
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::System.Text.Json.JsonSerializer.Deserialize<global::System.Collections.Generic.IList<global::Supabase.ThirdPartyAuth>?>(__content, JsonSerializerOptions) ??
+                        (global::System.Collections.Generic.IList<global::Supabase.ThirdPartyAuth>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.ThirdPartyAuth>), JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -236,7 +236,7 @@ namespace Supabase
                     ).ConfigureAwait(false);
 
                     return
-                        await global::System.Text.Json.JsonSerializer.DeserializeAsync<global::System.Collections.Generic.IList<global::Supabase.ThirdPartyAuth>?>(__content, JsonSerializerOptions).ConfigureAwait(false) ??
+                        (global::System.Collections.Generic.IList<global::Supabase.ThirdPartyAuth>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.ThirdPartyAuth>), JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)

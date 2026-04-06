@@ -77,7 +77,7 @@ namespace Supabase
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
-            var __httpRequestContentBody = request.ToJson(JsonSerializerOptions);
+            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
             var __httpRequestContent = new global::System.Net.Http.StringContent(
                 content: __httpRequestContentBody,
                 encoding: global::System.Text.Encoding.UTF8,
@@ -260,7 +260,7 @@ namespace Supabase
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::Supabase.UpdateProviderResponse.FromJson(__content, JsonSerializerOptions) ??
+                        global::Supabase.UpdateProviderResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -290,7 +290,7 @@ namespace Supabase
                     ).ConfigureAwait(false);
 
                     return
-                        await global::Supabase.UpdateProviderResponse.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
+                        await global::Supabase.UpdateProviderResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)

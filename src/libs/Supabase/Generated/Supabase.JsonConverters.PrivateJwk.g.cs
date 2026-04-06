@@ -12,7 +12,8 @@ namespace Supabase.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -86,7 +87,9 @@ namespace Supabase.JsonConverters
                 {
                     try
                     {
-                        rsa = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1).Name}");
+                        rsa = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -99,7 +102,9 @@ namespace Supabase.JsonConverters
                 {
                     try
                     {
-                        ec = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2).Name}");
+                        ec = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -112,7 +117,9 @@ namespace Supabase.JsonConverters
                 {
                     try
                     {
-                        okp = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3).Name}");
+                        okp = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -125,7 +132,9 @@ namespace Supabase.JsonConverters
                 {
                     try
                     {
-                        oct = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4).Name}");
+                        oct = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -140,7 +149,9 @@ namespace Supabase.JsonConverters
             {
                 try
                 {
-                    rsa = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1).Name}");
+                    rsa = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -151,7 +162,9 @@ namespace Supabase.JsonConverters
 
                 try
                 {
-                    ec = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2).Name}");
+                    ec = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -162,7 +175,9 @@ namespace Supabase.JsonConverters
 
                 try
                 {
-                    okp = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3).Name}");
+                    okp = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -173,7 +188,9 @@ namespace Supabase.JsonConverters
 
                 try
                 {
-                    oct = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4).Name}");
+                    oct = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -202,23 +219,32 @@ namespace Supabase.JsonConverters
             global::Supabase.PrivateJwk value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsRsa)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Rsa, typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Rsa!, typeInfo);
             }
             else if (value.IsEc)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Ec, typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Ec!, typeInfo);
             }
             else if (value.IsOkp)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Okp, typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Okp!, typeInfo);
             }
             else if (value.IsOct)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Oct, typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Oct!, typeInfo);
             }
         }
     }
