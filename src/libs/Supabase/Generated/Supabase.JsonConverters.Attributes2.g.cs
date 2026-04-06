@@ -12,7 +12,8 @@ namespace Supabase.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -47,7 +48,9 @@ namespace Supabase.JsonConverters
                 {
                     try
                     {
-                        gp3 = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.DiskRequestBodyAttributesVariant1>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.DiskRequestBodyAttributesVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.DiskRequestBodyAttributesVariant1> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.DiskRequestBodyAttributesVariant1).Name}");
+                        gp3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -60,7 +63,9 @@ namespace Supabase.JsonConverters
                 {
                     try
                     {
-                        io2 = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.DiskRequestBodyAttributesVariant2>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.DiskRequestBodyAttributesVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.DiskRequestBodyAttributesVariant2> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.DiskRequestBodyAttributesVariant2).Name}");
+                        io2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -75,7 +80,9 @@ namespace Supabase.JsonConverters
             {
                 try
                 {
-                    gp3 = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.DiskRequestBodyAttributesVariant1>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.DiskRequestBodyAttributesVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.DiskRequestBodyAttributesVariant1> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.DiskRequestBodyAttributesVariant1).Name}");
+                    gp3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -86,7 +93,9 @@ namespace Supabase.JsonConverters
 
                 try
                 {
-                    io2 = global::System.Text.Json.JsonSerializer.Deserialize<global::Supabase.DiskRequestBodyAttributesVariant2>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.DiskRequestBodyAttributesVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.DiskRequestBodyAttributesVariant2> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.DiskRequestBodyAttributesVariant2).Name}");
+                    io2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -111,15 +120,20 @@ namespace Supabase.JsonConverters
             global::Supabase.Attributes2 value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsGp3)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Gp3, typeof(global::Supabase.DiskRequestBodyAttributesVariant1), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.DiskRequestBodyAttributesVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.DiskRequestBodyAttributesVariant1?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.DiskRequestBodyAttributesVariant1).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Gp3!, typeInfo);
             }
             else if (value.IsIo2)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Io2, typeof(global::Supabase.DiskRequestBodyAttributesVariant2), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.DiskRequestBodyAttributesVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.DiskRequestBodyAttributesVariant2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.DiskRequestBodyAttributesVariant2).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Io2!, typeInfo);
             }
         }
     }

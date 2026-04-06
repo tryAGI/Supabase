@@ -206,7 +206,7 @@ namespace Supabase
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::Supabase.V1OrganizationSlugResponse.FromJson(__content, JsonSerializerOptions) ??
+                        global::Supabase.V1OrganizationSlugResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -236,7 +236,7 @@ namespace Supabase
                     ).ConfigureAwait(false);
 
                     return
-                        await global::Supabase.V1OrganizationSlugResponse.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
+                        await global::Supabase.V1OrganizationSlugResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)

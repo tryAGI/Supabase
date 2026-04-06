@@ -206,7 +206,7 @@ namespace Supabase
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::Supabase.GetProjectAvailableRestoreVersionsResponse.FromJson(__content, JsonSerializerOptions) ??
+                        global::Supabase.GetProjectAvailableRestoreVersionsResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -236,7 +236,7 @@ namespace Supabase
                     ).ConfigureAwait(false);
 
                     return
-                        await global::Supabase.GetProjectAvailableRestoreVersionsResponse.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
+                        await global::Supabase.GetProjectAvailableRestoreVersionsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
