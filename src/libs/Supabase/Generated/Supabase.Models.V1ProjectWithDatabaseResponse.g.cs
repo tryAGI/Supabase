@@ -18,8 +18,10 @@ namespace Supabase
         public required string Id { get; set; }
 
         /// <summary>
-        /// Project ref
+        /// Project ref<br/>
+        /// Example: abcdefghijklmnopqrst
         /// </summary>
+        /// <example>abcdefghijklmnopqrst</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Ref { get; set; }
@@ -32,8 +34,10 @@ namespace Supabase
         public required string OrganizationId { get; set; }
 
         /// <summary>
-        /// Organization slug
+        /// Organization slug<br/>
+        /// Example: tsrqponmlkjihgfedcba
         /// </summary>
+        /// <example>tsrqponmlkjihgfedcba</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("organization_slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string OrganizationSlug { get; set; }
@@ -46,19 +50,15 @@ namespace Supabase
         public required string Name { get; set; }
 
         /// <summary>
-        /// Region of your project<br/>
-        /// Example: us-east-1
+        /// Region of your project
         /// </summary>
-        /// <example>us-east-1</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("region")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Region { get; set; }
 
         /// <summary>
-        /// Creation timestamp<br/>
-        /// Example: 2023-03-29T16:32:59Z
+        /// Creation timestamp
         /// </summary>
-        /// <example>2023-03-29T16:32:59Z</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CreatedAt { get; set; }
@@ -91,24 +91,24 @@ namespace Supabase
         /// Deprecated: Use `ref` instead.
         /// </param>
         /// <param name="ref">
-        /// Project ref
+        /// Project ref<br/>
+        /// Example: abcdefghijklmnopqrst
         /// </param>
         /// <param name="organizationId">
         /// Deprecated: Use `organization_slug` instead.
         /// </param>
         /// <param name="organizationSlug">
-        /// Organization slug
+        /// Organization slug<br/>
+        /// Example: tsrqponmlkjihgfedcba
         /// </param>
         /// <param name="name">
         /// Name of your project
         /// </param>
         /// <param name="region">
-        /// Region of your project<br/>
-        /// Example: us-east-1
+        /// Region of your project
         /// </param>
         /// <param name="createdAt">
-        /// Creation timestamp<br/>
-        /// Example: 2023-03-29T16:32:59Z
+        /// Creation timestamp
         /// </param>
         /// <param name="status"></param>
         /// <param name="database"></param>

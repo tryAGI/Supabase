@@ -7,7 +7,9 @@ namespace Supabase
         /// <summary>
         /// [Beta] Remove network bans.
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -22,7 +24,9 @@ namespace Supabase
         /// <summary>
         /// [Beta] Remove network bans.
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="ipv4Addresses">
         /// List of IP addresses to unban.
         /// </param>

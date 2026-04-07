@@ -4,8 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// Desired instance size. Omit this field to always default to the smallest possible size.<br/>
-    /// Example: nano
+    /// Desired instance size. Omit this field to always default to the smallest possible size.
     /// </summary>
     public enum V1CreateProjectBodyDesiredInstanceSize
     {

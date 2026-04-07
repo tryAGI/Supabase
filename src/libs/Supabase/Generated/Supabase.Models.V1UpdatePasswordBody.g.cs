@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"password":"correct-horse-battery-staple"}
     /// </summary>
     public sealed partial class V1UpdatePasswordBody
     {

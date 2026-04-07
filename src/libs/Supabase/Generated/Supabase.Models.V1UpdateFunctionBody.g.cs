@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"name":"Hello World","body":"Deno.serve(() =\u003E new Response(\u0027Hello again!\u0027))","verify_jwt":true}
     /// </summary>
     public sealed partial class V1UpdateFunctionBody
     {

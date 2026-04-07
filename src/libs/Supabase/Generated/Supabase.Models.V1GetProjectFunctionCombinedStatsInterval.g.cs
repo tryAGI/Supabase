@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: 1hr
     /// </summary>
     public enum V1GetProjectFunctionCombinedStatsInterval
     {

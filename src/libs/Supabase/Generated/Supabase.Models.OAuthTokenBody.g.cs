@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"grant_type":"authorization_code","client_id":"66666666-6666-4666-8666-666666666666","client_secret":"sb_secret_live_example_9f4d3a206b2e4a7e8c91","code":"oauth_code_9f4d3a206b2e4a7e8c91","code_verifier":"qW0Z6d9pQnW0mL1dK1q9wFq6Yz2nV5rA8jT3mP7sH4c","redirect_uri":"https://app.acme.com/auth/callback","scope":"projects:read projects:write"}
     /// </summary>
     public sealed partial class OAuthTokenBody
     {

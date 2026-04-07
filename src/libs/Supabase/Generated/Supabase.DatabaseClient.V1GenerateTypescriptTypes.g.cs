@@ -28,9 +28,12 @@ namespace Supabase
         /// Returns the TypeScript types of your schema for use with supabase-js.
         /// </summary>
         /// <param name="includedSchemas">
-        /// Default Value: public
+        /// Default Value: public<br/>
+        /// Example: public,auth
         /// </param>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.TypescriptResponse> V1GenerateTypescriptTypesAsync(

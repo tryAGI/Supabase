@@ -26,8 +26,12 @@ namespace Supabase
         /// <summary>
         /// Get project api keys
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="reveal"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="reveal">
+        /// Example: true
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>> V1GetProjectApiKeysAsync(

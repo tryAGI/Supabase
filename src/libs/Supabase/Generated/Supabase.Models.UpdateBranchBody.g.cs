@@ -6,7 +6,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"branch_name":"preview-login-page","git_branch":"feature/login-page","persistent":true,"request_review":true,"notify_url":"https://example.com/webhooks/branches"}
     /// </summary>
     public sealed partial class UpdateBranchBody
     {

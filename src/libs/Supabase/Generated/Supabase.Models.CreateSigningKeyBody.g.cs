@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"algorithm":"RS256","status":"standby"}
     /// </summary>
     public sealed partial class CreateSigningKeyBody
     {

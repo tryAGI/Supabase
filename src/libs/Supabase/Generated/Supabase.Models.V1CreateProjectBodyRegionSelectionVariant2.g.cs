@@ -16,10 +16,8 @@ namespace Supabase
         public global::Supabase.V1CreateProjectBodyRegionSelectionVariant2Type Type { get; set; }
 
         /// <summary>
-        /// The Smart Region Group's code. The codes supported are not a stable API, and should be retrieved from the /available-regions endpoint.<br/>
-        /// Example: apac
+        /// The Smart Region Group's code. The codes supported are not a stable API, and should be retrieved from the /available-regions endpoint.
         /// </summary>
-        /// <example>apac</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("code")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -35,8 +33,7 @@ namespace Supabase
         /// Initializes a new instance of the <see cref="V1CreateProjectBodyRegionSelectionVariant2" /> class.
         /// </summary>
         /// <param name="code">
-        /// The Smart Region Group's code. The codes supported are not a stable API, and should be retrieved from the /available-regions endpoint.<br/>
-        /// Example: apac
+        /// The Smart Region Group's code. The codes supported are not a stable API, and should be retrieved from the /available-regions endpoint.
         /// </param>
         /// <param name="type"></param>
 #if NET7_0_OR_GREATER

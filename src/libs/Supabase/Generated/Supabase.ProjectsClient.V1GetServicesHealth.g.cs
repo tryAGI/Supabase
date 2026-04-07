@@ -28,9 +28,15 @@ namespace Supabase
         /// <summary>
         /// Gets project's service health status
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="services"></param>
-        /// <param name="timeoutMs"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="services">
+        /// Example: [auth, rest]
+        /// </param>
+        /// <param name="timeoutMs">
+        /// Example: 2000
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>> V1GetServicesHealthAsync(

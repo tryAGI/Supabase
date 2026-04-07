@@ -26,8 +26,12 @@ namespace Supabase
         /// <summary>
         /// Disable or re-enable JWT based legacy (anon, service_role) API keys. This API endpoint will be removed in the future, check for HTTP 404 Not Found.
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="enabled"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="enabled">
+        /// Example: true
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.LegacyApiKeysResponse> V1UpdateProjectLegacyApiKeysAsync(

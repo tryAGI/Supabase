@@ -29,7 +29,9 @@ namespace Supabase
         /// Update database branch config<br/>
         /// Updates the configuration of the specified database branch
         /// </summary>
-        /// <param name="branchIdOrRef"></param>
+        /// <param name="branchIdOrRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -224,7 +226,9 @@ namespace Supabase
         /// Update database branch config<br/>
         /// Updates the configuration of the specified database branch
         /// </summary>
-        /// <param name="branchIdOrRef"></param>
+        /// <param name="branchIdOrRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="branchName"></param>
         /// <param name="gitBranch"></param>
         /// <param name="persistent"></param>

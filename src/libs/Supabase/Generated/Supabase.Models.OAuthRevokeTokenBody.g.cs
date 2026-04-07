@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"client_id":"66666666-6666-4666-8666-666666666666","client_secret":"sb_secret_live_example_9f4d3a206b2e4a7e8c91","refresh_token":"oauth_refresh_9f4d3a206b2e4a7e8c91"}
     /// </summary>
     public sealed partial class OAuthRevokeTokenBody
     {

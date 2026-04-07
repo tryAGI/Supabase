@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"fileSizeLimit":10485760,"features":{"imageTransformation":{"enabled":true}}}
     /// </summary>
     public sealed partial class UpdateStorageConfigBody
     {

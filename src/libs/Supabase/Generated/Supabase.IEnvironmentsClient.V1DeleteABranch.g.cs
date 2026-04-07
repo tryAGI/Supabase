@@ -10,9 +10,12 @@ namespace Supabase
         /// Delete a database branch<br/>
         /// Deletes the specified database branch. By default, deletes immediately. Use force=false to schedule deletion with 1-hour grace period (only when soft deletion is enabled).
         /// </summary>
-        /// <param name="branchIdOrRef"></param>
+        /// <param name="branchIdOrRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="force">
-        /// Default Value: true
+        /// Default Value: true<br/>
+        /// Example: false
         /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>

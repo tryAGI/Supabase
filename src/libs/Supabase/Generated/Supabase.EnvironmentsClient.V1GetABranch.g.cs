@@ -27,8 +27,12 @@ namespace Supabase
         /// Get a database branch<br/>
         /// Fetches the specified database branch by its name.
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="name"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="name">
+        /// Example: preview-login-page
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.BranchResponse> V1GetABranchAsync(

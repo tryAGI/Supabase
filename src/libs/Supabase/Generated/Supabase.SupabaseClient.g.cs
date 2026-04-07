@@ -119,6 +119,15 @@ namespace Supabase
         };
 
         /// <summary>
+        /// 
+        /// </summary>
+        public ProfileClient Profile => new ProfileClient(HttpClient, authorizations: Authorizations)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
         /// Projects related endpoints
         /// </summary>
         public ProjectsClient Projects => new ProjectsClient(HttpClient, authorizations: Authorizations)

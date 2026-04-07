@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"name":"Acme Platform"}
     /// </summary>
     public sealed partial class V1UpdateProjectBody
     {

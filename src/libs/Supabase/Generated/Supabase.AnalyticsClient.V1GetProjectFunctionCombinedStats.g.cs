@@ -28,9 +28,15 @@ namespace Supabase
         /// <summary>
         /// Gets a project's function combined statistics
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="interval"></param>
-        /// <param name="functionId"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="interval">
+        /// Example: 1hr
+        /// </param>
+        /// <param name="functionId">
+        /// Example: 3c078cce-ad70-4148-9f37-4da362789053
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.AnalyticsResponse> V1GetProjectFunctionCombinedStatsAsync(

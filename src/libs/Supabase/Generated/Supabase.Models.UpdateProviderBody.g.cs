@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"metadata_url":"https://sso.acme.com/metadata.xml","domains":["acme.com","contractors.acme.com"]}
     /// </summary>
     public sealed partial class UpdateProviderBody
     {

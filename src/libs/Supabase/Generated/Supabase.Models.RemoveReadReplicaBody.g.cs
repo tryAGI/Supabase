@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"database_identifier":"abcdefghijklmnopqrst-rr-us-west-1-abcde"}
     /// </summary>
     public sealed partial class RemoveReadReplicaBody
     {

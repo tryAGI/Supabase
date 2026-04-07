@@ -4,8 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// Region you want your server to reside in. Use region_selection instead.<br/>
-    /// Example: us-east-1
+    /// Region you want your server to reside in. Use region_selection instead.
     /// </summary>
     public enum V1CreateProjectBodyRegion
     {

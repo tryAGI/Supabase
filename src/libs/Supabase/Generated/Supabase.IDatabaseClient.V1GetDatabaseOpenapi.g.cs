@@ -8,7 +8,9 @@ namespace Supabase
         /// Get PostgREST OpenAPI spec<br/>
         /// Returns the PostgREST OpenAPI specification for the project. This is the replacement for querying `/rest/v1/` directly with the anon key.
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="schema">
         /// Default Value: public
         /// </param>

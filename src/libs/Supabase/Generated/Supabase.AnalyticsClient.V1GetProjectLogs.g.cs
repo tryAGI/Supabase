@@ -35,10 +35,16 @@ namespace Supabase
         /// The timestamp range must be no more than 24 hours and is rounded to the nearest minute. If the range is more than 24 hours, a validation error will be thrown.<br/>
         /// Note: Unless the `sql` parameter is provided, only edge_logs will be queried. See the [log query docs](/docs/guides/telemetry/logs?queryGroups=product&amp;product=postgres&amp;queryGroups=source&amp;source=edge_logs#querying-with-the-logs-explorer:~:text=logs%20from%20the-,Sources,-drop%2Ddown%3A) for all available sources. 
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="sql"></param>
-        /// <param name="isoTimestampStart"></param>
-        /// <param name="isoTimestampEnd"></param>
+        /// <param name="isoTimestampStart">
+        /// Example: 2025-03-01T00:00:00Z
+        /// </param>
+        /// <param name="isoTimestampEnd">
+        /// Example: 2025-03-01T23:59:59Z
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.AnalyticsResponse> V1GetProjectLogsAsync(

@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"read_only":true}
     /// </summary>
     public sealed partial class CreateRoleBody
     {

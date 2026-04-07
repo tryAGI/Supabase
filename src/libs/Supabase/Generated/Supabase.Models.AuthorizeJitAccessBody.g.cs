@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"role":"postgres","rhost":"203.0.113.10"}
     /// </summary>
     public sealed partial class AuthorizeJitAccessBody
     {

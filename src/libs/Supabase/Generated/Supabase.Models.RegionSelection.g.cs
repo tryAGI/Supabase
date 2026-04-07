@@ -5,8 +5,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// Region selection. Only one of region or region_selection can be specified.<br/>
-    /// Example: { type: 'smartGroup', code: 'americas' }
+    /// Region selection. Only one of region or region_selection can be specified.
     /// </summary>
     public readonly partial struct RegionSelection : global::System.IEquatable<RegionSelection>
     {

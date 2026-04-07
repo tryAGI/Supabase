@@ -7,7 +7,9 @@ namespace Supabase
         /// <summary>
         /// Lists SQL snippets for the logged in user
         /// </summary>
-        /// <param name="projectRef"></param>
+        /// <param name="projectRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="cursor"></param>
         /// <param name="limit"></param>
         /// <param name="sortBy"></param>

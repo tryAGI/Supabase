@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"recovery_time_target_unix":1740787200}
     /// </summary>
     public sealed partial class V1RestorePitrBody
     {

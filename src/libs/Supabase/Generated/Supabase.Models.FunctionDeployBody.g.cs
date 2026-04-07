@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"file":["./supabase/functions/hello-world/index.ts"],"metadata":{"entrypoint_path":"index.ts","verify_jwt":true,"name":"Hello World"}}
     /// </summary>
     public sealed partial class FunctionDeployBody
     {

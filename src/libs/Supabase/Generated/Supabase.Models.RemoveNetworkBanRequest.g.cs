@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"ipv4_addresses":["203.0.113.10"],"requester_ip":false}
     /// </summary>
     public sealed partial class RemoveNetworkBanRequest
     {

@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"addon_variant":"pitr_7","addon_type":"pitr"}
     /// </summary>
     public sealed partial class ApplyProjectAddonBody
     {

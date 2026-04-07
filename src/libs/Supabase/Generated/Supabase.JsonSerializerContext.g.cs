@@ -709,6 +709,18 @@ namespace Supabase
 
             typeof(global::Supabase.JsonConverters.V1RestorePointResponseStatusNullableJsonConverter),
 
+            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureKeyJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureKeyNullableJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureTypeJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureTypeNullableJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeNullableJsonConverter),
+
             typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponsePlanJsonConverter),
 
             typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponsePlanNullableJsonConverter),
@@ -855,6 +867,8 @@ namespace Supabase
 
             typeof(global::Supabase.JsonConverters.OneOfJsonConverter<object, double?, string, bool?>),
 
+            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3>),
+
             typeof(global::Supabase.JsonConverters.OneOfJsonConverter<string, global::System.Guid?>),
 
             typeof(global::Supabase.JsonConverters.OneOfJsonConverter<string, global::System.Guid?>),
@@ -963,6 +977,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SnippetResponseOwner))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SnippetResponseUpdatedBy))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SnippetResponseContent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProfileResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ListActionRunResponseItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseItemRunStep>))]
@@ -1415,6 +1430,17 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1RestorePointResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1RestorePointResponseStatus), TypeInfoPropertyName = "V1RestorePointResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1UndoBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListEntitlementsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.V1ListEntitlementsResponseEntitlement>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListEntitlementsResponseEntitlement))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListEntitlementsResponseEntitlementFeature))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListEntitlementsResponseEntitlementFeatureKey), TypeInfoPropertyName = "V1ListEntitlementsResponseEntitlementFeatureKey2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListEntitlementsResponseEntitlementFeatureType), TypeInfoPropertyName = "V1ListEntitlementsResponseEntitlementFeatureType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListEntitlementsResponseEntitlementType), TypeInfoPropertyName = "V1ListEntitlementsResponseEntitlementType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OneOf<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3>), TypeInfoPropertyName = "V1ListEntitlementsResponseEntitlementConfigVariant3_9a3fba112d89481f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1OrganizationMemberResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1OrganizationSlugResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1OrganizationSlugResponsePlan), TypeInfoPropertyName = "V1OrganizationSlugResponsePlan2")]
@@ -1537,6 +1563,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.UpdateProviderResponseDomain>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.DeleteProviderResponseDomain>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.V1BackupsResponseBackup>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.V1ListEntitlementsResponseEntitlement>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.V1OrganizationSlugResponseOptInTag>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.V1OrganizationSlugResponseAllowedReleaseChannel>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.OrganizationProjectClaimResponsePreviewWarning>))]

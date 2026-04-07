@@ -86,6 +86,11 @@ namespace Supabase
         public OrganizationsClient Organizations { get; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public ProfileClient Profile { get; }
+
+        /// <summary>
         /// Projects related endpoints
         /// </summary>
         public ProjectsClient Projects { get; }

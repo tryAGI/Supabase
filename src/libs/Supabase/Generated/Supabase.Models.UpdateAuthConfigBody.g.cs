@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"site_url":"https://app.example.com","disable_signup":false,"jwt_exp":3600}
     /// </summary>
     public sealed partial class UpdateAuthConfigBody
     {
@@ -1329,6 +1329,30 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("passkey_enabled")]
+        public bool? PasskeyEnabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("webauthn_rp_display_name")]
+        public string? WebauthnRpDisplayName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("webauthn_rp_id")]
+        public string? WebauthnRpId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("webauthn_rp_origins")]
+        public string? WebauthnRpOrigins { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mfa_phone_enroll_enabled")]
         public bool? MfaPhoneEnrollEnabled { get; set; }
 
@@ -1620,6 +1644,10 @@ namespace Supabase
         /// <param name="mfaTotpVerifyEnabled"></param>
         /// <param name="mfaWebAuthnEnrollEnabled"></param>
         /// <param name="mfaWebAuthnVerifyEnabled"></param>
+        /// <param name="passkeyEnabled"></param>
+        /// <param name="webauthnRpDisplayName"></param>
+        /// <param name="webauthnRpId"></param>
+        /// <param name="webauthnRpOrigins"></param>
         /// <param name="mfaPhoneEnrollEnabled"></param>
         /// <param name="mfaPhoneVerifyEnabled"></param>
         /// <param name="mfaPhoneMaxFrequency"></param>
@@ -1854,6 +1882,10 @@ namespace Supabase
             bool? mfaTotpVerifyEnabled,
             bool? mfaWebAuthnEnrollEnabled,
             bool? mfaWebAuthnVerifyEnabled,
+            bool? passkeyEnabled,
+            string? webauthnRpDisplayName,
+            string? webauthnRpId,
+            string? webauthnRpOrigins,
             bool? mfaPhoneEnrollEnabled,
             bool? mfaPhoneVerifyEnabled,
             int? mfaPhoneMaxFrequency,
@@ -2085,6 +2117,10 @@ namespace Supabase
             this.MfaTotpVerifyEnabled = mfaTotpVerifyEnabled;
             this.MfaWebAuthnEnrollEnabled = mfaWebAuthnEnrollEnabled;
             this.MfaWebAuthnVerifyEnabled = mfaWebAuthnVerifyEnabled;
+            this.PasskeyEnabled = passkeyEnabled;
+            this.WebauthnRpDisplayName = webauthnRpDisplayName;
+            this.WebauthnRpId = webauthnRpId;
+            this.WebauthnRpOrigins = webauthnRpOrigins;
             this.MfaPhoneEnrollEnabled = mfaPhoneEnrollEnabled;
             this.MfaPhoneVerifyEnabled = mfaPhoneVerifyEnabled;
             this.MfaPhoneMaxFrequency = mfaPhoneMaxFrequency;

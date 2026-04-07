@@ -22,7 +22,9 @@ namespace Supabase
         /// [Beta] Run a sql query as supabase_read_only_user<br/>
         /// All entity references must be schema qualified.
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -303,7 +305,9 @@ namespace Supabase
         /// [Beta] Run a sql query as supabase_read_only_user<br/>
         /// All entity references must be schema qualified.
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="query"></param>
         /// <param name="parameters"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

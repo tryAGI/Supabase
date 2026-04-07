@@ -31,9 +31,15 @@ namespace Supabase
         /// Deploy a function<br/>
         /// A new endpoint to deploy functions. It will create if function does not exist.
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="slug"></param>
-        /// <param name="bundleOnly"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="slug">
+        /// Example: hello-world
+        /// </param>
+        /// <param name="bundleOnly">
+        /// Example: false
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -402,9 +408,15 @@ namespace Supabase
         /// Deploy a function<br/>
         /// A new endpoint to deploy functions. It will create if function does not exist.
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="slug"></param>
-        /// <param name="bundleOnly"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="slug">
+        /// Example: hello-world
+        /// </param>
+        /// <param name="bundleOnly">
+        /// Example: false
+        /// </param>
         /// <param name="file"></param>
         /// <param name="metadata"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

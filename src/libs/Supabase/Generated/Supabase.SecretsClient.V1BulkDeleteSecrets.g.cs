@@ -22,7 +22,9 @@ namespace Supabase
         /// Bulk delete secrets<br/>
         /// Deletes all secrets with the given names from the specified project
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>

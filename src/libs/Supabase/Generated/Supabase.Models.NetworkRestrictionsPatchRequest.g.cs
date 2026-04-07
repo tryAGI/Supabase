@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"add":{"dbAllowedCidrs":["203.0.113.0/24"]},"remove":{"dbAllowedCidrs":["198.51.100.0/24"]}}
     /// </summary>
     public sealed partial class NetworkRestrictionsPatchRequest
     {

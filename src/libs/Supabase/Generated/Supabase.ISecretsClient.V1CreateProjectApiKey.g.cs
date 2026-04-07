@@ -7,8 +7,12 @@ namespace Supabase
         /// <summary>
         /// Creates a new API key for the project
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="reveal"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="reveal">
+        /// Example: true
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -21,8 +25,12 @@ namespace Supabase
         /// <summary>
         /// Creates a new API key for the project
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="reveal"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="reveal">
+        /// Example: true
+        /// </param>
         /// <param name="type"></param>
         /// <param name="name"></param>
         /// <param name="description"></param>

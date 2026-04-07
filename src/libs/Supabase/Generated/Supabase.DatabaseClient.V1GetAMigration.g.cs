@@ -27,8 +27,12 @@ namespace Supabase
         /// Fetch an existing entry from migration history<br/>
         /// Only available to selected partner OAuth apps
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="version"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="version">
+        /// Example: 20250312000000
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.V1GetMigrationResponse> V1GetAMigrationAsync(

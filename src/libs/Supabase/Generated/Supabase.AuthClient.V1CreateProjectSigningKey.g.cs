@@ -26,7 +26,9 @@ namespace Supabase
         /// <summary>
         /// Create a new signing key for the project in standby status
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -286,7 +288,9 @@ namespace Supabase
         /// <summary>
         /// Create a new signing key for the project in standby status
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="algorithm"></param>
         /// <param name="status"></param>
         /// <param name="privateJwk"></param>

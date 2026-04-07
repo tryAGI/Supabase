@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"max_connections":120,"shared_buffers":"256MB","work_mem":"4MB","statement_timeout":"60000ms"}
     /// </summary>
     public sealed partial class UpdatePostgresConfigBody
     {

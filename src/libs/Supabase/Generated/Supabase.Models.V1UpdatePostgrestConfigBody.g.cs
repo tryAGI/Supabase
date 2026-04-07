@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"db_schema":"public,storage","db_pool":20,"max_rows":1000}
     /// </summary>
     public sealed partial class V1UpdatePostgrestConfigBody
     {

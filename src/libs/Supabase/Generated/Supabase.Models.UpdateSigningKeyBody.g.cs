@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"status":"standby"}
     /// </summary>
     public sealed partial class UpdateSigningKeyBody
     {

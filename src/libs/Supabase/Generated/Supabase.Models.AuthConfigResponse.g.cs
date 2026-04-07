@@ -1009,6 +1009,31 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("passkey_enabled")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool PasskeyEnabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("webauthn_rp_display_name")]
+        public string? WebauthnRpDisplayName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("webauthn_rp_id")]
+        public string? WebauthnRpId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("webauthn_rp_origins")]
+        public string? WebauthnRpOrigins { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mfa_phone_otp_length")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int MfaPhoneOtpLength { get; set; }
@@ -1427,6 +1452,7 @@ namespace Supabase
         /// Initializes a new instance of the <see cref="AuthConfigResponse" /> class.
         /// </summary>
         /// <param name="mailerOtpExp"></param>
+        /// <param name="passkeyEnabled"></param>
         /// <param name="mfaPhoneOtpLength"></param>
         /// <param name="smsOtpLength"></param>
         /// <param name="oauthServerEnabled"></param>
@@ -1598,6 +1624,9 @@ namespace Supabase
         /// <param name="mfaPhoneVerifyEnabled"></param>
         /// <param name="mfaWebAuthnEnrollEnabled"></param>
         /// <param name="mfaWebAuthnVerifyEnabled"></param>
+        /// <param name="webauthnRpDisplayName"></param>
+        /// <param name="webauthnRpId"></param>
+        /// <param name="webauthnRpOrigins"></param>
         /// <param name="mfaPhoneTemplate"></param>
         /// <param name="mfaPhoneMaxFrequency"></param>
         /// <param name="nimbusOauthClientId"></param>
@@ -1664,6 +1693,7 @@ namespace Supabase
 #endif
         public AuthConfigResponse(
             int mailerOtpExp,
+            bool passkeyEnabled,
             int mfaPhoneOtpLength,
             int smsOtpLength,
             bool oauthServerEnabled,
@@ -1835,6 +1865,9 @@ namespace Supabase
             bool? mfaPhoneVerifyEnabled,
             bool? mfaWebAuthnEnrollEnabled,
             bool? mfaWebAuthnVerifyEnabled,
+            string? webauthnRpDisplayName,
+            string? webauthnRpId,
+            string? webauthnRpOrigins,
             string? mfaPhoneTemplate,
             int? mfaPhoneMaxFrequency,
             string? nimbusOauthClientId,
@@ -2063,6 +2096,10 @@ namespace Supabase
             this.MfaPhoneVerifyEnabled = mfaPhoneVerifyEnabled;
             this.MfaWebAuthnEnrollEnabled = mfaWebAuthnEnrollEnabled;
             this.MfaWebAuthnVerifyEnabled = mfaWebAuthnVerifyEnabled;
+            this.PasskeyEnabled = passkeyEnabled;
+            this.WebauthnRpDisplayName = webauthnRpDisplayName;
+            this.WebauthnRpId = webauthnRpId;
+            this.WebauthnRpOrigins = webauthnRpOrigins;
             this.MfaPhoneOtpLength = mfaPhoneOtpLength;
             this.MfaPhoneTemplate = mfaPhoneTemplate;
             this.MfaPhoneMaxFrequency = mfaPhoneMaxFrequency;

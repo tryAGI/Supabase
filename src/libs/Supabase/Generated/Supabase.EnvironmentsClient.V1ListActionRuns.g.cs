@@ -29,9 +29,15 @@ namespace Supabase
         /// List all action runs<br/>
         /// Returns a paginated list of action runs of the specified project.
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="offset"></param>
-        /// <param name="limit"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="offset">
+        /// Example: 0
+        /// </param>
+        /// <param name="limit">
+        /// Example: 20
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseItem>> V1ListActionRunsAsync(

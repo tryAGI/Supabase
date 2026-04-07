@@ -26,19 +26,17 @@ namespace Supabase
         /// Name of your project
         /// </param>
         /// <param name="organizationSlug">
-        /// Organization slug
+        /// Organization slug<br/>
+        /// Example: tsrqponmlkjihgfedcba
         /// </param>
         /// <param name="regionSelection">
-        /// Region selection. Only one of region or region_selection can be specified.<br/>
-        /// Example: { type: 'smartGroup', code: 'americas' }
+        /// Region selection. Only one of region or region_selection can be specified.
         /// </param>
         /// <param name="desiredInstanceSize">
-        /// Desired instance size. Omit this field to always default to the smallest possible size.<br/>
-        /// Example: nano
+        /// Desired instance size. Omit this field to always default to the smallest possible size.
         /// </param>
         /// <param name="templateUrl">
-        /// Template URL used to create the project from the CLI.<br/>
-        /// Example: https://github.com/supabase/supabase/tree/master/examples/slack-clone/nextjs-slack-clone
+        /// Template URL used to create the project from the CLI.
         /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>

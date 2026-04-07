@@ -36,19 +36,26 @@ namespace Supabase
         /// Returns a paginated list of projects for the specified organization.<br/>
         /// This endpoint uses offset-based pagination. Use the `offset` parameter to skip a number of projects and the `limit` parameter to control the number of projects returned per page.
         /// </summary>
-        /// <param name="slug"></param>
+        /// <param name="slug">
+        /// Example: tsrqponmlkjihgfedcba
+        /// </param>
         /// <param name="offset">
-        /// Default Value: 0
+        /// Default Value: 0<br/>
+        /// Example: 0
         /// </param>
         /// <param name="limit">
-        /// Default Value: 100
+        /// Default Value: 100<br/>
+        /// Example: 20
         /// </param>
-        /// <param name="search"></param>
+        /// <param name="search">
+        /// Example: acme
+        /// </param>
         /// <param name="sort">
-        /// Default Value: name_asc
+        /// Default Value: name_asc<br/>
+        /// Example: created_desc
         /// </param>
         /// <param name="statuses">
-        /// Example: ?statuses=ACTIVE_HEALTHY,INACTIVE
+        /// Example: ACTIVE_HEALTHY,INACTIVE
         /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>

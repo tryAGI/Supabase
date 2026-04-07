@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"private_only":false,"max_concurrent_users":1000,"max_channels_per_client":100}
     /// </summary>
     public sealed partial class UpdateRealtimeConfigBody
     {

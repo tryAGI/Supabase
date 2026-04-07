@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"type":"secret","name":"ci_secret_key","description":"CI deploy key"}
     /// </summary>
     public sealed partial class CreateApiKeyBody
     {

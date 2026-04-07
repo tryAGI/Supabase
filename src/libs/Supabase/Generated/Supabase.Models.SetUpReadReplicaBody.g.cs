@@ -4,15 +4,13 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"read_replica_region":"us-west-1"}
     /// </summary>
     public sealed partial class SetUpReadReplicaBody
     {
         /// <summary>
-        /// Region you want your read replica to reside in<br/>
-        /// Example: us-east-1
+        /// Region you want your read replica to reside in
         /// </summary>
-        /// <example>us-east-1</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("read_replica_region")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.SetUpReadReplicaBodyReadReplicaRegionJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -28,8 +26,7 @@ namespace Supabase
         /// Initializes a new instance of the <see cref="SetUpReadReplicaBody" /> class.
         /// </summary>
         /// <param name="readReplicaRegion">
-        /// Region you want your read replica to reside in<br/>
-        /// Example: us-east-1
+        /// Region you want your read replica to reside in
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

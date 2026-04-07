@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"custom_hostname":"docs.example.com"}
     /// </summary>
     public sealed partial class UpdateCustomHostnameBody
     {

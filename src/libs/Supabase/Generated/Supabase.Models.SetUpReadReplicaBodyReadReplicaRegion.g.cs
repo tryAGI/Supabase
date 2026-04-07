@@ -4,8 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// Region you want your read replica to reside in<br/>
-    /// Example: us-east-1
+    /// Region you want your read replica to reside in
     /// </summary>
     public enum SetUpReadReplicaBodyReadReplicaRegion
     {

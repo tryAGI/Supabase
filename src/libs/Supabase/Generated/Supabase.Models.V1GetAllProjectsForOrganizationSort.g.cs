@@ -4,7 +4,8 @@
 namespace Supabase
 {
     /// <summary>
-    /// Default Value: name_asc
+    /// Default Value: name_asc<br/>
+    /// Example: created_desc
     /// </summary>
     public enum V1GetAllProjectsForOrganizationSort
     {

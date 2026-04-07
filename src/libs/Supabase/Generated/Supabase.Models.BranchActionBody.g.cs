@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"migration_version":"20250312000000"}
     /// </summary>
     public sealed partial class BranchActionBody
     {

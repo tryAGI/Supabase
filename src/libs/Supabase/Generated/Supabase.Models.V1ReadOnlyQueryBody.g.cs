@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"query":"select * from pg_stat_activity limit 1;"}
     /// </summary>
     public sealed partial class V1ReadOnlyQueryBody
     {
