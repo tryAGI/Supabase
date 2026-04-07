@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"requestedConfig":{"database":true}}
     /// </summary>
     public sealed partial class SslEnforcementRequest
     {

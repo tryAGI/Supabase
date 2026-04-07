@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"name":"ci_secret_key_rotated","description":"Rotated after March release"}
     /// </summary>
     public sealed partial class UpdateApiKeyBody
     {

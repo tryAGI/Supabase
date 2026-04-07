@@ -28,8 +28,12 @@ namespace Supabase
         /// <summary>
         /// Updates a SSO provider by its UUID
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="providerId"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="providerId">
+        /// Example: 77777777-7777-4777-8777-777777777777
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -325,8 +329,12 @@ namespace Supabase
         /// <summary>
         /// Updates a SSO provider by its UUID
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="providerId"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="providerId">
+        /// Example: 77777777-7777-4777-8777-777777777777
+        /// </param>
         /// <param name="metadataXml"></param>
         /// <param name="metadataUrl"></param>
         /// <param name="domains"></param>

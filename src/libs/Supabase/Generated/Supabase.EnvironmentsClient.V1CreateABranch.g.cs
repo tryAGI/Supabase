@@ -27,7 +27,9 @@ namespace Supabase
         /// Create a database branch<br/>
         /// Creates a database branch from the specified project.
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -321,7 +323,9 @@ namespace Supabase
         /// Create a database branch<br/>
         /// Creates a database branch from the specified project.
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="branchName"></param>
         /// <param name="gitBranch"></param>
         /// <param name="isDefault"></param>

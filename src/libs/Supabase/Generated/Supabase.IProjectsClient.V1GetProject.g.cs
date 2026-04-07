@@ -7,7 +7,9 @@ namespace Supabase
         /// <summary>
         /// Gets a specific project that belongs to the authenticated user
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.V1ProjectWithDatabaseResponse> V1GetProjectAsync(

@@ -7,7 +7,9 @@ namespace Supabase
         /// <summary>
         /// [Beta] Deletes a project's custom hostname configuration
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
 #if NET8_0_OR_GREATER

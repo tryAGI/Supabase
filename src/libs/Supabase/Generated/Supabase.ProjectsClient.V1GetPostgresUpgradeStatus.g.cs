@@ -26,8 +26,12 @@ namespace Supabase
         /// <summary>
         /// [Beta] Gets the latest status of the project's upgrade
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="trackingId"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="trackingId">
+        /// Example: 9f4d3a20-6b2e-4a7e-8c91-1d5f3e7a2b4c
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
 #if NET8_0_OR_GREATER

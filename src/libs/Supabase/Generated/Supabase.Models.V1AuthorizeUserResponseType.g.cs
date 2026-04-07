@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: code
     /// </summary>
     public enum V1AuthorizeUserResponseType
     {

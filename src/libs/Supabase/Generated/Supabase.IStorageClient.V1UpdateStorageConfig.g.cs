@@ -7,7 +7,9 @@ namespace Supabase
         /// <summary>
         /// Updates project's storage config
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -19,7 +21,9 @@ namespace Supabase
         /// <summary>
         /// Updates project's storage config
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="fileSizeLimit"></param>
         /// <param name="features"></param>
         /// <param name="external"></param>

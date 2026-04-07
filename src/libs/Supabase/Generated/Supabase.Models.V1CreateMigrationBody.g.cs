@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"query":"create table public.widgets(id bigint primary key);","name":"create_widgets_table","rollback":"drop table if exists public.widgets;"}
     /// </summary>
     public sealed partial class V1CreateMigrationBody
     {

@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"type":"saml","metadata_url":"https://sso.acme.com/metadata.xml","domains":["acme.com"],"attribute_mapping":{"keys":{"email":{"name":"email"},"first_name":{"name":"first_name"},"last_name":{"name":"last_name"}}}}
     /// </summary>
     public sealed partial class CreateProviderBody
     {

@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"name":"before-upgrade"}
     /// </summary>
     public sealed partial class V1UndoBody
     {

@@ -18,8 +18,10 @@ namespace Supabase
         public required string Id { get; set; }
 
         /// <summary>
-        /// Organization slug
+        /// Organization slug<br/>
+        /// Example: tsrqponmlkjihgfedcba
         /// </summary>
+        /// <example>tsrqponmlkjihgfedcba</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Slug { get; set; }
@@ -44,7 +46,8 @@ namespace Supabase
         /// Deprecated: Use `slug` instead.
         /// </param>
         /// <param name="slug">
-        /// Organization slug
+        /// Organization slug<br/>
+        /// Example: tsrqponmlkjihgfedcba
         /// </param>
         /// <param name="name"></param>
 #if NET7_0_OR_GREATER

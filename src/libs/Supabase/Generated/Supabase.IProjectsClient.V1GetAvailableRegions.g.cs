@@ -7,13 +7,13 @@ namespace Supabase
         /// <summary>
         /// [Beta] Gets the list of available regions that can be used for a new project
         /// </summary>
-        /// <param name="organizationSlug"></param>
+        /// <param name="organizationSlug">
+        /// Example: tsrqponmlkjihgfedcba
+        /// </param>
         /// <param name="continent">
         /// Example: NA
         /// </param>
-        /// <param name="desiredInstanceSize">
-        /// Example: nano
-        /// </param>
+        /// <param name="desiredInstanceSize"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
 #if NET8_0_OR_GREATER

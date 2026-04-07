@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"state":"enabled"}
     /// </summary>
     public sealed partial class JitAccessRequestRequest
     {

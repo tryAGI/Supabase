@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"default_pool_size":25,"pool_mode":"transaction"}
     /// </summary>
     public sealed partial class UpdateSupavisorConfigBody
     {

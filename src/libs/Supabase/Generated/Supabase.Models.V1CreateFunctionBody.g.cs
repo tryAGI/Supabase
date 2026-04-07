@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"slug":"hello-world","name":"Hello World","body":"Deno.serve(() =\u003E new Response(\u0027Hello, world!\u0027))","verify_jwt":true}
     /// </summary>
     public sealed partial class V1CreateFunctionBody
     {

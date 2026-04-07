@@ -4,7 +4,8 @@
 namespace Supabase
 {
     /// <summary>
-    /// Populated when a new config has been received, but not registered as successfully applied to a project.
+    /// Populated when a new config has been received, but not registered as successfully applied to a project.<br/>
+    /// Example: {"dbAllowedCidrs":["203.0.113.0/24"],"dbAllowedCidrsV6":["2001:db8::/32"]}
     /// </summary>
     public sealed partial class NetworkRestrictionsResponseOldConfig
     {

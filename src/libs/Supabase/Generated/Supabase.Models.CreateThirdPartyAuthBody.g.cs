@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"oidc_issuer_url":"https://login.acme.com","jwks_url":"https://login.acme.com/.well-known/jwks.json"}
     /// </summary>
     public sealed partial class CreateThirdPartyAuthBody
     {

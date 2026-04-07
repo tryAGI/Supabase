@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"clone":"RUNNING","configure":"RUNNING","migrate":"RUNNING","deploy":"CREATED"}
     /// </summary>
     public sealed partial class UpdateRunStatusBody
     {

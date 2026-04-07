@@ -27,7 +27,9 @@ namespace Supabase
         /// Get database branch config<br/>
         /// Fetches configurations of the specified database branch
         /// </summary>
-        /// <param name="branchIdOrRef"></param>
+        /// <param name="branchIdOrRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.BranchDetailResponse> V1GetABranchConfigAsync(

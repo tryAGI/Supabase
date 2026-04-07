@@ -8,7 +8,9 @@ namespace Supabase
         /// Apply a database migration<br/>
         /// Only available to selected partner OAuth apps
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="idempotencyKey"></param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -23,7 +25,9 @@ namespace Supabase
         /// Apply a database migration<br/>
         /// Only available to selected partner OAuth apps
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="idempotencyKey"></param>
         /// <param name="query"></param>
         /// <param name="name"></param>

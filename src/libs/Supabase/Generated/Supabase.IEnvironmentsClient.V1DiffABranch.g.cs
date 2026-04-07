@@ -10,9 +10,15 @@ namespace Supabase
         /// [Beta] Diffs a database branch<br/>
         /// Diffs the specified database branch
         /// </summary>
-        /// <param name="branchIdOrRef"></param>
-        /// <param name="includedSchemas"></param>
-        /// <param name="pgdelta"></param>
+        /// <param name="branchIdOrRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="includedSchemas">
+        /// Example: public,auth
+        /// </param>
+        /// <param name="pgdelta">
+        /// Example: false
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
 #if NET8_0_OR_GREATER

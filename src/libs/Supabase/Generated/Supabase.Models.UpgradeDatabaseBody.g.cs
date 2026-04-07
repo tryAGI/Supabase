@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"target_version":"17","release_channel":"ga"}
     /// </summary>
     public sealed partial class UpgradeDatabaseBody
     {

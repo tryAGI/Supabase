@@ -26,7 +26,9 @@ namespace Supabase
         /// <summary>
         /// Updates a project's auth config
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -319,7 +321,9 @@ namespace Supabase
         /// <summary>
         /// Updates a project's auth config
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="siteUrl"></param>
         /// <param name="disableSignup"></param>
         /// <param name="jwtExp"></param>
@@ -539,6 +543,10 @@ namespace Supabase
         /// <param name="mfaTotpVerifyEnabled"></param>
         /// <param name="mfaWebAuthnEnrollEnabled"></param>
         /// <param name="mfaWebAuthnVerifyEnabled"></param>
+        /// <param name="passkeyEnabled"></param>
+        /// <param name="webauthnRpDisplayName"></param>
+        /// <param name="webauthnRpId"></param>
+        /// <param name="webauthnRpOrigins"></param>
         /// <param name="mfaPhoneEnrollEnabled"></param>
         /// <param name="mfaPhoneVerifyEnabled"></param>
         /// <param name="mfaPhoneMaxFrequency"></param>
@@ -773,6 +781,10 @@ namespace Supabase
             bool? mfaTotpVerifyEnabled = default,
             bool? mfaWebAuthnEnrollEnabled = default,
             bool? mfaWebAuthnVerifyEnabled = default,
+            bool? passkeyEnabled = default,
+            string? webauthnRpDisplayName = default,
+            string? webauthnRpId = default,
+            string? webauthnRpOrigins = default,
             bool? mfaPhoneEnrollEnabled = default,
             bool? mfaPhoneVerifyEnabled = default,
             int? mfaPhoneMaxFrequency = default,
@@ -1007,6 +1019,10 @@ namespace Supabase
                 MfaTotpVerifyEnabled = mfaTotpVerifyEnabled,
                 MfaWebAuthnEnrollEnabled = mfaWebAuthnEnrollEnabled,
                 MfaWebAuthnVerifyEnabled = mfaWebAuthnVerifyEnabled,
+                PasskeyEnabled = passkeyEnabled,
+                WebauthnRpDisplayName = webauthnRpDisplayName,
+                WebauthnRpId = webauthnRpId,
+                WebauthnRpOrigins = webauthnRpOrigins,
                 MfaPhoneEnrollEnabled = mfaPhoneEnrollEnabled,
                 MfaPhoneVerifyEnabled = mfaPhoneVerifyEnabled,
                 MfaPhoneMaxFrequency = mfaPhoneMaxFrequency,

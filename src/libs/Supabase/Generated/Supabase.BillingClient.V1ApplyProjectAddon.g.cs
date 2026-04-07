@@ -22,7 +22,9 @@ namespace Supabase
         /// Apply or update billing addons, including compute instance size<br/>
         /// Selects an addon variant, for example scaling the project’s compute instance up or down, and applies it to the project.
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -300,7 +302,9 @@ namespace Supabase
         /// Apply or update billing addons, including compute instance size<br/>
         /// Selects an addon variant, for example scaling the project’s compute instance up or down, and applies it to the project.
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="addonVariant"></param>
         /// <param name="addonType"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

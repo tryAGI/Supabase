@@ -4,8 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// The Smart Region Group's code. The codes supported are not a stable API, and should be retrieved from the /available-regions endpoint.<br/>
-    /// Example: apac
+    /// The Smart Region Group's code. The codes supported are not a stable API, and should be retrieved from the /available-regions endpoint.
     /// </summary>
     public enum V1CreateProjectBodyRegionSelectionVariant2Code
     {

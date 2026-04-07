@@ -9,10 +9,8 @@ namespace Supabase
     public sealed partial class CreateSecretBodyItem
     {
         /// <summary>
-        /// Secret name must not start with the SUPABASE_ prefix.<br/>
-        /// Example: string
+        /// Secret name must not start with the SUPABASE_ prefix.
         /// </summary>
-        /// <example>string</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
@@ -34,8 +32,7 @@ namespace Supabase
         /// Initializes a new instance of the <see cref="CreateSecretBodyItem" /> class.
         /// </summary>
         /// <param name="name">
-        /// Secret name must not start with the SUPABASE_ prefix.<br/>
-        /// Example: string
+        /// Secret name must not start with the SUPABASE_ prefix.
         /// </param>
         /// <param name="value"></param>
 #if NET7_0_OR_GREATER

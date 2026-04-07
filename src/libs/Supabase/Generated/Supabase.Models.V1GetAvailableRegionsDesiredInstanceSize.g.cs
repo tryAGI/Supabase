@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// Example: nano
+    /// 
     /// </summary>
     public enum V1GetAvailableRegionsDesiredInstanceSize
     {

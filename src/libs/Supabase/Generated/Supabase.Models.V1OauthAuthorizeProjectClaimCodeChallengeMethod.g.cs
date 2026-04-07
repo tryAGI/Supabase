@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: S256
     /// </summary>
     public enum V1OauthAuthorizeProjectClaimCodeChallengeMethod
     {

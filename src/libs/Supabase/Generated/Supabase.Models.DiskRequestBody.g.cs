@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"attributes":{"type":"gp3","size_gb":100,"iops":3000,"throughput_mibps":125}}
     /// </summary>
     public sealed partial class DiskRequestBody
     {

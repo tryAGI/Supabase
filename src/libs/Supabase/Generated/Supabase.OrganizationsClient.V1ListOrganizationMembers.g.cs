@@ -24,7 +24,9 @@ namespace Supabase
         /// <summary>
         /// List members of an organization
         /// </summary>
-        /// <param name="slug"></param>
+        /// <param name="slug">
+        /// Example: tsrqponmlkjihgfedcba
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.V1OrganizationMemberResponse>> V1ListOrganizationMembersAsync(

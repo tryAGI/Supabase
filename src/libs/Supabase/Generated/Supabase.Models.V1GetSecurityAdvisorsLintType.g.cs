@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: sql
     /// </summary>
     public enum V1GetSecurityAdvisorsLintType
     {

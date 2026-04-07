@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"user_id":"55555555-5555-4555-8555-555555555555","roles":[{"role":"postgres","expires_at":1740787200,"allowed_networks":{"allowed_cidrs":[{"cidr":"203.0.113.0/24"}]}}]}
     /// </summary>
     public sealed partial class UpdateJitAccessBody
     {

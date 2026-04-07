@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"name":"Acme"}
     /// </summary>
     public sealed partial class CreateOrganizationV1
     {

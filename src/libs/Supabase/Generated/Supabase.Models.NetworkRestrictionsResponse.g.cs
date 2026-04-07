@@ -24,8 +24,10 @@ namespace Supabase
         public required global::Supabase.NetworkRestrictionsResponseConfig Config { get; set; }
 
         /// <summary>
-        /// Populated when a new config has been received, but not registered as successfully applied to a project.
+        /// Populated when a new config has been received, but not registered as successfully applied to a project.<br/>
+        /// Example: {"dbAllowedCidrs":["203.0.113.0/24"],"dbAllowedCidrsV6":["2001:db8::/32"]}
         /// </summary>
+        /// <example>{"dbAllowedCidrs":["203.0.113.0/24"],"dbAllowedCidrsV6":["2001:db8::/32"]}</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("old_config")]
         public global::Supabase.NetworkRestrictionsResponseOldConfig? OldConfig { get; set; }
 
@@ -64,7 +66,8 @@ namespace Supabase
         /// </param>
         /// <param name="status"></param>
         /// <param name="oldConfig">
-        /// Populated when a new config has been received, but not registered as successfully applied to a project.
+        /// Populated when a new config has been received, but not registered as successfully applied to a project.<br/>
+        /// Example: {"dbAllowedCidrs":["203.0.113.0/24"],"dbAllowedCidrsV6":["2001:db8::/32"]}
         /// </param>
         /// <param name="updatedAt"></param>
         /// <param name="appliedAt"></param>

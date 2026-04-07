@@ -21,8 +21,12 @@ namespace Supabase
         /// <summary>
         /// Claims project for the specified organization
         /// </summary>
-        /// <param name="slug"></param>
-        /// <param name="token"></param>
+        /// <param name="slug">
+        /// Example: tsrqponmlkjihgfedcba
+        /// </param>
+        /// <param name="token">
+        /// Example: 0123456789abcdef0123456789abcdef01234567
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task V1ClaimProjectForOrganizationAsync(

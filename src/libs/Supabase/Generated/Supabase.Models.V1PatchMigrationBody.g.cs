@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"name":"create_widgets_table","rollback":"drop table if exists public.widgets;"}
     /// </summary>
     public sealed partial class V1PatchMigrationBody
     {

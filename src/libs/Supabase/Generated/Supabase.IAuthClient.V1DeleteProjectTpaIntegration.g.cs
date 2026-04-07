@@ -7,8 +7,12 @@ namespace Supabase
         /// <summary>
         /// Removes a third-party auth integration
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="tpaId"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="tpaId">
+        /// Example: 88888888-8888-4888-8888-888888888888
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.ThirdPartyAuth> V1DeleteProjectTpaIntegrationAsync(

@@ -10,7 +10,9 @@ namespace Supabase
         /// Pushes a database branch<br/>
         /// Pushes the specified database branch
         /// </summary>
-        /// <param name="branchIdOrRef"></param>
+        /// <param name="branchIdOrRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -23,7 +25,9 @@ namespace Supabase
         /// Pushes a database branch<br/>
         /// Pushes the specified database branch
         /// </summary>
-        /// <param name="branchIdOrRef"></param>
+        /// <param name="branchIdOrRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="migrationVersion"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>

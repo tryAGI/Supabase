@@ -26,7 +26,9 @@ namespace Supabase
         /// <summary>
         /// Creates a new third-party auth integration
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -286,7 +288,9 @@ namespace Supabase
         /// <summary>
         /// Creates a new third-party auth integration
         /// </summary>
-        /// <param name="ref"></param>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="oidcIssuerUrl"></param>
         /// <param name="jwksUrl"></param>
         /// <param name="customJwks"></param>

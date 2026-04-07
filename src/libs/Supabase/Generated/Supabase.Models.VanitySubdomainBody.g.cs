@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"vanity_subdomain":"acme-prod"}
     /// </summary>
     public sealed partial class VanitySubdomainBody
     {
