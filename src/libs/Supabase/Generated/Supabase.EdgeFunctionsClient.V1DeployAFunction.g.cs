@@ -5,6 +5,25 @@ namespace Supabase
 {
     public partial class EdgeFunctionsClient
     {
+
+
+        private static readonly global::Supabase.EndPointSecurityRequirement s_V1DeployAFunctionSecurityRequirement0 =
+            new global::Supabase.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Supabase.EndPointAuthorizationRequirement[]
+                {                    new global::Supabase.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1DeployAFunctionSecurityRequirements =
+            new global::Supabase.EndPointSecurityRequirement[]
+            {                s_V1DeployAFunctionSecurityRequirement0,
+            };
         partial void PrepareV1DeployAFunctionArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
@@ -62,13 +81,19 @@ namespace Supabase
                 bundleOnly: ref bundleOnly,
                 request: request);
 
+
+            var __authorizations = global::Supabase.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_V1DeployAFunctionSecurityRequirements,
+                operationName: "V1DeployAFunctionAsync");
+
             var __pathBuilder = new global::Supabase.PathBuilder(
                 path: $"/v1/projects/{@ref}/functions/deploy",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("slug", slug)
                 .AddOptionalParameter("bundleOnly", bundleOnly?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -78,7 +103,7 @@ namespace Supabase
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

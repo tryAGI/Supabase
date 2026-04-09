@@ -6,6 +6,7 @@ namespace Supabase
     public sealed partial class SupabaseClient
     {
         /// <inheritdoc cref="SupabaseClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::Supabase.EndPointAuthorization}?, bool)"/>
+
         public SupabaseClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,

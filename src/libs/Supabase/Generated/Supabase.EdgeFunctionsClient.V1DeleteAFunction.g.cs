@@ -5,6 +5,25 @@ namespace Supabase
 {
     public partial class EdgeFunctionsClient
     {
+
+
+        private static readonly global::Supabase.EndPointSecurityRequirement s_V1DeleteAFunctionSecurityRequirement0 =
+            new global::Supabase.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Supabase.EndPointAuthorizationRequirement[]
+                {                    new global::Supabase.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1DeleteAFunctionSecurityRequirements =
+            new global::Supabase.EndPointSecurityRequirement[]
+            {                s_V1DeleteAFunctionSecurityRequirement0,
+            };
         partial void PrepareV1DeleteAFunctionArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
@@ -42,9 +61,15 @@ namespace Supabase
                 @ref: ref @ref,
                 functionSlug: ref functionSlug);
 
+
+            var __authorizations = global::Supabase.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_V1DeleteAFunctionSecurityRequirements,
+                operationName: "V1DeleteAFunctionAsync");
+
             var __pathBuilder = new global::Supabase.PathBuilder(
                 path: $"/v1/projects/{@ref}/functions/{functionSlug}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -54,7 +79,7 @@ namespace Supabase
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

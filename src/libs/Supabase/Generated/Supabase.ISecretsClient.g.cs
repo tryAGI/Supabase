@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// Secrets related endpoints<br/>
+    /// Secrets related endpoints.<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>

@@ -5,6 +5,25 @@ namespace Supabase
 {
     public partial class DatabaseClient
     {
+
+
+        private static readonly global::Supabase.EndPointSecurityRequirement s_V1ListMigrationHistorySecurityRequirement0 =
+            new global::Supabase.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Supabase.EndPointAuthorizationRequirement[]
+                {                    new global::Supabase.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1ListMigrationHistorySecurityRequirements =
+            new global::Supabase.EndPointSecurityRequirement[]
+            {                s_V1ListMigrationHistorySecurityRequirement0,
+            };
         partial void PrepareV1ListMigrationHistoryArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref);
@@ -40,9 +59,15 @@ namespace Supabase
                 httpClient: HttpClient,
                 @ref: ref @ref);
 
+
+            var __authorizations = global::Supabase.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_V1ListMigrationHistorySecurityRequirements,
+                operationName: "V1ListMigrationHistoryAsync");
+
             var __pathBuilder = new global::Supabase.PathBuilder(
                 path: $"/v1/projects/{@ref}/database/migrations",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -52,7 +77,7 @@ namespace Supabase
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
