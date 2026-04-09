@@ -5,6 +5,25 @@ namespace Supabase
 {
     public partial class SecretsClient
     {
+
+
+        private static readonly global::Supabase.EndPointSecurityRequirement s_V1DeleteProjectApiKeySecurityRequirement0 =
+            new global::Supabase.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Supabase.EndPointAuthorizationRequirement[]
+                {                    new global::Supabase.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1DeleteProjectApiKeySecurityRequirements =
+            new global::Supabase.EndPointSecurityRequirement[]
+            {                s_V1DeleteProjectApiKeySecurityRequirement0,
+            };
         partial void PrepareV1DeleteProjectApiKeyArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
@@ -67,6 +86,12 @@ namespace Supabase
                 wasCompromised: ref wasCompromised,
                 reason: ref reason);
 
+
+            var __authorizations = global::Supabase.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_V1DeleteProjectApiKeySecurityRequirements,
+                operationName: "V1DeleteProjectApiKeyAsync");
+
             var __pathBuilder = new global::Supabase.PathBuilder(
                 path: $"/v1/projects/{@ref}/api-keys/{id}",
                 baseUri: HttpClient.BaseAddress); 
@@ -74,7 +99,7 @@ namespace Supabase
                 .AddOptionalParameter("reveal", reveal?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("was_compromised", wasCompromised?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("reason", reason) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -84,7 +109,7 @@ namespace Supabase
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

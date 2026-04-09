@@ -13,7 +13,7 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.supabase.com";
+        public const string DefaultBaseUrl = "https://api.supabase.com/";
 
         private bool _disposeHttpClient = true;
 

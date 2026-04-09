@@ -7,6 +7,25 @@ namespace Supabase
 {
     public partial class EnvironmentsClient
     {
+
+
+        private static readonly global::Supabase.EndPointSecurityRequirement s_V1PushABranchSecurityRequirement0 =
+            new global::Supabase.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Supabase.EndPointAuthorizationRequirement[]
+                {                    new global::Supabase.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1PushABranchSecurityRequirements =
+            new global::Supabase.EndPointSecurityRequirement[]
+            {                s_V1PushABranchSecurityRequirement0,
+            };
         partial void PrepareV1PushABranchArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
@@ -50,9 +69,15 @@ namespace Supabase
                 branchIdOrRef: ref branchIdOrRef,
                 request: request);
 
+
+            var __authorizations = global::Supabase.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_V1PushABranchSecurityRequirements,
+                operationName: "V1PushABranchAsync");
+
             var __pathBuilder = new global::Supabase.PathBuilder(
                 path: $"/v1/branches/{branchIdOrRef}/push",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -62,7 +87,7 @@ namespace Supabase
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

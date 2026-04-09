@@ -41,47 +41,47 @@ namespace Supabase
 
 
         /// <summary>
-        /// Analytics related endpoints
+        /// Analytics related endpoints.
         /// </summary>
         public AnalyticsClient Analytics { get; }
 
         /// <summary>
-        /// Auth related endpoints
+        /// Auth related endpoints.
         /// </summary>
         public AuthClient Auth { get; }
 
         /// <summary>
-        /// Billing related endpoints
+        /// Billing related endpoints.
         /// </summary>
         public BillingClient Billing { get; }
 
         /// <summary>
-        /// Database related endpoints
+        /// Database related endpoints.
         /// </summary>
         public DatabaseClient Database { get; }
 
         /// <summary>
-        /// Domains related endpoints
+        /// Domains related endpoints.
         /// </summary>
         public DomainsClient Domains { get; }
 
         /// <summary>
-        /// Edge related endpoints
+        /// Edge related endpoints.
         /// </summary>
         public EdgeFunctionsClient EdgeFunctions { get; }
 
         /// <summary>
-        /// Environments related endpoints
+        /// Environments related endpoints.
         /// </summary>
         public EnvironmentsClient Environments { get; }
 
         /// <summary>
-        /// OAuth related endpoints
+        /// OAuth related endpoints.
         /// </summary>
         public OAuthClient OAuth { get; }
 
         /// <summary>
-        /// Organizations related endpoints
+        /// Organizations related endpoints.
         /// </summary>
         public OrganizationsClient Organizations { get; }
 
@@ -91,7 +91,7 @@ namespace Supabase
         public ProfileClient Profile { get; }
 
         /// <summary>
-        /// Projects related endpoints
+        /// Projects related endpoints.
         /// </summary>
         public ProjectsClient Projects { get; }
 
@@ -101,12 +101,12 @@ namespace Supabase
         public RealtimeClient Realtime { get; }
 
         /// <summary>
-        /// Rest related endpoints
+        /// Rest related endpoints.
         /// </summary>
         public RestClient Rest { get; }
 
         /// <summary>
-        /// Secrets related endpoints
+        /// Secrets related endpoints.
         /// </summary>
         public SecretsClient Secrets { get; }
 

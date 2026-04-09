@@ -5,6 +5,25 @@ namespace Supabase
 {
     public partial class DatabaseClient
     {
+
+
+        private static readonly global::Supabase.EndPointSecurityRequirement s_V1GetDatabaseOpenapiSecurityRequirement0 =
+            new global::Supabase.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Supabase.EndPointAuthorizationRequirement[]
+                {                    new global::Supabase.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1GetDatabaseOpenapiSecurityRequirements =
+            new global::Supabase.EndPointSecurityRequirement[]
+            {                s_V1GetDatabaseOpenapiSecurityRequirement0,
+            };
         partial void PrepareV1GetDatabaseOpenapiArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
@@ -47,12 +66,18 @@ namespace Supabase
                 @ref: ref @ref,
                 schema: ref schema);
 
+
+            var __authorizations = global::Supabase.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_V1GetDatabaseOpenapiSecurityRequirements,
+                operationName: "V1GetDatabaseOpenapiAsync");
+
             var __pathBuilder = new global::Supabase.PathBuilder(
                 path: $"/v1/projects/{@ref}/database/openapi",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("schema", schema) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -62,7 +87,7 @@ namespace Supabase
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

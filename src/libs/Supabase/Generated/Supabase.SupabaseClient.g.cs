@@ -13,7 +13,7 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.supabase.com";
+        public const string DefaultBaseUrl = "https://api.supabase.com/";
 
         private bool _disposeHttpClient = true;
 
@@ -38,7 +38,7 @@ namespace Supabase
 
 
         /// <summary>
-        /// Analytics related endpoints
+        /// Analytics related endpoints.
         /// </summary>
         public AnalyticsClient Analytics => new AnalyticsClient(HttpClient, authorizations: Authorizations)
         {
@@ -47,7 +47,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// Auth related endpoints
+        /// Auth related endpoints.
         /// </summary>
         public AuthClient Auth => new AuthClient(HttpClient, authorizations: Authorizations)
         {
@@ -56,7 +56,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// Billing related endpoints
+        /// Billing related endpoints.
         /// </summary>
         public BillingClient Billing => new BillingClient(HttpClient, authorizations: Authorizations)
         {
@@ -65,7 +65,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// Database related endpoints
+        /// Database related endpoints.
         /// </summary>
         public DatabaseClient Database => new DatabaseClient(HttpClient, authorizations: Authorizations)
         {
@@ -74,7 +74,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// Domains related endpoints
+        /// Domains related endpoints.
         /// </summary>
         public DomainsClient Domains => new DomainsClient(HttpClient, authorizations: Authorizations)
         {
@@ -83,7 +83,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// Edge related endpoints
+        /// Edge related endpoints.
         /// </summary>
         public EdgeFunctionsClient EdgeFunctions => new EdgeFunctionsClient(HttpClient, authorizations: Authorizations)
         {
@@ -92,7 +92,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// Environments related endpoints
+        /// Environments related endpoints.
         /// </summary>
         public EnvironmentsClient Environments => new EnvironmentsClient(HttpClient, authorizations: Authorizations)
         {
@@ -101,7 +101,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// OAuth related endpoints
+        /// OAuth related endpoints.
         /// </summary>
         public OAuthClient OAuth => new OAuthClient(HttpClient, authorizations: Authorizations)
         {
@@ -110,7 +110,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// Organizations related endpoints
+        /// Organizations related endpoints.
         /// </summary>
         public OrganizationsClient Organizations => new OrganizationsClient(HttpClient, authorizations: Authorizations)
         {
@@ -128,7 +128,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// Projects related endpoints
+        /// Projects related endpoints.
         /// </summary>
         public ProjectsClient Projects => new ProjectsClient(HttpClient, authorizations: Authorizations)
         {
@@ -146,7 +146,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// Rest related endpoints
+        /// Rest related endpoints.
         /// </summary>
         public RestClient Rest => new RestClient(HttpClient, authorizations: Authorizations)
         {
@@ -155,7 +155,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// Secrets related endpoints
+        /// Secrets related endpoints.
         /// </summary>
         public SecretsClient Secrets => new SecretsClient(HttpClient, authorizations: Authorizations)
         {
