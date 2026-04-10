@@ -31,6 +31,9 @@ namespace Supabase
 #if DEBUG
             = true;
 #endif
+
+        /// <inheritdoc/>
+        public global::Supabase.AutoSDKClientOptions Options { get; }
         /// <summary>
         /// 
         /// </summary>
@@ -40,7 +43,7 @@ namespace Supabase
         /// <summary>
         /// Analytics related endpoints.
         /// </summary>
-        public AnalyticsClient Analytics => new AnalyticsClient(HttpClient, authorizations: Authorizations)
+        public AnalyticsClient Analytics => new AnalyticsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -49,7 +52,7 @@ namespace Supabase
         /// <summary>
         /// Auth related endpoints.
         /// </summary>
-        public AuthClient Auth => new AuthClient(HttpClient, authorizations: Authorizations)
+        public AuthClient Auth => new AuthClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -58,7 +61,7 @@ namespace Supabase
         /// <summary>
         /// Billing related endpoints.
         /// </summary>
-        public BillingClient Billing => new BillingClient(HttpClient, authorizations: Authorizations)
+        public BillingClient Billing => new BillingClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -67,7 +70,7 @@ namespace Supabase
         /// <summary>
         /// Database related endpoints.
         /// </summary>
-        public DatabaseClient Database => new DatabaseClient(HttpClient, authorizations: Authorizations)
+        public DatabaseClient Database => new DatabaseClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -76,7 +79,7 @@ namespace Supabase
         /// <summary>
         /// Domains related endpoints.
         /// </summary>
-        public DomainsClient Domains => new DomainsClient(HttpClient, authorizations: Authorizations)
+        public DomainsClient Domains => new DomainsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -85,7 +88,7 @@ namespace Supabase
         /// <summary>
         /// Edge related endpoints.
         /// </summary>
-        public EdgeFunctionsClient EdgeFunctions => new EdgeFunctionsClient(HttpClient, authorizations: Authorizations)
+        public EdgeFunctionsClient EdgeFunctions => new EdgeFunctionsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -94,7 +97,7 @@ namespace Supabase
         /// <summary>
         /// Environments related endpoints.
         /// </summary>
-        public EnvironmentsClient Environments => new EnvironmentsClient(HttpClient, authorizations: Authorizations)
+        public EnvironmentsClient Environments => new EnvironmentsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -103,7 +106,7 @@ namespace Supabase
         /// <summary>
         /// OAuth related endpoints.
         /// </summary>
-        public OAuthClient OAuth => new OAuthClient(HttpClient, authorizations: Authorizations)
+        public OAuthClient OAuth => new OAuthClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -112,7 +115,7 @@ namespace Supabase
         /// <summary>
         /// Organizations related endpoints.
         /// </summary>
-        public OrganizationsClient Organizations => new OrganizationsClient(HttpClient, authorizations: Authorizations)
+        public OrganizationsClient Organizations => new OrganizationsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -121,7 +124,7 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public ProfileClient Profile => new ProfileClient(HttpClient, authorizations: Authorizations)
+        public ProfileClient Profile => new ProfileClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -130,7 +133,7 @@ namespace Supabase
         /// <summary>
         /// Projects related endpoints.
         /// </summary>
-        public ProjectsClient Projects => new ProjectsClient(HttpClient, authorizations: Authorizations)
+        public ProjectsClient Projects => new ProjectsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -139,7 +142,7 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public RealtimeClient Realtime => new RealtimeClient(HttpClient, authorizations: Authorizations)
+        public RealtimeClient Realtime => new RealtimeClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -148,7 +151,7 @@ namespace Supabase
         /// <summary>
         /// Rest related endpoints.
         /// </summary>
-        public RestClient Rest => new RestClient(HttpClient, authorizations: Authorizations)
+        public RestClient Rest => new RestClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -157,7 +160,7 @@ namespace Supabase
         /// <summary>
         /// Secrets related endpoints.
         /// </summary>
-        public SecretsClient Secrets => new SecretsClient(HttpClient, authorizations: Authorizations)
+        public SecretsClient Secrets => new SecretsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -166,7 +169,7 @@ namespace Supabase
         /// <summary>
         /// Visit [https://supabase.github.io/storage/](https://supabase.github.io/storage/) for complete documentation.
         /// </summary>
-        public StorageClient Storage => new StorageClient(HttpClient, authorizations: Authorizations)
+        public StorageClient Storage => new StorageClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -185,11 +188,37 @@ namespace Supabase
             global::System.Net.Http.HttpClient? httpClient = null,
             global::System.Uri? baseUri = null,
             global::System.Collections.Generic.List<global::Supabase.EndPointAuthorization>? authorizations = null,
+            bool disposeHttpClient = true) : this(
+                httpClient,
+                baseUri,
+                authorizations,
+                options: null,
+                disposeHttpClient: disposeHttpClient)
+        {
+        }
+
+        /// <summary>
+        /// Creates a new instance of the SupabaseClient.
+        /// If no httpClient is provided, a new one will be created.
+        /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
+        /// </summary>
+        /// <param name="httpClient">The HttpClient instance. If not provided, a new one will be created.</param>
+        /// <param name="baseUri">The base URL for the API. If not provided, the default baseUri from OpenAPI spec will be used.</param>
+        /// <param name="authorizations">The authorizations to use for the requests.</param>
+        /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
+        /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
+        public SupabaseClient(
+            global::System.Net.Http.HttpClient? httpClient = null,
+            global::System.Uri? baseUri = null,
+            global::System.Collections.Generic.List<global::Supabase.EndPointAuthorization>? authorizations = null,
+            global::Supabase.AutoSDKClientOptions? options = null,
             bool disposeHttpClient = true)
         {
+
             HttpClient = httpClient ?? new global::System.Net.Http.HttpClient();
             HttpClient.BaseAddress ??= baseUri ?? new global::System.Uri(DefaultBaseUrl);
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Supabase.EndPointAuthorization>();
+            Options = options ?? new global::Supabase.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
 
             Initialized(HttpClient);

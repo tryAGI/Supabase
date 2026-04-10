@@ -22,6 +22,7 @@ namespace Supabase
         /// <param name="reason">
         /// Example: rotating_key
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponse> V1DeleteProjectApiKeyAsync(
@@ -30,6 +31,7 @@ namespace Supabase
             bool? reveal = default,
             bool? wasCompromised = default,
             string? reason = default,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

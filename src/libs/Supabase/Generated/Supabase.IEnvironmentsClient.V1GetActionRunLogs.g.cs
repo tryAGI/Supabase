@@ -14,11 +14,13 @@ namespace Supabase
         /// <param name="runId">
         /// Example: run_01hq3q9m7y5q7e4a7x2c8m1p4n
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<string> V1GetActionRunLogsAsync(
             string @ref,
             string runId,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

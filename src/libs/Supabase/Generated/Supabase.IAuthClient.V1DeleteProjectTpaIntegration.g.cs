@@ -13,11 +13,13 @@ namespace Supabase
         /// <param name="tpaId">
         /// Example: 88888888-8888-4888-8888-888888888888
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.ThirdPartyAuth> V1DeleteProjectTpaIntegrationAsync(
             string @ref,
             global::System.Guid tpaId,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
