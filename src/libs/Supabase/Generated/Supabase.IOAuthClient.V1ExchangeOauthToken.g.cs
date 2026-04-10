@@ -8,6 +8,7 @@ namespace Supabase
         /// [Beta] Exchange auth code for user's access and refresh token
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
 #if NET8_0_OR_GREATER
@@ -16,6 +17,7 @@ namespace Supabase
         global::System.Threading.Tasks.Task<global::Supabase.OAuthTokenResponse> V1ExchangeOauthTokenAsync(
 
             global::Supabase.OAuthTokenBody request,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// [Beta] Exchange auth code for user's access and refresh token
@@ -31,6 +33,7 @@ namespace Supabase
         /// Resource indicator for MCP (Model Context Protocol) clients
         /// </param>
         /// <param name="scope"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
 #if NET8_0_OR_GREATER
@@ -46,6 +49,7 @@ namespace Supabase
             string? refreshToken = default,
             string? resource = default,
             string? scope = default,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

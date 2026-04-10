@@ -11,12 +11,14 @@ namespace Supabase
         /// Example: abcdefghijklmnopqrst
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.V1PostgrestConfigResponse> V1UpdatePostgrestServiceConfigAsync(
             string @ref,
 
             global::Supabase.V1UpdatePostgrestConfigBody request,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Updates project's postgrest config
@@ -28,6 +30,7 @@ namespace Supabase
         /// <param name="dbSchema"></param>
         /// <param name="maxRows"></param>
         /// <param name="dbPool"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.V1PostgrestConfigResponse> V1UpdatePostgrestServiceConfigAsync(
@@ -36,6 +39,7 @@ namespace Supabase
             string? dbSchema = default,
             int? maxRows = default,
             int? dbPool = default,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

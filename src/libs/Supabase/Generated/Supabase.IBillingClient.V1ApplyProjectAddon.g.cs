@@ -12,12 +12,14 @@ namespace Supabase
         /// Example: abcdefghijklmnopqrst
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task V1ApplyProjectAddonAsync(
             string @ref,
 
             global::Supabase.ApplyProjectAddonBody request,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Apply or update billing addons, including compute instance size<br/>
@@ -28,12 +30,14 @@ namespace Supabase
         /// </param>
         /// <param name="addonVariant"></param>
         /// <param name="addonType"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task V1ApplyProjectAddonAsync(
             string @ref,
             global::Supabase.OneOf<global::Supabase.ApplyProjectAddonBodyAddonVariantVariant1?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant2?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant3?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant4?> addonVariant,
             global::Supabase.ApplyProjectAddonBodyAddonType addonType,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

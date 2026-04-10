@@ -17,6 +17,7 @@ namespace Supabase
         /// Example: true
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponse> V1UpdateProjectApiKeyAsync(
@@ -25,6 +26,7 @@ namespace Supabase
 
             global::Supabase.UpdateApiKeyBody request,
             bool? reveal = default,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Updates an API key for the project
@@ -41,6 +43,7 @@ namespace Supabase
         /// <param name="name"></param>
         /// <param name="description"></param>
         /// <param name="secretJwtTemplate"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponse> V1UpdateProjectApiKeyAsync(
@@ -50,6 +53,7 @@ namespace Supabase
             string? name = default,
             string? description = default,
             object? secretJwtTemplate = default,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

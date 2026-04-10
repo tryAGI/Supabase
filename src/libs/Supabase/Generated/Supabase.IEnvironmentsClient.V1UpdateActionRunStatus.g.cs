@@ -15,6 +15,7 @@ namespace Supabase
         /// Example: run_01hq3q9m7y5q7e4a7x2c8m1p4n
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.UpdateRunStatusResponse> V1UpdateActionRunStatusAsync(
@@ -22,6 +23,7 @@ namespace Supabase
             string runId,
 
             global::Supabase.UpdateRunStatusBody request,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update the status of an action run<br/>
@@ -40,6 +42,7 @@ namespace Supabase
         /// <param name="migrate"></param>
         /// <param name="seed"></param>
         /// <param name="deploy"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.UpdateRunStatusResponse> V1UpdateActionRunStatusAsync(
@@ -52,6 +55,7 @@ namespace Supabase
             global::Supabase.UpdateRunStatusBodyMigrate? migrate = default,
             global::Supabase.UpdateRunStatusBodySeed? seed = default,
             global::Supabase.UpdateRunStatusBodyDeploy? deploy = default,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

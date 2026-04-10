@@ -11,12 +11,14 @@ namespace Supabase
         /// Example: abcdefghijklmnopqrst
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.PostgresConfigResponse> V1UpdatePostgresConfigAsync(
             string @ref,
 
             global::Supabase.UpdatePostgresConfigBody request,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Updates project's Postgres config
@@ -56,6 +58,7 @@ namespace Supabase
         /// </param>
         /// <param name="hotStandbyFeedback"></param>
         /// <param name="restartDatabase"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.PostgresConfigResponse> V1UpdatePostgresConfigAsync(
@@ -86,6 +89,7 @@ namespace Supabase
             string? checkpointTimeout = default,
             bool? hotStandbyFeedback = default,
             bool? restartDatabase = default,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

@@ -11,12 +11,14 @@ namespace Supabase
         /// Example: abcdefghijklmnopqrst
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.AuthConfigResponse> V1UpdateAuthServiceConfigAsync(
             string @ref,
 
             global::Supabase.UpdateAuthConfigBody request,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Updates a project's auth config
@@ -258,6 +260,7 @@ namespace Supabase
         /// <param name="oauthServerAllowDynamicRegistration"></param>
         /// <param name="oauthServerAuthorizationPath"></param>
         /// <param name="customOauthEnabled"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.AuthConfigResponse> V1UpdateAuthServiceConfigAsync(
@@ -496,6 +499,7 @@ namespace Supabase
             bool? oauthServerAllowDynamicRegistration = default,
             string? oauthServerAuthorizationPath = default,
             bool? customOauthEnabled = default,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

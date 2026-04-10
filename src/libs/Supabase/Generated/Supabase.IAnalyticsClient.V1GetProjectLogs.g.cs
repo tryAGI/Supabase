@@ -22,6 +22,7 @@ namespace Supabase
         /// <param name="isoTimestampEnd">
         /// Example: 2025-03-01T23:59:59Z
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.AnalyticsResponse> V1GetProjectLogsAsync(
@@ -29,6 +30,7 @@ namespace Supabase
             string? sql = default,
             global::System.DateTime? isoTimestampStart = default,
             global::System.DateTime? isoTimestampEnd = default,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
