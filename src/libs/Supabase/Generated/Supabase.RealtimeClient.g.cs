@@ -33,6 +33,10 @@ namespace Supabase
 
         /// <inheritdoc/>
         public global::Supabase.AutoSDKClientOptions Options { get; }
+
+
+        /// <inheritdoc/>
+        public global::System.Func<string> CreateIdempotencyKey { get; set; } = () => global::System.Guid.NewGuid().ToString("D");
         /// <summary>
         /// 
         /// </summary>
