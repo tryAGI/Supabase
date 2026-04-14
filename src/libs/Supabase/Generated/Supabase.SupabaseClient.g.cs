@@ -34,6 +34,10 @@ namespace Supabase
 
         /// <inheritdoc/>
         public global::Supabase.AutoSDKClientOptions Options { get; }
+
+
+        /// <inheritdoc/>
+        public global::System.Func<string> CreateIdempotencyKey { get; set; } = () => global::System.Guid.NewGuid().ToString("D");
         /// <summary>
         /// 
         /// </summary>
@@ -46,6 +50,7 @@ namespace Supabase
         public AnalyticsClient Analytics => new AnalyticsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -55,6 +60,7 @@ namespace Supabase
         public AuthClient Auth => new AuthClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -64,6 +70,7 @@ namespace Supabase
         public BillingClient Billing => new BillingClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -73,6 +80,7 @@ namespace Supabase
         public DatabaseClient Database => new DatabaseClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -82,6 +90,7 @@ namespace Supabase
         public DomainsClient Domains => new DomainsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -91,6 +100,7 @@ namespace Supabase
         public EdgeFunctionsClient EdgeFunctions => new EdgeFunctionsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -100,6 +110,7 @@ namespace Supabase
         public EnvironmentsClient Environments => new EnvironmentsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -109,6 +120,7 @@ namespace Supabase
         public OAuthClient OAuth => new OAuthClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -118,6 +130,7 @@ namespace Supabase
         public OrganizationsClient Organizations => new OrganizationsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -127,6 +140,7 @@ namespace Supabase
         public ProfileClient Profile => new ProfileClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -136,6 +150,7 @@ namespace Supabase
         public ProjectsClient Projects => new ProjectsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -145,6 +160,7 @@ namespace Supabase
         public RealtimeClient Realtime => new RealtimeClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -154,6 +170,7 @@ namespace Supabase
         public RestClient Rest => new RestClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -163,6 +180,7 @@ namespace Supabase
         public SecretsClient Secrets => new SecretsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -172,6 +190,7 @@ namespace Supabase
         public StorageClient Storage => new StorageClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 

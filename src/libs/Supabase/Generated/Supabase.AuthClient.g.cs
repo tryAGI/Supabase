@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// Auth related endpoints.<br/>
+    /// Auth related endpoints<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>
@@ -34,6 +34,10 @@ namespace Supabase
 
         /// <inheritdoc/>
         public global::Supabase.AutoSDKClientOptions Options { get; }
+
+
+        /// <inheritdoc/>
+        public global::System.Func<string> CreateIdempotencyKey { get; set; } = () => global::System.Guid.NewGuid().ToString("D");
         /// <summary>
         /// 
         /// </summary>
