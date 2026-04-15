@@ -11488,7 +11488,7 @@
           },
           {
             "fga_permissions": [
-              "organization_projects_read"
+              "organization_admin_read"
             ]
           }
         ],
@@ -11859,9 +11859,16 @@
         "tags": [
           "Projects"
         ],
+        "x-badges": [
+          {
+            "name": "OAuth scope: projects:read",
+            "position": "after"
+          }
+        ],
         "x-endpoint-owners": [
           "management-api"
-        ]
+        ],
+        "x-oauth-scope": "projects:read"
       }
     }
   },
