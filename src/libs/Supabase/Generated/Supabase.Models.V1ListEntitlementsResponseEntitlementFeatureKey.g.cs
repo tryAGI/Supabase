@@ -195,6 +195,10 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        SecurityIso27001Certificate,
+        /// <summary>
+        /// 
+        /// </summary>
         SecurityMemberRoles,
         /// <summary>
         /// 
@@ -292,6 +296,7 @@ namespace Supabase
                 V1ListEntitlementsResponseEntitlementFeatureKey.ReplicationEtl => "replication.etl",
                 V1ListEntitlementsResponseEntitlementFeatureKey.SecurityAuditLogsDays => "security.audit_logs_days",
                 V1ListEntitlementsResponseEntitlementFeatureKey.SecurityEnforceMfa => "security.enforce_mfa",
+                V1ListEntitlementsResponseEntitlementFeatureKey.SecurityIso27001Certificate => "security.iso27001_certificate",
                 V1ListEntitlementsResponseEntitlementFeatureKey.SecurityMemberRoles => "security.member_roles",
                 V1ListEntitlementsResponseEntitlementFeatureKey.SecurityPrivateLink => "security.private_link",
                 V1ListEntitlementsResponseEntitlementFeatureKey.SecurityQuestionnaire => "security.questionnaire",
@@ -358,6 +363,7 @@ namespace Supabase
                 "replication.etl" => V1ListEntitlementsResponseEntitlementFeatureKey.ReplicationEtl,
                 "security.audit_logs_days" => V1ListEntitlementsResponseEntitlementFeatureKey.SecurityAuditLogsDays,
                 "security.enforce_mfa" => V1ListEntitlementsResponseEntitlementFeatureKey.SecurityEnforceMfa,
+                "security.iso27001_certificate" => V1ListEntitlementsResponseEntitlementFeatureKey.SecurityIso27001Certificate,
                 "security.member_roles" => V1ListEntitlementsResponseEntitlementFeatureKey.SecurityMemberRoles,
                 "security.private_link" => V1ListEntitlementsResponseEntitlementFeatureKey.SecurityPrivateLink,
                 "security.questionnaire" => V1ListEntitlementsResponseEntitlementFeatureKey.SecurityQuestionnaire,

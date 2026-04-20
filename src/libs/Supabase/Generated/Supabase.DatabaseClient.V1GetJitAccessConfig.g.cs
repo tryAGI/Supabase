@@ -42,7 +42,7 @@ namespace Supabase
             ref string content);
 
         /// <summary>
-        /// [Beta] Get project's just-in-time access configuration.
+        /// [Beta] Get project's temporary access configuration.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

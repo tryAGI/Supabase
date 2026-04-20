@@ -16,10 +16,6 @@ namespace Supabase
         /// 
         /// </summary>
         Enabled,
-        /// <summary>
-        /// 
-        /// </summary>
-        Unavailable,
     }
 
     /// <summary>
@@ -36,7 +32,6 @@ namespace Supabase
             {
                 JitAccessRequestRequestState.Disabled => "disabled",
                 JitAccessRequestRequestState.Enabled => "enabled",
-                JitAccessRequestRequestState.Unavailable => "unavailable",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -49,7 +44,6 @@ namespace Supabase
             {
                 "disabled" => JitAccessRequestRequestState.Disabled,
                 "enabled" => JitAccessRequestRequestState.Enabled,
-                "unavailable" => JitAccessRequestRequestState.Unavailable,
                 _ => null,
             };
         }

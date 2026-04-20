@@ -222,11 +222,11 @@
     },
     {
       "Order": 21,
-      "Title": "[Beta] Update project\u0027s just-in-time access configuration.",
+      "Title": "[Beta] Update project\u0027s temporary access configuration.",
       "Slug": "v1-update-jit-access-config",
       "Description": "Generated from OpenAPI examples.",
       "Language": "http",
-      "Code": "### [Beta] Update project\u0027s just-in-time access configuration.\n# @name v1-update-jit-access-config\nPUT {{host}}/v1/projects/{{ref}}/jit-access\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022state\u0022: \u0022enabled\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update project\u0027s just-in-time access configuration.",
+      "Code": "### [Beta] Update project\u0027s temporary access configuration.\n# @name v1-update-jit-access-config\nPUT {{host}}/v1/projects/{{ref}}/jit-access\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022state\u0022: \u0022enabled\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update project\u0027s temporary access configuration.",
       "Format": "http",
       "OperationId": "v1-update-jit-access-config",
       "Setup": null
