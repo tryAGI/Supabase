@@ -44,7 +44,7 @@ namespace Supabase
             ref string content);
 
         /// <summary>
-        /// [Beta] Update project's just-in-time access configuration.
+        /// [Beta] Update project's temporary access configuration.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -530,7 +530,7 @@ namespace Supabase
             }
         }
         /// <summary>
-        /// [Beta] Update project's just-in-time access configuration.
+        /// [Beta] Update project's temporary access configuration.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

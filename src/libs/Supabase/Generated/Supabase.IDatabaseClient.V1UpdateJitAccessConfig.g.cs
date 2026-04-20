@@ -5,7 +5,7 @@ namespace Supabase
     public partial interface IDatabaseClient
     {
         /// <summary>
-        /// [Beta] Update project's just-in-time access configuration.
+        /// [Beta] Update project's temporary access configuration.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -24,7 +24,7 @@ namespace Supabase
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// [Beta] Update project's just-in-time access configuration.
+        /// [Beta] Update project's temporary access configuration.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

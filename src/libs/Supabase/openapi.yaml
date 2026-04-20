@@ -3156,7 +3156,7 @@
             "description": "Rate limit exceeded"
           },
           "500": {
-            "description": "Failed to retrieve project's JIT access config"
+            "description": "Failed to retrieve project's temporary access configuration."
           }
         },
         "security": [
@@ -3169,7 +3169,7 @@
             ]
           }
         ],
-        "summary": "[Beta] Get project's just-in-time access configuration.",
+        "summary": "[Beta] Get project's temporary access configuration.",
         "tags": [
           "Database"
         ],
@@ -3233,7 +3233,7 @@
             "description": "Rate limit exceeded"
           },
           "500": {
-            "description": "Failed to update project's just-in-time access configuration."
+            "description": "Failed to update project's temporary access configuration."
           }
         },
         "security": [
@@ -3246,7 +3246,7 @@
             ]
           }
         ],
-        "summary": "[Beta] Update project's just-in-time access configuration.",
+        "summary": "[Beta] Update project's temporary access configuration.",
         "tags": [
           "Database"
         ],
@@ -14015,8 +14015,7 @@
             "type": "string",
             "enum": [
               "enabled",
-              "disabled",
-              "unavailable"
+              "disabled"
             ]
           }
         },
@@ -21600,6 +21599,7 @@
                         "security.audit_logs_days",
                         "security.questionnaire",
                         "security.soc2_report",
+                        "security.iso27001_certificate",
                         "security.private_link",
                         "security.enforce_mfa",
                         "log.retention_days",
