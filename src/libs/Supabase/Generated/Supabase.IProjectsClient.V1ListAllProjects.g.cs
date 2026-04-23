@@ -6,8 +6,7 @@ namespace Supabase
     {
         /// <summary>
         /// List all projects<br/>
-        /// Returns a list of all projects you've previously created.<br/>
-        /// Use `/v1/organizations/{slug}/projects` instead when possible to get more precise results and pagination support.
+        /// Returns a list of all projects you've previously created.
         /// </summary>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
