@@ -41,10 +41,6 @@ namespace Supabase
 
             typeof(global::Supabase.JsonConverters.BranchRestoreResponseMessageNullableJsonConverter),
 
-            typeof(global::Supabase.JsonConverters.V1ListProjectsPaginatedResponseProjectInfraComputeSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListProjectsPaginatedResponseProjectInfraComputeSizeNullableJsonConverter),
-
             typeof(global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseStatusJsonConverter),
 
             typeof(global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseStatusNullableJsonConverter),
@@ -910,12 +906,6 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchUpdateResponseMessage), TypeInfoPropertyName = "BranchUpdateResponseMessage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchRestoreResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchRestoreResponseMessage), TypeInfoPropertyName = "BranchRestoreResponseMessage2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListProjectsPaginatedResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.V1ListProjectsPaginatedResponseProject>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListProjectsPaginatedResponseProject))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListProjectsPaginatedResponseProjectInfraComputeSize), TypeInfoPropertyName = "V1ListProjectsPaginatedResponseProjectInfraComputeSize2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListProjectsPaginatedResponsePagination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectWithDatabaseResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectWithDatabaseResponseStatus), TypeInfoPropertyName = "V1ProjectWithDatabaseResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectWithDatabaseResponseDatabase))]
@@ -1022,6 +1012,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.UpdateCustomHostnameResponseDataResultSslValidationError>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameResponseDataResultSslValidationError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameResponseDataResultOwnershipVerification))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.JitAccessResponseUserRole>))]
@@ -1503,8 +1494,6 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.V1StorageBucketResponse>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.SupavisorConfigResponse>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.V1OrganizationMemberResponse>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.V1ListProjectsPaginatedResponseProject>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.RegionsInfoRecommendationsSpecificItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.RegionsInfoAllSmartGroupItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.RegionsInfoAllSpecificItem>))]
@@ -1515,6 +1504,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.UpdateCustomHostnameResponseDataResultSslValidationRecord>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.UpdateCustomHostnameResponseDataResultSslValidationError>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JitAccessResponseUserRole>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidr>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidrsV6Item>))]
