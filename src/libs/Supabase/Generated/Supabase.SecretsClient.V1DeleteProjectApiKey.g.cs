@@ -159,8 +159,8 @@ namespace Supabase
                 PrepareV1DeleteProjectApiKeyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    id: id,
+                    @ref: @ref!,
+                    id: id!,
                     reveal: reveal,
                     wasCompromised: wasCompromised,
                     reason: reason);

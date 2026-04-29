@@ -135,7 +135,7 @@ namespace Supabase
                 PrepareV1UndoRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
+                    @ref: @ref!,
                     request: request);
 
                 return __httpRequest;

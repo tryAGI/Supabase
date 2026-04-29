@@ -129,8 +129,8 @@ namespace Supabase
                 PrepareV1DeleteJitAccessRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    userId: userId);
+                    @ref: @ref!,
+                    userId: userId!);
 
                 return __httpRequest;
             }

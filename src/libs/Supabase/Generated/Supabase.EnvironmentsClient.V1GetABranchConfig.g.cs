@@ -129,7 +129,7 @@ namespace Supabase
                 PrepareV1GetABranchConfigRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    branchIdOrRef: branchIdOrRef);
+                    branchIdOrRef: branchIdOrRef!);
 
                 return __httpRequest;
             }

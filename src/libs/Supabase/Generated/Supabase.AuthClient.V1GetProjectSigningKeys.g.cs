@@ -126,7 +126,7 @@ namespace Supabase
                 PrepareV1GetProjectSigningKeysRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref);
+                    @ref: @ref!);
 
                 return __httpRequest;
             }

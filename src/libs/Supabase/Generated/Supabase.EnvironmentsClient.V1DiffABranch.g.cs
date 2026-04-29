@@ -150,7 +150,7 @@ namespace Supabase
                 PrepareV1DiffABranchRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    branchIdOrRef: branchIdOrRef,
+                    branchIdOrRef: branchIdOrRef!,
                     includedSchemas: includedSchemas,
                     pgdelta: pgdelta);
 

@@ -155,7 +155,7 @@ namespace Supabase
                 PrepareV1GetProjectLogsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
+                    @ref: @ref!,
                     sql: sql,
                     isoTimestampStart: isoTimestampStart,
                     isoTimestampEnd: isoTimestampEnd);

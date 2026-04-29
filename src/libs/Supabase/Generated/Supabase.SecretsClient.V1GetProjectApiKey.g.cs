@@ -143,8 +143,8 @@ namespace Supabase
                 PrepareV1GetProjectApiKeyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    id: id,
+                    @ref: @ref!,
+                    id: id!,
                     reveal: reveal);
 
                 return __httpRequest;

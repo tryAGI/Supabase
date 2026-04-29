@@ -139,7 +139,7 @@ namespace Supabase
                 PrepareV1GetPostgresUpgradeStatusRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
+                    @ref: @ref!,
                     trackingId: trackingId);
 
                 return __httpRequest;

@@ -143,8 +143,8 @@ namespace Supabase
                 PrepareV1PatchAMigrationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    version: version,
+                    @ref: @ref!,
+                    version: version!,
                     request: request);
 
                 return __httpRequest;

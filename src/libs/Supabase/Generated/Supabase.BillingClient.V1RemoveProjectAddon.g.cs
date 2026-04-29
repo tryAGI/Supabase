@@ -129,8 +129,8 @@ namespace Supabase
                 PrepareV1RemoveProjectAddonRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    addonVariant: addonVariant);
+                    @ref: @ref!,
+                    addonVariant: addonVariant!);
 
                 return __httpRequest;
             }

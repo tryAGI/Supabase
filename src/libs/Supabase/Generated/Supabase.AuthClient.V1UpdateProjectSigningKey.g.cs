@@ -147,8 +147,8 @@ namespace Supabase
                 PrepareV1UpdateProjectSigningKeyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    @ref: @ref,
+                    id: id!,
+                    @ref: @ref!,
                     request: request);
 
                 return __httpRequest;

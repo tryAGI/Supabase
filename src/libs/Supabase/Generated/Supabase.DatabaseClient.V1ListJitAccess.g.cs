@@ -127,7 +127,7 @@ namespace Supabase
                 PrepareV1ListJitAccessRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref);
+                    @ref: @ref!);
 
                 return __httpRequest;
             }

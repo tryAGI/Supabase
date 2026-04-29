@@ -134,8 +134,8 @@ namespace Supabase
                 PrepareV1GetActionRunRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    runId: runId);
+                    @ref: @ref!,
+                    runId: runId!);
 
                 return __httpRequest;
             }

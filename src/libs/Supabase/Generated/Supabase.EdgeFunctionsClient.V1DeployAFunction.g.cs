@@ -144,20 +144,20 @@ namespace Supabase
             }
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
                             __httpRequestContent.Add(
-                                content: new global::System.Net.Http.StringContent($"{@ref}"),
+                                content: new global::System.Net.Http.StringContent(@ref ?? string.Empty),
                                 name: "\"ref\"");
                             if (slug != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{slug}"),
+                                    content: new global::System.Net.Http.StringContent(slug ?? string.Empty),
                                     name: "\"slug\"");
                             } 
                             if (bundleOnly != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{bundleOnly}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(bundleOnly, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"bundleOnly\"");
                             } 
                             if (request.File != default)
@@ -166,6 +166,7 @@ namespace Supabase
                                 for (var __iFile = 0; __iFile < request.File.Count; __iFile++)
                                 {
                                     var __contentFile = new global::System.Net.Http.ByteArrayContent(request.File[__iFile]);
+                                __contentFile.Headers.ContentType = new global::System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
                                     __httpRequestContent.Add(
                                         content: __contentFile,
                                         name: "\"file\"",
@@ -177,7 +178,7 @@ namespace Supabase
                                 }
                             }
                             __httpRequestContent.Add(
-                                content: new global::System.Net.Http.StringContent($"{request.Metadata}"),
+                                content: new global::System.Net.Http.StringContent(request.Metadata.ToJson(JsonSerializerContext)),
                                 name: "\"metadata\"");
                             __httpRequest.Content = __httpRequestContent;
                 global::Supabase.AutoSDKRequestOptionsSupport.ApplyHeaders(
@@ -191,7 +192,7 @@ namespace Supabase
                 PrepareV1DeployAFunctionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
+                    @ref: @ref!,
                     slug: slug,
                     bundleOnly: bundleOnly,
                     request: request);

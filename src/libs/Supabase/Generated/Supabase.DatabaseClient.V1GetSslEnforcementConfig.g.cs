@@ -129,7 +129,7 @@ namespace Supabase
                 PrepareV1GetSslEnforcementConfigRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref);
+                    @ref: @ref!);
 
                 return __httpRequest;
             }

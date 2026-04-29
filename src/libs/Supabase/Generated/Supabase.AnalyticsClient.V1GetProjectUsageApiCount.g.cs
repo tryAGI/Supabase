@@ -136,7 +136,7 @@ namespace Supabase
                 PrepareV1GetProjectUsageApiCountRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
+                    @ref: @ref!,
                     interval: interval);
 
                 return __httpRequest;

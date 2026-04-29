@@ -129,7 +129,7 @@ namespace Supabase
                 PrepareV1VerifyDnsConfigRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref);
+                    @ref: @ref!);
 
                 return __httpRequest;
             }

@@ -143,7 +143,7 @@ namespace Supabase
                 PrepareV1CheckVanitySubdomainAvailabilityRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
+                    @ref: @ref!,
                     request: request);
 
                 return __httpRequest;

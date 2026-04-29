@@ -204,8 +204,8 @@ namespace Supabase
                 PrepareV1UpdateAFunctionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    functionSlug: functionSlug,
+                    @ref: @ref!,
+                    functionSlug: functionSlug!,
                     slug: slug,
                     name: name,
                     verifyJwt: verifyJwt,

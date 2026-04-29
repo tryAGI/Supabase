@@ -126,7 +126,7 @@ namespace Supabase
                 PrepareV1GetAnOrganizationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    slug: slug);
+                    slug: slug!);
 
                 return __httpRequest;
             }

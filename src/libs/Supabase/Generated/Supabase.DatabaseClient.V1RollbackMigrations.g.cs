@@ -132,8 +132,8 @@ namespace Supabase
                 PrepareV1RollbackMigrationsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    gte: gte);
+                    @ref: @ref!,
+                    gte: gte!);
 
                 return __httpRequest;
             }

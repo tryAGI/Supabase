@@ -134,7 +134,7 @@ namespace Supabase
                 PrepareV1GetRestorePointRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
+                    @ref: @ref!,
                     name: name);
 
                 return __httpRequest;

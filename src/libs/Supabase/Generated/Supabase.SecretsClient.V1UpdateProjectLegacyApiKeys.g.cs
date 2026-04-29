@@ -136,8 +136,8 @@ namespace Supabase
                 PrepareV1UpdateProjectLegacyApiKeysRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    enabled: enabled);
+                    @ref: @ref!,
+                    enabled: enabled!);
 
                 return __httpRequest;
             }

@@ -139,7 +139,7 @@ namespace Supabase
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     includedSchemas: includedSchemas,
-                    @ref: @ref);
+                    @ref: @ref!);
 
                 return __httpRequest;
             }

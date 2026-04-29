@@ -144,9 +144,9 @@ namespace Supabase
                 PrepareV1GetProjectFunctionCombinedStatsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    interval: interval,
-                    functionId: functionId);
+                    @ref: @ref!,
+                    interval: interval!,
+                    functionId: functionId!);
 
                 return __httpRequest;
             }

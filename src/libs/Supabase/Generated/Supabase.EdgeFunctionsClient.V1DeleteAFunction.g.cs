@@ -129,8 +129,8 @@ namespace Supabase
                 PrepareV1DeleteAFunctionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    functionSlug: functionSlug);
+                    @ref: @ref!,
+                    functionSlug: functionSlug!);
 
                 return __httpRequest;
             }

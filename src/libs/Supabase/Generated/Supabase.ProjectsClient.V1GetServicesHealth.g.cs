@@ -144,8 +144,8 @@ namespace Supabase
                 PrepareV1GetServicesHealthRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    services: services,
+                    @ref: @ref!,
+                    services: services!,
                     timeoutMs: timeoutMs);
 
                 return __httpRequest;

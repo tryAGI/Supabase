@@ -133,8 +133,8 @@ namespace Supabase
                 PrepareV1GetOrganizationProjectClaimRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    slug: slug,
-                    token: token);
+                    slug: slug!,
+                    token: token!);
 
                 return __httpRequest;
             }

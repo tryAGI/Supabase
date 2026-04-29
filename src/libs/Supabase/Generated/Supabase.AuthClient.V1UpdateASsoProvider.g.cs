@@ -147,8 +147,8 @@ namespace Supabase
                 PrepareV1UpdateASsoProviderRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    providerId: providerId,
+                    @ref: @ref!,
+                    providerId: providerId!,
                     request: request);
 
                 return __httpRequest;
