@@ -197,9 +197,9 @@ namespace Supabase
                 PrepareV1AuthorizeUserRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    clientId: clientId,
-                    responseType: responseType,
-                    redirectUri: redirectUri,
+                    clientId: clientId!,
+                    responseType: responseType!,
+                    redirectUri: redirectUri!,
                     scope: scope,
                     state: state,
                     responseMode: responseMode,

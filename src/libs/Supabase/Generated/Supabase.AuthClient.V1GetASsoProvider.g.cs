@@ -133,8 +133,8 @@ namespace Supabase
                 PrepareV1GetASsoProviderRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    providerId: providerId);
+                    @ref: @ref!,
+                    providerId: providerId!);
 
                 return __httpRequest;
             }

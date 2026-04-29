@@ -141,7 +141,7 @@ namespace Supabase
                 PrepareV1CreateABranchRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
+                    @ref: @ref!,
                     request: request);
 
                 return __httpRequest;

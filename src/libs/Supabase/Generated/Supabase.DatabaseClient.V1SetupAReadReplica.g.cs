@@ -138,7 +138,7 @@ namespace Supabase
                 PrepareV1SetupAReadReplicaRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
+                    @ref: @ref!,
                     request: request);
 
                 return __httpRequest;

@@ -121,7 +121,7 @@ namespace Supabase
                 PrepareV1RestoreAProjectRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref);
+                    @ref: @ref!);
 
                 return __httpRequest;
             }

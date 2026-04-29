@@ -133,8 +133,8 @@ namespace Supabase
                 PrepareV1RemoveProjectSigningKeyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    @ref: @ref);
+                    id: id!,
+                    @ref: @ref!);
 
                 return __httpRequest;
             }

@@ -143,7 +143,7 @@ namespace Supabase
                 PrepareV1PushABranchRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    branchIdOrRef: branchIdOrRef,
+                    branchIdOrRef: branchIdOrRef!,
                     request: request);
 
                 return __httpRequest;

@@ -146,7 +146,7 @@ namespace Supabase
                 PrepareV1GetAvailableRegionsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    organizationSlug: organizationSlug,
+                    organizationSlug: organizationSlug!,
                     continent: continent,
                     desiredInstanceSize: desiredInstanceSize);
 

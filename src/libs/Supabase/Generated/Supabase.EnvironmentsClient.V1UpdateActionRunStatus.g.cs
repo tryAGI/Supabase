@@ -148,8 +148,8 @@ namespace Supabase
                 PrepareV1UpdateActionRunStatusRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    runId: runId,
+                    @ref: @ref!,
+                    runId: runId!,
                     request: request);
 
                 return __httpRequest;

@@ -121,7 +121,7 @@ namespace Supabase
                 PrepareV1ShutdownRealtimeRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref);
+                    @ref: @ref!);
 
                 return __httpRequest;
             }

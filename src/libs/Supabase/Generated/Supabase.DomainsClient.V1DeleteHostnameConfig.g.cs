@@ -124,7 +124,7 @@ namespace Supabase
                 PrepareV1DeleteHostnameConfigRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref);
+                    @ref: @ref!);
 
                 return __httpRequest;
             }

@@ -140,7 +140,7 @@ namespace Supabase
                 PrepareV1DeleteABranchRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    branchIdOrRef: branchIdOrRef,
+                    branchIdOrRef: branchIdOrRef!,
                     force: force);
 
                 return __httpRequest;

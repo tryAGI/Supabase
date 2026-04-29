@@ -133,8 +133,8 @@ namespace Supabase
                 PrepareV1GetProjectTpaIntegrationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    tpaId: tpaId);
+                    @ref: @ref!,
+                    tpaId: tpaId!);
 
                 return __httpRequest;
             }

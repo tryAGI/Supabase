@@ -145,7 +145,7 @@ namespace Supabase
                 PrepareV1ListActionRunsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
+                    @ref: @ref!,
                     offset: offset,
                     limit: limit);
 

@@ -137,7 +137,7 @@ namespace Supabase
                 PrepareV1GetDatabaseOpenapiRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
+                    @ref: @ref!,
                     schema: schema);
 
                 return __httpRequest;

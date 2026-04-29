@@ -127,7 +127,7 @@ namespace Supabase
                 PrepareV1GetOrganizationEntitlementsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    slug: slug);
+                    slug: slug!);
 
                 return __httpRequest;
             }

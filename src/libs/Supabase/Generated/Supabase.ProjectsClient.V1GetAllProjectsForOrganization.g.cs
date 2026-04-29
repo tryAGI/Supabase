@@ -173,7 +173,7 @@ namespace Supabase
                 PrepareV1GetAllProjectsForOrganizationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    slug: slug,
+                    slug: slug!,
                     offset: offset,
                     limit: limit,
                     search: search,

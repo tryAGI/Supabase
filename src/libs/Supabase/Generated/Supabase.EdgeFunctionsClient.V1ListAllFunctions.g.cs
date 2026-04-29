@@ -127,7 +127,7 @@ namespace Supabase
                 PrepareV1ListAllFunctionsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref);
+                    @ref: @ref!);
 
                 return __httpRequest;
             }

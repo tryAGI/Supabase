@@ -149,7 +149,7 @@ namespace Supabase
                 PrepareV1UpsertAMigrationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
+                    @ref: @ref!,
                     idempotencyKey: idempotencyKey,
                     request: request);
 
