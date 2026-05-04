@@ -17,7 +17,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.JitAccessResponse> V1UpdateJitAccessConfigAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.JitStateResponse> V1UpdateJitAccessConfigAsync(
             string @ref,
 
             global::Supabase.JitAccessRequestRequest request,
@@ -36,7 +36,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.JitAccessResponse> V1UpdateJitAccessConfigAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.JitStateResponse> V1UpdateJitAccessConfigAsync(
             string @ref,
             global::Supabase.JitAccessRequestRequestState state,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

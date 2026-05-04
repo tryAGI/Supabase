@@ -3177,7 +3177,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/JitAccessResponse"
+                  "$ref": "#/components/schemas/JitStateResponse"
                 }
               }
             }
@@ -3254,7 +3254,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/JitAccessResponse"
+                  "$ref": "#/components/schemas/JitStateResponse"
                 }
               }
             }
@@ -13862,68 +13862,52 @@
           "custom_hostname": "docs.example.com"
         }
       },
-      "JitAccessResponse": {
-        "type": "object",
-        "properties": {
-          "user_id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "user_roles": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "role": {
-                  "type": "string",
-                  "minLength": 1
-                },
-                "expires_at": {
-                  "type": "number"
-                },
-                "allowed_networks": {
-                  "type": "object",
-                  "properties": {
-                    "allowed_cidrs": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "cidr": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "cidr"
-                        ]
-                      }
-                    },
-                    "allowed_cidrs_v6": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "cidr": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "cidr"
-                        ]
-                      }
-                    }
-                  }
-                }
-              },
-              "required": [
-                "role"
-              ]
-            }
-          }
+      "JitStateResponse": {
+        "discriminator": {
+          "propertyName": "state"
         },
-        "required": [
-          "user_id",
-          "user_roles"
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "state": {
+                "type": "string",
+                "enum": [
+                  "enabled",
+                  "disabled"
+                ]
+              },
+              "appliedSuccessfully": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "state"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "state": {
+                "type": "string",
+                "enum": [
+                  "unavailable"
+                ]
+              },
+              "unavailableReason": {
+                "type": "string",
+                "enum": [
+                  "manual_migration_required",
+                  "postgres_upgrade_required",
+                  "temporarily_unavailable"
+                ]
+              }
+            },
+            "required": [
+              "state",
+              "unavailableReason"
+            ]
+          }
         ]
       },
       "JitAccessRequestRequest": {
@@ -18939,6 +18923,70 @@
         },
         "required": [
           "message"
+        ]
+      },
+      "JitAccessResponse": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "user_roles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "expires_at": {
+                  "type": "number"
+                },
+                "allowed_networks": {
+                  "type": "object",
+                  "properties": {
+                    "allowed_cidrs": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "cidr": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "cidr"
+                        ]
+                      }
+                    },
+                    "allowed_cidrs_v6": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "cidr": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "cidr"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "required": [
+                "role"
+              ]
+            }
+          }
+        },
+        "required": [
+          "user_id",
+          "user_roles"
         ]
       },
       "AuthorizeJitAccessBody": {

@@ -221,6 +221,18 @@ namespace Supabase
 
             typeof(global::Supabase.JsonConverters.UpdateCustomHostnameResponseStatusNullableJsonConverter),
 
+            typeof(global::Supabase.JsonConverters.JitStateResponseVariant1StateJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.JitStateResponseVariant1StateNullableJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.JitStateResponseVariant2StateJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.JitStateResponseVariant2StateNullableJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.JitStateResponseVariant2UnavailableReasonJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.JitStateResponseVariant2UnavailableReasonNullableJsonConverter),
+
             typeof(global::Supabase.JsonConverters.JitAccessRequestRequestStateJsonConverter),
 
             typeof(global::Supabase.JsonConverters.JitAccessRequestRequestStateNullableJsonConverter),
@@ -827,6 +839,8 @@ namespace Supabase
 
             typeof(global::Supabase.JsonConverters.RegionSelectionJsonConverter),
 
+            typeof(global::Supabase.JsonConverters.JitStateResponseJsonConverter),
+
             typeof(global::Supabase.JsonConverters.PrivateJwkJsonConverter),
 
             typeof(global::Supabase.JsonConverters.Attributes2JsonConverter),
@@ -1014,14 +1028,13 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameResponseDataResultOwnershipVerification))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameBody))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.JitAccessResponseUserRole>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessResponseUserRole))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessResponseUserRoleAllowedNetworks))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidr>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidr))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidrsV6Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidrsV6Item))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitStateResponse), TypeInfoPropertyName = "JitStateResponse2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitStateResponseVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitStateResponseVariant1State), TypeInfoPropertyName = "JitStateResponseVariant1State2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitStateResponseVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitStateResponseVariant2State), TypeInfoPropertyName = "JitStateResponseVariant2State2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitStateResponseVariant2UnavailableReason), TypeInfoPropertyName = "JitStateResponseVariant2UnavailableReason2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitStateResponseDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessRequestRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessRequestRequestState), TypeInfoPropertyName = "JitAccessRequestRequestState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkBanResponse))]
@@ -1263,6 +1276,14 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.GetProjectDbMetadataResponseDatabaseSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1UpdatePasswordBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1UpdatePasswordResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.JitAccessResponseUserRole>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessResponseUserRole))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessResponseUserRoleAllowedNetworks))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidr>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidr))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidrsV6Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidrsV6Item))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AuthorizeJitAccessBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAuthorizeAccessResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAuthorizeAccessResponseUserRole))]
@@ -1505,9 +1526,6 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.UpdateCustomHostnameResponseDataResultSslValidationRecord>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.UpdateCustomHostnameResponseDataResultSslValidationError>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JitAccessResponseUserRole>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidr>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidrsV6Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.NetworkBanResponseEnrichedBannedIpv4Addresse>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.NetworkRestrictionsV2ResponseConfigDbAllowedCidr>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidr>))]
@@ -1534,6 +1552,9 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.V1ListMigrationsResponseItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.GetProjectDbMetadataResponseDatabase>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.GetProjectDbMetadataResponseDatabaseSchema>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JitAccessResponseUserRole>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidr>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JitAccessResponseUserRoleAllowedNetworksAllowedCidrsV6Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JitAuthorizeAccessResponseUserRoleAllowedNetworksAllowedCidr>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JitAuthorizeAccessResponseUserRoleAllowedNetworksAllowedCidrsV6Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JitListAccessResponseItem>))]
