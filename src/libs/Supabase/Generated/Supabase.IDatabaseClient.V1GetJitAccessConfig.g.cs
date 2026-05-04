@@ -16,7 +16,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.JitAccessResponse> V1GetJitAccessConfigAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.JitStateResponse> V1GetJitAccessConfigAsync(
             string @ref,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
