@@ -11,6 +11,13 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required int Id { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("is_physical_backup")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool IsPhysicalBackup { get; set; }
@@ -39,6 +46,7 @@ namespace Supabase
         /// <summary>
         /// Initializes a new instance of the <see cref="V1BackupsResponseBackup" /> class.
         /// </summary>
+        /// <param name="id"></param>
         /// <param name="isPhysicalBackup"></param>
         /// <param name="status"></param>
         /// <param name="insertedAt"></param>
@@ -46,10 +54,12 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public V1BackupsResponseBackup(
+            int id,
             bool isPhysicalBackup,
             global::Supabase.V1BackupsResponseBackupStatus status,
             string insertedAt)
         {
+            this.Id = id;
             this.IsPhysicalBackup = isPhysicalBackup;
             this.Status = status;
             this.InsertedAt = insertedAt ?? throw new global::System.ArgumentNullException(nameof(insertedAt));
