@@ -1441,6 +1441,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1RestorePointPostBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1RestorePointResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1RestorePointResponseStatus), TypeInfoPropertyName = "V1RestorePointResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1RestoreBackupBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1UndoBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ListEntitlementsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.V1ListEntitlementsResponseEntitlement>))]
