@@ -105,6 +105,72 @@ namespace Supabase
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            await V1AuthorizeUserAsResponseAsync(
+                clientId: clientId,
+                responseType: responseType,
+                redirectUri: redirectUri,
+                scope: scope,
+                state: state,
+                responseMode: responseMode,
+                codeChallenge: codeChallenge,
+                codeChallengeMethod: codeChallengeMethod,
+                organizationSlug: organizationSlug,
+                resource: resource,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+        }
+        /// <summary>
+        /// [Beta] Authorize user through oauth
+        /// </summary>
+        /// <param name="clientId">
+        /// Example: 66666666-6666-4666-8666-666666666666
+        /// </param>
+        /// <param name="responseType">
+        /// Example: code
+        /// </param>
+        /// <param name="redirectUri">
+        /// Example: https://app.acme.com/auth/callback
+        /// </param>
+        /// <param name="scope">
+        /// Example: projects:read projects:write
+        /// </param>
+        /// <param name="state">
+        /// Example: st_9f4d3a206b2e4a7e8c91
+        /// </param>
+        /// <param name="responseMode">
+        /// Example: query
+        /// </param>
+        /// <param name="codeChallenge">
+        /// Example: Z_P4EKbGwIkA01e3Y5fp4tMCvn_Ae5nUw7qY7XwkTrQ
+        /// </param>
+        /// <param name="codeChallengeMethod">
+        /// Example: S256
+        /// </param>
+        /// <param name="organizationSlug">
+        /// Example: tsrqponmlkjihgfedcba
+        /// </param>
+        /// <param name="resource"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Supabase.ApiException"></exception>
+#if NET8_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
+#endif
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse> V1AuthorizeUserAsResponseAsync(
+            global::System.Guid clientId,
+            global::Supabase.V1AuthorizeUserResponseType responseType,
+            string redirectUri,
+            string? scope = default,
+            string? state = default,
+            string? responseMode = default,
+            string? codeChallenge = default,
+            global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod = default,
+            string? organizationSlug = default,
+            string? resource = default,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareV1AuthorizeUserArguments(
@@ -142,9 +208,10 @@ namespace Supabase
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Supabase.PathBuilder(
                                 path: "/v1/oauth/authorize",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddRequiredParameter("client_id", clientId.ToString()!)
                                 .AddRequiredParameter("response_type", responseType.ToValueString())
@@ -155,7 +222,7 @@ namespace Supabase
                                 .AddOptionalParameter("code_challenge", codeChallenge)
                                 .AddOptionalParameter("code_challenge_method", codeChallengeMethod?.ToValueString())
                                 .AddOptionalParameter("organization_slug", organizationSlug)
-                                .AddOptionalParameter("resource", resource) 
+                                .AddOptionalParameter("resource", resource)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -236,6 +303,8 @@ namespace Supabase
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -246,6 +315,11 @@ namespace Supabase
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Supabase.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -263,6 +337,8 @@ namespace Supabase
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -272,8 +348,7 @@ namespace Supabase
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Supabase.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -282,6 +357,11 @@ namespace Supabase
                         __attempt < __maxAttempts &&
                         global::Supabase.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Supabase.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -298,14 +378,15 @@ namespace Supabase
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Supabase.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -345,6 +426,8 @@ namespace Supabase
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -365,6 +448,8 @@ namespace Supabase
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
 
@@ -385,6 +470,10 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
+                return new global::Supabase.AutoSDKHttpResponse(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -406,6 +495,10 @@ namespace Supabase
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
+                                    return new global::Supabase.AutoSDKHttpResponse(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

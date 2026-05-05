@@ -26,6 +26,22 @@ namespace Supabase
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Supabase.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.V1PostgrestConfigResponse>> V1UpdatePostgrestServiceConfigAsResponseAsync(
+            string @ref,
+
+            global::Supabase.V1UpdatePostgrestConfigBody request,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Updates project's postgrest config
+        /// </summary>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="dbExtraSearchPath"></param>
         /// <param name="dbSchema"></param>
         /// <param name="maxRows"></param>
