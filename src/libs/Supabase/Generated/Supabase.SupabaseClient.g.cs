@@ -47,7 +47,7 @@ namespace Supabase
         /// <summary>
         /// Analytics related endpoints.
         /// </summary>
-        public AnalyticsClient Analytics => new AnalyticsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public AnalyticsClient Analytics => new AnalyticsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -57,7 +57,7 @@ namespace Supabase
         /// <summary>
         /// Auth related endpoints.
         /// </summary>
-        public AuthClient Auth => new AuthClient(HttpClient, authorizations: Authorizations, options: Options)
+        public AuthClient Auth => new AuthClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -67,7 +67,7 @@ namespace Supabase
         /// <summary>
         /// Billing related endpoints.
         /// </summary>
-        public BillingClient Billing => new BillingClient(HttpClient, authorizations: Authorizations, options: Options)
+        public BillingClient Billing => new BillingClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -77,7 +77,7 @@ namespace Supabase
         /// <summary>
         /// Database related endpoints.
         /// </summary>
-        public DatabaseClient Database => new DatabaseClient(HttpClient, authorizations: Authorizations, options: Options)
+        public DatabaseClient Database => new DatabaseClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -87,7 +87,7 @@ namespace Supabase
         /// <summary>
         /// Domains related endpoints.
         /// </summary>
-        public DomainsClient Domains => new DomainsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public DomainsClient Domains => new DomainsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -97,7 +97,7 @@ namespace Supabase
         /// <summary>
         /// Edge related endpoints.
         /// </summary>
-        public EdgeFunctionsClient EdgeFunctions => new EdgeFunctionsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public EdgeFunctionsClient EdgeFunctions => new EdgeFunctionsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -107,7 +107,7 @@ namespace Supabase
         /// <summary>
         /// Environments related endpoints.
         /// </summary>
-        public EnvironmentsClient Environments => new EnvironmentsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public EnvironmentsClient Environments => new EnvironmentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -117,7 +117,7 @@ namespace Supabase
         /// <summary>
         /// OAuth related endpoints.
         /// </summary>
-        public OAuthClient OAuth => new OAuthClient(HttpClient, authorizations: Authorizations, options: Options)
+        public OAuthClient OAuth => new OAuthClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -127,7 +127,7 @@ namespace Supabase
         /// <summary>
         /// Organizations related endpoints.
         /// </summary>
-        public OrganizationsClient Organizations => new OrganizationsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public OrganizationsClient Organizations => new OrganizationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -137,7 +137,7 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public ProfileClient Profile => new ProfileClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ProfileClient Profile => new ProfileClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -147,7 +147,7 @@ namespace Supabase
         /// <summary>
         /// Projects related endpoints.
         /// </summary>
-        public ProjectsClient Projects => new ProjectsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ProjectsClient Projects => new ProjectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -157,7 +157,7 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public RealtimeClient Realtime => new RealtimeClient(HttpClient, authorizations: Authorizations, options: Options)
+        public RealtimeClient Realtime => new RealtimeClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -167,7 +167,7 @@ namespace Supabase
         /// <summary>
         /// Rest related endpoints.
         /// </summary>
-        public RestClient Rest => new RestClient(HttpClient, authorizations: Authorizations, options: Options)
+        public RestClient Rest => new RestClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -177,7 +177,7 @@ namespace Supabase
         /// <summary>
         /// Secrets related endpoints.
         /// </summary>
-        public SecretsClient Secrets => new SecretsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SecretsClient Secrets => new SecretsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -187,7 +187,7 @@ namespace Supabase
         /// <summary>
         /// Visit [https://supabase.github.io/storage/](https://supabase.github.io/storage/) for complete documentation.
         /// </summary>
-        public StorageClient Storage => new StorageClient(HttpClient, authorizations: Authorizations, options: Options)
+        public StorageClient Storage => new StorageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -227,10 +227,10 @@ namespace Supabase
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public SupabaseClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::Supabase.EndPointAuthorization>? authorizations = null,
-            global::Supabase.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::Supabase.EndPointAuthorization>? authorizations,
+            global::Supabase.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 

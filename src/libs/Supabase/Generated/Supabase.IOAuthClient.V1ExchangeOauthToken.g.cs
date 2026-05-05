@@ -22,6 +22,21 @@ namespace Supabase
         /// <summary>
         /// [Beta] Exchange auth code for user's access and refresh token
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Supabase.ApiException"></exception>
+#if NET8_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
+#endif
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.OAuthTokenResponse>> V1ExchangeOauthTokenAsResponseAsync(
+
+            global::Supabase.OAuthTokenBody request,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// [Beta] Exchange auth code for user's access and refresh token
+        /// </summary>
         /// <param name="grantType"></param>
         /// <param name="clientId"></param>
         /// <param name="clientSecret"></param>

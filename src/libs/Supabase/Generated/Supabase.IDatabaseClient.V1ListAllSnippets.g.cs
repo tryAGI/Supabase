@@ -25,5 +25,26 @@ namespace Supabase
             global::Supabase.V1ListAllSnippetsSortOrder? sortOrder = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Lists SQL snippets for the logged in user
+        /// </summary>
+        /// <param name="projectRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="cursor"></param>
+        /// <param name="limit"></param>
+        /// <param name="sortBy"></param>
+        /// <param name="sortOrder"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Supabase.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SnippetList>> V1ListAllSnippetsAsResponseAsync(
+            string? projectRef = default,
+            string? cursor = default,
+            string? limit = default,
+            global::Supabase.V1ListAllSnippetsSortBy? sortBy = default,
+            global::Supabase.V1ListAllSnippetsSortOrder? sortOrder = default,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
