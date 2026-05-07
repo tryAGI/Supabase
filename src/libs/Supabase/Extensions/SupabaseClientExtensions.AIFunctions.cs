@@ -20,7 +20,7 @@ public static partial class SupabaseClientExtensions
                 async (CancellationToken cancellationToken) =>
                 {
                     var response = await client.Projects.V1ListAllProjectsAsync(
-                        cancellationToken).ConfigureAwait(false);
+                        cancellationToken: cancellationToken).ConfigureAwait(false);
 
                     return response;
                 },
@@ -32,7 +32,7 @@ public static partial class SupabaseClientExtensions
                 {
                     var response = await client.Projects.V1GetProjectAsync(
                         @ref: projectRef,
-                        cancellationToken).ConfigureAwait(false);
+                        cancellationToken: cancellationToken).ConfigureAwait(false);
 
                     return response;
                 },
@@ -43,7 +43,7 @@ public static partial class SupabaseClientExtensions
                 async (CancellationToken cancellationToken) =>
                 {
                     var response = await client.Organizations.V1ListAllOrganizationsAsync(
-                        cancellationToken).ConfigureAwait(false);
+                        cancellationToken: cancellationToken).ConfigureAwait(false);
 
                     return response;
                 },
@@ -55,7 +55,7 @@ public static partial class SupabaseClientExtensions
                 {
                     var response = await client.EdgeFunctions.V1ListAllFunctionsAsync(
                         @ref: projectRef,
-                        cancellationToken).ConfigureAwait(false);
+                        cancellationToken: cancellationToken).ConfigureAwait(false);
 
                     return response;
                 },
