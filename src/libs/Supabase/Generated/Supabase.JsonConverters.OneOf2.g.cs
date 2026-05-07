@@ -3,7 +3,7 @@
 namespace Supabase.JsonConverters
 {
     /// <inheritdoc />
-    public class OneOfJsonConverter<[global::System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(global::System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicProperties)] T1, [global::System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(global::System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicProperties)] T2> : global::System.Text.Json.Serialization.JsonConverter<global::Supabase.OneOf<T1, T2>>
+    public class OneOfJsonConverter<T1, T2> : global::System.Text.Json.Serialization.JsonConverter<global::Supabase.OneOf<T1, T2>>
     {
         /// <inheritdoc />
         public override global::Supabase.OneOf<T1, T2> Read(
