@@ -29,6 +29,19 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickRsa(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1? value)
+        {
+            value = Rsa;
+            return IsRsa;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2? Ec { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Ec))]
 #endif
         public bool IsEc => Ec != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickEc(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2? value)
+        {
+            value = Ec;
+            return IsEc;
+        }
 
         /// <summary>
         /// 
@@ -63,6 +89,19 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickOkp(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3? value)
+        {
+            value = Okp;
+            return IsOkp;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4? Oct { get; init; }
 #else
@@ -76,6 +115,19 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Oct))]
 #endif
         public bool IsOct => Oct != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOct(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4? value)
+        {
+            value = Oct;
+            return IsOct;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -196,10 +248,10 @@ namespace Supabase
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1?, TResult>? rsa = null,
-            global::System.Func<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2?, TResult>? ec = null,
-            global::System.Func<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3?, TResult>? okp = null,
-            global::System.Func<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4?, TResult>? oct = null,
+            global::System.Func<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1, TResult>? rsa = null,
+            global::System.Func<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2, TResult>? ec = null,
+            global::System.Func<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3, TResult>? okp = null,
+            global::System.Func<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4, TResult>? oct = null,
             bool validate = true)
         {
             if (validate)
@@ -231,10 +283,46 @@ namespace Supabase
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1?>? rsa = null,
-            global::System.Action<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2?>? ec = null,
-            global::System.Action<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3?>? okp = null,
-            global::System.Action<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4?>? oct = null,
+            global::System.Action<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1>? rsa = null,
+
+            global::System.Action<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2>? ec = null,
+
+            global::System.Action<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3>? okp = null,
+
+            global::System.Action<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>? oct = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsRsa)
+            {
+                rsa?.Invoke(Rsa!);
+            }
+            else if (IsEc)
+            {
+                ec?.Invoke(Ec!);
+            }
+            else if (IsOkp)
+            {
+                okp?.Invoke(Okp!);
+            }
+            else if (IsOct)
+            {
+                oct?.Invoke(Oct!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1>? rsa = null,
+            global::System.Action<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2>? ec = null,
+            global::System.Action<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3>? okp = null,
+            global::System.Action<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>? oct = null,
             bool validate = true)
         {
             if (validate)
