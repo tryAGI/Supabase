@@ -23,6 +23,10 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        AuthCustomOauthMaxProviders,
+        /// <summary>
+        /// 
+        /// </summary>
         AuthHooks,
         /// <summary>
         /// 
@@ -253,6 +257,7 @@ namespace Supabase
                 V1ListEntitlementsResponseEntitlementFeatureKey.AssistantAdvanceModel => "assistant.advance_model",
                 V1ListEntitlementsResponseEntitlementFeatureKey.AuthAdvancedAuthSettings => "auth.advanced_auth_settings",
                 V1ListEntitlementsResponseEntitlementFeatureKey.AuthCustomJwtTemplate => "auth.custom_jwt_template",
+                V1ListEntitlementsResponseEntitlementFeatureKey.AuthCustomOauthMaxProviders => "auth.custom_oauth.max_providers",
                 V1ListEntitlementsResponseEntitlementFeatureKey.AuthHooks => "auth.hooks",
                 V1ListEntitlementsResponseEntitlementFeatureKey.AuthLeakedPasswordProtection => "auth.leaked_password_protection",
                 V1ListEntitlementsResponseEntitlementFeatureKey.AuthMfaEnhancedSecurity => "auth.mfa_enhanced_security",
@@ -320,6 +325,7 @@ namespace Supabase
                 "assistant.advance_model" => V1ListEntitlementsResponseEntitlementFeatureKey.AssistantAdvanceModel,
                 "auth.advanced_auth_settings" => V1ListEntitlementsResponseEntitlementFeatureKey.AuthAdvancedAuthSettings,
                 "auth.custom_jwt_template" => V1ListEntitlementsResponseEntitlementFeatureKey.AuthCustomJwtTemplate,
+                "auth.custom_oauth.max_providers" => V1ListEntitlementsResponseEntitlementFeatureKey.AuthCustomOauthMaxProviders,
                 "auth.hooks" => V1ListEntitlementsResponseEntitlementFeatureKey.AuthHooks,
                 "auth.leaked_password_protection" => V1ListEntitlementsResponseEntitlementFeatureKey.AuthLeakedPasswordProtection,
                 "auth.mfa_enhanced_security" => V1ListEntitlementsResponseEntitlementFeatureKey.AuthMfaEnhancedSecurity,
