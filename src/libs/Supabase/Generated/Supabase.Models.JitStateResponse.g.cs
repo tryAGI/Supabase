@@ -89,6 +89,11 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public static JitStateResponse FromJitStateResponseVariant1(global::Supabase.JitStateResponseVariant1? value) => new JitStateResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator JitStateResponse(global::Supabase.JitStateResponseVariant2 value) => new JitStateResponse((global::Supabase.JitStateResponseVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Supabase
         {
             Unavailable = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static JitStateResponse FromUnavailable(global::Supabase.JitStateResponseVariant2? value) => new JitStateResponse(value);
 
         /// <summary>
         /// 

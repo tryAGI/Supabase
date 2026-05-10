@@ -94,6 +94,11 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public static RegionSelection FromSpecific(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1? value) => new RegionSelection(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RegionSelection(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2 value) => new RegionSelection((global::Supabase.V1CreateProjectBodyRegionSelectionVariant2?)value);
 
         /// <summary>
@@ -108,6 +113,11 @@ namespace Supabase
         {
             SmartGroup = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RegionSelection FromSmartGroup(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2? value) => new RegionSelection(value);
 
         /// <summary>
         /// 
