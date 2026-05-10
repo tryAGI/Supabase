@@ -12,7 +12,8 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string? Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionDiscriminatorTypeJsonConverter))]
+        public global::Supabase.V1CreateProjectBodyRegionSelectionDiscriminatorType? Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -28,7 +29,7 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public V1CreateProjectBodyRegionSelectionDiscriminator(
-            string? type)
+            global::Supabase.V1CreateProjectBodyRegionSelectionDiscriminatorType? type)
         {
             this.Type = type;
         }

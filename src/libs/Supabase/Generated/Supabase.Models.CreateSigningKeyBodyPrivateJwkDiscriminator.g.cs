@@ -12,7 +12,8 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kty")]
-        public string? Kty { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkDiscriminatorKtyJsonConverter))]
+        public global::Supabase.CreateSigningKeyBodyPrivateJwkDiscriminatorKty? Kty { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -28,7 +29,7 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateSigningKeyBodyPrivateJwkDiscriminator(
-            string? kty)
+            global::Supabase.CreateSigningKeyBodyPrivateJwkDiscriminatorKty? kty)
         {
             this.Kty = kty;
         }

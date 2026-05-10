@@ -12,6 +12,11 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public global::Supabase.CreateSigningKeyBodyPrivateJwkDiscriminatorKty? Kty { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1? Rsa { get; init; }
 #else
@@ -204,12 +209,15 @@ namespace Supabase
         /// 
         /// </summary>
         public PrivateJwk(
+            global::Supabase.CreateSigningKeyBodyPrivateJwkDiscriminatorKty? kty,
             global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1? rsa,
             global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2? ec,
             global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3? okp,
             global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4? oct
             )
         {
+            Kty = kty;
+
             Rsa = rsa;
             Ec = ec;
             Okp = okp;

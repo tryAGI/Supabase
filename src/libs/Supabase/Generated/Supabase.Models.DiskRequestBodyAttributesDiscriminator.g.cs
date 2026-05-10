@@ -12,7 +12,8 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string? Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesDiscriminatorTypeJsonConverter))]
+        public global::Supabase.DiskRequestBodyAttributesDiscriminatorType? Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -28,7 +29,7 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public DiskRequestBodyAttributesDiscriminator(
-            string? type)
+            global::Supabase.DiskRequestBodyAttributesDiscriminatorType? type)
         {
             this.Type = type;
         }

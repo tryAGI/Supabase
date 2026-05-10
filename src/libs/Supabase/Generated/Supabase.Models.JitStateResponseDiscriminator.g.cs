@@ -12,7 +12,8 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("state")]
-        public string? State { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.JitStateResponseDiscriminatorStateJsonConverter))]
+        public global::Supabase.JitStateResponseDiscriminatorState? State { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -28,7 +29,7 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public JitStateResponseDiscriminator(
-            string? state)
+            global::Supabase.JitStateResponseDiscriminatorState? state)
         {
             this.State = state;
         }

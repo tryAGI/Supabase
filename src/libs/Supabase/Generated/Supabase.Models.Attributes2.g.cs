@@ -12,6 +12,11 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public global::Supabase.DiskRequestBodyAttributesDiscriminatorType? Type { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.DiskRequestBodyAttributesVariant1? Gp3 { get; init; }
 #else
@@ -108,10 +113,13 @@ namespace Supabase
         /// 
         /// </summary>
         public Attributes2(
+            global::Supabase.DiskRequestBodyAttributesDiscriminatorType? type,
             global::Supabase.DiskRequestBodyAttributesVariant1? gp3,
             global::Supabase.DiskRequestBodyAttributesVariant2? io2
             )
         {
+            Type = type;
+
             Gp3 = gp3;
             Io2 = io2;
         }
