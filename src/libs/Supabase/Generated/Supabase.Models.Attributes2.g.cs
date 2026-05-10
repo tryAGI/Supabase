@@ -94,6 +94,11 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public static Attributes2 FromGp3(global::Supabase.DiskRequestBodyAttributesVariant1? value) => new Attributes2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Attributes2(global::Supabase.DiskRequestBodyAttributesVariant2 value) => new Attributes2((global::Supabase.DiskRequestBodyAttributesVariant2?)value);
 
         /// <summary>
@@ -108,6 +113,11 @@ namespace Supabase
         {
             Io2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Attributes2 FromIo2(global::Supabase.DiskRequestBodyAttributesVariant2? value) => new Attributes2(value);
 
         /// <summary>
         /// 

@@ -154,6 +154,11 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public static PrivateJwk FromRsa(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1? value) => new PrivateJwk(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PrivateJwk(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2 value) => new PrivateJwk((global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2?)value);
 
         /// <summary>
@@ -168,6 +173,11 @@ namespace Supabase
         {
             Ec = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PrivateJwk FromEc(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2? value) => new PrivateJwk(value);
 
         /// <summary>
         /// 
@@ -190,6 +200,11 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public static PrivateJwk FromOkp(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3? value) => new PrivateJwk(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PrivateJwk(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4 value) => new PrivateJwk((global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4?)value);
 
         /// <summary>
@@ -204,6 +219,11 @@ namespace Supabase
         {
             Oct = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PrivateJwk FromOct(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4? value) => new PrivateJwk(value);
 
         /// <summary>
         /// 
