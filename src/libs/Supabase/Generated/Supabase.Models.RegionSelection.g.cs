@@ -12,6 +12,11 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public global::Supabase.V1CreateProjectBodyRegionSelectionDiscriminatorType? Type { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.V1CreateProjectBodyRegionSelectionVariant1? Specific { get; init; }
 #else
@@ -108,10 +113,13 @@ namespace Supabase
         /// 
         /// </summary>
         public RegionSelection(
+            global::Supabase.V1CreateProjectBodyRegionSelectionDiscriminatorType? type,
             global::Supabase.V1CreateProjectBodyRegionSelectionVariant1? specific,
             global::Supabase.V1CreateProjectBodyRegionSelectionVariant2? smartGroup
             )
         {
+            Type = type;
+
             Specific = specific;
             SmartGroup = smartGroup;
         }

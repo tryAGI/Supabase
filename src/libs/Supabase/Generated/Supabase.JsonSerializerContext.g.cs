@@ -69,6 +69,10 @@ namespace Supabase
 
             typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeNullableJsonConverter),
 
+            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionDiscriminatorTypeNullableJsonConverter),
+
             typeof(global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeJsonConverter),
 
             typeof(global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeNullableJsonConverter),
@@ -232,6 +236,10 @@ namespace Supabase
             typeof(global::Supabase.JsonConverters.JitStateResponseVariant2UnavailableReasonJsonConverter),
 
             typeof(global::Supabase.JsonConverters.JitStateResponseVariant2UnavailableReasonNullableJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.JitStateResponseDiscriminatorStateJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.JitStateResponseDiscriminatorStateNullableJsonConverter),
 
             typeof(global::Supabase.JsonConverters.JitAccessRequestRequestStateJsonConverter),
 
@@ -432,6 +440,10 @@ namespace Supabase
             typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgJsonConverter),
 
             typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgNullableJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkDiscriminatorKtyJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkDiscriminatorKtyNullableJsonConverter),
 
             typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmJsonConverter),
 
@@ -644,6 +656,10 @@ namespace Supabase
             typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeJsonConverter),
 
             typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeNullableJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesDiscriminatorTypeJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesDiscriminatorTypeNullableJsonConverter),
 
             typeof(global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetJsonConverter),
 
@@ -948,6 +964,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2Type), TypeInfoPropertyName = "V1CreateProjectBodyRegionSelectionVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2Code), TypeInfoPropertyName = "V1CreateProjectBodyRegionSelectionVariant2Code2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1CreateProjectBodyRegionSelectionDiscriminator))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1CreateProjectBodyRegionSelectionDiscriminatorType), TypeInfoPropertyName = "V1CreateProjectBodyRegionSelectionDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1CreateProjectBodyDesiredInstanceSize), TypeInfoPropertyName = "V1CreateProjectBodyDesiredInstanceSize2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectResponseStatus), TypeInfoPropertyName = "V1ProjectResponseStatus2")]
@@ -1049,6 +1066,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitStateResponseVariant2State), TypeInfoPropertyName = "JitStateResponseVariant2State2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitStateResponseVariant2UnavailableReason), TypeInfoPropertyName = "JitStateResponseVariant2UnavailableReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitStateResponseDiscriminator))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitStateResponseDiscriminatorState), TypeInfoPropertyName = "JitStateResponseDiscriminatorState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessRequestRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessRequestRequestState), TypeInfoPropertyName = "JitAccessRequestRequestState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkBanResponse))]
@@ -1173,6 +1191,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Kty), TypeInfoPropertyName = "CreateSigningKeyBodyPrivateJwkVariant4Kty2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Alg), TypeInfoPropertyName = "CreateSigningKeyBodyPrivateJwkVariant4Alg2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkDiscriminator))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkDiscriminatorKty), TypeInfoPropertyName = "CreateSigningKeyBodyPrivateJwkDiscriminatorKty2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SigningKeysResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.SigningKeysResponseKey>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SigningKeysResponseKey))]
@@ -1353,6 +1372,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskRequestBodyAttributesVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskRequestBodyAttributesVariant2Type), TypeInfoPropertyName = "DiskRequestBodyAttributesVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskRequestBodyAttributesDiscriminator))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskRequestBodyAttributesDiscriminatorType), TypeInfoPropertyName = "DiskRequestBodyAttributesDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskUtilMetricsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskUtilMetricsResponseMetrics))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskAutoscaleConfig))]
@@ -1395,10 +1415,6 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OneOf<object, double?, string, bool?>), TypeInfoPropertyName = "OneOfObjectDoubleStringBoolean2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateProviderBodyNameIdFormat), TypeInfoPropertyName = "CreateProviderBodyNameIdFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateProviderResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateProviderResponseSaml))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateProviderResponseSamlAttributeMapping))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.CreateProviderResponseSamlAttributeMappingKeys2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateProviderResponseSamlAttributeMappingKeys2))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1465,6 +1481,10 @@ namespace Supabase
             typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeJsonConverter),
 
             typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeNullableJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionDiscriminatorTypeNullableJsonConverter),
 
             typeof(global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeJsonConverter),
 
@@ -1629,6 +1649,10 @@ namespace Supabase
             typeof(global::Supabase.JsonConverters.JitStateResponseVariant2UnavailableReasonJsonConverter),
 
             typeof(global::Supabase.JsonConverters.JitStateResponseVariant2UnavailableReasonNullableJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.JitStateResponseDiscriminatorStateJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.JitStateResponseDiscriminatorStateNullableJsonConverter),
 
             typeof(global::Supabase.JsonConverters.JitAccessRequestRequestStateJsonConverter),
 
@@ -1829,6 +1853,10 @@ namespace Supabase
             typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgJsonConverter),
 
             typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgNullableJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkDiscriminatorKtyJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkDiscriminatorKtyNullableJsonConverter),
 
             typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmJsonConverter),
 
@@ -2041,6 +2069,10 @@ namespace Supabase
             typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeJsonConverter),
 
             typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeNullableJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesDiscriminatorTypeJsonConverter),
+
+            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesDiscriminatorTypeNullableJsonConverter),
 
             typeof(global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetJsonConverter),
 
@@ -2310,6 +2342,10 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OneOf<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3>?), TypeInfoPropertyName = "V1ListEntitlementsResponseEntitlementConfigVariant3_ae215b0663d5218f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OneOf<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?>?), TypeInfoPropertyName = "V1RemoveProjectAddonAddonVariantVariant4_11c9f361b47c842e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseValidationErrorVariant8_0c2f67bf3df671ee")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateProviderResponseSaml))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateProviderResponseSamlAttributeMapping))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.CreateProviderResponseSamlAttributeMappingKeys2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateProviderResponseSamlAttributeMappingKeys2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateProviderResponseSamlNameIdFormat), TypeInfoPropertyName = "CreateProviderResponseSamlNameIdFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.CreateProviderResponseDomain>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateProviderResponseDomain))]
@@ -2583,6 +2619,8 @@ namespace Supabase
             options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2TypeNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeNullableJsonConverter());
+            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionDiscriminatorTypeNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectResponseStatusJsonConverter());
@@ -2665,6 +2703,8 @@ namespace Supabase
             options.Converters.Add(new global::Supabase.JsonConverters.JitStateResponseVariant2StateNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.JitStateResponseVariant2UnavailableReasonJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.JitStateResponseVariant2UnavailableReasonNullableJsonConverter());
+            options.Converters.Add(new global::Supabase.JsonConverters.JitStateResponseDiscriminatorStateJsonConverter());
+            options.Converters.Add(new global::Supabase.JsonConverters.JitStateResponseDiscriminatorStateNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.JitAccessRequestRequestStateJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.JitAccessRequestRequestStateNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsResponseEntitlementJsonConverter());
@@ -2765,6 +2805,8 @@ namespace Supabase
             options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KtyNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgNullableJsonConverter());
+            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkDiscriminatorKtyJsonConverter());
+            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkDiscriminatorKtyNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.SigningKeysResponseKeyStatusJsonConverter());
@@ -2871,6 +2913,8 @@ namespace Supabase
             options.Converters.Add(new global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant1TypeNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Supabase.JsonConverters.DiskRequestBodyAttributesDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Supabase.JsonConverters.DiskRequestBodyAttributesDiscriminatorTypeNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.UpdateStorageConfigBodyExternalUpstreamTargetJsonConverter());
