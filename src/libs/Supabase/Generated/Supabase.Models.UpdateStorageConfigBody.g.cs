@@ -57,5 +57,6 @@ namespace Supabase
         public UpdateStorageConfigBody()
         {
         }
+
     }
 }

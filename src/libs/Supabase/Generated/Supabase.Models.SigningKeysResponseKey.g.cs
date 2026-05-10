@@ -91,5 +91,6 @@ namespace Supabase
         public SigningKeysResponseKey()
         {
         }
+
     }
 }

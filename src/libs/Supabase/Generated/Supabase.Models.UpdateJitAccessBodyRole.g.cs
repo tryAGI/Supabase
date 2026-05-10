@@ -58,5 +58,6 @@ namespace Supabase
         public UpdateJitAccessBodyRole()
         {
         }
+
     }
 }

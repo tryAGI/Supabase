@@ -47,6 +47,13 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public global::Supabase.DiskRequestBodyAttributesVariant1 PickGp3() => IsGp3
+            ? Gp3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Gp3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.DiskRequestBodyAttributesVariant2? Io2 { get; init; }
 #else
@@ -73,6 +80,13 @@ namespace Supabase
             value = Io2;
             return IsIo2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.DiskRequestBodyAttributesVariant2 PickIo2() => IsIo2
+            ? Io2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Io2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

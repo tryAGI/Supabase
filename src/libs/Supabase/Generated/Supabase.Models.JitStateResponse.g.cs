@@ -42,6 +42,13 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public global::Supabase.JitStateResponseVariant1 PickJitStateResponseVariant1() => IsJitStateResponseVariant1
+            ? JitStateResponseVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JitStateResponseVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.JitStateResponseVariant2? Unavailable { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Supabase
             value = Unavailable;
             return IsUnavailable;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.JitStateResponseVariant2 PickUnavailable() => IsUnavailable
+            ? Unavailable!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Unavailable' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

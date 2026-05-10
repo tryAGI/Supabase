@@ -39,5 +39,6 @@ namespace Supabase
         public NetworkRestrictionsV2ResponseConfig()
         {
         }
+
     }
 }

@@ -2175,5 +2175,6 @@ namespace Supabase
         public AuthConfigResponse()
         {
         }
+
     }
 }

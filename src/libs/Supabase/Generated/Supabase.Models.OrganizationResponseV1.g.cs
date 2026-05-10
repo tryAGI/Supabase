@@ -69,5 +69,6 @@ namespace Supabase
         public OrganizationResponseV1()
         {
         }
+
     }
 }

@@ -271,5 +271,6 @@ namespace Supabase
         public UpdatePostgresConfigBody()
         {
         }
+
     }
 }

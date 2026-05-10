@@ -152,5 +152,6 @@ namespace Supabase
         public SupavisorConfigResponse()
         {
         }
+
     }
 }

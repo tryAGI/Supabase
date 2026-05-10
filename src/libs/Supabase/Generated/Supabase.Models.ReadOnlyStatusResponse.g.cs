@@ -60,5 +60,6 @@ namespace Supabase
         public ReadOnlyStatusResponse()
         {
         }
+
     }
 }

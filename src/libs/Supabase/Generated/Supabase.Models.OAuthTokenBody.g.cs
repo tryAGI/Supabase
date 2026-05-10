@@ -114,5 +114,6 @@ namespace Supabase
         public OAuthTokenBody()
         {
         }
+
     }
 }

@@ -129,5 +129,6 @@ namespace Supabase
         public OrganizationProjectsResponseProjectDatabase()
         {
         }
+
     }
 }

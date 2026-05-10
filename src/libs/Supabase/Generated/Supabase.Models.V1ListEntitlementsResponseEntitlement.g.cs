@@ -72,5 +72,6 @@ namespace Supabase
         public V1ListEntitlementsResponseEntitlement()
         {
         }
+
     }
 }
