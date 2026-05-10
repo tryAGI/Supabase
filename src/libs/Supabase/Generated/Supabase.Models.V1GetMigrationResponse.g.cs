@@ -85,5 +85,6 @@ namespace Supabase
         public V1GetMigrationResponse()
         {
         }
+
     }
 }

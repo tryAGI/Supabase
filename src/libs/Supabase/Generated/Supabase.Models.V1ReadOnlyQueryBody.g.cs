@@ -49,5 +49,6 @@ namespace Supabase
         public V1ReadOnlyQueryBody()
         {
         }
+
     }
 }

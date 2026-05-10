@@ -112,5 +112,6 @@ namespace Supabase
         public V1PgbouncerConfigResponse()
         {
         }
+
     }
 }

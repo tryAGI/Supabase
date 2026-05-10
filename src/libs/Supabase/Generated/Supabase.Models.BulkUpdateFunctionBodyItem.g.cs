@@ -135,5 +135,6 @@ namespace Supabase
         public BulkUpdateFunctionBodyItem()
         {
         }
+
     }
 }

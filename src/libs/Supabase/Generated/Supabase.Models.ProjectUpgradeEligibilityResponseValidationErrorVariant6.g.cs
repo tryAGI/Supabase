@@ -70,5 +70,6 @@ namespace Supabase
         public ProjectUpgradeEligibilityResponseValidationErrorVariant6()
         {
         }
+
     }
 }

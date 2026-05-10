@@ -78,5 +78,6 @@ namespace Supabase
         public V1ProjectWithDatabaseResponseDatabase()
         {
         }
+
     }
 }

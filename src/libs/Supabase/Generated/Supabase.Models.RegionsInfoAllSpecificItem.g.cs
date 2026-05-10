@@ -82,5 +82,6 @@ namespace Supabase
         public RegionsInfoAllSpecificItem()
         {
         }
+
     }
 }

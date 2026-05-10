@@ -80,5 +80,6 @@ namespace Supabase
         public AnalyticsResponseErrorError()
         {
         }
+
     }
 }

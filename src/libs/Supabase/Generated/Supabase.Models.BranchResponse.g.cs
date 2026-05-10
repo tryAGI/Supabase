@@ -195,5 +195,6 @@ namespace Supabase
         public BranchResponse()
         {
         }
+
     }
 }

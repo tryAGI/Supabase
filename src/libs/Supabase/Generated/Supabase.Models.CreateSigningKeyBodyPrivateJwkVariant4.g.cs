@@ -97,5 +97,6 @@ namespace Supabase
         public CreateSigningKeyBodyPrivateJwkVariant4()
         {
         }
+
     }
 }

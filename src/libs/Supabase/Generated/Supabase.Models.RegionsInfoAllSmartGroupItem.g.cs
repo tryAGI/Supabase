@@ -61,5 +61,6 @@ namespace Supabase
         public RegionsInfoAllSmartGroupItem()
         {
         }
+
     }
 }

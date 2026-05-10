@@ -47,6 +47,13 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public global::Supabase.V1CreateProjectBodyRegionSelectionVariant1 PickSpecific() => IsSpecific
+            ? Specific!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Specific' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.V1CreateProjectBodyRegionSelectionVariant2? SmartGroup { get; init; }
 #else
@@ -73,6 +80,13 @@ namespace Supabase
             value = SmartGroup;
             return IsSmartGroup;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1CreateProjectBodyRegionSelectionVariant2 PickSmartGroup() => IsSmartGroup
+            ? SmartGroup!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SmartGroup' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

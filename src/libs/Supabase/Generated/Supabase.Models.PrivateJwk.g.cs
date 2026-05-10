@@ -47,6 +47,13 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1 PickRsa() => IsRsa
+            ? Rsa!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Rsa' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2? Ec { get; init; }
 #else
@@ -73,6 +80,13 @@ namespace Supabase
             value = Ec;
             return IsEc;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2 PickEc() => IsEc
+            ? Ec!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Ec' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -107,6 +121,13 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3 PickOkp() => IsOkp
+            ? Okp!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Okp' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4? Oct { get; init; }
 #else
@@ -133,6 +154,13 @@ namespace Supabase
             value = Oct;
             return IsOct;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4 PickOct() => IsOct
+            ? Oct!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Oct' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
