@@ -27,11 +27,13 @@ namespace Supabase
             };
         partial void PrepareV1DeleteHostnameConfigArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string @ref);
+            ref string @ref,
+            ref bool? removeAddon);
         partial void PrepareV1DeleteHostnameConfigRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string @ref);
+            string @ref,
+            bool? removeAddon);
         partial void ProcessV1DeleteHostnameConfigResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -42,6 +44,9 @@ namespace Supabase
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
+        /// <param name="removeAddon">
+        /// Default Value: false
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -50,11 +55,13 @@ namespace Supabase
 #endif
         public async global::System.Threading.Tasks.Task V1DeleteHostnameConfigAsync(
             string @ref,
+            bool? removeAddon = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             await V1DeleteHostnameConfigAsResponseAsync(
                 @ref: @ref,
+                removeAddon: removeAddon,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -65,6 +72,9 @@ namespace Supabase
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
+        /// <param name="removeAddon">
+        /// Default Value: false
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -73,6 +83,7 @@ namespace Supabase
 #endif
         public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse> V1DeleteHostnameConfigAsResponseAsync(
             string @ref,
+            bool? removeAddon = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -80,7 +91,8 @@ namespace Supabase
                 client: HttpClient);
             PrepareV1DeleteHostnameConfigArguments(
                 httpClient: HttpClient,
-                @ref: ref @ref);
+                @ref: ref @ref,
+                removeAddon: ref removeAddon);
 
 
             var __authorizations = global::Supabase.EndPointSecurityResolver.ResolveAuthorizations(
@@ -108,6 +120,9 @@ namespace Supabase
                             var __pathBuilder = new global::Supabase.PathBuilder(
                                 path: $"/v1/projects/{@ref}/custom-hostname",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddOptionalParameter("remove_addon", removeAddon?.ToString().ToLowerInvariant())
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
@@ -148,7 +163,8 @@ namespace Supabase
                 PrepareV1DeleteHostnameConfigRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref!);
+                    @ref: @ref!,
+                    removeAddon: removeAddon);
 
                 return __httpRequest;
             }
