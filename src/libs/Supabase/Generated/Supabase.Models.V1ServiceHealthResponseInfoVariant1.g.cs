@@ -60,5 +60,6 @@ namespace Supabase
         public V1ServiceHealthResponseInfoVariant1()
         {
         }
+
     }
 }

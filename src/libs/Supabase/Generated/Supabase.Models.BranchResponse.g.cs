@@ -72,7 +72,7 @@ namespace Supabase
         public required bool Persistent { get; set; }
 
         /// <summary>
-        /// 
+        /// This field is deprecated. List action runs to get branch status instead.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.BranchResponseStatusJsonConverter))]
@@ -140,7 +140,9 @@ namespace Supabase
         /// <param name="parentProjectRef"></param>
         /// <param name="isDefault"></param>
         /// <param name="persistent"></param>
-        /// <param name="status"></param>
+        /// <param name="status">
+        /// This field is deprecated. List action runs to get branch status instead.
+        /// </param>
         /// <param name="createdAt"></param>
         /// <param name="updatedAt"></param>
         /// <param name="withData"></param>
@@ -195,5 +197,6 @@ namespace Supabase
         public BranchResponse()
         {
         }
+
     }
 }

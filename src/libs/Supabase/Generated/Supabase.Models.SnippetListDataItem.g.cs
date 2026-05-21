@@ -140,5 +140,6 @@ namespace Supabase
         public SnippetListDataItem()
         {
         }
+
     }
 }

@@ -115,5 +115,6 @@ namespace Supabase
         public ThirdPartyAuth()
         {
         }
+
     }
 }

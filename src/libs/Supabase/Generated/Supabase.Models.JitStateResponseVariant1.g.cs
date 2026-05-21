@@ -50,5 +50,6 @@ namespace Supabase
         public JitStateResponseVariant1()
         {
         }
+
     }
 }

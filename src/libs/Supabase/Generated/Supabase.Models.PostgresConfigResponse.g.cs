@@ -262,5 +262,6 @@ namespace Supabase
         public PostgresConfigResponse()
         {
         }
+
     }
 }

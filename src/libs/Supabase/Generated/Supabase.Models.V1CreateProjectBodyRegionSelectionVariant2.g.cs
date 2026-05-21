@@ -53,5 +53,6 @@ namespace Supabase
         public V1CreateProjectBodyRegionSelectionVariant2()
         {
         }
+
     }
 }

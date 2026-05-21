@@ -146,5 +146,6 @@ namespace Supabase
         public BulkUpdateFunctionResponseFunction()
         {
         }
+
     }
 }

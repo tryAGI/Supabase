@@ -71,5 +71,6 @@ namespace Supabase
         public V1PostgrestConfigResponse()
         {
         }
+
     }
 }

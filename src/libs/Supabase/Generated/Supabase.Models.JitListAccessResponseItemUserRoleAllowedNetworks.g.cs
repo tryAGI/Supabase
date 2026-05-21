@@ -48,5 +48,6 @@ namespace Supabase
         public JitListAccessResponseItemUserRoleAllowedNetworks()
         {
         }
+
     }
 }

@@ -131,5 +131,6 @@ namespace Supabase
         public V1ProjectAdvisorsResponseLint()
         {
         }
+
     }
 }

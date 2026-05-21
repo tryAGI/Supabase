@@ -99,5 +99,6 @@ namespace Supabase
         public UpdateCustomHostnameResponseDataResult()
         {
         }
+
     }
 }

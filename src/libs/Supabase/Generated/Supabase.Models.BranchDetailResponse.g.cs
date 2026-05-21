@@ -128,5 +128,6 @@ namespace Supabase
         public BranchDetailResponse()
         {
         }
+
     }
 }

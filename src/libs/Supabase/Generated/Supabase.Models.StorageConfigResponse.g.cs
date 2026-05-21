@@ -90,5 +90,6 @@ namespace Supabase
         public StorageConfigResponse()
         {
         }
+
     }
 }

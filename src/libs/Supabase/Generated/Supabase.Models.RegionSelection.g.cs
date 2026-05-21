@@ -12,6 +12,11 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public global::Supabase.V1CreateProjectBodyRegionSelectionDiscriminatorType? Type { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.V1CreateProjectBodyRegionSelectionVariant1? Specific { get; init; }
 #else
@@ -29,6 +34,26 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSpecific(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Supabase.V1CreateProjectBodyRegionSelectionVariant1? value)
+        {
+            value = Specific;
+            return IsSpecific;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1CreateProjectBodyRegionSelectionVariant1 PickSpecific() => IsSpecific
+            ? Specific!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Specific' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.V1CreateProjectBodyRegionSelectionVariant2? SmartGroup { get; init; }
 #else
@@ -42,6 +67,26 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SmartGroup))]
 #endif
         public bool IsSmartGroup => SmartGroup != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSmartGroup(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Supabase.V1CreateProjectBodyRegionSelectionVariant2? value)
+        {
+            value = SmartGroup;
+            return IsSmartGroup;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1CreateProjectBodyRegionSelectionVariant2 PickSmartGroup() => IsSmartGroup
+            ? SmartGroup!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SmartGroup' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +104,11 @@ namespace Supabase
         {
             Specific = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RegionSelection FromSpecific(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1? value) => new RegionSelection(value);
 
         /// <summary>
         /// 
@@ -81,11 +131,19 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public static RegionSelection FromSmartGroup(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2? value) => new RegionSelection(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public RegionSelection(
+            global::Supabase.V1CreateProjectBodyRegionSelectionDiscriminatorType? type,
             global::Supabase.V1CreateProjectBodyRegionSelectionVariant1? specific,
             global::Supabase.V1CreateProjectBodyRegionSelectionVariant2? smartGroup
             )
         {
+            Type = type;
+
             Specific = specific;
             SmartGroup = smartGroup;
         }
@@ -118,8 +176,8 @@ namespace Supabase
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1?, TResult>? specific = null,
-            global::System.Func<global::Supabase.V1CreateProjectBodyRegionSelectionVariant2?, TResult>? smartGroup = null,
+            global::System.Func<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1, TResult>? specific = null,
+            global::System.Func<global::Supabase.V1CreateProjectBodyRegionSelectionVariant2, TResult>? smartGroup = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +201,32 @@ namespace Supabase
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1?>? specific = null,
-            global::System.Action<global::Supabase.V1CreateProjectBodyRegionSelectionVariant2?>? smartGroup = null,
+            global::System.Action<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1>? specific = null,
+
+            global::System.Action<global::Supabase.V1CreateProjectBodyRegionSelectionVariant2>? smartGroup = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsSpecific)
+            {
+                specific?.Invoke(Specific!);
+            }
+            else if (IsSmartGroup)
+            {
+                smartGroup?.Invoke(SmartGroup!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1>? specific = null,
+            global::System.Action<global::Supabase.V1CreateProjectBodyRegionSelectionVariant2>? smartGroup = null,
             bool validate = true)
         {
             if (validate)

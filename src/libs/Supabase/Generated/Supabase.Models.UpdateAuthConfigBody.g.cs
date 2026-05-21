@@ -2140,5 +2140,6 @@ namespace Supabase
         public UpdateAuthConfigBody()
         {
         }
+
     }
 }

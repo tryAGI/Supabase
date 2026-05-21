@@ -50,5 +50,6 @@ namespace Supabase
         public V1ListEntitlementsResponseEntitlementConfigVariant3()
         {
         }
+
     }
 }

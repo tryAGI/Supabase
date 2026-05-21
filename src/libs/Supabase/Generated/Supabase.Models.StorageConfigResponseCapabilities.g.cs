@@ -50,5 +50,6 @@ namespace Supabase
         public StorageConfigResponseCapabilities()
         {
         }
+
     }
 }

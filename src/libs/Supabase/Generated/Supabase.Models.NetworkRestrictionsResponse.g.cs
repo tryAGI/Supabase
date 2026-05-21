@@ -96,5 +96,6 @@ namespace Supabase
         public NetworkRestrictionsResponse()
         {
         }
+
     }
 }

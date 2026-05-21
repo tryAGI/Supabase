@@ -66,5 +66,6 @@ namespace Supabase
         public OrganizationProjectsResponsePagination()
         {
         }
+
     }
 }

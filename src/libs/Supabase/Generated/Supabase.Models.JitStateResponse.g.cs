@@ -29,6 +29,26 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickJitStateResponseVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Supabase.JitStateResponseVariant1? value)
+        {
+            value = JitStateResponseVariant1;
+            return IsJitStateResponseVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.JitStateResponseVariant1 PickJitStateResponseVariant1() => IsJitStateResponseVariant1
+            ? JitStateResponseVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JitStateResponseVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.JitStateResponseVariant2? Unavailable { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Unavailable))]
 #endif
         public bool IsUnavailable => Unavailable != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnavailable(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Supabase.JitStateResponseVariant2? value)
+        {
+            value = Unavailable;
+            return IsUnavailable;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.JitStateResponseVariant2 PickUnavailable() => IsUnavailable
+            ? Unavailable!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Unavailable' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public static JitStateResponse FromJitStateResponseVariant1(global::Supabase.JitStateResponseVariant1? value) => new JitStateResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator JitStateResponse(global::Supabase.JitStateResponseVariant2 value) => new JitStateResponse((global::Supabase.JitStateResponseVariant2?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Supabase
         {
             Unavailable = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static JitStateResponse FromUnavailable(global::Supabase.JitStateResponseVariant2? value) => new JitStateResponse(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace Supabase
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Supabase.JitStateResponseVariant1?, TResult>? jitStateResponseVariant1 = null,
-            global::System.Func<global::Supabase.JitStateResponseVariant2?, TResult>? unavailable = null,
+            global::System.Func<global::Supabase.JitStateResponseVariant1, TResult>? jitStateResponseVariant1 = null,
+            global::System.Func<global::Supabase.JitStateResponseVariant2, TResult>? unavailable = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace Supabase
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Supabase.JitStateResponseVariant1?>? jitStateResponseVariant1 = null,
-            global::System.Action<global::Supabase.JitStateResponseVariant2?>? unavailable = null,
+            global::System.Action<global::Supabase.JitStateResponseVariant1>? jitStateResponseVariant1 = null,
+
+            global::System.Action<global::Supabase.JitStateResponseVariant2>? unavailable = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsJitStateResponseVariant1)
+            {
+                jitStateResponseVariant1?.Invoke(JitStateResponseVariant1!);
+            }
+            else if (IsUnavailable)
+            {
+                unavailable?.Invoke(Unavailable!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Supabase.JitStateResponseVariant1>? jitStateResponseVariant1 = null,
+            global::System.Action<global::Supabase.JitStateResponseVariant2>? unavailable = null,
             bool validate = true)
         {
             if (validate)

@@ -67,5 +67,6 @@ namespace Supabase
         public GetProviderResponseSamlAttributeMappingKeys2()
         {
         }
+
     }
 }

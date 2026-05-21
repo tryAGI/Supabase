@@ -52,5 +52,6 @@ namespace Supabase
         public V1ListEntitlementsResponseEntitlementFeature()
         {
         }
+
     }
 }

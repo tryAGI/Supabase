@@ -12,6 +12,11 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public global::Supabase.DiskRequestBodyAttributesDiscriminatorType? Type { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.DiskRequestBodyAttributesVariant1? Gp3 { get; init; }
 #else
@@ -29,6 +34,26 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickGp3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Supabase.DiskRequestBodyAttributesVariant1? value)
+        {
+            value = Gp3;
+            return IsGp3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.DiskRequestBodyAttributesVariant1 PickGp3() => IsGp3
+            ? Gp3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Gp3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.DiskRequestBodyAttributesVariant2? Io2 { get; init; }
 #else
@@ -42,6 +67,26 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Io2))]
 #endif
         public bool IsIo2 => Io2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickIo2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Supabase.DiskRequestBodyAttributesVariant2? value)
+        {
+            value = Io2;
+            return IsIo2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.DiskRequestBodyAttributesVariant2 PickIo2() => IsIo2
+            ? Io2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Io2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +104,11 @@ namespace Supabase
         {
             Gp3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Attributes2 FromGp3(global::Supabase.DiskRequestBodyAttributesVariant1? value) => new Attributes2(value);
 
         /// <summary>
         /// 
@@ -81,11 +131,19 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        public static Attributes2 FromIo2(global::Supabase.DiskRequestBodyAttributesVariant2? value) => new Attributes2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Attributes2(
+            global::Supabase.DiskRequestBodyAttributesDiscriminatorType? type,
             global::Supabase.DiskRequestBodyAttributesVariant1? gp3,
             global::Supabase.DiskRequestBodyAttributesVariant2? io2
             )
         {
+            Type = type;
+
             Gp3 = gp3;
             Io2 = io2;
         }
@@ -118,8 +176,8 @@ namespace Supabase
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Supabase.DiskRequestBodyAttributesVariant1?, TResult>? gp3 = null,
-            global::System.Func<global::Supabase.DiskRequestBodyAttributesVariant2?, TResult>? io2 = null,
+            global::System.Func<global::Supabase.DiskRequestBodyAttributesVariant1, TResult>? gp3 = null,
+            global::System.Func<global::Supabase.DiskRequestBodyAttributesVariant2, TResult>? io2 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +201,32 @@ namespace Supabase
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Supabase.DiskRequestBodyAttributesVariant1?>? gp3 = null,
-            global::System.Action<global::Supabase.DiskRequestBodyAttributesVariant2?>? io2 = null,
+            global::System.Action<global::Supabase.DiskRequestBodyAttributesVariant1>? gp3 = null,
+
+            global::System.Action<global::Supabase.DiskRequestBodyAttributesVariant2>? io2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsGp3)
+            {
+                gp3?.Invoke(Gp3!);
+            }
+            else if (IsIo2)
+            {
+                io2?.Invoke(Io2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Supabase.DiskRequestBodyAttributesVariant1>? gp3 = null,
+            global::System.Action<global::Supabase.DiskRequestBodyAttributesVariant2>? io2 = null,
             bool validate = true)
         {
             if (validate)

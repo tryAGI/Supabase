@@ -76,5 +76,6 @@ namespace Supabase
         public UpdateProviderBody()
         {
         }
+
     }
 }

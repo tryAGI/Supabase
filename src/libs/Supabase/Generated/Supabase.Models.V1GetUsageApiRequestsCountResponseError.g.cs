@@ -70,5 +70,6 @@ namespace Supabase
         public V1GetUsageApiRequestsCountResponseError()
         {
         }
+
     }
 }

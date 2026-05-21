@@ -28,6 +28,12 @@ namespace Supabase
         public global::Supabase.JitAuthorizeAccessResponseUserRoleAllowedNetworks? AllowedNetworks { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("branches_only")]
+        public bool? BranchesOnly { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -39,17 +45,20 @@ namespace Supabase
         /// <param name="role"></param>
         /// <param name="expiresAt"></param>
         /// <param name="allowedNetworks"></param>
+        /// <param name="branchesOnly"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public JitAuthorizeAccessResponseUserRole(
             string role,
             double? expiresAt,
-            global::Supabase.JitAuthorizeAccessResponseUserRoleAllowedNetworks? allowedNetworks)
+            global::Supabase.JitAuthorizeAccessResponseUserRoleAllowedNetworks? allowedNetworks,
+            bool? branchesOnly)
         {
             this.Role = role ?? throw new global::System.ArgumentNullException(nameof(role));
             this.ExpiresAt = expiresAt;
             this.AllowedNetworks = allowedNetworks;
+            this.BranchesOnly = branchesOnly;
         }
 
         /// <summary>
@@ -58,5 +67,6 @@ namespace Supabase
         public JitAuthorizeAccessResponseUserRole()
         {
         }
+
     }
 }

@@ -41,5 +41,6 @@ namespace Supabase
         public UpdateSigningKeyBody()
         {
         }
+
     }
 }

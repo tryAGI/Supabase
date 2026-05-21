@@ -40,5 +40,6 @@ namespace Supabase
         public StorageConfigResponseFeaturesS3Protocol()
         {
         }
+
     }
 }

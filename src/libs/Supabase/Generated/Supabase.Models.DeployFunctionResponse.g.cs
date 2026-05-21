@@ -144,5 +144,6 @@ namespace Supabase
         public DeployFunctionResponse()
         {
         }
+
     }
 }

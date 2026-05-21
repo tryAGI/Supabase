@@ -86,7 +86,14 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("validation_errors")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8>> ValidationErrors { get; set; }
+        public required global::System.Collections.Generic.IList<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>> ValidationErrors { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("warnings")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Supabase.WarningsItem> Warnings { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -114,6 +121,7 @@ namespace Supabase
         /// Use validation_errors instead.
         /// </param>
         /// <param name="validationErrors"></param>
+        /// <param name="warnings"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -128,7 +136,8 @@ namespace Supabase
             global::System.Collections.Generic.IList<string> objectsToBeDropped,
             global::System.Collections.Generic.IList<string> unsupportedExtensions,
             global::System.Collections.Generic.IList<string> userDefinedObjectsInInternalSchemas,
-            global::System.Collections.Generic.IList<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8>> validationErrors)
+            global::System.Collections.Generic.IList<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>> validationErrors,
+            global::System.Collections.Generic.IList<global::Supabase.WarningsItem> warnings)
         {
             this.Eligible = eligible;
             this.CurrentAppVersion = currentAppVersion ?? throw new global::System.ArgumentNullException(nameof(currentAppVersion));
@@ -141,6 +150,7 @@ namespace Supabase
             this.UnsupportedExtensions = unsupportedExtensions ?? throw new global::System.ArgumentNullException(nameof(unsupportedExtensions));
             this.UserDefinedObjectsInInternalSchemas = userDefinedObjectsInInternalSchemas ?? throw new global::System.ArgumentNullException(nameof(userDefinedObjectsInInternalSchemas));
             this.ValidationErrors = validationErrors ?? throw new global::System.ArgumentNullException(nameof(validationErrors));
+            this.Warnings = warnings ?? throw new global::System.ArgumentNullException(nameof(warnings));
         }
 
         /// <summary>
@@ -149,5 +159,6 @@ namespace Supabase
         public ProjectUpgradeEligibilityResponse()
         {
         }
+
     }
 }
