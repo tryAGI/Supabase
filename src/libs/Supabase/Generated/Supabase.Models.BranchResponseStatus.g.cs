@@ -4,7 +4,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// This field is deprecated. List action runs to get branch status instead.
     /// </summary>
     public enum BranchResponseStatus
     {
