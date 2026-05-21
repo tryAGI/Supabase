@@ -15,6 +15,10 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        AuditLogDrains,
+        /// <summary>
+        /// 
+        /// </summary>
         AuthAdvancedAuthSettings,
         /// <summary>
         /// 
@@ -72,6 +76,10 @@ namespace Supabase
         /// 
         /// </summary>
         BackupRetentionDays,
+        /// <summary>
+        /// 
+        /// </summary>
+        BackupSchedule,
         /// <summary>
         /// 
         /// </summary>
@@ -255,6 +263,7 @@ namespace Supabase
             return value switch
             {
                 V1ListEntitlementsResponseEntitlementFeatureKey.AssistantAdvanceModel => "assistant.advance_model",
+                V1ListEntitlementsResponseEntitlementFeatureKey.AuditLogDrains => "audit_log_drains",
                 V1ListEntitlementsResponseEntitlementFeatureKey.AuthAdvancedAuthSettings => "auth.advanced_auth_settings",
                 V1ListEntitlementsResponseEntitlementFeatureKey.AuthCustomJwtTemplate => "auth.custom_jwt_template",
                 V1ListEntitlementsResponseEntitlementFeatureKey.AuthCustomOauthMaxProviders => "auth.custom_oauth.max_providers",
@@ -270,6 +279,7 @@ namespace Supabase
                 V1ListEntitlementsResponseEntitlementFeatureKey.AuthUserSessions => "auth.user_sessions",
                 V1ListEntitlementsResponseEntitlementFeatureKey.BackupRestoreToNewProject => "backup.restore_to_new_project",
                 V1ListEntitlementsResponseEntitlementFeatureKey.BackupRetentionDays => "backup.retention_days",
+                V1ListEntitlementsResponseEntitlementFeatureKey.BackupSchedule => "backup.schedule",
                 V1ListEntitlementsResponseEntitlementFeatureKey.BranchingLimit => "branching_limit",
                 V1ListEntitlementsResponseEntitlementFeatureKey.BranchingPersistent => "branching_persistent",
                 V1ListEntitlementsResponseEntitlementFeatureKey.CustomDomain => "custom_domain",
@@ -323,6 +333,7 @@ namespace Supabase
             return value switch
             {
                 "assistant.advance_model" => V1ListEntitlementsResponseEntitlementFeatureKey.AssistantAdvanceModel,
+                "audit_log_drains" => V1ListEntitlementsResponseEntitlementFeatureKey.AuditLogDrains,
                 "auth.advanced_auth_settings" => V1ListEntitlementsResponseEntitlementFeatureKey.AuthAdvancedAuthSettings,
                 "auth.custom_jwt_template" => V1ListEntitlementsResponseEntitlementFeatureKey.AuthCustomJwtTemplate,
                 "auth.custom_oauth.max_providers" => V1ListEntitlementsResponseEntitlementFeatureKey.AuthCustomOauthMaxProviders,
@@ -338,6 +349,7 @@ namespace Supabase
                 "auth.user_sessions" => V1ListEntitlementsResponseEntitlementFeatureKey.AuthUserSessions,
                 "backup.restore_to_new_project" => V1ListEntitlementsResponseEntitlementFeatureKey.BackupRestoreToNewProject,
                 "backup.retention_days" => V1ListEntitlementsResponseEntitlementFeatureKey.BackupRetentionDays,
+                "backup.schedule" => V1ListEntitlementsResponseEntitlementFeatureKey.BackupSchedule,
                 "branching_limit" => V1ListEntitlementsResponseEntitlementFeatureKey.BranchingLimit,
                 "branching_persistent" => V1ListEntitlementsResponseEntitlementFeatureKey.BranchingPersistent,
                 "custom_domain" => V1ListEntitlementsResponseEntitlementFeatureKey.CustomDomain,
