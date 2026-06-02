@@ -193,7 +193,7 @@
       "Slug": "v1-setup-a-read-replica",
       "Description": "Generated from OpenAPI examples.",
       "Language": "http",
-      "Code": "### [Beta] Set up a read replica\n# @name v1-setup-a-read-replica\nPOST {{host}}/v1/projects/{{ref}}/read-replicas/setup\nAuthorization: Bearer {{token}}\nContent-Type: application/json\n\n{\n  \u0022read_replica_region\u0022: \u0022us-west-1\u0022\n}\n\n## Responses\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to set up read replica",
+      "Code": "### [Beta] Set up a read replica\n# @name v1-setup-a-read-replica\nPOST {{host}}/v1/projects/{{ref}}/read-replicas/setup\nAuthorization: Bearer {{token}}\nContent-Type: application/json\n\n{\n  \u0022read_replica_region\u0022: \u0022us-west-1\u0022\n}\n\n## Responses\n# 401\n# Description: Unauthorized\n# 402\n# Description: This feature requires the Pro, Team, or Enterprise organization plan.\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to set up read replica",
       "Format": "http",
       "OperationId": "v1-setup-a-read-replica",
       "Setup": null
@@ -215,7 +215,7 @@
       "Slug": "v1-update-backup-schedule",
       "Description": "Sets the time at which the daily backup runs. The change takes effect on the next backup window that includes the new time. If the new time has already passed for today, the first backup at the new time will occur the following day. It can only be updated 3 times per 24 hours.",
       "Language": "http",
-      "Code": "### Updates the backup schedule time for a project\n# @name v1-update-backup-schedule\nPATCH {{host}}/v1/projects/{{ref}}/database/backups/schedule\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022schedule_for\u0022: \u002204:00:00\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 400\n# Description: Invalid schedule_for format\n# 401\n# Description: Unauthorized\n# 402\n# Description: Feature requires a higher plan\n# 403\n# Description: Forbidden action\n# 404\n# Description: Project or backup schedule not found\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update backup schedule",
+      "Code": "### Updates the backup schedule time for a project\n# @name v1-update-backup-schedule\nPATCH {{host}}/v1/projects/{{ref}}/database/backups/schedule\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022schedule_for\u0022: \u002204:00:00\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 400\n# Description: Invalid schedule_for format\n# 401\n# Description: Unauthorized\n# 402\n# Description: This feature requires the Enterprise organization plan.\n# 403\n# Description: Forbidden action\n# 404\n# Description: Project or backup schedule not found\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update backup schedule",
       "Format": "http",
       "OperationId": "v1-update-backup-schedule",
       "Setup": null
@@ -303,7 +303,7 @@
       "Slug": "v1-activate-vanity-subdomain-config",
       "Description": "Generated from OpenAPI examples.",
       "Language": "http",
-      "Code": "### [Beta] Activates a vanity subdomain for a project.\n# @name v1-activate-vanity-subdomain-config\nPOST {{host}}/v1/projects/{{ref}}/vanity-subdomain/activate\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022vanity_subdomain\u0022: \u0022acme-prod\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to activate project vanity subdomain configuration",
+      "Code": "### [Beta] Activates a vanity subdomain for a project.\n# @name v1-activate-vanity-subdomain-config\nPOST {{host}}/v1/projects/{{ref}}/vanity-subdomain/activate\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022vanity_subdomain\u0022: \u0022acme-prod\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 400\n# Description: This feature requires the Pro, Team, or Enterprise organization plan.\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to activate project vanity subdomain configuration",
       "Format": "http",
       "OperationId": "v1-activate-vanity-subdomain-config",
       "Setup": null
@@ -314,7 +314,7 @@
       "Slug": "v1-check-vanity-subdomain-availability",
       "Description": "Generated from OpenAPI examples.",
       "Language": "http",
-      "Code": "### [Beta] Checks vanity subdomain availability\n# @name v1-check-vanity-subdomain-availability\nPOST {{host}}/v1/projects/{{ref}}/vanity-subdomain/check-availability\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022vanity_subdomain\u0022: \u0022acme-prod\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to check project vanity subdomain configuration",
+      "Code": "### [Beta] Checks vanity subdomain availability\n# @name v1-check-vanity-subdomain-availability\nPOST {{host}}/v1/projects/{{ref}}/vanity-subdomain/check-availability\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022vanity_subdomain\u0022: \u0022acme-prod\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 400\n# Description: This feature requires the Pro, Team, or Enterprise organization plan.\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to check project vanity subdomain configuration",
       "Format": "http",
       "OperationId": "v1-check-vanity-subdomain-availability",
       "Setup": null
@@ -435,7 +435,7 @@
       "Slug": "v1-exchange-oauth-token",
       "Description": "Generated from OpenAPI examples.",
       "Language": "http",
-      "Code": "### [Beta] Exchange auth code for user\u0027s access and refresh token\n# @name v1-exchange-oauth-token\nPOST {{host}}/v1/oauth/token\nAuthorization: Bearer {{token}}\nContent-Type: application/x-www-form-urlencoded\nAccept: application/json\n\n## Responses\n# 201\n# Content-Type: application/json",
+      "Code": "### [Beta] Exchange auth code for user\u0027s access and refresh token\n# @name v1-exchange-oauth-token\nPOST {{host}}/v1/oauth/token\nAuthorization: Bearer {{token}}\nContent-Type: application/x-www-form-urlencoded\nAccept: application/json\n\n## Responses\n# 200\n# Content-Type: application/json",
       "Format": "http",
       "OperationId": "v1-exchange-oauth-token",
       "Setup": null

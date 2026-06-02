@@ -1147,7 +1147,7 @@
           }
         },
         "responses": {
-          "201": {
+          "200": {
             "description": "",
             "content": {
               "application/json": {
@@ -4709,6 +4709,9 @@
               }
             }
           },
+          "400": {
+            "description": "This feature requires the Pro, Team, or Enterprise organization plan."
+          },
           "401": {
             "description": "Unauthorized"
           },
@@ -4736,10 +4739,19 @@
         "tags": [
           "Domains"
         ],
+        "x-allowed-plans": [
+          "Pro",
+          "Team",
+          "Enterprise"
+        ],
         "x-badges": [
           {
             "name": "OAuth scope: domains:read",
             "position": "after"
+          },
+          {
+            "name": "Only available on Pro, Team, Enterprise",
+            "position": "before"
           }
         ],
         "x-endpoint-owners": [
@@ -4848,6 +4860,9 @@
               }
             }
           },
+          "400": {
+            "description": "This feature requires the Pro, Team, or Enterprise organization plan."
+          },
           "401": {
             "description": "Unauthorized"
           },
@@ -4875,10 +4890,19 @@
         "tags": [
           "Domains"
         ],
+        "x-allowed-plans": [
+          "Pro",
+          "Team",
+          "Enterprise"
+        ],
         "x-badges": [
           {
             "name": "OAuth scope: domains:write",
             "position": "after"
+          },
+          {
+            "name": "Only available on Pro, Team, Enterprise",
+            "position": "before"
           }
         ],
         "x-endpoint-owners": [
@@ -4927,6 +4951,9 @@
               }
             }
           },
+          "400": {
+            "description": "This feature requires the Pro, Team, or Enterprise organization plan."
+          },
           "401": {
             "description": "Unauthorized"
           },
@@ -4954,10 +4981,19 @@
         "tags": [
           "Domains"
         ],
+        "x-allowed-plans": [
+          "Pro",
+          "Team",
+          "Enterprise"
+        ],
         "x-badges": [
           {
             "name": "OAuth scope: domains:write",
             "position": "after"
+          },
+          {
+            "name": "Only available on Pro, Team, Enterprise",
+            "position": "before"
           }
         ],
         "x-endpoint-owners": [
@@ -5364,6 +5400,9 @@
           "401": {
             "description": "Unauthorized"
           },
+          "402": {
+            "description": "This feature requires the Pro, Team, or Enterprise organization plan."
+          },
           "403": {
             "description": "Forbidden action"
           },
@@ -5387,6 +5426,17 @@
         "summary": "[Beta] Set up a read replica",
         "tags": [
           "Database"
+        ],
+        "x-allowed-plans": [
+          "Pro",
+          "Team",
+          "Enterprise"
+        ],
+        "x-badges": [
+          {
+            "name": "Only available on Pro, Team, Enterprise",
+            "position": "before"
+          }
         ],
         "x-endpoint-owners": [
           "management-api",
@@ -11523,7 +11573,7 @@
             "description": "Unauthorized"
           },
           "402": {
-            "description": "Feature requires a higher plan"
+            "description": "This feature requires the Enterprise organization plan."
           },
           "403": {
             "description": "Forbidden action"
@@ -11552,10 +11602,17 @@
         "tags": [
           "Database"
         ],
+        "x-allowed-plans": [
+          "Enterprise"
+        ],
         "x-badges": [
           {
             "name": "OAuth scope: database:read",
             "position": "after"
+          },
+          {
+            "name": "Only available on Enterprise",
+            "position": "before"
           }
         ],
         "x-endpoint-owners": [
@@ -11609,7 +11666,7 @@
             "description": "Unauthorized"
           },
           "402": {
-            "description": "Feature requires a higher plan"
+            "description": "This feature requires the Enterprise organization plan."
           },
           "403": {
             "description": "Forbidden action"
@@ -11638,10 +11695,17 @@
         "tags": [
           "Database"
         ],
+        "x-allowed-plans": [
+          "Enterprise"
+        ],
         "x-badges": [
           {
             "name": "OAuth scope: database:write",
             "position": "after"
+          },
+          {
+            "name": "Only available on Enterprise",
+            "position": "before"
           }
         ],
         "x-endpoint-owners": [
