@@ -3,11 +3,11 @@
 
 namespace Supabase
 {
-    public partial class DomainsClient
+    public partial class ProjectsClient
     {
 
 
-        private static readonly global::Supabase.EndPointSecurityRequirement s_V1GetVanitySubdomainConfigSecurityRequirement0 =
+        private static readonly global::Supabase.EndPointSecurityRequirement s_V1RestartAProjectSecurityRequirement0 =
             new global::Supabase.EndPointSecurityRequirement
             {
                 Authorizations = new global::Supabase.EndPointAuthorizationRequirement[]
@@ -21,28 +21,23 @@ namespace Supabase
                     },
                 },
             };
-        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1GetVanitySubdomainConfigSecurityRequirements =
+        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1RestartAProjectSecurityRequirements =
             new global::Supabase.EndPointSecurityRequirement[]
-            {                s_V1GetVanitySubdomainConfigSecurityRequirement0,
+            {                s_V1RestartAProjectSecurityRequirement0,
             };
-        partial void PrepareV1GetVanitySubdomainConfigArguments(
+        partial void PrepareV1RestartAProjectArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref);
-        partial void PrepareV1GetVanitySubdomainConfigRequest(
+        partial void PrepareV1RestartAProjectRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @ref);
-        partial void ProcessV1GetVanitySubdomainConfigResponse(
+        partial void ProcessV1RestartAProjectResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessV1GetVanitySubdomainConfigResponseContent(
-            global::System.Net.Http.HttpClient httpClient,
-            global::System.Net.Http.HttpResponseMessage httpResponseMessage,
-            ref string content);
-
         /// <summary>
-        /// [Beta] Gets current vanity subdomain config
+        /// Restarts the given project
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -50,24 +45,19 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-#if NET8_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
-#endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.VanitySubdomainConfigResponse> V1GetVanitySubdomainConfigAsync(
+        public async global::System.Threading.Tasks.Task V1RestartAProjectAsync(
             string @ref,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await V1GetVanitySubdomainConfigAsResponseAsync(
+            await V1RestartAProjectAsResponseAsync(
                 @ref: @ref,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
-
-            return __response.Body;
         }
         /// <summary>
-        /// [Beta] Gets current vanity subdomain config
+        /// Restarts the given project
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -75,25 +65,22 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-#if NET8_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
-#endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.VanitySubdomainConfigResponse>> V1GetVanitySubdomainConfigAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse> V1RestartAProjectAsResponseAsync(
             string @ref,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareV1GetVanitySubdomainConfigArguments(
+            PrepareV1RestartAProjectArguments(
                 httpClient: HttpClient,
                 @ref: ref @ref);
 
 
             var __authorizations = global::Supabase.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_V1GetVanitySubdomainConfigSecurityRequirements,
-                operationName: "V1GetVanitySubdomainConfigAsync");
+                securityRequirements: s_V1RestartAProjectSecurityRequirements,
+                operationName: "V1RestartAProjectAsync");
 
             using var __timeoutCancellationTokenSource = global::Supabase.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -113,7 +100,7 @@ namespace Supabase
             {
 
                             var __pathBuilder = new global::Supabase.PathBuilder(
-                                path: $"/v1/projects/{@ref}/vanity-subdomain",
+                                path: $"/v1/projects/{@ref}/restart",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -121,7 +108,7 @@ namespace Supabase
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Get,
+                    method: global::System.Net.Http.HttpMethod.Post,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -152,7 +139,7 @@ namespace Supabase
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareV1GetVanitySubdomainConfigRequest(
+                PrepareV1RestartAProjectRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     @ref: @ref!);
@@ -172,10 +159,10 @@ namespace Supabase
                     await global::Supabase.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetVanitySubdomainConfig",
-                                methodName: "V1GetVanitySubdomainConfigAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/vanity-subdomain\"",
-                                httpMethod: "GET",
+                                operationId: "V1RestartAProject",
+                                methodName: "V1RestartAProjectAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/restart\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -206,10 +193,10 @@ namespace Supabase
                         await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetVanitySubdomainConfig",
-                                methodName: "V1GetVanitySubdomainConfigAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/vanity-subdomain\"",
-                                httpMethod: "GET",
+                                operationId: "V1RestartAProject",
+                                methodName: "V1RestartAProjectAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/restart\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -247,10 +234,10 @@ namespace Supabase
                         await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetVanitySubdomainConfig",
-                                methodName: "V1GetVanitySubdomainConfigAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/vanity-subdomain\"",
-                                httpMethod: "GET",
+                                operationId: "V1RestartAProject",
+                                methodName: "V1RestartAProjectAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/restart\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -287,7 +274,7 @@ namespace Supabase
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessV1GetVanitySubdomainConfigResponse(
+                ProcessV1RestartAProjectResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -295,10 +282,10 @@ namespace Supabase
                     await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetVanitySubdomainConfig",
-                                methodName: "V1GetVanitySubdomainConfigAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/vanity-subdomain\"",
-                                httpMethod: "GET",
+                                operationId: "V1RestartAProject",
+                                methodName: "V1RestartAProjectAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/restart\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -317,10 +304,10 @@ namespace Supabase
                     await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetVanitySubdomainConfig",
-                                methodName: "V1GetVanitySubdomainConfigAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/vanity-subdomain\"",
-                                httpMethod: "GET",
+                                operationId: "V1RestartAProject",
+                                methodName: "V1RestartAProjectAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/restart\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -334,38 +321,6 @@ namespace Supabase
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // 
-                            if ((int)__response.StatusCode == 400)
-                            {
-                                string? __content_400 = null;
-                                global::System.Exception? __exception_400 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_400 = __ex;
-                                }
-
-
-                                throw global::Supabase.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_400,
-                                    responseBody: __content_400,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
                             // 
                             if ((int)__response.StatusCode == 401)
                             {
@@ -462,38 +417,6 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
-                            if ((int)__response.StatusCode == 500)
-                            {
-                                string? __content_500 = null;
-                                global::System.Exception? __exception_500 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_500 = __ex;
-                                }
-
-
-                                throw global::Supabase.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_500,
-                                    responseBody: __content_500,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -507,22 +430,15 @@ namespace Supabase
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessV1GetVanitySubdomainConfigResponseContent(
-                                    httpClient: HttpClient,
-                                    httpResponseMessage: __response,
-                                    content: ref __content);
 
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.VanitySubdomainConfigResponse.FromJson(__content, JsonSerializerContext) ??
-                                        throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.VanitySubdomainConfigResponse>(
+                return new global::Supabase.AutoSDKHttpResponse(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
-                                        requestUri: __response.RequestMessage?.RequestUri,
-                                        body: __value);
+                                        requestUri: __response.RequestMessage?.RequestUri);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -542,19 +458,10 @@ namespace Supabase
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
-                                    using var __content = await __response.Content.ReadAsStreamAsync(
-                #if NET5_0_OR_GREATER
-                                        __effectiveCancellationToken
-                #endif
-                                    ).ConfigureAwait(false);
-
-                                    var __value = await global::Supabase.VanitySubdomainConfigResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
-                                        throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.VanitySubdomainConfigResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
-                                        requestUri: __response.RequestMessage?.RequestUri,
-                                        body: __value);
+                                        requestUri: __response.RequestMessage?.RequestUri);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

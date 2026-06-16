@@ -1134,6 +1134,7 @@
     },
     "/v1/oauth/token": {
       "post": {
+        "description": "Supports `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:jwt-bearer` grant types. The `jwt-bearer` grant type (IDJAG \u2014 identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.",
         "operationId": "v1-exchange-oauth-token",
         "parameters": [],
         "requestBody": {
@@ -1147,7 +1148,7 @@
           }
         },
         "responses": {
-          "201": {
+          "200": {
             "description": "",
             "content": {
               "application/json": {
@@ -4709,6 +4710,9 @@
               }
             }
           },
+          "400": {
+            "description": "This feature requires the Pro, Team, or Enterprise organization plan."
+          },
           "401": {
             "description": "Unauthorized"
           },
@@ -4736,10 +4740,19 @@
         "tags": [
           "Domains"
         ],
+        "x-allowed-plans": [
+          "Pro",
+          "Team",
+          "Enterprise"
+        ],
         "x-badges": [
           {
             "name": "OAuth scope: domains:read",
             "position": "after"
+          },
+          {
+            "name": "Only available on Pro, Team, Enterprise",
+            "position": "before"
           }
         ],
         "x-endpoint-owners": [
@@ -4848,6 +4861,9 @@
               }
             }
           },
+          "400": {
+            "description": "This feature requires the Pro, Team, or Enterprise organization plan."
+          },
           "401": {
             "description": "Unauthorized"
           },
@@ -4875,10 +4891,19 @@
         "tags": [
           "Domains"
         ],
+        "x-allowed-plans": [
+          "Pro",
+          "Team",
+          "Enterprise"
+        ],
         "x-badges": [
           {
             "name": "OAuth scope: domains:write",
             "position": "after"
+          },
+          {
+            "name": "Only available on Pro, Team, Enterprise",
+            "position": "before"
           }
         ],
         "x-endpoint-owners": [
@@ -4927,6 +4952,9 @@
               }
             }
           },
+          "400": {
+            "description": "This feature requires the Pro, Team, or Enterprise organization plan."
+          },
           "401": {
             "description": "Unauthorized"
           },
@@ -4954,10 +4982,19 @@
         "tags": [
           "Domains"
         ],
+        "x-allowed-plans": [
+          "Pro",
+          "Team",
+          "Enterprise"
+        ],
         "x-badges": [
           {
             "name": "OAuth scope: domains:write",
             "position": "after"
+          },
+          {
+            "name": "Only available on Pro, Team, Enterprise",
+            "position": "before"
           }
         ],
         "x-endpoint-owners": [
@@ -5358,11 +5395,14 @@
           }
         },
         "responses": {
-          "201": {
+          "204": {
             "description": ""
           },
           "401": {
             "description": "Unauthorized"
+          },
+          "402": {
+            "description": "This feature requires the Pro, Team, or Enterprise organization plan."
           },
           "403": {
             "description": "Forbidden action"
@@ -5387,6 +5427,17 @@
         "summary": "[Beta] Set up a read replica",
         "tags": [
           "Database"
+        ],
+        "x-allowed-plans": [
+          "Pro",
+          "Team",
+          "Enterprise"
+        ],
+        "x-badges": [
+          {
+            "name": "Only available on Pro, Team, Enterprise",
+            "position": "before"
+          }
         ],
         "x-endpoint-owners": [
           "management-api",
@@ -5423,7 +5474,7 @@
           }
         },
         "responses": {
-          "201": {
+          "204": {
             "description": ""
           },
           "401": {
@@ -6534,6 +6585,65 @@
           }
         ],
         "summary": "Pauses the given project",
+        "tags": [
+          "Projects"
+        ],
+        "x-badges": [
+          {
+            "name": "OAuth scope: projects:write",
+            "position": "after"
+          }
+        ],
+        "x-endpoint-owners": [
+          "infra",
+          "management-api"
+        ],
+        "x-oauth-scope": "projects:write"
+      }
+    },
+    "/v1/projects/{ref}/restart": {
+      "post": {
+        "operationId": "v1-restart-a-project",
+        "parameters": [
+          {
+            "name": "ref",
+            "required": true,
+            "in": "path",
+            "description": "Project ref",
+            "schema": {
+              "minLength": 20,
+              "maxLength": 20,
+              "pattern": "^[a-z]+$",
+              "example": "abcdefghijklmnopqrst",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden action"
+          },
+          "429": {
+            "description": "Rate limit exceeded"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          },
+          {
+            "fga_permissions": [
+              "project_admin_write"
+            ]
+          }
+        ],
+        "summary": "Restarts the given project",
         "tags": [
           "Projects"
         ],
@@ -11523,7 +11633,7 @@
             "description": "Unauthorized"
           },
           "402": {
-            "description": "Feature requires a higher plan"
+            "description": "This feature requires the Enterprise organization plan."
           },
           "403": {
             "description": "Forbidden action"
@@ -11552,10 +11662,17 @@
         "tags": [
           "Database"
         ],
+        "x-allowed-plans": [
+          "Enterprise"
+        ],
         "x-badges": [
           {
             "name": "OAuth scope: database:read",
             "position": "after"
+          },
+          {
+            "name": "Only available on Enterprise",
+            "position": "before"
           }
         ],
         "x-endpoint-owners": [
@@ -11609,7 +11726,7 @@
             "description": "Unauthorized"
           },
           "402": {
-            "description": "Feature requires a higher plan"
+            "description": "This feature requires the Enterprise organization plan."
           },
           "403": {
             "description": "Forbidden action"
@@ -11638,10 +11755,17 @@
         "tags": [
           "Database"
         ],
+        "x-allowed-plans": [
+          "Enterprise"
+        ],
         "x-badges": [
           {
             "name": "OAuth scope: database:write",
             "position": "after"
+          },
+          {
+            "name": "Only available on Enterprise",
+            "position": "before"
           }
         ],
         "x-endpoint-owners": [
@@ -13110,7 +13234,8 @@
             "type": "string",
             "enum": [
               "authorization_code",
-              "refresh_token"
+              "refresh_token",
+              "urn:ietf:params:oauth:grant-type:jwt-bearer"
             ]
           },
           "client_id": {
@@ -13131,6 +13256,10 @@
           },
           "refresh_token": {
             "type": "string"
+          },
+          "assertion": {
+            "type": "string",
+            "description": "IDJAG assertion JWT for grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer. Beta - available on Team and Enterprise plans only."
           },
           "resource": {
             "type": "string",
@@ -13159,7 +13288,8 @@
             "type": "string"
           },
           "refresh_token": {
-            "type": "string"
+            "type": "string",
+            "description": "The `urn:ietf:params:oauth:grant-type:jwt-bearer` grant type issues access tokens only, no refresh token is returned and the token cannot be revoked via `/v1/oauth/revoke`."
           },
           "expires_in": {
             "type": "integer"
@@ -13173,7 +13303,6 @@
         },
         "required": [
           "access_token",
-          "refresh_token",
           "expires_in",
           "token_type"
         ],
@@ -18185,7 +18314,8 @@
                     "ipv4",
                     "auth_mfa_phone",
                     "auth_mfa_web_authn",
-                    "log_drain"
+                    "log_drain",
+                    "etl_pipeline"
                   ]
                 },
                 "variant": {
@@ -18252,6 +18382,12 @@
                           "type": "string",
                           "enum": [
                             "log_drain_default"
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "etl_pipeline_default"
                           ]
                         }
                       ]
@@ -18321,7 +18457,8 @@
                     "ipv4",
                     "auth_mfa_phone",
                     "auth_mfa_web_authn",
-                    "log_drain"
+                    "log_drain",
+                    "etl_pipeline"
                   ]
                 },
                 "name": {
@@ -18393,6 +18530,12 @@
                             "type": "string",
                             "enum": [
                               "log_drain_default"
+                            ]
+                          },
+                          {
+                            "type": "string",
+                            "enum": [
+                              "etl_pipeline_default"
                             ]
                           }
                         ]
@@ -18515,7 +18658,8 @@
               "ipv4",
               "auth_mfa_phone",
               "auth_mfa_web_authn",
-              "log_drain"
+              "log_drain",
+              "etl_pipeline"
             ]
           }
         },
@@ -20578,6 +20722,43 @@
           "logical_decoding_work_mem": {
             "type": "string"
           },
+          "cron.log_statement": {
+            "type": "boolean"
+          },
+          "log_autovacuum_min_duration": {
+            "type": "string",
+            "description": "Default unit: ms",
+            "pattern": "^(-?[0-9]+(?:\\.[0-9]+)?)(us|ms|s|min|h|d)?$"
+          },
+          "log_checkpoints": {
+            "type": "boolean"
+          },
+          "log_connections": {
+            "type": "boolean"
+          },
+          "log_disconnections": {
+            "type": "boolean"
+          },
+          "log_duration": {
+            "type": "boolean"
+          },
+          "log_lock_waits": {
+            "type": "boolean"
+          },
+          "log_recovery_conflict_waits": {
+            "type": "boolean"
+          },
+          "log_replication_commands": {
+            "type": "boolean"
+          },
+          "log_startup_progress_interval": {
+            "type": "string",
+            "description": "Default unit: ms",
+            "pattern": "^(-?[0-9]+(?:\\.[0-9]+)?)(us|ms|s|min|h|d)?$"
+          },
+          "log_temp_files": {
+            "type": "string"
+          },
           "maintenance_work_mem": {
             "type": "string"
           },
@@ -20679,6 +20860,43 @@
             "type": "string"
           },
           "logical_decoding_work_mem": {
+            "type": "string"
+          },
+          "cron.log_statement": {
+            "type": "boolean"
+          },
+          "log_autovacuum_min_duration": {
+            "type": "string",
+            "description": "Default unit: ms",
+            "pattern": "^(-?[0-9]+(?:\\.[0-9]+)?)(us|ms|s|min|h|d)?$"
+          },
+          "log_checkpoints": {
+            "type": "boolean"
+          },
+          "log_connections": {
+            "type": "boolean"
+          },
+          "log_disconnections": {
+            "type": "boolean"
+          },
+          "log_duration": {
+            "type": "boolean"
+          },
+          "log_lock_waits": {
+            "type": "boolean"
+          },
+          "log_recovery_conflict_waits": {
+            "type": "boolean"
+          },
+          "log_replication_commands": {
+            "type": "boolean"
+          },
+          "log_startup_progress_interval": {
+            "type": "string",
+            "description": "Default unit: ms",
+            "pattern": "^(-?[0-9]+(?:\\.[0-9]+)?)(us|ms|s|min|h|d)?$"
+          },
+          "log_temp_files": {
             "type": "string"
           },
           "maintenance_work_mem": {

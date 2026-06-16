@@ -52,6 +52,12 @@ namespace Supabase
         public string? RefreshToken { get; set; }
 
         /// <summary>
+        /// IDJAG assertion JWT for grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer. Beta - available on Team and Enterprise plans only.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("assertion")]
+        public string? Assertion { get; set; }
+
+        /// <summary>
         /// Resource indicator for MCP (Model Context Protocol) clients
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resource")]
@@ -79,6 +85,9 @@ namespace Supabase
         /// <param name="codeVerifier"></param>
         /// <param name="redirectUri"></param>
         /// <param name="refreshToken"></param>
+        /// <param name="assertion">
+        /// IDJAG assertion JWT for grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer. Beta - available on Team and Enterprise plans only.
+        /// </param>
         /// <param name="resource">
         /// Resource indicator for MCP (Model Context Protocol) clients
         /// </param>
@@ -94,6 +103,7 @@ namespace Supabase
             string? codeVerifier,
             string? redirectUri,
             string? refreshToken,
+            string? assertion,
             string? resource,
             string? scope)
         {
@@ -104,6 +114,7 @@ namespace Supabase
             this.CodeVerifier = codeVerifier;
             this.RedirectUri = redirectUri;
             this.RefreshToken = refreshToken;
+            this.Assertion = assertion;
             this.Resource = resource;
             this.Scope = scope;
         }
