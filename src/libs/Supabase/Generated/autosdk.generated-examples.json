@@ -433,7 +433,7 @@
       "Order": 40,
       "Title": "[Beta] Exchange auth code for user\u0027s access and refresh token",
       "Slug": "v1-exchange-oauth-token",
-      "Description": "Generated from OpenAPI examples.",
+      "Description": "Supports \u0060authorization_code\u0060, \u0060refresh_token\u0060, and \u0060urn:ietf:params:oauth:grant-type:jwt-bearer\u0060 grant types. The \u0060jwt-bearer\u0060 grant type (IDJAG \u2014 identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.",
       "Language": "http",
       "Code": "### [Beta] Exchange auth code for user\u0027s access and refresh token\n# @name v1-exchange-oauth-token\nPOST {{host}}/v1/oauth/token\nAuthorization: Bearer {{token}}\nContent-Type: application/x-www-form-urlencoded\nAccept: application/json\n\n## Responses\n# 200\n# Content-Type: application/json",
       "Format": "http",

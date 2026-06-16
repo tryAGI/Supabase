@@ -16,6 +16,10 @@ namespace Supabase
         /// 
         /// </summary>
         RefreshToken,
+        /// <summary>
+        /// 
+        /// </summary>
+        Urn_ietf_params_oauth_grantType_jwtBearer,
     }
 
     /// <summary>
@@ -32,6 +36,7 @@ namespace Supabase
             {
                 OAuthTokenBodyGrantType.AuthorizationCode => "authorization_code",
                 OAuthTokenBodyGrantType.RefreshToken => "refresh_token",
+                OAuthTokenBodyGrantType.Urn_ietf_params_oauth_grantType_jwtBearer => "urn:ietf:params:oauth:grant-type:jwt-bearer",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -44,6 +49,7 @@ namespace Supabase
             {
                 "authorization_code" => OAuthTokenBodyGrantType.AuthorizationCode,
                 "refresh_token" => OAuthTokenBodyGrantType.RefreshToken,
+                "urn:ietf:params:oauth:grant-type:jwt-bearer" => OAuthTokenBodyGrantType.Urn_ietf_params_oauth_grantType_jwtBearer,
                 _ => null,
             };
         }

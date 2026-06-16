@@ -5,7 +5,8 @@ namespace Supabase
     public partial interface IOAuthClient
     {
         /// <summary>
-        /// [Beta] Exchange auth code for user's access and refresh token
+        /// [Beta] Exchange auth code for user's access and refresh token<br/>
+        /// Supports `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:jwt-bearer` grant types. The `jwt-bearer` grant type (IDJAG — identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -20,7 +21,8 @@ namespace Supabase
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// [Beta] Exchange auth code for user's access and refresh token
+        /// [Beta] Exchange auth code for user's access and refresh token<br/>
+        /// Supports `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:jwt-bearer` grant types. The `jwt-bearer` grant type (IDJAG — identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -35,7 +37,8 @@ namespace Supabase
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// [Beta] Exchange auth code for user's access and refresh token
+        /// [Beta] Exchange auth code for user's access and refresh token<br/>
+        /// Supports `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:jwt-bearer` grant types. The `jwt-bearer` grant type (IDJAG — identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.
         /// </summary>
         /// <param name="grantType"></param>
         /// <param name="clientId"></param>
@@ -44,6 +47,9 @@ namespace Supabase
         /// <param name="codeVerifier"></param>
         /// <param name="redirectUri"></param>
         /// <param name="refreshToken"></param>
+        /// <param name="assertion">
+        /// IDJAG assertion JWT for grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer. Beta - available on Team and Enterprise plans only.
+        /// </param>
         /// <param name="resource">
         /// Resource indicator for MCP (Model Context Protocol) clients
         /// </param>
@@ -62,6 +68,7 @@ namespace Supabase
             string? codeVerifier = default,
             string? redirectUri = default,
             string? refreshToken = default,
+            string? assertion = default,
             string? resource = default,
             string? scope = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

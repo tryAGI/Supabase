@@ -16,11 +16,10 @@ namespace Supabase
         public required string AccessToken { get; set; }
 
         /// <summary>
-        /// 
+        /// The `urn:ietf:params:oauth:grant-type:jwt-bearer` grant type issues access tokens only, no refresh token is returned and the token cannot be revoked via `/v1/oauth/revoke`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("refresh_token")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RefreshToken { get; set; }
+        public string? RefreshToken { get; set; }
 
         /// <summary>
         /// 
@@ -46,20 +45,22 @@ namespace Supabase
         /// Initializes a new instance of the <see cref="OAuthTokenResponse" /> class.
         /// </summary>
         /// <param name="accessToken"></param>
-        /// <param name="refreshToken"></param>
         /// <param name="expiresIn"></param>
+        /// <param name="refreshToken">
+        /// The `urn:ietf:params:oauth:grant-type:jwt-bearer` grant type issues access tokens only, no refresh token is returned and the token cannot be revoked via `/v1/oauth/revoke`.
+        /// </param>
         /// <param name="tokenType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OAuthTokenResponse(
             string accessToken,
-            string refreshToken,
             int expiresIn,
+            string? refreshToken,
             global::Supabase.OAuthTokenResponseTokenType tokenType)
         {
             this.AccessToken = accessToken ?? throw new global::System.ArgumentNullException(nameof(accessToken));
-            this.RefreshToken = refreshToken ?? throw new global::System.ArgumentNullException(nameof(refreshToken));
+            this.RefreshToken = refreshToken;
             this.ExpiresIn = expiresIn;
             this.TokenType = tokenType;
         }
