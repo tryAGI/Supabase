@@ -23,6 +23,72 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cron.log_statement")]
+        public bool? CronLogStatement { get; set; }
+
+        /// <summary>
+        /// Default unit: ms
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("log_autovacuum_min_duration")]
+        public string? LogAutovacuumMinDuration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("log_checkpoints")]
+        public bool? LogCheckpoints { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("log_connections")]
+        public bool? LogConnections { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("log_disconnections")]
+        public bool? LogDisconnections { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("log_duration")]
+        public bool? LogDuration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("log_lock_waits")]
+        public bool? LogLockWaits { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("log_recovery_conflict_waits")]
+        public bool? LogRecoveryConflictWaits { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("log_replication_commands")]
+        public bool? LogReplicationCommands { get; set; }
+
+        /// <summary>
+        /// Default unit: ms
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("log_startup_progress_interval")]
+        public string? LogStartupProgressInterval { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("log_temp_files")]
+        public string? LogTempFiles { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maintenance_work_mem")]
         public string? MaintenanceWorkMem { get; set; }
 
@@ -170,6 +236,21 @@ namespace Supabase
         /// </summary>
         /// <param name="effectiveCacheSize"></param>
         /// <param name="logicalDecodingWorkMem"></param>
+        /// <param name="cronLogStatement"></param>
+        /// <param name="logAutovacuumMinDuration">
+        /// Default unit: ms
+        /// </param>
+        /// <param name="logCheckpoints"></param>
+        /// <param name="logConnections"></param>
+        /// <param name="logDisconnections"></param>
+        /// <param name="logDuration"></param>
+        /// <param name="logLockWaits"></param>
+        /// <param name="logRecoveryConflictWaits"></param>
+        /// <param name="logReplicationCommands"></param>
+        /// <param name="logStartupProgressInterval">
+        /// Default unit: ms
+        /// </param>
+        /// <param name="logTempFiles"></param>
         /// <param name="maintenanceWorkMem"></param>
         /// <param name="trackActivityQuerySize"></param>
         /// <param name="maxConnections"></param>
@@ -205,6 +286,17 @@ namespace Supabase
         public PostgresConfigResponse(
             string? effectiveCacheSize,
             string? logicalDecodingWorkMem,
+            bool? cronLogStatement,
+            string? logAutovacuumMinDuration,
+            bool? logCheckpoints,
+            bool? logConnections,
+            bool? logDisconnections,
+            bool? logDuration,
+            bool? logLockWaits,
+            bool? logRecoveryConflictWaits,
+            bool? logReplicationCommands,
+            string? logStartupProgressInterval,
+            string? logTempFiles,
             string? maintenanceWorkMem,
             string? trackActivityQuerySize,
             int? maxConnections,
@@ -231,6 +323,17 @@ namespace Supabase
         {
             this.EffectiveCacheSize = effectiveCacheSize;
             this.LogicalDecodingWorkMem = logicalDecodingWorkMem;
+            this.CronLogStatement = cronLogStatement;
+            this.LogAutovacuumMinDuration = logAutovacuumMinDuration;
+            this.LogCheckpoints = logCheckpoints;
+            this.LogConnections = logConnections;
+            this.LogDisconnections = logDisconnections;
+            this.LogDuration = logDuration;
+            this.LogLockWaits = logLockWaits;
+            this.LogRecoveryConflictWaits = logRecoveryConflictWaits;
+            this.LogReplicationCommands = logReplicationCommands;
+            this.LogStartupProgressInterval = logStartupProgressInterval;
+            this.LogTempFiles = logTempFiles;
             this.MaintenanceWorkMem = maintenanceWorkMem;
             this.TrackActivityQuerySize = trackActivityQuerySize;
             this.MaxConnections = maxConnections;

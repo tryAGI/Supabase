@@ -44,6 +44,21 @@ namespace Supabase
         /// </param>
         /// <param name="effectiveCacheSize"></param>
         /// <param name="logicalDecodingWorkMem"></param>
+        /// <param name="cronLogStatement"></param>
+        /// <param name="logAutovacuumMinDuration">
+        /// Default unit: ms
+        /// </param>
+        /// <param name="logCheckpoints"></param>
+        /// <param name="logConnections"></param>
+        /// <param name="logDisconnections"></param>
+        /// <param name="logDuration"></param>
+        /// <param name="logLockWaits"></param>
+        /// <param name="logRecoveryConflictWaits"></param>
+        /// <param name="logReplicationCommands"></param>
+        /// <param name="logStartupProgressInterval">
+        /// Default unit: ms
+        /// </param>
+        /// <param name="logTempFiles"></param>
         /// <param name="maintenanceWorkMem"></param>
         /// <param name="trackActivityQuerySize"></param>
         /// <param name="maxConnections"></param>
@@ -81,6 +96,17 @@ namespace Supabase
             string @ref,
             string? effectiveCacheSize = default,
             string? logicalDecodingWorkMem = default,
+            bool? cronLogStatement = default,
+            string? logAutovacuumMinDuration = default,
+            bool? logCheckpoints = default,
+            bool? logConnections = default,
+            bool? logDisconnections = default,
+            bool? logDuration = default,
+            bool? logLockWaits = default,
+            bool? logRecoveryConflictWaits = default,
+            bool? logReplicationCommands = default,
+            string? logStartupProgressInterval = default,
+            string? logTempFiles = default,
             string? maintenanceWorkMem = default,
             string? trackActivityQuerySize = default,
             int? maxConnections = default,

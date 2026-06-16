@@ -6,7 +6,7 @@ namespace Supabase
     /// <summary>
     /// 
     /// </summary>
-    public readonly partial struct OneOf<T1, T2, T3, T4, T5, T6, T7> : global::System.IEquatable<OneOf<T1, T2, T3, T4, T5, T6, T7>>
+    public readonly partial struct OneOf<T1, T2, T3, T4, T5, T6, T7, T8> : global::System.IEquatable<OneOf<T1, T2, T3, T4, T5, T6, T7, T8>>
     {
         /// <summary>
         /// 
@@ -266,15 +266,52 @@ namespace Supabase
         public T7 PickValue7() => IsValue7
             ? Value7!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Value7' but the value was {ToString()}.");
-        /// <summary>
-        /// 
-        /// </summary>
-        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7>(T1 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>((T1?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator T1?(OneOf<T1, T2, T3, T4, T5, T6, T7> @this) => @this.Value1;
+#if NET6_0_OR_GREATER
+        public T8? Value8 { get; init; }
+#else
+        public T8? Value8 { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value8))]
+#endif
+        public bool IsValue8 => Value8 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickValue8(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T8? value)
+        {
+            value = Value8;
+            return IsValue8;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T8 PickValue8() => IsValue8
+            ? Value8!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value8' but the value was {ToString()}.");
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(T1 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>((T1?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator T1?(OneOf<T1, T2, T3, T4, T5, T6, T7, T8> @this) => @this.Value1;
 
         /// <summary>
         /// 
@@ -287,17 +324,17 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public static OneOf<T1, T2, T3, T4, T5, T6, T7> FromValue1(T1? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>(value);
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8> FromValue1(T1? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7>(T2 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>((T2?)value);
+        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(T2 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>((T2?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator T2?(OneOf<T1, T2, T3, T4, T5, T6, T7> @this) => @this.Value2;
+        public static implicit operator T2?(OneOf<T1, T2, T3, T4, T5, T6, T7, T8> @this) => @this.Value2;
 
         /// <summary>
         /// 
@@ -310,17 +347,17 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public static OneOf<T1, T2, T3, T4, T5, T6, T7> FromValue2(T2? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>(value);
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8> FromValue2(T2? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7>(T3 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>((T3?)value);
+        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(T3 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>((T3?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator T3?(OneOf<T1, T2, T3, T4, T5, T6, T7> @this) => @this.Value3;
+        public static implicit operator T3?(OneOf<T1, T2, T3, T4, T5, T6, T7, T8> @this) => @this.Value3;
 
         /// <summary>
         /// 
@@ -333,17 +370,17 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public static OneOf<T1, T2, T3, T4, T5, T6, T7> FromValue3(T3? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>(value);
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8> FromValue3(T3? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7>(T4 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>((T4?)value);
+        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(T4 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>((T4?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator T4?(OneOf<T1, T2, T3, T4, T5, T6, T7> @this) => @this.Value4;
+        public static implicit operator T4?(OneOf<T1, T2, T3, T4, T5, T6, T7, T8> @this) => @this.Value4;
 
         /// <summary>
         /// 
@@ -356,17 +393,17 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public static OneOf<T1, T2, T3, T4, T5, T6, T7> FromValue4(T4? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>(value);
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8> FromValue4(T4? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7>(T5 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>((T5?)value);
+        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(T5 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>((T5?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator T5?(OneOf<T1, T2, T3, T4, T5, T6, T7> @this) => @this.Value5;
+        public static implicit operator T5?(OneOf<T1, T2, T3, T4, T5, T6, T7, T8> @this) => @this.Value5;
 
         /// <summary>
         /// 
@@ -379,17 +416,17 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public static OneOf<T1, T2, T3, T4, T5, T6, T7> FromValue5(T5? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>(value);
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8> FromValue5(T5? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7>(T6 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>((T6?)value);
+        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(T6 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>((T6?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator T6?(OneOf<T1, T2, T3, T4, T5, T6, T7> @this) => @this.Value6;
+        public static implicit operator T6?(OneOf<T1, T2, T3, T4, T5, T6, T7, T8> @this) => @this.Value6;
 
         /// <summary>
         /// 
@@ -402,17 +439,17 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public static OneOf<T1, T2, T3, T4, T5, T6, T7> FromValue6(T6? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>(value);
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8> FromValue6(T6? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7>(T7 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>((T7?)value);
+        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(T7 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>((T7?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator T7?(OneOf<T1, T2, T3, T4, T5, T6, T7> @this) => @this.Value7;
+        public static implicit operator T7?(OneOf<T1, T2, T3, T4, T5, T6, T7, T8> @this) => @this.Value7;
 
         /// <summary>
         /// 
@@ -425,7 +462,30 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public static OneOf<T1, T2, T3, T4, T5, T6, T7> FromValue7(T7? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7>(value);
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8> FromValue7(T7? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(T8 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>((T8?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator T8?(OneOf<T1, T2, T3, T4, T5, T6, T7, T8> @this) => @this.Value8;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public OneOf(T8? value)
+        {
+            Value8 = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8> FromValue8(T8? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8>(value);
 
         /// <summary>
         /// 
@@ -437,7 +497,8 @@ namespace Supabase
             T4? value4,
             T5? value5,
             T6? value6,
-            T7? value7
+            T7? value7,
+            T8? value8
             )
         {
             Value1 = value1;
@@ -447,12 +508,14 @@ namespace Supabase
             Value5 = value5;
             Value6 = value6;
             Value7 = value7;
+            Value8 = value8;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
+            Value8 as object ??
             Value7 as object ??
             Value6 as object ??
             Value5 as object ??
@@ -472,7 +535,8 @@ namespace Supabase
             Value4?.ToString() ??
             Value5?.ToString() ??
             Value6?.ToString() ??
-            Value7?.ToString() 
+            Value7?.ToString() ??
+            Value8?.ToString() 
             ;
 
         /// <summary>
@@ -480,7 +544,7 @@ namespace Supabase
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 && !IsValue2 && !IsValue3 && !IsValue4 && !IsValue5 && !IsValue6 && !IsValue7 || !IsValue1 && IsValue2 && !IsValue3 && !IsValue4 && !IsValue5 && !IsValue6 && !IsValue7 || !IsValue1 && !IsValue2 && IsValue3 && !IsValue4 && !IsValue5 && !IsValue6 && !IsValue7 || !IsValue1 && !IsValue2 && !IsValue3 && IsValue4 && !IsValue5 && !IsValue6 && !IsValue7 || !IsValue1 && !IsValue2 && !IsValue3 && !IsValue4 && IsValue5 && !IsValue6 && !IsValue7 || !IsValue1 && !IsValue2 && !IsValue3 && !IsValue4 && !IsValue5 && IsValue6 && !IsValue7 || !IsValue1 && !IsValue2 && !IsValue3 && !IsValue4 && !IsValue5 && !IsValue6 && IsValue7;
+            return IsValue1 && !IsValue2 && !IsValue3 && !IsValue4 && !IsValue5 && !IsValue6 && !IsValue7 && !IsValue8 || !IsValue1 && IsValue2 && !IsValue3 && !IsValue4 && !IsValue5 && !IsValue6 && !IsValue7 && !IsValue8 || !IsValue1 && !IsValue2 && IsValue3 && !IsValue4 && !IsValue5 && !IsValue6 && !IsValue7 && !IsValue8 || !IsValue1 && !IsValue2 && !IsValue3 && IsValue4 && !IsValue5 && !IsValue6 && !IsValue7 && !IsValue8 || !IsValue1 && !IsValue2 && !IsValue3 && !IsValue4 && IsValue5 && !IsValue6 && !IsValue7 && !IsValue8 || !IsValue1 && !IsValue2 && !IsValue3 && !IsValue4 && !IsValue5 && IsValue6 && !IsValue7 && !IsValue8 || !IsValue1 && !IsValue2 && !IsValue3 && !IsValue4 && !IsValue5 && !IsValue6 && IsValue7 && !IsValue8 || !IsValue1 && !IsValue2 && !IsValue3 && !IsValue4 && !IsValue5 && !IsValue6 && !IsValue7 && IsValue8;
         }
 
         /// <summary>
@@ -494,6 +558,7 @@ namespace Supabase
             global::System.Func<T5, TResult>? value5 = null,
             global::System.Func<T6, TResult>? value6 = null,
             global::System.Func<T7, TResult>? value7 = null,
+            global::System.Func<T8, TResult>? value8 = null,
             bool validate = true)
         {
             if (validate)
@@ -529,6 +594,10 @@ namespace Supabase
             {
                 return value7(Value7!);
             }
+            else if (IsValue8 && value8 != null)
+            {
+                return value8(Value8!);
+            }
 
             return default(TResult);
         }
@@ -550,6 +619,8 @@ namespace Supabase
             global::System.Action<T6>? value6 = null,
 
             global::System.Action<T7>? value7 = null,
+
+            global::System.Action<T8>? value8 = null,
             bool validate = true)
         {
             if (validate)
@@ -584,6 +655,10 @@ namespace Supabase
             else if (IsValue7)
             {
                 value7?.Invoke(Value7!);
+            }
+            else if (IsValue8)
+            {
+                value8?.Invoke(Value8!);
             }
         }
 
@@ -598,6 +673,7 @@ namespace Supabase
             global::System.Action<T5>? value5 = null,
             global::System.Action<T6>? value6 = null,
             global::System.Action<T7>? value7 = null,
+            global::System.Action<T8>? value8 = null,
             bool validate = true)
         {
             if (validate)
@@ -632,6 +708,10 @@ namespace Supabase
             else if (IsValue7)
             {
                 value7?.Invoke(Value7!);
+            }
+            else if (IsValue8)
+            {
+                value8?.Invoke(Value8!);
             }
         }
 
@@ -656,6 +736,8 @@ namespace Supabase
                 typeof(T6),
                 Value7,
                 typeof(T7),
+                Value8,
+                typeof(T8),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -669,7 +751,7 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public bool Equals(OneOf<T1, T2, T3, T4, T5, T6, T7> other)
+        public bool Equals(OneOf<T1, T2, T3, T4, T5, T6, T7, T8> other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<T1?>.Default.Equals(Value1, other.Value1) &&
@@ -678,22 +760,23 @@ namespace Supabase
                 global::System.Collections.Generic.EqualityComparer<T4?>.Default.Equals(Value4, other.Value4) &&
                 global::System.Collections.Generic.EqualityComparer<T5?>.Default.Equals(Value5, other.Value5) &&
                 global::System.Collections.Generic.EqualityComparer<T6?>.Default.Equals(Value6, other.Value6) &&
-                global::System.Collections.Generic.EqualityComparer<T7?>.Default.Equals(Value7, other.Value7) 
+                global::System.Collections.Generic.EqualityComparer<T7?>.Default.Equals(Value7, other.Value7) &&
+                global::System.Collections.Generic.EqualityComparer<T8?>.Default.Equals(Value8, other.Value8) 
                 ;
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public static bool operator ==(OneOf<T1, T2, T3, T4, T5, T6, T7> obj1, OneOf<T1, T2, T3, T4, T5, T6, T7> obj2)
+        public static bool operator ==(OneOf<T1, T2, T3, T4, T5, T6, T7, T8> obj1, OneOf<T1, T2, T3, T4, T5, T6, T7, T8> obj2)
         {
-            return global::System.Collections.Generic.EqualityComparer<OneOf<T1, T2, T3, T4, T5, T6, T7>>.Default.Equals(obj1, obj2);
+            return global::System.Collections.Generic.EqualityComparer<OneOf<T1, T2, T3, T4, T5, T6, T7, T8>>.Default.Equals(obj1, obj2);
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public static bool operator !=(OneOf<T1, T2, T3, T4, T5, T6, T7> obj1, OneOf<T1, T2, T3, T4, T5, T6, T7> obj2)
+        public static bool operator !=(OneOf<T1, T2, T3, T4, T5, T6, T7, T8> obj1, OneOf<T1, T2, T3, T4, T5, T6, T7, T8> obj2)
         {
             return !(obj1 == obj2);
         }
@@ -703,7 +786,7 @@ namespace Supabase
         /// </summary>
         public override bool Equals(object? obj)
         {
-            return obj is OneOf<T1, T2, T3, T4, T5, T6, T7> o && Equals(o);
+            return obj is OneOf<T1, T2, T3, T4, T5, T6, T7, T8> o && Equals(o);
         }
     }
 }

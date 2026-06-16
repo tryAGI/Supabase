@@ -27,6 +27,10 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        EtlPipeline,
+        /// <summary>
+        /// 
+        /// </summary>
         Ipv4,
         /// <summary>
         /// 
@@ -54,6 +58,7 @@ namespace Supabase
                 ApplyProjectAddonBodyAddonType.AuthMfaWebAuthn => "auth_mfa_web_authn",
                 ApplyProjectAddonBodyAddonType.ComputeInstance => "compute_instance",
                 ApplyProjectAddonBodyAddonType.CustomDomain => "custom_domain",
+                ApplyProjectAddonBodyAddonType.EtlPipeline => "etl_pipeline",
                 ApplyProjectAddonBodyAddonType.Ipv4 => "ipv4",
                 ApplyProjectAddonBodyAddonType.LogDrain => "log_drain",
                 ApplyProjectAddonBodyAddonType.Pitr => "pitr",
@@ -71,6 +76,7 @@ namespace Supabase
                 "auth_mfa_web_authn" => ApplyProjectAddonBodyAddonType.AuthMfaWebAuthn,
                 "compute_instance" => ApplyProjectAddonBodyAddonType.ComputeInstance,
                 "custom_domain" => ApplyProjectAddonBodyAddonType.CustomDomain,
+                "etl_pipeline" => ApplyProjectAddonBodyAddonType.EtlPipeline,
                 "ipv4" => ApplyProjectAddonBodyAddonType.Ipv4,
                 "log_drain" => ApplyProjectAddonBodyAddonType.LogDrain,
                 "pitr" => ApplyProjectAddonBodyAddonType.Pitr,
