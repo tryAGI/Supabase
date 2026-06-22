@@ -28,10 +28,28 @@ namespace Supabase.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1)}");
                 pgGraphqlIntrospectionChange = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
+            global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2? ltreeReindexRequired = default;
+            if (discriminator?.Type == global::Supabase.ProjectUpgradeEligibilityResponseWarningDiscriminatorType.LtreeReindexRequired)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2)}");
+                ltreeReindexRequired = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
+            global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3? operatorEstimatorGate = default;
+            if (discriminator?.Type == global::Supabase.ProjectUpgradeEligibilityResponseWarningDiscriminatorType.OperatorEstimatorGate)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3)}");
+                operatorEstimatorGate = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
 
             var __value = new global::Supabase.WarningsItem(
                 discriminator?.Type,
-                pgGraphqlIntrospectionChange
+                pgGraphqlIntrospectionChange,
+
+                ltreeReindexRequired,
+
+                operatorEstimatorGate
                 );
 
             return __value;
@@ -51,6 +69,18 @@ namespace Supabase.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PgGraphqlIntrospectionChange!, typeInfo);
+            }
+            else if (value.IsLtreeReindexRequired)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LtreeReindexRequired!, typeInfo);
+            }
+            else if (value.IsOperatorEstimatorGate)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OperatorEstimatorGate!, typeInfo);
             }
         }
     }

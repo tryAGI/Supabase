@@ -84,6 +84,12 @@ namespace Supabase
         public string? TemplateUrl { get; set; }
 
         /// <summary>
+        /// [Experimental] Whether to enable high availability for the project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("high_availability")]
+        public bool? HighAvailability { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -111,6 +117,9 @@ namespace Supabase
         /// <param name="templateUrl">
         /// Template URL used to create the project from the CLI.
         /// </param>
+        /// <param name="highAvailability">
+        /// [Experimental] Whether to enable high availability for the project.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -120,7 +129,8 @@ namespace Supabase
             string organizationSlug,
             global::Supabase.RegionSelection? regionSelection,
             global::Supabase.V1CreateProjectBodyDesiredInstanceSize? desiredInstanceSize,
-            string? templateUrl)
+            string? templateUrl,
+            bool? highAvailability)
         {
             this.DbPass = dbPass ?? throw new global::System.ArgumentNullException(nameof(dbPass));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
@@ -128,6 +138,7 @@ namespace Supabase
             this.RegionSelection = regionSelection;
             this.DesiredInstanceSize = desiredInstanceSize;
             this.TemplateUrl = templateUrl;
+            this.HighAvailability = highAvailability;
         }
 
         /// <summary>

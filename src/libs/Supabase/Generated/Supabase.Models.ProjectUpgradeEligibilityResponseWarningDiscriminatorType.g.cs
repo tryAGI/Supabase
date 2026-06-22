@@ -11,6 +11,14 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        LtreeReindexRequired,
+        /// <summary>
+        /// 
+        /// </summary>
+        OperatorEstimatorGate,
+        /// <summary>
+        /// 
+        /// </summary>
         PgGraphqlIntrospectionChange,
     }
 
@@ -26,6 +34,8 @@ namespace Supabase
         {
             return value switch
             {
+                ProjectUpgradeEligibilityResponseWarningDiscriminatorType.LtreeReindexRequired => "ltree_reindex_required",
+                ProjectUpgradeEligibilityResponseWarningDiscriminatorType.OperatorEstimatorGate => "operator_estimator_gate",
                 ProjectUpgradeEligibilityResponseWarningDiscriminatorType.PgGraphqlIntrospectionChange => "pg_graphql_introspection_change",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -37,6 +47,8 @@ namespace Supabase
         {
             return value switch
             {
+                "ltree_reindex_required" => ProjectUpgradeEligibilityResponseWarningDiscriminatorType.LtreeReindexRequired,
+                "operator_estimator_gate" => ProjectUpgradeEligibilityResponseWarningDiscriminatorType.OperatorEstimatorGate,
                 "pg_graphql_introspection_change" => ProjectUpgradeEligibilityResponseWarningDiscriminatorType.PgGraphqlIntrospectionChange,
                 _ => null,
             };

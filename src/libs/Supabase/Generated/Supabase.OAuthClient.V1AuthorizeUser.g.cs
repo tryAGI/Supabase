@@ -36,6 +36,7 @@ namespace Supabase
             ref string? codeChallenge,
             ref global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod,
             ref string? organizationSlug,
+            ref string? targetFlow,
             ref string? resource);
         partial void PrepareV1AuthorizeUserRequest(
             global::System.Net.Http.HttpClient httpClient,
@@ -49,6 +50,7 @@ namespace Supabase
             string? codeChallenge,
             global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod,
             string? organizationSlug,
+            string? targetFlow,
             string? resource);
         partial void ProcessV1AuthorizeUserResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -84,6 +86,7 @@ namespace Supabase
         /// <param name="organizationSlug">
         /// Example: tsrqponmlkjihgfedcba
         /// </param>
+        /// <param name="targetFlow"></param>
         /// <param name="resource"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -101,6 +104,7 @@ namespace Supabase
             string? codeChallenge = default,
             global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod = default,
             string? organizationSlug = default,
+            string? targetFlow = default,
             string? resource = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -115,6 +119,7 @@ namespace Supabase
                 codeChallenge: codeChallenge,
                 codeChallengeMethod: codeChallengeMethod,
                 organizationSlug: organizationSlug,
+                targetFlow: targetFlow,
                 resource: resource,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
@@ -150,6 +155,7 @@ namespace Supabase
         /// <param name="organizationSlug">
         /// Example: tsrqponmlkjihgfedcba
         /// </param>
+        /// <param name="targetFlow"></param>
         /// <param name="resource"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -167,6 +173,7 @@ namespace Supabase
             string? codeChallenge = default,
             global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod = default,
             string? organizationSlug = default,
+            string? targetFlow = default,
             string? resource = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -184,6 +191,7 @@ namespace Supabase
                 codeChallenge: ref codeChallenge,
                 codeChallengeMethod: ref codeChallengeMethod,
                 organizationSlug: ref organizationSlug,
+                targetFlow: ref targetFlow,
                 resource: ref resource);
 
 
@@ -222,6 +230,7 @@ namespace Supabase
                                 .AddOptionalParameter("code_challenge", codeChallenge)
                                 .AddOptionalParameter("code_challenge_method", codeChallengeMethod?.ToValueString())
                                 .AddOptionalParameter("organization_slug", organizationSlug)
+                                .AddOptionalParameter("target_flow", targetFlow)
                                 .AddOptionalParameter("resource", resource)
                                 ;
                             var __path = __pathBuilder.ToString();
@@ -273,6 +282,7 @@ namespace Supabase
                     codeChallenge: codeChallenge,
                     codeChallengeMethod: codeChallengeMethod,
                     organizationSlug: organizationSlug,
+                    targetFlow: targetFlow,
                     resource: resource);
 
                 return __httpRequest;

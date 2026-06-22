@@ -34,6 +34,7 @@ namespace Supabase
         /// <param name="organizationSlug">
         /// Example: tsrqponmlkjihgfedcba
         /// </param>
+        /// <param name="targetFlow"></param>
         /// <param name="resource"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -51,6 +52,7 @@ namespace Supabase
             string? codeChallenge = default,
             global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod = default,
             string? organizationSlug = default,
+            string? targetFlow = default,
             string? resource = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -84,6 +86,7 @@ namespace Supabase
         /// <param name="organizationSlug">
         /// Example: tsrqponmlkjihgfedcba
         /// </param>
+        /// <param name="targetFlow"></param>
         /// <param name="resource"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -101,6 +104,7 @@ namespace Supabase
             string? codeChallenge = default,
             global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod = default,
             string? organizationSlug = default,
+            string? targetFlow = default,
             string? resource = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
