@@ -5,12 +5,13 @@ namespace Supabase
     public partial interface IAnalyticsClient
     {
         /// <summary>
-        /// Gets project's logs<br/>
-        /// Executes a SQL query on the project's logs.<br/>
+        /// Gets all project's logs in a single log stream<br/>
+        /// Executes an SQL or LQL query on the project's unified logs stream.<br/>
         /// Either the `iso_timestamp_start` and `iso_timestamp_end` parameters must be provided.<br/>
         /// If both are not provided, only the last 1 minute of logs will be queried.<br/>
         /// The timestamp range must be no more than 24 hours and is rounded to the nearest minute. If the range is more than 24 hours, a validation error will be thrown.<br/>
-        /// Note: Unless the `sql` parameter is provided, only edge_logs will be queried. See the [log query docs](/docs/guides/telemetry/logs?queryGroups=product&amp;product=postgres&amp;queryGroups=source&amp;source=edge_logs#querying-with-the-logs-explorer:~:text=logs%20from%20the-,Sources,-drop%2Ddown%3A) for all available sources. 
+        /// Filter by the `source` column to specify specific log sources, such as edge_logs, postgres_logs, etc.<br/>
+        /// Note: SQL must be written in **ClickHouse SQL dialect**.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -33,12 +34,13 @@ namespace Supabase
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Gets project's logs<br/>
-        /// Executes a SQL query on the project's logs.<br/>
+        /// Gets all project's logs in a single log stream<br/>
+        /// Executes an SQL or LQL query on the project's unified logs stream.<br/>
         /// Either the `iso_timestamp_start` and `iso_timestamp_end` parameters must be provided.<br/>
         /// If both are not provided, only the last 1 minute of logs will be queried.<br/>
         /// The timestamp range must be no more than 24 hours and is rounded to the nearest minute. If the range is more than 24 hours, a validation error will be thrown.<br/>
-        /// Note: Unless the `sql` parameter is provided, only edge_logs will be queried. See the [log query docs](/docs/guides/telemetry/logs?queryGroups=product&amp;product=postgres&amp;queryGroups=source&amp;source=edge_logs#querying-with-the-logs-explorer:~:text=logs%20from%20the-,Sources,-drop%2Ddown%3A) for all available sources. 
+        /// Filter by the `source` column to specify specific log sources, such as edge_logs, postgres_logs, etc.<br/>
+        /// Note: SQL must be written in **ClickHouse SQL dialect**.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

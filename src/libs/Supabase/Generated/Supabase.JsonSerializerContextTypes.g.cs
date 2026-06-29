@@ -1656,899 +1656,1003 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItem>? Type407 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.OneOf<global::Supabase.JitListAccessResponseItemVariant1, global::Supabase.JitListAccessResponseItemVariant2>>? Type407 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.JitListAccessResponseItem? Type408 { get; set; }
+        public global::Supabase.OneOf<global::Supabase.JitListAccessResponseItemVariant1, global::Supabase.JitListAccessResponseItemVariant2>? Type408 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItemUserRole>? Type409 { get; set; }
+        public global::Supabase.JitListAccessResponseItemVariant1? Type409 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.JitListAccessResponseItemUserRole? Type410 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItemVariant1UserRole>? Type410 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.JitListAccessResponseItemUserRoleAllowedNetworks? Type411 { get; set; }
+        public global::Supabase.JitListAccessResponseItemVariant1UserRole? Type411 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItemUserRoleAllowedNetworksAllowedCidr>? Type412 { get; set; }
+        public global::Supabase.JitListAccessResponseItemVariant1UserRoleAllowedNetworks? Type412 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.JitListAccessResponseItemUserRoleAllowedNetworksAllowedCidr? Type413 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItemVariant1UserRoleAllowedNetworksAllowedCidr>? Type413 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItemUserRoleAllowedNetworksAllowedCidrsV6Item>? Type414 { get; set; }
+        public global::Supabase.JitListAccessResponseItemVariant1UserRoleAllowedNetworksAllowedCidr? Type414 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.JitListAccessResponseItemUserRoleAllowedNetworksAllowedCidrsV6Item? Type415 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItemVariant1UserRoleAllowedNetworksAllowedCidrsV6Item>? Type415 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateJitAccessBody? Type416 { get; set; }
+        public global::Supabase.JitListAccessResponseItemVariant1UserRoleAllowedNetworksAllowedCidrsV6Item? Type416 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.UpdateJitAccessBodyRole>? Type417 { get; set; }
+        public global::Supabase.JitListAccessResponseItemVariant2? Type417 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateJitAccessBodyRole? Type418 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItemVariant2UserRole>? Type418 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateJitAccessBodyRoleAllowedNetworks? Type419 { get; set; }
+        public global::Supabase.JitListAccessResponseItemVariant2UserRole? Type419 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidr>? Type420 { get; set; }
+        public global::Supabase.JitListAccessResponseItemVariant2UserRoleAllowedNetworks? Type420 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidr? Type421 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidr>? Type421 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidrsV6Item>? Type422 { get; set; }
+        public global::Supabase.JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidr? Type422 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidrsV6Item? Type423 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidrsV6Item>? Type423 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.FunctionResponse? Type424 { get; set; }
+        public global::Supabase.JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidrsV6Item? Type424 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.FunctionResponseStatus? Type425 { get; set; }
+        public global::Supabase.UpdateJitAccessBody? Type425 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1CreateFunctionBody? Type426 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.UpdateJitAccessBodyRole>? Type426 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.BulkUpdateFunctionBodyItem>? Type427 { get; set; }
+        public global::Supabase.UpdateJitAccessBodyRole? Type427 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.BulkUpdateFunctionBodyItem? Type428 { get; set; }
+        public global::Supabase.UpdateJitAccessBodyRoleAllowedNetworks? Type428 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.BulkUpdateFunctionBodyItemStatus? Type429 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidr>? Type429 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.BulkUpdateFunctionResponse? Type430 { get; set; }
+        public global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidr? Type430 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.BulkUpdateFunctionResponseFunction>? Type431 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidrsV6Item>? Type431 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.BulkUpdateFunctionResponseFunction? Type432 { get; set; }
+        public global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidrsV6Item? Type432 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.BulkUpdateFunctionResponseFunctionStatus? Type433 { get; set; }
+        public global::Supabase.InviteExternalUserJitAccessBody? Type433 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.FunctionDeployBody? Type434 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.InviteExternalUserJitAccessBodyRole>? Type434 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<byte[]>? Type435 { get; set; }
+        public global::Supabase.InviteExternalUserJitAccessBodyRole? Type435 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public byte[]? Type436 { get; set; }
+        public global::Supabase.InviteExternalUserJitAccessBodyRoleAllowedNetworks? Type436 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.FunctionDeployBodyMetadata? Type437 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.InviteExternalUserJitAccessBodyRoleAllowedNetworksAllowedCidr>? Type437 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DeployFunctionResponse? Type438 { get; set; }
+        public global::Supabase.InviteExternalUserJitAccessBodyRoleAllowedNetworksAllowedCidr? Type438 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DeployFunctionResponseStatus? Type439 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.InviteExternalUserJitAccessBodyRoleAllowedNetworksAllowedCidrsV6Item>? Type439 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.FunctionSlugResponse? Type440 { get; set; }
+        public global::Supabase.InviteExternalUserJitAccessBodyRoleAllowedNetworksAllowedCidrsV6Item? Type440 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.FunctionSlugResponseStatus? Type441 { get; set; }
+        public global::Supabase.InviteExternalUserJitResponse? Type441 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.StreamableFile? Type442 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.InviteExternalUserJitResponseUserRole>? Type442 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1UpdateFunctionBody? Type443 { get; set; }
+        public global::Supabase.InviteExternalUserJitResponseUserRole? Type443 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1StorageBucketResponse? Type444 { get; set; }
+        public global::Supabase.InviteExternalUserJitResponseUserRoleAllowedNetworks? Type444 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskResponse? Type445 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.InviteExternalUserJitResponseUserRoleAllowedNetworksAllowedCidr>? Type445 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OneOf<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2>? Type446 { get; set; }
+        public global::Supabase.InviteExternalUserJitResponseUserRoleAllowedNetworksAllowedCidr? Type446 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskResponseAttributesVariant1? Type447 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.InviteExternalUserJitResponseUserRoleAllowedNetworksAllowedCidrsV6Item>? Type447 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskResponseAttributesVariant1Type? Type448 { get; set; }
+        public global::Supabase.InviteExternalUserJitResponseUserRoleAllowedNetworksAllowedCidrsV6Item? Type448 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskResponseAttributesVariant2? Type449 { get; set; }
+        public global::Supabase.AcceptInviteExternalUserJitAccessBody? Type449 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskResponseAttributesVariant2Type? Type450 { get; set; }
+        public global::Supabase.FunctionResponse? Type450 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskRequestBody? Type451 { get; set; }
+        public global::Supabase.FunctionResponseStatus? Type451 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.Attributes2? Type452 { get; set; }
+        public global::Supabase.V1CreateFunctionBody? Type452 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskRequestBodyAttributesVariant1? Type453 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.BulkUpdateFunctionBodyItem>? Type453 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskRequestBodyAttributesVariant1Type? Type454 { get; set; }
+        public global::Supabase.BulkUpdateFunctionBodyItem? Type454 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskRequestBodyAttributesVariant2? Type455 { get; set; }
+        public global::Supabase.BulkUpdateFunctionBodyItemStatus? Type455 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskRequestBodyAttributesVariant2Type? Type456 { get; set; }
+        public global::Supabase.BulkUpdateFunctionResponse? Type456 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskRequestBodyAttributesDiscriminator? Type457 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.BulkUpdateFunctionResponseFunction>? Type457 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskRequestBodyAttributesDiscriminatorType? Type458 { get; set; }
+        public global::Supabase.BulkUpdateFunctionResponseFunction? Type458 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskUtilMetricsResponse? Type459 { get; set; }
+        public global::Supabase.BulkUpdateFunctionResponseFunctionStatus? Type459 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskUtilMetricsResponseMetrics? Type460 { get; set; }
+        public global::Supabase.FunctionDeployBody? Type460 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DiskAutoscaleConfig? Type461 { get; set; }
+        public global::System.Collections.Generic.IList<byte[]>? Type461 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.StorageConfigResponse? Type462 { get; set; }
+        public byte[]? Type462 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.StorageConfigResponseFeatures? Type463 { get; set; }
+        public global::Supabase.FunctionDeployBodyMetadata? Type463 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.StorageConfigResponseFeaturesImageTransformation? Type464 { get; set; }
+        public global::Supabase.DeployFunctionResponse? Type464 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.StorageConfigResponseFeaturesS3Protocol? Type465 { get; set; }
+        public global::Supabase.DeployFunctionResponseStatus? Type465 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.StorageConfigResponseFeaturesIcebergCatalog? Type466 { get; set; }
+        public global::Supabase.FunctionSlugResponse? Type466 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.StorageConfigResponseFeaturesVectorBuckets? Type467 { get; set; }
+        public global::Supabase.FunctionSlugResponseStatus? Type467 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.StorageConfigResponseCapabilities? Type468 { get; set; }
+        public global::Supabase.StreamableFile? Type468 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.StorageConfigResponseExternal? Type469 { get; set; }
+        public global::Supabase.V1UpdateFunctionBody? Type469 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.StorageConfigResponseExternalUpstreamTarget? Type470 { get; set; }
+        public global::Supabase.V1StorageBucketResponse? Type470 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateStorageConfigBody? Type471 { get; set; }
+        public global::Supabase.DiskResponse? Type471 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateStorageConfigBodyFeatures? Type472 { get; set; }
+        public global::Supabase.OneOf<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2>? Type472 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateStorageConfigBodyFeaturesImageTransformation? Type473 { get; set; }
+        public global::Supabase.DiskResponseAttributesVariant1? Type473 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateStorageConfigBodyFeaturesS3Protocol? Type474 { get; set; }
+        public global::Supabase.DiskResponseAttributesVariant1Type? Type474 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateStorageConfigBodyFeaturesIcebergCatalog? Type475 { get; set; }
+        public global::Supabase.DiskResponseAttributesVariant2? Type475 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateStorageConfigBodyFeaturesVectorBuckets? Type476 { get; set; }
+        public global::Supabase.DiskResponseAttributesVariant2Type? Type476 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateStorageConfigBodyExternal? Type477 { get; set; }
+        public global::Supabase.DiskRequestBody? Type477 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateStorageConfigBodyExternalUpstreamTarget? Type478 { get; set; }
+        public global::Supabase.Attributes2? Type478 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1PgbouncerConfigResponse? Type479 { get; set; }
+        public global::Supabase.DiskRequestBodyAttributesVariant1? Type479 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1PgbouncerConfigResponsePoolMode? Type480 { get; set; }
+        public global::Supabase.DiskRequestBodyAttributesVariant1Type? Type480 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.SupavisorConfigResponse? Type481 { get; set; }
+        public global::Supabase.DiskRequestBodyAttributesVariant2? Type481 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.SupavisorConfigResponseDatabaseType? Type482 { get; set; }
+        public global::Supabase.DiskRequestBodyAttributesVariant2Type? Type482 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.SupavisorConfigResponsePoolMode? Type483 { get; set; }
+        public global::Supabase.DiskRequestBodyAttributesDiscriminator? Type483 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateSupavisorConfigBody? Type484 { get; set; }
+        public global::Supabase.DiskRequestBodyAttributesDiscriminatorType? Type484 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateSupavisorConfigBodyPoolMode? Type485 { get; set; }
+        public global::Supabase.DiskUtilMetricsResponse? Type485 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateSupavisorConfigResponse? Type486 { get; set; }
+        public global::Supabase.DiskUtilMetricsResponseMetrics? Type486 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.PostgresConfigResponse? Type487 { get; set; }
+        public global::Supabase.DiskAutoscaleConfig? Type487 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.PostgresConfigResponseSessionReplicationRole? Type488 { get; set; }
+        public global::Supabase.StorageConfigResponse? Type488 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdatePostgresConfigBody? Type489 { get; set; }
+        public global::Supabase.StorageConfigResponseFeatures? Type489 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdatePostgresConfigBodySessionReplicationRole? Type490 { get; set; }
+        public global::Supabase.StorageConfigResponseFeaturesImageTransformation? Type490 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.RealtimeConfigResponse? Type491 { get; set; }
+        public global::Supabase.StorageConfigResponseFeaturesS3Protocol? Type491 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateRealtimeConfigBody? Type492 { get; set; }
+        public global::Supabase.StorageConfigResponseFeaturesIcebergCatalog? Type492 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.CreateProviderBody? Type493 { get; set; }
+        public global::Supabase.StorageConfigResponseFeaturesVectorBuckets? Type493 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.CreateProviderBodyType? Type494 { get; set; }
+        public global::Supabase.StorageConfigResponseCapabilities? Type494 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.CreateProviderBodyAttributeMapping? Type495 { get; set; }
+        public global::Supabase.StorageConfigResponseExternal? Type495 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Supabase.CreateProviderBodyAttributeMappingKeys2>? Type496 { get; set; }
+        public global::Supabase.StorageConfigResponseExternalUpstreamTarget? Type496 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.CreateProviderBodyAttributeMappingKeys2? Type497 { get; set; }
+        public global::Supabase.UpdateStorageConfigBody? Type497 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OneOf<object, double?, string, bool?>? Type498 { get; set; }
+        public global::Supabase.UpdateStorageConfigBodyFeatures? Type498 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.CreateProviderBodyNameIdFormat? Type499 { get; set; }
+        public global::Supabase.UpdateStorageConfigBodyFeaturesImageTransformation? Type499 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.CreateProviderResponse? Type500 { get; set; }
+        public global::Supabase.UpdateStorageConfigBodyFeaturesS3Protocol? Type500 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.CreateProviderResponseSaml? Type501 { get; set; }
+        public global::Supabase.UpdateStorageConfigBodyFeaturesIcebergCatalog? Type501 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.CreateProviderResponseSamlAttributeMapping? Type502 { get; set; }
+        public global::Supabase.UpdateStorageConfigBodyFeaturesVectorBuckets? Type502 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Supabase.CreateProviderResponseSamlAttributeMappingKeys2>? Type503 { get; set; }
+        public global::Supabase.UpdateStorageConfigBodyExternal? Type503 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.CreateProviderResponseSamlAttributeMappingKeys2? Type504 { get; set; }
+        public global::Supabase.UpdateStorageConfigBodyExternalUpstreamTarget? Type504 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.CreateProviderResponseSamlNameIdFormat? Type505 { get; set; }
+        public global::Supabase.V1PgbouncerConfigResponse? Type505 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.CreateProviderResponseDomain>? Type506 { get; set; }
+        public global::Supabase.V1PgbouncerConfigResponsePoolMode? Type506 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.CreateProviderResponseDomain? Type507 { get; set; }
+        public global::Supabase.SupavisorConfigResponse? Type507 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.ListProvidersResponse? Type508 { get; set; }
+        public global::Supabase.SupavisorConfigResponseDatabaseType? Type508 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.ListProvidersResponseItem>? Type509 { get; set; }
+        public global::Supabase.SupavisorConfigResponsePoolMode? Type509 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.ListProvidersResponseItem? Type510 { get; set; }
+        public global::Supabase.UpdateSupavisorConfigBody? Type510 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.ListProvidersResponseItemSaml? Type511 { get; set; }
+        public global::Supabase.UpdateSupavisorConfigBodyPoolMode? Type511 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.ListProvidersResponseItemSamlAttributeMapping? Type512 { get; set; }
+        public global::Supabase.UpdateSupavisorConfigResponse? Type512 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Supabase.ListProvidersResponseItemSamlAttributeMappingKeys2>? Type513 { get; set; }
+        public global::Supabase.PostgresConfigResponse? Type513 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.ListProvidersResponseItemSamlAttributeMappingKeys2? Type514 { get; set; }
+        public global::Supabase.PostgresConfigResponseSessionReplicationRole? Type514 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.ListProvidersResponseItemSamlNameIdFormat? Type515 { get; set; }
+        public global::Supabase.UpdatePostgresConfigBody? Type515 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.ListProvidersResponseItemDomain>? Type516 { get; set; }
+        public global::Supabase.UpdatePostgresConfigBodySessionReplicationRole? Type516 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.ListProvidersResponseItemDomain? Type517 { get; set; }
+        public global::Supabase.RealtimeConfigResponse? Type517 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.GetProviderResponse? Type518 { get; set; }
+        public global::Supabase.UpdateRealtimeConfigBody? Type518 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.GetProviderResponseSaml? Type519 { get; set; }
+        public global::Supabase.CreateProviderBody? Type519 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.GetProviderResponseSamlAttributeMapping? Type520 { get; set; }
+        public global::Supabase.CreateProviderBodyType? Type520 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Supabase.GetProviderResponseSamlAttributeMappingKeys2>? Type521 { get; set; }
+        public global::Supabase.CreateProviderBodyAttributeMapping? Type521 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.GetProviderResponseSamlAttributeMappingKeys2? Type522 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Supabase.CreateProviderBodyAttributeMappingKeys2>? Type522 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.GetProviderResponseSamlNameIdFormat? Type523 { get; set; }
+        public global::Supabase.CreateProviderBodyAttributeMappingKeys2? Type523 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.GetProviderResponseDomain>? Type524 { get; set; }
+        public global::Supabase.OneOf<object, double?, string, bool?>? Type524 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.GetProviderResponseDomain? Type525 { get; set; }
+        public global::Supabase.CreateProviderBodyNameIdFormat? Type525 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateProviderBody? Type526 { get; set; }
+        public global::Supabase.CreateProviderResponse? Type526 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateProviderBodyAttributeMapping? Type527 { get; set; }
+        public global::Supabase.CreateProviderResponseSaml? Type527 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Supabase.UpdateProviderBodyAttributeMappingKeys2>? Type528 { get; set; }
+        public global::Supabase.CreateProviderResponseSamlAttributeMapping? Type528 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateProviderBodyAttributeMappingKeys2? Type529 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Supabase.CreateProviderResponseSamlAttributeMappingKeys2>? Type529 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateProviderBodyNameIdFormat? Type530 { get; set; }
+        public global::Supabase.CreateProviderResponseSamlAttributeMappingKeys2? Type530 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateProviderResponse? Type531 { get; set; }
+        public global::Supabase.CreateProviderResponseSamlNameIdFormat? Type531 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateProviderResponseSaml? Type532 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.CreateProviderResponseDomain>? Type532 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateProviderResponseSamlAttributeMapping? Type533 { get; set; }
+        public global::Supabase.CreateProviderResponseDomain? Type533 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Supabase.UpdateProviderResponseSamlAttributeMappingKeys2>? Type534 { get; set; }
+        public global::Supabase.ListProvidersResponse? Type534 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateProviderResponseSamlAttributeMappingKeys2? Type535 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.ListProvidersResponseItem>? Type535 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateProviderResponseSamlNameIdFormat? Type536 { get; set; }
+        public global::Supabase.ListProvidersResponseItem? Type536 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.UpdateProviderResponseDomain>? Type537 { get; set; }
+        public global::Supabase.ListProvidersResponseItemSaml? Type537 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.UpdateProviderResponseDomain? Type538 { get; set; }
+        public global::Supabase.ListProvidersResponseItemSamlAttributeMapping? Type538 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DeleteProviderResponse? Type539 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Supabase.ListProvidersResponseItemSamlAttributeMappingKeys2>? Type539 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DeleteProviderResponseSaml? Type540 { get; set; }
+        public global::Supabase.ListProvidersResponseItemSamlAttributeMappingKeys2? Type540 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DeleteProviderResponseSamlAttributeMapping? Type541 { get; set; }
+        public global::Supabase.ListProvidersResponseItemSamlNameIdFormat? Type541 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Supabase.DeleteProviderResponseSamlAttributeMappingKeys2>? Type542 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.ListProvidersResponseItemDomain>? Type542 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DeleteProviderResponseSamlAttributeMappingKeys2? Type543 { get; set; }
+        public global::Supabase.ListProvidersResponseItemDomain? Type543 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DeleteProviderResponseSamlNameIdFormat? Type544 { get; set; }
+        public global::Supabase.GetProviderResponse? Type544 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.DeleteProviderResponseDomain>? Type545 { get; set; }
+        public global::Supabase.GetProviderResponseSaml? Type545 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.DeleteProviderResponseDomain? Type546 { get; set; }
+        public global::Supabase.GetProviderResponseSamlAttributeMapping? Type546 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1BackupsResponse? Type547 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Supabase.GetProviderResponseSamlAttributeMappingKeys2>? Type547 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.V1BackupsResponseBackup>? Type548 { get; set; }
+        public global::Supabase.GetProviderResponseSamlAttributeMappingKeys2? Type548 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1BackupsResponseBackup? Type549 { get; set; }
+        public global::Supabase.GetProviderResponseSamlNameIdFormat? Type549 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1BackupsResponseBackupStatus? Type550 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.GetProviderResponseDomain>? Type550 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1BackupsResponsePhysicalBackupData? Type551 { get; set; }
+        public global::Supabase.GetProviderResponseDomain? Type551 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1RestorePitrBody? Type552 { get; set; }
+        public global::Supabase.UpdateProviderBody? Type552 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1RestorePointPostBody? Type553 { get; set; }
+        public global::Supabase.UpdateProviderBodyAttributeMapping? Type553 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1RestorePointResponse? Type554 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Supabase.UpdateProviderBodyAttributeMappingKeys2>? Type554 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1RestorePointResponseStatus? Type555 { get; set; }
+        public global::Supabase.UpdateProviderBodyAttributeMappingKeys2? Type555 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1RestoreBackupBody? Type556 { get; set; }
+        public global::Supabase.UpdateProviderBodyNameIdFormat? Type556 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1BackupScheduleResponse? Type557 { get; set; }
+        public global::Supabase.UpdateProviderResponse? Type557 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1UpdateBackupScheduleBody? Type558 { get; set; }
+        public global::Supabase.UpdateProviderResponseSaml? Type558 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1UndoBody? Type559 { get; set; }
+        public global::Supabase.UpdateProviderResponseSamlAttributeMapping? Type559 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1ListEntitlementsResponse? Type560 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Supabase.UpdateProviderResponseSamlAttributeMappingKeys2>? Type560 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.V1ListEntitlementsResponseEntitlement>? Type561 { get; set; }
+        public global::Supabase.UpdateProviderResponseSamlAttributeMappingKeys2? Type561 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1ListEntitlementsResponseEntitlement? Type562 { get; set; }
+        public global::Supabase.UpdateProviderResponseSamlNameIdFormat? Type562 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1ListEntitlementsResponseEntitlementFeature? Type563 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.UpdateProviderResponseDomain>? Type563 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1ListEntitlementsResponseEntitlementFeatureKey? Type564 { get; set; }
+        public global::Supabase.UpdateProviderResponseDomain? Type564 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1ListEntitlementsResponseEntitlementFeatureType? Type565 { get; set; }
+        public global::Supabase.DeleteProviderResponse? Type565 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1ListEntitlementsResponseEntitlementType? Type566 { get; set; }
+        public global::Supabase.DeleteProviderResponseSaml? Type566 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1? Type567 { get; set; }
+        public global::Supabase.DeleteProviderResponseSamlAttributeMapping? Type567 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2? Type568 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Supabase.DeleteProviderResponseSamlAttributeMappingKeys2>? Type568 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3? Type569 { get; set; }
+        public global::Supabase.DeleteProviderResponseSamlAttributeMappingKeys2? Type569 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1OrganizationMemberResponse? Type570 { get; set; }
+        public global::Supabase.DeleteProviderResponseSamlNameIdFormat? Type570 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1OrganizationSlugResponse? Type571 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.DeleteProviderResponseDomain>? Type571 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1OrganizationSlugResponsePlan? Type572 { get; set; }
+        public global::Supabase.DeleteProviderResponseDomain? Type572 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.V1OrganizationSlugResponseOptInTag>? Type573 { get; set; }
+        public global::Supabase.V1BackupsResponse? Type573 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1OrganizationSlugResponseOptInTag? Type574 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.V1BackupsResponseBackup>? Type574 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.V1OrganizationSlugResponseAllowedReleaseChannel>? Type575 { get; set; }
+        public global::Supabase.V1BackupsResponseBackup? Type575 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1OrganizationSlugResponseAllowedReleaseChannel? Type576 { get; set; }
+        public global::Supabase.V1BackupsResponseBackupStatus? Type576 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectClaimResponse? Type577 { get; set; }
+        public global::Supabase.V1BackupsResponsePhysicalBackupData? Type577 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectClaimResponseProject? Type578 { get; set; }
+        public global::Supabase.V1RestorePitrBody? Type578 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectClaimResponsePreview? Type579 { get; set; }
+        public global::Supabase.V1RestorePointPostBody? Type579 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectClaimResponsePreviewWarning>? Type580 { get; set; }
+        public global::Supabase.V1RestorePointResponse? Type580 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectClaimResponsePreviewWarning? Type581 { get; set; }
+        public global::Supabase.V1RestorePointResponseStatus? Type581 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectClaimResponsePreviewError>? Type582 { get; set; }
+        public global::Supabase.V1RestoreBackupBody? Type582 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectClaimResponsePreviewError? Type583 { get; set; }
+        public global::Supabase.V1BackupScheduleResponse? Type583 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectClaimResponsePreviewInfoItem>? Type584 { get; set; }
+        public global::Supabase.V1UpdateBackupScheduleBody? Type584 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectClaimResponsePreviewInfoItem? Type585 { get; set; }
+        public global::Supabase.V1UndoBody? Type585 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectClaimResponsePreviewMembersExceedingFreeProjectLimitItem>? Type586 { get; set; }
+        public global::Supabase.V1ListEntitlementsResponse? Type586 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectClaimResponsePreviewMembersExceedingFreeProjectLimitItem? Type587 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.V1ListEntitlementsResponseEntitlement>? Type587 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlan? Type588 { get; set; }
+        public global::Supabase.V1ListEntitlementsResponseEntitlement? Type588 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlan? Type589 { get; set; }
+        public global::Supabase.V1ListEntitlementsResponseEntitlementFeature? Type589 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectsResponse? Type590 { get; set; }
+        public global::Supabase.V1ListEntitlementsResponseEntitlementFeatureKey? Type590 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectsResponseProject>? Type591 { get; set; }
+        public global::Supabase.V1ListEntitlementsResponseEntitlementFeatureType? Type591 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectsResponseProject? Type592 { get; set; }
+        public global::Supabase.V1ListEntitlementsResponseEntitlementType? Type592 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectsResponseProjectStatus? Type593 { get; set; }
+        public global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1? Type593 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectsResponseProjectDatabase>? Type594 { get; set; }
+        public global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2? Type594 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectsResponseProjectDatabase? Type595 { get; set; }
+        public global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3? Type595 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectsResponseProjectDatabaseInfraComputeSize? Type596 { get; set; }
+        public global::Supabase.V1OrganizationMemberResponse? Type596 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectsResponseProjectDatabaseStatus? Type597 { get; set; }
+        public global::Supabase.V1OrganizationSlugResponse? Type597 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectsResponseProjectDatabaseType? Type598 { get; set; }
+        public global::Supabase.V1OrganizationSlugResponsePlan? Type598 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectsResponseProjectDatabaseDiskType? Type599 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.V1OrganizationSlugResponseOptInTag>? Type599 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OrganizationProjectsResponsePagination? Type600 { get; set; }
+        public global::Supabase.V1OrganizationSlugResponseOptInTag? Type600 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.OneOf<string, global::System.Guid?>? Type601 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.V1OrganizationSlugResponseAllowedReleaseChannel>? Type601 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1GetAvailableRegionsContinent? Type602 { get; set; }
+        public global::Supabase.V1OrganizationSlugResponseAllowedReleaseChannel? Type602 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1GetAvailableRegionsDesiredInstanceSize? Type603 { get; set; }
+        public global::Supabase.OrganizationProjectClaimResponse? Type603 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1AuthorizeUserResponseType? Type604 { get; set; }
+        public global::Supabase.OrganizationProjectClaimResponseProject? Type604 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1AuthorizeUserCodeChallengeMethod? Type605 { get; set; }
+        public global::Supabase.OrganizationProjectClaimResponsePreview? Type605 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1OauthAuthorizeProjectClaimResponseType? Type606 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectClaimResponsePreviewWarning>? Type606 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1OauthAuthorizeProjectClaimCodeChallengeMethod? Type607 { get; set; }
+        public global::Supabase.OrganizationProjectClaimResponsePreviewWarning? Type607 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1ListAllSnippetsSortBy? Type608 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectClaimResponsePreviewError>? Type608 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1ListAllSnippetsSortOrder? Type609 { get; set; }
+        public global::Supabase.OrganizationProjectClaimResponsePreviewError? Type609 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthService>? Type610 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectClaimResponsePreviewInfoItem>? Type610 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1GetServicesHealthService? Type611 { get; set; }
+        public global::Supabase.OrganizationProjectClaimResponsePreviewInfoItem? Type611 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1RemoveProjectAddonAddonVariantVariant1? Type612 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectClaimResponsePreviewMembersExceedingFreeProjectLimitItem>? Type612 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1RemoveProjectAddonAddonVariantVariant2? Type613 { get; set; }
+        public global::Supabase.OrganizationProjectClaimResponsePreviewMembersExceedingFreeProjectLimitItem? Type613 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1RemoveProjectAddonAddonVariantVariant3? Type614 { get; set; }
+        public global::Supabase.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlan? Type614 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1RemoveProjectAddonAddonVariantVariant4? Type615 { get; set; }
+        public global::Supabase.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlan? Type615 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1GetSecurityAdvisorsLintType? Type616 { get; set; }
+        public global::Supabase.OrganizationProjectsResponse? Type616 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1GetProjectUsageApiCountInterval? Type617 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectsResponseProject>? Type617 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1GetProjectFunctionCombinedStatsInterval? Type618 { get; set; }
+        public global::Supabase.OrganizationProjectsResponseProject? Type618 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Supabase.V1GetAllProjectsForOrganizationSort? Type619 { get; set; }
+        public global::Supabase.OrganizationProjectsResponseProjectStatus? Type619 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.V1ProjectWithDatabaseResponse>? Type620 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectsResponseProjectDatabase>? Type620 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1>? Type621 { get; set; }
+        public global::Supabase.OrganizationProjectsResponseProjectDatabase? Type621 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>? Type622 { get; set; }
+        public global::Supabase.OrganizationProjectsResponseProjectDatabaseInfraComputeSize? Type622 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.BranchResponse>? Type623 { get; set; }
+        public global::Supabase.OrganizationProjectsResponseProjectDatabaseStatus? Type623 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.SecretResponse>? Type624 { get; set; }
+        public global::Supabase.OrganizationProjectsResponseProjectDatabaseType? Type624 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>? Type625 { get; set; }
+        public global::Supabase.OrganizationProjectsResponseProjectDatabaseDiskType? Type625 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.ThirdPartyAuth>? Type626 { get; set; }
+        public global::Supabase.OrganizationProjectsResponsePagination? Type626 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.FunctionResponse>? Type627 { get; set; }
+        public global::Supabase.OneOf<string, global::System.Guid?>? Type627 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.V1StorageBucketResponse>? Type628 { get; set; }
+        public global::Supabase.V1GetAvailableRegionsContinent? Type628 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.SupavisorConfigResponse>? Type629 { get; set; }
+        public global::Supabase.V1GetAvailableRegionsDesiredInstanceSize? Type629 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.V1OrganizationMemberResponse>? Type630 { get; set; }
+        public global::Supabase.V1AuthorizeUserResponseType? Type630 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1AuthorizeUserCodeChallengeMethod? Type631 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1OauthAuthorizeProjectClaimResponseType? Type632 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1OauthAuthorizeProjectClaimCodeChallengeMethod? Type633 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1ListAllSnippetsSortBy? Type634 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1ListAllSnippetsSortOrder? Type635 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthService>? Type636 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1GetServicesHealthService? Type637 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1RemoveProjectAddonAddonVariantVariant1? Type638 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1RemoveProjectAddonAddonVariantVariant2? Type639 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1RemoveProjectAddonAddonVariantVariant3? Type640 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1RemoveProjectAddonAddonVariantVariant4? Type641 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1GetSecurityAdvisorsLintType? Type642 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1GetProjectUsageApiCountInterval? Type643 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1GetProjectFunctionCombinedStatsInterval? Type644 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Supabase.V1GetAllProjectsForOrganizationSort? Type645 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Supabase.V1ProjectWithDatabaseResponse>? Type646 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1>? Type647 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>? Type648 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Supabase.BranchResponse>? Type649 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Supabase.SecretResponse>? Type650 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>? Type651 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Supabase.ThirdPartyAuth>? Type652 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Supabase.FunctionResponse>? Type653 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Supabase.V1StorageBucketResponse>? Type654 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Supabase.SupavisorConfigResponse>? Type655 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Supabase.V1OrganizationMemberResponse>? Type656 { get; set; }
 
         /// <summary>
         /// 
@@ -2721,154 +2825,190 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.JitListAccessResponseItem>? ListType42 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.OneOf<global::Supabase.JitListAccessResponseItemVariant1, global::Supabase.JitListAccessResponseItemVariant2>>? ListType42 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.JitListAccessResponseItemUserRole>? ListType43 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.JitListAccessResponseItemVariant1UserRole>? ListType43 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.JitListAccessResponseItemUserRoleAllowedNetworksAllowedCidr>? ListType44 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.JitListAccessResponseItemVariant1UserRoleAllowedNetworksAllowedCidr>? ListType44 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.JitListAccessResponseItemUserRoleAllowedNetworksAllowedCidrsV6Item>? ListType45 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.JitListAccessResponseItemVariant1UserRoleAllowedNetworksAllowedCidrsV6Item>? ListType45 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.UpdateJitAccessBodyRole>? ListType46 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.JitListAccessResponseItemVariant2UserRole>? ListType46 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidr>? ListType47 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidr>? ListType47 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidrsV6Item>? ListType48 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidrsV6Item>? ListType48 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.BulkUpdateFunctionBodyItem>? ListType49 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.UpdateJitAccessBodyRole>? ListType49 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.BulkUpdateFunctionResponseFunction>? ListType50 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidr>? ListType50 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<byte[]>? ListType51 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidrsV6Item>? ListType51 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.CreateProviderResponseDomain>? ListType52 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitAccessBodyRole>? ListType52 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.ListProvidersResponseItem>? ListType53 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitAccessBodyRoleAllowedNetworksAllowedCidr>? ListType53 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.ListProvidersResponseItemDomain>? ListType54 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitAccessBodyRoleAllowedNetworksAllowedCidrsV6Item>? ListType54 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.GetProviderResponseDomain>? ListType55 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitResponseUserRole>? ListType55 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.UpdateProviderResponseDomain>? ListType56 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitResponseUserRoleAllowedNetworksAllowedCidr>? ListType56 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.DeleteProviderResponseDomain>? ListType57 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitResponseUserRoleAllowedNetworksAllowedCidrsV6Item>? ListType57 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.V1BackupsResponseBackup>? ListType58 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.BulkUpdateFunctionBodyItem>? ListType58 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.V1ListEntitlementsResponseEntitlement>? ListType59 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.BulkUpdateFunctionResponseFunction>? ListType59 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.V1OrganizationSlugResponseOptInTag>? ListType60 { get; set; }
+        public global::System.Collections.Generic.List<byte[]>? ListType60 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.V1OrganizationSlugResponseAllowedReleaseChannel>? ListType61 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.CreateProviderResponseDomain>? ListType61 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.OrganizationProjectClaimResponsePreviewWarning>? ListType62 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.ListProvidersResponseItem>? ListType62 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.OrganizationProjectClaimResponsePreviewError>? ListType63 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.ListProvidersResponseItemDomain>? ListType63 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.OrganizationProjectClaimResponsePreviewInfoItem>? ListType64 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.GetProviderResponseDomain>? ListType64 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.OrganizationProjectClaimResponsePreviewMembersExceedingFreeProjectLimitItem>? ListType65 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.UpdateProviderResponseDomain>? ListType65 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.OrganizationProjectsResponseProject>? ListType66 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.DeleteProviderResponseDomain>? ListType66 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.OrganizationProjectsResponseProjectDatabase>? ListType67 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.V1BackupsResponseBackup>? ListType67 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.V1GetServicesHealthService>? ListType68 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.V1ListEntitlementsResponseEntitlement>? ListType68 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.V1ProjectWithDatabaseResponse>? ListType69 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.V1OrganizationSlugResponseOptInTag>? ListType69 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.OrganizationResponseV1>? ListType70 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.V1OrganizationSlugResponseAllowedReleaseChannel>? ListType70 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.ApiKeyResponse>? ListType71 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.OrganizationProjectClaimResponsePreviewWarning>? ListType71 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.BranchResponse>? ListType72 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.OrganizationProjectClaimResponsePreviewError>? ListType72 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.SecretResponse>? ListType73 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.OrganizationProjectClaimResponsePreviewInfoItem>? ListType73 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.V1ServiceHealthResponse>? ListType74 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.OrganizationProjectClaimResponsePreviewMembersExceedingFreeProjectLimitItem>? ListType74 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.ThirdPartyAuth>? ListType75 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.OrganizationProjectsResponseProject>? ListType75 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.FunctionResponse>? ListType76 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.OrganizationProjectsResponseProjectDatabase>? ListType76 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.V1StorageBucketResponse>? ListType77 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.V1GetServicesHealthService>? ListType77 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.SupavisorConfigResponse>? ListType78 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.V1ProjectWithDatabaseResponse>? ListType78 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.V1OrganizationMemberResponse>? ListType79 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.OrganizationResponseV1>? ListType79 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Supabase.ApiKeyResponse>? ListType80 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Supabase.BranchResponse>? ListType81 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Supabase.SecretResponse>? ListType82 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Supabase.V1ServiceHealthResponse>? ListType83 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Supabase.ThirdPartyAuth>? ListType84 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Supabase.FunctionResponse>? ListType85 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Supabase.V1StorageBucketResponse>? ListType86 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Supabase.SupavisorConfigResponse>? ListType87 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Supabase.V1OrganizationMemberResponse>? ListType88 { get; set; }
     }
 }

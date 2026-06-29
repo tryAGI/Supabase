@@ -6,7 +6,7 @@ namespace Supabase
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class JitListAccessResponseItemUserRoleAllowedNetworksAllowedCidrsV6Item
+    public sealed partial class JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidrsV6Item
     {
         /// <summary>
         /// 
@@ -22,22 +22,22 @@ namespace Supabase
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="JitListAccessResponseItemUserRoleAllowedNetworksAllowedCidrsV6Item" /> class.
+        /// Initializes a new instance of the <see cref="JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidrsV6Item" /> class.
         /// </summary>
         /// <param name="cidr"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public JitListAccessResponseItemUserRoleAllowedNetworksAllowedCidrsV6Item(
+        public JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidrsV6Item(
             string cidr)
         {
             this.Cidr = cidr ?? throw new global::System.ArgumentNullException(nameof(cidr));
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="JitListAccessResponseItemUserRoleAllowedNetworksAllowedCidrsV6Item" /> class.
+        /// Initializes a new instance of the <see cref="JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidrsV6Item" /> class.
         /// </summary>
-        public JitListAccessResponseItemUserRoleAllowedNetworksAllowedCidrsV6Item()
+        public JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidrsV6Item()
         {
         }
 
