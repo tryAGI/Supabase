@@ -11,10 +11,6 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        ManualMigrationRequired,
-        /// <summary>
-        /// 
-        /// </summary>
         PostgresUpgradeRequired,
         /// <summary>
         /// 
@@ -34,7 +30,6 @@ namespace Supabase
         {
             return value switch
             {
-                JitStateResponseVariant2UnavailableReason.ManualMigrationRequired => "manual_migration_required",
                 JitStateResponseVariant2UnavailableReason.PostgresUpgradeRequired => "postgres_upgrade_required",
                 JitStateResponseVariant2UnavailableReason.TemporarilyUnavailable => "temporarily_unavailable",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -47,7 +42,6 @@ namespace Supabase
         {
             return value switch
             {
-                "manual_migration_required" => JitStateResponseVariant2UnavailableReason.ManualMigrationRequired,
                 "postgres_upgrade_required" => JitStateResponseVariant2UnavailableReason.PostgresUpgradeRequired,
                 "temporarily_unavailable" => JitStateResponseVariant2UnavailableReason.TemporarilyUnavailable,
                 _ => null,

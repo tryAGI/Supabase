@@ -6,7 +6,7 @@ namespace Supabase
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class JitListAccessResponseItemUserRole
+    public sealed partial class JitListAccessResponseItemVariant1UserRole
     {
         /// <summary>
         /// 
@@ -25,7 +25,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("allowed_networks")]
-        public global::Supabase.JitListAccessResponseItemUserRoleAllowedNetworks? AllowedNetworks { get; set; }
+        public global::Supabase.JitListAccessResponseItemVariant1UserRoleAllowedNetworks? AllowedNetworks { get; set; }
 
         /// <summary>
         /// 
@@ -40,7 +40,7 @@ namespace Supabase
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="JitListAccessResponseItemUserRole" /> class.
+        /// Initializes a new instance of the <see cref="JitListAccessResponseItemVariant1UserRole" /> class.
         /// </summary>
         /// <param name="role"></param>
         /// <param name="expiresAt"></param>
@@ -49,10 +49,10 @@ namespace Supabase
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public JitListAccessResponseItemUserRole(
+        public JitListAccessResponseItemVariant1UserRole(
             string role,
             double? expiresAt,
-            global::Supabase.JitListAccessResponseItemUserRoleAllowedNetworks? allowedNetworks,
+            global::Supabase.JitListAccessResponseItemVariant1UserRoleAllowedNetworks? allowedNetworks,
             bool? branchesOnly)
         {
             this.Role = role ?? throw new global::System.ArgumentNullException(nameof(role));
@@ -62,9 +62,9 @@ namespace Supabase
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="JitListAccessResponseItemUserRole" /> class.
+        /// Initializes a new instance of the <see cref="JitListAccessResponseItemVariant1UserRole" /> class.
         /// </summary>
-        public JitListAccessResponseItemUserRole()
+        public JitListAccessResponseItemVariant1UserRole()
         {
         }
 

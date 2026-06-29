@@ -13,7 +13,7 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("items")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItem> Items { get; set; }
+        public required global::System.Collections.Generic.IList<global::Supabase.OneOf<global::Supabase.JitListAccessResponseItemVariant1, global::Supabase.JitListAccessResponseItemVariant2>> Items { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,7 +29,7 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public JitListAccessResponse(
-            global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItem> items)
+            global::System.Collections.Generic.IList<global::Supabase.OneOf<global::Supabase.JitListAccessResponseItemVariant1, global::Supabase.JitListAccessResponseItemVariant2>> items)
         {
             this.Items = items ?? throw new global::System.ArgumentNullException(nameof(items));
         }

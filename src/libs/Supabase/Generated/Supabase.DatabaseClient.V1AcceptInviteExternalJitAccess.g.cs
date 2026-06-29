@@ -3,11 +3,11 @@
 
 namespace Supabase
 {
-    public partial class AnalyticsClient
+    public partial class DatabaseClient
     {
 
 
-        private static readonly global::Supabase.EndPointSecurityRequirement s_V1GetProjectLogsSecurityRequirement0 =
+        private static readonly global::Supabase.EndPointSecurityRequirement s_V1AcceptInviteExternalJitAccessSecurityRequirement0 =
             new global::Supabase.EndPointSecurityRequirement
             {
                 Authorizations = new global::Supabase.EndPointAuthorizationRequirement[]
@@ -21,67 +21,50 @@ namespace Supabase
                     },
                 },
             };
-        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1GetProjectLogsSecurityRequirements =
+        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1AcceptInviteExternalJitAccessSecurityRequirements =
             new global::Supabase.EndPointSecurityRequirement[]
-            {                s_V1GetProjectLogsSecurityRequirement0,
+            {                s_V1AcceptInviteExternalJitAccessSecurityRequirement0,
             };
-        partial void PrepareV1GetProjectLogsArguments(
+        partial void PrepareV1AcceptInviteExternalJitAccessArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
-            ref string? sql,
-            ref global::System.DateTime? isoTimestampStart,
-            ref global::System.DateTime? isoTimestampEnd);
-        partial void PrepareV1GetProjectLogsRequest(
+            global::Supabase.AcceptInviteExternalUserJitAccessBody request);
+        partial void PrepareV1AcceptInviteExternalJitAccessRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @ref,
-            string? sql,
-            global::System.DateTime? isoTimestampStart,
-            global::System.DateTime? isoTimestampEnd);
-        partial void ProcessV1GetProjectLogsResponse(
+            global::Supabase.AcceptInviteExternalUserJitAccessBody request);
+        partial void ProcessV1AcceptInviteExternalJitAccessResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessV1GetProjectLogsResponseContent(
+        partial void ProcessV1AcceptInviteExternalJitAccessResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Gets all project's logs in a single log stream<br/>
-        /// Executes an SQL or LQL query on the project's unified logs stream.<br/>
-        /// Either the `iso_timestamp_start` and `iso_timestamp_end` parameters must be provided.<br/>
-        /// If both are not provided, only the last 1 minute of logs will be queried.<br/>
-        /// The timestamp range must be no more than 24 hours and is rounded to the nearest minute. If the range is more than 24 hours, a validation error will be thrown.<br/>
-        /// Filter by the `source` column to specify specific log sources, such as edge_logs, postgres_logs, etc.<br/>
-        /// Note: SQL must be written in **ClickHouse SQL dialect**.
+        /// Accepts invitation for JIT database access<br/>
+        /// Accepts the invitation to JIT database access
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="sql"></param>
-        /// <param name="isoTimestampStart">
-        /// Example: 2025-03-01T00:00:00Z
-        /// </param>
-        /// <param name="isoTimestampEnd">
-        /// Example: 2025-03-01T23:59:59Z
-        /// </param>
+        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AnalyticsResponse> V1GetProjectLogsAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.JitAccessResponse> V1AcceptInviteExternalJitAccessAsync(
             string @ref,
-            string? sql = default,
-            global::System.DateTime? isoTimestampStart = default,
-            global::System.DateTime? isoTimestampEnd = default,
+
+            global::Supabase.AcceptInviteExternalUserJitAccessBody request,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await V1GetProjectLogsAsResponseAsync(
+            var __response = await V1AcceptInviteExternalJitAccessAsResponseAsync(
                 @ref: @ref,
-                sql: sql,
-                isoTimestampStart: isoTimestampStart,
-                isoTimestampEnd: isoTimestampEnd,
+
+                request: request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -89,49 +72,37 @@ namespace Supabase
             return __response.Body;
         }
         /// <summary>
-        /// Gets all project's logs in a single log stream<br/>
-        /// Executes an SQL or LQL query on the project's unified logs stream.<br/>
-        /// Either the `iso_timestamp_start` and `iso_timestamp_end` parameters must be provided.<br/>
-        /// If both are not provided, only the last 1 minute of logs will be queried.<br/>
-        /// The timestamp range must be no more than 24 hours and is rounded to the nearest minute. If the range is more than 24 hours, a validation error will be thrown.<br/>
-        /// Filter by the `source` column to specify specific log sources, such as edge_logs, postgres_logs, etc.<br/>
-        /// Note: SQL must be written in **ClickHouse SQL dialect**.
+        /// Accepts invitation for JIT database access<br/>
+        /// Accepts the invitation to JIT database access
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="sql"></param>
-        /// <param name="isoTimestampStart">
-        /// Example: 2025-03-01T00:00:00Z
-        /// </param>
-        /// <param name="isoTimestampEnd">
-        /// Example: 2025-03-01T23:59:59Z
-        /// </param>
+        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.AnalyticsResponse>> V1GetProjectLogsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.JitAccessResponse>> V1AcceptInviteExternalJitAccessAsResponseAsync(
             string @ref,
-            string? sql = default,
-            global::System.DateTime? isoTimestampStart = default,
-            global::System.DateTime? isoTimestampEnd = default,
+
+            global::Supabase.AcceptInviteExternalUserJitAccessBody request,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+
             PrepareArguments(
                 client: HttpClient);
-            PrepareV1GetProjectLogsArguments(
+            PrepareV1AcceptInviteExternalJitAccessArguments(
                 httpClient: HttpClient,
                 @ref: ref @ref,
-                sql: ref sql,
-                isoTimestampStart: ref isoTimestampStart,
-                isoTimestampEnd: ref isoTimestampEnd);
+                request: request);
 
 
             var __authorizations = global::Supabase.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_V1GetProjectLogsSecurityRequirements,
-                operationName: "V1GetProjectLogsAsync");
+                securityRequirements: s_V1AcceptInviteExternalJitAccessSecurityRequirements,
+                operationName: "V1AcceptInviteExternalJitAccessAsync");
 
             using var __timeoutCancellationTokenSource = global::Supabase.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -151,20 +122,15 @@ namespace Supabase
             {
 
                             var __pathBuilder = new global::Supabase.PathBuilder(
-                                path: $"/v1/projects/{@ref}/analytics/endpoints/logs",
+                                path: $"/v1/projects/{@ref}/database/jit/invite/accept",
                                 baseUri: HttpClient.BaseAddress);
-                            __pathBuilder
-                                .AddOptionalParameter("sql", sql)
-                                .AddOptionalParameter("iso_timestamp_start", isoTimestampStart?.ToString("yyyy-MM-ddTHH:mm:ssZ"))
-                                .AddOptionalParameter("iso_timestamp_end", isoTimestampEnd?.ToString("yyyy-MM-ddTHH:mm:ssZ"))
-                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Get,
+                    method: global::System.Net.Http.HttpMethod.Post,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -187,6 +153,12 @@ namespace Supabase
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 } 
             }
+                            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
+                            var __httpRequestContent = new global::System.Net.Http.StringContent(
+                                content: __httpRequestContentBody,
+                                encoding: global::System.Text.Encoding.UTF8,
+                                mediaType: "application/json");
+                            __httpRequest.Content = __httpRequestContent;
                 global::Supabase.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -195,13 +167,11 @@ namespace Supabase
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareV1GetProjectLogsRequest(
+                PrepareV1AcceptInviteExternalJitAccessRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     @ref: @ref!,
-                    sql: sql,
-                    isoTimestampStart: isoTimestampStart,
-                    isoTimestampEnd: isoTimestampEnd);
+                    request: request);
 
                 return __httpRequest;
             }
@@ -218,10 +188,10 @@ namespace Supabase
                     await global::Supabase.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetProjectLogs",
-                                methodName: "V1GetProjectLogsAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs\"",
-                                httpMethod: "GET",
+                                operationId: "V1AcceptInviteExternalJitAccess",
+                                methodName: "V1AcceptInviteExternalJitAccessAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/database/jit/invite/accept\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -252,10 +222,10 @@ namespace Supabase
                         await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetProjectLogs",
-                                methodName: "V1GetProjectLogsAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs\"",
-                                httpMethod: "GET",
+                                operationId: "V1AcceptInviteExternalJitAccess",
+                                methodName: "V1AcceptInviteExternalJitAccessAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/database/jit/invite/accept\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -293,10 +263,10 @@ namespace Supabase
                         await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetProjectLogs",
-                                methodName: "V1GetProjectLogsAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs\"",
-                                httpMethod: "GET",
+                                operationId: "V1AcceptInviteExternalJitAccess",
+                                methodName: "V1AcceptInviteExternalJitAccessAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/database/jit/invite/accept\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -333,7 +303,7 @@ namespace Supabase
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessV1GetProjectLogsResponse(
+                ProcessV1AcceptInviteExternalJitAccessResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -341,10 +311,10 @@ namespace Supabase
                     await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetProjectLogs",
-                                methodName: "V1GetProjectLogsAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs\"",
-                                httpMethod: "GET",
+                                operationId: "V1AcceptInviteExternalJitAccess",
+                                methodName: "V1AcceptInviteExternalJitAccessAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/database/jit/invite/accept\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -363,10 +333,10 @@ namespace Supabase
                     await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetProjectLogs",
-                                methodName: "V1GetProjectLogsAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs\"",
-                                httpMethod: "GET",
+                                operationId: "V1AcceptInviteExternalJitAccess",
+                                methodName: "V1AcceptInviteExternalJitAccessAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/database/jit/invite/accept\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -381,128 +351,32 @@ namespace Supabase
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // 
-                            if ((int)__response.StatusCode == 401)
+                            if ((int)__response.StatusCode == 500)
                             {
-                                string? __content_401 = null;
-                                global::System.Exception? __exception_401 = null;
+                                string? __content_500 = null;
+                                global::System.Exception? __exception_500 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
-                                        __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
                                     }
                                     else
                                     {
-                                        __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    __exception_401 = __ex;
+                                    __exception_500 = __ex;
                                 }
 
 
                                 throw global::Supabase.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_401,
-                                    responseBody: __content_401,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            // 
-                            if ((int)__response.StatusCode == 402)
-                            {
-                                string? __content_402 = null;
-                                global::System.Exception? __exception_402 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_402 = __ex;
-                                }
-
-
-                                throw global::Supabase.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_402,
-                                    responseBody: __content_402,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            // 
-                            if ((int)__response.StatusCode == 403)
-                            {
-                                string? __content_403 = null;
-                                global::System.Exception? __exception_403 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_403 = __ex;
-                                }
-
-
-                                throw global::Supabase.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_403,
-                                    responseBody: __content_403,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            // 
-                            if ((int)__response.StatusCode == 429)
-                            {
-                                string? __content_429 = null;
-                                global::System.Exception? __exception_429 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_429 = __ex;
-                                }
-
-
-                                throw global::Supabase.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_429 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_429,
-                                    responseBody: __content_429,
+                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_500,
+                                    responseBody: __content_500,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
@@ -521,7 +395,7 @@ namespace Supabase
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessV1GetProjectLogsResponseContent(
+                                ProcessV1AcceptInviteExternalJitAccessResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -530,9 +404,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.AnalyticsResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.JitAccessResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.AnalyticsResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.JitAccessResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -562,9 +436,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.AnalyticsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.JitAccessResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.AnalyticsResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.JitAccessResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -603,6 +477,37 @@ namespace Supabase
             {
                 __httpRequest?.Dispose();
             }
+        }
+        /// <summary>
+        /// Accepts invitation for JIT database access<br/>
+        /// Accepts the invitation to JIT database access
+        /// </summary>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="email"></param>
+        /// <param name="token"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Supabase.JitAccessResponse> V1AcceptInviteExternalJitAccessAsync(
+            string @ref,
+            string email,
+            string token,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            var __request = new global::Supabase.AcceptInviteExternalUserJitAccessBody
+            {
+                Email = email,
+                Token = token,
+            };
+
+            return await V1AcceptInviteExternalJitAccessAsync(
+                @ref: @ref,
+                request: __request,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken).ConfigureAwait(false);
         }
     }
 }

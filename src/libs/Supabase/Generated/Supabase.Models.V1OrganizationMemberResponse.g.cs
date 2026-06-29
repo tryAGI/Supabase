@@ -43,6 +43,12 @@ namespace Supabase
         public required bool MfaEnabled { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("avatar_url")]
+        public string? AvatarUrl { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -56,6 +62,7 @@ namespace Supabase
         /// <param name="roleName"></param>
         /// <param name="mfaEnabled"></param>
         /// <param name="email"></param>
+        /// <param name="avatarUrl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -64,13 +71,15 @@ namespace Supabase
             string userName,
             string roleName,
             bool mfaEnabled,
-            string? email)
+            string? email,
+            string? avatarUrl)
         {
             this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
             this.UserName = userName ?? throw new global::System.ArgumentNullException(nameof(userName));
             this.Email = email;
             this.RoleName = roleName ?? throw new global::System.ArgumentNullException(nameof(roleName));
             this.MfaEnabled = mfaEnabled;
+            this.AvatarUrl = avatarUrl;
         }
 
         /// <summary>

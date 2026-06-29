@@ -79,6 +79,17 @@
     },
     {
       "Order": 8,
+      "Title": "Accepts invitation for JIT database access",
+      "Slug": "v1-accept-invite-external-jit-access",
+      "Description": "Accepts the invitation to JIT database access",
+      "Language": "http",
+      "Code": "### Accepts invitation for JIT database access\n# @name v1-accept-invite-external-jit-access\nPOST {{host}}/v1/projects/{{ref}}/database/jit/invite/accept\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022email\u0022: \u0022external-user@somedomain.xyz\u0022,\n  \u0022token\u0022: \u0022\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 500\n# Description: Failed to accept invitation",
+      "Format": "http",
+      "OperationId": "v1-accept-invite-external-jit-access",
+      "Setup": null
+    },
+    {
+      "Order": 9,
       "Title": "Apply a database migration",
       "Slug": "v1-apply-a-migration",
       "Description": "Only available to selected partner OAuth apps",
@@ -89,7 +100,7 @@
       "Setup": null
     },
     {
-      "Order": 9,
+      "Order": 10,
       "Title": "Authorize user-id to role mappings for JIT access",
       "Slug": "v1-authorize-jit-access",
       "Description": "Authorizes the request to assume a role in the project database",
@@ -100,7 +111,7 @@
       "Setup": null
     },
     {
-      "Order": 10,
+      "Order": 11,
       "Title": "[Beta] Create a login role for CLI with temporary password",
       "Slug": "v1-create-login-role",
       "Description": "Generated from OpenAPI examples.",
@@ -111,7 +122,7 @@
       "Setup": null
     },
     {
-      "Order": 11,
+      "Order": 12,
       "Title": "Initiates a creation of a restore point for a database",
       "Slug": "v1-create-restore-point",
       "Description": "Generated from OpenAPI examples.",
@@ -122,7 +133,18 @@
       "Setup": null
     },
     {
-      "Order": 12,
+      "Order": 13,
+      "Title": "Invites an external user to a database for JIT access",
+      "Slug": "v1-invite-external-jit-access",
+      "Description": "Invites the external user and sets initial roles that can be assumed and for how long",
+      "Language": "http",
+      "Code": "### Invites an external user to a database for JIT access\n# @name v1-invite-external-jit-access\nPOST {{host}}/v1/projects/{{ref}}/database/jit/invite\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022email\u0022: \u0022external-user@somedomain.xyz\u0022,\n  \u0022roles\u0022: [\n    {\n      \u0022role\u0022: \u0022postgres\u0022,\n      \u0022expires_at\u0022: 1740787200,\n      \u0022allowed_networks\u0022: {\n        \u0022allowed_cidrs\u0022: [\n          {\n            \u0022cidr\u0022: \u0022203.0.113.0/24\u0022\n          }\n        ]\n      },\n      \u0022branches_only\u0022: false\n    }\n  ]\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to invite external user",
+      "Format": "http",
+      "OperationId": "v1-invite-external-jit-access",
+      "Setup": null
+    },
+    {
+      "Order": 14,
       "Title": "Patch an existing entry in migration history",
       "Slug": "v1-patch-a-migration",
       "Description": "Only available to selected partner OAuth apps",
@@ -133,7 +155,7 @@
       "Setup": null
     },
     {
-      "Order": 13,
+      "Order": 15,
       "Title": "[Beta] Run a sql query as supabase_read_only_user",
       "Slug": "v1-read-only-query",
       "Description": "All entity references must be schema qualified.",
@@ -144,7 +166,7 @@
       "Setup": null
     },
     {
-      "Order": 14,
+      "Order": 16,
       "Title": "[Beta] Remove a read replica",
       "Slug": "v1-remove-a-read-replica",
       "Description": "Generated from OpenAPI examples.",
@@ -155,7 +177,7 @@
       "Setup": null
     },
     {
-      "Order": 15,
+      "Order": 17,
       "Title": "Restores a physical backup for a database",
       "Slug": "v1-restore-physical-backup",
       "Description": "Generated from OpenAPI examples.",
@@ -166,7 +188,7 @@
       "Setup": null
     },
     {
-      "Order": 16,
+      "Order": 18,
       "Title": "Restores a PITR backup for a database",
       "Slug": "v1-restore-pitr-backup",
       "Description": "Generated from OpenAPI examples.",
@@ -177,7 +199,7 @@
       "Setup": null
     },
     {
-      "Order": 17,
+      "Order": 19,
       "Title": "[Beta] Run sql query",
       "Slug": "v1-run-a-query",
       "Description": "Generated from OpenAPI examples.",
@@ -188,7 +210,7 @@
       "Setup": null
     },
     {
-      "Order": 18,
+      "Order": 20,
       "Title": "[Beta] Set up a read replica",
       "Slug": "v1-setup-a-read-replica",
       "Description": "Generated from OpenAPI examples.",
@@ -199,7 +221,7 @@
       "Setup": null
     },
     {
-      "Order": 19,
+      "Order": 21,
       "Title": "Initiates an undo to a given restore point",
       "Slug": "v1-undo",
       "Description": "Generated from OpenAPI examples.",
@@ -210,7 +232,7 @@
       "Setup": null
     },
     {
-      "Order": 20,
+      "Order": 22,
       "Title": "Updates the backup schedule time for a project",
       "Slug": "v1-update-backup-schedule",
       "Description": "Sets the time at which the daily backup runs. The change takes effect on the next backup window that includes the new time. If the new time has already passed for today, the first backup at the new time will occur the following day. It can only be updated 3 times per 24 hours.",
@@ -221,7 +243,7 @@
       "Setup": null
     },
     {
-      "Order": 21,
+      "Order": 23,
       "Title": "Updates the database password",
       "Slug": "v1-update-database-password",
       "Description": "Generated from OpenAPI examples.",
@@ -232,18 +254,18 @@
       "Setup": null
     },
     {
-      "Order": 22,
+      "Order": 24,
       "Title": "Updates a user mapping for JIT access",
       "Slug": "v1-update-jit-access",
       "Description": "Modifies the roles that can be assumed and for how long",
       "Language": "http",
-      "Code": "### Updates a user mapping for JIT access\n# @name v1-update-jit-access\nPUT {{host}}/v1/projects/{{ref}}/database/jit\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022user_id\u0022: \u002255555555-5555-4555-8555-555555555555\u0022,\n  \u0022roles\u0022: [\n    {\n      \u0022role\u0022: \u0022postgres\u0022,\n      \u0022expires_at\u0022: 1740787200,\n      \u0022allowed_networks\u0022: {\n        \u0022allowed_cidrs\u0022: [\n          {\n            \u0022cidr\u0022: \u0022203.0.113.0/24\u0022\n          }\n        ]\n      },\n      \u0022branches_only\u0022: false\n    }\n  ]\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to upsert database migration",
+      "Code": "### Updates a user mapping for JIT access\n# @name v1-update-jit-access\nPUT {{host}}/v1/projects/{{ref}}/database/jit\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022user_id\u0022: \u002255555555-5555-4555-8555-555555555555\u0022,\n  \u0022roles\u0022: [\n    {\n      \u0022role\u0022: \u0022postgres\u0022,\n      \u0022expires_at\u0022: 1740787200,\n      \u0022allowed_networks\u0022: {\n        \u0022allowed_cidrs\u0022: [\n          {\n            \u0022cidr\u0022: \u0022203.0.113.0/24\u0022\n          }\n        ]\n      },\n      \u0022branches_only\u0022: false\n    }\n  ]\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update JIT access",
       "Format": "http",
       "OperationId": "v1-update-jit-access",
       "Setup": null
     },
     {
-      "Order": 23,
+      "Order": 25,
       "Title": "[Beta] Update project\u0027s temporary access configuration.",
       "Slug": "v1-update-jit-access-config",
       "Description": "Generated from OpenAPI examples.",
@@ -254,7 +276,7 @@
       "Setup": null
     },
     {
-      "Order": 24,
+      "Order": 26,
       "Title": "Updates project\u0027s supavisor config",
       "Slug": "v1-update-pooler-config",
       "Description": "Generated from OpenAPI examples.",
@@ -265,7 +287,7 @@
       "Setup": null
     },
     {
-      "Order": 25,
+      "Order": 27,
       "Title": "Updates project\u0027s Postgres config",
       "Slug": "v1-update-postgres-config",
       "Description": "Generated from OpenAPI examples.",
@@ -276,7 +298,7 @@
       "Setup": null
     },
     {
-      "Order": 26,
+      "Order": 28,
       "Title": "[Beta] Update project\u0027s SSL enforcement configuration.",
       "Slug": "v1-update-ssl-enforcement-config",
       "Description": "Generated from OpenAPI examples.",
@@ -287,7 +309,7 @@
       "Setup": null
     },
     {
-      "Order": 27,
+      "Order": 29,
       "Title": "Upsert a database migration without applying",
       "Slug": "v1-upsert-a-migration",
       "Description": "Only available to selected partner OAuth apps",
@@ -298,7 +320,7 @@
       "Setup": null
     },
     {
-      "Order": 28,
+      "Order": 30,
       "Title": "[Beta] Activates a vanity subdomain for a project.",
       "Slug": "v1-activate-vanity-subdomain-config",
       "Description": "Generated from OpenAPI examples.",
@@ -309,7 +331,7 @@
       "Setup": null
     },
     {
-      "Order": 29,
+      "Order": 31,
       "Title": "[Beta] Checks vanity subdomain availability",
       "Slug": "v1-check-vanity-subdomain-availability",
       "Description": "Generated from OpenAPI examples.",
@@ -320,7 +342,7 @@
       "Setup": null
     },
     {
-      "Order": 30,
+      "Order": 32,
       "Title": "[Beta] Updates project\u0027s custom hostname configuration",
       "Slug": "v1-update-hostname-config",
       "Description": "Generated from OpenAPI examples.",
@@ -331,7 +353,7 @@
       "Setup": null
     },
     {
-      "Order": 31,
+      "Order": 33,
       "Title": "Bulk update functions",
       "Slug": "v1-bulk-update-functions",
       "Description": "Bulk update functions. It will create a new function or replace existing. The operation is idempotent. NOTE: You will need to manually bump the version.",
@@ -342,7 +364,7 @@
       "Setup": null
     },
     {
-      "Order": 32,
+      "Order": 34,
       "Title": "Deploy a function",
       "Slug": "v1-deploy-a-function",
       "Description": "A new endpoint to deploy functions. It will create if function does not exist.",
@@ -353,7 +375,7 @@
       "Setup": null
     },
     {
-      "Order": 33,
+      "Order": 35,
       "Title": "Update a function",
       "Slug": "v1-update-a-function",
       "Description": "Updates a function with the specified slug and project.",
@@ -364,7 +386,7 @@
       "Setup": null
     },
     {
-      "Order": 34,
+      "Order": 36,
       "Title": "Create a database branch",
       "Slug": "v1-create-a-branch",
       "Description": "Creates a database branch from the specified project.",
@@ -375,7 +397,7 @@
       "Setup": null
     },
     {
-      "Order": 35,
+      "Order": 37,
       "Title": "Merges a database branch",
       "Slug": "v1-merge-a-branch",
       "Description": "Merges the specified database branch",
@@ -386,7 +408,7 @@
       "Setup": null
     },
     {
-      "Order": 36,
+      "Order": 38,
       "Title": "Pushes a database branch",
       "Slug": "v1-push-a-branch",
       "Description": "Pushes the specified database branch",
@@ -397,7 +419,7 @@
       "Setup": null
     },
     {
-      "Order": 37,
+      "Order": 39,
       "Title": "Resets a database branch",
       "Slug": "v1-reset-a-branch",
       "Description": "Resets the specified database branch",
@@ -408,7 +430,7 @@
       "Setup": null
     },
     {
-      "Order": 38,
+      "Order": 40,
       "Title": "Update database branch config",
       "Slug": "v1-update-a-branch-config",
       "Description": "Updates the configuration of the specified database branch",
@@ -419,7 +441,7 @@
       "Setup": null
     },
     {
-      "Order": 39,
+      "Order": 41,
       "Title": "Update the status of an action run",
       "Slug": "v1-update-action-run-status",
       "Description": "Updates the status of an ongoing action run.",
@@ -430,7 +452,7 @@
       "Setup": null
     },
     {
-      "Order": 40,
+      "Order": 42,
       "Title": "[Beta] Exchange auth code for user\u0027s access and refresh token",
       "Slug": "v1-exchange-oauth-token",
       "Description": "Supports \u0060authorization_code\u0060, \u0060refresh_token\u0060, and \u0060urn:ietf:params:oauth:grant-type:jwt-bearer\u0060 grant types. The \u0060jwt-bearer\u0060 grant type (IDJAG \u2014 identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.",
@@ -441,7 +463,7 @@
       "Setup": null
     },
     {
-      "Order": 41,
+      "Order": 43,
       "Title": "[Beta] Revoke oauth app authorization and it\u0027s corresponding tokens",
       "Slug": "v1-revoke-token",
       "Description": "Generated from OpenAPI examples.",
@@ -452,7 +474,7 @@
       "Setup": "This example assumes \u0060using Supabase;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     },
     {
-      "Order": 42,
+      "Order": 44,
       "Title": "Create an organization",
       "Slug": "v1-create-an-organization",
       "Description": "Generated from OpenAPI examples.",
@@ -463,7 +485,7 @@
       "Setup": "This example assumes \u0060using Supabase;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     },
     {
-      "Order": 43,
+      "Order": 45,
       "Title": "Create a project",
       "Slug": "v1-create-a-project",
       "Description": "Generated from OpenAPI examples.",
@@ -474,7 +496,7 @@
       "Setup": "This example assumes \u0060using Supabase;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     },
     {
-      "Order": 44,
+      "Order": 46,
       "Title": "[Beta] Remove network bans.",
       "Slug": "v1-delete-network-bans",
       "Description": "Generated from OpenAPI examples.",
@@ -485,7 +507,7 @@
       "Setup": null
     },
     {
-      "Order": 45,
+      "Order": 47,
       "Title": "Modify database disk",
       "Slug": "v1-modify-database-disk",
       "Description": "Generated from OpenAPI examples.",
@@ -496,7 +518,7 @@
       "Setup": null
     },
     {
-      "Order": 46,
+      "Order": 48,
       "Title": "[Alpha] Updates project\u0027s network restrictions by adding or removing CIDRs",
       "Slug": "v1-patch-network-restrictions",
       "Description": "Generated from OpenAPI examples.",
@@ -507,7 +529,7 @@
       "Setup": null
     },
     {
-      "Order": 47,
+      "Order": 49,
       "Title": "Updates the given project",
       "Slug": "v1-update-a-project",
       "Description": "Generated from OpenAPI examples.",
@@ -518,7 +540,7 @@
       "Setup": null
     },
     {
-      "Order": 48,
+      "Order": 50,
       "Title": "[Beta] Updates project\u0027s network restrictions",
       "Slug": "v1-update-network-restrictions",
       "Description": "Generated from OpenAPI examples.",
@@ -529,7 +551,7 @@
       "Setup": null
     },
     {
-      "Order": 49,
+      "Order": 51,
       "Title": "[Beta] Upgrades the project\u0027s Postgres version",
       "Slug": "v1-upgrade-postgres-version",
       "Description": "Generated from OpenAPI examples.",
@@ -540,7 +562,7 @@
       "Setup": null
     },
     {
-      "Order": 50,
+      "Order": 52,
       "Title": "Updates realtime configuration",
       "Slug": "v1-update-realtime-config",
       "Description": "Generated from OpenAPI examples.",
@@ -551,7 +573,7 @@
       "Setup": null
     },
     {
-      "Order": 51,
+      "Order": 53,
       "Title": "Updates project\u0027s postgrest config",
       "Slug": "v1-update-postgrest-service-config",
       "Description": "Generated from OpenAPI examples.",
@@ -562,7 +584,7 @@
       "Setup": null
     },
     {
-      "Order": 52,
+      "Order": 54,
       "Title": "Bulk create secrets",
       "Slug": "v1-bulk-create-secrets",
       "Description": "Creates multiple secrets and adds them to the specified project.",
@@ -573,7 +595,7 @@
       "Setup": null
     },
     {
-      "Order": 53,
+      "Order": 55,
       "Title": "Bulk delete secrets",
       "Slug": "v1-bulk-delete-secrets",
       "Description": "Deletes all secrets with the given names from the specified project",
@@ -584,7 +606,7 @@
       "Setup": null
     },
     {
-      "Order": 54,
+      "Order": 56,
       "Title": "Creates a new API key for the project",
       "Slug": "v1-create-project-api-key",
       "Description": "Generated from OpenAPI examples.",
@@ -595,7 +617,7 @@
       "Setup": null
     },
     {
-      "Order": 55,
+      "Order": 57,
       "Title": "[Beta] Updates project\u0027s pgsodium config. Updating the root_key can cause all data encrypted with the older key to become inaccessible.",
       "Slug": "v1-update-pgsodium-config",
       "Description": "Generated from OpenAPI examples.",
@@ -606,7 +628,7 @@
       "Setup": null
     },
     {
-      "Order": 56,
+      "Order": 58,
       "Title": "Updates an API key for the project",
       "Slug": "v1-update-project-api-key",
       "Description": "Generated from OpenAPI examples.",
@@ -617,7 +639,7 @@
       "Setup": null
     },
     {
-      "Order": 57,
+      "Order": 59,
       "Title": "Updates project\u0027s storage config",
       "Slug": "v1-update-storage-config",
       "Description": "Generated from OpenAPI examples.",
