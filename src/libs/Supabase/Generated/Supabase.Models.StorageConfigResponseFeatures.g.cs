@@ -25,6 +25,13 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("purgeCache")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Supabase.StorageConfigResponseFeaturesPurgeCache PurgeCache { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("icebergCatalog")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.StorageConfigResponseFeaturesIcebergCatalog IcebergCatalog { get; set; }
@@ -47,6 +54,7 @@ namespace Supabase
         /// </summary>
         /// <param name="imageTransformation"></param>
         /// <param name="s3Protocol"></param>
+        /// <param name="purgeCache"></param>
         /// <param name="icebergCatalog"></param>
         /// <param name="vectorBuckets"></param>
 #if NET7_0_OR_GREATER
@@ -55,11 +63,13 @@ namespace Supabase
         public StorageConfigResponseFeatures(
             global::Supabase.StorageConfigResponseFeaturesImageTransformation imageTransformation,
             global::Supabase.StorageConfigResponseFeaturesS3Protocol s3Protocol,
+            global::Supabase.StorageConfigResponseFeaturesPurgeCache purgeCache,
             global::Supabase.StorageConfigResponseFeaturesIcebergCatalog icebergCatalog,
             global::Supabase.StorageConfigResponseFeaturesVectorBuckets vectorBuckets)
         {
             this.ImageTransformation = imageTransformation ?? throw new global::System.ArgumentNullException(nameof(imageTransformation));
             this.S3Protocol = s3Protocol ?? throw new global::System.ArgumentNullException(nameof(s3Protocol));
+            this.PurgeCache = purgeCache ?? throw new global::System.ArgumentNullException(nameof(purgeCache));
             this.IcebergCatalog = icebergCatalog ?? throw new global::System.ArgumentNullException(nameof(icebergCatalog));
             this.VectorBuckets = vectorBuckets ?? throw new global::System.ArgumentNullException(nameof(vectorBuckets));
         }

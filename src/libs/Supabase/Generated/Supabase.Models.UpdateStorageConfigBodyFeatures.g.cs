@@ -23,6 +23,12 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("purgeCache")]
+        public global::Supabase.UpdateStorageConfigBodyFeaturesPurgeCache? PurgeCache { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("icebergCatalog")]
         public global::Supabase.UpdateStorageConfigBodyFeaturesIcebergCatalog? IcebergCatalog { get; set; }
 
@@ -43,6 +49,7 @@ namespace Supabase
         /// </summary>
         /// <param name="imageTransformation"></param>
         /// <param name="s3Protocol"></param>
+        /// <param name="purgeCache"></param>
         /// <param name="icebergCatalog"></param>
         /// <param name="vectorBuckets"></param>
 #if NET7_0_OR_GREATER
@@ -51,11 +58,13 @@ namespace Supabase
         public UpdateStorageConfigBodyFeatures(
             global::Supabase.UpdateStorageConfigBodyFeaturesImageTransformation? imageTransformation,
             global::Supabase.UpdateStorageConfigBodyFeaturesS3Protocol? s3Protocol,
+            global::Supabase.UpdateStorageConfigBodyFeaturesPurgeCache? purgeCache,
             global::Supabase.UpdateStorageConfigBodyFeaturesIcebergCatalog? icebergCatalog,
             global::Supabase.UpdateStorageConfigBodyFeaturesVectorBuckets? vectorBuckets)
         {
             this.ImageTransformation = imageTransformation;
             this.S3Protocol = s3Protocol;
+            this.PurgeCache = purgeCache;
             this.IcebergCatalog = icebergCatalog;
             this.VectorBuckets = vectorBuckets;
         }
