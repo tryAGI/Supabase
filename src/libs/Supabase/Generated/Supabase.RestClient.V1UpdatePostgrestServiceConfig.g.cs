@@ -582,6 +582,7 @@ namespace Supabase
         /// <param name="dbSchema"></param>
         /// <param name="maxRows"></param>
         /// <param name="dbPool"></param>
+        /// <param name="dbPoolAcquisitionTimeout"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -591,6 +592,7 @@ namespace Supabase
             string? dbSchema = default,
             int? maxRows = default,
             int? dbPool = default,
+            int? dbPoolAcquisitionTimeout = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -600,6 +602,7 @@ namespace Supabase
                 DbSchema = dbSchema,
                 MaxRows = maxRows,
                 DbPool = dbPool,
+                DbPoolAcquisitionTimeout = dbPoolAcquisitionTimeout,
             };
 
             return await V1UpdatePostgrestServiceConfigAsync(
