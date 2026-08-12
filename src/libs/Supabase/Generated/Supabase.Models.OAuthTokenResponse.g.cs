@@ -26,7 +26,7 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expires_in")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int ExpiresIn { get; set; }
+        public required long ExpiresIn { get; set; }
 
         /// <summary>
         /// 
@@ -55,7 +55,7 @@ namespace Supabase
 #endif
         public OAuthTokenResponse(
             string accessToken,
-            int expiresIn,
+            long expiresIn,
             string? refreshToken,
             global::Supabase.OAuthTokenResponseTokenType tokenType)
         {

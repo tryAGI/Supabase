@@ -49,7 +49,7 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_port")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int DbPort { get; set; }
+        public required long DbPort { get; set; }
 
         /// <summary>
         /// 
@@ -76,13 +76,13 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default_pool_size")]
-        public int? DefaultPoolSize { get; set; }
+        public long? DefaultPoolSize { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_client_conn")]
-        public int? MaxClientConn { get; set; }
+        public long? MaxClientConn { get; set; }
 
         /// <summary>
         /// 
@@ -124,13 +124,13 @@ namespace Supabase
             bool isUsingScramAuth,
             string dbUser,
             string dbHost,
-            int dbPort,
+            long dbPort,
             string dbName,
             string connectionString,
             string connectionString2,
             global::Supabase.SupavisorConfigResponsePoolMode poolMode,
-            int? defaultPoolSize,
-            int? maxClientConn)
+            long? defaultPoolSize,
+            long? maxClientConn)
         {
             this.Identifier = identifier ?? throw new global::System.ArgumentNullException(nameof(identifier));
             this.DatabaseType = databaseType;

@@ -37,8 +37,8 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("info")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1ServiceHealthResponseInfoVariant1, global::Supabase.V1ServiceHealthResponseInfoVariant2, global::Supabase.V1ServiceHealthResponseInfoVariant3>))]
-        public global::Supabase.OneOf<global::Supabase.V1ServiceHealthResponseInfoVariant1, global::Supabase.V1ServiceHealthResponseInfoVariant2, global::Supabase.V1ServiceHealthResponseInfoVariant3>? Info { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1ServiceHealthResponseInfoVariant1, global::Supabase.V1ServiceHealthResponseInfoVariant2, global::Supabase.V1ServiceHealthResponseInfoVariant3>))]
+        public global::Supabase.AnyOf<global::Supabase.V1ServiceHealthResponseInfoVariant1, global::Supabase.V1ServiceHealthResponseInfoVariant2, global::Supabase.V1ServiceHealthResponseInfoVariant3>? Info { get; set; }
 
         /// <summary>
         /// 
@@ -69,7 +69,7 @@ namespace Supabase
             global::Supabase.V1ServiceHealthResponseName name,
             bool healthy,
             global::Supabase.V1ServiceHealthResponseStatus status,
-            global::Supabase.OneOf<global::Supabase.V1ServiceHealthResponseInfoVariant1, global::Supabase.V1ServiceHealthResponseInfoVariant2, global::Supabase.V1ServiceHealthResponseInfoVariant3>? info,
+            global::Supabase.AnyOf<global::Supabase.V1ServiceHealthResponseInfoVariant1, global::Supabase.V1ServiceHealthResponseInfoVariant2, global::Supabase.V1ServiceHealthResponseInfoVariant3>? info,
             string? error)
         {
             this.Name = name;

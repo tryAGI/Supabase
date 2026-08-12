@@ -29,12 +29,12 @@ namespace Supabase
             };
         partial void PrepareV1PushABranchArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            ref global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
             global::Supabase.BranchActionBody request);
         partial void PrepareV1PushABranchRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
             global::Supabase.BranchActionBody request);
         partial void ProcessV1PushABranchResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -57,7 +57,7 @@ namespace Supabase
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.BranchUpdateResponse> V1PushABranchAsync(
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
 
             global::Supabase.BranchActionBody request,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -85,7 +85,7 @@ namespace Supabase
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.BranchUpdateResponse>> V1PushABranchAsResponseAsync(
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
 
             global::Supabase.BranchActionBody request,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -493,7 +493,7 @@ namespace Supabase
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.BranchUpdateResponse> V1PushABranchAsync(
 #pragma warning disable CS0618 // Type or member is obsolete
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
 #pragma warning disable CS0618 // Type or member is obsolete
             string? migrationVersion = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

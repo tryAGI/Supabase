@@ -36,7 +36,7 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connected_cluster")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int ConnectedCluster { get; set; }
+        public required long ConnectedCluster { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -60,7 +60,7 @@ namespace Supabase
             bool healthy,
             bool dbConnected,
             bool replicationConnected,
-            int connectedCluster)
+            long connectedCluster)
         {
             this.Healthy = healthy;
             this.DbConnected = dbConnected;

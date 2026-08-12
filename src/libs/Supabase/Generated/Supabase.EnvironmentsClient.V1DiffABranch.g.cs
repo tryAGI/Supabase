@@ -29,15 +29,15 @@ namespace Supabase
             };
         partial void PrepareV1DiffABranchArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            ref global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
             ref string? includedSchemas,
-            ref bool? pgdelta);
+            ref string? pgdelta);
         partial void PrepareV1DiffABranchRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
             string? includedSchemas,
-            bool? pgdelta);
+            string? pgdelta);
         partial void ProcessV1DiffABranchResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -58,7 +58,7 @@ namespace Supabase
         /// Example: public,auth
         /// </param>
         /// <param name="pgdelta">
-        /// Example: false
+        /// Example: true
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -67,9 +67,9 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
         public async global::System.Threading.Tasks.Task<string> V1DiffABranchAsync(
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
             string? includedSchemas = default,
-            bool? pgdelta = default,
+            string? pgdelta = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -94,7 +94,7 @@ namespace Supabase
         /// Example: public,auth
         /// </param>
         /// <param name="pgdelta">
-        /// Example: false
+        /// Example: true
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -103,9 +103,9 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
         public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<string>> V1DiffABranchAsResponseAsync(
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
             string? includedSchemas = default,
-            bool? pgdelta = default,
+            string? pgdelta = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -145,7 +145,7 @@ namespace Supabase
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("included_schemas", includedSchemas)
-                                .AddOptionalParameter("pgdelta", pgdelta?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("pgdelta", pgdelta)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(

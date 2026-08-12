@@ -12,7 +12,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default_pool_size")]
-        public int? DefaultPoolSize { get; set; }
+        public long? DefaultPoolSize { get; set; }
 
         /// <summary>
         /// 
@@ -24,7 +24,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_client_conn")]
-        public int? MaxClientConn { get; set; }
+        public long? MaxClientConn { get; set; }
 
         /// <summary>
         /// 
@@ -43,25 +43,25 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("server_idle_timeout")]
-        public int? ServerIdleTimeout { get; set; }
+        public long? ServerIdleTimeout { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("server_lifetime")]
-        public int? ServerLifetime { get; set; }
+        public long? ServerLifetime { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("query_wait_timeout")]
-        public int? QueryWaitTimeout { get; set; }
+        public long? QueryWaitTimeout { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reserve_pool_size")]
-        public int? ReservePoolSize { get; set; }
+        public long? ReservePoolSize { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -85,15 +85,15 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public V1PgbouncerConfigResponse(
-            int? defaultPoolSize,
+            long? defaultPoolSize,
             string? ignoreStartupParameters,
-            int? maxClientConn,
+            long? maxClientConn,
             global::Supabase.V1PgbouncerConfigResponsePoolMode? poolMode,
             string? connectionString,
-            int? serverIdleTimeout,
-            int? serverLifetime,
-            int? queryWaitTimeout,
-            int? reservePoolSize)
+            long? serverIdleTimeout,
+            long? serverLifetime,
+            long? queryWaitTimeout,
+            long? reservePoolSize)
         {
             this.DefaultPoolSize = defaultPoolSize;
             this.IgnoreStartupParameters = ignoreStartupParameters;

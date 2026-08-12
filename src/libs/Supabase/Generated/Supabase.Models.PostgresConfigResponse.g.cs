@@ -113,6 +113,12 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("max_logical_replication_workers")]
+        public int? MaxLogicalReplicationWorkers { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_parallel_maintenance_workers")]
         public int? MaxParallelMaintenanceWorkers { get; set; }
 
@@ -132,7 +138,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_replication_slots")]
-        public int? MaxReplicationSlots { get; set; }
+        public long? MaxReplicationSlots { get; set; }
 
         /// <summary>
         /// 
@@ -155,6 +161,12 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("max_sync_workers_per_subscription")]
+        public int? MaxSyncWorkersPerSubscription { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_wal_size")]
         public string? MaxWalSize { get; set; }
 
@@ -162,7 +174,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_wal_senders")]
-        public int? MaxWalSenders { get; set; }
+        public long? MaxWalSenders { get; set; }
 
         /// <summary>
         /// 
@@ -255,6 +267,7 @@ namespace Supabase
         /// <param name="trackActivityQuerySize"></param>
         /// <param name="maxConnections"></param>
         /// <param name="maxLocksPerTransaction"></param>
+        /// <param name="maxLogicalReplicationWorkers"></param>
         /// <param name="maxParallelMaintenanceWorkers"></param>
         /// <param name="maxParallelWorkers"></param>
         /// <param name="maxParallelWorkersPerGather"></param>
@@ -262,6 +275,7 @@ namespace Supabase
         /// <param name="maxSlotWalKeepSize"></param>
         /// <param name="maxStandbyArchiveDelay"></param>
         /// <param name="maxStandbyStreamingDelay"></param>
+        /// <param name="maxSyncWorkersPerSubscription"></param>
         /// <param name="maxWalSize"></param>
         /// <param name="maxWalSenders"></param>
         /// <param name="maxWorkerProcesses"></param>
@@ -301,15 +315,17 @@ namespace Supabase
             string? trackActivityQuerySize,
             int? maxConnections,
             int? maxLocksPerTransaction,
+            int? maxLogicalReplicationWorkers,
             int? maxParallelMaintenanceWorkers,
             int? maxParallelWorkers,
             int? maxParallelWorkersPerGather,
-            int? maxReplicationSlots,
+            long? maxReplicationSlots,
             string? maxSlotWalKeepSize,
             string? maxStandbyArchiveDelay,
             string? maxStandbyStreamingDelay,
+            int? maxSyncWorkersPerSubscription,
             string? maxWalSize,
-            int? maxWalSenders,
+            long? maxWalSenders,
             int? maxWorkerProcesses,
             global::Supabase.PostgresConfigResponseSessionReplicationRole? sessionReplicationRole,
             string? sharedBuffers,
@@ -338,6 +354,7 @@ namespace Supabase
             this.TrackActivityQuerySize = trackActivityQuerySize;
             this.MaxConnections = maxConnections;
             this.MaxLocksPerTransaction = maxLocksPerTransaction;
+            this.MaxLogicalReplicationWorkers = maxLogicalReplicationWorkers;
             this.MaxParallelMaintenanceWorkers = maxParallelMaintenanceWorkers;
             this.MaxParallelWorkers = maxParallelWorkers;
             this.MaxParallelWorkersPerGather = maxParallelWorkersPerGather;
@@ -345,6 +362,7 @@ namespace Supabase
             this.MaxSlotWalKeepSize = maxSlotWalKeepSize;
             this.MaxStandbyArchiveDelay = maxStandbyArchiveDelay;
             this.MaxStandbyStreamingDelay = maxStandbyStreamingDelay;
+            this.MaxSyncWorkersPerSubscription = maxSyncWorkersPerSubscription;
             this.MaxWalSize = maxWalSize;
             this.MaxWalSenders = maxWalSenders;
             this.MaxWorkerProcesses = maxWorkerProcesses;

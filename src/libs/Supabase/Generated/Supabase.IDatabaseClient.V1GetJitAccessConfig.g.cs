@@ -16,7 +16,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.JitStateResponse> V1GetJitAccessConfigAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.OneOf<global::Supabase.V1GetJitAccessConfigResponseVariant1, global::Supabase.V1GetJitAccessConfigResponseVariant2>> V1GetJitAccessConfigAsync(
             string @ref,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -32,7 +32,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.JitStateResponse>> V1GetJitAccessConfigAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.OneOf<global::Supabase.V1GetJitAccessConfigResponseVariant1, global::Supabase.V1GetJitAccessConfigResponseVariant2>>> V1GetJitAccessConfigAsResponseAsync(
             string @ref,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

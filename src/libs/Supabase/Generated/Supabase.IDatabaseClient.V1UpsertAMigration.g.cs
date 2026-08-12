@@ -5,8 +5,7 @@ namespace Supabase
     public partial interface IDatabaseClient
     {
         /// <summary>
-        /// Upsert a database migration without applying<br/>
-        /// Only available to selected partner OAuth apps
+        /// Upsert a database migration without applying
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -26,8 +25,7 @@ namespace Supabase
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Upsert a database migration without applying<br/>
-        /// Only available to selected partner OAuth apps
+        /// Upsert a database migration without applying
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -47,8 +45,7 @@ namespace Supabase
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Upsert a database migration without applying<br/>
-        /// Only available to selected partner OAuth apps
+        /// Upsert a database migration without applying
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

@@ -20,21 +20,21 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxNamespaces")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int MaxNamespaces { get; set; }
+        public required long MaxNamespaces { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxTables")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int MaxTables { get; set; }
+        public required long MaxTables { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxCatalogs")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int MaxCatalogs { get; set; }
+        public required long MaxCatalogs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -54,9 +54,9 @@ namespace Supabase
 #endif
         public UpdateStorageConfigBodyFeaturesIcebergCatalog(
             bool enabled,
-            int maxNamespaces,
-            int maxTables,
-            int maxCatalogs)
+            long maxNamespaces,
+            long maxTables,
+            long maxCatalogs)
         {
             this.Enabled = enabled;
             this.MaxNamespaces = maxNamespaces;

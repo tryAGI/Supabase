@@ -11,13 +11,6 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
         public string? Domain { get; set; }
 
@@ -42,7 +35,6 @@ namespace Supabase
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateProviderResponseDomain" /> class.
         /// </summary>
-        /// <param name="id"></param>
         /// <param name="domain"></param>
         /// <param name="createdAt"></param>
         /// <param name="updatedAt"></param>
@@ -50,12 +42,10 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProviderResponseDomain(
-            string id,
             string? domain,
             string? createdAt,
             string? updatedAt)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Domain = domain;
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;

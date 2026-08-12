@@ -13,7 +13,7 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Id { get; set; }
+        public required long Id { get; set; }
 
         /// <summary>
         /// 
@@ -54,7 +54,7 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public V1BackupsResponseBackup(
-            int id,
+            long id,
             bool isPhysicalBackup,
             global::Supabase.V1BackupsResponseBackupStatus status,
             string insertedAt)

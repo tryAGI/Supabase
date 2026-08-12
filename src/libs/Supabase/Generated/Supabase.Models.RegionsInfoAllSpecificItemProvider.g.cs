@@ -20,10 +20,6 @@ namespace Supabase
         /// 
         /// </summary>
         AwsNimbus,
-        /// <summary>
-        /// 
-        /// </summary>
-        Fly,
     }
 
     /// <summary>
@@ -41,7 +37,6 @@ namespace Supabase
                 RegionsInfoAllSpecificItemProvider.Aws => "AWS",
                 RegionsInfoAllSpecificItemProvider.AwsK8s => "AWS_K8S",
                 RegionsInfoAllSpecificItemProvider.AwsNimbus => "AWS_NIMBUS",
-                RegionsInfoAllSpecificItemProvider.Fly => "FLY",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -55,7 +50,6 @@ namespace Supabase
                 "AWS" => RegionsInfoAllSpecificItemProvider.Aws,
                 "AWS_K8S" => RegionsInfoAllSpecificItemProvider.AwsK8s,
                 "AWS_NIMBUS" => RegionsInfoAllSpecificItemProvider.AwsNimbus,
-                "FLY" => RegionsInfoAllSpecificItemProvider.Fly,
                 _ => null,
             };
         }

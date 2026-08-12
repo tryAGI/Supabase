@@ -12,19 +12,19 @@ namespace Supabase
         /// Growth percentage for disk autoscaling
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("growth_percent")]
-        public int? GrowthPercent { get; set; }
+        public long? GrowthPercent { get; set; }
 
         /// <summary>
         /// Minimum increment size for disk autoscaling in GB
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("min_increment_gb")]
-        public int? MinIncrementGb { get; set; }
+        public long? MinIncrementGb { get; set; }
 
         /// <summary>
         /// Maximum limit the disk size will grow to in GB
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_size_gb")]
-        public int? MaxSizeGb { get; set; }
+        public long? MaxSizeGb { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,9 +48,9 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public DiskAutoscaleConfig(
-            int? growthPercent,
-            int? minIncrementGb,
-            int? maxSizeGb)
+            long? growthPercent,
+            long? minIncrementGb,
+            long? maxSizeGb)
         {
             this.GrowthPercent = growthPercent;
             this.MinIncrementGb = minIncrementGb;

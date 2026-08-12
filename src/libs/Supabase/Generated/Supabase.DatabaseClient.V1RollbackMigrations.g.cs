@@ -39,8 +39,7 @@ namespace Supabase
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
         /// <summary>
-        /// Rollback database migrations and remove them from history table<br/>
-        /// Only available to selected partner OAuth apps
+        /// Rollback database migrations and remove them from history table
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -65,8 +64,7 @@ namespace Supabase
             ).ConfigureAwait(false);
         }
         /// <summary>
-        /// Rollback database migrations and remove them from history table<br/>
-        /// Only available to selected partner OAuth apps
+        /// Rollback database migrations and remove them from history table
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

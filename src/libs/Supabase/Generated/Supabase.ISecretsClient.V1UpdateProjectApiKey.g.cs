@@ -25,7 +25,7 @@ namespace Supabase
             global::System.Guid id,
 
             global::Supabase.UpdateApiKeyBody request,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -49,7 +49,7 @@ namespace Supabase
             global::System.Guid id,
 
             global::Supabase.UpdateApiKeyBody request,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -73,7 +73,7 @@ namespace Supabase
         global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponse> V1UpdateProjectApiKeyAsync(
             string @ref,
             global::System.Guid id,
-            bool? reveal = default,
+            string? reveal = default,
             string? name = default,
             string? description = default,
             object? secretJwtTemplate = default,

@@ -556,7 +556,7 @@ namespace Supabase
             string @ref,
             global::Supabase.CreateSigningKeyBodyAlgorithm algorithm,
             global::Supabase.CreateSigningKeyBodyStatus? status = default,
-            global::Supabase.PrivateJwk? privateJwk = default,
+            global::Supabase.OneOf<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>? privateJwk = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {

@@ -20,7 +20,7 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_rows")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int MaxRows { get; set; }
+        public required long MaxRows { get; set; }
 
         /// <summary>
         /// 
@@ -33,7 +33,13 @@ namespace Supabase
         /// If `null`, the value is automatically configured based on compute size.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_pool")]
-        public int? DbPool { get; set; }
+        public long? DbPool { get; set; }
+
+        /// <summary>
+        /// If `null`, the value is automatically configured to 10.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_pool_acquisition_timeout")]
+        public long? DbPoolAcquisitionTimeout { get; set; }
 
         /// <summary>
         /// 
@@ -56,21 +62,26 @@ namespace Supabase
         /// <param name="dbPool">
         /// If `null`, the value is automatically configured based on compute size.
         /// </param>
+        /// <param name="dbPoolAcquisitionTimeout">
+        /// If `null`, the value is automatically configured to 10.
+        /// </param>
         /// <param name="jwtSecret"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PostgrestConfigWithJWTSecretResponse(
             string dbSchema,
-            int maxRows,
+            long maxRows,
             string dbExtraSearchPath,
-            int? dbPool,
+            long? dbPool,
+            long? dbPoolAcquisitionTimeout,
             string? jwtSecret)
         {
             this.DbSchema = dbSchema ?? throw new global::System.ArgumentNullException(nameof(dbSchema));
             this.MaxRows = maxRows;
             this.DbExtraSearchPath = dbExtraSearchPath ?? throw new global::System.ArgumentNullException(nameof(dbExtraSearchPath));
             this.DbPool = dbPool;
+            this.DbPoolAcquisitionTimeout = dbPoolAcquisitionTimeout;
             this.JwtSecret = jwtSecret;
         }
 

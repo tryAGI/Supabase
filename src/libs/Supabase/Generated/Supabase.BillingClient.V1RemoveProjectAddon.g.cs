@@ -28,12 +28,12 @@ namespace Supabase
         partial void PrepareV1RemoveProjectAddonArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
-            ref global::Supabase.OneOf<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?> addonVariant);
+            ref global::Supabase.AnyOf<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?> addonVariant);
         partial void PrepareV1RemoveProjectAddonRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @ref,
-            global::Supabase.OneOf<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?> addonVariant);
+            global::Supabase.AnyOf<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?> addonVariant);
         partial void ProcessV1RemoveProjectAddonResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -53,7 +53,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task V1RemoveProjectAddonAsync(
             string @ref,
-            global::Supabase.OneOf<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?> addonVariant,
+            global::Supabase.AnyOf<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?> addonVariant,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -79,7 +79,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse> V1RemoveProjectAddonAsResponseAsync(
             string @ref,
-            global::Supabase.OneOf<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?> addonVariant,
+            global::Supabase.AnyOf<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?> addonVariant,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {

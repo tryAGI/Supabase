@@ -28,8 +28,8 @@ namespace Supabase
         global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponse> V1DeleteProjectApiKeyAsync(
             string @ref,
             global::System.Guid id,
-            bool? reveal = default,
-            bool? wasCompromised = default,
+            string? reveal = default,
+            string? wasCompromised = default,
             string? reason = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -57,8 +57,8 @@ namespace Supabase
         global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ApiKeyResponse>> V1DeleteProjectApiKeyAsResponseAsync(
             string @ref,
             global::System.Guid id,
-            bool? reveal = default,
-            bool? wasCompromised = default,
+            string? reveal = default,
+            string? wasCompromised = default,
             string? reason = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

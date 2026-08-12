@@ -34,7 +34,10 @@ namespace Supabase
         /// <param name="organizationSlug">
         /// Example: tsrqponmlkjihgfedcba
         /// </param>
-        /// <param name="resource"></param>
+        /// <param name="targetFlow"></param>
+        /// <param name="resource">
+        /// Example: https://mcp.supabase.com/projects
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -51,6 +54,7 @@ namespace Supabase
             string? codeChallenge = default,
             global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod = default,
             string? organizationSlug = default,
+            string? targetFlow = default,
             string? resource = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -84,7 +88,10 @@ namespace Supabase
         /// <param name="organizationSlug">
         /// Example: tsrqponmlkjihgfedcba
         /// </param>
-        /// <param name="resource"></param>
+        /// <param name="targetFlow"></param>
+        /// <param name="resource">
+        /// Example: https://mcp.supabase.com/projects
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -101,6 +108,7 @@ namespace Supabase
             string? codeChallenge = default,
             global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod = default,
             string? organizationSlug = default,
+            string? targetFlow = default,
             string? resource = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

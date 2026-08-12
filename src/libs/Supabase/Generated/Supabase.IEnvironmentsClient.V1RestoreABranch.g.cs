@@ -17,7 +17,7 @@ namespace Supabase
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.BranchRestoreResponse> V1RestoreABranchAsync(
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -31,7 +31,7 @@ namespace Supabase
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.BranchRestoreResponse>> V1RestoreABranchAsResponseAsync(
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

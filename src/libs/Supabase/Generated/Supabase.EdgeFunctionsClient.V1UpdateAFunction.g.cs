@@ -31,8 +31,8 @@ namespace Supabase
             ref string functionSlug,
             ref string? slug,
             ref string? name,
-            ref bool? verifyJwt,
-            ref bool? importMap,
+            ref string? verifyJwt,
+            ref string? importMap,
             ref string? entrypointPath,
             ref string? importMapPath,
             ref string? ezbrSha256,
@@ -44,8 +44,8 @@ namespace Supabase
             string functionSlug,
             string? slug,
             string? name,
-            bool? verifyJwt,
-            bool? importMap,
+            string? verifyJwt,
+            string? importMap,
             string? entrypointPath,
             string? importMapPath,
             string? ezbrSha256,
@@ -101,8 +101,8 @@ namespace Supabase
             byte[] request,
             string? slug = default,
             string? name = default,
-            bool? verifyJwt = default,
-            bool? importMap = default,
+            string? verifyJwt = default,
+            string? importMap = default,
             string? entrypointPath = default,
             string? importMapPath = default,
             string? ezbrSha256 = default,
@@ -169,8 +169,8 @@ namespace Supabase
             byte[] request,
             string? slug = default,
             string? name = default,
-            bool? verifyJwt = default,
-            bool? importMap = default,
+            string? verifyJwt = default,
+            string? importMap = default,
             string? entrypointPath = default,
             string? importMapPath = default,
             string? ezbrSha256 = default,
@@ -223,8 +223,8 @@ namespace Supabase
                             __pathBuilder
                                 .AddOptionalParameter("slug", slug)
                                 .AddOptionalParameter("name", name)
-                                .AddOptionalParameter("verify_jwt", verifyJwt?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("import_map", importMap?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("verify_jwt", verifyJwt)
+                                .AddOptionalParameter("import_map", importMap)
                                 .AddOptionalParameter("entrypoint_path", entrypointPath)
                                 .AddOptionalParameter("import_map_path", importMapPath)
                                 .AddOptionalParameter("ezbr_sha256", ezbrSha256)

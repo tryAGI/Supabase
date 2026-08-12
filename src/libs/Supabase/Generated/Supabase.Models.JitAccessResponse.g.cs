@@ -12,8 +12,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user_id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Guid UserId { get; set; }
+        public global::System.Guid? UserId { get; set; }
 
         /// <summary>
         /// 
@@ -31,14 +30,14 @@ namespace Supabase
         /// <summary>
         /// Initializes a new instance of the <see cref="JitAccessResponse" /> class.
         /// </summary>
-        /// <param name="userId"></param>
         /// <param name="userRoles"></param>
+        /// <param name="userId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public JitAccessResponse(
-            global::System.Guid userId,
-            global::System.Collections.Generic.IList<global::Supabase.JitAccessResponseUserRole> userRoles)
+            global::System.Collections.Generic.IList<global::Supabase.JitAccessResponseUserRole> userRoles,
+            global::System.Guid? userId)
         {
             this.UserId = userId;
             this.UserRoles = userRoles ?? throw new global::System.ArgumentNullException(nameof(userRoles));

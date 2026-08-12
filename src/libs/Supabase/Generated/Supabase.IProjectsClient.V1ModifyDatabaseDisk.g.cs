@@ -48,7 +48,7 @@ namespace Supabase
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task V1ModifyDatabaseDiskAsync(
             string @ref,
-            global::Supabase.Attributes2 attributes,
+            global::Supabase.OneOf<global::Supabase.DiskRequestBodyAttributesVariant1, global::Supabase.DiskRequestBodyAttributesVariant2> attributes,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

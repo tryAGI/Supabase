@@ -41,8 +41,7 @@ namespace Supabase
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
         /// <summary>
-        /// Upsert a database migration without applying<br/>
-        /// Only available to selected partner OAuth apps
+        /// Upsert a database migration without applying
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -72,8 +71,7 @@ namespace Supabase
             ).ConfigureAwait(false);
         }
         /// <summary>
-        /// Upsert a database migration without applying<br/>
-        /// Only available to selected partner OAuth apps
+        /// Upsert a database migration without applying
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -571,8 +569,7 @@ namespace Supabase
             }
         }
         /// <summary>
-        /// Upsert a database migration without applying<br/>
-        /// Only available to selected partner OAuth apps
+        /// Upsert a database migration without applying
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

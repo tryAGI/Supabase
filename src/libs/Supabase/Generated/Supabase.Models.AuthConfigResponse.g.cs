@@ -12,13 +12,13 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("api_max_request_duration")]
-        public int? ApiMaxRequestDuration { get; set; }
+        public long? ApiMaxRequestDuration { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_max_pool_size")]
-        public int? DbMaxPoolSize { get; set; }
+        public long? DbMaxPoolSize { get; set; }
 
         /// <summary>
         /// 
@@ -733,7 +733,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("jwt_exp")]
-        public int? JwtExp { get; set; }
+        public long? JwtExp { get; set; }
 
         /// <summary>
         /// 
@@ -752,13 +752,13 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mailer_otp_exp")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int MailerOtpExp { get; set; }
+        public required long MailerOtpExp { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mailer_otp_length")]
-        public int? MailerOtpLength { get; set; }
+        public long? MailerOtpLength { get; set; }
 
         /// <summary>
         /// 
@@ -968,7 +968,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mfa_max_enrolled_factors")]
-        public int? MfaMaxEnrolledFactors { get; set; }
+        public long? MfaMaxEnrolledFactors { get; set; }
 
         /// <summary>
         /// 
@@ -1036,7 +1036,7 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mfa_phone_otp_length")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int MfaPhoneOtpLength { get; set; }
+        public required long MfaPhoneOtpLength { get; set; }
 
         /// <summary>
         /// 
@@ -1048,7 +1048,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mfa_phone_max_frequency")]
-        public int? MfaPhoneMaxFrequency { get; set; }
+        public long? MfaPhoneMaxFrequency { get; set; }
 
         /// <summary>
         /// 
@@ -1078,7 +1078,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("password_min_length")]
-        public int? PasswordMinLength { get; set; }
+        public long? PasswordMinLength { get; set; }
 
         /// <summary>
         /// 
@@ -1091,43 +1091,43 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rate_limit_anonymous_users")]
-        public int? RateLimitAnonymousUsers { get; set; }
+        public long? RateLimitAnonymousUsers { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rate_limit_email_sent")]
-        public int? RateLimitEmailSent { get; set; }
+        public long? RateLimitEmailSent { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rate_limit_sms_sent")]
-        public int? RateLimitSmsSent { get; set; }
+        public long? RateLimitSmsSent { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rate_limit_token_refresh")]
-        public int? RateLimitTokenRefresh { get; set; }
+        public long? RateLimitTokenRefresh { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rate_limit_verify")]
-        public int? RateLimitVerify { get; set; }
+        public long? RateLimitVerify { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rate_limit_otp")]
-        public int? RateLimitOtp { get; set; }
+        public long? RateLimitOtp { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rate_limit_web3")]
-        public int? RateLimitWeb3 { get; set; }
+        public long? RateLimitWeb3 { get; set; }
 
         /// <summary>
         /// 
@@ -1188,7 +1188,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("security_refresh_token_reuse_interval")]
-        public int? SecurityRefreshTokenReuseInterval { get; set; }
+        public long? SecurityRefreshTokenReuseInterval { get; set; }
 
         /// <summary>
         /// 
@@ -1236,7 +1236,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sms_max_frequency")]
-        public int? SmsMaxFrequency { get; set; }
+        public long? SmsMaxFrequency { get; set; }
 
         /// <summary>
         /// 
@@ -1254,14 +1254,14 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sms_otp_exp")]
-        public int? SmsOtpExp { get; set; }
+        public long? SmsOtpExp { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sms_otp_length")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int SmsOtpLength { get; set; }
+        public required long SmsOtpLength { get; set; }
 
         /// <summary>
         /// 
@@ -1376,7 +1376,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("smtp_max_frequency")]
-        public int? SmtpMaxFrequency { get; set; }
+        public long? SmtpMaxFrequency { get; set; }
 
         /// <summary>
         /// 
@@ -1440,7 +1440,7 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("custom_oauth_max_providers")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int CustomOauthMaxProviders { get; set; }
+        public required long CustomOauthMaxProviders { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -1692,16 +1692,16 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AuthConfigResponse(
-            int mailerOtpExp,
+            long mailerOtpExp,
             bool passkeyEnabled,
-            int mfaPhoneOtpLength,
-            int smsOtpLength,
+            long mfaPhoneOtpLength,
+            long smsOtpLength,
             bool oauthServerEnabled,
             bool oauthServerAllowDynamicRegistration,
             bool customOauthEnabled,
-            int customOauthMaxProviders,
-            int? apiMaxRequestDuration,
-            int? dbMaxPoolSize,
+            long customOauthMaxProviders,
+            long? apiMaxRequestDuration,
+            long? dbMaxPoolSize,
             global::Supabase.AuthConfigResponseDbMaxPoolSizeUnit? dbMaxPoolSizeUnit,
             bool? disableSignup,
             bool? externalAnonymousUsersEnabled,
@@ -1820,10 +1820,10 @@ namespace Supabase
             bool? hookAfterUserCreatedEnabled,
             string? hookAfterUserCreatedUri,
             string? hookAfterUserCreatedSecrets,
-            int? jwtExp,
+            long? jwtExp,
             bool? mailerAllowUnverifiedEmailSignIns,
             bool? mailerAutoconfirm,
-            int? mailerOtpLength,
+            long? mailerOtpLength,
             bool? mailerSecureEmailChangeEnabled,
             string? mailerSubjectsConfirmation,
             string? mailerSubjectsEmailChange,
@@ -1858,7 +1858,7 @@ namespace Supabase
             bool? mailerNotificationsMfaFactorUnenrolledEnabled,
             bool? mailerNotificationsIdentityLinkedEnabled,
             bool? mailerNotificationsIdentityUnlinkedEnabled,
-            int? mfaMaxEnrolledFactors,
+            long? mfaMaxEnrolledFactors,
             bool? mfaTotpEnrollEnabled,
             bool? mfaTotpVerifyEnabled,
             bool? mfaPhoneEnrollEnabled,
@@ -1869,20 +1869,20 @@ namespace Supabase
             string? webauthnRpId,
             string? webauthnRpOrigins,
             string? mfaPhoneTemplate,
-            int? mfaPhoneMaxFrequency,
+            long? mfaPhoneMaxFrequency,
             string? nimbusOauthClientId,
             bool? nimbusOauthEmailOptional,
             string? nimbusOauthClientSecret,
             bool? passwordHibpEnabled,
-            int? passwordMinLength,
+            long? passwordMinLength,
             global::Supabase.AuthConfigResponsePasswordRequiredCharacters? passwordRequiredCharacters,
-            int? rateLimitAnonymousUsers,
-            int? rateLimitEmailSent,
-            int? rateLimitSmsSent,
-            int? rateLimitTokenRefresh,
-            int? rateLimitVerify,
-            int? rateLimitOtp,
-            int? rateLimitWeb3,
+            long? rateLimitAnonymousUsers,
+            long? rateLimitEmailSent,
+            long? rateLimitSmsSent,
+            long? rateLimitTokenRefresh,
+            long? rateLimitVerify,
+            long? rateLimitOtp,
+            long? rateLimitWeb3,
             bool? refreshTokenRotationEnabled,
             bool? samlEnabled,
             string? samlExternalUrl,
@@ -1892,7 +1892,7 @@ namespace Supabase
             global::Supabase.AuthConfigResponseSecurityCaptchaProvider? securityCaptchaProvider,
             string? securityCaptchaSecret,
             bool? securityManualLinkingEnabled,
-            int? securityRefreshTokenReuseInterval,
+            long? securityRefreshTokenReuseInterval,
             bool? securityUpdatePasswordRequireReauthentication,
             double? sessionsInactivityTimeout,
             bool? sessionsSinglePerUser,
@@ -1900,10 +1900,10 @@ namespace Supabase
             double? sessionsTimebox,
             string? siteUrl,
             bool? smsAutoconfirm,
-            int? smsMaxFrequency,
+            long? smsMaxFrequency,
             string? smsMessagebirdAccessKey,
             string? smsMessagebirdOriginator,
-            int? smsOtpExp,
+            long? smsOtpExp,
             global::Supabase.AuthConfigResponseSmsProvider? smsProvider,
             string? smsTemplate,
             string? smsTestOtp,
@@ -1922,7 +1922,7 @@ namespace Supabase
             string? smsVonageFrom,
             string? smtpAdminEmail,
             string? smtpHost,
-            int? smtpMaxFrequency,
+            long? smtpMaxFrequency,
             string? smtpPass,
             string? smtpPort,
             string? smtpSenderName,

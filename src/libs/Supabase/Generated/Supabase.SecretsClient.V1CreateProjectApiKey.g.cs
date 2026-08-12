@@ -28,13 +28,13 @@ namespace Supabase
         partial void PrepareV1CreateProjectApiKeyArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
-            ref bool? reveal,
+            ref string? reveal,
             global::Supabase.CreateApiKeyBody request);
         partial void PrepareV1CreateProjectApiKeyRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @ref,
-            bool? reveal,
+            string? reveal,
             global::Supabase.CreateApiKeyBody request);
         partial void ProcessV1CreateProjectApiKeyResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -62,7 +62,7 @@ namespace Supabase
             string @ref,
 
             global::Supabase.CreateApiKeyBody request,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -94,7 +94,7 @@ namespace Supabase
             string @ref,
 
             global::Supabase.CreateApiKeyBody request,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -135,7 +135,7 @@ namespace Supabase
                                 path: $"/v1/projects/{@ref}/api-keys",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("reveal", reveal?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("reveal", reveal)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -576,7 +576,7 @@ namespace Supabase
             string @ref,
             global::Supabase.CreateApiKeyBodyType type,
             string name,
-            bool? reveal = default,
+            string? reveal = default,
             string? description = default,
             object? secretJwtTemplate = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

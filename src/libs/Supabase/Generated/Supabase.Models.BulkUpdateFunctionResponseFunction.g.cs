@@ -42,7 +42,7 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Version { get; set; }
+        public required long Version { get; set; }
 
         /// <summary>
         /// 
@@ -117,7 +117,7 @@ namespace Supabase
             string slug,
             string name,
             global::Supabase.BulkUpdateFunctionResponseFunctionStatus status,
-            int version,
+            long version,
             long createdAt,
             long updatedAt,
             bool? verifyJwt,

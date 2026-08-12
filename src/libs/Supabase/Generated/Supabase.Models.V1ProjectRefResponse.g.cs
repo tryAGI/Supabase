@@ -13,7 +13,7 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Id { get; set; }
+        public required long Id { get; set; }
 
         /// <summary>
         /// 
@@ -45,7 +45,7 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public V1ProjectRefResponse(
-            int id,
+            long id,
             string @ref,
             string name)
         {

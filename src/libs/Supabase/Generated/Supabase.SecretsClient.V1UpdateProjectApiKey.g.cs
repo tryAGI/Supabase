@@ -29,14 +29,14 @@ namespace Supabase
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
             ref global::System.Guid id,
-            ref bool? reveal,
+            ref string? reveal,
             global::Supabase.UpdateApiKeyBody request);
         partial void PrepareV1UpdateProjectApiKeyRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @ref,
             global::System.Guid id,
-            bool? reveal,
+            string? reveal,
             global::Supabase.UpdateApiKeyBody request);
         partial void ProcessV1UpdateProjectApiKeyResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -68,7 +68,7 @@ namespace Supabase
             global::System.Guid id,
 
             global::Supabase.UpdateApiKeyBody request,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -105,7 +105,7 @@ namespace Supabase
             global::System.Guid id,
 
             global::Supabase.UpdateApiKeyBody request,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -147,7 +147,7 @@ namespace Supabase
                                 path: $"/v1/projects/{@ref}/api-keys/{id}",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("reveal", reveal?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("reveal", reveal)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -590,7 +590,7 @@ namespace Supabase
         public async global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponse> V1UpdateProjectApiKeyAsync(
             string @ref,
             global::System.Guid id,
-            bool? reveal = default,
+            string? reveal = default,
             string? name = default,
             string? description = default,
             object? secretJwtTemplate = default,

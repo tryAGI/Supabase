@@ -18,8 +18,8 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OneOfJsonConverter<string, global::Supabase.AnalyticsResponseError>))]
-        public global::Supabase.OneOf<string, global::Supabase.AnalyticsResponseError>? Error { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::Supabase.AnalyticsResponseError>))]
+        public global::Supabase.AnyOf<string, global::Supabase.AnalyticsResponseError>? Error { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,7 +37,7 @@ namespace Supabase
 #endif
         public AnalyticsResponse(
             global::System.Collections.Generic.IList<object>? result,
-            global::Supabase.OneOf<string, global::Supabase.AnalyticsResponseError>? error)
+            global::Supabase.AnyOf<string, global::Supabase.AnalyticsResponseError>? error)
         {
             this.Result = result;
             this.Error = error;

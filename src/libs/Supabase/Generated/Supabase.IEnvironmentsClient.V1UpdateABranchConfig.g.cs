@@ -18,7 +18,7 @@ namespace Supabase
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.BranchResponse> V1UpdateABranchConfigAsync(
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
 
             global::Supabase.UpdateBranchBody request,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -35,7 +35,7 @@ namespace Supabase
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.BranchResponse>> V1UpdateABranchConfigAsResponseAsync(
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
 
             global::Supabase.UpdateBranchBody request,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -60,7 +60,7 @@ namespace Supabase
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.BranchResponse> V1UpdateABranchConfigAsync(
 #pragma warning disable CS0618 // Type or member is obsolete
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
 #pragma warning disable CS0618 // Type or member is obsolete
             string? branchName = default,
             string? gitBranch = default,

@@ -18,8 +18,8 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OneOfJsonConverter<string, global::Supabase.V1GetUsageApiRequestsCountResponseError>))]
-        public global::Supabase.OneOf<string, global::Supabase.V1GetUsageApiRequestsCountResponseError>? Error { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::Supabase.V1GetUsageApiRequestsCountResponseError>))]
+        public global::Supabase.AnyOf<string, global::Supabase.V1GetUsageApiRequestsCountResponseError>? Error { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,7 +37,7 @@ namespace Supabase
 #endif
         public V1GetUsageApiRequestsCountResponse(
             global::System.Collections.Generic.IList<global::Supabase.V1GetUsageApiRequestsCountResponseResultItem>? result,
-            global::Supabase.OneOf<string, global::Supabase.V1GetUsageApiRequestsCountResponseError>? error)
+            global::Supabase.AnyOf<string, global::Supabase.V1GetUsageApiRequestsCountResponseError>? error)
         {
             this.Result = result;
             this.Error = error;

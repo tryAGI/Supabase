@@ -10,9 +10,7 @@ namespace Supabase
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="removeAddon">
-        /// Default Value: false
-        /// </param>
+        /// <param name="removeAddon"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -21,7 +19,7 @@ namespace Supabase
 #endif
         global::System.Threading.Tasks.Task V1DeleteHostnameConfigAsync(
             string @ref,
-            bool? removeAddon = default,
+            string? removeAddon = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -30,9 +28,7 @@ namespace Supabase
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="removeAddon">
-        /// Default Value: false
-        /// </param>
+        /// <param name="removeAddon"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -41,7 +37,7 @@ namespace Supabase
 #endif
         global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse> V1DeleteHostnameConfigAsResponseAsync(
             string @ref,
-            bool? removeAddon = default,
+            string? removeAddon = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

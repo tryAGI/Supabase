@@ -1287,7 +1287,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_max_pool_size")]
-        public int? DbMaxPoolSize { get; set; }
+        public long? DbMaxPoolSize { get; set; }
 
         /// <summary>
         /// 
@@ -1300,7 +1300,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("api_max_request_duration")]
-        public int? ApiMaxRequestDuration { get; set; }
+        public long? ApiMaxRequestDuration { get; set; }
 
         /// <summary>
         /// 
@@ -1875,9 +1875,9 @@ namespace Supabase
             string? externalZoomClientId,
             bool? externalZoomEmailOptional,
             string? externalZoomSecret,
-            int? dbMaxPoolSize,
+            long? dbMaxPoolSize,
             global::Supabase.UpdateAuthConfigBodyDbMaxPoolSizeUnit? dbMaxPoolSizeUnit,
-            int? apiMaxRequestDuration,
+            long? apiMaxRequestDuration,
             bool? mfaTotpEnrollEnabled,
             bool? mfaTotpVerifyEnabled,
             bool? mfaWebAuthnEnrollEnabled,

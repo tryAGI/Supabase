@@ -29,13 +29,13 @@ namespace Supabase
             };
         partial void PrepareV1DeleteABranchArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
-            ref bool? force);
+            ref global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
+            ref string? force);
         partial void PrepareV1DeleteABranchRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
-            bool? force);
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
+            string? force);
         partial void ProcessV1DeleteABranchResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -53,15 +53,14 @@ namespace Supabase
         /// Example: abcdefghijklmnopqrst
         /// </param>
         /// <param name="force">
-        /// Default Value: true<br/>
         /// Example: false
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.BranchDeleteResponse> V1DeleteABranchAsync(
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
-            bool? force = default,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
+            string? force = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -82,15 +81,14 @@ namespace Supabase
         /// Example: abcdefghijklmnopqrst
         /// </param>
         /// <param name="force">
-        /// Default Value: true<br/>
         /// Example: false
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.BranchDeleteResponse>> V1DeleteABranchAsResponseAsync(
-            global::Supabase.OneOf<string, global::System.Guid?> branchIdOrRef,
-            bool? force = default,
+            global::Supabase.AnyOf<string, global::System.Guid?> branchIdOrRef,
+            string? force = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -128,7 +126,7 @@ namespace Supabase
                                 path: $"/v1/branches/{branchIdOrRef}",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("force", force?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("force", force)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(

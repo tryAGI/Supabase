@@ -22,7 +22,7 @@ namespace Supabase
         global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponse> V1GetProjectApiKeyAsync(
             string @ref,
             global::System.Guid id,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -43,7 +43,7 @@ namespace Supabase
         global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ApiKeyResponse>> V1GetProjectApiKeyAsResponseAsync(
             string @ref,
             global::System.Guid id,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

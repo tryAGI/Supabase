@@ -29,16 +29,16 @@ namespace Supabase
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
             ref global::System.Guid id,
-            ref bool? reveal,
-            ref bool? wasCompromised,
+            ref string? reveal,
+            ref string? wasCompromised,
             ref string? reason);
         partial void PrepareV1DeleteProjectApiKeyRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @ref,
             global::System.Guid id,
-            bool? reveal,
-            bool? wasCompromised,
+            string? reveal,
+            string? wasCompromised,
             string? reason);
         partial void ProcessV1DeleteProjectApiKeyResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -73,8 +73,8 @@ namespace Supabase
         public async global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponse> V1DeleteProjectApiKeyAsync(
             string @ref,
             global::System.Guid id,
-            bool? reveal = default,
-            bool? wasCompromised = default,
+            string? reveal = default,
+            string? wasCompromised = default,
             string? reason = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -115,8 +115,8 @@ namespace Supabase
         public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ApiKeyResponse>> V1DeleteProjectApiKeyAsResponseAsync(
             string @ref,
             global::System.Guid id,
-            bool? reveal = default,
-            bool? wasCompromised = default,
+            string? reveal = default,
+            string? wasCompromised = default,
             string? reason = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -158,8 +158,8 @@ namespace Supabase
                                 path: $"/v1/projects/{@ref}/api-keys/{id}",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("reveal", reveal?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("was_compromised", wasCompromised?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("reveal", reveal)
+                                .AddOptionalParameter("was_compromised", wasCompromised)
                                 .AddOptionalParameter("reason", reason)
                                 ;
                             var __path = __pathBuilder.ToString();

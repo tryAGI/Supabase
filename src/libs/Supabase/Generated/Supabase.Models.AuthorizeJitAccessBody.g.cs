@@ -41,7 +41,7 @@ namespace Supabase
             string rhost)
         {
             this.Role = role ?? throw new global::System.ArgumentNullException(nameof(role));
-            this.Rhost = rhost ?? throw new global::System.ArgumentNullException(nameof(rhost));
+            this.Rhost = rhost;
         }
 
         /// <summary>

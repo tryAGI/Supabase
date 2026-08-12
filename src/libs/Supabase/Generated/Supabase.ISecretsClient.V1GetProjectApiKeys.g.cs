@@ -18,7 +18,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>> V1GetProjectApiKeysAsync(
             string @ref,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -35,7 +35,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>>> V1GetProjectApiKeysAsResponseAsync(
             string @ref,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

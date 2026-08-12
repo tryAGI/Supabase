@@ -33,6 +33,12 @@ namespace Supabase
         public int? DbPool { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_pool_acquisition_timeout")]
+        public int? DbPoolAcquisitionTimeout { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -45,6 +51,7 @@ namespace Supabase
         /// <param name="dbSchema"></param>
         /// <param name="maxRows"></param>
         /// <param name="dbPool"></param>
+        /// <param name="dbPoolAcquisitionTimeout"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -52,12 +59,14 @@ namespace Supabase
             string? dbExtraSearchPath,
             string? dbSchema,
             int? maxRows,
-            int? dbPool)
+            int? dbPool,
+            int? dbPoolAcquisitionTimeout)
         {
             this.DbExtraSearchPath = dbExtraSearchPath;
             this.DbSchema = dbSchema;
             this.MaxRows = maxRows;
             this.DbPool = dbPool;
+            this.DbPoolAcquisitionTimeout = dbPoolAcquisitionTimeout;
         }
 
         /// <summary>

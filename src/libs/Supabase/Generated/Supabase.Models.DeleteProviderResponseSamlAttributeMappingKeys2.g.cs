@@ -24,8 +24,8 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OneOfJsonConverter<object, double?, string, bool?>))]
-        public global::Supabase.OneOf<object, double?, string, bool?>? Default { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>))]
+        public global::Supabase.AnyOf<object, double?, string, bool?>? Default { get; set; }
 
         /// <summary>
         /// 
@@ -52,7 +52,7 @@ namespace Supabase
         public DeleteProviderResponseSamlAttributeMappingKeys2(
             string? name,
             global::System.Collections.Generic.IList<string>? names,
-            global::Supabase.OneOf<object, double?, string, bool?>? @default,
+            global::Supabase.AnyOf<object, double?, string, bool?>? @default,
             bool? array)
         {
             this.Name = name;

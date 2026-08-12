@@ -27,8 +27,8 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("private_jwk")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.PrivateJwkJsonConverter))]
-        public global::Supabase.PrivateJwk? PrivateJwk { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>))]
+        public global::Supabase.OneOf<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>? PrivateJwk { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,7 +48,7 @@ namespace Supabase
         public CreateSigningKeyBody(
             global::Supabase.CreateSigningKeyBodyAlgorithm algorithm,
             global::Supabase.CreateSigningKeyBodyStatus? status,
-            global::Supabase.PrivateJwk? privateJwk)
+            global::Supabase.OneOf<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>? privateJwk)
         {
             this.Algorithm = algorithm;
             this.Status = status;

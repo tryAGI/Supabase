@@ -48,17 +48,20 @@ namespace Supabase
             ref string content);
 
         /// <summary>
-        /// Gets project's logs<br/>
-        /// Executes a SQL query on the project's logs.<br/>
+        /// Gets all project's logs in a single log stream<br/>
+        /// Executes an SQL or LQL query on the project's unified logs stream.<br/>
         /// Either the `iso_timestamp_start` and `iso_timestamp_end` parameters must be provided.<br/>
         /// If both are not provided, only the last 1 minute of logs will be queried.<br/>
         /// The timestamp range must be no more than 24 hours and is rounded to the nearest minute. If the range is more than 24 hours, a validation error will be thrown.<br/>
-        /// Note: Unless the `sql` parameter is provided, only edge_logs will be queried. See the [log query docs](/docs/guides/telemetry/logs?queryGroups=product&amp;product=postgres&amp;queryGroups=source&amp;source=edge_logs#querying-with-the-logs-explorer:~:text=logs%20from%20the-,Sources,-drop%2Ddown%3A) for all available sources. 
+        /// Filter by the `source` column to specify specific log sources, such as edge_logs, postgres_logs, etc.<br/>
+        /// Note: SQL must be written in **ClickHouse SQL dialect**.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="sql"></param>
+        /// <param name="sql">
+        /// Example: select event_message from edge_logs limit 10
+        /// </param>
         /// <param name="isoTimestampStart">
         /// Example: 2025-03-01T00:00:00Z
         /// </param>
@@ -88,17 +91,20 @@ namespace Supabase
             return __response.Body;
         }
         /// <summary>
-        /// Gets project's logs<br/>
-        /// Executes a SQL query on the project's logs.<br/>
+        /// Gets all project's logs in a single log stream<br/>
+        /// Executes an SQL or LQL query on the project's unified logs stream.<br/>
         /// Either the `iso_timestamp_start` and `iso_timestamp_end` parameters must be provided.<br/>
         /// If both are not provided, only the last 1 minute of logs will be queried.<br/>
         /// The timestamp range must be no more than 24 hours and is rounded to the nearest minute. If the range is more than 24 hours, a validation error will be thrown.<br/>
-        /// Note: Unless the `sql` parameter is provided, only edge_logs will be queried. See the [log query docs](/docs/guides/telemetry/logs?queryGroups=product&amp;product=postgres&amp;queryGroups=source&amp;source=edge_logs#querying-with-the-logs-explorer:~:text=logs%20from%20the-,Sources,-drop%2Ddown%3A) for all available sources. 
+        /// Filter by the `source` column to specify specific log sources, such as edge_logs, postgres_logs, etc.<br/>
+        /// Note: SQL must be written in **ClickHouse SQL dialect**.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="sql"></param>
+        /// <param name="sql">
+        /// Example: select event_message from edge_logs limit 10
+        /// </param>
         /// <param name="isoTimestampStart">
         /// Example: 2025-03-01T00:00:00Z
         /// </param>
@@ -149,7 +155,7 @@ namespace Supabase
             {
 
                             var __pathBuilder = new global::Supabase.PathBuilder(
-                                path: $"/v1/projects/{@ref}/analytics/endpoints/logs.all",
+                                path: $"/v1/projects/{@ref}/analytics/endpoints/logs",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("sql", sql)
@@ -218,7 +224,7 @@ namespace Supabase
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "V1GetProjectLogs",
                                 methodName: "V1GetProjectLogsAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs.all\"",
+                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -252,7 +258,7 @@ namespace Supabase
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "V1GetProjectLogs",
                                 methodName: "V1GetProjectLogsAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs.all\"",
+                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -293,7 +299,7 @@ namespace Supabase
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "V1GetProjectLogs",
                                 methodName: "V1GetProjectLogsAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs.all\"",
+                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -341,7 +347,7 @@ namespace Supabase
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "V1GetProjectLogs",
                                 methodName: "V1GetProjectLogsAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs.all\"",
+                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -363,7 +369,7 @@ namespace Supabase
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "V1GetProjectLogs",
                                 methodName: "V1GetProjectLogsAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs.all\"",
+                                pathTemplate: "$\"/v1/projects/{@ref}/analytics/endpoints/logs\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -405,6 +411,38 @@ namespace Supabase
                                     message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            // 
+                            if ((int)__response.StatusCode == 402)
+                            {
+                                string? __content_402 = null;
+                                global::System.Exception? __exception_402 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_402 = __ex;
+                                }
+
+
+                                throw global::Supabase.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_402,
+                                    responseBody: __content_402,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,

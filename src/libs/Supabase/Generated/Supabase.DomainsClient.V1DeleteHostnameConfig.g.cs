@@ -28,12 +28,12 @@ namespace Supabase
         partial void PrepareV1DeleteHostnameConfigArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
-            ref bool? removeAddon);
+            ref string? removeAddon);
         partial void PrepareV1DeleteHostnameConfigRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @ref,
-            bool? removeAddon);
+            string? removeAddon);
         partial void ProcessV1DeleteHostnameConfigResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -44,9 +44,7 @@ namespace Supabase
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="removeAddon">
-        /// Default Value: false
-        /// </param>
+        /// <param name="removeAddon"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -55,7 +53,7 @@ namespace Supabase
 #endif
         public async global::System.Threading.Tasks.Task V1DeleteHostnameConfigAsync(
             string @ref,
-            bool? removeAddon = default,
+            string? removeAddon = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -72,9 +70,7 @@ namespace Supabase
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="removeAddon">
-        /// Default Value: false
-        /// </param>
+        /// <param name="removeAddon"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
@@ -83,7 +79,7 @@ namespace Supabase
 #endif
         public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse> V1DeleteHostnameConfigAsResponseAsync(
             string @ref,
-            bool? removeAddon = default,
+            string? removeAddon = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -121,7 +117,7 @@ namespace Supabase
                                 path: $"/v1/projects/{@ref}/custom-hostname",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("remove_addon", removeAddon?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("remove_addon", removeAddon)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(

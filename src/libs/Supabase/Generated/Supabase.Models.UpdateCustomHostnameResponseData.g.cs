@@ -20,14 +20,14 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errors")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<object> Errors { get; set; }
+        public required global::System.Collections.Generic.IList<global::Supabase.UpdateCustomHostnameResponseJsonValue> Errors { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("messages")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<object> Messages { get; set; }
+        public required global::System.Collections.Generic.IList<global::Supabase.UpdateCustomHostnameResponseJsonValue> Messages { get; set; }
 
         /// <summary>
         /// 
@@ -54,8 +54,8 @@ namespace Supabase
 #endif
         public UpdateCustomHostnameResponseData(
             bool success,
-            global::System.Collections.Generic.IList<object> errors,
-            global::System.Collections.Generic.IList<object> messages,
+            global::System.Collections.Generic.IList<global::Supabase.UpdateCustomHostnameResponseJsonValue> errors,
+            global::System.Collections.Generic.IList<global::Supabase.UpdateCustomHostnameResponseJsonValue> messages,
             global::Supabase.UpdateCustomHostnameResponseDataResult result)
         {
             this.Success = success;

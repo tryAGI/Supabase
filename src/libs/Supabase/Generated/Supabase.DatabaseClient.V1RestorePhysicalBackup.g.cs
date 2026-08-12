@@ -529,7 +529,7 @@ namespace Supabase
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task V1RestorePhysicalBackupAsync(
             string @ref,
-            int id,
+            long id,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {

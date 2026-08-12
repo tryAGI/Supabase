@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    /// Example: {"root_key":"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"}
     /// </summary>
     public sealed partial class PgsodiumConfigResponse
     {
         /// <summary>
-        /// 
+        /// The pgsodium root key: 32 bytes, hex-encoded (64 characters).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("root_key")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -24,7 +24,9 @@ namespace Supabase
         /// <summary>
         /// Initializes a new instance of the <see cref="PgsodiumConfigResponse" /> class.
         /// </summary>
-        /// <param name="rootKey"></param>
+        /// <param name="rootKey">
+        /// The pgsodium root key: 32 bytes, hex-encoded (64 characters).
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

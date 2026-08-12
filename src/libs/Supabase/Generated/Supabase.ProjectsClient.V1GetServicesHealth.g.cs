@@ -28,13 +28,13 @@ namespace Supabase
         partial void PrepareV1GetServicesHealthArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
-            global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthService> services,
+            ref global::Supabase.AnyOf<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>> services,
             ref int? timeoutMs);
         partial void PrepareV1GetServicesHealthRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @ref,
-            global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthService> services,
+            global::Supabase.AnyOf<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>> services,
             int? timeoutMs);
         partial void ProcessV1GetServicesHealthResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -52,7 +52,7 @@ namespace Supabase
         /// Example: abcdefghijklmnopqrst
         /// </param>
         /// <param name="services">
-        /// Example: [auth, rest]
+        /// Example: [auth,db, auth]
         /// </param>
         /// <param name="timeoutMs">
         /// Example: 2000
@@ -62,7 +62,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>> V1GetServicesHealthAsync(
             string @ref,
-            global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthService> services,
+            global::Supabase.AnyOf<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>> services,
             int? timeoutMs = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -84,7 +84,7 @@ namespace Supabase
         /// Example: abcdefghijklmnopqrst
         /// </param>
         /// <param name="services">
-        /// Example: [auth, rest]
+        /// Example: [auth,db, auth]
         /// </param>
         /// <param name="timeoutMs">
         /// Example: 2000
@@ -94,7 +94,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>>> V1GetServicesHealthAsResponseAsync(
             string @ref,
-            global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthService> services,
+            global::Supabase.AnyOf<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>> services,
             int? timeoutMs = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -104,7 +104,7 @@ namespace Supabase
             PrepareV1GetServicesHealthArguments(
                 httpClient: HttpClient,
                 @ref: ref @ref,
-                services: services,
+                services: ref services,
                 timeoutMs: ref timeoutMs);
 
 
@@ -134,7 +134,7 @@ namespace Supabase
                                 path: $"/v1/projects/{@ref}/health",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddRequiredParameter("services", services, selector: static x => x.ToValueString(), delimiter: ",", explode: true)
+                                .AddRequiredParameter("services", services.ToString() ?? string.Empty)
                                 .AddOptionalParameter("timeout_ms", timeoutMs?.ToString())
                                 ;
                             var __path = __pathBuilder.ToString();

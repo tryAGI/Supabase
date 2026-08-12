@@ -11,13 +11,6 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entity_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EntityId { get; set; }
@@ -56,7 +49,6 @@ namespace Supabase
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProviderResponseSaml" /> class.
         /// </summary>
-        /// <param name="id"></param>
         /// <param name="entityId"></param>
         /// <param name="metadataUrl"></param>
         /// <param name="metadataXml"></param>
@@ -66,14 +58,12 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProviderResponseSaml(
-            string id,
             string entityId,
             string? metadataUrl,
             string? metadataXml,
             global::Supabase.GetProviderResponseSamlAttributeMapping? attributeMapping,
             global::Supabase.GetProviderResponseSamlNameIdFormat? nameIdFormat)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.EntityId = entityId ?? throw new global::System.ArgumentNullException(nameof(entityId));
             this.MetadataUrl = metadataUrl;
             this.MetadataXml = metadataXml;

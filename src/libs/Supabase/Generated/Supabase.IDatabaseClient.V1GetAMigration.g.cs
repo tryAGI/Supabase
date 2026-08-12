@@ -5,8 +5,7 @@ namespace Supabase
     public partial interface IDatabaseClient
     {
         /// <summary>
-        /// Fetch an existing entry from migration history<br/>
-        /// Only available to selected partner OAuth apps
+        /// Fetch an existing entry from migration history
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -23,8 +22,7 @@ namespace Supabase
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Fetch an existing entry from migration history<br/>
-        /// Only available to selected partner OAuth apps
+        /// Fetch an existing entry from migration history
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

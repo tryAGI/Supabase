@@ -44,8 +44,7 @@ namespace Supabase
             ref string content);
 
         /// <summary>
-        /// Fetch an existing entry from migration history<br/>
-        /// Only available to selected partner OAuth apps
+        /// Fetch an existing entry from migration history
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -72,8 +71,7 @@ namespace Supabase
             return __response.Body;
         }
         /// <summary>
-        /// Fetch an existing entry from migration history<br/>
-        /// Only available to selected partner OAuth apps
+        /// Fetch an existing entry from migration history
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

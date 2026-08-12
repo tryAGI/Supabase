@@ -42,8 +42,7 @@ namespace Supabase
             ref string content);
 
         /// <summary>
-        /// List applied migration versions<br/>
-        /// Only available to selected partner OAuth apps
+        /// List applied migration versions
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -65,8 +64,7 @@ namespace Supabase
             return __response.Body;
         }
         /// <summary>
-        /// List applied migration versions<br/>
-        /// Only available to selected partner OAuth apps
+        /// List applied migration versions
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

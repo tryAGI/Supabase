@@ -52,7 +52,7 @@ namespace Supabase
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task V1ApplyProjectAddonAsync(
             string @ref,
-            global::Supabase.OneOf<global::Supabase.ApplyProjectAddonBodyAddonVariantVariant1?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant2?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant3?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant4?> addonVariant,
+            global::Supabase.AnyOf<global::Supabase.ApplyProjectAddonBodyAddonVariantVariant1?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant2?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant3?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant4?> addonVariant,
             global::Supabase.ApplyProjectAddonBodyAddonType addonType,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

@@ -48,7 +48,9 @@ namespace Supabase
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="rootKey"></param>
+        /// <param name="rootKey">
+        /// The pgsodium root key: 32 bytes, hex-encoded (64 characters).
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>

@@ -11,7 +11,7 @@ namespace Supabase
         /// Example: abcdefghijklmnopqrst
         /// </param>
         /// <param name="services">
-        /// Example: [auth, rest]
+        /// Example: [auth,db, auth]
         /// </param>
         /// <param name="timeoutMs">
         /// Example: 2000
@@ -21,7 +21,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>> V1GetServicesHealthAsync(
             string @ref,
-            global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthService> services,
+            global::Supabase.AnyOf<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>> services,
             int? timeoutMs = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -32,7 +32,7 @@ namespace Supabase
         /// Example: abcdefghijklmnopqrst
         /// </param>
         /// <param name="services">
-        /// Example: [auth, rest]
+        /// Example: [auth,db, auth]
         /// </param>
         /// <param name="timeoutMs">
         /// Example: 2000
@@ -42,7 +42,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>>> V1GetServicesHealthAsResponseAsync(
             string @ref,
-            global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthService> services,
+            global::Supabase.AnyOf<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>> services,
             int? timeoutMs = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

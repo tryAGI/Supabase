@@ -5,8 +5,7 @@ namespace Supabase
     public partial interface IDatabaseClient
     {
         /// <summary>
-        /// Rollback database migrations and remove them from history table<br/>
-        /// Only available to selected partner OAuth apps
+        /// Rollback database migrations and remove them from history table
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -23,8 +22,7 @@ namespace Supabase
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Rollback database migrations and remove them from history table<br/>
-        /// Only available to selected partner OAuth apps
+        /// Rollback database migrations and remove them from history table
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

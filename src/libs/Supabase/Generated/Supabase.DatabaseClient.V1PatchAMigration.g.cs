@@ -41,8 +41,7 @@ namespace Supabase
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
         /// <summary>
-        /// Patch an existing entry in migration history<br/>
-        /// Only available to selected partner OAuth apps
+        /// Patch an existing entry in migration history
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -72,8 +71,7 @@ namespace Supabase
             ).ConfigureAwait(false);
         }
         /// <summary>
-        /// Patch an existing entry in migration history<br/>
-        /// Only available to selected partner OAuth apps
+        /// Patch an existing entry in migration history
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -565,8 +563,7 @@ namespace Supabase
             }
         }
         /// <summary>
-        /// Patch an existing entry in migration history<br/>
-        /// Only available to selected partner OAuth apps
+        /// Patch an existing entry in migration history
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

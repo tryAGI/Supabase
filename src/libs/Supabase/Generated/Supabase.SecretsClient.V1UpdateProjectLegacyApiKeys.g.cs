@@ -28,12 +28,12 @@ namespace Supabase
         partial void PrepareV1UpdateProjectLegacyApiKeysArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
-            ref bool enabled);
+            ref string enabled);
         partial void PrepareV1UpdateProjectLegacyApiKeysRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @ref,
-            bool enabled);
+            string enabled);
         partial void ProcessV1UpdateProjectLegacyApiKeysResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -57,7 +57,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.LegacyApiKeysResponse> V1UpdateProjectLegacyApiKeysAsync(
             string @ref,
-            bool enabled,
+            string enabled,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -84,7 +84,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.LegacyApiKeysResponse>> V1UpdateProjectLegacyApiKeysAsResponseAsync(
             string @ref,
-            bool enabled,
+            string enabled,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -122,7 +122,7 @@ namespace Supabase
                                 path: $"/v1/projects/{@ref}/api-keys/legacy",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddRequiredParameter("enabled", enabled.ToString().ToLowerInvariant())
+                                .AddRequiredParameter("enabled", enabled)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(

@@ -18,7 +18,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.LegacyApiKeysResponse> V1UpdateProjectLegacyApiKeysAsync(
             string @ref,
-            bool enabled,
+            string enabled,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -35,7 +35,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.LegacyApiKeysResponse>> V1UpdateProjectLegacyApiKeysAsResponseAsync(
             string @ref,
-            bool enabled,
+            string enabled,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

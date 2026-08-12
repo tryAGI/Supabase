@@ -21,7 +21,7 @@ namespace Supabase
             string @ref,
 
             global::Supabase.CreateApiKeyBody request,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -41,7 +41,7 @@ namespace Supabase
             string @ref,
 
             global::Supabase.CreateApiKeyBody request,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -64,7 +64,7 @@ namespace Supabase
             string @ref,
             global::Supabase.CreateApiKeyBodyType type,
             string name,
-            bool? reveal = default,
+            string? reveal = default,
             string? description = default,
             object? secretJwtTemplate = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

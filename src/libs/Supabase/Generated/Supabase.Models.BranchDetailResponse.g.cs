@@ -56,7 +56,7 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_port")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int DbPort { get; set; }
+        public required long DbPort { get; set; }
 
         /// <summary>
         /// 
@@ -105,7 +105,7 @@ namespace Supabase
             string releaseChannel,
             global::Supabase.BranchDetailResponseStatus status,
             string dbHost,
-            int dbPort,
+            long dbPort,
             string? dbUser,
             string? dbPass,
             string? jwtSecret)

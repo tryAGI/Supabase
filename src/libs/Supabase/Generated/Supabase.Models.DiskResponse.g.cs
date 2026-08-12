@@ -12,9 +12,9 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attributes")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Supabase.OneOf<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2> Attributes { get; set; }
+        public required global::Supabase.AnyOf<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2> Attributes { get; set; }
 
         /// <summary>
         /// 
@@ -37,7 +37,7 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public DiskResponse(
-            global::Supabase.OneOf<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2> attributes,
+            global::Supabase.AnyOf<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2> attributes,
             string? lastModifiedAt)
         {
             this.Attributes = attributes;

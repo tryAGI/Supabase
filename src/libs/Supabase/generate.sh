@@ -19,6 +19,23 @@ python3 -c "
 import json
 with open('openapi.yaml') as f:
     spec = json.load(f)
+
+# The upstream OpenAPI 3.0 spec uses the OpenAPI 3.1 numeric form for
+# exclusive bounds. Normalize those schemas before Microsoft.OpenApi reads them.
+def normalize_exclusive_bounds(value):
+    if isinstance(value, dict):
+        for keyword, bound in (('exclusiveMinimum', 'minimum'), ('exclusiveMaximum', 'maximum')):
+            exclusive_bound = value.get(keyword)
+            if isinstance(exclusive_bound, (int, float)) and not isinstance(exclusive_bound, bool):
+                value[bound] = exclusive_bound
+                value[keyword] = True
+        for child in value.values():
+            normalize_exclusive_bounds(child)
+    elif isinstance(value, list):
+        for child in value:
+            normalize_exclusive_bounds(child)
+
+normalize_exclusive_bounds(spec)
 spec['servers'] = [{'url': 'https://api.supabase.com'}]
 with open('openapi.yaml', 'w') as f:
     json.dump(spec, f, indent=2)

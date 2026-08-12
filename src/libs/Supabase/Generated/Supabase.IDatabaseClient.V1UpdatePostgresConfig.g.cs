@@ -63,6 +63,7 @@ namespace Supabase
         /// <param name="trackActivityQuerySize"></param>
         /// <param name="maxConnections"></param>
         /// <param name="maxLocksPerTransaction"></param>
+        /// <param name="maxLogicalReplicationWorkers"></param>
         /// <param name="maxParallelMaintenanceWorkers"></param>
         /// <param name="maxParallelWorkers"></param>
         /// <param name="maxParallelWorkersPerGather"></param>
@@ -70,6 +71,7 @@ namespace Supabase
         /// <param name="maxSlotWalKeepSize"></param>
         /// <param name="maxStandbyArchiveDelay"></param>
         /// <param name="maxStandbyStreamingDelay"></param>
+        /// <param name="maxSyncWorkersPerSubscription"></param>
         /// <param name="maxWalSize"></param>
         /// <param name="maxWalSenders"></param>
         /// <param name="maxWorkerProcesses"></param>
@@ -111,15 +113,17 @@ namespace Supabase
             string? trackActivityQuerySize = default,
             int? maxConnections = default,
             int? maxLocksPerTransaction = default,
+            int? maxLogicalReplicationWorkers = default,
             int? maxParallelMaintenanceWorkers = default,
             int? maxParallelWorkers = default,
             int? maxParallelWorkersPerGather = default,
-            int? maxReplicationSlots = default,
+            long? maxReplicationSlots = default,
             string? maxSlotWalKeepSize = default,
             string? maxStandbyArchiveDelay = default,
             string? maxStandbyStreamingDelay = default,
+            int? maxSyncWorkersPerSubscription = default,
             string? maxWalSize = default,
-            int? maxWalSenders = default,
+            long? maxWalSenders = default,
             int? maxWorkerProcesses = default,
             global::Supabase.UpdatePostgresConfigBodySessionReplicationRole? sessionReplicationRole = default,
             string? sharedBuffers = default,

@@ -17,8 +17,10 @@ namespace Supabase
         public required global::Supabase.NetworkRestrictionsResponseEntitlement Entitlement { get; set; }
 
         /// <summary>
-        /// At any given point in time, this is the config that the user has requested be applied to their project. The `status` field indicates if it has been applied to the project, or is pending. When an updated config is received, the applied config is moved to `old_config`.
+        /// At any given point in time, this is the config that the user has requested be applied to their project. The `status` field indicates if it has been applied to the project, or is pending. When an updated config is received, the applied config is moved to `old_config`.<br/>
+        /// Example: {"dbAllowedCidrs":["203.0.113.0/24"],"dbAllowedCidrsV6":["2001:db8::/32"]}
         /// </summary>
+        /// <example>{"dbAllowedCidrs":["203.0.113.0/24"],"dbAllowedCidrsV6":["2001:db8::/32"]}</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.NetworkRestrictionsResponseConfig Config { get; set; }
@@ -62,7 +64,8 @@ namespace Supabase
         /// </summary>
         /// <param name="entitlement"></param>
         /// <param name="config">
-        /// At any given point in time, this is the config that the user has requested be applied to their project. The `status` field indicates if it has been applied to the project, or is pending. When an updated config is received, the applied config is moved to `old_config`.
+        /// At any given point in time, this is the config that the user has requested be applied to their project. The `status` field indicates if it has been applied to the project, or is pending. When an updated config is received, the applied config is moved to `old_config`.<br/>
+        /// Example: {"dbAllowedCidrs":["203.0.113.0/24"],"dbAllowedCidrsV6":["2001:db8::/32"]}
         /// </param>
         /// <param name="status"></param>
         /// <param name="oldConfig">

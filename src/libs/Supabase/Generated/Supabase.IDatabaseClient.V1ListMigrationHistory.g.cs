@@ -5,8 +5,7 @@ namespace Supabase
     public partial interface IDatabaseClient
     {
         /// <summary>
-        /// List applied migration versions<br/>
-        /// Only available to selected partner OAuth apps
+        /// List applied migration versions
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -19,8 +18,7 @@ namespace Supabase
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List applied migration versions<br/>
-        /// Only available to selected partner OAuth apps
+        /// List applied migration versions
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst

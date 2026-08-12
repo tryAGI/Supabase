@@ -11,6 +11,14 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        ApiMembersInvitations,
+        /// <summary>
+        /// 
+        /// </summary>
+        ApiMembersRoles,
+        /// <summary>
+        /// 
+        /// </summary>
         AssistantAdvanceModel,
         /// <summary>
         /// 
@@ -243,6 +251,10 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        StoragePurgeCache,
+        /// <summary>
+        /// 
+        /// </summary>
         StorageVectorBuckets,
         /// <summary>
         /// 
@@ -262,6 +274,8 @@ namespace Supabase
         {
             return value switch
             {
+                V1ListEntitlementsResponseEntitlementFeatureKey.ApiMembersInvitations => "api.members.invitations",
+                V1ListEntitlementsResponseEntitlementFeatureKey.ApiMembersRoles => "api.members.roles",
                 V1ListEntitlementsResponseEntitlementFeatureKey.AssistantAdvanceModel => "assistant.advance_model",
                 V1ListEntitlementsResponseEntitlementFeatureKey.AuditLogDrains => "audit_log_drains",
                 V1ListEntitlementsResponseEntitlementFeatureKey.AuthAdvancedAuthSettings => "auth.advanced_auth_settings",
@@ -320,6 +334,7 @@ namespace Supabase
                 V1ListEntitlementsResponseEntitlementFeatureKey.StorageImageTransformations => "storage.image_transformations",
                 V1ListEntitlementsResponseEntitlementFeatureKey.StorageMaxFileSize => "storage.max_file_size",
                 V1ListEntitlementsResponseEntitlementFeatureKey.StorageMaxFileSizeConfigurable => "storage.max_file_size.configurable",
+                V1ListEntitlementsResponseEntitlementFeatureKey.StoragePurgeCache => "storage.purge_cache",
                 V1ListEntitlementsResponseEntitlementFeatureKey.StorageVectorBuckets => "storage.vector_buckets",
                 V1ListEntitlementsResponseEntitlementFeatureKey.VanitySubdomain => "vanity_subdomain",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -332,6 +347,8 @@ namespace Supabase
         {
             return value switch
             {
+                "api.members.invitations" => V1ListEntitlementsResponseEntitlementFeatureKey.ApiMembersInvitations,
+                "api.members.roles" => V1ListEntitlementsResponseEntitlementFeatureKey.ApiMembersRoles,
                 "assistant.advance_model" => V1ListEntitlementsResponseEntitlementFeatureKey.AssistantAdvanceModel,
                 "audit_log_drains" => V1ListEntitlementsResponseEntitlementFeatureKey.AuditLogDrains,
                 "auth.advanced_auth_settings" => V1ListEntitlementsResponseEntitlementFeatureKey.AuthAdvancedAuthSettings,
@@ -390,6 +407,7 @@ namespace Supabase
                 "storage.image_transformations" => V1ListEntitlementsResponseEntitlementFeatureKey.StorageImageTransformations,
                 "storage.max_file_size" => V1ListEntitlementsResponseEntitlementFeatureKey.StorageMaxFileSize,
                 "storage.max_file_size.configurable" => V1ListEntitlementsResponseEntitlementFeatureKey.StorageMaxFileSizeConfigurable,
+                "storage.purge_cache" => V1ListEntitlementsResponseEntitlementFeatureKey.StoragePurgeCache,
                 "storage.vector_buckets" => V1ListEntitlementsResponseEntitlementFeatureKey.StorageVectorBuckets,
                 "vanity_subdomain" => V1ListEntitlementsResponseEntitlementFeatureKey.VanitySubdomain,
                 _ => null,

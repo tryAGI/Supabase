@@ -12,13 +12,13 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("earliest_physical_backup_date_unix")]
-        public int? EarliestPhysicalBackupDateUnix { get; set; }
+        public long? EarliestPhysicalBackupDateUnix { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latest_physical_backup_date_unix")]
-        public int? LatestPhysicalBackupDateUnix { get; set; }
+        public long? LatestPhysicalBackupDateUnix { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -35,8 +35,8 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public V1BackupsResponsePhysicalBackupData(
-            int? earliestPhysicalBackupDateUnix,
-            int? latestPhysicalBackupDateUnix)
+            long? earliestPhysicalBackupDateUnix,
+            long? latestPhysicalBackupDateUnix)
         {
             this.EarliestPhysicalBackupDateUnix = earliestPhysicalBackupDateUnix;
             this.LatestPhysicalBackupDateUnix = latestPhysicalBackupDateUnix;

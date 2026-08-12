@@ -13,14 +13,14 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("iops")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Iops { get; set; }
+        public required long Iops { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("size_gb")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int SizeGb { get; set; }
+        public required long SizeGb { get; set; }
 
         /// <summary>
         /// 
@@ -45,8 +45,8 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public DiskRequestBodyAttributesVariant2(
-            int iops,
-            int sizeGb,
+            long iops,
+            long sizeGb,
             global::Supabase.DiskRequestBodyAttributesVariant2Type type)
         {
             this.Iops = iops;

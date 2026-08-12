@@ -12,7 +12,7 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default_pool_size")]
-        public int? DefaultPoolSize { get; set; }
+        public long? DefaultPoolSize { get; set; }
 
         /// <summary>
         /// 
@@ -37,7 +37,7 @@ namespace Supabase
 #endif
         public UpdateSupavisorConfigResponse(
             string poolMode,
-            int? defaultPoolSize)
+            long? defaultPoolSize)
         {
             this.DefaultPoolSize = defaultPoolSize;
             this.PoolMode = poolMode ?? throw new global::System.ArgumentNullException(nameof(poolMode));

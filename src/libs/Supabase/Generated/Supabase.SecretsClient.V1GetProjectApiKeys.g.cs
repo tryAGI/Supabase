@@ -28,12 +28,12 @@ namespace Supabase
         partial void PrepareV1GetProjectApiKeysArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
-            ref bool? reveal);
+            ref string? reveal);
         partial void PrepareV1GetProjectApiKeysRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @ref,
-            bool? reveal);
+            string? reveal);
         partial void ProcessV1GetProjectApiKeysResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -57,7 +57,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>> V1GetProjectApiKeysAsync(
             string @ref,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -84,7 +84,7 @@ namespace Supabase
         /// <exception cref="global::Supabase.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>>> V1GetProjectApiKeysAsResponseAsync(
             string @ref,
-            bool? reveal = default,
+            string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -122,7 +122,7 @@ namespace Supabase
                                 path: $"/v1/projects/{@ref}/api-keys",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("reveal", reveal?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("reveal", reveal)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(

@@ -60,8 +60,8 @@ namespace Supabase
         /// Region selection. Only one of region or region_selection can be specified.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("region_selection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.RegionSelectionJsonConverter))]
-        public global::Supabase.RegionSelection? RegionSelection { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1, global::Supabase.V1CreateProjectBodyRegionSelectionVariant2>))]
+        public global::Supabase.OneOf<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1, global::Supabase.V1CreateProjectBodyRegionSelectionVariant2>? RegionSelection { get; set; }
 
         /// <summary>
         /// This field is deprecated and is ignored in this request
@@ -82,6 +82,26 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("template_url")]
         public string? TemplateUrl { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("release_channel")]
+        [global::System.Obsolete("This property marked as deprecated.")]
+        public object? ReleaseChannel { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("postgres_engine")]
+        [global::System.Obsolete("This property marked as deprecated.")]
+        public object? PostgresEngine { get; set; }
+
+        /// <summary>
+        /// [Experimental] Whether to enable high availability for the project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("high_availability")]
+        public bool? HighAvailability { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -111,6 +131,9 @@ namespace Supabase
         /// <param name="templateUrl">
         /// Template URL used to create the project from the CLI.
         /// </param>
+        /// <param name="highAvailability">
+        /// [Experimental] Whether to enable high availability for the project.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -118,9 +141,10 @@ namespace Supabase
             string dbPass,
             string name,
             string organizationSlug,
-            global::Supabase.RegionSelection? regionSelection,
+            global::Supabase.OneOf<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1, global::Supabase.V1CreateProjectBodyRegionSelectionVariant2>? regionSelection,
             global::Supabase.V1CreateProjectBodyDesiredInstanceSize? desiredInstanceSize,
-            string? templateUrl)
+            string? templateUrl,
+            bool? highAvailability)
         {
             this.DbPass = dbPass ?? throw new global::System.ArgumentNullException(nameof(dbPass));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
@@ -128,6 +152,7 @@ namespace Supabase
             this.RegionSelection = regionSelection;
             this.DesiredInstanceSize = desiredInstanceSize;
             this.TemplateUrl = templateUrl;
+            this.HighAvailability = highAvailability;
         }
 
         /// <summary>

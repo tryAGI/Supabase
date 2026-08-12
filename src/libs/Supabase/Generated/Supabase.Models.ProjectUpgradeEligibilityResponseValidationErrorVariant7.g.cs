@@ -19,9 +19,9 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("obj_type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1?, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2?>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjType ObjType { get; set; }
+        public required global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1?, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2?> ObjType { get; set; }
 
         /// <summary>
         /// 
@@ -54,7 +54,7 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ProjectUpgradeEligibilityResponseValidationErrorVariant7(
-            global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjType objType,
+            global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1?, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2?> objType,
             string schemaName,
             string objName,
             global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7Type type)

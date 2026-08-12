@@ -20,14 +20,14 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxBuckets")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int MaxBuckets { get; set; }
+        public required long MaxBuckets { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxIndexes")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int MaxIndexes { get; set; }
+        public required long MaxIndexes { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,8 +46,8 @@ namespace Supabase
 #endif
         public StorageConfigResponseFeaturesVectorBuckets(
             bool enabled,
-            int maxBuckets,
-            int maxIndexes)
+            long maxBuckets,
+            long maxIndexes)
         {
             this.Enabled = enabled;
             this.MaxBuckets = maxBuckets;

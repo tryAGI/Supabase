@@ -360,20 +360,24 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            // This feature requires the Enterprise organization plan.
                             if ((int)__response.StatusCode == 402)
                             {
                                 string? __content_402 = null;
                                 global::System.Exception? __exception_402 = null;
+                                global::Supabase.PlanGateErrorBody? __value_402 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_402 = global::Supabase.PlanGateErrorBody.FromJson(__content_402, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_402 = global::Supabase.PlanGateErrorBody.FromJson(__content_402, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -382,11 +386,12 @@ namespace Supabase
                                 }
 
 
-                                throw global::Supabase.ApiException.Create(
+                                throw global::Supabase.ApiException<global::Supabase.PlanGateErrorBody>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_402,
                                     responseBody: __content_402,
+                                    responseObject: __value_402,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,

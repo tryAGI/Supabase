@@ -34,9 +34,9 @@ namespace Supabase
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Supabase.OneOf<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3> Config { get; set; }
+        public required global::Supabase.AnyOf<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3> Config { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -58,7 +58,7 @@ namespace Supabase
             global::Supabase.V1ListEntitlementsResponseEntitlementFeature feature,
             bool hasAccess,
             global::Supabase.V1ListEntitlementsResponseEntitlementType type,
-            global::Supabase.OneOf<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3> config)
+            global::Supabase.AnyOf<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3> config)
         {
             this.Feature = feature ?? throw new global::System.ArgumentNullException(nameof(feature));
             this.HasAccess = hasAccess;
