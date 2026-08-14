@@ -13,949 +13,6 @@ namespace Supabase
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
-            typeof(global::Supabase.JsonConverters.BranchDetailResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchDetailResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateBranchBodyStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateBranchBodyStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchResponsePreviewProjectStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchResponsePreviewProjectStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchDeleteResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchDeleteResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchUpdateResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchUpdateResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchRestoreResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchRestoreResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyPlanJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyPlanNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1CodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1CodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OAuthTokenBodyGrantTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OAuthTokenBodyGrantTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OAuthTokenResponseTokenTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OAuthTokenResponseTokenTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetListDataItemTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetListDataItemTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetListDataItemVisibilityJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetListDataItemVisibilityNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetResponseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetResponseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetResponseVisibilityJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetResponseVisibilityNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListActionRunResponseItemRunStepNameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListActionRunResponseItemRunStepNameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListActionRunResponseItemRunStepStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListActionRunResponseItemRunStepStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ActionRunResponseRunStepNameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ActionRunResponseRunStepNameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ActionRunResponseRunStepStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ActionRunResponseRunStepStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyCloneJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyCloneNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyPullJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyPullNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyHealthJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyHealthNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyConfigureJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyConfigureNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyMigrateJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyMigrateNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodySeedJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodySeedNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyDeployJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyDeployNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApiKeyResponseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApiKeyResponseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateApiKeyBodyTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateApiKeyBodyTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyDesiredInstanceSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyDesiredInstanceSizeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyPostgresEngineJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyPostgresEngineNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateCustomHostnameResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateCustomHostnameResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.JitAccessRequestRequestStateJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.JitAccessRequestRequestStateNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsResponseEntitlementJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsResponseEntitlementNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseEntitlementJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseEntitlementNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseConfigDbAllowedCidrTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseConfigDbAllowedCidrTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.VanitySubdomainConfigResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.VanitySubdomainConfigResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpgradeDatabaseBodyReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpgradeDatabaseBodyReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersionJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersionNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant3TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant3TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant4TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant4TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant5TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant5TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant6TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant6TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant8TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant8TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant9TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant9TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant10TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant10TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant3TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant3TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusErrorJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusErrorNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgressJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgressNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SetUpReadReplicaBodyReadReplicaRegionJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SetUpReadReplicaBodyReadReplicaRegionNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseNameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseNameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseInfoVariant1NameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseInfoVariant1NameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeyResponseAlgorithmJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeyResponseAlgorithmNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeyResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeyResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyAlgorithmJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyAlgorithmNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1UseJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1UseNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KeyOpJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KeyOpNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KtyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KtyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1AlgJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1AlgNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1EJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1ENullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2UseJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2UseNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KeyOpJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KeyOpNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KtyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KtyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2AlgJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2AlgNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2CrvJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2CrvNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3UseJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3UseNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KeyOpJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KeyOpNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KtyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KtyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3AlgJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3AlgNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3CrvJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3CrvNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4UseJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4UseNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KeyOpJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KeyOpNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KtyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KtyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateSigningKeyBodyStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateSigningKeyBodyStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseDbMaxPoolSizeUnitJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseDbMaxPoolSizeUnitNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponsePasswordRequiredCharactersJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponsePasswordRequiredCharactersNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseSecurityCaptchaProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseSecurityCaptchaProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseSmsProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseSmsProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodySecurityCaptchaProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodySecurityCaptchaProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodyPasswordRequiredCharactersJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodyPasswordRequiredCharactersNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodySmsProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodySmsProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodyDbMaxPoolSizeUnitJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodyDbMaxPoolSizeUnitNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngineJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngineNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant3JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant3NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant4JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant4NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant5JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant5NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant6JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant6NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant7JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant7NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant8JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant8NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceIntervalJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceIntervalNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant3JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant3NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant4JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant4NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant5JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant5NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant6JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant6NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant7JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant7NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant8JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant8NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceIntervalJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceIntervalNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant3JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant3NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant4JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant4NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintNameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintNameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintLevelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintLevelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintFacingJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintFacingNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintCategorieJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintCategorieNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintMetadataTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintMetadataTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeleteRolesResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeleteRolesResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.FunctionResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.FunctionResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BulkUpdateFunctionBodyItemStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BulkUpdateFunctionBodyItemStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BulkUpdateFunctionResponseFunctionStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BulkUpdateFunctionResponseFunctionStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeployFunctionResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeployFunctionResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.FunctionSlugResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.FunctionSlugResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskResponseAttributesVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskResponseAttributesVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskResponseAttributesVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskResponseAttributesVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateStorageConfigBodyExternalUpstreamTargetJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateStorageConfigBodyExternalUpstreamTargetNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1PgbouncerConfigResponsePoolModeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1PgbouncerConfigResponsePoolModeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SupavisorConfigResponseDatabaseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SupavisorConfigResponseDatabaseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SupavisorConfigResponsePoolModeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SupavisorConfigResponsePoolModeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateSupavisorConfigBodyPoolModeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateSupavisorConfigBodyPoolModeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.PostgresConfigResponseSessionReplicationRoleJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.PostgresConfigResponseSessionReplicationRoleNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdatePostgresConfigBodySessionReplicationRoleJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdatePostgresConfigBodySessionReplicationRoleNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderBodyTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderBodyTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderBodyNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderBodyNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderResponseSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderResponseSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProvidersResponseItemSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProvidersResponseItemSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProviderResponseSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProviderResponseSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateProviderBodyNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateProviderBodyNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateProviderResponseSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateProviderResponseSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeleteProviderResponseSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeleteProviderResponseSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1BackupsResponseBackupStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1BackupsResponseBackupStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RestorePointResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RestorePointResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureKeyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureKeyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponsePlanJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponsePlanNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponseOptInTagJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponseOptInTagNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponseAllowedReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponseAllowedReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlanJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlanNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlanJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlanNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseInfraComputeSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseInfraComputeSizeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseDiskTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseDiskTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAvailableRegionsContinentJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAvailableRegionsContinentNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAvailableRegionsDesiredInstanceSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAvailableRegionsDesiredInstanceSizeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1AuthorizeUserResponseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1AuthorizeUserResponseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1AuthorizeUserCodeChallengeMethodJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1AuthorizeUserCodeChallengeMethodNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimResponseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimResponseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimCodeChallengeMethodJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimCodeChallengeMethodNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListAllSnippetsSortByJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListAllSnippetsSortByNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListAllSnippetsSortOrderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListAllSnippetsSortOrderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetServicesHealthServicesVariant2ItemJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetServicesHealthServicesVariant2ItemNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant3JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant3NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant4JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant4NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetSecurityAdvisorsLintTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetSecurityAdvisorsLintTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetProjectUsageApiCountIntervalJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetProjectUsageApiCountIntervalNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetProjectFunctionCombinedStatsIntervalJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetProjectFunctionCombinedStatsIntervalNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAllProjectsForOrganizationSortJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAllProjectsForOrganizationSortNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant1StateJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant1StateNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant2UnavailableReasonJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant2UnavailableReasonNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant1StateJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant1StateNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant2UnavailableReasonJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant2UnavailableReasonNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateCustomHostnameResponseJsonValueJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseJsonValueJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1, global::Supabase.V1CreateProjectBodyRegionSelectionVariant2>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, double?, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1?, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2?>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1ServiceHealthResponseInfoVariant1, global::Supabase.V1ServiceHealthResponseInfoVariant2, global::Supabase.V1ServiceHealthResponseInfoVariant3>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, double?, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant1?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant2?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant3?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant4?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant5?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant6?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant7?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant8?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant1?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant2?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant3?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant4?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant5?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant6?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant7?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant8?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ApplyProjectAddonBodyAddonVariantVariant1?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant2?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant3?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant4?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::Supabase.AnalyticsResponseError>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::Supabase.V1GetUsageApiCountResponseError>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::Supabase.V1GetUsageApiRequestsCountResponseError>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.JitListAccessResponseItemVariant1, global::Supabase.JitListAccessResponseItemVariant2>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.DiskRequestBodyAttributesVariant1, global::Supabase.DiskRequestBodyAttributesVariant2>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1GetJitAccessConfigResponseVariant1, global::Supabase.V1GetJitAccessConfigResponseVariant2>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1UpdateJitAccessConfigResponseVariant1, global::Supabase.V1UpdateJitAccessConfigResponseVariant2>),
-
-            typeof(global::Supabase.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseValidationErrorVariant10_22d1bf9d70c3ac32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseValidationErrorVariant10_4f2010bcb0a18245")]
@@ -1468,949 +525,6 @@ namespace Supabase
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
-            typeof(global::Supabase.JsonConverters.BranchDetailResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchDetailResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateBranchBodyStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateBranchBodyStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchResponsePreviewProjectStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchResponsePreviewProjectStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchDeleteResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchDeleteResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchUpdateResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchUpdateResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchRestoreResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchRestoreResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyPlanJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyPlanNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1CodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1CodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OAuthTokenBodyGrantTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OAuthTokenBodyGrantTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OAuthTokenResponseTokenTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OAuthTokenResponseTokenTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetListDataItemTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetListDataItemTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetListDataItemVisibilityJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetListDataItemVisibilityNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetResponseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetResponseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetResponseVisibilityJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetResponseVisibilityNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListActionRunResponseItemRunStepNameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListActionRunResponseItemRunStepNameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListActionRunResponseItemRunStepStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListActionRunResponseItemRunStepStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ActionRunResponseRunStepNameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ActionRunResponseRunStepNameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ActionRunResponseRunStepStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ActionRunResponseRunStepStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyCloneJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyCloneNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyPullJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyPullNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyHealthJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyHealthNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyConfigureJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyConfigureNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyMigrateJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyMigrateNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodySeedJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodySeedNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyDeployJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyDeployNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApiKeyResponseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApiKeyResponseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateApiKeyBodyTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateApiKeyBodyTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyDesiredInstanceSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyDesiredInstanceSizeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyPostgresEngineJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyPostgresEngineNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateCustomHostnameResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateCustomHostnameResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.JitAccessRequestRequestStateJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.JitAccessRequestRequestStateNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsResponseEntitlementJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsResponseEntitlementNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseEntitlementJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseEntitlementNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseConfigDbAllowedCidrTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseConfigDbAllowedCidrTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.VanitySubdomainConfigResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.VanitySubdomainConfigResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpgradeDatabaseBodyReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpgradeDatabaseBodyReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersionJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersionNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant3TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant3TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant4TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant4TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant5TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant5TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant6TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant6TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant8TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant8TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant9TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant9TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant10TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant10TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant3TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant3TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusErrorJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusErrorNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgressJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgressNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SetUpReadReplicaBodyReadReplicaRegionJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SetUpReadReplicaBodyReadReplicaRegionNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseNameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseNameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseInfoVariant1NameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseInfoVariant1NameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeyResponseAlgorithmJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeyResponseAlgorithmNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeyResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeyResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyAlgorithmJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyAlgorithmNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1UseJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1UseNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KeyOpJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KeyOpNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KtyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KtyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1AlgJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1AlgNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1EJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1ENullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2UseJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2UseNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KeyOpJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KeyOpNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KtyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KtyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2AlgJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2AlgNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2CrvJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2CrvNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3UseJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3UseNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KeyOpJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KeyOpNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KtyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KtyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3AlgJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3AlgNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3CrvJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3CrvNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4UseJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4UseNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KeyOpJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KeyOpNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KtyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KtyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateSigningKeyBodyStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateSigningKeyBodyStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseDbMaxPoolSizeUnitJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseDbMaxPoolSizeUnitNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponsePasswordRequiredCharactersJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponsePasswordRequiredCharactersNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseSecurityCaptchaProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseSecurityCaptchaProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseSmsProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseSmsProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodySecurityCaptchaProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodySecurityCaptchaProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodyPasswordRequiredCharactersJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodyPasswordRequiredCharactersNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodySmsProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodySmsProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodyDbMaxPoolSizeUnitJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodyDbMaxPoolSizeUnitNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngineJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngineNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant3JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant3NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant4JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant4NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant5JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant5NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant6JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant6NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant7JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant7NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant8JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant8NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceIntervalJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceIntervalNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant3JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant3NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant4JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant4NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant5JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant5NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant6JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant6NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant7JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant7NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant8JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant8NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceIntervalJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceIntervalNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant3JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant3NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant4JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant4NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintNameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintNameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintLevelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintLevelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintFacingJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintFacingNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintCategorieJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintCategorieNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintMetadataTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintMetadataTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeleteRolesResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeleteRolesResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.FunctionResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.FunctionResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BulkUpdateFunctionBodyItemStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BulkUpdateFunctionBodyItemStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BulkUpdateFunctionResponseFunctionStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BulkUpdateFunctionResponseFunctionStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeployFunctionResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeployFunctionResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.FunctionSlugResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.FunctionSlugResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskResponseAttributesVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskResponseAttributesVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskResponseAttributesVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskResponseAttributesVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateStorageConfigBodyExternalUpstreamTargetJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateStorageConfigBodyExternalUpstreamTargetNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1PgbouncerConfigResponsePoolModeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1PgbouncerConfigResponsePoolModeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SupavisorConfigResponseDatabaseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SupavisorConfigResponseDatabaseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SupavisorConfigResponsePoolModeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SupavisorConfigResponsePoolModeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateSupavisorConfigBodyPoolModeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateSupavisorConfigBodyPoolModeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.PostgresConfigResponseSessionReplicationRoleJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.PostgresConfigResponseSessionReplicationRoleNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdatePostgresConfigBodySessionReplicationRoleJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdatePostgresConfigBodySessionReplicationRoleNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderBodyTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderBodyTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderBodyNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderBodyNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderResponseSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderResponseSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProvidersResponseItemSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProvidersResponseItemSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProviderResponseSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProviderResponseSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateProviderBodyNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateProviderBodyNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateProviderResponseSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateProviderResponseSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeleteProviderResponseSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeleteProviderResponseSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1BackupsResponseBackupStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1BackupsResponseBackupStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RestorePointResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RestorePointResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureKeyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureKeyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponsePlanJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponsePlanNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponseOptInTagJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponseOptInTagNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponseAllowedReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponseAllowedReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlanJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlanNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlanJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlanNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseInfraComputeSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseInfraComputeSizeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseDiskTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseDiskTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAvailableRegionsContinentJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAvailableRegionsContinentNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAvailableRegionsDesiredInstanceSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAvailableRegionsDesiredInstanceSizeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1AuthorizeUserResponseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1AuthorizeUserResponseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1AuthorizeUserCodeChallengeMethodJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1AuthorizeUserCodeChallengeMethodNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimResponseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimResponseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimCodeChallengeMethodJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimCodeChallengeMethodNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListAllSnippetsSortByJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListAllSnippetsSortByNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListAllSnippetsSortOrderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListAllSnippetsSortOrderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetServicesHealthServicesVariant2ItemJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetServicesHealthServicesVariant2ItemNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant3JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant3NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant4JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant4NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetSecurityAdvisorsLintTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetSecurityAdvisorsLintTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetProjectUsageApiCountIntervalJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetProjectUsageApiCountIntervalNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetProjectFunctionCombinedStatsIntervalJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetProjectFunctionCombinedStatsIntervalNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAllProjectsForOrganizationSortJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAllProjectsForOrganizationSortNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant1StateJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant1StateNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant2UnavailableReasonJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant2UnavailableReasonNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant1StateJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant1StateNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant2UnavailableReasonJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant2UnavailableReasonNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateCustomHostnameResponseJsonValueJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseJsonValueJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1, global::Supabase.V1CreateProjectBodyRegionSelectionVariant2>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, double?, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1?, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2?>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1ServiceHealthResponseInfoVariant1, global::Supabase.V1ServiceHealthResponseInfoVariant2, global::Supabase.V1ServiceHealthResponseInfoVariant3>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, double?, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant1?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant2?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant3?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant4?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant5?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant6?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant7?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant8?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant1?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant2?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant3?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant4?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant5?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant6?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant7?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant8?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ApplyProjectAddonBodyAddonVariantVariant1?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant2?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant3?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant4?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::Supabase.AnalyticsResponseError>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::Supabase.V1GetUsageApiCountResponseError>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::Supabase.V1GetUsageApiRequestsCountResponseError>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.JitListAccessResponseItemVariant1, global::Supabase.JitListAccessResponseItemVariant2>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.DiskRequestBodyAttributesVariant1, global::Supabase.DiskRequestBodyAttributesVariant2>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1GetJitAccessConfigResponseVariant1, global::Supabase.V1GetJitAccessConfigResponseVariant2>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1UpdateJitAccessConfigResponseVariant1, global::Supabase.V1UpdateJitAccessConfigResponseVariant2>),
-
-            typeof(global::Supabase.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseValidationErrorVariant10_22d1bf9d70c3ac32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseValidationErrorVariant10_4f2010bcb0a18245")]
@@ -2923,949 +1037,6 @@ namespace Supabase
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
-            typeof(global::Supabase.JsonConverters.BranchDetailResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchDetailResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateBranchBodyStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateBranchBodyStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchResponsePreviewProjectStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchResponsePreviewProjectStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchDeleteResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchDeleteResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchUpdateResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchUpdateResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchRestoreResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BranchRestoreResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyPlanJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyPlanNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1CodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1CodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.RegionsInfoAllSpecificItemStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OAuthTokenBodyGrantTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OAuthTokenBodyGrantTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OAuthTokenResponseTokenTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OAuthTokenResponseTokenTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetListDataItemTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetListDataItemTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetListDataItemVisibilityJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetListDataItemVisibilityNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetResponseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetResponseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetResponseVisibilityJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SnippetResponseVisibilityNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListActionRunResponseItemRunStepNameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListActionRunResponseItemRunStepNameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListActionRunResponseItemRunStepStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListActionRunResponseItemRunStepStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ActionRunResponseRunStepNameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ActionRunResponseRunStepNameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ActionRunResponseRunStepStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ActionRunResponseRunStepStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyCloneJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyCloneNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyPullJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyPullNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyHealthJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyHealthNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyConfigureJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyConfigureNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyMigrateJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyMigrateNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodySeedJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodySeedNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyDeployJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyDeployNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateRunStatusResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApiKeyResponseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApiKeyResponseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateApiKeyBodyTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateApiKeyBodyTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyDesiredInstanceSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyDesiredInstanceSizeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyPostgresEngineJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateBranchBodyPostgresEngineNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateCustomHostnameResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateCustomHostnameResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.JitAccessRequestRequestStateJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.JitAccessRequestRequestStateNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsResponseEntitlementJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsResponseEntitlementNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseEntitlementJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseEntitlementNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseConfigDbAllowedCidrTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseConfigDbAllowedCidrTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.VanitySubdomainConfigResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.VanitySubdomainConfigResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpgradeDatabaseBodyReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpgradeDatabaseBodyReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersionJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersionNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant3TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant3TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant4TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant4TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant5TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant5TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant6TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant6TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant8TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant8TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant9TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant9TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant10TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant10TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant3TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant3TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusErrorJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusErrorNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgressJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgressNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SetUpReadReplicaBodyReadReplicaRegionJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SetUpReadReplicaBodyReadReplicaRegionNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseNameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseNameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseInfoVariant1NameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseInfoVariant1NameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeyResponseAlgorithmJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeyResponseAlgorithmNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeyResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeyResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyAlgorithmJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyAlgorithmNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1UseJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1UseNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KeyOpJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KeyOpNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KtyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KtyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1AlgJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1AlgNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1EJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1ENullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2UseJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2UseNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KeyOpJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KeyOpNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KtyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KtyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2AlgJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2AlgNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2CrvJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2CrvNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3UseJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3UseNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KeyOpJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KeyOpNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KtyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KtyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3AlgJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3AlgNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3CrvJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3CrvNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4UseJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4UseNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KeyOpJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KeyOpNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KtyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KtyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SigningKeysResponseKeyStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateSigningKeyBodyStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateSigningKeyBodyStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseDbMaxPoolSizeUnitJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseDbMaxPoolSizeUnitNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponsePasswordRequiredCharactersJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponsePasswordRequiredCharactersNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseSecurityCaptchaProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseSecurityCaptchaProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseSmsProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.AuthConfigResponseSmsProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodySecurityCaptchaProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodySecurityCaptchaProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodyPasswordRequiredCharactersJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodyPasswordRequiredCharactersNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodySmsProviderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodySmsProviderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodyDbMaxPoolSizeUnitJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateAuthConfigBodyDbMaxPoolSizeUnitNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngineJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngineNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant3JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant3NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant4JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant4NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant5JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant5NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant6JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant6NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant7JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant7NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant8JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant8NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceIntervalJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceIntervalNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant3JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant3NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant4JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant4NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant5JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant5NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant6JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant6NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant7JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant7NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant8JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant8NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceIntervalJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceIntervalNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant3JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant3NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant4JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant4NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintNameJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintNameNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintLevelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintLevelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintFacingJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintFacingNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintCategorieJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintCategorieNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintMetadataTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintMetadataTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeleteRolesResponseMessageJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeleteRolesResponseMessageNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.FunctionResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.FunctionResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BulkUpdateFunctionBodyItemStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BulkUpdateFunctionBodyItemStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BulkUpdateFunctionResponseFunctionStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.BulkUpdateFunctionResponseFunctionStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeployFunctionResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeployFunctionResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.FunctionSlugResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.FunctionSlugResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskResponseAttributesVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskResponseAttributesVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskResponseAttributesVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskResponseAttributesVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant1TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant1TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateStorageConfigBodyExternalUpstreamTargetJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateStorageConfigBodyExternalUpstreamTargetNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1PgbouncerConfigResponsePoolModeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1PgbouncerConfigResponsePoolModeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SupavisorConfigResponseDatabaseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SupavisorConfigResponseDatabaseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SupavisorConfigResponsePoolModeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.SupavisorConfigResponsePoolModeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateSupavisorConfigBodyPoolModeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateSupavisorConfigBodyPoolModeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.PostgresConfigResponseSessionReplicationRoleJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.PostgresConfigResponseSessionReplicationRoleNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdatePostgresConfigBodySessionReplicationRoleJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdatePostgresConfigBodySessionReplicationRoleNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderBodyTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderBodyTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderBodyNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderBodyNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderResponseSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.CreateProviderResponseSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProvidersResponseItemSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProvidersResponseItemSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProviderResponseSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.GetProviderResponseSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateProviderBodyNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateProviderBodyNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateProviderResponseSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateProviderResponseSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeleteProviderResponseSamlNameIdFormatJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.DeleteProviderResponseSamlNameIdFormatNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1BackupsResponseBackupStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1BackupsResponseBackupStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RestorePointResponseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RestorePointResponseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureKeyJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureKeyNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponsePlanJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponsePlanNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponseOptInTagJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponseOptInTagNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponseAllowedReleaseChannelJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OrganizationSlugResponseAllowedReleaseChannelNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlanJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlanNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlanJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlanNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseInfraComputeSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseInfraComputeSizeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseStatusJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseStatusNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseDiskTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseDiskTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAvailableRegionsContinentJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAvailableRegionsContinentNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAvailableRegionsDesiredInstanceSizeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAvailableRegionsDesiredInstanceSizeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1AuthorizeUserResponseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1AuthorizeUserResponseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1AuthorizeUserCodeChallengeMethodJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1AuthorizeUserCodeChallengeMethodNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimResponseTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimResponseTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimCodeChallengeMethodJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimCodeChallengeMethodNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListAllSnippetsSortByJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListAllSnippetsSortByNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListAllSnippetsSortOrderJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1ListAllSnippetsSortOrderNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetServicesHealthServicesVariant2ItemJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetServicesHealthServicesVariant2ItemNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant1JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant1NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant2JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant2NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant3JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant3NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant4JsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant4NullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetSecurityAdvisorsLintTypeJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetSecurityAdvisorsLintTypeNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetProjectUsageApiCountIntervalJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetProjectUsageApiCountIntervalNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetProjectFunctionCombinedStatsIntervalJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetProjectFunctionCombinedStatsIntervalNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAllProjectsForOrganizationSortJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetAllProjectsForOrganizationSortNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant1StateJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant1StateNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant2UnavailableReasonJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant2UnavailableReasonNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant1StateJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant1StateNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant2UnavailableReasonJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant2UnavailableReasonNullableJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.UpdateCustomHostnameResponseJsonValueJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseJsonValueJsonConverter),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1, global::Supabase.V1CreateProjectBodyRegionSelectionVariant2>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, double?, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1?, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2?>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1ServiceHealthResponseInfoVariant1, global::Supabase.V1ServiceHealthResponseInfoVariant2, global::Supabase.V1ServiceHealthResponseInfoVariant3>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, double?, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant1?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant2?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant3?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant4?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant5?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant6?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant7?, global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant8?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant1?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant2?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant3?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant4?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant5?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant6?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant7?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant8?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ApplyProjectAddonBodyAddonVariantVariant1?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant2?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant3?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant4?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::Supabase.AnalyticsResponseError>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::Supabase.V1GetUsageApiCountResponseError>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::Supabase.V1GetUsageApiRequestsCountResponseError>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.JitListAccessResponseItemVariant1, global::Supabase.JitListAccessResponseItemVariant2>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.DiskRequestBodyAttributesVariant1, global::Supabase.DiskRequestBodyAttributesVariant2>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>>),
-
-            typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1GetJitAccessConfigResponseVariant1, global::Supabase.V1GetJitAccessConfigResponseVariant2>),
-
-            typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1UpdateJitAccessConfigResponseVariant1, global::Supabase.V1UpdateJitAccessConfigResponseVariant2>),
-
-            typeof(global::Supabase.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseValidationErrorVariant10_22d1bf9d70c3ac32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseValidationErrorVariant10_4f2010bcb0a18245")]
@@ -3932,13 +1103,7 @@ namespace Supabase
     /// </summary>
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
-        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = global::System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.Combine(
-            SourceGenerationContextChunk0.Default,
-
-            SourceGenerationContextChunk1.Default,
-
-            SourceGenerationContextChunk2.Default
-            );
+        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
 
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
 
@@ -3968,438 +1133,6 @@ namespace Supabase
                 DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
                 TypeInfoResolver = Resolver,
             };
-            options.Converters.Add(new global::Supabase.JsonConverters.BranchDetailResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BranchDetailResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateBranchBodyStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateBranchBodyStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BranchResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BranchResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BranchResponsePreviewProjectStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BranchResponsePreviewProjectStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BranchDeleteResponseMessageJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BranchDeleteResponseMessageNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BranchUpdateResponseMessageJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BranchUpdateResponseMessageNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BranchRestoreResponseMessageJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BranchRestoreResponseMessageNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyPlanJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyPlanNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1CodeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1CodeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupCodeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupCodeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemCodeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemCodeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemProviderJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemProviderNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemCodeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemCodeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemCodeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemCodeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemProviderJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemProviderNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OAuthTokenBodyGrantTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OAuthTokenBodyGrantTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OAuthTokenResponseTokenTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OAuthTokenResponseTokenTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SnippetListDataItemTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SnippetListDataItemTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SnippetListDataItemVisibilityJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SnippetListDataItemVisibilityNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SnippetResponseTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SnippetResponseTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SnippetResponseVisibilityJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SnippetResponseVisibilityNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListActionRunResponseItemRunStepNameJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListActionRunResponseItemRunStepNameNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListActionRunResponseItemRunStepStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListActionRunResponseItemRunStepStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ActionRunResponseRunStepNameJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ActionRunResponseRunStepNameNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ActionRunResponseRunStepStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ActionRunResponseRunStepStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodyCloneJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodyCloneNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodyPullJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodyPullNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodyHealthJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodyHealthNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodyConfigureJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodyConfigureNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodyMigrateJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodyMigrateNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodySeedJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodySeedNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodyDeployJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusBodyDeployNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusResponseMessageJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateRunStatusResponseMessageNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ApiKeyResponseTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ApiKeyResponseTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateApiKeyBodyTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateApiKeyBodyTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateBranchBodyDesiredInstanceSizeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateBranchBodyDesiredInstanceSizeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateBranchBodyReleaseChannelJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateBranchBodyReleaseChannelNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateBranchBodyPostgresEngineJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateBranchBodyPostgresEngineNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateCustomHostnameResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateCustomHostnameResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.JitAccessRequestRequestStateJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.JitAccessRequestRequestStateNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsResponseEntitlementJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsResponseEntitlementNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseEntitlementJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseEntitlementNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseConfigDbAllowedCidrTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseConfigDbAllowedCidrTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.VanitySubdomainConfigResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.VanitySubdomainConfigResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpgradeDatabaseBodyReleaseChannelJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpgradeDatabaseBodyReleaseChannelNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannelJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannelNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersionJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersionNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannelJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannelNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant3TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant3TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant4TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant4TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant5TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant5TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant6TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant6TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant8TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant8TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant9TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant9TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant10TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant10TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant3TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant3TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusErrorJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusErrorNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgressJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgressNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SetUpReadReplicaBodyReadReplicaRegionJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SetUpReadReplicaBodyReadReplicaRegionNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ServiceHealthResponseNameJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ServiceHealthResponseNameNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ServiceHealthResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ServiceHealthResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ServiceHealthResponseInfoVariant1NameJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ServiceHealthResponseInfoVariant1NameNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SigningKeyResponseAlgorithmJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SigningKeyResponseAlgorithmNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SigningKeyResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SigningKeyResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyAlgorithmJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyAlgorithmNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1UseJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1UseNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KeyOpJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KeyOpNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KtyJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KtyNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1AlgJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1AlgNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1EJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1ENullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2UseJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2UseNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KeyOpJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KeyOpNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KtyJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KtyNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2AlgJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2AlgNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2CrvJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2CrvNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3UseJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3UseNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KeyOpJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KeyOpNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KtyJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KtyNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3AlgJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3AlgNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3CrvJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3CrvNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4UseJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4UseNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KeyOpJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KeyOpNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KtyJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KtyNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SigningKeysResponseKeyStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SigningKeysResponseKeyStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateSigningKeyBodyStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateSigningKeyBodyStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.AuthConfigResponseDbMaxPoolSizeUnitJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.AuthConfigResponseDbMaxPoolSizeUnitNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.AuthConfigResponsePasswordRequiredCharactersJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.AuthConfigResponsePasswordRequiredCharactersNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.AuthConfigResponseSecurityCaptchaProviderJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.AuthConfigResponseSecurityCaptchaProviderNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.AuthConfigResponseSmsProviderJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.AuthConfigResponseSmsProviderNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateAuthConfigBodySecurityCaptchaProviderJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateAuthConfigBodySecurityCaptchaProviderNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateAuthConfigBodyPasswordRequiredCharactersJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateAuthConfigBodyPasswordRequiredCharactersNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateAuthConfigBodySmsProviderJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateAuthConfigBodySmsProviderNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateAuthConfigBodyDbMaxPoolSizeUnitJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateAuthConfigBodyDbMaxPoolSizeUnitNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannelJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannelNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngineJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngineNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant1JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant1NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant2JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant2NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant3JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant3NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant4JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant4NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant5JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant5NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant6JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant6NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant7JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant7NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant8JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant8NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceIntervalJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceIntervalNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant1JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant1NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant2JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant2NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant3JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant3NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant4JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant4NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant5JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant5NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant6JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant6NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant7JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant7NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant8JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant8NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceIntervalJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceIntervalNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant1JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant1NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant2JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant2NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant3JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant3NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant4JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant4NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintNameJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintNameNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintLevelJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintLevelNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintFacingJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintFacingNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintCategorieJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintCategorieNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintMetadataTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintMetadataTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DeleteRolesResponseMessageJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DeleteRolesResponseMessageNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.FunctionResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.FunctionResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BulkUpdateFunctionBodyItemStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BulkUpdateFunctionBodyItemStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BulkUpdateFunctionResponseFunctionStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.BulkUpdateFunctionResponseFunctionStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DeployFunctionResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DeployFunctionResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.FunctionSlugResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.FunctionSlugResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DiskResponseAttributesVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DiskResponseAttributesVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DiskResponseAttributesVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DiskResponseAttributesVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateStorageConfigBodyExternalUpstreamTargetJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateStorageConfigBodyExternalUpstreamTargetNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1PgbouncerConfigResponsePoolModeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1PgbouncerConfigResponsePoolModeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SupavisorConfigResponseDatabaseTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SupavisorConfigResponseDatabaseTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SupavisorConfigResponsePoolModeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.SupavisorConfigResponsePoolModeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateSupavisorConfigBodyPoolModeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateSupavisorConfigBodyPoolModeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.PostgresConfigResponseSessionReplicationRoleJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.PostgresConfigResponseSessionReplicationRoleNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdatePostgresConfigBodySessionReplicationRoleJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdatePostgresConfigBodySessionReplicationRoleNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateProviderBodyTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateProviderBodyTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateProviderBodyNameIdFormatJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateProviderBodyNameIdFormatNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateProviderResponseSamlNameIdFormatJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.CreateProviderResponseSamlNameIdFormatNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProvidersResponseItemSamlNameIdFormatJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.ListProvidersResponseItemSamlNameIdFormatNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.GetProviderResponseSamlNameIdFormatJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.GetProviderResponseSamlNameIdFormatNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateProviderBodyNameIdFormatJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateProviderBodyNameIdFormatNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateProviderResponseSamlNameIdFormatJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.UpdateProviderResponseSamlNameIdFormatNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DeleteProviderResponseSamlNameIdFormatJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.DeleteProviderResponseSamlNameIdFormatNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1BackupsResponseBackupStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1BackupsResponseBackupStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1RestorePointResponseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1RestorePointResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureKeyJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureKeyNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1OrganizationSlugResponsePlanJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1OrganizationSlugResponsePlanNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1OrganizationSlugResponseOptInTagJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1OrganizationSlugResponseOptInTagNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1OrganizationSlugResponseAllowedReleaseChannelJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1OrganizationSlugResponseAllowedReleaseChannelNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlanJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlanNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlanJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlanNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseInfraComputeSizeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseInfraComputeSizeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseStatusJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseDiskTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseDiskTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetAvailableRegionsContinentJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetAvailableRegionsContinentNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetAvailableRegionsDesiredInstanceSizeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetAvailableRegionsDesiredInstanceSizeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1AuthorizeUserResponseTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1AuthorizeUserResponseTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1AuthorizeUserCodeChallengeMethodJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1AuthorizeUserCodeChallengeMethodNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimResponseTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimResponseTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimCodeChallengeMethodJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimCodeChallengeMethodNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ListAllSnippetsSortByJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ListAllSnippetsSortByNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ListAllSnippetsSortOrderJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1ListAllSnippetsSortOrderNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetServicesHealthServicesVariant2ItemJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetServicesHealthServicesVariant2ItemNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant1JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant1NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant2JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant2NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant3JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant3NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant4JsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant4NullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetSecurityAdvisorsLintTypeJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetSecurityAdvisorsLintTypeNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetProjectUsageApiCountIntervalJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetProjectUsageApiCountIntervalNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetProjectFunctionCombinedStatsIntervalJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetProjectFunctionCombinedStatsIntervalNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetAllProjectsForOrganizationSortJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetAllProjectsForOrganizationSortNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant1StateJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant1StateNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant2UnavailableReasonJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant2UnavailableReasonNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant1StateJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant1StateNullableJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant2UnavailableReasonJsonConverter());
-            options.Converters.Add(new global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant2UnavailableReasonNullableJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.UpdateCustomHostnameResponseJsonValueJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.ListProjectAddonsResponseJsonValueJsonConverter());
             options.Converters.Add(new global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1, global::Supabase.V1CreateProjectBodyRegionSelectionVariant2>());
@@ -4441,7 +1174,3096 @@ namespace Supabase
             options.Converters.Add(new global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1UpdateJitAccessConfigResponseVariant1, global::Supabase.V1UpdateJitAccessConfigResponseVariant2>());
             options.Converters.Add(new global::Supabase.JsonConverters.UnixTimestampJsonConverter());
 
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
+
             return options;
+        }
+
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::Supabase.BranchDetailResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.BranchDetailResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateBranchBodyStatus)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateBranchBodyStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.BranchResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.BranchResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.BranchResponsePreviewProjectStatus)
+
+                    || typeToConvert == typeof(global::Supabase.BranchResponsePreviewProjectStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.BranchDeleteResponseMessage)
+
+                    || typeToConvert == typeof(global::Supabase.BranchDeleteResponseMessage?)
+
+                    || typeToConvert == typeof(global::Supabase.BranchUpdateResponseMessage)
+
+                    || typeToConvert == typeof(global::Supabase.BranchUpdateResponseMessage?)
+
+                    || typeToConvert == typeof(global::Supabase.BranchRestoreResponseMessage)
+
+                    || typeToConvert == typeof(global::Supabase.BranchRestoreResponseMessage?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectWithDatabaseResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectWithDatabaseResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyPlan)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyPlan?)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegion)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegion?)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1Type)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1Code)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1Code?)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2Type)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2Type?)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2Code)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2Code?)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyDesiredInstanceSize)
+
+                    || typeToConvert == typeof(global::Supabase.V1CreateProjectBodyDesiredInstanceSize?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSmartGroupCode)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSmartGroupCode?)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSmartGroupType)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSmartGroupType?)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemCode)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemCode?)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemType)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemType?)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemProvider)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemProvider?)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemStatus)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoAllSmartGroupItemCode)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoAllSmartGroupItemCode?)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoAllSmartGroupItemType)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoAllSmartGroupItemType?)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemCode)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemCode?)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemType)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemType?)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemProvider)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemProvider?)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemStatus)
+
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.OAuthTokenBodyGrantType)
+
+                    || typeToConvert == typeof(global::Supabase.OAuthTokenBodyGrantType?)
+
+                    || typeToConvert == typeof(global::Supabase.OAuthTokenResponseTokenType)
+
+                    || typeToConvert == typeof(global::Supabase.OAuthTokenResponseTokenType?)
+
+                    || typeToConvert == typeof(global::Supabase.SnippetListDataItemType)
+
+                    || typeToConvert == typeof(global::Supabase.SnippetListDataItemType?)
+
+                    || typeToConvert == typeof(global::Supabase.SnippetListDataItemVisibility)
+
+                    || typeToConvert == typeof(global::Supabase.SnippetListDataItemVisibility?)
+
+                    || typeToConvert == typeof(global::Supabase.SnippetResponseType)
+
+                    || typeToConvert == typeof(global::Supabase.SnippetResponseType?)
+
+                    || typeToConvert == typeof(global::Supabase.SnippetResponseVisibility)
+
+                    || typeToConvert == typeof(global::Supabase.SnippetResponseVisibility?)
+
+                    || typeToConvert == typeof(global::Supabase.ListActionRunResponseItemRunStepName)
+
+                    || typeToConvert == typeof(global::Supabase.ListActionRunResponseItemRunStepName?)
+
+                    || typeToConvert == typeof(global::Supabase.ListActionRunResponseItemRunStepStatus)
+
+                    || typeToConvert == typeof(global::Supabase.ListActionRunResponseItemRunStepStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.ActionRunResponseRunStepName)
+
+                    || typeToConvert == typeof(global::Supabase.ActionRunResponseRunStepName?)
+
+                    || typeToConvert == typeof(global::Supabase.ActionRunResponseRunStepStatus)
+
+                    || typeToConvert == typeof(global::Supabase.ActionRunResponseRunStepStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyClone)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyClone?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyPull)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyPull?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyHealth)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyHealth?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyConfigure)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyConfigure?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyMigrate)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyMigrate?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodySeed)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodySeed?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyDeploy)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyDeploy?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusResponseMessage)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateRunStatusResponseMessage?)
+
+                    || typeToConvert == typeof(global::Supabase.ApiKeyResponseType)
+
+                    || typeToConvert == typeof(global::Supabase.ApiKeyResponseType?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateApiKeyBodyType)
+
+                    || typeToConvert == typeof(global::Supabase.CreateApiKeyBodyType?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateBranchBodyDesiredInstanceSize)
+
+                    || typeToConvert == typeof(global::Supabase.CreateBranchBodyDesiredInstanceSize?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateBranchBodyReleaseChannel)
+
+                    || typeToConvert == typeof(global::Supabase.CreateBranchBodyReleaseChannel?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateBranchBodyPostgresEngine)
+
+                    || typeToConvert == typeof(global::Supabase.CreateBranchBodyPostgresEngine?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateCustomHostnameResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateCustomHostnameResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.JitAccessRequestRequestState)
+
+                    || typeToConvert == typeof(global::Supabase.JitAccessRequestRequestState?)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsResponseEntitlement)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsResponseEntitlement?)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseEntitlement)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseEntitlement?)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseConfigDbAllowedCidrType)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseConfigDbAllowedCidrType?)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrType)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrType?)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.VanitySubdomainConfigResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.VanitySubdomainConfigResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode)
+
+                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?)
+
+                    || typeToConvert == typeof(global::Supabase.UpgradeDatabaseBodyReleaseChannel)
+
+                    || typeToConvert == typeof(global::Supabase.UpgradeDatabaseBodyReleaseChannel?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannel)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannel?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersion)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersion?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannel)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannel?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3Type?)
+
+                    || typeToConvert == typeof(global::Supabase.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusError)
+
+                    || typeToConvert == typeof(global::Supabase.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusError?)
+
+                    || typeToConvert == typeof(global::Supabase.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgress)
+
+                    || typeToConvert == typeof(global::Supabase.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgress?)
+
+                    || typeToConvert == typeof(global::Supabase.SetUpReadReplicaBodyReadReplicaRegion)
+
+                    || typeToConvert == typeof(global::Supabase.SetUpReadReplicaBodyReadReplicaRegion?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ServiceHealthResponseName)
+
+                    || typeToConvert == typeof(global::Supabase.V1ServiceHealthResponseName?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ServiceHealthResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.V1ServiceHealthResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ServiceHealthResponseInfoVariant1Name)
+
+                    || typeToConvert == typeof(global::Supabase.V1ServiceHealthResponseInfoVariant1Name?)
+
+                    || typeToConvert == typeof(global::Supabase.SigningKeyResponseAlgorithm)
+
+                    || typeToConvert == typeof(global::Supabase.SigningKeyResponseAlgorithm?)
+
+                    || typeToConvert == typeof(global::Supabase.SigningKeyResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.SigningKeyResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyAlgorithm)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyAlgorithm?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyStatus)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1Use)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1Use?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1KeyOp)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1KeyOp?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1Kty)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1Kty?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1Alg)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1Alg?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1E)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1E?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Use)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Use?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2KeyOp)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2KeyOp?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Kty)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Kty?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Alg)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Alg?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Crv)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Crv?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Use)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Use?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3KeyOp)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3KeyOp?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Kty)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Kty?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Alg)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Alg?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Crv)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Crv?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Use)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Use?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4KeyOp)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4KeyOp?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Kty)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Kty?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Alg)
+
+                    || typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Alg?)
+
+                    || typeToConvert == typeof(global::Supabase.SigningKeysResponseKeyAlgorithm)
+
+                    || typeToConvert == typeof(global::Supabase.SigningKeysResponseKeyAlgorithm?)
+
+                    || typeToConvert == typeof(global::Supabase.SigningKeysResponseKeyStatus)
+
+                    || typeToConvert == typeof(global::Supabase.SigningKeysResponseKeyStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateSigningKeyBodyStatus)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateSigningKeyBodyStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.AuthConfigResponseDbMaxPoolSizeUnit)
+
+                    || typeToConvert == typeof(global::Supabase.AuthConfigResponseDbMaxPoolSizeUnit?)
+
+                    || typeToConvert == typeof(global::Supabase.AuthConfigResponsePasswordRequiredCharacters)
+
+                    || typeToConvert == typeof(global::Supabase.AuthConfigResponsePasswordRequiredCharacters?)
+
+                    || typeToConvert == typeof(global::Supabase.AuthConfigResponseSecurityCaptchaProvider)
+
+                    || typeToConvert == typeof(global::Supabase.AuthConfigResponseSecurityCaptchaProvider?)
+
+                    || typeToConvert == typeof(global::Supabase.AuthConfigResponseSmsProvider)
+
+                    || typeToConvert == typeof(global::Supabase.AuthConfigResponseSmsProvider?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodySecurityCaptchaProvider)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodySecurityCaptchaProvider?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodyPasswordRequiredCharacters)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodyPasswordRequiredCharacters?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodySmsProvider)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodySmsProvider?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodyDbMaxPoolSizeUnit)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodyDbMaxPoolSizeUnit?)
+
+                    || typeToConvert == typeof(global::Supabase.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannel)
+
+                    || typeToConvert == typeof(global::Supabase.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannel?)
+
+                    || typeToConvert == typeof(global::Supabase.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngine)
+
+                    || typeToConvert == typeof(global::Supabase.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngine?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonType)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonType?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant1)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant1?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant2)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant2?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant3)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant3?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant4)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant4?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant5)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant5?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant6)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant6?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant7)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant7?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant8)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant8?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantPriceType)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantPriceType?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantPriceInterval)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantPriceInterval?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonType)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonType?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant1)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant1?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant2)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant2?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant3)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant3?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant4)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant4?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant5)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant5?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant6)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant6?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant7)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant7?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant8)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant8?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantPriceType)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantPriceType?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantPriceInterval)
+
+                    || typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantPriceInterval?)
+
+                    || typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant1)
+
+                    || typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant1?)
+
+                    || typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant2)
+
+                    || typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant2?)
+
+                    || typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant3)
+
+                    || typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant3?)
+
+                    || typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant4)
+
+                    || typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant4?)
+
+                    || typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonType)
+
+                    || typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonType?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintName)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintName?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintLevel)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintLevel?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintFacing)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintFacing?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintCategorie)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintCategorie?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintMetadataType)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintMetadataType?)
+
+                    || typeToConvert == typeof(global::Supabase.DeleteRolesResponseMessage)
+
+                    || typeToConvert == typeof(global::Supabase.DeleteRolesResponseMessage?)
+
+                    || typeToConvert == typeof(global::Supabase.FunctionResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.FunctionResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.BulkUpdateFunctionBodyItemStatus)
+
+                    || typeToConvert == typeof(global::Supabase.BulkUpdateFunctionBodyItemStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.BulkUpdateFunctionResponseFunctionStatus)
+
+                    || typeToConvert == typeof(global::Supabase.BulkUpdateFunctionResponseFunctionStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.DeployFunctionResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.DeployFunctionResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.FunctionSlugResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.FunctionSlugResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.DiskResponseAttributesVariant1Type)
+
+                    || typeToConvert == typeof(global::Supabase.DiskResponseAttributesVariant1Type?)
+
+                    || typeToConvert == typeof(global::Supabase.DiskResponseAttributesVariant2Type)
+
+                    || typeToConvert == typeof(global::Supabase.DiskResponseAttributesVariant2Type?)
+
+                    || typeToConvert == typeof(global::Supabase.DiskRequestBodyAttributesVariant1Type)
+
+                    || typeToConvert == typeof(global::Supabase.DiskRequestBodyAttributesVariant1Type?)
+
+                    || typeToConvert == typeof(global::Supabase.DiskRequestBodyAttributesVariant2Type)
+
+                    || typeToConvert == typeof(global::Supabase.DiskRequestBodyAttributesVariant2Type?)
+
+                    || typeToConvert == typeof(global::Supabase.StorageConfigResponseExternalUpstreamTarget)
+
+                    || typeToConvert == typeof(global::Supabase.StorageConfigResponseExternalUpstreamTarget?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateStorageConfigBodyExternalUpstreamTarget)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateStorageConfigBodyExternalUpstreamTarget?)
+
+                    || typeToConvert == typeof(global::Supabase.V1PgbouncerConfigResponsePoolMode)
+
+                    || typeToConvert == typeof(global::Supabase.V1PgbouncerConfigResponsePoolMode?)
+
+                    || typeToConvert == typeof(global::Supabase.SupavisorConfigResponseDatabaseType)
+
+                    || typeToConvert == typeof(global::Supabase.SupavisorConfigResponseDatabaseType?)
+
+                    || typeToConvert == typeof(global::Supabase.SupavisorConfigResponsePoolMode)
+
+                    || typeToConvert == typeof(global::Supabase.SupavisorConfigResponsePoolMode?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateSupavisorConfigBodyPoolMode)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateSupavisorConfigBodyPoolMode?)
+
+                    || typeToConvert == typeof(global::Supabase.PostgresConfigResponseSessionReplicationRole)
+
+                    || typeToConvert == typeof(global::Supabase.PostgresConfigResponseSessionReplicationRole?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdatePostgresConfigBodySessionReplicationRole)
+
+                    || typeToConvert == typeof(global::Supabase.UpdatePostgresConfigBodySessionReplicationRole?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateProviderBodyType)
+
+                    || typeToConvert == typeof(global::Supabase.CreateProviderBodyType?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateProviderBodyNameIdFormat)
+
+                    || typeToConvert == typeof(global::Supabase.CreateProviderBodyNameIdFormat?)
+
+                    || typeToConvert == typeof(global::Supabase.CreateProviderResponseSamlNameIdFormat)
+
+                    || typeToConvert == typeof(global::Supabase.CreateProviderResponseSamlNameIdFormat?)
+
+                    || typeToConvert == typeof(global::Supabase.ListProvidersResponseItemSamlNameIdFormat)
+
+                    || typeToConvert == typeof(global::Supabase.ListProvidersResponseItemSamlNameIdFormat?)
+
+                    || typeToConvert == typeof(global::Supabase.GetProviderResponseSamlNameIdFormat)
+
+                    || typeToConvert == typeof(global::Supabase.GetProviderResponseSamlNameIdFormat?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateProviderBodyNameIdFormat)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateProviderBodyNameIdFormat?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateProviderResponseSamlNameIdFormat)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateProviderResponseSamlNameIdFormat?)
+
+                    || typeToConvert == typeof(global::Supabase.DeleteProviderResponseSamlNameIdFormat)
+
+                    || typeToConvert == typeof(global::Supabase.DeleteProviderResponseSamlNameIdFormat?)
+
+                    || typeToConvert == typeof(global::Supabase.V1BackupsResponseBackupStatus)
+
+                    || typeToConvert == typeof(global::Supabase.V1BackupsResponseBackupStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.V1RestorePointResponseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.V1RestorePointResponseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ListEntitlementsResponseEntitlementFeatureKey)
+
+                    || typeToConvert == typeof(global::Supabase.V1ListEntitlementsResponseEntitlementFeatureKey?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ListEntitlementsResponseEntitlementFeatureType)
+
+                    || typeToConvert == typeof(global::Supabase.V1ListEntitlementsResponseEntitlementFeatureType?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ListEntitlementsResponseEntitlementType)
+
+                    || typeToConvert == typeof(global::Supabase.V1ListEntitlementsResponseEntitlementType?)
+
+                    || typeToConvert == typeof(global::Supabase.V1OrganizationSlugResponsePlan)
+
+                    || typeToConvert == typeof(global::Supabase.V1OrganizationSlugResponsePlan?)
+
+                    || typeToConvert == typeof(global::Supabase.V1OrganizationSlugResponseOptInTag)
+
+                    || typeToConvert == typeof(global::Supabase.V1OrganizationSlugResponseOptInTag?)
+
+                    || typeToConvert == typeof(global::Supabase.V1OrganizationSlugResponseAllowedReleaseChannel)
+
+                    || typeToConvert == typeof(global::Supabase.V1OrganizationSlugResponseAllowedReleaseChannel?)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlan)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlan?)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlan)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlan?)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectStatus)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseInfraComputeSize)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseInfraComputeSize?)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseStatus)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseStatus?)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseType)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseType?)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseDiskType)
+
+                    || typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseDiskType?)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetAvailableRegionsContinent)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetAvailableRegionsContinent?)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetAvailableRegionsDesiredInstanceSize)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetAvailableRegionsDesiredInstanceSize?)
+
+                    || typeToConvert == typeof(global::Supabase.V1AuthorizeUserResponseType)
+
+                    || typeToConvert == typeof(global::Supabase.V1AuthorizeUserResponseType?)
+
+                    || typeToConvert == typeof(global::Supabase.V1AuthorizeUserCodeChallengeMethod)
+
+                    || typeToConvert == typeof(global::Supabase.V1AuthorizeUserCodeChallengeMethod?)
+
+                    || typeToConvert == typeof(global::Supabase.V1OauthAuthorizeProjectClaimResponseType)
+
+                    || typeToConvert == typeof(global::Supabase.V1OauthAuthorizeProjectClaimResponseType?)
+
+                    || typeToConvert == typeof(global::Supabase.V1OauthAuthorizeProjectClaimCodeChallengeMethod)
+
+                    || typeToConvert == typeof(global::Supabase.V1OauthAuthorizeProjectClaimCodeChallengeMethod?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ListAllSnippetsSortBy)
+
+                    || typeToConvert == typeof(global::Supabase.V1ListAllSnippetsSortBy?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ListAllSnippetsSortOrder)
+
+                    || typeToConvert == typeof(global::Supabase.V1ListAllSnippetsSortOrder?)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetServicesHealthServicesVariant2Item)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetServicesHealthServicesVariant2Item?)
+
+                    || typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant1)
+
+                    || typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?)
+
+                    || typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant2)
+
+                    || typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?)
+
+                    || typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant3)
+
+                    || typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?)
+
+                    || typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant4)
+
+                    || typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetSecurityAdvisorsLintType)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetSecurityAdvisorsLintType?)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetProjectUsageApiCountInterval)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetProjectUsageApiCountInterval?)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetProjectFunctionCombinedStatsInterval)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetProjectFunctionCombinedStatsInterval?)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetAllProjectsForOrganizationSort)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetAllProjectsForOrganizationSort?)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetJitAccessConfigResponseVariant1State)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetJitAccessConfigResponseVariant1State?)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetJitAccessConfigResponseVariant2UnavailableReason)
+
+                    || typeToConvert == typeof(global::Supabase.V1GetJitAccessConfigResponseVariant2UnavailableReason?)
+
+                    || typeToConvert == typeof(global::Supabase.V1UpdateJitAccessConfigResponseVariant1State)
+
+                    || typeToConvert == typeof(global::Supabase.V1UpdateJitAccessConfigResponseVariant1State?)
+
+                    || typeToConvert == typeof(global::Supabase.V1UpdateJitAccessConfigResponseVariant2UnavailableReason)
+
+                    || typeToConvert == typeof(global::Supabase.V1UpdateJitAccessConfigResponseVariant2UnavailableReason?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::Supabase.BranchDetailResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.BranchDetailResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BranchDetailResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.BranchDetailResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateBranchBodyStatus))
+                {
+                    return new global::Supabase.JsonConverters.UpdateBranchBodyStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateBranchBodyStatus?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateBranchBodyStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BranchResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.BranchResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BranchResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.BranchResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BranchResponsePreviewProjectStatus))
+                {
+                    return new global::Supabase.JsonConverters.BranchResponsePreviewProjectStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BranchResponsePreviewProjectStatus?))
+                {
+                    return new global::Supabase.JsonConverters.BranchResponsePreviewProjectStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BranchDeleteResponseMessage))
+                {
+                    return new global::Supabase.JsonConverters.BranchDeleteResponseMessageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BranchDeleteResponseMessage?))
+                {
+                    return new global::Supabase.JsonConverters.BranchDeleteResponseMessageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BranchUpdateResponseMessage))
+                {
+                    return new global::Supabase.JsonConverters.BranchUpdateResponseMessageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BranchUpdateResponseMessage?))
+                {
+                    return new global::Supabase.JsonConverters.BranchUpdateResponseMessageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BranchRestoreResponseMessage))
+                {
+                    return new global::Supabase.JsonConverters.BranchRestoreResponseMessageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BranchRestoreResponseMessage?))
+                {
+                    return new global::Supabase.JsonConverters.BranchRestoreResponseMessageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectWithDatabaseResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectWithDatabaseResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyPlan))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyPlanJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyPlan?))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyPlanNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegion))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyRegionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegion?))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyRegionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1Type))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1Type?))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1Code))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1CodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant1Code?))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant1CodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2Type))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2Type?))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2Code))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyRegionSelectionVariant2Code?))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyRegionSelectionVariant2CodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyDesiredInstanceSize))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1CreateProjectBodyDesiredInstanceSize?))
+                {
+                    return new global::Supabase.JsonConverters.V1CreateProjectBodyDesiredInstanceSizeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSmartGroupCode))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSmartGroupCode?))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSmartGroupType))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSmartGroupType?))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoRecommendationsSmartGroupTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemCode))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemCode?))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemType))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemType?))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemProvider))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemProviderJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemProvider?))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemProviderNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemStatus))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoRecommendationsSpecificItemStatus?))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoAllSmartGroupItemCode))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoAllSmartGroupItemCode?))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoAllSmartGroupItemType))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoAllSmartGroupItemType?))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoAllSmartGroupItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemCode))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemCode?))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemType))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemType?))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemProvider))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemProviderJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemProvider?))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemProviderNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemStatus))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoAllSpecificItemStatus?))
+                {
+                    return new global::Supabase.JsonConverters.RegionsInfoAllSpecificItemStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OAuthTokenBodyGrantType))
+                {
+                    return new global::Supabase.JsonConverters.OAuthTokenBodyGrantTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OAuthTokenBodyGrantType?))
+                {
+                    return new global::Supabase.JsonConverters.OAuthTokenBodyGrantTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OAuthTokenResponseTokenType))
+                {
+                    return new global::Supabase.JsonConverters.OAuthTokenResponseTokenTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OAuthTokenResponseTokenType?))
+                {
+                    return new global::Supabase.JsonConverters.OAuthTokenResponseTokenTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SnippetListDataItemType))
+                {
+                    return new global::Supabase.JsonConverters.SnippetListDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SnippetListDataItemType?))
+                {
+                    return new global::Supabase.JsonConverters.SnippetListDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SnippetListDataItemVisibility))
+                {
+                    return new global::Supabase.JsonConverters.SnippetListDataItemVisibilityJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SnippetListDataItemVisibility?))
+                {
+                    return new global::Supabase.JsonConverters.SnippetListDataItemVisibilityNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SnippetResponseType))
+                {
+                    return new global::Supabase.JsonConverters.SnippetResponseTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SnippetResponseType?))
+                {
+                    return new global::Supabase.JsonConverters.SnippetResponseTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SnippetResponseVisibility))
+                {
+                    return new global::Supabase.JsonConverters.SnippetResponseVisibilityJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SnippetResponseVisibility?))
+                {
+                    return new global::Supabase.JsonConverters.SnippetResponseVisibilityNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListActionRunResponseItemRunStepName))
+                {
+                    return new global::Supabase.JsonConverters.ListActionRunResponseItemRunStepNameJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListActionRunResponseItemRunStepName?))
+                {
+                    return new global::Supabase.JsonConverters.ListActionRunResponseItemRunStepNameNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListActionRunResponseItemRunStepStatus))
+                {
+                    return new global::Supabase.JsonConverters.ListActionRunResponseItemRunStepStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListActionRunResponseItemRunStepStatus?))
+                {
+                    return new global::Supabase.JsonConverters.ListActionRunResponseItemRunStepStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ActionRunResponseRunStepName))
+                {
+                    return new global::Supabase.JsonConverters.ActionRunResponseRunStepNameJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ActionRunResponseRunStepName?))
+                {
+                    return new global::Supabase.JsonConverters.ActionRunResponseRunStepNameNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ActionRunResponseRunStepStatus))
+                {
+                    return new global::Supabase.JsonConverters.ActionRunResponseRunStepStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ActionRunResponseRunStepStatus?))
+                {
+                    return new global::Supabase.JsonConverters.ActionRunResponseRunStepStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyClone))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodyCloneJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyClone?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodyCloneNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyPull))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodyPullJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyPull?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodyPullNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyHealth))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodyHealthJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyHealth?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodyHealthNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyConfigure))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodyConfigureJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyConfigure?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodyConfigureNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyMigrate))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodyMigrateJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyMigrate?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodyMigrateNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodySeed))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodySeedJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodySeed?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodySeedNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyDeploy))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodyDeployJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusBodyDeploy?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusBodyDeployNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusResponseMessage))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusResponseMessageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateRunStatusResponseMessage?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateRunStatusResponseMessageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ApiKeyResponseType))
+                {
+                    return new global::Supabase.JsonConverters.ApiKeyResponseTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ApiKeyResponseType?))
+                {
+                    return new global::Supabase.JsonConverters.ApiKeyResponseTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateApiKeyBodyType))
+                {
+                    return new global::Supabase.JsonConverters.CreateApiKeyBodyTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateApiKeyBodyType?))
+                {
+                    return new global::Supabase.JsonConverters.CreateApiKeyBodyTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateBranchBodyDesiredInstanceSize))
+                {
+                    return new global::Supabase.JsonConverters.CreateBranchBodyDesiredInstanceSizeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateBranchBodyDesiredInstanceSize?))
+                {
+                    return new global::Supabase.JsonConverters.CreateBranchBodyDesiredInstanceSizeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateBranchBodyReleaseChannel))
+                {
+                    return new global::Supabase.JsonConverters.CreateBranchBodyReleaseChannelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateBranchBodyReleaseChannel?))
+                {
+                    return new global::Supabase.JsonConverters.CreateBranchBodyReleaseChannelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateBranchBodyPostgresEngine))
+                {
+                    return new global::Supabase.JsonConverters.CreateBranchBodyPostgresEngineJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateBranchBodyPostgresEngine?))
+                {
+                    return new global::Supabase.JsonConverters.CreateBranchBodyPostgresEngineNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateCustomHostnameResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.UpdateCustomHostnameResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateCustomHostnameResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateCustomHostnameResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.JitAccessRequestRequestState))
+                {
+                    return new global::Supabase.JsonConverters.JitAccessRequestRequestStateJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.JitAccessRequestRequestState?))
+                {
+                    return new global::Supabase.JsonConverters.JitAccessRequestRequestStateNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsResponseEntitlement))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsResponseEntitlementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsResponseEntitlement?))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsResponseEntitlementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseEntitlement))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseEntitlementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseEntitlement?))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseEntitlementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseConfigDbAllowedCidrType))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseConfigDbAllowedCidrTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseConfigDbAllowedCidrType?))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseConfigDbAllowedCidrTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrType))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrType?))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseOldConfigDbAllowedCidrTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.VanitySubdomainConfigResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.VanitySubdomainConfigResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.VanitySubdomainConfigResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.VanitySubdomainConfigResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpgradeDatabaseBodyReleaseChannel))
+                {
+                    return new global::Supabase.JsonConverters.UpgradeDatabaseBodyReleaseChannelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpgradeDatabaseBodyReleaseChannel?))
+                {
+                    return new global::Supabase.JsonConverters.UpgradeDatabaseBodyReleaseChannelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannel))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannel?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersion))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersion?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannel))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannel?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant3TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant4TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant4TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant5TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant5TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant6TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant6TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant1NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant8TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant8TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant9TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant9TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant10TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant10TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseWarningVariant3TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusError))
+                {
+                    return new global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusErrorJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusError?))
+                {
+                    return new global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusErrorNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgress))
+                {
+                    return new global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgressJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgress?))
+                {
+                    return new global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgressNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SetUpReadReplicaBodyReadReplicaRegion))
+                {
+                    return new global::Supabase.JsonConverters.SetUpReadReplicaBodyReadReplicaRegionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SetUpReadReplicaBodyReadReplicaRegion?))
+                {
+                    return new global::Supabase.JsonConverters.SetUpReadReplicaBodyReadReplicaRegionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ServiceHealthResponseName))
+                {
+                    return new global::Supabase.JsonConverters.V1ServiceHealthResponseNameJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ServiceHealthResponseName?))
+                {
+                    return new global::Supabase.JsonConverters.V1ServiceHealthResponseNameNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ServiceHealthResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.V1ServiceHealthResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ServiceHealthResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.V1ServiceHealthResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ServiceHealthResponseInfoVariant1Name))
+                {
+                    return new global::Supabase.JsonConverters.V1ServiceHealthResponseInfoVariant1NameJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ServiceHealthResponseInfoVariant1Name?))
+                {
+                    return new global::Supabase.JsonConverters.V1ServiceHealthResponseInfoVariant1NameNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SigningKeyResponseAlgorithm))
+                {
+                    return new global::Supabase.JsonConverters.SigningKeyResponseAlgorithmJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SigningKeyResponseAlgorithm?))
+                {
+                    return new global::Supabase.JsonConverters.SigningKeyResponseAlgorithmNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SigningKeyResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.SigningKeyResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SigningKeyResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.SigningKeyResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyAlgorithm))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyAlgorithmJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyAlgorithm?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyAlgorithmNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyStatus))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyStatus?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1Use))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1UseJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1Use?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1UseNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1KeyOp))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KeyOpJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1KeyOp?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KeyOpNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1Kty))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KtyJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1Kty?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1KtyNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1Alg))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1AlgJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1Alg?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1AlgNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1E))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1EJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1E?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant1ENullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Use))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2UseJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Use?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2UseNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2KeyOp))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KeyOpJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2KeyOp?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KeyOpNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Kty))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KtyJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Kty?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2KtyNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Alg))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2AlgJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Alg?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2AlgNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Crv))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2CrvJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2Crv?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant2CrvNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Use))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3UseJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Use?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3UseNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3KeyOp))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KeyOpJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3KeyOp?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KeyOpNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Kty))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KtyJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Kty?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3KtyNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Alg))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3AlgJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Alg?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3AlgNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Crv))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3CrvJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3Crv?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant3CrvNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Use))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4UseJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Use?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4UseNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4KeyOp))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KeyOpJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4KeyOp?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KeyOpNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Kty))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KtyJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Kty?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4KtyNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Alg))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4Alg?))
+                {
+                    return new global::Supabase.JsonConverters.CreateSigningKeyBodyPrivateJwkVariant4AlgNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SigningKeysResponseKeyAlgorithm))
+                {
+                    return new global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SigningKeysResponseKeyAlgorithm?))
+                {
+                    return new global::Supabase.JsonConverters.SigningKeysResponseKeyAlgorithmNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SigningKeysResponseKeyStatus))
+                {
+                    return new global::Supabase.JsonConverters.SigningKeysResponseKeyStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SigningKeysResponseKeyStatus?))
+                {
+                    return new global::Supabase.JsonConverters.SigningKeysResponseKeyStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateSigningKeyBodyStatus))
+                {
+                    return new global::Supabase.JsonConverters.UpdateSigningKeyBodyStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateSigningKeyBodyStatus?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateSigningKeyBodyStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.AuthConfigResponseDbMaxPoolSizeUnit))
+                {
+                    return new global::Supabase.JsonConverters.AuthConfigResponseDbMaxPoolSizeUnitJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.AuthConfigResponseDbMaxPoolSizeUnit?))
+                {
+                    return new global::Supabase.JsonConverters.AuthConfigResponseDbMaxPoolSizeUnitNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.AuthConfigResponsePasswordRequiredCharacters))
+                {
+                    return new global::Supabase.JsonConverters.AuthConfigResponsePasswordRequiredCharactersJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.AuthConfigResponsePasswordRequiredCharacters?))
+                {
+                    return new global::Supabase.JsonConverters.AuthConfigResponsePasswordRequiredCharactersNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.AuthConfigResponseSecurityCaptchaProvider))
+                {
+                    return new global::Supabase.JsonConverters.AuthConfigResponseSecurityCaptchaProviderJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.AuthConfigResponseSecurityCaptchaProvider?))
+                {
+                    return new global::Supabase.JsonConverters.AuthConfigResponseSecurityCaptchaProviderNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.AuthConfigResponseSmsProvider))
+                {
+                    return new global::Supabase.JsonConverters.AuthConfigResponseSmsProviderJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.AuthConfigResponseSmsProvider?))
+                {
+                    return new global::Supabase.JsonConverters.AuthConfigResponseSmsProviderNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodySecurityCaptchaProvider))
+                {
+                    return new global::Supabase.JsonConverters.UpdateAuthConfigBodySecurityCaptchaProviderJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodySecurityCaptchaProvider?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateAuthConfigBodySecurityCaptchaProviderNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodyPasswordRequiredCharacters))
+                {
+                    return new global::Supabase.JsonConverters.UpdateAuthConfigBodyPasswordRequiredCharactersJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodyPasswordRequiredCharacters?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateAuthConfigBodyPasswordRequiredCharactersNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodySmsProvider))
+                {
+                    return new global::Supabase.JsonConverters.UpdateAuthConfigBodySmsProviderJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodySmsProvider?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateAuthConfigBodySmsProviderNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodyDbMaxPoolSizeUnit))
+                {
+                    return new global::Supabase.JsonConverters.UpdateAuthConfigBodyDbMaxPoolSizeUnitJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateAuthConfigBodyDbMaxPoolSizeUnit?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateAuthConfigBodyDbMaxPoolSizeUnitNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannel))
+                {
+                    return new global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannel?))
+                {
+                    return new global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionReleaseChannelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngine))
+                {
+                    return new global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngineJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngine?))
+                {
+                    return new global::Supabase.JsonConverters.GetProjectAvailableRestoreVersionsResponseAvailableVersionPostgresEngineNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonType))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonType?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant1))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant1JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant1?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant1NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant2))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant2?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant3))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant3JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant3?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant3NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant4))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant4JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant4?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant4NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant5))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant5JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant5?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant5NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant6))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant6JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant6?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant6NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant7))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant7JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant7?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant7NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant8))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant8JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantIdVariant8?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantIdVariant8NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantPriceType))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantPriceType?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantPriceInterval))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceIntervalJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseSelectedAddonVariantPriceInterval?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceIntervalNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonType))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonType?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant1))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant1JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant1?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant1NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant2))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant2?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant3))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant3JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant3?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant3NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant4))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant4JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant4?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant4NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant5))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant5JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant5?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant5NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant6))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant6JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant6?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant6NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant7))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant7JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant7?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant7NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant8))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant8JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant8?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantIdVariant8NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantPriceType))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantPriceType?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantPriceInterval))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceIntervalJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProjectAddonsResponseAvailableAddonVariantPriceInterval?))
+                {
+                    return new global::Supabase.JsonConverters.ListProjectAddonsResponseAvailableAddonVariantPriceIntervalNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant1))
+                {
+                    return new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant1JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant1?))
+                {
+                    return new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant1NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant2))
+                {
+                    return new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant2?))
+                {
+                    return new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant3))
+                {
+                    return new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant3JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant3?))
+                {
+                    return new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant3NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant4))
+                {
+                    return new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant4JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonVariantVariant4?))
+                {
+                    return new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonVariantVariant4NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonType))
+                {
+                    return new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ApplyProjectAddonBodyAddonType?))
+                {
+                    return new global::Supabase.JsonConverters.ApplyProjectAddonBodyAddonTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintName))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintNameJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintName?))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintNameNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintLevel))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintLevelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintLevel?))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintLevelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintFacing))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintFacingJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintFacing?))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintFacingNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintCategorie))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintCategorieJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintCategorie?))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintCategorieNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintMetadataType))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintMetadataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ProjectAdvisorsResponseLintMetadataType?))
+                {
+                    return new global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintMetadataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DeleteRolesResponseMessage))
+                {
+                    return new global::Supabase.JsonConverters.DeleteRolesResponseMessageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DeleteRolesResponseMessage?))
+                {
+                    return new global::Supabase.JsonConverters.DeleteRolesResponseMessageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.FunctionResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.FunctionResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.FunctionResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.FunctionResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BulkUpdateFunctionBodyItemStatus))
+                {
+                    return new global::Supabase.JsonConverters.BulkUpdateFunctionBodyItemStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BulkUpdateFunctionBodyItemStatus?))
+                {
+                    return new global::Supabase.JsonConverters.BulkUpdateFunctionBodyItemStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BulkUpdateFunctionResponseFunctionStatus))
+                {
+                    return new global::Supabase.JsonConverters.BulkUpdateFunctionResponseFunctionStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.BulkUpdateFunctionResponseFunctionStatus?))
+                {
+                    return new global::Supabase.JsonConverters.BulkUpdateFunctionResponseFunctionStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DeployFunctionResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.DeployFunctionResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DeployFunctionResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.DeployFunctionResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.FunctionSlugResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.FunctionSlugResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.FunctionSlugResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.FunctionSlugResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DiskResponseAttributesVariant1Type))
+                {
+                    return new global::Supabase.JsonConverters.DiskResponseAttributesVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DiskResponseAttributesVariant1Type?))
+                {
+                    return new global::Supabase.JsonConverters.DiskResponseAttributesVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DiskResponseAttributesVariant2Type))
+                {
+                    return new global::Supabase.JsonConverters.DiskResponseAttributesVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DiskResponseAttributesVariant2Type?))
+                {
+                    return new global::Supabase.JsonConverters.DiskResponseAttributesVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DiskRequestBodyAttributesVariant1Type))
+                {
+                    return new global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DiskRequestBodyAttributesVariant1Type?))
+                {
+                    return new global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DiskRequestBodyAttributesVariant2Type))
+                {
+                    return new global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DiskRequestBodyAttributesVariant2Type?))
+                {
+                    return new global::Supabase.JsonConverters.DiskRequestBodyAttributesVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.StorageConfigResponseExternalUpstreamTarget))
+                {
+                    return new global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.StorageConfigResponseExternalUpstreamTarget?))
+                {
+                    return new global::Supabase.JsonConverters.StorageConfigResponseExternalUpstreamTargetNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateStorageConfigBodyExternalUpstreamTarget))
+                {
+                    return new global::Supabase.JsonConverters.UpdateStorageConfigBodyExternalUpstreamTargetJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateStorageConfigBodyExternalUpstreamTarget?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateStorageConfigBodyExternalUpstreamTargetNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1PgbouncerConfigResponsePoolMode))
+                {
+                    return new global::Supabase.JsonConverters.V1PgbouncerConfigResponsePoolModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1PgbouncerConfigResponsePoolMode?))
+                {
+                    return new global::Supabase.JsonConverters.V1PgbouncerConfigResponsePoolModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SupavisorConfigResponseDatabaseType))
+                {
+                    return new global::Supabase.JsonConverters.SupavisorConfigResponseDatabaseTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SupavisorConfigResponseDatabaseType?))
+                {
+                    return new global::Supabase.JsonConverters.SupavisorConfigResponseDatabaseTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SupavisorConfigResponsePoolMode))
+                {
+                    return new global::Supabase.JsonConverters.SupavisorConfigResponsePoolModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.SupavisorConfigResponsePoolMode?))
+                {
+                    return new global::Supabase.JsonConverters.SupavisorConfigResponsePoolModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateSupavisorConfigBodyPoolMode))
+                {
+                    return new global::Supabase.JsonConverters.UpdateSupavisorConfigBodyPoolModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateSupavisorConfigBodyPoolMode?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateSupavisorConfigBodyPoolModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PostgresConfigResponseSessionReplicationRole))
+                {
+                    return new global::Supabase.JsonConverters.PostgresConfigResponseSessionReplicationRoleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PostgresConfigResponseSessionReplicationRole?))
+                {
+                    return new global::Supabase.JsonConverters.PostgresConfigResponseSessionReplicationRoleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdatePostgresConfigBodySessionReplicationRole))
+                {
+                    return new global::Supabase.JsonConverters.UpdatePostgresConfigBodySessionReplicationRoleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdatePostgresConfigBodySessionReplicationRole?))
+                {
+                    return new global::Supabase.JsonConverters.UpdatePostgresConfigBodySessionReplicationRoleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateProviderBodyType))
+                {
+                    return new global::Supabase.JsonConverters.CreateProviderBodyTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateProviderBodyType?))
+                {
+                    return new global::Supabase.JsonConverters.CreateProviderBodyTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateProviderBodyNameIdFormat))
+                {
+                    return new global::Supabase.JsonConverters.CreateProviderBodyNameIdFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateProviderBodyNameIdFormat?))
+                {
+                    return new global::Supabase.JsonConverters.CreateProviderBodyNameIdFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateProviderResponseSamlNameIdFormat))
+                {
+                    return new global::Supabase.JsonConverters.CreateProviderResponseSamlNameIdFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.CreateProviderResponseSamlNameIdFormat?))
+                {
+                    return new global::Supabase.JsonConverters.CreateProviderResponseSamlNameIdFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProvidersResponseItemSamlNameIdFormat))
+                {
+                    return new global::Supabase.JsonConverters.ListProvidersResponseItemSamlNameIdFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ListProvidersResponseItemSamlNameIdFormat?))
+                {
+                    return new global::Supabase.JsonConverters.ListProvidersResponseItemSamlNameIdFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.GetProviderResponseSamlNameIdFormat))
+                {
+                    return new global::Supabase.JsonConverters.GetProviderResponseSamlNameIdFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.GetProviderResponseSamlNameIdFormat?))
+                {
+                    return new global::Supabase.JsonConverters.GetProviderResponseSamlNameIdFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateProviderBodyNameIdFormat))
+                {
+                    return new global::Supabase.JsonConverters.UpdateProviderBodyNameIdFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateProviderBodyNameIdFormat?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateProviderBodyNameIdFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateProviderResponseSamlNameIdFormat))
+                {
+                    return new global::Supabase.JsonConverters.UpdateProviderResponseSamlNameIdFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.UpdateProviderResponseSamlNameIdFormat?))
+                {
+                    return new global::Supabase.JsonConverters.UpdateProviderResponseSamlNameIdFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DeleteProviderResponseSamlNameIdFormat))
+                {
+                    return new global::Supabase.JsonConverters.DeleteProviderResponseSamlNameIdFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.DeleteProviderResponseSamlNameIdFormat?))
+                {
+                    return new global::Supabase.JsonConverters.DeleteProviderResponseSamlNameIdFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1BackupsResponseBackupStatus))
+                {
+                    return new global::Supabase.JsonConverters.V1BackupsResponseBackupStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1BackupsResponseBackupStatus?))
+                {
+                    return new global::Supabase.JsonConverters.V1BackupsResponseBackupStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1RestorePointResponseStatus))
+                {
+                    return new global::Supabase.JsonConverters.V1RestorePointResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1RestorePointResponseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.V1RestorePointResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ListEntitlementsResponseEntitlementFeatureKey))
+                {
+                    return new global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureKeyJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ListEntitlementsResponseEntitlementFeatureKey?))
+                {
+                    return new global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureKeyNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ListEntitlementsResponseEntitlementFeatureType))
+                {
+                    return new global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ListEntitlementsResponseEntitlementFeatureType?))
+                {
+                    return new global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementFeatureTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ListEntitlementsResponseEntitlementType))
+                {
+                    return new global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ListEntitlementsResponseEntitlementType?))
+                {
+                    return new global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1OrganizationSlugResponsePlan))
+                {
+                    return new global::Supabase.JsonConverters.V1OrganizationSlugResponsePlanJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1OrganizationSlugResponsePlan?))
+                {
+                    return new global::Supabase.JsonConverters.V1OrganizationSlugResponsePlanNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1OrganizationSlugResponseOptInTag))
+                {
+                    return new global::Supabase.JsonConverters.V1OrganizationSlugResponseOptInTagJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1OrganizationSlugResponseOptInTag?))
+                {
+                    return new global::Supabase.JsonConverters.V1OrganizationSlugResponseOptInTagNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1OrganizationSlugResponseAllowedReleaseChannel))
+                {
+                    return new global::Supabase.JsonConverters.V1OrganizationSlugResponseAllowedReleaseChannelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1OrganizationSlugResponseAllowedReleaseChannel?))
+                {
+                    return new global::Supabase.JsonConverters.V1OrganizationSlugResponseAllowedReleaseChannelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlan))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlanJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlan?))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlanNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlan))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlanJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlan?))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlanNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectStatus))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectStatus?))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseInfraComputeSize))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseInfraComputeSizeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseInfraComputeSize?))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseInfraComputeSizeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseStatus))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseStatus?))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseType))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseType?))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseDiskType))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseDiskTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.OrganizationProjectsResponseProjectDatabaseDiskType?))
+                {
+                    return new global::Supabase.JsonConverters.OrganizationProjectsResponseProjectDatabaseDiskTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetAvailableRegionsContinent))
+                {
+                    return new global::Supabase.JsonConverters.V1GetAvailableRegionsContinentJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetAvailableRegionsContinent?))
+                {
+                    return new global::Supabase.JsonConverters.V1GetAvailableRegionsContinentNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetAvailableRegionsDesiredInstanceSize))
+                {
+                    return new global::Supabase.JsonConverters.V1GetAvailableRegionsDesiredInstanceSizeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetAvailableRegionsDesiredInstanceSize?))
+                {
+                    return new global::Supabase.JsonConverters.V1GetAvailableRegionsDesiredInstanceSizeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1AuthorizeUserResponseType))
+                {
+                    return new global::Supabase.JsonConverters.V1AuthorizeUserResponseTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1AuthorizeUserResponseType?))
+                {
+                    return new global::Supabase.JsonConverters.V1AuthorizeUserResponseTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1AuthorizeUserCodeChallengeMethod))
+                {
+                    return new global::Supabase.JsonConverters.V1AuthorizeUserCodeChallengeMethodJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1AuthorizeUserCodeChallengeMethod?))
+                {
+                    return new global::Supabase.JsonConverters.V1AuthorizeUserCodeChallengeMethodNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1OauthAuthorizeProjectClaimResponseType))
+                {
+                    return new global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimResponseTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1OauthAuthorizeProjectClaimResponseType?))
+                {
+                    return new global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimResponseTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1OauthAuthorizeProjectClaimCodeChallengeMethod))
+                {
+                    return new global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimCodeChallengeMethodJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1OauthAuthorizeProjectClaimCodeChallengeMethod?))
+                {
+                    return new global::Supabase.JsonConverters.V1OauthAuthorizeProjectClaimCodeChallengeMethodNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ListAllSnippetsSortBy))
+                {
+                    return new global::Supabase.JsonConverters.V1ListAllSnippetsSortByJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ListAllSnippetsSortBy?))
+                {
+                    return new global::Supabase.JsonConverters.V1ListAllSnippetsSortByNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ListAllSnippetsSortOrder))
+                {
+                    return new global::Supabase.JsonConverters.V1ListAllSnippetsSortOrderJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1ListAllSnippetsSortOrder?))
+                {
+                    return new global::Supabase.JsonConverters.V1ListAllSnippetsSortOrderNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetServicesHealthServicesVariant2Item))
+                {
+                    return new global::Supabase.JsonConverters.V1GetServicesHealthServicesVariant2ItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetServicesHealthServicesVariant2Item?))
+                {
+                    return new global::Supabase.JsonConverters.V1GetServicesHealthServicesVariant2ItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant1))
+                {
+                    return new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant1JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?))
+                {
+                    return new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant1NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant2))
+                {
+                    return new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?))
+                {
+                    return new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant3))
+                {
+                    return new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant3JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?))
+                {
+                    return new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant3NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant4))
+                {
+                    return new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant4JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?))
+                {
+                    return new global::Supabase.JsonConverters.V1RemoveProjectAddonAddonVariantVariant4NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetSecurityAdvisorsLintType))
+                {
+                    return new global::Supabase.JsonConverters.V1GetSecurityAdvisorsLintTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetSecurityAdvisorsLintType?))
+                {
+                    return new global::Supabase.JsonConverters.V1GetSecurityAdvisorsLintTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetProjectUsageApiCountInterval))
+                {
+                    return new global::Supabase.JsonConverters.V1GetProjectUsageApiCountIntervalJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetProjectUsageApiCountInterval?))
+                {
+                    return new global::Supabase.JsonConverters.V1GetProjectUsageApiCountIntervalNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetProjectFunctionCombinedStatsInterval))
+                {
+                    return new global::Supabase.JsonConverters.V1GetProjectFunctionCombinedStatsIntervalJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetProjectFunctionCombinedStatsInterval?))
+                {
+                    return new global::Supabase.JsonConverters.V1GetProjectFunctionCombinedStatsIntervalNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetAllProjectsForOrganizationSort))
+                {
+                    return new global::Supabase.JsonConverters.V1GetAllProjectsForOrganizationSortJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetAllProjectsForOrganizationSort?))
+                {
+                    return new global::Supabase.JsonConverters.V1GetAllProjectsForOrganizationSortNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetJitAccessConfigResponseVariant1State))
+                {
+                    return new global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant1StateJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetJitAccessConfigResponseVariant1State?))
+                {
+                    return new global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant1StateNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetJitAccessConfigResponseVariant2UnavailableReason))
+                {
+                    return new global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant2UnavailableReasonJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1GetJitAccessConfigResponseVariant2UnavailableReason?))
+                {
+                    return new global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant2UnavailableReasonNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1UpdateJitAccessConfigResponseVariant1State))
+                {
+                    return new global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant1StateJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1UpdateJitAccessConfigResponseVariant1State?))
+                {
+                    return new global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant1StateNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1UpdateJitAccessConfigResponseVariant2UnavailableReason))
+                {
+                    return new global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant2UnavailableReasonJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.V1UpdateJitAccessConfigResponseVariant2UnavailableReason?))
+                {
+                    return new global::Supabase.JsonConverters.V1UpdateJitAccessConfigResponseVariant2UnavailableReasonNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
+        private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
+        {
+            private readonly object _gate = new();
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[3];
+
+            public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
+                global::System.Type type,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                for (var index = 0; index < _resolvers.Length; index++)
+                {
+                    var typeInfo = GetResolver(index).GetTypeInfo(type, options);
+                    if (typeInfo is not null)
+                    {
+                        return typeInfo;
+                    }
+                }
+
+                return null;
+            }
+
+            private global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver GetResolver(int index)
+            {
+                var resolver = global::System.Threading.Volatile.Read(ref _resolvers[index]);
+                if (resolver is not null)
+                {
+                    return resolver;
+                }
+
+                lock (_gate)
+                {
+                    return _resolvers[index] ??= CreateResolver(index);
+                }
+            }
+
+            private static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver CreateResolver(int index)
+            {
+                return index switch
+                {
+                    0 => new SourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => new SourceGenerationContextChunk1(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    2 => new SourceGenerationContextChunk2(new global::System.Text.Json.JsonSerializerOptions()),
+                    _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
+                };
+            }
         }
     }
 }
