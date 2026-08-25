@@ -183,26 +183,6 @@ namespace Supabase
             }
 
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
-                            __httpRequestContent.Add(
-                                content: new global::System.Net.Http.StringContent(@ref ?? string.Empty),
-                                name: "\"ref\"");
-
-                            if (slug != default)
-                            {
-
-                                __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent(slug ?? string.Empty),
-                                    name: "\"slug\"");
-
-                            }
-                            if (bundleOnly != default)
-                            {
-
-                                __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent(bundleOnly ?? string.Empty),
-                                    name: "\"bundleOnly\"");
-
-                            }
                             for (var __iFile = 0; __iFile < request.File.Count; __iFile++)
                             {
                                 var __contentFile = new global::System.Net.Http.ByteArrayContent(request.File[__iFile]);
@@ -824,26 +804,6 @@ namespace Supabase
             }
 
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
-                            __httpRequestContent.Add(
-                                content: new global::System.Net.Http.StringContent(@ref ?? string.Empty),
-                                name: "\"ref\"");
-
-                            if (slug != default)
-                            {
-
-                                __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent(slug ?? string.Empty),
-                                    name: "\"slug\"");
-
-                            }
-                            if (bundleOnly != default)
-                            {
-
-                                __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent(bundleOnly ?? string.Empty),
-                                    name: "\"bundleOnly\"");
-
-                            }
                             for (var __iFile = 0; __iFile < file.Count; __iFile++)
                             {
                                 var __fileNameFile = fileFileNames != null &&
@@ -1447,26 +1407,6 @@ namespace Supabase
             }
 
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
-                            __httpRequestContent.Add(
-                                content: new global::System.Net.Http.StringContent(@ref ?? string.Empty),
-                                name: "\"ref\"");
-
-                            if (slug != default)
-                            {
-
-                                __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent(slug ?? string.Empty),
-                                    name: "\"slug\"");
-
-                            }
-                            if (bundleOnly != default)
-                            {
-
-                                __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent(bundleOnly ?? string.Empty),
-                                    name: "\"bundleOnly\"");
-
-                            }
                             for (var __iFile = 0; __iFile < file.Count; __iFile++)
                             {
                                 var __fileNameFile = fileFileNames != null &&

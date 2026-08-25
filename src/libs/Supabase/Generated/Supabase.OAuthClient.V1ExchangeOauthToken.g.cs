@@ -147,12 +147,70 @@ namespace Supabase
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 } 
             }
-                            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
-                            var __httpRequestContent = new global::System.Net.Http.StringContent(
-                                content: __httpRequestContentBody,
-                                encoding: global::System.Text.Encoding.UTF8,
-                                mediaType: "application/x-www-form-urlencoded");
+                            var __formValues = new global::System.Collections.Generic.List<global::System.Collections.Generic.KeyValuePair<string, string>>();
+                            if (request.GrantType != default)
+                            {
+                                __formValues.Add(new global::System.Collections.Generic.KeyValuePair<string, string>(
+                                    "grant_type",
+                                    (request.GrantType).HasValue ? (request.GrantType).GetValueOrDefault().ToValueString() : string.Empty));
+                            }
+                            if (request.ClientId != default)
+                            {
+                                __formValues.Add(new global::System.Collections.Generic.KeyValuePair<string, string>(
+                                    "client_id",
+                                    request.ClientId.ToString() ?? string.Empty));
+                            }
+                            if (request.ClientSecret != default)
+                            {
+                                __formValues.Add(new global::System.Collections.Generic.KeyValuePair<string, string>(
+                                    "client_secret",
+                                    request.ClientSecret ?? string.Empty));
+                            }
+                            if (request.Code != default)
+                            {
+                                __formValues.Add(new global::System.Collections.Generic.KeyValuePair<string, string>(
+                                    "code",
+                                    request.Code ?? string.Empty));
+                            }
+                            if (request.CodeVerifier != default)
+                            {
+                                __formValues.Add(new global::System.Collections.Generic.KeyValuePair<string, string>(
+                                    "code_verifier",
+                                    request.CodeVerifier ?? string.Empty));
+                            }
+                            if (request.RedirectUri != default)
+                            {
+                                __formValues.Add(new global::System.Collections.Generic.KeyValuePair<string, string>(
+                                    "redirect_uri",
+                                    request.RedirectUri ?? string.Empty));
+                            }
+                            if (request.RefreshToken != default)
+                            {
+                                __formValues.Add(new global::System.Collections.Generic.KeyValuePair<string, string>(
+                                    "refresh_token",
+                                    request.RefreshToken ?? string.Empty));
+                            }
+                            if (request.Assertion != default)
+                            {
+                                __formValues.Add(new global::System.Collections.Generic.KeyValuePair<string, string>(
+                                    "assertion",
+                                    request.Assertion ?? string.Empty));
+                            }
+                            if (request.Resource != default)
+                            {
+                                __formValues.Add(new global::System.Collections.Generic.KeyValuePair<string, string>(
+                                    "resource",
+                                    request.Resource ?? string.Empty));
+                            }
+                            if (request.Scope != default)
+                            {
+                                __formValues.Add(new global::System.Collections.Generic.KeyValuePair<string, string>(
+                                    "scope",
+                                    request.Scope ?? string.Empty));
+                            }
+                            var __httpRequestContent = new global::System.Net.Http.FormUrlEncodedContent(__formValues);
                             __httpRequest.Content = __httpRequestContent;
+
                 global::Supabase.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
