@@ -369,7 +369,7 @@
       "Slug": "v1-deploy-a-function",
       "Description": "A new endpoint to deploy functions. It will create if function does not exist.",
       "Language": "http",
-      "Code": "### Deploy a function\n# @name v1-deploy-a-function\nPOST {{host}}/v1/projects/{{ref}}/functions/deploy?slug={{slug}}\u0026bundleOnly={{bundleOnly}}\nAuthorization: Bearer {{token}}\nContent-Type: multipart/form-data\nAccept: application/json\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 402\n# Description: Maximum number of functions reached for Plan\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to deploy function",
+      "Code": "### Deploy a function\n# @name v1-deploy-a-function\nPOST {{host}}/v1/projects/{{ref}}/functions/deploy?slug={{slug}}\u0026bundleOnly={{bundleOnly}}\nAuthorization: Bearer {{token}}\nContent-Type: multipart/form-data; boundary=AutoSDKBoundary\nAccept: application/json\n\n--AutoSDKBoundary\nContent-Disposition: form-data; name=\u0022file\u0022; filename=\u0022file.bin\u0022\nContent-Type: application/octet-stream\n\n\u003C ./file.bin\n--AutoSDKBoundary\nContent-Disposition: form-data; name=\u0022metadata\u0022\n\nstring\n--AutoSDKBoundary--\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 402\n# Description: Maximum number of functions reached for Plan\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to deploy function",
       "Format": "http",
       "OperationId": "v1-deploy-a-function",
       "Setup": null
@@ -380,7 +380,7 @@
       "Slug": "v1-update-a-function",
       "Description": "Updates a function with the specified slug and project.",
       "Language": "http",
-      "Code": "### Update a function\n# @name v1-update-a-function\nPATCH {{host}}/v1/projects/{{ref}}/functions/{{function_slug}}?slug={{slug}}\u0026name={{name}}\u0026verify_jwt={{verify_jwt}}\u0026import_map={{import_map}}\u0026entrypoint_path={{entrypoint_path}}\u0026import_map_path={{import_map_path}}\u0026ezbr_sha256={{ezbr_sha256}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022name\u0022: \u0022Hello World\u0022,\n  \u0022body\u0022: \u0022Deno.serve(() =\\u003E new Response(\\u0027Hello again!\\u0027))\u0022,\n  \u0022verify_jwt\u0022: true\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update function with given slug",
+      "Code": "### Update a function\n# @name v1-update-a-function\nPATCH {{host}}/v1/projects/{{ref}}/functions/{{function_slug}}?slug={{slug}}\u0026name={{name}}\u0026verify_jwt={{verify_jwt}}\u0026import_map={{import_map}}\u0026entrypoint_path={{entrypoint_path}}\u0026import_map_path={{import_map_path}}\u0026ezbr_sha256={{ezbr_sha256}}\nAuthorization: Bearer {{token}}\nContent-Type: application/vnd.denoland.eszip\nAccept: application/json\n\n\u003C ./request.bin\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update function with given slug",
       "Format": "http",
       "OperationId": "v1-update-a-function",
       "Setup": null
@@ -457,7 +457,7 @@
       "Slug": "v1-exchange-oauth-token",
       "Description": "Supports \u0060authorization_code\u0060, \u0060refresh_token\u0060, and \u0060urn:ietf:params:oauth:grant-type:jwt-bearer\u0060 grant types. The \u0060jwt-bearer\u0060 grant type (IDJAG \u2014 identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.",
       "Language": "http",
-      "Code": "### [Beta] Exchange auth code for user\u0027s access and refresh token\n# @name v1-exchange-oauth-token\nPOST {{host}}/v1/oauth/token\nAuthorization: Bearer {{token}}\nContent-Type: application/x-www-form-urlencoded\nAccept: application/json\n\n## Responses\n# 200\n# Content-Type: application/json",
+      "Code": "### [Beta] Exchange auth code for user\u0027s access and refresh token\n# @name v1-exchange-oauth-token\nPOST {{host}}/v1/oauth/token\nAuthorization: Bearer {{token}}\nContent-Type: application/x-www-form-urlencoded\nAccept: application/json\n\ngrant_type=authorization_code\u0026client_id=string\u0026client_secret=string\u0026code=string\u0026code_verifier=string\u0026redirect_uri=string\u0026refresh_token=string\u0026assertion=string\u0026resource=string\u0026scope=string\n\n## Responses\n# 200\n# Content-Type: application/json",
       "Format": "http",
       "OperationId": "v1-exchange-oauth-token",
       "Setup": null

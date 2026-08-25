@@ -260,7 +260,7 @@ namespace Supabase
             }
 
                             var __httpRequestContent = new global::System.Net.Http.ByteArrayContent(request);
-                            __httpRequestContent.Headers.ContentType = new global::System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
+                            __httpRequestContent.Headers.ContentType = new global::System.Net.Http.Headers.MediaTypeHeaderValue("application/vnd.denoland.eszip");
                             __httpRequest.Content = __httpRequestContent;
                 global::Supabase.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
