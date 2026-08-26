@@ -711,7 +711,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -770,7 +770,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -926,7 +926,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -982,7 +982,7 @@
           "Organizations"
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "billing"
         ],
         "x-fga-permissions": [
@@ -1122,7 +1122,7 @@
         ],
         "x-endpoint-owners": [
           "auth",
-          "management-api"
+          "control-plane"
         ]
       }
     },
@@ -1159,7 +1159,7 @@
         ],
         "x-endpoint-owners": [
           "auth",
-          "management-api"
+          "control-plane"
         ]
       }
     },
@@ -1188,7 +1188,7 @@
         ],
         "x-endpoint-owners": [
           "auth",
-          "management-api"
+          "control-plane"
         ]
       }
     },
@@ -1310,7 +1310,7 @@
           "OAuth"
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -1420,7 +1420,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -1486,7 +1486,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -1522,7 +1522,7 @@
           "Profile"
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ]
       }
     },
@@ -1998,7 +1998,7 @@
         ],
         "x-endpoint-owners": [
           "auth",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -2082,7 +2082,7 @@
         ],
         "x-endpoint-owners": [
           "auth",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -2148,7 +2148,7 @@
         ],
         "x-endpoint-owners": [
           "auth",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -2222,7 +2222,7 @@
         ],
         "x-endpoint-owners": [
           "auth",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -2319,7 +2319,7 @@
         ],
         "x-endpoint-owners": [
           "auth",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -2404,7 +2404,7 @@
         ],
         "x-endpoint-owners": [
           "auth",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -2508,7 +2508,7 @@
         ],
         "x-endpoint-owners": [
           "auth",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -2846,7 +2846,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -2915,7 +2915,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -2994,7 +2994,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -3063,7 +3063,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -3132,7 +3132,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -3244,7 +3244,7 @@
         ],
         "x-endpoint-owners": [
           "security",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -3364,7 +3364,7 @@
         ],
         "x-endpoint-owners": [
           "security",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -3432,7 +3432,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -3501,7 +3501,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -3573,7 +3573,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -3643,7 +3643,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -3720,7 +3720,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -3799,7 +3799,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -4011,7 +4011,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -4088,7 +4088,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -4157,7 +4157,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -4220,7 +4220,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra",
           "dev-workflows"
         ],
@@ -4298,7 +4298,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -4579,7 +4579,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -4656,7 +4656,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -4823,7 +4823,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -4883,7 +4883,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -4981,7 +4981,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -5079,7 +5079,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -5157,7 +5157,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -5227,7 +5227,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -5306,7 +5306,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -5376,7 +5376,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra",
           "support-tooling"
         ],
@@ -5439,7 +5439,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra",
           "support-tooling"
         ],
@@ -5527,7 +5527,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -5592,7 +5592,7 @@
           "Database"
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -5717,7 +5717,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -6706,7 +6706,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -6765,7 +6765,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -6830,7 +6830,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -6887,7 +6887,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -6946,7 +6946,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -7239,7 +7239,7 @@
           "Projects"
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -7296,7 +7296,7 @@
           "Projects"
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -7347,7 +7347,7 @@
           "Projects"
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -7415,7 +7415,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -7494,7 +7494,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -7507,7 +7507,7 @@
     "/v1/projects/{ref}/analytics/endpoints/logs.all": {
       "get": {
         "deprecated": true,
-        "description": "Executes a SQL query on the project's logs.\n\nEither the `iso_timestamp_start` and `iso_timestamp_end` parameters must be provided.\nIf both are not provided, only the last 1 minute of logs will be queried.\nThe timestamp range must be no more than 24 hours and is rounded to the nearest minute. If the range is more than 24 hours, a validation error will be thrown.\n\nNote: Unless the `sql` parameter is provided, only edge_logs will be queried. See the [log query docs](/docs/guides/telemetry/logs?queryGroups=product&product=postgres&queryGroups=source&source=edge_logs#querying-with-the-logs-explorer:~:text=logs%20from%20the-,Sources,-drop%2Ddown%3A) for all available sources.\n",
+        "description": "Executes a SQL query on the project's logs.\n\nEither the `iso_timestamp_start` and `iso_timestamp_end` parameters must be provided.\nIf both are not provided, only the last 1 minute of logs will be queried.\nThe timestamp range must be no more than 24 hours and is rounded to the nearest minute. If the range is more than 24 hours, a validation error will be thrown.\n\nNote: Unless the `sql` parameter is provided, only edge_logs will be queried. See the [log query docs](https://supabase.com/docs/guides/monitoring-and-debugging/logs#logs-explorer) for all available sources.\n",
         "operationId": "v1-get-project-logs-all",
         "parameters": [
           {
@@ -7527,7 +7527,7 @@
             "name": "sql",
             "required": false,
             "in": "query",
-            "description": "Custom SQL query to execute on the logs. See [querying logs](/docs/guides/telemetry/logs?queryGroups=product&product=postgres&queryGroups=source&source=edge_logs#querying-with-the-logs-explorer) for more details.",
+            "description": "Custom SQL query to execute on the logs. See [querying logs](https://supabase.com/docs/guides/monitoring-and-debugging/logs#querying-with-the-logs-explorer) for more details.",
             "schema": {
               "example": "select event_message from edge_logs limit 10",
               "type": "string"
@@ -7629,7 +7629,7 @@
             "name": "sql",
             "required": false,
             "in": "query",
-            "description": "Custom SQL query to execute on the logs. See [querying logs](/docs/guides/telemetry/logs?queryGroups=product&product=postgres&queryGroups=source&source=edge_logs#querying-with-the-logs-explorer) for more details.",
+            "description": "Custom SQL query to execute on the logs. See [querying logs](https://supabase.com/docs/guides/monitoring-and-debugging/logs#querying-with-the-logs-explorer) for more details.",
             "schema": {
               "example": "select event_message from edge_logs limit 10",
               "type": "string"
@@ -7967,6 +7967,9 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Project must be active and healthy, or metrics are not available for this project"
           },
           "401": {
             "description": "Unauthorized"
@@ -8663,7 +8666,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -8738,7 +8741,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -8799,7 +8802,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -8867,7 +8870,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -8945,7 +8948,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -9565,7 +9568,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -10491,7 +10494,7 @@
           "Projects"
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -10554,7 +10557,7 @@
           "Projects"
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -10616,7 +10619,7 @@
           "Projects"
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -10678,7 +10681,7 @@
           "Projects"
         ],
         "x-endpoint-owners": [
-          "management-api",
+          "control-plane",
           "infra"
         ],
         "x-fga-permissions": [
@@ -10865,7 +10868,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -11081,7 +11084,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -11158,7 +11161,7 @@
         ],
         "x-endpoint-owners": [
           "infra",
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -12451,7 +12454,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -12514,7 +12517,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -12580,7 +12583,7 @@
           "Organizations"
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -12637,7 +12640,7 @@
           "Organizations"
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -12767,7 +12770,7 @@
           }
         ],
         "x-endpoint-owners": [
-          "management-api"
+          "control-plane"
         ],
         "x-fga-permissions": [
           [
@@ -22195,6 +22198,13 @@
             "description": "Sets connection pool size for Realtime Authorization",
             "nullable": true
           },
+          "postgres_changes_pool": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100,
+            "description": "Sets connection pool size used to create Postgres Changes subscriptions",
+            "nullable": true
+          },
           "max_concurrent_users": {
             "type": "integer",
             "minimum": 1,
@@ -22257,6 +22267,7 @@
         "required": [
           "private_only",
           "connection_pool",
+          "postgres_changes_pool",
           "max_concurrent_users",
           "max_events_per_second",
           "max_bytes_per_second",
@@ -22280,6 +22291,12 @@
             "minimum": 1,
             "maximum": 100,
             "description": "Sets connection pool size for Realtime Authorization"
+          },
+          "postgres_changes_pool": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100,
+            "description": "Sets connection pool size used to create Postgres Changes subscriptions"
           },
           "max_concurrent_users": {
             "type": "integer",
@@ -23329,6 +23346,7 @@
                         "project_restore_after_expiry",
                         "assistant.advance_model",
                         "integrations.github_connections",
+                        "integrations.github_push_webhooks_limit",
                         "dedicated_pooler",
                         "observability.dashboard_advanced_metrics",
                         "api.members.invitations",

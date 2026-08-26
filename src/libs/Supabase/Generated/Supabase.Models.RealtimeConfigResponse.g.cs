@@ -21,6 +21,12 @@ namespace Supabase
         public int? ConnectionPool { get; set; }
 
         /// <summary>
+        /// Sets connection pool size used to create Postgres Changes subscriptions
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("postgres_changes_pool")]
+        public int? PostgresChangesPool { get; set; }
+
+        /// <summary>
         /// Sets maximum number of concurrent users rate limit
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_concurrent_users")]
@@ -93,6 +99,9 @@ namespace Supabase
         /// <param name="connectionPool">
         /// Sets connection pool size for Realtime Authorization
         /// </param>
+        /// <param name="postgresChangesPool">
+        /// Sets connection pool size used to create Postgres Changes subscriptions
+        /// </param>
         /// <param name="maxConcurrentUsers">
         /// Sets maximum number of concurrent users rate limit
         /// </param>
@@ -124,6 +133,7 @@ namespace Supabase
             bool presenceEnabled,
             bool? privateOnly,
             int? connectionPool,
+            int? postgresChangesPool,
             int? maxConcurrentUsers,
             int? maxEventsPerSecond,
             long? maxBytesPerSecond,
@@ -135,6 +145,7 @@ namespace Supabase
         {
             this.PrivateOnly = privateOnly;
             this.ConnectionPool = connectionPool;
+            this.PostgresChangesPool = postgresChangesPool;
             this.MaxConcurrentUsers = maxConcurrentUsers;
             this.MaxEventsPerSecond = maxEventsPerSecond;
             this.MaxBytesPerSecond = maxBytesPerSecond;
