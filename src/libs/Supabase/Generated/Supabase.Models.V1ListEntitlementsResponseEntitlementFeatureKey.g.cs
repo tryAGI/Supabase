@@ -139,6 +139,10 @@ namespace Supabase
         /// <summary>
         /// 
         /// </summary>
+        IntegrationsGithubPushWebhooksLimit,
+        /// <summary>
+        /// 
+        /// </summary>
         Ipv4,
         /// <summary>
         /// 
@@ -306,6 +310,7 @@ namespace Supabase
                 V1ListEntitlementsResponseEntitlementFeatureKey.InstancesOrioledb => "instances.orioledb",
                 V1ListEntitlementsResponseEntitlementFeatureKey.InstancesReadReplicas => "instances.read_replicas",
                 V1ListEntitlementsResponseEntitlementFeatureKey.IntegrationsGithubConnections => "integrations.github_connections",
+                V1ListEntitlementsResponseEntitlementFeatureKey.IntegrationsGithubPushWebhooksLimit => "integrations.github_push_webhooks_limit",
                 V1ListEntitlementsResponseEntitlementFeatureKey.Ipv4 => "ipv4",
                 V1ListEntitlementsResponseEntitlementFeatureKey.LogRetentionDays => "log.retention_days",
                 V1ListEntitlementsResponseEntitlementFeatureKey.LogDrains => "log_drains",
@@ -379,6 +384,7 @@ namespace Supabase
                 "instances.orioledb" => V1ListEntitlementsResponseEntitlementFeatureKey.InstancesOrioledb,
                 "instances.read_replicas" => V1ListEntitlementsResponseEntitlementFeatureKey.InstancesReadReplicas,
                 "integrations.github_connections" => V1ListEntitlementsResponseEntitlementFeatureKey.IntegrationsGithubConnections,
+                "integrations.github_push_webhooks_limit" => V1ListEntitlementsResponseEntitlementFeatureKey.IntegrationsGithubPushWebhooksLimit,
                 "ipv4" => V1ListEntitlementsResponseEntitlementFeatureKey.Ipv4,
                 "log.retention_days" => V1ListEntitlementsResponseEntitlementFeatureKey.LogRetentionDays,
                 "log_drains" => V1ListEntitlementsResponseEntitlementFeatureKey.LogDrains,

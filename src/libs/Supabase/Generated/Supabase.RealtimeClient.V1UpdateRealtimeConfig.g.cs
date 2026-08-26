@@ -529,6 +529,9 @@ namespace Supabase
         /// <param name="connectionPool">
         /// Sets connection pool size for Realtime Authorization
         /// </param>
+        /// <param name="postgresChangesPool">
+        /// Sets connection pool size used to create Postgres Changes subscriptions
+        /// </param>
         /// <param name="maxConcurrentUsers">
         /// Sets maximum number of concurrent users rate limit
         /// </param>
@@ -563,6 +566,7 @@ namespace Supabase
             string @ref,
             bool? privateOnly = default,
             int? connectionPool = default,
+            int? postgresChangesPool = default,
             int? maxConcurrentUsers = default,
             int? maxEventsPerSecond = default,
             long? maxBytesPerSecond = default,
@@ -579,6 +583,7 @@ namespace Supabase
             {
                 PrivateOnly = privateOnly,
                 ConnectionPool = connectionPool,
+                PostgresChangesPool = postgresChangesPool,
                 MaxConcurrentUsers = maxConcurrentUsers,
                 MaxEventsPerSecond = maxEventsPerSecond,
                 MaxBytesPerSecond = maxBytesPerSecond,
