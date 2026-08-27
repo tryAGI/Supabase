@@ -4,19 +4,19 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class RegionsInfo
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recommendations")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.RegionsInfoRecommendations Recommendations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("all")]
         [global::System.Text.Json.Serialization.JsonRequired]

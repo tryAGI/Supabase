@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListProjectAddonsResponseAvailableAddonVariantPriceType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fixed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Usage,
     }

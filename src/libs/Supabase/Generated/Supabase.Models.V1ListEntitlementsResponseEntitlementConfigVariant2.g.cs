@@ -4,33 +4,33 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class V1ListEntitlementsResponseEntitlementConfigVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Enabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Value { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("unlimited")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Unlimited { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("unit")]
         [global::System.Text.Json.Serialization.JsonRequired]

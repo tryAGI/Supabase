@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FunctionResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Removed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Throttled,
     }

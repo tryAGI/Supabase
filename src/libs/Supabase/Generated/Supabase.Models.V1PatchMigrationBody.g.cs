@@ -9,13 +9,13 @@ namespace Supabase
     public sealed partial class V1PatchMigrationBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         public string? Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rollback")]
         public string? Rollback { get; set; }

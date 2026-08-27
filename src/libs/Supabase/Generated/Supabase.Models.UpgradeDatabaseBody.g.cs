@@ -9,14 +9,14 @@ namespace Supabase
     public sealed partial class UpgradeDatabaseBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("target_version")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TargetVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("release_channel")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.UpgradeDatabaseBodyReleaseChannelJsonConverter))]

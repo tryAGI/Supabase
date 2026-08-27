@@ -10,13 +10,13 @@ namespace Supabase
     public sealed partial class NetworkRestrictionsResponseConfig
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dbAllowedCidrs")]
         public global::System.Collections.Generic.IList<string>? DbAllowedCidrs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dbAllowedCidrsV6")]
         public global::System.Collections.Generic.IList<string>? DbAllowedCidrsV6 { get; set; }

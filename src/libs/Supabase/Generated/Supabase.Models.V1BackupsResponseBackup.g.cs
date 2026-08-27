@@ -4,26 +4,26 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class V1BackupsResponseBackup
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required long Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("is_physical_backup")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool IsPhysicalBackup { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.V1BackupsResponseBackupStatusJsonConverter))]
@@ -31,7 +31,7 @@ namespace Supabase
         public required global::Supabase.V1BackupsResponseBackupStatus Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inserted_at")]
         [global::System.Text.Json.Serialization.JsonRequired]

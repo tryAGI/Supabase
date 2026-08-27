@@ -44,7 +44,7 @@ namespace Supabase
         public global::System.Func<string> CreateIdempotencyKey { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
@@ -95,7 +95,7 @@ namespace Supabase
         public OrganizationsClient Organizations { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProfileClient Profile { get; }
 
@@ -105,7 +105,7 @@ namespace Supabase
         public ProjectsClient Projects { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RealtimeClient Realtime { get; }
 

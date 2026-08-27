@@ -4,19 +4,19 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class RegionsInfoRecommendationsSpecificItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("code")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemCodeJsonConverter))]
@@ -24,14 +24,14 @@ namespace Supabase
         public required global::Supabase.RegionsInfoRecommendationsSpecificItemCode Code { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemTypeJsonConverter))]
         public global::Supabase.RegionsInfoRecommendationsSpecificItemType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemProviderJsonConverter))]
@@ -39,7 +39,7 @@ namespace Supabase
         public required global::Supabase.RegionsInfoRecommendationsSpecificItemProvider Provider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.RegionsInfoRecommendationsSpecificItemStatusJsonConverter))]

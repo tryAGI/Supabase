@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateSigningKeyBodyPrivateJwkVariant2Crv
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P256,
     }

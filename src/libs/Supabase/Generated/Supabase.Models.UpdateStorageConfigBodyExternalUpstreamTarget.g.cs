@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateStorageConfigBodyExternalUpstreamTarget
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Canary,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Main,
     }

@@ -4,18 +4,18 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class V1GetUsageApiCountResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("result")]
         public global::System.Collections.Generic.IList<global::Supabase.V1GetUsageApiCountResponseResultItem>? Result { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::Supabase.V1GetUsageApiCountResponseError>))]

@@ -4,40 +4,40 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SnippetListDataItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inserted_at")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string InsertedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("updated_at")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string UpdatedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.SnippetListDataItemTypeJsonConverter))]
         public global::Supabase.SnippetListDataItemType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("visibility")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.SnippetListDataItemVisibilityJsonConverter))]
@@ -45,41 +45,41 @@ namespace Supabase
         public required global::Supabase.SnippetListDataItemVisibility Visibility { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         public string? Description { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.SnippetListDataItemProject Project { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.SnippetListDataItemOwner Owner { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("updated_by")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.SnippetListDataItemUpdatedBy UpdatedBy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("favorite")]
         [global::System.Text.Json.Serialization.JsonRequired]

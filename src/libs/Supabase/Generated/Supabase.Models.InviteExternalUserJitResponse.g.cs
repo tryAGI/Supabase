@@ -4,26 +4,26 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InviteExternalUserJitResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("email")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Email { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("invite_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Guid InviteId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user_roles")]
         [global::System.Text.Json.Serialization.JsonRequired]

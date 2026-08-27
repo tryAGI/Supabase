@@ -4,26 +4,26 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateCustomHostnameResponseDataResultSsl
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("validation_records")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Supabase.UpdateCustomHostnameResponseDataResultSslValidationRecord> ValidationRecords { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("validation_errors")]
         public global::System.Collections.Generic.IList<global::Supabase.UpdateCustomHostnameResponseDataResultSslValidationError>? ValidationErrors { get; set; }

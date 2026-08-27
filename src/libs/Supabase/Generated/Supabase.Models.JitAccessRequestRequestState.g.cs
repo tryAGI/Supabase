@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum JitAccessRequestRequestState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

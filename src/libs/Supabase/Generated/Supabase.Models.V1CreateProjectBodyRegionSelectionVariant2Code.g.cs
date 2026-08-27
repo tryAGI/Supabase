@@ -9,15 +9,15 @@ namespace Supabase
     public enum V1CreateProjectBodyRegionSelectionVariant2Code
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Americas,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Emea,
     }

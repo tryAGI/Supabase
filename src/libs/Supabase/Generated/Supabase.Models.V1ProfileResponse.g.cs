@@ -4,26 +4,26 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class V1ProfileResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gotrue_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string GotrueId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("primary_email")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PrimaryEmail { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("username")]
         [global::System.Text.Json.Serialization.JsonRequired]

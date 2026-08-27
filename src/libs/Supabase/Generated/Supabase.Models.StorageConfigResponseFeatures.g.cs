@@ -4,40 +4,40 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class StorageConfigResponseFeatures
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("imageTransformation")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.StorageConfigResponseFeaturesImageTransformation ImageTransformation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("s3Protocol")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.StorageConfigResponseFeaturesS3Protocol S3Protocol { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("purgeCache")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.StorageConfigResponseFeaturesPurgeCache PurgeCache { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("icebergCatalog")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.StorageConfigResponseFeaturesIcebergCatalog IcebergCatalog { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vectorBuckets")]
         [global::System.Text.Json.Serialization.JsonRequired]

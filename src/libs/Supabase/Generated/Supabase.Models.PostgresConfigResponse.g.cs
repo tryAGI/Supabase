@@ -4,24 +4,24 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PostgresConfigResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("effective_cache_size")]
         public string? EffectiveCacheSize { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logical_decoding_work_mem")]
         public string? LogicalDecodingWorkMem { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cron.log_statement")]
         public bool? CronLogStatement { get; set; }
@@ -33,43 +33,43 @@ namespace Supabase
         public string? LogAutovacuumMinDuration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("log_checkpoints")]
         public bool? LogCheckpoints { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("log_connections")]
         public bool? LogConnections { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("log_disconnections")]
         public bool? LogDisconnections { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("log_duration")]
         public bool? LogDuration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("log_lock_waits")]
         public bool? LogLockWaits { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("log_recovery_conflict_waits")]
         public bool? LogRecoveryConflictWaits { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("log_replication_commands")]
         public bool? LogReplicationCommands { get; set; }
@@ -81,116 +81,116 @@ namespace Supabase
         public string? LogStartupProgressInterval { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("log_temp_files")]
         public string? LogTempFiles { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maintenance_work_mem")]
         public string? MaintenanceWorkMem { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("track_activity_query_size")]
         public string? TrackActivityQuerySize { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_connections")]
         public int? MaxConnections { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_locks_per_transaction")]
         public int? MaxLocksPerTransaction { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_logical_replication_workers")]
         public int? MaxLogicalReplicationWorkers { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_parallel_maintenance_workers")]
         public int? MaxParallelMaintenanceWorkers { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_parallel_workers")]
         public int? MaxParallelWorkers { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_parallel_workers_per_gather")]
         public int? MaxParallelWorkersPerGather { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_replication_slots")]
         public long? MaxReplicationSlots { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_slot_wal_keep_size")]
         public string? MaxSlotWalKeepSize { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_standby_archive_delay")]
         public string? MaxStandbyArchiveDelay { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_standby_streaming_delay")]
         public string? MaxStandbyStreamingDelay { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_sync_workers_per_subscription")]
         public int? MaxSyncWorkersPerSubscription { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_wal_size")]
         public string? MaxWalSize { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_wal_senders")]
         public long? MaxWalSenders { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_worker_processes")]
         public int? MaxWorkerProcesses { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("session_replication_role")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.PostgresConfigResponseSessionReplicationRoleJsonConverter))]
         public global::Supabase.PostgresConfigResponseSessionReplicationRole? SessionReplicationRole { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("shared_buffers")]
         public string? SharedBuffers { get; set; }
@@ -202,13 +202,13 @@ namespace Supabase
         public string? StatementTimeout { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("track_commit_timestamp")]
         public bool? TrackCommitTimestamp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("wal_keep_size")]
         public string? WalKeepSize { get; set; }
@@ -220,7 +220,7 @@ namespace Supabase
         public string? WalSenderTimeout { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("work_mem")]
         public string? WorkMem { get; set; }
@@ -232,7 +232,7 @@ namespace Supabase
         public string? CheckpointTimeout { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hot_standby_feedback")]
         public bool? HotStandbyFeedback { get; set; }

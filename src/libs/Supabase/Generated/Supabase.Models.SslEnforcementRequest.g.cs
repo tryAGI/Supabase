@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class SslEnforcementRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestedConfig")]
         [global::System.Text.Json.Serialization.JsonRequired]

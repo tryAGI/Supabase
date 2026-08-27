@@ -4,19 +4,19 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ProjectUpgradeEligibilityResponseValidationErrorVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseValidationErrorVariant4TypeJsonConverter))]
         public global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4Type Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("extension_name")]
         [global::System.Text.Json.Serialization.JsonRequired]

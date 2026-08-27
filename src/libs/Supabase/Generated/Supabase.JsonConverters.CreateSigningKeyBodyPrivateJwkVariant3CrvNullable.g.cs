@@ -20,7 +20,7 @@ namespace Supabase.JsonConverters
                     {
                         return global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3CrvExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

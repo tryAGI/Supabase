@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ProjectAdvisorsResponseLintCategorie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Performance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Security,
     }

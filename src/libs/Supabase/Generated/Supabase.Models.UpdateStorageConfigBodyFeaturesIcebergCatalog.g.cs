@@ -4,33 +4,33 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateStorageConfigBodyFeaturesIcebergCatalog
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Enabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxNamespaces")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required long MaxNamespaces { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxTables")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required long MaxTables { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxCatalogs")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -6,12 +6,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class V1ServiceHealthResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseNameJsonConverter))]
@@ -26,7 +26,7 @@ namespace Supabase
         public required bool Healthy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.V1ServiceHealthResponseStatusJsonConverter))]
@@ -34,14 +34,14 @@ namespace Supabase
         public required global::Supabase.V1ServiceHealthResponseStatus Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("info")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1ServiceHealthResponseInfoVariant1, global::Supabase.V1ServiceHealthResponseInfoVariant2, global::Supabase.V1ServiceHealthResponseInfoVariant3>))]
         public global::Supabase.AnyOf<global::Supabase.V1ServiceHealthResponseInfoVariant1, global::Supabase.V1ServiceHealthResponseInfoVariant2, global::Supabase.V1ServiceHealthResponseInfoVariant3>? Info { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
         public string? Error { get; set; }

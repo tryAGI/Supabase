@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListProjectAddonsResponseAvailableAddonVariantIdVariant5
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthMfaPhoneDefault,
     }

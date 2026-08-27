@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SupavisorConfigResponsePoolMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Session,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Transaction,
     }

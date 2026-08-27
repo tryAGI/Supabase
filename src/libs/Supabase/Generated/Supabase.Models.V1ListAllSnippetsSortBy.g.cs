@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ListAllSnippetsSortBy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InsertedAt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
     }

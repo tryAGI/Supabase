@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AuthConfigResponsePasswordRequiredCharacters
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Abcdefghijklmnopqrstuvwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Abcdefghijklmnopqrstuvwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789________AnyPlus_Array______________,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789,
     }

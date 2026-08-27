@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum NetworkRestrictionsResponseEntitlement
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Allowed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disallowed,
     }

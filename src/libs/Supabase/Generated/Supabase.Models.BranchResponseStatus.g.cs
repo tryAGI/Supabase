@@ -9,27 +9,27 @@ namespace Supabase
     public enum BranchResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatingProject,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionsDeployed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionsFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MigrationsFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MigrationsPassed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RunningMigrations,
     }

@@ -4,26 +4,26 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateStorageConfigBodyFeaturesVectorBuckets
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Enabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxBuckets")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required long MaxBuckets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxIndexes")]
         [global::System.Text.Json.Serialization.JsonRequired]

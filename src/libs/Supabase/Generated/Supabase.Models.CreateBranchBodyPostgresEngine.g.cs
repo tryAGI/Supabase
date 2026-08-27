@@ -9,15 +9,15 @@ namespace Supabase
     public enum CreateBranchBodyPostgresEngine
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x15,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x17,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x17Oriole,
     }

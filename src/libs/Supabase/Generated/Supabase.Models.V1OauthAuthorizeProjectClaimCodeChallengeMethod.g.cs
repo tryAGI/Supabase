@@ -9,15 +9,15 @@ namespace Supabase
     public enum V1OauthAuthorizeProjectClaimCodeChallengeMethod
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         S256,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Plain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sha256,
     }

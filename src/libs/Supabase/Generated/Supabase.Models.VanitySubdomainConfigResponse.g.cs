@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VanitySubdomainConfigResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.VanitySubdomainConfigResponseStatusJsonConverter))]
@@ -17,7 +17,7 @@ namespace Supabase
         public required global::Supabase.VanitySubdomainConfigResponseStatus Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("custom_domain")]
         public string? CustomDomain { get; set; }

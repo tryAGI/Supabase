@@ -4,32 +4,32 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateBranchBodyStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatingProject,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionsDeployed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionsFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MigrationsFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MigrationsPassed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RunningMigrations,
     }

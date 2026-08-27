@@ -10,19 +10,19 @@ namespace Supabase
     public enum V1GetAllProjectsForOrganizationSort
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedAsc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDesc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NameAsc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NameDesc,
     }

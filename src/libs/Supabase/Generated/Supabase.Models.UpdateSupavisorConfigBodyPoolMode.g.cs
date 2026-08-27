@@ -9,11 +9,11 @@ namespace Supabase
     public enum UpdateSupavisorConfigBodyPoolMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Session,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Transaction,
     }

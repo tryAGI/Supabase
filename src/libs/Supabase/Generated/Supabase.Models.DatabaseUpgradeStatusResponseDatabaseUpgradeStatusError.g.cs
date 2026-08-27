@@ -4,44 +4,44 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DatabaseUpgradeStatusResponseDatabaseUpgradeStatusError
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1UpgradedInstanceLaunchFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x2VolumeDetachchmentFromUpgradedInstanceFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x3VolumeAttachmentToOriginalInstanceFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x4DataUpgradeInitiationFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x5DataUpgradeCompletionFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x6VolumeDetachchmentFromOriginalInstanceFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x7VolumeAttachmentToUpgradedInstanceFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x8UpgradeCompletionFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x9PostPhysicalBackupFailed,
     }

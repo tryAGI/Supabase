@@ -4,40 +4,40 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class V1GetUsageApiRequestsCountResponseErrorError
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Domain { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("location")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Location { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("locationType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string LocationType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Message { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
         [global::System.Text.Json.Serialization.JsonRequired]

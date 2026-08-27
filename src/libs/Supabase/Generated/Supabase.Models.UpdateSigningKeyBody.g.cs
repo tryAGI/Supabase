@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class UpdateSigningKeyBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.UpdateSigningKeyBodyStatusJsonConverter))]

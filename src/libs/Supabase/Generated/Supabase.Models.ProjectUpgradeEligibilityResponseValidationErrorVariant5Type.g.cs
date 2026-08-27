@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProjectUpgradeEligibilityResponseValidationErrorVariant5Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnsupportedFdwHandler,
     }

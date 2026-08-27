@@ -6,7 +6,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class V1ServiceHealthResponseInfoVariant2
     {
@@ -18,21 +18,21 @@ namespace Supabase
         public required bool Healthy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_connected")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool DbConnected { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("replication_connected")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool ReplicationConnected { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connected_cluster")]
         [global::System.Text.Json.Serialization.JsonRequired]

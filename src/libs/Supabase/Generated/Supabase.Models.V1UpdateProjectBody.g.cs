@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class V1UpdateProjectBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]

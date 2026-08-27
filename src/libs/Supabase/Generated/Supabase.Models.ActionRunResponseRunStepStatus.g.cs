@@ -4,36 +4,36 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ActionRunResponseRunStepStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Created,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Exited,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Paused,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Removing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Restarting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Running,
     }

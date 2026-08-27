@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class DiskRequestBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attributes")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.DiskRequestBodyAttributesVariant1, global::Supabase.DiskRequestBodyAttributesVariant2>))]

@@ -4,124 +4,124 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ProjectAdvisorsResponseLintName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthInsufficientMfaOptions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthLeakedPasswordProtection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthOtpLongExpiry,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthOtpShortLength,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthPasswordPolicyMissing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthRlsInitplan,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthUsersExposed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DuplicateIndex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExtensionInPublic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ForeignTableInApi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionSearchPathMutable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LeakedServiceKey,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MaterializedViewInApi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MultiplePermissivePolicies,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NetworkRestrictionsNotSet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NoBackupAdmin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NoPrimaryKey,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PasswordRequirementsMinLength,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PitrNotEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PolicyExistsRlsDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RlsDisabledInPublic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RlsEnabledNoPolicy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RlsReferencesUserMetadata,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecurityDefinerView,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SslNotEnforced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnindexedForeignKeys,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnsupportedRegTypes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnusedIndex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VulnerablePostgresVersion,
     }

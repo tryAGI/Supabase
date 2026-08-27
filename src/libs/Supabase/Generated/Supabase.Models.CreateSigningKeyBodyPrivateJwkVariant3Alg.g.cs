@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateSigningKeyBodyPrivateJwkVariant3Alg
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdDSA,
     }

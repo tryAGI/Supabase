@@ -20,7 +20,7 @@ namespace Supabase.JsonConverters
                     {
                         return global::Supabase.UpdateSupavisorConfigBodyPoolModeExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

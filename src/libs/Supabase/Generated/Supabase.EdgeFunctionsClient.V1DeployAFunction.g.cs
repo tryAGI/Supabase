@@ -179,7 +179,7 @@ namespace Supabase
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
 
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
@@ -396,7 +396,7 @@ namespace Supabase
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 401)
                             {
                                 string? __content_401 = null;
@@ -428,7 +428,7 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 402)
                             {
                                 string? __content_402 = null;
@@ -460,7 +460,7 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 403)
                             {
                                 string? __content_403 = null;
@@ -492,7 +492,7 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 429)
                             {
                                 string? __content_429 = null;
@@ -524,7 +524,7 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 500)
                             {
                                 string? __content_500 = null;
@@ -800,7 +800,7 @@ namespace Supabase
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
 
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
@@ -1049,7 +1049,7 @@ namespace Supabase
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 401)
                             {
                                 string? __content_401 = null;
@@ -1081,7 +1081,7 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 402)
                             {
                                 string? __content_402 = null;
@@ -1113,7 +1113,7 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 403)
                             {
                                 string? __content_403 = null;
@@ -1145,7 +1145,7 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 429)
                             {
                                 string? __content_429 = null;
@@ -1177,7 +1177,7 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 500)
                             {
                                 string? __content_500 = null;
@@ -1403,7 +1403,7 @@ namespace Supabase
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
 
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
@@ -1652,7 +1652,7 @@ namespace Supabase
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 401)
                             {
                                 string? __content_401 = null;
@@ -1684,7 +1684,7 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 402)
                             {
                                 string? __content_402 = null;
@@ -1716,7 +1716,7 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 403)
                             {
                                 string? __content_403 = null;
@@ -1748,7 +1748,7 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 429)
                             {
                                 string? __content_429 = null;
@@ -1780,7 +1780,7 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 500)
                             {
                                 string? __content_500 = null;

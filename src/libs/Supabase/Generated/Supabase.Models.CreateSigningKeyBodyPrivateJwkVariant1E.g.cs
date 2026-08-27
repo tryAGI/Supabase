@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateSigningKeyBodyPrivateJwkVariant1E
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aqab,
     }

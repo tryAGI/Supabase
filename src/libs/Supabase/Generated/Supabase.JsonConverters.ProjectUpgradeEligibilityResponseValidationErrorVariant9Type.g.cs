@@ -20,7 +20,7 @@ namespace Supabase.JsonConverters
                     {
                         return global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9TypeExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

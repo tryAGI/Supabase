@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ListAllSnippetsSortOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum RegionsInfoRecommendationsSpecificItemProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aws,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwsK8s,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwsNimbus,
     }

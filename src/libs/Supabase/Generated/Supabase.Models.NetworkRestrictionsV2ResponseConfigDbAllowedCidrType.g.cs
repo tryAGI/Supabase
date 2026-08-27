@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum NetworkRestrictionsV2ResponseConfigDbAllowedCidrType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V6,
     }

@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class V1ProjectAdvisorsResponseLint
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintNameJsonConverter))]
@@ -17,14 +17,14 @@ namespace Supabase
         public required global::Supabase.V1ProjectAdvisorsResponseLintName Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("title")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Title { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("level")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintLevelJsonConverter))]
@@ -32,48 +32,48 @@ namespace Supabase
         public required global::Supabase.V1ProjectAdvisorsResponseLintLevel Level { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("facing")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.V1ProjectAdvisorsResponseLintFacingJsonConverter))]
         public global::Supabase.V1ProjectAdvisorsResponseLintFacing Facing { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("categories")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Supabase.V1ProjectAdvisorsResponseLintCategorie> Categories { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Description { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("detail")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Detail { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("remediation")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Remediation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
         public global::Supabase.V1ProjectAdvisorsResponseLintMetadata? Metadata { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cache_key")]
         [global::System.Text.Json.Serialization.JsonRequired]

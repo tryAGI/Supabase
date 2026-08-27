@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateAuthConfigBodySecurityCaptchaProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hcaptcha,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Turnstile,
     }

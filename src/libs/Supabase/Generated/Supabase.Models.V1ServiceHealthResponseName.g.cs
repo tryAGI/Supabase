@@ -4,40 +4,40 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ServiceHealthResponseName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Db,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DbPostgresUser,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PgBouncer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pooler,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Realtime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Storage,
     }

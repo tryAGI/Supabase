@@ -4,19 +4,19 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class StorageConfigResponseCapabilities
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("list_v2")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool ListV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("iceberg_catalog")]
         [global::System.Text.Json.Serialization.JsonRequired]

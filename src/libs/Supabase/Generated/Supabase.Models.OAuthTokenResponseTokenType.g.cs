@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OAuthTokenResponseTokenType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bearer,
     }

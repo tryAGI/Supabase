@@ -4,68 +4,68 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ProjectResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActiveHealthy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActiveUnhealthy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComingUp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoingDown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Inactive,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InitFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PauseFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pausing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Removed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Resizing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Restarting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RestoreFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Restoring,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Upgrading,
     }

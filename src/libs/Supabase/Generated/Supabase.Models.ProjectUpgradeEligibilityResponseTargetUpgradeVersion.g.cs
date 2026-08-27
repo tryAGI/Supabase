@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ProjectUpgradeEligibilityResponseTargetUpgradeVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("postgres_version")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersionJsonConverter))]
@@ -17,7 +17,7 @@ namespace Supabase
         public required global::Supabase.ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersion PostgresVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("release_channel")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannelJsonConverter))]
@@ -25,7 +25,7 @@ namespace Supabase
         public required global::Supabase.ProjectUpgradeEligibilityResponseTargetUpgradeVersionReleaseChannel ReleaseChannel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app_version")]
         [global::System.Text.Json.Serialization.JsonRequired]

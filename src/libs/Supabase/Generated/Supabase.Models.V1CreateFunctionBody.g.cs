@@ -9,28 +9,28 @@ namespace Supabase
     public sealed partial class V1CreateFunctionBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Slug { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("body")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Body { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("verify_jwt")]
         public bool? VerifyJwt { get; set; }

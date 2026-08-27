@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class V1RestoreBackupBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]

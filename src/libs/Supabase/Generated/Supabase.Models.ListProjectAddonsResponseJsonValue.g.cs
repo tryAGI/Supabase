@@ -10,7 +10,7 @@ namespace Supabase
     public readonly partial struct ListProjectAddonsResponseJsonValue : global::System.IEquatable<ListProjectAddonsResponseJsonValue>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.AnyOf<string, double?, bool?>? ListProjectAddonsResponseJsonValueVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Supabase
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListProjectAddonsResponseJsonValueVariant1))]
@@ -27,7 +27,7 @@ namespace Supabase
         public bool IsListProjectAddonsResponseJsonValueVariant1 => ListProjectAddonsResponseJsonValueVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickListProjectAddonsResponseJsonValueVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Supabase.AnyOf<string, double?, bool?> PickListProjectAddonsResponseJsonValueVariant1() => IsListProjectAddonsResponseJsonValueVariant1
             ? ListProjectAddonsResponseJsonValueVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListProjectAddonsResponseJsonValueVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Supabase.ListProjectAddonsResponseJsonValue>? ListProjectAddonsResponseJsonValueVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Supabase
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListProjectAddonsResponseJsonValueVariant2))]
@@ -64,7 +64,7 @@ namespace Supabase
         public bool IsListProjectAddonsResponseJsonValueVariant2 => ListProjectAddonsResponseJsonValueVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickListProjectAddonsResponseJsonValueVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<global::Supabase.ListProjectAddonsResponseJsonValue> PickListProjectAddonsResponseJsonValueVariant2() => IsListProjectAddonsResponseJsonValueVariant2
             ? ListProjectAddonsResponseJsonValueVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListProjectAddonsResponseJsonValueVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? ListProjectAddonsResponseJsonValueVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Supabase
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListProjectAddonsResponseJsonValueVariant3))]
@@ -101,7 +101,7 @@ namespace Supabase
         public bool IsListProjectAddonsResponseJsonValueVariant3 => ListProjectAddonsResponseJsonValueVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickListProjectAddonsResponseJsonValueVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickListProjectAddonsResponseJsonValueVariant3() => IsListProjectAddonsResponseJsonValueVariant3
             ? ListProjectAddonsResponseJsonValueVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListProjectAddonsResponseJsonValueVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ListProjectAddonsResponseJsonValue(global::Supabase.AnyOf<string, double?, bool?> value) => new ListProjectAddonsResponseJsonValue((global::Supabase.AnyOf<string, double?, bool?>?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Supabase.AnyOf<string, double?, bool?>?(ListProjectAddonsResponseJsonValue @this) => @this.ListProjectAddonsResponseJsonValueVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ListProjectAddonsResponseJsonValue(global::Supabase.AnyOf<string, double?, bool?>? value)
         {
@@ -138,12 +138,12 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ListProjectAddonsResponseJsonValue FromListProjectAddonsResponseJsonValueVariant1(global::Supabase.AnyOf<string, double?, bool?>? value) => new ListProjectAddonsResponseJsonValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ListProjectAddonsResponseJsonValue(
             global::Supabase.AnyOf<string, double?, bool?>? listProjectAddonsResponseJsonValueVariant1,
@@ -157,25 +157,25 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ListProjectAddonsResponseJsonValueVariant3 as object ??
             ListProjectAddonsResponseJsonValueVariant2 as object ??
-            ListProjectAddonsResponseJsonValueVariant1 as object 
+            ListProjectAddonsResponseJsonValueVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ListProjectAddonsResponseJsonValueVariant1?.ToString() ??
             ListProjectAddonsResponseJsonValueVariant2?.ToString() ??
-            ListProjectAddonsResponseJsonValueVariant3?.ToString() 
+            ListProjectAddonsResponseJsonValueVariant3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -183,7 +183,7 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Supabase.AnyOf<string, double?, bool?>?, TResult>? listProjectAddonsResponseJsonValueVariant1 = null,
@@ -213,7 +213,7 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Supabase.AnyOf<string, double?, bool?>?>? listProjectAddonsResponseJsonValueVariant1 = null,
@@ -243,7 +243,7 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Supabase.AnyOf<string, double?, bool?>?>? listProjectAddonsResponseJsonValueVariant1 = null,
@@ -271,7 +271,7 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -294,19 +294,19 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ListProjectAddonsResponseJsonValue other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Supabase.AnyOf<string, double?, bool?>?>.Default.Equals(ListProjectAddonsResponseJsonValueVariant1, other.ListProjectAddonsResponseJsonValueVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Supabase.ListProjectAddonsResponseJsonValue>?>.Default.Equals(ListProjectAddonsResponseJsonValueVariant2, other.ListProjectAddonsResponseJsonValueVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ListProjectAddonsResponseJsonValueVariant3, other.ListProjectAddonsResponseJsonValueVariant3) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ListProjectAddonsResponseJsonValueVariant3, other.ListProjectAddonsResponseJsonValueVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ListProjectAddonsResponseJsonValue obj1, ListProjectAddonsResponseJsonValue obj2)
         {
@@ -314,7 +314,7 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ListProjectAddonsResponseJsonValue obj1, ListProjectAddonsResponseJsonValue obj2)
         {
@@ -322,7 +322,7 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -4,26 +4,26 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class V1ListEntitlementsResponseEntitlement
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("feature")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.V1ListEntitlementsResponseEntitlementFeature Feature { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hasAccess")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool HasAccess { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.V1ListEntitlementsResponseEntitlementTypeJsonConverter))]
@@ -31,7 +31,7 @@ namespace Supabase
         public required global::Supabase.V1ListEntitlementsResponseEntitlementType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant1, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant2, global::Supabase.V1ListEntitlementsResponseEntitlementConfigVariant3>))]

@@ -6,26 +6,26 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ProjectUpgradeEligibilityResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eligible")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Eligible { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("current_app_version")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CurrentAppVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("current_app_version_release_channel")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannelJsonConverter))]
@@ -33,28 +33,28 @@ namespace Supabase
         public required global::Supabase.ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannel CurrentAppVersionReleaseChannel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latest_app_version")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string LatestAppVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("target_upgrade_versions")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Supabase.ProjectUpgradeEligibilityResponseTargetUpgradeVersion> TargetUpgradeVersions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("duration_estimate_hours")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double DurationEstimateHours { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("legacy_auth_custom_roles")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -82,14 +82,14 @@ namespace Supabase
         public required global::System.Collections.Generic.IList<string> UserDefinedObjectsInInternalSchemas { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("validation_errors")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>> ValidationErrors { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("warnings")]
         [global::System.Text.Json.Serialization.JsonRequired]

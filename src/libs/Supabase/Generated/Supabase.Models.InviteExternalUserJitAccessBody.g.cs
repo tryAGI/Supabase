@@ -9,14 +9,14 @@ namespace Supabase
     public sealed partial class InviteExternalUserJitAccessBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("email")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Email { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("roles")]
         [global::System.Text.Json.Serialization.JsonRequired]

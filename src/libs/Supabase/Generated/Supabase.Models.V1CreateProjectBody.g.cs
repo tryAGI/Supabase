@@ -84,14 +84,14 @@ namespace Supabase
         public string? TemplateUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("release_channel")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public object? ReleaseChannel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("postgres_engine")]
         [global::System.Obsolete("This property marked as deprecated.")]

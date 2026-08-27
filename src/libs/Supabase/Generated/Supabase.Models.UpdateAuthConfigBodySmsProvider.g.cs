@@ -4,28 +4,28 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateAuthConfigBodySmsProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Messagebird,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Textlocal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Twilio,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TwilioVerify,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vonage,
     }

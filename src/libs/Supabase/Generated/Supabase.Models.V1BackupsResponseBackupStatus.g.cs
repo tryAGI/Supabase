@@ -4,32 +4,32 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1BackupsResponseBackupStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Archived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cancelled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Completed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Removed,
     }

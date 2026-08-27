@@ -4,28 +4,28 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProjectUpgradeEligibilityResponseTargetUpgradeVersionPostgresVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x13,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x14,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x15,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x17,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x17Oriole,
     }

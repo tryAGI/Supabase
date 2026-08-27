@@ -4,56 +4,56 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OrganizationProjectsResponseProjectDatabaseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActiveHealthy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActiveUnhealthy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComingUp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoingDown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InitFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InitReadReplica,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InitReadReplicaFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Removed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Resizing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Restarting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Restoring,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

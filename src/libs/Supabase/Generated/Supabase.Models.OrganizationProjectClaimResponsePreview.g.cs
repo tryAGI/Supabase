@@ -4,47 +4,47 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class OrganizationProjectClaimResponsePreview
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("valid")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Valid { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("warnings")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectClaimResponsePreviewWarning> Warnings { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errors")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectClaimResponsePreviewError> Errors { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("info")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectClaimResponsePreviewInfoItem> Info { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("members_exceeding_free_project_limit")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Supabase.OrganizationProjectClaimResponsePreviewMembersExceedingFreeProjectLimitItem> MembersExceedingFreeProjectLimit { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source_subscription_plan")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlanJsonConverter))]
@@ -52,7 +52,7 @@ namespace Supabase
         public required global::Supabase.OrganizationProjectClaimResponsePreviewSourceSubscriptionPlan SourceSubscriptionPlan { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("target_subscription_plan")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OrganizationProjectClaimResponsePreviewTargetSubscriptionPlanJsonConverter))]

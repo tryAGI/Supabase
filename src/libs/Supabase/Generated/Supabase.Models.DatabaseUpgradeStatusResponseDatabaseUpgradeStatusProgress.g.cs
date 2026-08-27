@@ -4,52 +4,52 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgress
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x0Requested,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x10CompletedPostPhysicalBackup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1Started,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x2LaunchedUpgradedInstance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x3DetachedVolumeFromUpgradedInstance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x4AttachedVolumeToOriginalInstance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x5InitiatedDataUpgrade,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x6CompletedDataUpgrade,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x7DetachedVolumeFromOriginalInstance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x8AttachedVolumeToUpgradedInstance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x9CompletedUpgrade,
     }

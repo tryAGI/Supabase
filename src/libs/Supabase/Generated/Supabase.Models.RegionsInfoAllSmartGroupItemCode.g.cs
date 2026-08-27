@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum RegionsInfoAllSmartGroupItemCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Americas,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Emea,
     }

@@ -4,24 +4,24 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DeleteProviderResponseSamlNameIdFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_oasis_names_tc_SAML_11_nameidFormat_emailAddress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_oasis_names_tc_SAML_11_nameidFormat_unspecified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_oasis_names_tc_SAML_20_nameidFormat_persistent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_oasis_names_tc_SAML_20_nameidFormat_transient,
     }

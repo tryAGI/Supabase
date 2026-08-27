@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class JitAuthorizeAccessResponseUserRoleAllowedNetworksAllowedCidrsV6Item
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cidr")]
         [global::System.Text.Json.Serialization.JsonRequired]

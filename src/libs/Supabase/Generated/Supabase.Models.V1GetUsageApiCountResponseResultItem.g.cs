@@ -4,40 +4,40 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class V1GetUsageApiCountResponseResultItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime Timestamp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_auth_requests")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double TotalAuthRequests { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_realtime_requests")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double TotalRealtimeRequests { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_rest_requests")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double TotalRestRequests { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_storage_requests")]
         [global::System.Text.Json.Serialization.JsonRequired]

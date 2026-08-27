@@ -9,13 +9,13 @@ namespace Supabase
     public sealed partial class NetworkRestrictionsPatchRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("add")]
         public global::Supabase.NetworkRestrictionsPatchRequestAdd? Add { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("remove")]
         public global::Supabase.NetworkRestrictionsPatchRequestRemove? Remove { get; set; }

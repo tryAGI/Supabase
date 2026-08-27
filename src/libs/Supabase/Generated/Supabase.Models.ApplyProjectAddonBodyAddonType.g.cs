@@ -4,40 +4,40 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ApplyProjectAddonBodyAddonType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthMfaPhone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthMfaWebAuthn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComputeInstance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomDomain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EtlPipeline,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ipv4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogDrain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pitr,
     }

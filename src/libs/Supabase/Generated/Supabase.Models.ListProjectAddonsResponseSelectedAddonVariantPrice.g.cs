@@ -4,19 +4,19 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListProjectAddonsResponseSelectedAddonVariantPrice
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Description { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceTypeJsonConverter))]
@@ -24,7 +24,7 @@ namespace Supabase
         public required global::Supabase.ListProjectAddonsResponseSelectedAddonVariantPriceType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("interval")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.ListProjectAddonsResponseSelectedAddonVariantPriceIntervalJsonConverter))]
@@ -32,7 +32,7 @@ namespace Supabase
         public required global::Supabase.ListProjectAddonsResponseSelectedAddonVariantPriceInterval Interval { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
         [global::System.Text.Json.Serialization.JsonRequired]

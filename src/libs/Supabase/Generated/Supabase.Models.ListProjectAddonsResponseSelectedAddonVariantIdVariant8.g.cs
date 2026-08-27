@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListProjectAddonsResponseSelectedAddonVariantIdVariant8
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EtlPipelineDefault,
     }

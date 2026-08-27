@@ -4,47 +4,47 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class OrganizationProjectsResponseProject
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Ref { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cloud_provider")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CloudProvider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("region")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Region { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("is_branch")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool IsBranch { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OrganizationProjectsResponseProjectStatusJsonConverter))]
@@ -52,14 +52,14 @@ namespace Supabase
         public required global::Supabase.OrganizationProjectsResponseProjectStatus Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inserted_at")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string InsertedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("databases")]
         [global::System.Text.Json.Serialization.JsonRequired]

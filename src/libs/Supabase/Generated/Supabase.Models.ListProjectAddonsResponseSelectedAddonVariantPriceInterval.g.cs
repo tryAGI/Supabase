@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListProjectAddonsResponseSelectedAddonVariantPriceInterval
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hourly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Monthly,
     }

@@ -9,7 +9,7 @@ namespace Supabase
     public enum CreateProviderBodyType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Saml,
     }

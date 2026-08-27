@@ -9,38 +9,38 @@ namespace Supabase
     public sealed partial class CreateBranchBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("branch_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BranchName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("git_branch")]
         public string? GitBranch { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("is_default")]
         public bool? IsDefault { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("persistent")]
         public bool? Persistent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("region")]
         public string? Region { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("desired_instance_size")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.CreateBranchBodyDesiredInstanceSizeJsonConverter))]
@@ -61,13 +61,13 @@ namespace Supabase
         public global::Supabase.CreateBranchBodyPostgresEngine? PostgresEngine { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secrets")]
         public global::System.Collections.Generic.Dictionary<string, string>? Secrets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("with_data")]
         public bool? WithData { get; set; }

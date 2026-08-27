@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OAuthTokenBodyGrantType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthorizationCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RefreshToken,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_ietf_params_oauth_grantType_jwtBearer,
     }

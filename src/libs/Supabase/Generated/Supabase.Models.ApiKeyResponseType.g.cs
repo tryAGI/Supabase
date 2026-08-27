@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ApiKeyResponseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Legacy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Publishable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Secret,
     }

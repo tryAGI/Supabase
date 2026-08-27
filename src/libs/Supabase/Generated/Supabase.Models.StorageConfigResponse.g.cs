@@ -4,47 +4,47 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class StorageConfigResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fileSizeLimit")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required long FileSizeLimit { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("features")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.StorageConfigResponseFeatures Features { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("capabilities")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.StorageConfigResponseCapabilities Capabilities { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("external")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.StorageConfigResponseExternal External { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("migrationVersion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MigrationVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("databasePoolMode")]
         [global::System.Text.Json.Serialization.JsonRequired]

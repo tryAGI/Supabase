@@ -4,26 +4,26 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DiskUtilMetricsResponseMetrics
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fs_size_bytes")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double FsSizeBytes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fs_avail_bytes")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double FsAvailBytes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fs_used_bytes")]
         [global::System.Text.Json.Serialization.JsonRequired]

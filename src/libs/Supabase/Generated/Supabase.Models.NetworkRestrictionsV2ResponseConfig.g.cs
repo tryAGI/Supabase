@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class NetworkRestrictionsV2ResponseConfig
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dbAllowedCidrs")]
         public global::System.Collections.Generic.IList<global::Supabase.NetworkRestrictionsV2ResponseConfigDbAllowedCidr>? DbAllowedCidrs { get; set; }

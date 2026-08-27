@@ -4,47 +4,47 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DatabaseUpgradeStatusResponseDatabaseUpgradeStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("initiated_at")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string InitiatedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latest_status_at")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string LatestStatusAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("target_version")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double TargetVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusErrorJsonConverter))]
         public global::Supabase.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusError? Error { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("progress")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgressJsonConverter))]
         public global::Supabase.DatabaseUpgradeStatusResponseDatabaseUpgradeStatusProgress? Progress { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonRequired]

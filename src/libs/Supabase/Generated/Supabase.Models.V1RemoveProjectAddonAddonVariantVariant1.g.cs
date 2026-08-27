@@ -4,80 +4,80 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1RemoveProjectAddonAddonVariantVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci12xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci16xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci24xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci24xlargeHighMemory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci24xlargeOptimizedCpu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci24xlargeOptimizedMemory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci2xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci48xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci48xlargeHighMemory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci48xlargeOptimizedCpu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci48xlargeOptimizedMemory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci4xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ci8xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CiLarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CiMedium,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CiMicro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CiSmall,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CiXlarge,
     }

@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class OAuthTokenResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("access_token")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -22,14 +22,14 @@ namespace Supabase
         public string? RefreshToken { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expires_in")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required long ExpiresIn { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("token_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OAuthTokenResponseTokenTypeJsonConverter))]

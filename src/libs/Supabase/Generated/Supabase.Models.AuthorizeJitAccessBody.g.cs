@@ -9,14 +9,14 @@ namespace Supabase
     public sealed partial class AuthorizeJitAccessBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("role")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Role { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rhost")]
         [global::System.Text.Json.Serialization.JsonRequired]

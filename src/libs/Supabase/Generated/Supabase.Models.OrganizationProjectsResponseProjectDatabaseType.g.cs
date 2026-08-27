@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OrganizationProjectsResponseProjectDatabaseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Primary,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadReplica,
     }

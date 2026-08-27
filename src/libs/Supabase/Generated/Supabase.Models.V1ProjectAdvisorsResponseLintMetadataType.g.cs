@@ -4,32 +4,32 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ProjectAdvisorsResponseLintMetadataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Compliance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Extension,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Table,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         View,
     }

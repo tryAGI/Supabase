@@ -4,19 +4,19 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SupavisorConfigResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("identifier")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Identifier { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("database_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.SupavisorConfigResponseDatabaseTypeJsonConverter))]
@@ -24,42 +24,42 @@ namespace Supabase
         public required global::Supabase.SupavisorConfigResponseDatabaseType DatabaseType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("is_using_scram_auth")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool IsUsingScramAuth { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_user")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string DbUser { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_host")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string DbHost { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_port")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required long DbPort { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string DbName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connection_string")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -73,19 +73,19 @@ namespace Supabase
         public required string ConnectionString2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default_pool_size")]
         public long? DefaultPoolSize { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_client_conn")]
         public long? MaxClientConn { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pool_mode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.SupavisorConfigResponsePoolModeJsonConverter))]

@@ -9,44 +9,44 @@ namespace Supabase
     public sealed partial class OAuthTokenBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("grant_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OAuthTokenBodyGrantTypeJsonConverter))]
         public global::Supabase.OAuthTokenBodyGrantType? GrantType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("client_id")]
         public global::System.Guid? ClientId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("client_secret")]
         public string? ClientSecret { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("code")]
         public string? Code { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("code_verifier")]
         public string? CodeVerifier { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("redirect_uri")]
         public string? RedirectUri { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("refresh_token")]
         public string? RefreshToken { get; set; }
@@ -64,7 +64,7 @@ namespace Supabase
         public string? Resource { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
         public string? Scope { get; set; }

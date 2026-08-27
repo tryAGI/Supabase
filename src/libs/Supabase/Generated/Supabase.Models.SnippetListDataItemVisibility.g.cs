@@ -4,24 +4,24 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SnippetListDataItemVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Org,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Project,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Public,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

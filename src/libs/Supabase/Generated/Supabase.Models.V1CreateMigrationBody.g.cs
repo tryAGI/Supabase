@@ -9,20 +9,20 @@ namespace Supabase
     public sealed partial class V1CreateMigrationBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("query")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Query { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         public string? Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rollback")]
         public string? Rollback { get; set; }

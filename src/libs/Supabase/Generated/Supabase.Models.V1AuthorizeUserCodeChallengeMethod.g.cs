@@ -9,15 +9,15 @@ namespace Supabase
     public enum V1AuthorizeUserCodeChallengeMethod
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         S256,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Plain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sha256,
     }

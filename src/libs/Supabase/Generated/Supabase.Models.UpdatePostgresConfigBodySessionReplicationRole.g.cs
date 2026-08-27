@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdatePostgresConfigBodySessionReplicationRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Local,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Origin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Replica,
     }

@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BranchUpdateResponseMessage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ok,
     }

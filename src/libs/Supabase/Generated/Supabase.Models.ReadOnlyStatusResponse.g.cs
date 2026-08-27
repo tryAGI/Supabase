@@ -4,26 +4,26 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ReadOnlyStatusResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Enabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("override_enabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool OverrideEnabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("override_active_until")]
         [global::System.Text.Json.Serialization.JsonRequired]

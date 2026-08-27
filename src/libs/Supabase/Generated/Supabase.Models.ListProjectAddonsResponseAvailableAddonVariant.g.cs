@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListProjectAddonsResponseAvailableAddonVariant
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant1?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant2?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant3?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant4?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant5?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant6?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant7?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant8?>))]
@@ -17,14 +17,14 @@ namespace Supabase
         public required global::Supabase.AnyOf<global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant1?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant2?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant3?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant4?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant5?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant6?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant7?, global::Supabase.ListProjectAddonsResponseAvailableAddonVariantIdVariant8?> Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("price")]
         [global::System.Text.Json.Serialization.JsonRequired]

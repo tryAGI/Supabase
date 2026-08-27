@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DiskResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attributes")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2>))]
@@ -17,7 +17,7 @@ namespace Supabase
         public required global::Supabase.AnyOf<global::Supabase.DiskResponseAttributesVariant1, global::Supabase.DiskResponseAttributesVariant2> Attributes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("last_modified_at")]
         public string? LastModifiedAt { get; set; }

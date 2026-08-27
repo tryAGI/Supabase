@@ -4,18 +4,18 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class V1BackupsResponsePhysicalBackupData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("earliest_physical_backup_date_unix")]
         public long? EarliestPhysicalBackupDateUnix { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latest_physical_backup_date_unix")]
         public long? LatestPhysicalBackupDateUnix { get; set; }

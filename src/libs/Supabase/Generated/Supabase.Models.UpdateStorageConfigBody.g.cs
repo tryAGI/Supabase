@@ -9,19 +9,19 @@ namespace Supabase
     public sealed partial class UpdateStorageConfigBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fileSizeLimit")]
         public long? FileSizeLimit { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("features")]
         public global::Supabase.UpdateStorageConfigBodyFeatures? Features { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("external")]
         public global::Supabase.UpdateStorageConfigBodyExternal? External { get; set; }

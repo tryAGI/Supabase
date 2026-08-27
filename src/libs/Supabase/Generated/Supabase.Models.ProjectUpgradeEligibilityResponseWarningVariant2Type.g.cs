@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProjectUpgradeEligibilityResponseWarningVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LtreeReindexRequired,
     }

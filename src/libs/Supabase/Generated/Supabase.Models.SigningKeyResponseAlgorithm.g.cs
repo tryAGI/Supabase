@@ -4,24 +4,24 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SigningKeyResponseAlgorithm
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Es256,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdDSA,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hs256,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rs256,
     }

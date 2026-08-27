@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class RemoveReadReplicaBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("database_identifier")]
         [global::System.Text.Json.Serialization.JsonRequired]

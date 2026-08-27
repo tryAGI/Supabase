@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class CreateSigningKeyBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("algorithm")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyAlgorithmJsonConverter))]
@@ -17,14 +17,14 @@ namespace Supabase
         public required global::Supabase.CreateSigningKeyBodyAlgorithm Algorithm { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.CreateSigningKeyBodyStatusJsonConverter))]
         public global::Supabase.CreateSigningKeyBodyStatus? Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("private_jwk")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>))]

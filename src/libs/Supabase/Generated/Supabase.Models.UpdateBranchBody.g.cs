@@ -11,13 +11,13 @@ namespace Supabase
     public sealed partial class UpdateBranchBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("branch_name")]
         public string? BranchName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("git_branch")]
         public string? GitBranch { get; set; }
@@ -30,20 +30,20 @@ namespace Supabase
         public bool? ResetOnPush { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("persistent")]
         public bool? Persistent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.UpdateBranchBodyStatusJsonConverter))]
         public global::Supabase.UpdateBranchBodyStatus? Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("request_review")]
         public bool? RequestReview { get; set; }

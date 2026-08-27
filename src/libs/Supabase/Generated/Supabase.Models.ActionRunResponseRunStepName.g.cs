@@ -4,36 +4,36 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ActionRunResponseRunStepName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Configure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deploy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Health,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Migrate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pull,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Seed,
     }

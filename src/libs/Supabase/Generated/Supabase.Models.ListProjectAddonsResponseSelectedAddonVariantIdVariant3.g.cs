@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListProjectAddonsResponseSelectedAddonVariantIdVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pitr14,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pitr28,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pitr7,
     }

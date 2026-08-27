@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProjectUpgradeEligibilityResponseWarningVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OperatorEstimatorGate,
     }
