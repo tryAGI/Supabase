@@ -9,11 +9,11 @@ namespace Supabase
     public enum V1CreateProjectBodyPlan
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Free,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pro,
     }

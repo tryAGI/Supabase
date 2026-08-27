@@ -9,19 +9,19 @@ namespace Supabase
     public sealed partial class CreateThirdPartyAuthBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oidc_issuer_url")]
         public string? OidcIssuerUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("jwks_url")]
         public string? JwksUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("custom_jwks")]
         public object? CustomJwks { get; set; }

@@ -264,7 +264,7 @@ namespace Supabase
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::Supabase.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

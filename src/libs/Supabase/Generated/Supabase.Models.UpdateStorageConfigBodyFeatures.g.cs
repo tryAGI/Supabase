@@ -4,36 +4,36 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateStorageConfigBodyFeatures
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("imageTransformation")]
         public global::Supabase.UpdateStorageConfigBodyFeaturesImageTransformation? ImageTransformation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("s3Protocol")]
         public global::Supabase.UpdateStorageConfigBodyFeaturesS3Protocol? S3Protocol { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("purgeCache")]
         public global::Supabase.UpdateStorageConfigBodyFeaturesPurgeCache? PurgeCache { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("icebergCatalog")]
         public global::Supabase.UpdateStorageConfigBodyFeaturesIcebergCatalog? IcebergCatalog { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vectorBuckets")]
         public global::Supabase.UpdateStorageConfigBodyFeaturesVectorBuckets? VectorBuckets { get; set; }

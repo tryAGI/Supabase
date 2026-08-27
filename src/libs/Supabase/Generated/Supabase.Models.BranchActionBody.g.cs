@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class BranchActionBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("migration_version")]
         public string? MigrationVersion { get; set; }

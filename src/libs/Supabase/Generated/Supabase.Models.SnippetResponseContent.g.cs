@@ -6,7 +6,7 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SnippetResponseContent
     {
@@ -18,14 +18,14 @@ namespace Supabase
         public bool? Favorite { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("schema_version")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SchemaVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sql")]
         [global::System.Text.Json.Serialization.JsonRequired]

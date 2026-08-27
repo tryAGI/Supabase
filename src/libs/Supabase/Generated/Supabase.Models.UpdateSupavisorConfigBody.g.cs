@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class UpdateSupavisorConfigBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default_pool_size")]
         public int? DefaultPoolSize { get; set; }

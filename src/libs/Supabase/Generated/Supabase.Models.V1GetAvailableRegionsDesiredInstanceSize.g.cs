@@ -4,84 +4,84 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1GetAvailableRegionsDesiredInstanceSize
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x12xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x16xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x24xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x24xlargeHighMemory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x24xlargeOptimizedCpu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x24xlargeOptimizedMemory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x2xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x48xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x48xlargeHighMemory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x48xlargeOptimizedCpu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x48xlargeOptimizedMemory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x4xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x8xlarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Large,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Medium,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Micro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nano,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Small,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Xlarge,
     }

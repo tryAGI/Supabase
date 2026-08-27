@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum VanitySubdomainConfigResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomDomainUsed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotUsed,
     }

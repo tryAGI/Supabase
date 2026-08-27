@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateSigningKeyBodyPrivateJwkVariant2KeyOp
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sign,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Verify,
     }

@@ -9,49 +9,49 @@ namespace Supabase
     public sealed partial class UpdateRunStatusBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clone")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyCloneJsonConverter))]
         public global::Supabase.UpdateRunStatusBodyClone? Clone { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pull")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyPullJsonConverter))]
         public global::Supabase.UpdateRunStatusBodyPull? Pull { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("health")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyHealthJsonConverter))]
         public global::Supabase.UpdateRunStatusBodyHealth? Health { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("configure")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyConfigureJsonConverter))]
         public global::Supabase.UpdateRunStatusBodyConfigure? Configure { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("migrate")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyMigrateJsonConverter))]
         public global::Supabase.UpdateRunStatusBodyMigrate? Migrate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("seed")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.UpdateRunStatusBodySeedJsonConverter))]
         public global::Supabase.UpdateRunStatusBodySeed? Seed { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploy")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.UpdateRunStatusBodyDeployJsonConverter))]

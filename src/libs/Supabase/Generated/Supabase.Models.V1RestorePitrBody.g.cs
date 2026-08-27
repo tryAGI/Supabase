@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class V1RestorePitrBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recovery_time_target_unix")]
         [global::System.Text.Json.Serialization.JsonRequired]

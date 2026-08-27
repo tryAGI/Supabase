@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StorageConfigResponseExternalUpstreamTarget
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Canary,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Main,
     }

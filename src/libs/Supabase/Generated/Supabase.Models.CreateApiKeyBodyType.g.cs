@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateApiKeyBodyType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Publishable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Secret,
     }

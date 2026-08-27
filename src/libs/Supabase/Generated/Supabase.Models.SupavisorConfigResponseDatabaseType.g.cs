@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SupavisorConfigResponseDatabaseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Primary,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadReplica,
     }

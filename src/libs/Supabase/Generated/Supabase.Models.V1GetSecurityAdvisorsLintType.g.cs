@@ -9,7 +9,7 @@ namespace Supabase
     public enum V1GetSecurityAdvisorsLintType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sql,
     }

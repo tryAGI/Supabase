@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DiskRequestBodyAttributesVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gp3,
     }

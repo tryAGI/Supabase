@@ -9,31 +9,31 @@ namespace Supabase
     public enum V1GetProjectUsageApiCountInterval
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x15min,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1day,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1hr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x30min,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x3day,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x3hr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x7day,
     }

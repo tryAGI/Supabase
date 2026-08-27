@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1GetJitAccessConfigResponseVariant2UnavailableReason
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PostgresUpgradeRequired,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SslEnforcementRequired,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TemporarilyUnavailable,
     }

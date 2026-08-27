@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class JitAccessRequestRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("state")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.JitAccessRequestRequestStateJsonConverter))]

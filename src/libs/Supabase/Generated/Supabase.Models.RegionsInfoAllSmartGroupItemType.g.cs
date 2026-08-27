@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum RegionsInfoAllSmartGroupItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SmartGroup,
     }

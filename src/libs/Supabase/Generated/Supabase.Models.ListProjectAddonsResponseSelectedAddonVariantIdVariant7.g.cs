@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListProjectAddonsResponseSelectedAddonVariantIdVariant7
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogDrainDefault,
     }

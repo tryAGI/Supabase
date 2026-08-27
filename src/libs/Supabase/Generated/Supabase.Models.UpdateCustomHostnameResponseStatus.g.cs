@@ -4,28 +4,28 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateCustomHostnameResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1NotStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x2Initiated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x3ChallengeVerified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x4OriginSetupCompleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x5ServicesReconfigured,
     }

@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1PgbouncerConfigResponsePoolMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Session,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Statement,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Transaction,
     }

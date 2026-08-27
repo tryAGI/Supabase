@@ -9,7 +9,7 @@ namespace Supabase
     public enum PlanGateErrorBodyErrorCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EntitlementRequired,
     }

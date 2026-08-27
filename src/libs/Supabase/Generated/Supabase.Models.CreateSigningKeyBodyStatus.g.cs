@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateSigningKeyBodyStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InUse,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Standby,
     }

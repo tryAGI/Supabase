@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum RegionsInfoRecommendationsSpecificItemStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Capacity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Other,
     }

@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class VanitySubdomainBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vanity_subdomain")]
         [global::System.Text.Json.Serialization.JsonRequired]

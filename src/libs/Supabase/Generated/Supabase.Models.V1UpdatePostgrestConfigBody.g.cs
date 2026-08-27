@@ -9,31 +9,31 @@ namespace Supabase
     public sealed partial class V1UpdatePostgrestConfigBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_extra_search_path")]
         public string? DbExtraSearchPath { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_schema")]
         public string? DbSchema { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_rows")]
         public int? MaxRows { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_pool")]
         public int? DbPool { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_pool_acquisition_timeout")]
         public int? DbPoolAcquisitionTimeout { get; set; }

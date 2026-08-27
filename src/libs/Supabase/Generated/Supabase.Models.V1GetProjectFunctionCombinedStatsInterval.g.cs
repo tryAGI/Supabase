@@ -9,19 +9,19 @@ namespace Supabase
     public enum V1GetProjectFunctionCombinedStatsInterval
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x15min,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1day,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1hr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x3hr,
     }

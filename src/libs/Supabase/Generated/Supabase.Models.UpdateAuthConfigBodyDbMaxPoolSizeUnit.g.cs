@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateAuthConfigBodyDbMaxPoolSizeUnit
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Connections,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Percent,
     }

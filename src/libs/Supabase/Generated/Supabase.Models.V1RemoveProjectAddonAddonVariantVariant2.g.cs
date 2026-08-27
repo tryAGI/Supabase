@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1RemoveProjectAddonAddonVariantVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CdDefault,
     }

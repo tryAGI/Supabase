@@ -4,16 +4,16 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OrganizationProjectsResponseProjectDatabaseDiskType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gp3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Io2,
     }

@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListProjectAddonsResponseSelectedAddonVariantIdVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CdDefault,
     }

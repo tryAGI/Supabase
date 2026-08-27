@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1OrganizationSlugResponseOptInTag
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiDataGeneratorOptIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiLogGeneratorOptIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiSqlGeneratorOptIn,
     }

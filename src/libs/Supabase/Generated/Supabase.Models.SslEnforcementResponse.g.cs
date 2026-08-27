@@ -4,19 +4,19 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SslEnforcementResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("currentConfig")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Supabase.SslEnforcementResponseCurrentConfig CurrentConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appliedSuccessfully")]
         [global::System.Text.Json.Serialization.JsonRequired]

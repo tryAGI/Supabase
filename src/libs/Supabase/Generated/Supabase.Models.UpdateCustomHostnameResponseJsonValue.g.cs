@@ -10,7 +10,7 @@ namespace Supabase
     public readonly partial struct UpdateCustomHostnameResponseJsonValue : global::System.IEquatable<UpdateCustomHostnameResponseJsonValue>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Supabase.AnyOf<string, double?, bool?>? UpdateCustomHostnameResponseJsonValueVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Supabase
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UpdateCustomHostnameResponseJsonValueVariant1))]
@@ -27,7 +27,7 @@ namespace Supabase
         public bool IsUpdateCustomHostnameResponseJsonValueVariant1 => UpdateCustomHostnameResponseJsonValueVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUpdateCustomHostnameResponseJsonValueVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Supabase.AnyOf<string, double?, bool?> PickUpdateCustomHostnameResponseJsonValueVariant1() => IsUpdateCustomHostnameResponseJsonValueVariant1
             ? UpdateCustomHostnameResponseJsonValueVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UpdateCustomHostnameResponseJsonValueVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Supabase.UpdateCustomHostnameResponseJsonValue>? UpdateCustomHostnameResponseJsonValueVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Supabase
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UpdateCustomHostnameResponseJsonValueVariant2))]
@@ -64,7 +64,7 @@ namespace Supabase
         public bool IsUpdateCustomHostnameResponseJsonValueVariant2 => UpdateCustomHostnameResponseJsonValueVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUpdateCustomHostnameResponseJsonValueVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<global::Supabase.UpdateCustomHostnameResponseJsonValue> PickUpdateCustomHostnameResponseJsonValueVariant2() => IsUpdateCustomHostnameResponseJsonValueVariant2
             ? UpdateCustomHostnameResponseJsonValueVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'UpdateCustomHostnameResponseJsonValueVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? UpdateCustomHostnameResponseJsonValueVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Supabase
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UpdateCustomHostnameResponseJsonValueVariant3))]
@@ -101,7 +101,7 @@ namespace Supabase
         public bool IsUpdateCustomHostnameResponseJsonValueVariant3 => UpdateCustomHostnameResponseJsonValueVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUpdateCustomHostnameResponseJsonValueVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickUpdateCustomHostnameResponseJsonValueVariant3() => IsUpdateCustomHostnameResponseJsonValueVariant3
             ? UpdateCustomHostnameResponseJsonValueVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'UpdateCustomHostnameResponseJsonValueVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UpdateCustomHostnameResponseJsonValue(global::Supabase.AnyOf<string, double?, bool?> value) => new UpdateCustomHostnameResponseJsonValue((global::Supabase.AnyOf<string, double?, bool?>?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Supabase.AnyOf<string, double?, bool?>?(UpdateCustomHostnameResponseJsonValue @this) => @this.UpdateCustomHostnameResponseJsonValueVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UpdateCustomHostnameResponseJsonValue(global::Supabase.AnyOf<string, double?, bool?>? value)
         {
@@ -138,12 +138,12 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UpdateCustomHostnameResponseJsonValue FromUpdateCustomHostnameResponseJsonValueVariant1(global::Supabase.AnyOf<string, double?, bool?>? value) => new UpdateCustomHostnameResponseJsonValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UpdateCustomHostnameResponseJsonValue(
             global::Supabase.AnyOf<string, double?, bool?>? updateCustomHostnameResponseJsonValueVariant1,
@@ -157,25 +157,25 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             UpdateCustomHostnameResponseJsonValueVariant3 as object ??
             UpdateCustomHostnameResponseJsonValueVariant2 as object ??
-            UpdateCustomHostnameResponseJsonValueVariant1 as object 
+            UpdateCustomHostnameResponseJsonValueVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             UpdateCustomHostnameResponseJsonValueVariant1?.ToString() ??
             UpdateCustomHostnameResponseJsonValueVariant2?.ToString() ??
-            UpdateCustomHostnameResponseJsonValueVariant3?.ToString() 
+            UpdateCustomHostnameResponseJsonValueVariant3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -183,7 +183,7 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Supabase.AnyOf<string, double?, bool?>?, TResult>? updateCustomHostnameResponseJsonValueVariant1 = null,
@@ -213,7 +213,7 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Supabase.AnyOf<string, double?, bool?>?>? updateCustomHostnameResponseJsonValueVariant1 = null,
@@ -243,7 +243,7 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Supabase.AnyOf<string, double?, bool?>?>? updateCustomHostnameResponseJsonValueVariant1 = null,
@@ -271,7 +271,7 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -294,19 +294,19 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(UpdateCustomHostnameResponseJsonValue other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Supabase.AnyOf<string, double?, bool?>?>.Default.Equals(UpdateCustomHostnameResponseJsonValueVariant1, other.UpdateCustomHostnameResponseJsonValueVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Supabase.UpdateCustomHostnameResponseJsonValue>?>.Default.Equals(UpdateCustomHostnameResponseJsonValueVariant2, other.UpdateCustomHostnameResponseJsonValueVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(UpdateCustomHostnameResponseJsonValueVariant3, other.UpdateCustomHostnameResponseJsonValueVariant3) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(UpdateCustomHostnameResponseJsonValueVariant3, other.UpdateCustomHostnameResponseJsonValueVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(UpdateCustomHostnameResponseJsonValue obj1, UpdateCustomHostnameResponseJsonValue obj2)
         {
@@ -314,7 +314,7 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(UpdateCustomHostnameResponseJsonValue obj1, UpdateCustomHostnameResponseJsonValue obj2)
         {
@@ -322,7 +322,7 @@ namespace Supabase
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

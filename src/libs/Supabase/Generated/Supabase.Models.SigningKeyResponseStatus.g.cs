@@ -4,24 +4,24 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SigningKeyResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InUse,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviouslyUsed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Revoked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Standby,
     }

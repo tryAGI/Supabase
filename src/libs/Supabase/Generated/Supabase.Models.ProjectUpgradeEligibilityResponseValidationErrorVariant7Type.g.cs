@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProjectUpgradeEligibilityResponseValidationErrorVariant7Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserDefinedObjectsInInternalSchemas,
     }

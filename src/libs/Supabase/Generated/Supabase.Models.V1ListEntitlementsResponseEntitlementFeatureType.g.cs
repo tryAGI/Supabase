@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ListEntitlementsResponseEntitlementFeatureType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Boolean,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Numeric,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Set,
     }

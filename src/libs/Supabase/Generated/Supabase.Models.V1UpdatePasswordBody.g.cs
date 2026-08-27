@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class V1UpdatePasswordBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("password")]
         [global::System.Text.Json.Serialization.JsonRequired]

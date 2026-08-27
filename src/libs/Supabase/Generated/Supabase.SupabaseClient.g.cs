@@ -11,7 +11,7 @@ namespace Supabase
     public sealed partial class SupabaseClient : global::Supabase.ISupabaseClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.supabase.com/";
 
@@ -42,7 +42,7 @@ namespace Supabase
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Supabase.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -142,7 +142,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProfileClient Profile => new ProfileClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -162,7 +162,7 @@ namespace Supabase
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RealtimeClient Realtime => new RealtimeClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

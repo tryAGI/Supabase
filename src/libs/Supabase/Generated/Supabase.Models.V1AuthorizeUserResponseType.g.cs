@@ -9,15 +9,15 @@ namespace Supabase
     public enum V1AuthorizeUserResponseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Code,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IdTokenToken,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Token,
     }

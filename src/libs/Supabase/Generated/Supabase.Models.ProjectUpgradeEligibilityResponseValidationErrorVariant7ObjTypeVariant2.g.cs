@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProjectUpgradeEligibilityResponseValidationErrorVariant7ObjTypeVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
     }

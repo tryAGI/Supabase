@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class UpdateCustomHostnameBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("custom_hostname")]
         [global::System.Text.Json.Serialization.JsonRequired]

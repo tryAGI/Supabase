@@ -4,32 +4,32 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProjectUpgradeEligibilityResponseCurrentAppVersionReleaseChannel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Alpha,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Beta,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ga,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Internal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Withdrawn,
     }

@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ApplyProjectAddonBodyAddonVariantVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ipv4Default,
     }

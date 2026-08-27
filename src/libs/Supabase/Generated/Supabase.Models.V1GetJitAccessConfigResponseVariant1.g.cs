@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class V1GetJitAccessConfigResponseVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("state")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.V1GetJitAccessConfigResponseVariant1StateJsonConverter))]
@@ -17,7 +17,7 @@ namespace Supabase
         public required global::Supabase.V1GetJitAccessConfigResponseVariant1State State { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appliedSuccessfully")]
         public bool? AppliedSuccessfully { get; set; }

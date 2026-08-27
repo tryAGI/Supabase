@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DatabaseUpgradeStatusResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("databaseUpgradeStatus")]
         public global::Supabase.DatabaseUpgradeStatusResponseDatabaseUpgradeStatus? DatabaseUpgradeStatus { get; set; }

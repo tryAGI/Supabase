@@ -4,264 +4,264 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ListEntitlementsResponseEntitlementFeatureKey
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiMembersInvitations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiMembersRoles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssistantAdvanceModel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuditLogDrains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthAdvancedAuthSettings,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthCustomJwtTemplate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthCustomOauthMaxProviders,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthHooks,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthLeakedPasswordProtection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthMfaEnhancedSecurity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthMfaPhone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthMfaWebAuthn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthPasswordHibp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthPerformanceSettings,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthPlatformSso,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthSaml2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthUserSessions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackupRestoreToNewProject,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackupRetentionDays,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackupSchedule,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BranchingLimit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BranchingPersistent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomDomain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DedicatedPooler,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionMaxCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionSizeLimitMb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InstancesComputeUpdateAvailableSizes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InstancesDiskModifications,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InstancesHighAvailability,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InstancesOrioledb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InstancesReadReplicas,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationsGithubConnections,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationsGithubPushWebhooksLimit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ipv4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogRetentionDays,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogDrains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ObservabilityDashboardAdvancedMetrics,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PitrAvailableVariants,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectCloning,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectPausing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRestoreAfterExpiry,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectScopedRoles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RealtimeMaxBytesPerSecond,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RealtimeMaxChannelsPerClient,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RealtimeMaxConcurrentUsers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RealtimeMaxEventsPerSecond,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RealtimeMaxJoinsPerSecond,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RealtimeMaxPayloadSizeInKb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RealtimeMaxPresenceEventsPerSecond,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReplicationEtl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecurityAuditLogsDays,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecurityEnforceMfa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecurityIso27001Certificate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecurityMemberRoles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecurityPrivateLink,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecurityQuestionnaire,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecuritySoc2Report,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageIcebergCatalog,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageImageTransformations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageMaxFileSize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageMaxFileSizeConfigurable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StoragePurgeCache,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageVectorBuckets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VanitySubdomain,
     }

@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class NetworkBanResponseEnriched
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("banned_ipv4_addresses")]
         [global::System.Text.Json.Serialization.JsonRequired]

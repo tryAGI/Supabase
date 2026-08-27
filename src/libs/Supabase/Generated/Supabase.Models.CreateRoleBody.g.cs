@@ -9,7 +9,7 @@ namespace Supabase
     public sealed partial class CreateRoleBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("read_only")]
         [global::System.Text.Json.Serialization.JsonRequired]

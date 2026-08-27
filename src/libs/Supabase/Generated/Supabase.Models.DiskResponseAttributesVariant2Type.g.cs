@@ -4,12 +4,12 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DiskResponseAttributesVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Io2,
     }

@@ -4,20 +4,20 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ServiceHealthResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActiveHealthy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComingUp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unhealthy,
     }

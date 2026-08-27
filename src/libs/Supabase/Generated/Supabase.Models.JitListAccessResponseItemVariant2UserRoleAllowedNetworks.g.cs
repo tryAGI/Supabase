@@ -4,18 +4,18 @@
 namespace Supabase
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class JitListAccessResponseItemVariant2UserRoleAllowedNetworks
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("allowed_cidrs")]
         public global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidr>? AllowedCidrs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("allowed_cidrs_v6")]
         public global::System.Collections.Generic.IList<global::Supabase.JitListAccessResponseItemVariant2UserRoleAllowedNetworksAllowedCidrsV6Item>? AllowedCidrsV6 { get; set; }
