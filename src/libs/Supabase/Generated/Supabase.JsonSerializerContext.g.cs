@@ -38,6 +38,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseWarningVariant3_7012eca12692d42e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchDetailResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
@@ -513,7 +514,6 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskRequestBodyAttributesVariant1Type), TypeInfoPropertyName = "DiskRequestBodyAttributesVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskRequestBodyAttributesVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskRequestBodyAttributesVariant2Type), TypeInfoPropertyName = "DiskRequestBodyAttributesVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskUtilMetricsResponse))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -548,6 +548,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?>?), TypeInfoPropertyName = "V1RemoveProjectAddonAddonVariantVariant4_673f0ab69673f26f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseValidationErrorVariant10>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseValidationErrorVariant10_a1faf9396a04e62b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseWarningVariant3>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseWarningVariant3_7012eca12692d42e")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskUtilMetricsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskUtilMetricsResponseMetrics))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskAutoscaleConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.StorageConfigResponse))]
@@ -999,7 +1000,6 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.V1ProjectAdvisorsResponseLint>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.V1ProjectAdvisorsResponseLintCategorie>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<double>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.AnalyticsResponseErrorError>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.V1GetUsageApiCountResponseResultItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.V1GetUsageApiCountResponseErrorError>))]
