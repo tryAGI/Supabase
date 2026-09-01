@@ -3,11 +3,11 @@
 
 namespace Supabase
 {
-    public partial class ProjectsClient
+    public partial class EdgeFunctionsClient
     {
 
 
-        private static readonly global::Supabase.EndPointSecurityRequirement s_V1GetServicesHealthSecurityRequirement0 =
+        private static readonly global::Supabase.EndPointSecurityRequirement s_V1UpdateAFunctionWithJsonSecurityRequirement0 =
             new global::Supabase.EndPointSecurityRequirement
             {
                 Authorizations = new global::Supabase.EndPointAuthorizationRequirement[]
@@ -21,56 +21,106 @@ namespace Supabase
                     },
                 },
             };
-        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1GetServicesHealthSecurityRequirements =
+        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1UpdateAFunctionWithJsonSecurityRequirements =
             new global::Supabase.EndPointSecurityRequirement[]
-            {                s_V1GetServicesHealthSecurityRequirement0,
+            {                s_V1UpdateAFunctionWithJsonSecurityRequirement0,
             };
-        partial void PrepareV1GetServicesHealthArguments(
+        partial void PrepareV1UpdateAFunctionWithJsonArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @ref,
-            ref global::Supabase.AnyOf<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>> services,
-            ref int? timeoutMs);
-        partial void PrepareV1GetServicesHealthRequest(
+            ref string functionSlug,
+            ref string? slug,
+            ref string? name,
+            ref string? verifyJwt,
+            ref string? importMap,
+            ref string? entrypointPath,
+            ref string? importMapPath,
+            ref string? ezbrSha256,
+            global::Supabase.V1UpdateFunctionBody request);
+        partial void PrepareV1UpdateAFunctionWithJsonRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @ref,
-            global::Supabase.AnyOf<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>> services,
-            int? timeoutMs);
-        partial void ProcessV1GetServicesHealthResponse(
+            string functionSlug,
+            string? slug,
+            string? name,
+            string? verifyJwt,
+            string? importMap,
+            string? entrypointPath,
+            string? importMapPath,
+            string? ezbrSha256,
+            global::Supabase.V1UpdateFunctionBody request);
+        partial void ProcessV1UpdateAFunctionWithJsonResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessV1GetServicesHealthResponseContent(
+        partial void ProcessV1UpdateAFunctionWithJsonResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Gets project's service health status
+        /// Update a function<br/>
+        /// Updates a function with the specified slug and project.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="services">
-        /// Example: [auth,db, auth]
+        /// <param name="functionSlug">
+        /// Example: hello-world
         /// </param>
-        /// <param name="timeoutMs">
-        /// Example: 2000
+        /// <param name="slug">
+        /// Example: hello-world
         /// </param>
+        /// <param name="name">
+        /// Example: Hello World
+        /// </param>
+        /// <param name="verifyJwt">
+        /// Example: true
+        /// </param>
+        /// <param name="importMap">
+        /// Example: false
+        /// </param>
+        /// <param name="entrypointPath">
+        /// Example: index.ts
+        /// </param>
+        /// <param name="importMapPath">
+        /// Example: import_map.json
+        /// </param>
+        /// <param name="ezbrSha256">
+        /// Example: 44c691990518d25498f0fd80cf6631ecf2b58eb9c5eb2a087dd1688f2904dac7
+        /// </param>
+        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>> V1GetServicesHealthAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.FunctionResponse> V1UpdateAFunctionWithJsonAsync(
             string @ref,
-            global::Supabase.AnyOf<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>> services,
-            int? timeoutMs = default,
+            string functionSlug,
+
+            global::Supabase.V1UpdateFunctionBody request,
+            string? slug = default,
+            string? name = default,
+            string? verifyJwt = default,
+            string? importMap = default,
+            string? entrypointPath = default,
+            string? importMapPath = default,
+            string? ezbrSha256 = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await V1GetServicesHealthAsResponseAsync(
+            var __response = await V1UpdateAFunctionWithJsonAsResponseAsync(
                 @ref: @ref,
-                services: services,
-                timeoutMs: timeoutMs,
+                functionSlug: functionSlug,
+
+                request: request,
+                slug: slug,
+                name: name,
+                verifyJwt: verifyJwt,
+                importMap: importMap,
+                entrypointPath: entrypointPath,
+                importMapPath: importMapPath,
+                ezbrSha256: ezbrSha256,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -78,40 +128,77 @@ namespace Supabase
             return __response.Body;
         }
         /// <summary>
-        /// Gets project's service health status
+        /// Update a function<br/>
+        /// Updates a function with the specified slug and project.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="services">
-        /// Example: [auth,db, auth]
+        /// <param name="functionSlug">
+        /// Example: hello-world
         /// </param>
-        /// <param name="timeoutMs">
-        /// Example: 2000
+        /// <param name="slug">
+        /// Example: hello-world
         /// </param>
+        /// <param name="name">
+        /// Example: Hello World
+        /// </param>
+        /// <param name="verifyJwt">
+        /// Example: true
+        /// </param>
+        /// <param name="importMap">
+        /// Example: false
+        /// </param>
+        /// <param name="entrypointPath">
+        /// Example: index.ts
+        /// </param>
+        /// <param name="importMapPath">
+        /// Example: import_map.json
+        /// </param>
+        /// <param name="ezbrSha256">
+        /// Example: 44c691990518d25498f0fd80cf6631ecf2b58eb9c5eb2a087dd1688f2904dac7
+        /// </param>
+        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>>> V1GetServicesHealthAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.FunctionResponse>> V1UpdateAFunctionWithJsonAsResponseAsync(
             string @ref,
-            global::Supabase.AnyOf<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>> services,
-            int? timeoutMs = default,
+            string functionSlug,
+
+            global::Supabase.V1UpdateFunctionBody request,
+            string? slug = default,
+            string? name = default,
+            string? verifyJwt = default,
+            string? importMap = default,
+            string? entrypointPath = default,
+            string? importMapPath = default,
+            string? ezbrSha256 = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+
             PrepareArguments(
                 client: HttpClient);
-            PrepareV1GetServicesHealthArguments(
+            PrepareV1UpdateAFunctionWithJsonArguments(
                 httpClient: HttpClient,
                 @ref: ref @ref,
-                services: ref services,
-                timeoutMs: ref timeoutMs);
+                functionSlug: ref functionSlug,
+                slug: ref slug,
+                name: ref name,
+                verifyJwt: ref verifyJwt,
+                importMap: ref importMap,
+                entrypointPath: ref entrypointPath,
+                importMapPath: ref importMapPath,
+                ezbrSha256: ref ezbrSha256,
+                request: request);
 
 
             var __authorizations = global::Supabase.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_V1GetServicesHealthSecurityRequirements,
-                operationName: "V1GetServicesHealthAsync");
+                securityRequirements: s_V1UpdateAFunctionWithJsonSecurityRequirements,
+                operationName: "V1UpdateAFunctionWithJsonAsync");
 
             using var __timeoutCancellationTokenSource = global::Supabase.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -131,14 +218,16 @@ namespace Supabase
             {
 
                             var __pathBuilder = new global::Supabase.PathBuilder(
-                                path: $"/v1/projects/{@ref}/health",
+                                path: $"/v1/projects/{@ref}/functions/{functionSlug}",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddRequiredParameter("services", services.Match(
-                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
-                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item.ToValueString()),
-                validate: false) ?? global::System.Array.Empty<string?>(), delimiter: ",", explode: true)
-                                .AddOptionalParameter("timeout_ms", timeoutMs?.ToString())
+                                .AddOptionalParameter("slug", slug)
+                                .AddOptionalParameter("name", name)
+                                .AddOptionalParameter("verify_jwt", verifyJwt)
+                                .AddOptionalParameter("import_map", importMap)
+                                .AddOptionalParameter("entrypoint_path", entrypointPath)
+                                .AddOptionalParameter("import_map_path", importMapPath)
+                                .AddOptionalParameter("ezbr_sha256", ezbrSha256)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -146,7 +235,7 @@ namespace Supabase
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Get,
+                    method: new global::System.Net.Http.HttpMethod("PATCH"),
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -169,6 +258,12 @@ namespace Supabase
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
+                            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
+                            var __httpRequestContent = new global::System.Net.Http.StringContent(
+                                content: __httpRequestContentBody,
+                                encoding: global::System.Text.Encoding.UTF8,
+                                mediaType: "application/json");
+                            __httpRequest.Content = __httpRequestContent;
                 global::Supabase.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -177,12 +272,19 @@ namespace Supabase
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareV1GetServicesHealthRequest(
+                PrepareV1UpdateAFunctionWithJsonRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     @ref: @ref!,
-                    services: services!,
-                    timeoutMs: timeoutMs);
+                    functionSlug: functionSlug!,
+                    slug: slug,
+                    name: name,
+                    verifyJwt: verifyJwt,
+                    importMap: importMap,
+                    entrypointPath: entrypointPath,
+                    importMapPath: importMapPath,
+                    ezbrSha256: ezbrSha256,
+                    request: request);
 
                 return __httpRequest;
             }
@@ -199,10 +301,10 @@ namespace Supabase
                     await global::Supabase.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetServicesHealth",
-                                methodName: "V1GetServicesHealthAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/health\"",
-                                httpMethod: "GET",
+                                operationId: "V1UpdateAFunctionWithJson",
+                                methodName: "V1UpdateAFunctionWithJsonAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/functions/{functionSlug}\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -233,10 +335,10 @@ namespace Supabase
                         await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetServicesHealth",
-                                methodName: "V1GetServicesHealthAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/health\"",
-                                httpMethod: "GET",
+                                operationId: "V1UpdateAFunctionWithJson",
+                                methodName: "V1UpdateAFunctionWithJsonAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/functions/{functionSlug}\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -274,10 +376,10 @@ namespace Supabase
                         await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetServicesHealth",
-                                methodName: "V1GetServicesHealthAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/health\"",
-                                httpMethod: "GET",
+                                operationId: "V1UpdateAFunctionWithJson",
+                                methodName: "V1UpdateAFunctionWithJsonAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/functions/{functionSlug}\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -314,7 +416,7 @@ namespace Supabase
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessV1GetServicesHealthResponse(
+                ProcessV1UpdateAFunctionWithJsonResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -322,10 +424,10 @@ namespace Supabase
                     await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetServicesHealth",
-                                methodName: "V1GetServicesHealthAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/health\"",
-                                httpMethod: "GET",
+                                operationId: "V1UpdateAFunctionWithJson",
+                                methodName: "V1UpdateAFunctionWithJsonAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/functions/{functionSlug}\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -344,10 +446,10 @@ namespace Supabase
                     await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1GetServicesHealth",
-                                methodName: "V1GetServicesHealthAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/health\"",
-                                httpMethod: "GET",
+                                operationId: "V1UpdateAFunctionWithJson",
+                                methodName: "V1UpdateAFunctionWithJsonAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/functions/{functionSlug}\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -502,7 +604,7 @@ namespace Supabase
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessV1GetServicesHealthResponseContent(
+                                ProcessV1UpdateAFunctionWithJsonResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -511,9 +613,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>), JsonSerializerContext) ??
+                                    var __value = global::Supabase.FunctionResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.FunctionResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -543,9 +645,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.FunctionResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.V1ServiceHealthResponse>>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.FunctionResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -584,6 +686,80 @@ namespace Supabase
             {
                 __httpRequest?.Dispose();
             }
+        }
+        /// <summary>
+        /// Update a function<br/>
+        /// Updates a function with the specified slug and project.
+        /// </summary>
+        /// <param name="ref">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
+        /// <param name="functionSlug">
+        /// Example: hello-world
+        /// </param>
+        /// <param name="slug">
+        /// Example: hello-world
+        /// </param>
+        /// <param name="name">
+        /// Example: Hello World
+        /// </param>
+        /// <param name="verifyJwt">
+        /// Example: true
+        /// </param>
+        /// <param name="importMap">
+        /// Example: false
+        /// </param>
+        /// <param name="entrypointPath">
+        /// Example: index.ts
+        /// </param>
+        /// <param name="importMapPath">
+        /// Example: import_map.json
+        /// </param>
+        /// <param name="ezbrSha256">
+        /// Example: 44c691990518d25498f0fd80cf6631ecf2b58eb9c5eb2a087dd1688f2904dac7
+        /// </param>
+        /// <param name="requestName"></param>
+        /// <param name="body"></param>
+        /// <param name="requestVerifyJwt"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Supabase.FunctionResponse> V1UpdateAFunctionWithJsonAsync(
+            string @ref,
+            string functionSlug,
+            string? slug = default,
+            string? name = default,
+            string? verifyJwt = default,
+            string? importMap = default,
+            string? entrypointPath = default,
+            string? importMapPath = default,
+            string? ezbrSha256 = default,
+            string? requestName = default,
+            string? body = default,
+            bool? requestVerifyJwt = default,
+            global::Supabase.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            var __request = new global::Supabase.V1UpdateFunctionBody
+            {
+                Name = requestName,
+                Body = body,
+                VerifyJwt = requestVerifyJwt,
+            };
+
+            return await V1UpdateAFunctionWithJsonAsync(
+                @ref: @ref,
+                functionSlug: functionSlug,
+                slug: slug,
+                name: name,
+                verifyJwt: verifyJwt,
+                importMap: importMap,
+                entrypointPath: entrypointPath,
+                importMapPath: importMapPath,
+                ezbrSha256: ezbrSha256,
+                request: __request,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken).ConfigureAwait(false);
         }
     }
 }
