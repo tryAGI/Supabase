@@ -55,7 +55,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.GetProviderResponse> V1GetASsoProviderAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.GetProviderResponseOutput> V1GetASsoProviderAsync(
             string @ref,
             global::System.Guid providerId,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -82,7 +82,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.GetProviderResponse>> V1GetASsoProviderAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.GetProviderResponseOutput>> V1GetASsoProviderAsResponseAsync(
             string @ref,
             global::System.Guid providerId,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -491,9 +491,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.GetProviderResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.GetProviderResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.GetProviderResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.GetProviderResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -523,9 +523,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.GetProviderResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.GetProviderResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.GetProviderResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.GetProviderResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

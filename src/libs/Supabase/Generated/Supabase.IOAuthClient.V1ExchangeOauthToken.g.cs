@@ -15,7 +15,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.OAuthTokenResponse> V1ExchangeOauthTokenAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.OAuthTokenResponseOutput> V1ExchangeOauthTokenAsync(
 
             global::Supabase.OAuthTokenBody request,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -31,7 +31,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.OAuthTokenResponse>> V1ExchangeOauthTokenAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.OAuthTokenResponseOutput>> V1ExchangeOauthTokenAsResponseAsync(
 
             global::Supabase.OAuthTokenBody request,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -60,7 +60,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.OAuthTokenResponse> V1ExchangeOauthTokenAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.OAuthTokenResponseOutput> V1ExchangeOauthTokenAsync(
             global::Supabase.OAuthTokenBodyGrantType? grantType = default,
             global::System.Guid? clientId = default,
             string? clientSecret = default,

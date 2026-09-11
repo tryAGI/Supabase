@@ -61,7 +61,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.RegionsInfo> V1GetAvailableRegionsAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.RegionsInfoOutput> V1GetAvailableRegionsAsync(
             string organizationSlug,
             global::Supabase.V1GetAvailableRegionsContinent? continent = default,
             global::Supabase.V1GetAvailableRegionsDesiredInstanceSize? desiredInstanceSize = default,
@@ -94,7 +94,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfo>> V1GetAvailableRegionsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfoOutput>> V1GetAvailableRegionsAsResponseAsync(
             string organizationSlug,
             global::Supabase.V1GetAvailableRegionsContinent? continent = default,
             global::Supabase.V1GetAvailableRegionsDesiredInstanceSize? desiredInstanceSize = default,
@@ -383,9 +383,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.RegionsInfo.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.RegionsInfoOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfo>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfoOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -415,9 +415,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.RegionsInfo.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.RegionsInfoOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfo>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfoOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

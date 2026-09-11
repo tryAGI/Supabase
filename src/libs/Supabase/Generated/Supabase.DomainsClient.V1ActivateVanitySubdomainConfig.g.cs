@@ -56,7 +56,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.ActivateVanitySubdomainResponse> V1ActivateVanitySubdomainConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.ActivateVanitySubdomainResponseOutput> V1ActivateVanitySubdomainConfigAsync(
             string @ref,
 
             global::Supabase.VanitySubdomainBody request,
@@ -86,7 +86,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ActivateVanitySubdomainResponse>> V1ActivateVanitySubdomainConfigAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ActivateVanitySubdomainResponseOutput>> V1ActivateVanitySubdomainConfigAsResponseAsync(
             string @ref,
 
             global::Supabase.VanitySubdomainBody request,
@@ -541,9 +541,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.ActivateVanitySubdomainResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.ActivateVanitySubdomainResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ActivateVanitySubdomainResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ActivateVanitySubdomainResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -573,9 +573,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.ActivateVanitySubdomainResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.ActivateVanitySubdomainResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ActivateVanitySubdomainResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ActivateVanitySubdomainResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -628,7 +628,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.ActivateVanitySubdomainResponse> V1ActivateVanitySubdomainConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.ActivateVanitySubdomainResponseOutput> V1ActivateVanitySubdomainConfigAsync(
             string @ref,
             string vanitySubdomain,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

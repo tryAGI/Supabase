@@ -58,7 +58,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.DatabaseUpgradeStatusResponse> V1GetPostgresUpgradeStatusAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.DatabaseUpgradeStatusResponseOutput> V1GetPostgresUpgradeStatusAsync(
             string @ref,
             string? trackingId = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -88,7 +88,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.DatabaseUpgradeStatusResponse>> V1GetPostgresUpgradeStatusAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.DatabaseUpgradeStatusResponseOutput>> V1GetPostgresUpgradeStatusAsResponseAsync(
             string @ref,
             string? trackingId = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -500,9 +500,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.DatabaseUpgradeStatusResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.DatabaseUpgradeStatusResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.DatabaseUpgradeStatusResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.DatabaseUpgradeStatusResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -532,9 +532,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.DatabaseUpgradeStatusResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.DatabaseUpgradeStatusResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.DatabaseUpgradeStatusResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.DatabaseUpgradeStatusResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

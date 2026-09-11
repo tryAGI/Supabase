@@ -14,7 +14,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.V1PostgrestConfigResponse> V1UpdatePostgrestServiceConfigAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.V1PostgrestConfigResponseOutput> V1UpdatePostgrestServiceConfigAsync(
             string @ref,
 
             global::Supabase.V1UpdatePostgrestConfigBody request,
@@ -30,7 +30,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.V1PostgrestConfigResponse>> V1UpdatePostgrestServiceConfigAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.V1PostgrestConfigResponseOutput>> V1UpdatePostgrestServiceConfigAsResponseAsync(
             string @ref,
 
             global::Supabase.V1UpdatePostgrestConfigBody request,
@@ -50,7 +50,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.V1PostgrestConfigResponse> V1UpdatePostgrestServiceConfigAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.V1PostgrestConfigResponseOutput> V1UpdatePostgrestServiceConfigAsync(
             string @ref,
             string? dbExtraSearchPath = default,
             string? dbSchema = default,

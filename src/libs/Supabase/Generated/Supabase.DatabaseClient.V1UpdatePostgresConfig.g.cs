@@ -53,7 +53,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.PostgresConfigResponse> V1UpdatePostgresConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.PostgresConfigResponseOutput> V1UpdatePostgresConfigAsync(
             string @ref,
 
             global::Supabase.UpdatePostgresConfigBody request,
@@ -80,7 +80,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.PostgresConfigResponse>> V1UpdatePostgresConfigAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.PostgresConfigResponseOutput>> V1UpdatePostgresConfigAsResponseAsync(
             string @ref,
 
             global::Supabase.UpdatePostgresConfigBody request,
@@ -498,9 +498,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.PostgresConfigResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.PostgresConfigResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.PostgresConfigResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.PostgresConfigResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -530,9 +530,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.PostgresConfigResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.PostgresConfigResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.PostgresConfigResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.PostgresConfigResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -630,7 +630,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.PostgresConfigResponse> V1UpdatePostgresConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.PostgresConfigResponseOutput> V1UpdatePostgresConfigAsync(
             string @ref,
             string? effectiveCacheSize = default,
             string? logicalDecodingWorkMem = default,

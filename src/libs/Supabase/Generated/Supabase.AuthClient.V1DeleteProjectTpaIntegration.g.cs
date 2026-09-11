@@ -55,7 +55,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.ThirdPartyAuth> V1DeleteProjectTpaIntegrationAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.ThirdPartyAuthOutput> V1DeleteProjectTpaIntegrationAsync(
             string @ref,
             global::System.Guid tpaId,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -82,7 +82,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ThirdPartyAuth>> V1DeleteProjectTpaIntegrationAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ThirdPartyAuthOutput>> V1DeleteProjectTpaIntegrationAsResponseAsync(
             string @ref,
             global::System.Guid tpaId,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -459,9 +459,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.ThirdPartyAuth.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.ThirdPartyAuthOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ThirdPartyAuth>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ThirdPartyAuthOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -491,9 +491,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.ThirdPartyAuth.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.ThirdPartyAuthOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ThirdPartyAuth>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ThirdPartyAuthOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

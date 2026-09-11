@@ -58,7 +58,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.UpdateProviderResponse> V1UpdateASsoProviderAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.UpdateProviderResponseOutput> V1UpdateASsoProviderAsync(
             string @ref,
             global::System.Guid providerId,
 
@@ -90,7 +90,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateProviderResponse>> V1UpdateASsoProviderAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateProviderResponseOutput>> V1UpdateASsoProviderAsResponseAsync(
             string @ref,
             global::System.Guid providerId,
 
@@ -511,9 +511,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.UpdateProviderResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.UpdateProviderResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateProviderResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateProviderResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -543,9 +543,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.UpdateProviderResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.UpdateProviderResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateProviderResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateProviderResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -602,7 +602,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.UpdateProviderResponse> V1UpdateASsoProviderAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.UpdateProviderResponseOutput> V1UpdateASsoProviderAsync(
             string @ref,
             global::System.Guid providerId,
             string? metadataXml = default,

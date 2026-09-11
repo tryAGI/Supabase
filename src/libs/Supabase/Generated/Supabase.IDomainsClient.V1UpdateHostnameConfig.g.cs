@@ -17,7 +17,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.UpdateCustomHostnameResponse> V1UpdateHostnameConfigAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.UpdateCustomHostnameResponseOutput> V1UpdateHostnameConfigAsync(
             string @ref,
 
             global::Supabase.UpdateCustomHostnameBody request,
@@ -36,7 +36,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateCustomHostnameResponse>> V1UpdateHostnameConfigAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateCustomHostnameResponseOutput>> V1UpdateHostnameConfigAsResponseAsync(
             string @ref,
 
             global::Supabase.UpdateCustomHostnameBody request,
@@ -55,7 +55,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.UpdateCustomHostnameResponse> V1UpdateHostnameConfigAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.UpdateCustomHostnameResponseOutput> V1UpdateHostnameConfigAsync(
             string @ref,
             string customHostname,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

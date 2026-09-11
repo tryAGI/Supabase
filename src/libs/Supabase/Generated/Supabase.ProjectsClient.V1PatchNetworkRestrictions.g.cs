@@ -56,7 +56,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_ALPHA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsV2Response> V1PatchNetworkRestrictionsAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsV2ResponseOutput> V1PatchNetworkRestrictionsAsync(
             string @ref,
 
             global::Supabase.NetworkRestrictionsPatchRequest request,
@@ -86,7 +86,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_ALPHA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsV2Response>> V1PatchNetworkRestrictionsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsV2ResponseOutput>> V1PatchNetworkRestrictionsAsResponseAsync(
             string @ref,
 
             global::Supabase.NetworkRestrictionsPatchRequest request,
@@ -504,9 +504,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.NetworkRestrictionsV2Response.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.NetworkRestrictionsV2ResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsV2Response>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsV2ResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -536,9 +536,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.NetworkRestrictionsV2Response.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.NetworkRestrictionsV2ResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsV2Response>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsV2ResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -592,7 +592,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_ALPHA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsV2Response> V1PatchNetworkRestrictionsAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsV2ResponseOutput> V1PatchNetworkRestrictionsAsync(
             string @ref,
             global::Supabase.NetworkRestrictionsPatchRequestAdd? add = default,
             global::Supabase.NetworkRestrictionsPatchRequestRemove? remove = default,

@@ -15,7 +15,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.BranchResponse> V1CreateABranchAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.BranchResponseOutput> V1CreateABranchAsync(
             string @ref,
 
             global::Supabase.CreateBranchBody request,
@@ -32,7 +32,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.BranchResponse>> V1CreateABranchAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.BranchResponseOutput>> V1CreateABranchAsResponseAsync(
             string @ref,
 
             global::Supabase.CreateBranchBody request,
@@ -65,7 +65,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.BranchResponse> V1CreateABranchAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.BranchResponseOutput> V1CreateABranchAsync(
             string @ref,
             string branchName,
             string? gitBranch = default,

@@ -14,7 +14,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.CreateProviderResponse> V1CreateASsoProviderAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.CreateProviderResponseOutput> V1CreateASsoProviderAsync(
             string @ref,
 
             global::Supabase.CreateProviderBody request,
@@ -30,7 +30,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateProviderResponse>> V1CreateASsoProviderAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateProviderResponseOutput>> V1CreateASsoProviderAsResponseAsync(
             string @ref,
 
             global::Supabase.CreateProviderBody request,
@@ -53,7 +53,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.CreateProviderResponse> V1CreateASsoProviderAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.CreateProviderResponseOutput> V1CreateASsoProviderAsync(
             string @ref,
             global::Supabase.CreateProviderBodyType type = default,
             string? metadataXml = default,

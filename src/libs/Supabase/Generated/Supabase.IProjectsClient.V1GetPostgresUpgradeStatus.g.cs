@@ -19,7 +19,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.DatabaseUpgradeStatusResponse> V1GetPostgresUpgradeStatusAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.DatabaseUpgradeStatusResponseOutput> V1GetPostgresUpgradeStatusAsync(
             string @ref,
             string? trackingId = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -39,7 +39,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.DatabaseUpgradeStatusResponse>> V1GetPostgresUpgradeStatusAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.DatabaseUpgradeStatusResponseOutput>> V1GetPostgresUpgradeStatusAsResponseAsync(
             string @ref,
             string? trackingId = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

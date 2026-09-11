@@ -39,7 +39,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.FunctionResponse> V1UpdateAFunctionAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.FunctionSlugResponseOutput> V1UpdateAFunctionAsync(
             string @ref,
             string functionSlug,
 
@@ -88,7 +88,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.FunctionResponse>> V1UpdateAFunctionAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.FunctionSlugResponseOutput>> V1UpdateAFunctionAsResponseAsync(
             string @ref,
             string functionSlug,
 

@@ -20,7 +20,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.RegionsInfo> V1GetAvailableRegionsAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.RegionsInfoOutput> V1GetAvailableRegionsAsync(
             string organizationSlug,
             global::Supabase.V1GetAvailableRegionsContinent? continent = default,
             global::Supabase.V1GetAvailableRegionsDesiredInstanceSize? desiredInstanceSize = default,
@@ -42,7 +42,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfo>> V1GetAvailableRegionsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfoOutput>> V1GetAvailableRegionsAsResponseAsync(
             string organizationSlug,
             global::Supabase.V1GetAvailableRegionsContinent? continent = default,
             global::Supabase.V1GetAvailableRegionsDesiredInstanceSize? desiredInstanceSize = default,

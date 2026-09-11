@@ -55,7 +55,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>> V1GetProjectApiKeysAsync(
+        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponseOutput>> V1GetProjectApiKeysAsync(
             string @ref,
             string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -82,7 +82,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>>> V1GetProjectApiKeysAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponseOutput>>> V1GetProjectApiKeysAsResponseAsync(
             string @ref,
             string? reveal = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -462,9 +462,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>), JsonSerializerContext) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponseOutput>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponseOutput>), JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponseOutput>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -494,9 +494,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponseOutput>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponseOutput>), JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponse>>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ApiKeyResponseOutput>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

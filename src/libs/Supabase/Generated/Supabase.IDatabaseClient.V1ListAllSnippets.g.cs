@@ -17,7 +17,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.SnippetList> V1ListAllSnippetsAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.SnippetListOutput> V1ListAllSnippetsAsync(
             string? projectRef = default,
             string? cursor = default,
             string? limit = default,
@@ -38,7 +38,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SnippetList>> V1ListAllSnippetsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SnippetListOutput>> V1ListAllSnippetsAsResponseAsync(
             string? projectRef = default,
             string? cursor = default,
             string? limit = default,

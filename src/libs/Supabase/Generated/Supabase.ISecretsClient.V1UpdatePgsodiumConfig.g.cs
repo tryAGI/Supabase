@@ -17,7 +17,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.PgsodiumConfigResponse> V1UpdatePgsodiumConfigAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.PgsodiumConfigResponseOutput> V1UpdatePgsodiumConfigAsync(
             string @ref,
 
             global::Supabase.UpdatePgsodiumConfigBody request,
@@ -36,7 +36,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.PgsodiumConfigResponse>> V1UpdatePgsodiumConfigAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.PgsodiumConfigResponseOutput>> V1UpdatePgsodiumConfigAsResponseAsync(
             string @ref,
 
             global::Supabase.UpdatePgsodiumConfigBody request,
@@ -57,7 +57,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.PgsodiumConfigResponse> V1UpdatePgsodiumConfigAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.PgsodiumConfigResponseOutput> V1UpdatePgsodiumConfigAsync(
             string @ref,
             string rootKey,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

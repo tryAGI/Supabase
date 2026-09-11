@@ -14,7 +14,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.SigningKeyResponse> V1CreateProjectSigningKeyAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.SigningKeyResponseOutput> V1CreateProjectSigningKeyAsync(
             string @ref,
 
             global::Supabase.CreateSigningKeyBody request,
@@ -30,7 +30,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SigningKeyResponse>> V1CreateProjectSigningKeyAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SigningKeyResponseOutput>> V1CreateProjectSigningKeyAsResponseAsync(
             string @ref,
 
             global::Supabase.CreateSigningKeyBody request,
@@ -48,7 +48,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.SigningKeyResponse> V1CreateProjectSigningKeyAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.SigningKeyResponseOutput> V1CreateProjectSigningKeyAsync(
             string @ref,
             global::Supabase.CreateSigningKeyBodyAlgorithm algorithm,
             global::Supabase.CreateSigningKeyBodyStatus? status = default,

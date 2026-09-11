@@ -1,0 +1,96 @@
+
+#nullable enable
+
+namespace Supabase
+{
+    /// <summary>
+    ///
+    /// </summary>
+    public sealed partial class PostgrestConfigWithJWTSecretResponseOutput
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_schema")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DbSchema { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("max_rows")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required long MaxRows { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_extra_search_path")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DbExtraSearchPath { get; set; }
+
+        /// <summary>
+        /// If `null`, the value is automatically configured based on compute size.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_pool")]
+        public long? DbPool { get; set; }
+
+        /// <summary>
+        /// If `null`, the value is automatically configured to 10.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_pool_acquisition_timeout")]
+        public long? DbPoolAcquisitionTimeout { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("jwt_secret")]
+        public string? JwtSecret { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PostgrestConfigWithJWTSecretResponseOutput" /> class.
+        /// </summary>
+        /// <param name="dbSchema"></param>
+        /// <param name="maxRows"></param>
+        /// <param name="dbExtraSearchPath"></param>
+        /// <param name="dbPool">
+        /// If `null`, the value is automatically configured based on compute size.
+        /// </param>
+        /// <param name="dbPoolAcquisitionTimeout">
+        /// If `null`, the value is automatically configured to 10.
+        /// </param>
+        /// <param name="jwtSecret"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public PostgrestConfigWithJWTSecretResponseOutput(
+            string dbSchema,
+            long maxRows,
+            string dbExtraSearchPath,
+            long? dbPool,
+            long? dbPoolAcquisitionTimeout,
+            string? jwtSecret)
+        {
+            this.DbSchema = dbSchema ?? throw new global::System.ArgumentNullException(nameof(dbSchema));
+            this.MaxRows = maxRows;
+            this.DbExtraSearchPath = dbExtraSearchPath ?? throw new global::System.ArgumentNullException(nameof(dbExtraSearchPath));
+            this.DbPool = dbPool;
+            this.DbPoolAcquisitionTimeout = dbPoolAcquisitionTimeout;
+            this.JwtSecret = jwtSecret;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PostgrestConfigWithJWTSecretResponseOutput" /> class.
+        /// </summary>
+        public PostgrestConfigWithJWTSecretResponseOutput()
+        {
+        }
+
+    }
+}

@@ -33,7 +33,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.OrganizationProjectsResponse> V1GetAllProjectsForOrganizationAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.OrganizationProjectsResponseOutput> V1GetAllProjectsForOrganizationAsync(
             string slug,
             int? offset = default,
             int? limit = default,
@@ -71,7 +71,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.OrganizationProjectsResponse>> V1GetAllProjectsForOrganizationAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.OrganizationProjectsResponseOutput>> V1GetAllProjectsForOrganizationAsResponseAsync(
             string slug,
             int? offset = default,
             int? limit = default,

@@ -11,6 +11,10 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
+        PlatformUnsupported,
+        /// <summary>
+        ///
+        /// </summary>
         PostgresUpgradeRequired,
         /// <summary>
         ///
@@ -34,6 +38,7 @@ namespace Supabase
         {
             return value switch
             {
+                V1GetJitAccessConfigResponseVariant2UnavailableReason.PlatformUnsupported => "platform_unsupported",
                 V1GetJitAccessConfigResponseVariant2UnavailableReason.PostgresUpgradeRequired => "postgres_upgrade_required",
                 V1GetJitAccessConfigResponseVariant2UnavailableReason.SslEnforcementRequired => "ssl_enforcement_required",
                 V1GetJitAccessConfigResponseVariant2UnavailableReason.TemporarilyUnavailable => "temporarily_unavailable",
@@ -47,6 +52,7 @@ namespace Supabase
         {
             return value switch
             {
+                "platform_unsupported" => V1GetJitAccessConfigResponseVariant2UnavailableReason.PlatformUnsupported,
                 "postgres_upgrade_required" => V1GetJitAccessConfigResponseVariant2UnavailableReason.PostgresUpgradeRequired,
                 "ssl_enforcement_required" => V1GetJitAccessConfigResponseVariant2UnavailableReason.SslEnforcementRequired,
                 "temporarily_unavailable" => V1GetJitAccessConfigResponseVariant2UnavailableReason.TemporarilyUnavailable,

@@ -48,7 +48,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.OrganizationResponseV1> V1CreateAnOrganizationAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.OrganizationResponseV1Output> V1CreateAnOrganizationAsync(
 
             global::Supabase.CreateOrganizationV1 request,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -70,7 +70,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.OrganizationResponseV1>> V1CreateAnOrganizationAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.OrganizationResponseV1Output>> V1CreateAnOrganizationAsResponseAsync(
 
             global::Supabase.CreateOrganizationV1 request,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -485,9 +485,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.OrganizationResponseV1.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.OrganizationResponseV1Output.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.OrganizationResponseV1>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.OrganizationResponseV1Output>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -517,9 +517,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.OrganizationResponseV1.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.OrganizationResponseV1Output.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.OrganizationResponseV1>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.OrganizationResponseV1Output>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -566,7 +566,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.OrganizationResponseV1> V1CreateAnOrganizationAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.OrganizationResponseV1Output> V1CreateAnOrganizationAsync(
             string name,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)

@@ -56,7 +56,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.ProjectUpgradeInitiateResponse> V1UpgradePostgresVersionAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.ProjectUpgradeInitiateResponseOutput> V1UpgradePostgresVersionAsync(
             string @ref,
 
             global::Supabase.UpgradeDatabaseBody request,
@@ -86,7 +86,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ProjectUpgradeInitiateResponse>> V1UpgradePostgresVersionAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ProjectUpgradeInitiateResponseOutput>> V1UpgradePostgresVersionAsResponseAsync(
             string @ref,
 
             global::Supabase.UpgradeDatabaseBody request,
@@ -504,9 +504,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.ProjectUpgradeInitiateResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.ProjectUpgradeInitiateResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ProjectUpgradeInitiateResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ProjectUpgradeInitiateResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -536,9 +536,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.ProjectUpgradeInitiateResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.ProjectUpgradeInitiateResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ProjectUpgradeInitiateResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ProjectUpgradeInitiateResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -592,7 +592,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.ProjectUpgradeInitiateResponse> V1UpgradePostgresVersionAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.ProjectUpgradeInitiateResponseOutput> V1UpgradePostgresVersionAsync(
             string @ref,
             string targetVersion,
             global::Supabase.UpgradeDatabaseBodyReleaseChannel? releaseChannel = default,

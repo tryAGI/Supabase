@@ -56,7 +56,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.SslEnforcementResponse> V1UpdateSslEnforcementConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.SslEnforcementResponseOutput> V1UpdateSslEnforcementConfigAsync(
             string @ref,
 
             global::Supabase.SslEnforcementRequest request,
@@ -86,7 +86,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SslEnforcementResponse>> V1UpdateSslEnforcementConfigAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SslEnforcementResponseOutput>> V1UpdateSslEnforcementConfigAsResponseAsync(
             string @ref,
 
             global::Supabase.SslEnforcementRequest request,
@@ -504,9 +504,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.SslEnforcementResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.SslEnforcementResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.SslEnforcementResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.SslEnforcementResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -536,9 +536,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.SslEnforcementResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.SslEnforcementResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.SslEnforcementResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.SslEnforcementResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -591,7 +591,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.SslEnforcementResponse> V1UpdateSslEnforcementConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.SslEnforcementResponseOutput> V1UpdateSslEnforcementConfigAsync(
             string @ref,
             global::Supabase.SslEnforcementRequestRequestedConfig requestedConfig,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

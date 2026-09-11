@@ -391,7 +391,7 @@
       "Slug": "v1-create-a-branch",
       "Description": "Creates a database branch from the specified project.",
       "Language": "http",
-      "Code": "### Create a database branch\n# @name v1-create-a-branch\nPOST {{host}}/v1/projects/{{ref}}/branches\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022branch_name\u0022: \u0022preview-login-page\u0022,\n  \u0022git_branch\u0022: \u0022feature/login-page\u0022,\n  \u0022persistent\u0022: true,\n  \u0022with_data\u0022: false,\n  \u0022notify_url\u0022: \u0022https://example.com/webhooks/branches\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 500\n# Description: Failed to create database branch",
+      "Code": "### Create a database branch\n# @name v1-create-a-branch\nPOST {{host}}/v1/projects/{{ref}}/branches\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022branch_name\u0022: \u0022preview-login-page\u0022,\n  \u0022git_branch\u0022: \u0022feature/login-page\u0022,\n  \u0022persistent\u0022: true,\n  \u0022with_data\u0022: false,\n  \u0022notify_url\u0022: \u0022https://example.com/webhooks/branches\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to create database branch",
       "Format": "http",
       "OperationId": "v1-create-a-branch",
       "Setup": null
@@ -402,7 +402,7 @@
       "Slug": "v1-merge-a-branch",
       "Description": "Merges the specified database branch",
       "Language": "http",
-      "Code": "### Merges a database branch\n# @name v1-merge-a-branch\nPOST {{host}}/v1/branches/{{branch_id_or_ref}}/merge\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022migration_version\u0022: \u002220250312000000\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 500\n# Description: Failed to merge database branch",
+      "Code": "### Merges a database branch\n# @name v1-merge-a-branch\nPOST {{host}}/v1/branches/{{branch_id_or_ref}}/merge\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022migration_version\u0022: \u002220250312000000\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to merge database branch",
       "Format": "http",
       "OperationId": "v1-merge-a-branch",
       "Setup": null
@@ -413,7 +413,7 @@
       "Slug": "v1-push-a-branch",
       "Description": "Pushes the specified database branch",
       "Language": "http",
-      "Code": "### Pushes a database branch\n# @name v1-push-a-branch\nPOST {{host}}/v1/branches/{{branch_id_or_ref}}/push\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022migration_version\u0022: \u002220250312000000\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 500\n# Description: Failed to push database branch",
+      "Code": "### Pushes a database branch\n# @name v1-push-a-branch\nPOST {{host}}/v1/branches/{{branch_id_or_ref}}/push\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022migration_version\u0022: \u002220250312000000\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to push database branch",
       "Format": "http",
       "OperationId": "v1-push-a-branch",
       "Setup": null
@@ -424,7 +424,7 @@
       "Slug": "v1-reset-a-branch",
       "Description": "Resets the specified database branch",
       "Language": "http",
-      "Code": "### Resets a database branch\n# @name v1-reset-a-branch\nPOST {{host}}/v1/branches/{{branch_id_or_ref}}/reset\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022migration_version\u0022: \u002220250312000000\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 500\n# Description: Failed to reset database branch",
+      "Code": "### Resets a database branch\n# @name v1-reset-a-branch\nPOST {{host}}/v1/branches/{{branch_id_or_ref}}/reset\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022migration_version\u0022: \u002220250312000000\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to reset database branch",
       "Format": "http",
       "OperationId": "v1-reset-a-branch",
       "Setup": null
@@ -435,7 +435,7 @@
       "Slug": "v1-update-a-branch-config",
       "Description": "Updates the configuration of the specified database branch",
       "Language": "http",
-      "Code": "### Update database branch config\n# @name v1-update-a-branch-config\nPATCH {{host}}/v1/branches/{{branch_id_or_ref}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022branch_name\u0022: \u0022preview-login-page\u0022,\n  \u0022git_branch\u0022: \u0022feature/login-page\u0022,\n  \u0022persistent\u0022: true,\n  \u0022request_review\u0022: true,\n  \u0022notify_url\u0022: \u0022https://example.com/webhooks/branches\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 500\n# Description: Failed to update database branch",
+      "Code": "### Update database branch config\n# @name v1-update-a-branch-config\nPATCH {{host}}/v1/branches/{{branch_id_or_ref}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022branch_name\u0022: \u0022preview-login-page\u0022,\n  \u0022git_branch\u0022: \u0022feature/login-page\u0022,\n  \u0022persistent\u0022: true,\n  \u0022request_review\u0022: true,\n  \u0022notify_url\u0022: \u0022https://example.com/webhooks/branches\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update database branch",
       "Format": "http",
       "OperationId": "v1-update-a-branch-config",
       "Setup": null
@@ -457,7 +457,7 @@
       "Slug": "v1-exchange-oauth-token",
       "Description": "Supports \u0060authorization_code\u0060, \u0060refresh_token\u0060, and \u0060urn:ietf:params:oauth:grant-type:jwt-bearer\u0060 grant types. The \u0060jwt-bearer\u0060 grant type (IDJAG \u2014 identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.",
       "Language": "http",
-      "Code": "### [Beta] Exchange auth code for user\u0027s access and refresh token\n# @name v1-exchange-oauth-token\nPOST {{host}}/v1/oauth/token\nAuthorization: Bearer {{token}}\nContent-Type: application/x-www-form-urlencoded\nAccept: application/json\n\ngrant_type=authorization_code\u0026client_id=string\u0026client_secret=string\u0026code=string\u0026code_verifier=string\u0026redirect_uri=string\u0026refresh_token=string\u0026assertion=string\u0026resource=string\u0026scope=string\n\n## Responses\n# 200\n# Content-Type: application/json",
+      "Code": "### [Beta] Exchange auth code for user\u0027s access and refresh token\n# @name v1-exchange-oauth-token\nPOST {{host}}/v1/oauth/token\nAuthorization: Bearer {{token}}\nContent-Type: application/x-www-form-urlencoded\nAccept: application/json\n\ngrant_type=authorization_code\u0026client_id=string\u0026client_secret=string\u0026code=string\u0026code_verifier=string\u0026redirect_uri=string\u0026refresh_token=string\u0026assertion=string\u0026resource=string\u0026scope=string\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded",
       "Format": "http",
       "OperationId": "v1-exchange-oauth-token",
       "Setup": null

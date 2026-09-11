@@ -14,7 +14,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.ThirdPartyAuth> V1CreateProjectTpaIntegrationAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.ThirdPartyAuthOutput> V1CreateProjectTpaIntegrationAsync(
             string @ref,
 
             global::Supabase.CreateThirdPartyAuthBody request,
@@ -30,7 +30,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ThirdPartyAuth>> V1CreateProjectTpaIntegrationAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ThirdPartyAuthOutput>> V1CreateProjectTpaIntegrationAsResponseAsync(
             string @ref,
 
             global::Supabase.CreateThirdPartyAuthBody request,
@@ -48,7 +48,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.ThirdPartyAuth> V1CreateProjectTpaIntegrationAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.ThirdPartyAuthOutput> V1CreateProjectTpaIntegrationAsync(
             string @ref,
             string? oidcIssuerUrl = default,
             string? jwksUrl = default,
