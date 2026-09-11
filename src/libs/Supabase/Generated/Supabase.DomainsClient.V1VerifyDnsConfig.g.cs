@@ -53,7 +53,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.UpdateCustomHostnameResponse> V1VerifyDnsConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.UpdateCustomHostnameResponseOutput> V1VerifyDnsConfigAsync(
             string @ref,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -78,7 +78,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateCustomHostnameResponse>> V1VerifyDnsConfigAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateCustomHostnameResponseOutput>> V1VerifyDnsConfigAsResponseAsync(
             string @ref,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -484,9 +484,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.UpdateCustomHostnameResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.UpdateCustomHostnameResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateCustomHostnameResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateCustomHostnameResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -516,9 +516,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.UpdateCustomHostnameResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.UpdateCustomHostnameResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateCustomHostnameResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateCustomHostnameResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

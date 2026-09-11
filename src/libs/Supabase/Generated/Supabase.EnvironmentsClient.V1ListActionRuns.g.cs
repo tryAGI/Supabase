@@ -61,7 +61,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseItem>> V1ListActionRunsAsync(
+        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseOutputItem>> V1ListActionRunsAsync(
             string @ref,
             double? offset = default,
             double? limit = default,
@@ -94,7 +94,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseItem>>> V1ListActionRunsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseOutputItem>>> V1ListActionRunsAsResponseAsync(
             string @ref,
             double? offset = default,
             double? limit = default,
@@ -510,9 +510,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseItem>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseItem>), JsonSerializerContext) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseOutputItem>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseOutputItem>), JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseItem>>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseOutputItem>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -542,9 +542,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseItem>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseItem>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseOutputItem>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseOutputItem>), JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseItem>>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.ListActionRunResponseOutputItem>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

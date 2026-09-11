@@ -23,15 +23,15 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>))]
-        public global::Supabase.AnyOf<object, double?, string, bool?>? Default { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("array")]
+        public bool? Array { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("array")]
-        public bool? Array { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>))]
+        public global::Supabase.AnyOf<object, double?, string, bool?>? Default { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,21 +44,21 @@ namespace Supabase
         /// </summary>
         /// <param name="name"></param>
         /// <param name="names"></param>
-        /// <param name="default"></param>
         /// <param name="array"></param>
+        /// <param name="default"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateProviderBodyAttributeMappingKeys2(
             string? name,
             global::System.Collections.Generic.IList<string>? names,
-            global::Supabase.AnyOf<object, double?, string, bool?>? @default,
-            bool? array)
+            bool? array,
+            global::Supabase.AnyOf<object, double?, string, bool?>? @default)
         {
             this.Name = name;
             this.Names = names;
-            this.Default = @default;
             this.Array = array;
+            this.Default = @default;
         }
 
         /// <summary>

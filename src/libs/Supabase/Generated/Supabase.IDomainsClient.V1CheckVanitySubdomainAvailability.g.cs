@@ -17,7 +17,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.SubdomainAvailabilityResponse> V1CheckVanitySubdomainAvailabilityAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.SubdomainAvailabilityResponseOutput> V1CheckVanitySubdomainAvailabilityAsync(
             string @ref,
 
             global::Supabase.VanitySubdomainBody request,
@@ -36,7 +36,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SubdomainAvailabilityResponse>> V1CheckVanitySubdomainAvailabilityAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SubdomainAvailabilityResponseOutput>> V1CheckVanitySubdomainAvailabilityAsResponseAsync(
             string @ref,
 
             global::Supabase.VanitySubdomainBody request,
@@ -55,7 +55,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.SubdomainAvailabilityResponse> V1CheckVanitySubdomainAvailabilityAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.SubdomainAvailabilityResponseOutput> V1CheckVanitySubdomainAvailabilityAsync(
             string @ref,
             string vanitySubdomain,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

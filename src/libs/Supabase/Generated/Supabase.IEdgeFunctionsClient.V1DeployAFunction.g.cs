@@ -21,7 +21,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.DeployFunctionResponse> V1DeployAFunctionAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.DeployFunctionResponseOutput> V1DeployAFunctionAsync(
             string @ref,
 
             global::Supabase.FunctionDeployBody request,
@@ -46,7 +46,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.DeployFunctionResponse>> V1DeployAFunctionAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.DeployFunctionResponseOutput>> V1DeployAFunctionAsResponseAsync(
             string @ref,
 
             global::Supabase.FunctionDeployBody request,
@@ -72,7 +72,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.DeployFunctionResponse> V1DeployAFunctionAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.DeployFunctionResponseOutput> V1DeployAFunctionAsync(
             string @ref,
             global::System.Collections.Generic.IList<byte[]> file,
             global::Supabase.FunctionDeployBodyMetadata metadata,
@@ -104,7 +104,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.DeployFunctionResponse> V1DeployAFunctionAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.DeployFunctionResponseOutput> V1DeployAFunctionAsync(
             string @ref,
             global::System.Collections.Generic.IReadOnlyList<global::System.IO.Stream> file,
             global::Supabase.FunctionDeployBodyMetadata metadata,
@@ -136,7 +136,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.DeployFunctionResponse>> V1DeployAFunctionAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.DeployFunctionResponseOutput>> V1DeployAFunctionAsResponseAsync(
             string @ref,
             global::System.Collections.Generic.IReadOnlyList<global::System.IO.Stream> file,
             global::Supabase.FunctionDeployBodyMetadata metadata,

@@ -25,7 +25,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponse> V1DeleteProjectApiKeyAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponseOutput> V1DeleteProjectApiKeyAsync(
             string @ref,
             global::System.Guid id,
             string? reveal = default,
@@ -54,7 +54,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ApiKeyResponse>> V1DeleteProjectApiKeyAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ApiKeyResponseOutput>> V1DeleteProjectApiKeyAsResponseAsync(
             string @ref,
             global::System.Guid id,
             string? reveal = default,

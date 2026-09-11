@@ -17,7 +17,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.BranchResponse> V1GetABranchAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.BranchResponseOutput> V1GetABranchAsync(
             string @ref,
             string name,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -35,7 +35,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.BranchResponse>> V1GetABranchAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.BranchResponseOutput>> V1GetABranchAsResponseAsync(
             string @ref,
             string name,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

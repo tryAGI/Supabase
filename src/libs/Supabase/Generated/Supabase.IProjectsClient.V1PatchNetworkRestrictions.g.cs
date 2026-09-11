@@ -17,7 +17,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_ALPHA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsV2Response> V1PatchNetworkRestrictionsAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsV2ResponseOutput> V1PatchNetworkRestrictionsAsync(
             string @ref,
 
             global::Supabase.NetworkRestrictionsPatchRequest request,
@@ -36,7 +36,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_ALPHA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsV2Response>> V1PatchNetworkRestrictionsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsV2ResponseOutput>> V1PatchNetworkRestrictionsAsResponseAsync(
             string @ref,
 
             global::Supabase.NetworkRestrictionsPatchRequest request,
@@ -56,7 +56,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_ALPHA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsV2Response> V1PatchNetworkRestrictionsAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsV2ResponseOutput> V1PatchNetworkRestrictionsAsync(
             string @ref,
             global::Supabase.NetworkRestrictionsPatchRequestAdd? add = default,
             global::Supabase.NetworkRestrictionsPatchRequestRemove? remove = default,

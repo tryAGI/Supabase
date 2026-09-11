@@ -1,0 +1,87 @@
+
+#nullable enable
+
+namespace Supabase
+{
+    /// <summary>
+    ///
+    /// </summary>
+    public sealed partial class V1PostgrestConfigResponseOutput
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_schema")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DbSchema { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("max_rows")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required long MaxRows { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_extra_search_path")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DbExtraSearchPath { get; set; }
+
+        /// <summary>
+        /// If `null`, the value is automatically configured based on compute size.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_pool")]
+        public long? DbPool { get; set; }
+
+        /// <summary>
+        /// If `null`, the value is automatically configured to 10.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_pool_acquisition_timeout")]
+        public long? DbPoolAcquisitionTimeout { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="V1PostgrestConfigResponseOutput" /> class.
+        /// </summary>
+        /// <param name="dbSchema"></param>
+        /// <param name="maxRows"></param>
+        /// <param name="dbExtraSearchPath"></param>
+        /// <param name="dbPool">
+        /// If `null`, the value is automatically configured based on compute size.
+        /// </param>
+        /// <param name="dbPoolAcquisitionTimeout">
+        /// If `null`, the value is automatically configured to 10.
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public V1PostgrestConfigResponseOutput(
+            string dbSchema,
+            long maxRows,
+            string dbExtraSearchPath,
+            long? dbPool,
+            long? dbPoolAcquisitionTimeout)
+        {
+            this.DbSchema = dbSchema ?? throw new global::System.ArgumentNullException(nameof(dbSchema));
+            this.MaxRows = maxRows;
+            this.DbExtraSearchPath = dbExtraSearchPath ?? throw new global::System.ArgumentNullException(nameof(dbExtraSearchPath));
+            this.DbPool = dbPool;
+            this.DbPoolAcquisitionTimeout = dbPoolAcquisitionTimeout;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="V1PostgrestConfigResponseOutput" /> class.
+        /// </summary>
+        public V1PostgrestConfigResponseOutput()
+        {
+        }
+
+    }
+}

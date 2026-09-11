@@ -71,7 +71,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AnalyticsResponse> V1GetProjectLogsAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AnalyticsResponseOutput> V1GetProjectLogsAsync(
             string @ref,
             string? sql = default,
             global::System.DateTime? isoTimestampStart = default,
@@ -114,7 +114,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.AnalyticsResponse>> V1GetProjectLogsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.AnalyticsResponseOutput>> V1GetProjectLogsAsResponseAsync(
             string @ref,
             string? sql = default,
             global::System.DateTime? isoTimestampStart = default,
@@ -534,9 +534,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.AnalyticsResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.AnalyticsResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.AnalyticsResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.AnalyticsResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -566,9 +566,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.AnalyticsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.AnalyticsResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.AnalyticsResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.AnalyticsResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

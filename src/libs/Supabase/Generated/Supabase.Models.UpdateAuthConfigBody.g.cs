@@ -346,13 +346,13 @@ namespace Supabase
         public string? SecurityCaptchaSecret { get; set; }
 
         /// <summary>
-        ///
+        /// Session timebox in hours. Maximum 8760 hours (1 year).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sessions_timebox")]
         public double? SessionsTimebox { get; set; }
 
         /// <summary>
-        ///
+        /// Session inactivity timeout in hours. Maximum 8760 hours (1 year).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sessions_inactivity_timeout")]
         public double? SessionsInactivityTimeout { get; set; }
@@ -455,7 +455,13 @@ namespace Supabase
         public bool? SecurityUpdatePasswordRequireReauthentication { get; set; }
 
         /// <summary>
-        ///
+        /// Require the user's current password when updating their password.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("security_update_password_require_current_password")]
+        public bool? SecurityUpdatePasswordRequireCurrentPassword { get; set; }
+
+        /// <summary>
+        /// Refresh token reuse interval in seconds. Maximum 300 seconds (5 minutes).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("security_refresh_token_reuse_interval")]
         public int? SecurityRefreshTokenReuseInterval { get; set; }
@@ -1481,8 +1487,12 @@ namespace Supabase
         /// <param name="securityCaptchaEnabled"></param>
         /// <param name="securityCaptchaProvider"></param>
         /// <param name="securityCaptchaSecret"></param>
-        /// <param name="sessionsTimebox"></param>
-        /// <param name="sessionsInactivityTimeout"></param>
+        /// <param name="sessionsTimebox">
+        /// Session timebox in hours. Maximum 8760 hours (1 year).
+        /// </param>
+        /// <param name="sessionsInactivityTimeout">
+        /// Session inactivity timeout in hours. Maximum 8760 hours (1 year).
+        /// </param>
         /// <param name="sessionsSinglePerUser"></param>
         /// <param name="sessionsTags"></param>
         /// <param name="rateLimitAnonymousUsers"></param>
@@ -1499,7 +1509,12 @@ namespace Supabase
         /// <param name="passwordRequiredCharacters"></param>
         /// <param name="securityManualLinkingEnabled"></param>
         /// <param name="securityUpdatePasswordRequireReauthentication"></param>
-        /// <param name="securityRefreshTokenReuseInterval"></param>
+        /// <param name="securityUpdatePasswordRequireCurrentPassword">
+        /// Require the user's current password when updating their password.
+        /// </param>
+        /// <param name="securityRefreshTokenReuseInterval">
+        /// Refresh token reuse interval in seconds. Maximum 300 seconds (5 minutes).
+        /// </param>
         /// <param name="mailerOtpExp"></param>
         /// <param name="mailerOtpLength"></param>
         /// <param name="smsAutoconfirm"></param>
@@ -1737,6 +1752,7 @@ namespace Supabase
             global::Supabase.UpdateAuthConfigBodyPasswordRequiredCharacters? passwordRequiredCharacters,
             bool? securityManualLinkingEnabled,
             bool? securityUpdatePasswordRequireReauthentication,
+            bool? securityUpdatePasswordRequireCurrentPassword,
             int? securityRefreshTokenReuseInterval,
             int? mailerOtpExp,
             int? mailerOtpLength,
@@ -1972,6 +1988,7 @@ namespace Supabase
             this.PasswordRequiredCharacters = passwordRequiredCharacters;
             this.SecurityManualLinkingEnabled = securityManualLinkingEnabled;
             this.SecurityUpdatePasswordRequireReauthentication = securityUpdatePasswordRequireReauthentication;
+            this.SecurityUpdatePasswordRequireCurrentPassword = securityUpdatePasswordRequireCurrentPassword;
             this.SecurityRefreshTokenReuseInterval = securityRefreshTokenReuseInterval;
             this.MailerOtpExp = mailerOtpExp;
             this.MailerOtpLength = mailerOtpLength;

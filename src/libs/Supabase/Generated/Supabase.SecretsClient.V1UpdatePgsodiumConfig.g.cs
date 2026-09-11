@@ -56,7 +56,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.PgsodiumConfigResponse> V1UpdatePgsodiumConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.PgsodiumConfigResponseOutput> V1UpdatePgsodiumConfigAsync(
             string @ref,
 
             global::Supabase.UpdatePgsodiumConfigBody request,
@@ -86,7 +86,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.PgsodiumConfigResponse>> V1UpdatePgsodiumConfigAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.PgsodiumConfigResponseOutput>> V1UpdatePgsodiumConfigAsResponseAsync(
             string @ref,
 
             global::Supabase.UpdatePgsodiumConfigBody request,
@@ -504,9 +504,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.PgsodiumConfigResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.PgsodiumConfigResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.PgsodiumConfigResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.PgsodiumConfigResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -536,9 +536,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.PgsodiumConfigResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.PgsodiumConfigResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.PgsodiumConfigResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.PgsodiumConfigResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -593,7 +593,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.PgsodiumConfigResponse> V1UpdatePgsodiumConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.PgsodiumConfigResponseOutput> V1UpdatePgsodiumConfigAsync(
             string @ref,
             string rootKey,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

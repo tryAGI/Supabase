@@ -17,7 +17,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.SslEnforcementResponse> V1UpdateSslEnforcementConfigAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.SslEnforcementResponseOutput> V1UpdateSslEnforcementConfigAsync(
             string @ref,
 
             global::Supabase.SslEnforcementRequest request,
@@ -36,7 +36,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SslEnforcementResponse>> V1UpdateSslEnforcementConfigAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SslEnforcementResponseOutput>> V1UpdateSslEnforcementConfigAsResponseAsync(
             string @ref,
 
             global::Supabase.SslEnforcementRequest request,
@@ -55,7 +55,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.SslEnforcementResponse> V1UpdateSslEnforcementConfigAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.SslEnforcementResponseOutput> V1UpdateSslEnforcementConfigAsync(
             string @ref,
             global::Supabase.SslEnforcementRequestRequestedConfig requestedConfig,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

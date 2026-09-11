@@ -53,7 +53,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.NetworkBanResponse> V1ListAllNetworkBansAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.NetworkBanResponseOutput> V1ListAllNetworkBansAsync(
             string @ref,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -78,7 +78,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkBanResponse>> V1ListAllNetworkBansAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkBanResponseOutput>> V1ListAllNetworkBansAsResponseAsync(
             string @ref,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -484,9 +484,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.NetworkBanResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.NetworkBanResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkBanResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkBanResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -516,9 +516,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.NetworkBanResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.NetworkBanResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkBanResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkBanResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

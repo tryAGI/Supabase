@@ -56,7 +56,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.CreateRoleResponse> V1CreateLoginRoleAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.CreateRoleResponseOutput> V1CreateLoginRoleAsync(
             string @ref,
 
             global::Supabase.CreateRoleBody request,
@@ -86,7 +86,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateRoleResponse>> V1CreateLoginRoleAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateRoleResponseOutput>> V1CreateLoginRoleAsResponseAsync(
             string @ref,
 
             global::Supabase.CreateRoleBody request,
@@ -504,9 +504,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.CreateRoleResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.CreateRoleResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateRoleResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateRoleResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -536,9 +536,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.CreateRoleResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.CreateRoleResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateRoleResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateRoleResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -591,7 +591,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.CreateRoleResponse> V1CreateLoginRoleAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.CreateRoleResponseOutput> V1CreateLoginRoleAsync(
             string @ref,
             bool readOnly,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

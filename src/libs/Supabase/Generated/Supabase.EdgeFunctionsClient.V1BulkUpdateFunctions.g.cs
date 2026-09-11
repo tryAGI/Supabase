@@ -54,7 +54,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.BulkUpdateFunctionResponse> V1BulkUpdateFunctionsAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.BulkUpdateFunctionResponseOutput> V1BulkUpdateFunctionsAsync(
             string @ref,
 
             global::System.Collections.Generic.IList<global::Supabase.BulkUpdateFunctionBodyItem> request,
@@ -82,7 +82,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.BulkUpdateFunctionResponse>> V1BulkUpdateFunctionsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.BulkUpdateFunctionResponseOutput>> V1BulkUpdateFunctionsAsResponseAsync(
             string @ref,
 
             global::System.Collections.Generic.IList<global::Supabase.BulkUpdateFunctionBodyItem> request,
@@ -532,9 +532,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.BulkUpdateFunctionResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.BulkUpdateFunctionResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.BulkUpdateFunctionResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.BulkUpdateFunctionResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -564,9 +564,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.BulkUpdateFunctionResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.BulkUpdateFunctionResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.BulkUpdateFunctionResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.BulkUpdateFunctionResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

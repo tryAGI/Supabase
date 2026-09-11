@@ -54,7 +54,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.JitAuthorizeAccessResponse> V1AuthorizeJitAccessAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.JitAuthorizeAccessResponseOutput> V1AuthorizeJitAccessAsync(
             string @ref,
 
             global::Supabase.AuthorizeJitAccessBody request,
@@ -82,7 +82,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.JitAuthorizeAccessResponse>> V1AuthorizeJitAccessAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.JitAuthorizeAccessResponseOutput>> V1AuthorizeJitAccessAsResponseAsync(
             string @ref,
 
             global::Supabase.AuthorizeJitAccessBody request,
@@ -500,9 +500,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.JitAuthorizeAccessResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.JitAuthorizeAccessResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.JitAuthorizeAccessResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.JitAuthorizeAccessResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -532,9 +532,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.JitAuthorizeAccessResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.JitAuthorizeAccessResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.JitAuthorizeAccessResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.JitAuthorizeAccessResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -586,7 +586,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.JitAuthorizeAccessResponse> V1AuthorizeJitAccessAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.JitAuthorizeAccessResponseOutput> V1AuthorizeJitAccessAsync(
             string @ref,
             string role,
             string rhost,

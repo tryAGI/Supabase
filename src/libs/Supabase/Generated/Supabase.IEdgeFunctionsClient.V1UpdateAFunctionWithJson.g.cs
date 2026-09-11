@@ -39,7 +39,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.FunctionResponse> V1UpdateAFunctionWithJsonAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.FunctionSlugResponseOutput> V1UpdateAFunctionWithJsonAsync(
             string @ref,
             string functionSlug,
 
@@ -88,7 +88,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.FunctionResponse>> V1UpdateAFunctionWithJsonAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.FunctionSlugResponseOutput>> V1UpdateAFunctionWithJsonAsResponseAsync(
             string @ref,
             string functionSlug,
 
@@ -139,7 +139,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.FunctionResponse> V1UpdateAFunctionWithJsonAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.FunctionSlugResponseOutput> V1UpdateAFunctionWithJsonAsync(
             string @ref,
             string functionSlug,
             string? slug = default,

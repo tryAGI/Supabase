@@ -17,7 +17,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.CreateRoleResponse> V1CreateLoginRoleAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.CreateRoleResponseOutput> V1CreateLoginRoleAsync(
             string @ref,
 
             global::Supabase.CreateRoleBody request,
@@ -36,7 +36,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateRoleResponse>> V1CreateLoginRoleAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateRoleResponseOutput>> V1CreateLoginRoleAsResponseAsync(
             string @ref,
 
             global::Supabase.CreateRoleBody request,
@@ -55,7 +55,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.CreateRoleResponse> V1CreateLoginRoleAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.CreateRoleResponseOutput> V1CreateLoginRoleAsync(
             string @ref,
             bool readOnly,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

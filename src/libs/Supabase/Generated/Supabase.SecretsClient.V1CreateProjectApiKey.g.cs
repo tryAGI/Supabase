@@ -58,7 +58,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponse> V1CreateProjectApiKeyAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponseOutput> V1CreateProjectApiKeyAsync(
             string @ref,
 
             global::Supabase.CreateApiKeyBody request,
@@ -90,7 +90,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ApiKeyResponse>> V1CreateProjectApiKeyAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ApiKeyResponseOutput>> V1CreateProjectApiKeyAsResponseAsync(
             string @ref,
 
             global::Supabase.CreateApiKeyBody request,
@@ -482,9 +482,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.ApiKeyResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.ApiKeyResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ApiKeyResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ApiKeyResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -514,9 +514,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.ApiKeyResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.ApiKeyResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ApiKeyResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.ApiKeyResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -572,7 +572,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponse> V1CreateProjectApiKeyAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.ApiKeyResponseOutput> V1CreateProjectApiKeyAsync(
             string @ref,
             global::Supabase.CreateApiKeyBodyType type,
             string name,

@@ -17,7 +17,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.UpdateProviderResponse> V1UpdateASsoProviderAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.UpdateProviderResponseOutput> V1UpdateASsoProviderAsync(
             string @ref,
             global::System.Guid providerId,
 
@@ -37,7 +37,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateProviderResponse>> V1UpdateASsoProviderAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.UpdateProviderResponseOutput>> V1UpdateASsoProviderAsResponseAsync(
             string @ref,
             global::System.Guid providerId,
 
@@ -61,7 +61,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.UpdateProviderResponse> V1UpdateASsoProviderAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.UpdateProviderResponseOutput> V1UpdateASsoProviderAsync(
             string @ref,
             global::System.Guid providerId,
             string? metadataXml = default,

@@ -17,7 +17,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsResponse> V1UpdateNetworkRestrictionsAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsResponseOutput> V1UpdateNetworkRestrictionsAsync(
             string @ref,
 
             global::Supabase.NetworkRestrictionsRequest request,
@@ -36,7 +36,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsResponse>> V1UpdateNetworkRestrictionsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsResponseOutput>> V1UpdateNetworkRestrictionsAsResponseAsync(
             string @ref,
 
             global::Supabase.NetworkRestrictionsRequest request,
@@ -56,7 +56,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsResponse> V1UpdateNetworkRestrictionsAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsResponseOutput> V1UpdateNetworkRestrictionsAsync(
             string @ref,
             global::System.Collections.Generic.IList<string>? dbAllowedCidrs = default,
             global::System.Collections.Generic.IList<string>? dbAllowedCidrsV6 = default,

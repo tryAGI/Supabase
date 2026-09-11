@@ -15,7 +15,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.V1BackupScheduleResponse> V1UpdateBackupScheduleAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.V1BackupScheduleResponseOutput> V1UpdateBackupScheduleAsync(
             string @ref,
 
             global::Supabase.V1UpdateBackupScheduleBody request,
@@ -32,7 +32,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.V1BackupScheduleResponse>> V1UpdateBackupScheduleAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.V1BackupScheduleResponseOutput>> V1UpdateBackupScheduleAsResponseAsync(
             string @ref,
 
             global::Supabase.V1UpdateBackupScheduleBody request,
@@ -52,7 +52,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.V1BackupScheduleResponse> V1UpdateBackupScheduleAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.V1BackupScheduleResponseOutput> V1UpdateBackupScheduleAsync(
             string @ref,
             string scheduleFor,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

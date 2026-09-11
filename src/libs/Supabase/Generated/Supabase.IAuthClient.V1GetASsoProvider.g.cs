@@ -16,7 +16,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.GetProviderResponse> V1GetASsoProviderAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.GetProviderResponseOutput> V1GetASsoProviderAsync(
             string @ref,
             global::System.Guid providerId,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -33,7 +33,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.GetProviderResponse>> V1GetASsoProviderAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.GetProviderResponseOutput>> V1GetASsoProviderAsResponseAsync(
             string @ref,
             global::System.Guid providerId,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

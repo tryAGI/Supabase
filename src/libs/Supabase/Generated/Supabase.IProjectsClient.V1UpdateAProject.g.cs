@@ -14,7 +14,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.V1ProjectRefResponse> V1UpdateAProjectAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.V1ProjectRefResponseOutput> V1UpdateAProjectAsync(
             string @ref,
 
             global::Supabase.V1UpdateProjectBody request,
@@ -30,7 +30,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.V1ProjectRefResponse>> V1UpdateAProjectAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.V1ProjectRefResponseOutput>> V1UpdateAProjectAsResponseAsync(
             string @ref,
 
             global::Supabase.V1UpdateProjectBody request,
@@ -46,7 +46,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.V1ProjectRefResponse> V1UpdateAProjectAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.V1ProjectRefResponseOutput> V1UpdateAProjectAsync(
             string @ref,
             string name,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

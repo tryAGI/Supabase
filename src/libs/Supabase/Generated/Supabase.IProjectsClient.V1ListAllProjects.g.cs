@@ -11,7 +11,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.V1ProjectWithDatabaseResponse>> V1ListAllProjectsAsync(
+        global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.V1ProjectWithDatabaseResponseOutput>> V1ListAllProjectsAsync(
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -21,7 +21,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.V1ProjectWithDatabaseResponse>>> V1ListAllProjectsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.V1ProjectWithDatabaseResponseOutput>>> V1ListAllProjectsAsResponseAsync(
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

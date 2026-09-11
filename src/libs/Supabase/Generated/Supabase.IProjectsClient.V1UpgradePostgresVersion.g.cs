@@ -17,7 +17,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.ProjectUpgradeInitiateResponse> V1UpgradePostgresVersionAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.ProjectUpgradeInitiateResponseOutput> V1UpgradePostgresVersionAsync(
             string @ref,
 
             global::Supabase.UpgradeDatabaseBody request,
@@ -36,7 +36,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ProjectUpgradeInitiateResponse>> V1UpgradePostgresVersionAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.ProjectUpgradeInitiateResponseOutput>> V1UpgradePostgresVersionAsResponseAsync(
             string @ref,
 
             global::Supabase.UpgradeDatabaseBody request,
@@ -56,7 +56,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        global::System.Threading.Tasks.Task<global::Supabase.ProjectUpgradeInitiateResponse> V1UpgradePostgresVersionAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.ProjectUpgradeInitiateResponseOutput> V1UpgradePostgresVersionAsync(
             string @ref,
             string targetVersion,
             global::Supabase.UpgradeDatabaseBodyReleaseChannel? releaseChannel = default,

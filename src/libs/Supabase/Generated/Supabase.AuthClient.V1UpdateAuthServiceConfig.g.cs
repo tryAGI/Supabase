@@ -53,7 +53,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AuthConfigResponse> V1UpdateAuthServiceConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AuthConfigResponseOutput> V1UpdateAuthServiceConfigAsync(
             string @ref,
 
             global::Supabase.UpdateAuthConfigBody request,
@@ -80,7 +80,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.AuthConfigResponse>> V1UpdateAuthServiceConfigAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.AuthConfigResponseOutput>> V1UpdateAuthServiceConfigAsResponseAsync(
             string @ref,
 
             global::Supabase.UpdateAuthConfigBody request,
@@ -498,9 +498,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.AuthConfigResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.AuthConfigResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.AuthConfigResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.AuthConfigResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -530,9 +530,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.AuthConfigResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.AuthConfigResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.AuthConfigResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.AuthConfigResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -634,8 +634,12 @@ namespace Supabase
         /// <param name="securityCaptchaEnabled"></param>
         /// <param name="securityCaptchaProvider"></param>
         /// <param name="securityCaptchaSecret"></param>
-        /// <param name="sessionsTimebox"></param>
-        /// <param name="sessionsInactivityTimeout"></param>
+        /// <param name="sessionsTimebox">
+        /// Session timebox in hours. Maximum 8760 hours (1 year).
+        /// </param>
+        /// <param name="sessionsInactivityTimeout">
+        /// Session inactivity timeout in hours. Maximum 8760 hours (1 year).
+        /// </param>
         /// <param name="sessionsSinglePerUser"></param>
         /// <param name="sessionsTags"></param>
         /// <param name="rateLimitAnonymousUsers"></param>
@@ -652,7 +656,12 @@ namespace Supabase
         /// <param name="passwordRequiredCharacters"></param>
         /// <param name="securityManualLinkingEnabled"></param>
         /// <param name="securityUpdatePasswordRequireReauthentication"></param>
-        /// <param name="securityRefreshTokenReuseInterval"></param>
+        /// <param name="securityUpdatePasswordRequireCurrentPassword">
+        /// Require the user's current password when updating their password.
+        /// </param>
+        /// <param name="securityRefreshTokenReuseInterval">
+        /// Refresh token reuse interval in seconds. Maximum 300 seconds (5 minutes).
+        /// </param>
         /// <param name="mailerOtpExp"></param>
         /// <param name="mailerOtpLength"></param>
         /// <param name="smsAutoconfirm"></param>
@@ -815,7 +824,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AuthConfigResponse> V1UpdateAuthServiceConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AuthConfigResponseOutput> V1UpdateAuthServiceConfigAsync(
             string @ref,
             string? siteUrl = default,
             bool? disableSignup = default,
@@ -891,6 +900,7 @@ namespace Supabase
             global::Supabase.UpdateAuthConfigBodyPasswordRequiredCharacters? passwordRequiredCharacters = default,
             bool? securityManualLinkingEnabled = default,
             bool? securityUpdatePasswordRequireReauthentication = default,
+            bool? securityUpdatePasswordRequireCurrentPassword = default,
             int? securityRefreshTokenReuseInterval = default,
             int? mailerOtpExp = default,
             int? mailerOtpLength = default,
@@ -1130,6 +1140,7 @@ namespace Supabase
                 PasswordRequiredCharacters = passwordRequiredCharacters,
                 SecurityManualLinkingEnabled = securityManualLinkingEnabled,
                 SecurityUpdatePasswordRequireReauthentication = securityUpdatePasswordRequireReauthentication,
+                SecurityUpdatePasswordRequireCurrentPassword = securityUpdatePasswordRequireCurrentPassword,
                 SecurityRefreshTokenReuseInterval = securityRefreshTokenReuseInterval,
                 MailerOtpExp = mailerOtpExp,
                 MailerOtpLength = mailerOtpLength,

@@ -53,7 +53,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.SigningKeyResponse> V1CreateProjectSigningKeyAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.SigningKeyResponseOutput> V1CreateProjectSigningKeyAsync(
             string @ref,
 
             global::Supabase.CreateSigningKeyBody request,
@@ -80,7 +80,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SigningKeyResponse>> V1CreateProjectSigningKeyAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.SigningKeyResponseOutput>> V1CreateProjectSigningKeyAsResponseAsync(
             string @ref,
 
             global::Supabase.CreateSigningKeyBody request,
@@ -466,9 +466,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.SigningKeyResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.SigningKeyResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.SigningKeyResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.SigningKeyResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -498,9 +498,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.SigningKeyResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.SigningKeyResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.SigningKeyResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.SigningKeyResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -552,7 +552,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.SigningKeyResponse> V1CreateProjectSigningKeyAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.SigningKeyResponseOutput> V1CreateProjectSigningKeyAsync(
             string @ref,
             global::Supabase.CreateSigningKeyBodyAlgorithm algorithm,
             global::Supabase.CreateSigningKeyBodyStatus? status = default,

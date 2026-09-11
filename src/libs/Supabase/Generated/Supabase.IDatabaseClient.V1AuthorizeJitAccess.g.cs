@@ -15,7 +15,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.JitAuthorizeAccessResponse> V1AuthorizeJitAccessAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.JitAuthorizeAccessResponseOutput> V1AuthorizeJitAccessAsync(
             string @ref,
 
             global::Supabase.AuthorizeJitAccessBody request,
@@ -32,7 +32,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.JitAuthorizeAccessResponse>> V1AuthorizeJitAccessAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.JitAuthorizeAccessResponseOutput>> V1AuthorizeJitAccessAsResponseAsync(
             string @ref,
 
             global::Supabase.AuthorizeJitAccessBody request,
@@ -50,7 +50,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.JitAuthorizeAccessResponse> V1AuthorizeJitAccessAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.JitAuthorizeAccessResponseOutput> V1AuthorizeJitAccessAsync(
             string @ref,
             string role,
             string rhost,

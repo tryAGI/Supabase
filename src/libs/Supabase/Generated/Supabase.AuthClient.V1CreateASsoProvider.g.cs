@@ -53,7 +53,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.CreateProviderResponse> V1CreateASsoProviderAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.CreateProviderResponseOutput> V1CreateASsoProviderAsync(
             string @ref,
 
             global::Supabase.CreateProviderBody request,
@@ -80,7 +80,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateProviderResponse>> V1CreateASsoProviderAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateProviderResponseOutput>> V1CreateASsoProviderAsResponseAsync(
             string @ref,
 
             global::Supabase.CreateProviderBody request,
@@ -498,9 +498,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.CreateProviderResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.CreateProviderResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateProviderResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateProviderResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -530,9 +530,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.CreateProviderResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.CreateProviderResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateProviderResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.CreateProviderResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -589,7 +589,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.CreateProviderResponse> V1CreateASsoProviderAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.CreateProviderResponseOutput> V1CreateASsoProviderAsync(
             string @ref,
             global::Supabase.CreateProviderBodyType type = default,
             string? metadataXml = default,

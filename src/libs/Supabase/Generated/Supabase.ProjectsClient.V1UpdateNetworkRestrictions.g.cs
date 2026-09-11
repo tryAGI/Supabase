@@ -56,7 +56,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsResponse> V1UpdateNetworkRestrictionsAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsResponseOutput> V1UpdateNetworkRestrictionsAsync(
             string @ref,
 
             global::Supabase.NetworkRestrictionsRequest request,
@@ -86,7 +86,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsResponse>> V1UpdateNetworkRestrictionsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsResponseOutput>> V1UpdateNetworkRestrictionsAsResponseAsync(
             string @ref,
 
             global::Supabase.NetworkRestrictionsRequest request,
@@ -504,9 +504,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.NetworkRestrictionsResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.NetworkRestrictionsResponseOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -536,9 +536,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.NetworkRestrictionsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.NetworkRestrictionsResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsResponse>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -592,7 +592,7 @@ namespace Supabase
 #if NET8_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
 #endif
-        public async global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsResponse> V1UpdateNetworkRestrictionsAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsResponseOutput> V1UpdateNetworkRestrictionsAsync(
             string @ref,
             global::System.Collections.Generic.IList<string>? dbAllowedCidrs = default,
             global::System.Collections.Generic.IList<string>? dbAllowedCidrsV6 = default,

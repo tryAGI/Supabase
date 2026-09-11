@@ -16,7 +16,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.LegacyApiKeysResponse> V1UpdateProjectLegacyApiKeysAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.LegacyApiKeysResponseOutput> V1UpdateProjectLegacyApiKeysAsync(
             string @ref,
             string enabled,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -33,7 +33,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.LegacyApiKeysResponse>> V1UpdateProjectLegacyApiKeysAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.LegacyApiKeysResponseOutput>> V1UpdateProjectLegacyApiKeysAsResponseAsync(
             string @ref,
             string enabled,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

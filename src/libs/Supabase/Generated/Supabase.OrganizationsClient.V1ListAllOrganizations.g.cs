@@ -46,7 +46,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1>> V1ListAllOrganizationsAsync(
+        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1Output>> V1ListAllOrganizationsAsync(
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -64,7 +64,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1>>> V1ListAllOrganizationsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1Output>>> V1ListAllOrganizationsAsResponseAsync(
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -467,9 +467,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1>), JsonSerializerContext) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1Output>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1Output>), JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1>>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1Output>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -499,9 +499,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1Output>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1Output>), JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1>>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Supabase.OrganizationResponseV1Output>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
