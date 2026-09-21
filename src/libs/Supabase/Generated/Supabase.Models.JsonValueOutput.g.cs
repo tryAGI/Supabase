@@ -87,9 +87,9 @@ namespace Supabase
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public object? JsonValueOutputVariant3 { get; init; }
+        public global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>? JsonValueOutputVariant3 { get; init; }
 #else
-        public object? JsonValueOutputVariant3 { get; }
+        public global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>? JsonValueOutputVariant3 { get; }
 #endif
 
         /// <summary>
@@ -107,7 +107,7 @@ namespace Supabase
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out object? value)
+            out global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>? value)
         {
             value = JsonValueOutputVariant3;
             return IsJsonValueOutputVariant3;
@@ -116,7 +116,7 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public object PickJsonValueOutputVariant3() => IsJsonValueOutputVariant3
+        public global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput> PickJsonValueOutputVariant3() => IsJsonValueOutputVariant3
             ? JsonValueOutputVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonValueOutputVariant3' but the value was {ToString()}.");
         /// <summary>
@@ -145,10 +145,33 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator JsonValueOutput(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput> value) => new JsonValueOutput((global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>?(JsonValueOutput @this) => @this.JsonValueOutputVariant3;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public JsonValueOutput(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>? value)
+        {
+            JsonValueOutputVariant3 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static JsonValueOutput FromJsonValueOutputVariant3(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>? value) => new JsonValueOutput(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public JsonValueOutput(
             global::Supabase.AnyOf<string, double?, bool?>? jsonValueOutputVariant1,
             global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>? jsonValueOutputVariant2,
-            object? jsonValueOutputVariant3
+            global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>? jsonValueOutputVariant3
             )
         {
             JsonValueOutputVariant1 = jsonValueOutputVariant1;
@@ -188,7 +211,7 @@ namespace Supabase
         public TResult? Match<TResult>(
             global::System.Func<global::Supabase.AnyOf<string, double?, bool?>?, TResult>? jsonValueOutputVariant1 = null,
             global::System.Func<global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>, TResult>? jsonValueOutputVariant2 = null,
-            global::System.Func<object, TResult>? jsonValueOutputVariant3 = null,
+            global::System.Func<global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>, TResult>? jsonValueOutputVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -220,7 +243,7 @@ namespace Supabase
 
             global::System.Action<global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>>? jsonValueOutputVariant2 = null,
 
-            global::System.Action<object>? jsonValueOutputVariant3 = null,
+            global::System.Action<global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>>? jsonValueOutputVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -248,7 +271,7 @@ namespace Supabase
         public void Switch(
             global::System.Action<global::Supabase.AnyOf<string, double?, bool?>?>? jsonValueOutputVariant1 = null,
             global::System.Action<global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>>? jsonValueOutputVariant2 = null,
-            global::System.Action<object>? jsonValueOutputVariant3 = null,
+            global::System.Action<global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>>? jsonValueOutputVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -282,7 +305,7 @@ namespace Supabase
                 JsonValueOutputVariant2,
                 typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>),
                 JsonValueOutputVariant3,
-                typeof(object),
+                typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -301,7 +324,7 @@ namespace Supabase
             return
                 global::System.Collections.Generic.EqualityComparer<global::Supabase.AnyOf<string, double?, bool?>?>.Default.Equals(JsonValueOutputVariant1, other.JsonValueOutputVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>?>.Default.Equals(JsonValueOutputVariant2, other.JsonValueOutputVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(JsonValueOutputVariant3, other.JsonValueOutputVariant3)
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>?>.Default.Equals(JsonValueOutputVariant3, other.JsonValueOutputVariant3)
                 ;
         }
 
