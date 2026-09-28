@@ -190,7 +190,7 @@ namespace Supabase
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddRequiredParameter("project_ref", projectRef)
-                                .AddRequiredParameter("client_id", clientId.ToString()!)
+                                .AddRequiredParameter("client_id", clientId.ToString() ?? throw new global::System.InvalidOperationException("A required query parameter returned null from ToString()."))
                                 .AddRequiredParameter("response_type", responseType.ToValueString())
                                 .AddRequiredParameter("redirect_uri", redirectUri)
                                 .AddOptionalParameter("state", state)
@@ -238,10 +238,10 @@ namespace Supabase
                 PrepareV1OauthAuthorizeProjectClaimRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectRef: projectRef!,
-                    clientId: clientId!,
-                    responseType: responseType!,
-                    redirectUri: redirectUri!,
+                    projectRef: projectRef,
+                    clientId: clientId,
+                    responseType: responseType,
+                    redirectUri: redirectUri,
                     state: state,
                     responseMode: responseMode,
                     codeChallenge: codeChallenge,
@@ -267,7 +267,7 @@ namespace Supabase
                                 pathTemplate: "\"/v1/oauth/authorize/project-claim\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -301,7 +301,7 @@ namespace Supabase
                                 pathTemplate: "\"/v1/oauth/authorize/project-claim\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -342,7 +342,7 @@ namespace Supabase
                                 pathTemplate: "\"/v1/oauth/authorize/project-claim\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -390,7 +390,7 @@ namespace Supabase
                                 pathTemplate: "\"/v1/oauth/authorize/project-claim\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -412,7 +412,7 @@ namespace Supabase
                                 pathTemplate: "\"/v1/oauth/authorize/project-claim\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

@@ -225,7 +225,7 @@ namespace Supabase
                                 path: "/v1/oauth/authorize",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddRequiredParameter("client_id", clientId.ToString()!)
+                                .AddRequiredParameter("client_id", clientId.ToString() ?? throw new global::System.InvalidOperationException("A required query parameter returned null from ToString()."))
                                 .AddRequiredParameter("response_type", responseType.ToValueString())
                                 .AddRequiredParameter("redirect_uri", redirectUri)
                                 .AddOptionalParameter("scope", scope)
@@ -277,9 +277,9 @@ namespace Supabase
                 PrepareV1AuthorizeUserRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    clientId: clientId!,
-                    responseType: responseType!,
-                    redirectUri: redirectUri!,
+                    clientId: clientId,
+                    responseType: responseType,
+                    redirectUri: redirectUri,
                     scope: scope,
                     state: state,
                     responseMode: responseMode,
@@ -309,7 +309,7 @@ namespace Supabase
                                 pathTemplate: "\"/v1/oauth/authorize\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -343,7 +343,7 @@ namespace Supabase
                                 pathTemplate: "\"/v1/oauth/authorize\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -384,7 +384,7 @@ namespace Supabase
                                 pathTemplate: "\"/v1/oauth/authorize\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -432,7 +432,7 @@ namespace Supabase
                                 pathTemplate: "\"/v1/oauth/authorize\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -454,7 +454,7 @@ namespace Supabase
                                 pathTemplate: "\"/v1/oauth/authorize\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

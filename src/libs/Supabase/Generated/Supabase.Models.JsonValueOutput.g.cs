@@ -42,8 +42,8 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.AnyOf<string, double?, bool?> PickJsonValueOutputVariant1() => IsJsonValueOutputVariant1
-            ? JsonValueOutputVariant1!.Value
+        public global::Supabase.AnyOf<string, double?, bool?> PickJsonValueOutputVariant1() => JsonValueOutputVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonValueOutputVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput> PickJsonValueOutputVariant2() => IsJsonValueOutputVariant2
-            ? JsonValueOutputVariant2!
+        public global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput> PickJsonValueOutputVariant2() => JsonValueOutputVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonValueOutputVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput> PickJsonValueOutputVariant3() => IsJsonValueOutputVariant3
-            ? JsonValueOutputVariant3!
+        public global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput> PickJsonValueOutputVariant3() => JsonValueOutputVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonValueOutputVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -219,17 +219,17 @@ namespace Supabase
                 Validate();
             }
 
-            if (IsJsonValueOutputVariant1 && jsonValueOutputVariant1 != null)
+            if (JsonValueOutputVariant1 is { } __value0 && jsonValueOutputVariant1 != null)
             {
-                return jsonValueOutputVariant1(JsonValueOutputVariant1!);
+                return jsonValueOutputVariant1(__value0);
             }
-            else if (IsJsonValueOutputVariant2 && jsonValueOutputVariant2 != null)
+            else if (JsonValueOutputVariant2 is { } __value1 && jsonValueOutputVariant2 != null)
             {
-                return jsonValueOutputVariant2(JsonValueOutputVariant2!);
+                return jsonValueOutputVariant2(__value1);
             }
-            else if (IsJsonValueOutputVariant3 && jsonValueOutputVariant3 != null)
+            else if (JsonValueOutputVariant3 is { } __value2 && jsonValueOutputVariant3 != null)
             {
-                return jsonValueOutputVariant3(JsonValueOutputVariant3!);
+                return jsonValueOutputVariant3(__value2);
             }
 
             return default(TResult);
@@ -251,17 +251,17 @@ namespace Supabase
                 Validate();
             }
 
-            if (IsJsonValueOutputVariant1)
+            if (JsonValueOutputVariant1 is { } __value0)
             {
-                jsonValueOutputVariant1?.Invoke(JsonValueOutputVariant1!);
+                jsonValueOutputVariant1?.Invoke(__value0);
             }
-            else if (IsJsonValueOutputVariant2)
+            else if (JsonValueOutputVariant2 is { } __value1)
             {
-                jsonValueOutputVariant2?.Invoke(JsonValueOutputVariant2!);
+                jsonValueOutputVariant2?.Invoke(__value1);
             }
-            else if (IsJsonValueOutputVariant3)
+            else if (JsonValueOutputVariant3 is { } __value2)
             {
-                jsonValueOutputVariant3?.Invoke(JsonValueOutputVariant3!);
+                jsonValueOutputVariant3?.Invoke(__value2);
             }
         }
 
@@ -279,17 +279,17 @@ namespace Supabase
                 Validate();
             }
 
-            if (IsJsonValueOutputVariant1)
+            if (JsonValueOutputVariant1 is { } __value0)
             {
-                jsonValueOutputVariant1?.Invoke(JsonValueOutputVariant1!);
+                jsonValueOutputVariant1?.Invoke(__value0);
             }
-            else if (IsJsonValueOutputVariant2)
+            else if (JsonValueOutputVariant2 is { } __value1)
             {
-                jsonValueOutputVariant2?.Invoke(JsonValueOutputVariant2!);
+                jsonValueOutputVariant2?.Invoke(__value1);
             }
-            else if (IsJsonValueOutputVariant3)
+            else if (JsonValueOutputVariant3 is { } __value2)
             {
-                jsonValueOutputVariant3?.Invoke(JsonValueOutputVariant3!);
+                jsonValueOutputVariant3?.Invoke(__value2);
             }
         }
 
