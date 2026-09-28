@@ -1,19 +1,14 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace Supabase
 {
     /// <summary>
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant1?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant2?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant3?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant4?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant5?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant6?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant7?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant8?>), TypeInfoPropertyName = "ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant8_617f68989e237ab2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant1?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant2?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant3?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant4?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant5?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant6?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant7?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant8?>), TypeInfoPropertyName = "ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant8_eebfd56b636bd89f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.ApplyProjectAddonBodyAddonVariantVariant1?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant2?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant3?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant4?>), TypeInfoPropertyName = "ApplyProjectAddonBodyAddonVariantVariant4_5eb92f64276ba675")]
@@ -27,10 +22,16 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JsonValueOutput), TypeInfoPropertyName = "JsonValueOutput2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<string, double?, bool?>), TypeInfoPropertyName = "AnyOfStringDoubleBoolean2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ListProjectAddonsResponseOutput))]
@@ -75,10 +76,16 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant2), TypeInfoPropertyName = "V1RemoveProjectAddonAddonVariantVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant3), TypeInfoPropertyName = "V1RemoveProjectAddonAddonVariantVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1RemoveProjectAddonAddonVariantVariant4), TypeInfoPropertyName = "V1RemoveProjectAddonAddonVariantVariant42")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JsonValueOutput?), TypeInfoPropertyName = "NullableJsonValueOutput2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<string, double?, bool?>?), TypeInfoPropertyName = "NullableAnyOfStringDoubleBoolean2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ListProjectAddonsResponseOutputSelectedAddonType?), TypeInfoPropertyName = "NullableListProjectAddonsResponseOutputSelectedAddonType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant1?), TypeInfoPropertyName = "NullableListProjectAddonsResponseOutputSelectedAddonVariantIdVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant2?), TypeInfoPropertyName = "NullableListProjectAddonsResponseOutputSelectedAddonVariantIdVariant22")]
@@ -162,17 +169,33 @@ namespace Supabase
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
             options.Converters.Add(new global::Supabase.JsonConverters.JsonValueOutputJsonConverter());
+            #pragma warning disable CS0618 // Converter references a deprecated API model.
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<string, double?, bool?>());
+            #pragma warning restore CS0618
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant1?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant2?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant3?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant4?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant5?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant6?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant7?, global::Supabase.ListProjectAddonsResponseOutputSelectedAddonVariantIdVariant8?>());
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant1?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant2?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant3?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant4?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant5?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant6?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant7?, global::Supabase.ListProjectAddonsResponseOutputAvailableAddonVariantIdVariant8?>());
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ApplyProjectAddonBodyAddonVariantVariant1?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant2?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant3?, global::Supabase.ApplyProjectAddonBodyAddonVariantVariant4?>());
+            #pragma warning disable CS0618 // Converter references a deprecated API model.
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>());
+            #pragma warning restore CS0618
+            #pragma warning disable CS0618 // Converter references a deprecated API model.
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>());
+            #pragma warning restore CS0618
+            #pragma warning disable CS0618 // Converter references a deprecated API model.
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>());
+            #pragma warning restore CS0618
+            #pragma warning disable CS0618 // Converter references a deprecated API model.
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>());
+            #pragma warning restore CS0618
+            #pragma warning disable CS0618 // Converter references a deprecated API model.
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>());
+            #pragma warning restore CS0618
+            #pragma warning disable CS0618 // Converter references a deprecated API model.
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>());
+            #pragma warning restore CS0618
+            #pragma warning disable CS0618 // Converter references a deprecated API model.
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>());
+            #pragma warning restore CS0618
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>());
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>());
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<string, global::System.Guid?>());
