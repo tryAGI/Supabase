@@ -52,6 +52,16 @@ namespace Supabase
 
 
         /// <summary>
+        /// Advisors related endpoints.
+        /// </summary>
+        public AdvisorsClient Advisors => new AdvisorsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
         /// Analytics related endpoints.
         /// </summary>
         public AnalyticsClient Analytics => new AnalyticsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)

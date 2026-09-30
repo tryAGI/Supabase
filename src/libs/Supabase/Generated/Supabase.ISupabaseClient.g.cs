@@ -50,6 +50,11 @@ namespace Supabase
 
 
         /// <summary>
+        /// Advisors related endpoints.
+        /// </summary>
+        public AdvisorsClient Advisors { get; }
+
+        /// <summary>
         /// Analytics related endpoints.
         /// </summary>
         public AnalyticsClient Analytics { get; }

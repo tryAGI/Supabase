@@ -3,11 +3,11 @@
 
 namespace Supabase
 {
-    public partial class DomainsClient
+    public partial class DatabaseClient
     {
 
 
-        private static readonly global::Supabase.EndPointSecurityRequirement s_V1DeleteHostnameConfigSecurityRequirement0 =
+        private static readonly global::Supabase.EndPointSecurityRequirement s_V1GetDatabaseMetadataSecurityRequirement0 =
             new global::Supabase.EndPointSecurityRequirement
             {
                 Authorizations = new global::Supabase.EndPointAuthorizationRequirement[]
@@ -21,78 +21,75 @@ namespace Supabase
                     },
                 },
             };
-        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1DeleteHostnameConfigSecurityRequirements =
+        private static readonly global::Supabase.EndPointSecurityRequirement[] s_V1GetDatabaseMetadataSecurityRequirements =
             new global::Supabase.EndPointSecurityRequirement[]
-            {                s_V1DeleteHostnameConfigSecurityRequirement0,
+            {                s_V1GetDatabaseMetadataSecurityRequirement0,
             };
-        partial void PrepareV1DeleteHostnameConfigArguments(
+        partial void PrepareV1GetDatabaseMetadataArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string @ref,
-            ref string? removeAddon);
-        partial void PrepareV1DeleteHostnameConfigRequest(
+            ref string @ref);
+        partial void PrepareV1GetDatabaseMetadataRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string @ref,
-            string? removeAddon);
-        partial void ProcessV1DeleteHostnameConfigResponse(
+            string @ref);
+        partial void ProcessV1GetDatabaseMetadataResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
+        partial void ProcessV1GetDatabaseMetadataResponseContent(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpResponseMessage httpResponseMessage,
+            ref string content);
+
         /// <summary>
-        /// Deletes a project's custom hostname configuration<br/>
-        /// This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.<br/>
-        /// This endpoint is currently in its **Beta** stage.
+        /// Gets database metadata for the given project.<br/>
+        /// This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="removeAddon"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task V1DeleteHostnameConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.GetProjectDbMetadataResponseOutput> V1GetDatabaseMetadataAsync(
             string @ref,
-            string? removeAddon = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            await V1DeleteHostnameConfigAsResponseAsync(
+            var __response = await V1GetDatabaseMetadataAsResponseAsync(
                 @ref: @ref,
-                removeAddon: removeAddon,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
+
+            return __response.Body;
         }
         /// <summary>
-        /// Deletes a project's custom hostname configuration<br/>
-        /// This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.<br/>
-        /// This endpoint is currently in its **Beta** stage.
+        /// Gets database metadata for the given project.<br/>
+        /// This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
         /// </param>
-        /// <param name="removeAddon"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse> V1DeleteHostnameConfigAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.GetProjectDbMetadataResponseOutput>> V1GetDatabaseMetadataAsResponseAsync(
             string @ref,
-            string? removeAddon = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareV1DeleteHostnameConfigArguments(
+            PrepareV1GetDatabaseMetadataArguments(
                 httpClient: HttpClient,
-                @ref: ref @ref,
-                removeAddon: ref removeAddon);
+                @ref: ref @ref);
 
 
             var __authorizations = global::Supabase.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_V1DeleteHostnameConfigSecurityRequirements,
-                operationName: "V1DeleteHostnameConfigAsync");
+                securityRequirements: s_V1GetDatabaseMetadataSecurityRequirements,
+                operationName: "V1GetDatabaseMetadataAsync");
 
             using var __timeoutCancellationTokenSource = global::Supabase.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -112,18 +109,15 @@ namespace Supabase
             {
 
                             var __pathBuilder = new global::Supabase.PathBuilder(
-                                path: $"/v1/projects/{@ref}/custom-hostname",
+                                path: $"/v1/projects/{@ref}/database/context",
                                 baseUri: HttpClient.BaseAddress);
-                            __pathBuilder
-                                .AddOptionalParameter("remove_addon", removeAddon)
-                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Supabase.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Delete,
+                    method: global::System.Net.Http.HttpMethod.Get,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -154,11 +148,10 @@ namespace Supabase
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareV1DeleteHostnameConfigRequest(
+                PrepareV1GetDatabaseMetadataRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @ref: @ref,
-                    removeAddon: removeAddon);
+                    @ref: @ref);
 
                 return __httpRequest;
             }
@@ -175,10 +168,10 @@ namespace Supabase
                     await global::Supabase.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1DeleteHostnameConfig",
-                                methodName: "V1DeleteHostnameConfigAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/custom-hostname\"",
-                                httpMethod: "DELETE",
+                                operationId: "V1GetDatabaseMetadata",
+                                methodName: "V1GetDatabaseMetadataAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/database/context\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
@@ -209,10 +202,10 @@ namespace Supabase
                         await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1DeleteHostnameConfig",
-                                methodName: "V1DeleteHostnameConfigAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/custom-hostname\"",
-                                httpMethod: "DELETE",
+                                operationId: "V1GetDatabaseMetadata",
+                                methodName: "V1GetDatabaseMetadataAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/database/context\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
@@ -250,10 +243,10 @@ namespace Supabase
                         await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1DeleteHostnameConfig",
-                                methodName: "V1DeleteHostnameConfigAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/custom-hostname\"",
-                                httpMethod: "DELETE",
+                                operationId: "V1GetDatabaseMetadata",
+                                methodName: "V1GetDatabaseMetadataAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/database/context\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
@@ -290,7 +283,7 @@ namespace Supabase
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessV1DeleteHostnameConfigResponse(
+                ProcessV1GetDatabaseMetadataResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -298,10 +291,10 @@ namespace Supabase
                     await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1DeleteHostnameConfig",
-                                methodName: "V1DeleteHostnameConfigAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/custom-hostname\"",
-                                httpMethod: "DELETE",
+                                operationId: "V1GetDatabaseMetadata",
+                                methodName: "V1GetDatabaseMetadataAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/database/context\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
@@ -320,10 +313,10 @@ namespace Supabase
                     await global::Supabase.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Supabase.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "V1DeleteHostnameConfig",
-                                methodName: "V1DeleteHostnameConfigAsync",
-                                pathTemplate: "$\"/v1/projects/{@ref}/custom-hostname\"",
-                                httpMethod: "DELETE",
+                                operationId: "V1GetDatabaseMetadata",
+                                methodName: "V1GetDatabaseMetadataAsync",
+                                pathTemplate: "$\"/v1/projects/{@ref}/database/context\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
@@ -433,38 +426,6 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            //
-                            if ((int)__response.StatusCode == 500)
-                            {
-                                string? __content_500 = null;
-                                global::System.Exception? __exception_500 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_500 = __ex;
-                                }
-
-
-                                throw global::Supabase.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_500,
-                                    responseBody: __content_500,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -478,15 +439,22 @@ namespace Supabase
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
+                                ProcessV1GetDatabaseMetadataResponseContent(
+                                    httpClient: HttpClient,
+                                    httpResponseMessage: __response,
+                                    content: ref __content);
 
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                return new global::Supabase.AutoSDKHttpResponse(
+                                    var __value = global::Supabase.GetProjectDbMetadataResponseOutput.FromJson(__content, JsonSerializerContext) ??
+                                        throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.GetProjectDbMetadataResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
-                                        requestUri: __response.RequestMessage?.RequestUri);
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -506,10 +474,19 @@ namespace Supabase
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
-                                    return new global::Supabase.AutoSDKHttpResponse(
+                                    using var __content = await __response.Content.ReadAsStreamAsync(
+                #if NET5_0_OR_GREATER
+                                        __effectiveCancellationToken
+                #endif
+                                    ).ConfigureAwait(false);
+
+                                    var __value = await global::Supabase.GetProjectDbMetadataResponseOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                        throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.GetProjectDbMetadataResponseOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
-                                        requestUri: __response.RequestMessage?.RequestUri);
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

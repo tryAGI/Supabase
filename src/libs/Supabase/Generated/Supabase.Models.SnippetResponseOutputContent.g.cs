@@ -21,8 +21,7 @@ namespace Supabase
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("schema_version")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string SchemaVersion { get; set; }
+        public string? SchemaVersion { get; set; }
 
         /// <summary>
         ///
@@ -40,16 +39,16 @@ namespace Supabase
         /// <summary>
         /// Initializes a new instance of the <see cref="SnippetResponseOutputContent" /> class.
         /// </summary>
-        /// <param name="schemaVersion"></param>
         /// <param name="sql"></param>
+        /// <param name="schemaVersion"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SnippetResponseOutputContent(
-            string schemaVersion,
-            string sql)
+            string sql,
+            string? schemaVersion)
         {
-            this.SchemaVersion = schemaVersion ?? throw new global::System.ArgumentNullException(nameof(schemaVersion));
+            this.SchemaVersion = schemaVersion;
             this.Sql = sql ?? throw new global::System.ArgumentNullException(nameof(sql));
         }
 

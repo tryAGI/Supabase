@@ -5,40 +5,37 @@ namespace Supabase
     public partial interface IOAuthClient
     {
         /// <summary>
-        /// [Beta] Exchange auth code for user's access and refresh token<br/>
-        /// Supports `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:jwt-bearer` grant types. The `jwt-bearer` grant type (IDJAG — identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.
+        /// Exchange auth code for user's access and refresh token<br/>
+        /// Supports `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:jwt-bearer` grant types. The `jwt-bearer` grant type (IDJAG — identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.<br/>
+        /// This endpoint is currently in its **Beta** stage.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-#if NET8_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
-#endif
         global::System.Threading.Tasks.Task<global::Supabase.OAuthTokenResponseOutput> V1ExchangeOauthTokenAsync(
 
             global::Supabase.OAuthTokenBody request,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// [Beta] Exchange auth code for user's access and refresh token<br/>
-        /// Supports `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:jwt-bearer` grant types. The `jwt-bearer` grant type (IDJAG — identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.
+        /// Exchange auth code for user's access and refresh token<br/>
+        /// Supports `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:jwt-bearer` grant types. The `jwt-bearer` grant type (IDJAG — identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.<br/>
+        /// This endpoint is currently in its **Beta** stage.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-#if NET8_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
-#endif
         global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.OAuthTokenResponseOutput>> V1ExchangeOauthTokenAsResponseAsync(
 
             global::Supabase.OAuthTokenBody request,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// [Beta] Exchange auth code for user's access and refresh token<br/>
-        /// Supports `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:jwt-bearer` grant types. The `jwt-bearer` grant type (IDJAG — identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.
+        /// Exchange auth code for user's access and refresh token<br/>
+        /// Supports `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:jwt-bearer` grant types. The `jwt-bearer` grant type (IDJAG — identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.<br/>
+        /// This endpoint is currently in its **Beta** stage.
         /// </summary>
         /// <param name="grantType"></param>
         /// <param name="clientId"></param>
@@ -57,9 +54,6 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-#if NET8_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
-#endif
         global::System.Threading.Tasks.Task<global::Supabase.OAuthTokenResponseOutput> V1ExchangeOauthTokenAsync(
             global::Supabase.OAuthTokenBodyGrantType? grantType = default,
             global::System.Guid? clientId = default,

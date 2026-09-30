@@ -82,6 +82,12 @@ namespace Supabase
         public required bool PresenceEnabled { get; set; }
 
         /// <summary>
+        /// If set, the Realtime service has been suspended by an admin.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("admin_suspended_at")]
+        public global::System.DateTime? AdminSuspendedAt { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -126,6 +132,9 @@ namespace Supabase
         /// <param name="suspend">
         /// Disables the Realtime service for this project when true. Set to false to re-enable it.
         /// </param>
+        /// <param name="adminSuspendedAt">
+        /// If set, the Realtime service has been suspended by an admin.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -141,7 +150,8 @@ namespace Supabase
             int? maxJoinsPerSecond,
             int? maxPresenceEventsPerSecond,
             int? maxPayloadSizeInKb,
-            bool? suspend)
+            bool? suspend,
+            global::System.DateTime? adminSuspendedAt)
         {
             this.PrivateOnly = privateOnly;
             this.ConnectionPool = connectionPool;
@@ -155,6 +165,7 @@ namespace Supabase
             this.MaxPayloadSizeInKb = maxPayloadSizeInKb;
             this.Suspend = suspend;
             this.PresenceEnabled = presenceEnabled;
+            this.AdminSuspendedAt = adminSuspendedAt;
         }
 
         /// <summary>

@@ -5,7 +5,9 @@ namespace Supabase
     public partial interface IProjectsClient
     {
         /// <summary>
-        /// [Beta] Gets project's network bans with additional information about which databases they affect
+        /// Gets project's network bans with additional information about which databases they affect<br/>
+        /// This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.<br/>
+        /// This endpoint is currently in its **Beta** stage.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -13,15 +15,14 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-#if NET8_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
-#endif
         global::System.Threading.Tasks.Task<global::Supabase.NetworkBanResponseEnrichedOutput> V1ListAllNetworkBansEnrichedAsync(
             string @ref,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// [Beta] Gets project's network bans with additional information about which databases they affect
+        /// Gets project's network bans with additional information about which databases they affect<br/>
+        /// This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.<br/>
+        /// This endpoint is currently in its **Beta** stage.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -29,9 +30,6 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-#if NET8_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_BETA_001")]
-#endif
         global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkBanResponseEnrichedOutput>> V1ListAllNetworkBansEnrichedAsResponseAsync(
             string @ref,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

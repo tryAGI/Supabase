@@ -44,7 +44,9 @@ namespace Supabase
             ref string content);
 
         /// <summary>
-        /// [Alpha] Updates project's network restrictions by adding or removing CIDRs
+        /// Updates project's network restrictions by adding or removing CIDRs<br/>
+        /// This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.<br/>
+        /// This endpoint is currently in its **Alpha** stage.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -53,9 +55,6 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-#if NET8_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_ALPHA_001")]
-#endif
         public async global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsV2ResponseOutput> V1PatchNetworkRestrictionsAsync(
             string @ref,
 
@@ -74,7 +73,9 @@ namespace Supabase
             return __response.Body;
         }
         /// <summary>
-        /// [Alpha] Updates project's network restrictions by adding or removing CIDRs
+        /// Updates project's network restrictions by adding or removing CIDRs<br/>
+        /// This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.<br/>
+        /// This endpoint is currently in its **Alpha** stage.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -83,9 +84,6 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-#if NET8_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_ALPHA_001")]
-#endif
         public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.NetworkRestrictionsV2ResponseOutput>> V1PatchNetworkRestrictionsAsResponseAsync(
             string @ref,
 
@@ -579,7 +577,9 @@ namespace Supabase
             }
         }
         /// <summary>
-        /// [Alpha] Updates project's network restrictions by adding or removing CIDRs
+        /// Updates project's network restrictions by adding or removing CIDRs<br/>
+        /// This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.<br/>
+        /// This endpoint is currently in its **Alpha** stage.
         /// </summary>
         /// <param name="ref">
         /// Example: abcdefghijklmnopqrst
@@ -589,9 +589,6 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-#if NET8_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.Experimental(diagnosticId: "SUPABASE_ALPHA_001")]
-#endif
         public async global::System.Threading.Tasks.Task<global::Supabase.NetworkRestrictionsV2ResponseOutput> V1PatchNetworkRestrictionsAsync(
             string @ref,
             global::Supabase.NetworkRestrictionsPatchRequestAdd? add = default,
