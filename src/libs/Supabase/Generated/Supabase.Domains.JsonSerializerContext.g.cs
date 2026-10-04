@@ -17,15 +17,9 @@ namespace Supabase
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
-    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JsonValueOutput), TypeInfoPropertyName = "JsonValueOutput2")]
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<string, double?, bool?>), TypeInfoPropertyName = "AnyOfStringDoubleBoolean2")]
-    #pragma warning restore CS0618
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameResponseOutputStatus), TypeInfoPropertyName = "UpdateCustomHostnameResponseOutputStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameResponseOutputData))]
@@ -49,17 +43,11 @@ namespace Supabase
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
-    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JsonValueOutput?), TypeInfoPropertyName = "NullableJsonValueOutput2")]
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<string, double?, bool?>?), TypeInfoPropertyName = "NullableAnyOfStringDoubleBoolean2")]
-    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameResponseOutputStatus?), TypeInfoPropertyName = "NullableUpdateCustomHostnameResponseOutputStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.VanitySubdomainConfigResponseOutputStatus?), TypeInfoPropertyName = "NullableVanitySubdomainConfigResponseOutputStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode?), TypeInfoPropertyName = "NullablePlanGateErrorBodyErrorCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JsonValueOutput>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JsonValueOutput?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.UpdateCustomHostnameResponseOutputDataResultSslValidationRecord>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.UpdateCustomHostnameResponseOutputDataResultSslValidationError>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
@@ -111,9 +99,6 @@ namespace Supabase
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
             options.Converters.Add(new global::Supabase.JsonConverters.JsonValueOutputJsonConverter());
-            #pragma warning disable CS0618 // Converter references a deprecated API model.
-            options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<string, double?, bool?>());
-            #pragma warning restore CS0618
             #pragma warning disable CS0618 // Converter references a deprecated API model.
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>());
             #pragma warning restore CS0618
