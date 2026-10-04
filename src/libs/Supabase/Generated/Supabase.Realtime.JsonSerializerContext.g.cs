@@ -76,9 +76,6 @@ namespace Supabase
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
             #pragma warning disable CS0618 // Converter references a deprecated API model.
-            options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<string, double?, bool?>());
-            #pragma warning restore CS0618
-            #pragma warning disable CS0618 // Converter references a deprecated API model.
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>());
             #pragma warning restore CS0618
             #pragma warning disable CS0618 // Converter references a deprecated API model.

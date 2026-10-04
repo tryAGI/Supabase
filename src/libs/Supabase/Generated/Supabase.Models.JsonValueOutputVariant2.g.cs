@@ -6,7 +6,7 @@ namespace Supabase
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class JsonValueOutputVariant3
+    public sealed partial class JsonValueOutputVariant2
     {
 
         /// <summary>

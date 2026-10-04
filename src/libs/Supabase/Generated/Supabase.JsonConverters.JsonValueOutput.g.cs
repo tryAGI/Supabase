@@ -29,7 +29,7 @@ namespace Supabase.JsonConverters
 
             var __score0 = 0;
             {
-                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.AnyOf<string, double?, bool?>), options);
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>), options);
                 if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
                 {
                     foreach (var __prop in __ti.Properties)
@@ -40,7 +40,7 @@ namespace Supabase.JsonConverters
             }
             var __score1 = 0;
             {
-                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>), options);
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>), options);
                 if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
                 {
                     foreach (var __prop in __ti.Properties)
@@ -49,26 +49,13 @@ namespace Supabase.JsonConverters
                     }
                 }
             }
-            var __score2 = 0;
-            {
-                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>), options);
-                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
-                {
-                    foreach (var __prop in __ti.Properties)
-                    {
-                        if (__jsonProps.Contains(__prop.Name)) __score2++;
-                    }
-                }
-            }
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
             if (__score1 > __bestScore) { __bestScore = __score1; __bestIndex = 1; }
-            if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
 
-            global::Supabase.AnyOf<string, double?, bool?>? jsonValueOutputVariant1 = default;
-            global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>? jsonValueOutputVariant2 = default;
-            global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>? jsonValueOutputVariant3 = default;
+            global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>? jsonValueOutputVariant1 = default;
+            global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>? jsonValueOutputVariant2 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -76,8 +63,8 @@ namespace Supabase.JsonConverters
                     try
                     {
 
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.AnyOf<string, double?, bool?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.AnyOf<string, double?, bool?>> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.AnyOf<string, double?, bool?>).Name}");
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>).Name}");
                         jsonValueOutputVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
@@ -93,26 +80,9 @@ namespace Supabase.JsonConverters
                     try
                     {
 
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>).Name}");
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>).Name}");
                         jsonValueOutputVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
-                    }
-                    catch (global::System.Text.Json.JsonException)
-                    {
-                    }
-                    catch (global::System.InvalidOperationException)
-                    {
-                    }
-                }
-
-                else if (__bestIndex == 2)
-                {
-                    try
-                    {
-
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>).Name}");
-                        jsonValueOutputVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -123,13 +93,13 @@ namespace Supabase.JsonConverters
                 }
             }
 
-            if (jsonValueOutputVariant1 == null && jsonValueOutputVariant2 == null && jsonValueOutputVariant3 == null)
+            if (jsonValueOutputVariant1 == null && jsonValueOutputVariant2 == null)
             {
                 try
                 {
 
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.AnyOf<string, double?, bool?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.AnyOf<string, double?, bool?>> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.AnyOf<string, double?, bool?>).Name}");
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>).Name}");
                     jsonValueOutputVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
@@ -140,31 +110,14 @@ namespace Supabase.JsonConverters
                 }
             }
 
-            if (jsonValueOutputVariant1 == null && jsonValueOutputVariant2 == null && jsonValueOutputVariant3 == null)
+            if (jsonValueOutputVariant1 == null && jsonValueOutputVariant2 == null)
             {
                 try
                 {
 
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>).Name}");
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>).Name}");
                     jsonValueOutputVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
-                }
-                catch (global::System.Text.Json.JsonException)
-                {
-                }
-                catch (global::System.InvalidOperationException)
-                {
-                }
-            }
-
-            if (jsonValueOutputVariant1 == null && jsonValueOutputVariant2 == null && jsonValueOutputVariant3 == null)
-            {
-                try
-                {
-
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>).Name}");
-                    jsonValueOutputVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -177,9 +130,7 @@ namespace Supabase.JsonConverters
             var __value = new global::Supabase.JsonValueOutput(
                 jsonValueOutputVariant1,
 
-                jsonValueOutputVariant2,
-
-                jsonValueOutputVariant3
+                jsonValueOutputVariant2
                 );
 
             return __value;
@@ -196,21 +147,15 @@ namespace Supabase.JsonConverters
 
             if (value.IsJsonValueOutputVariant1)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Supabase.AnyOf<string, double?, bool?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Supabase.AnyOf<string, double?, bool?>> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Supabase.AnyOf<string, double?, bool?>).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickJsonValueOutputVariant1(), typeInfo);
             }
             else if (value.IsJsonValueOutputVariant2)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput>).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickJsonValueOutputVariant2(), typeInfo);
-            }
-            else if (value.IsJsonValueOutputVariant3)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput>).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickJsonValueOutputVariant3(), typeInfo);
             }
         }
     }

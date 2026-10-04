@@ -258,9 +258,6 @@ namespace Supabase
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            #pragma warning disable CS0618 // Converter references a deprecated API model.
-            options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<string, double?, bool?>());
-            #pragma warning restore CS0618
             options.Converters.Add(new global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.CreateSigningKeyBodyPrivateJwkVariant1, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant2, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant3, global::Supabase.CreateSigningKeyBodyPrivateJwkVariant4>());
             #pragma warning disable CS0618 // Converter references a deprecated API model.
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<object, double?, string, bool?>());
