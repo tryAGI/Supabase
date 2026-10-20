@@ -38,7 +38,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.FunctionSlugResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.FunctionSlugResponseOutputStatus), TypeInfoPropertyName = "FunctionSlugResponseOutputStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.StreamableFile))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1UpdateFunctionBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1UpdateFunctionBodyJson))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.FunctionResponseOutput>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(long?))]
     #pragma warning disable CS0618 // This registration names a deprecated API model.

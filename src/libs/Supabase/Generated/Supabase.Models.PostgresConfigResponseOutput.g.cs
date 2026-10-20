@@ -23,6 +23,30 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pg_stat_statements.max")]
+        public int? PgStatStatementsMax { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pg_net.batch_size")]
+        public int? PgNetBatchSize { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("autovacuum_max_workers")]
+        public int? AutovacuumMaxWorkers { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("autovacuum_work_mem")]
+        public string? AutovacuumWorkMem { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cron.log_statement")]
         public bool? CronLogStatement { get; set; }
 
@@ -248,6 +272,10 @@ namespace Supabase
         /// </summary>
         /// <param name="effectiveCacheSize"></param>
         /// <param name="logicalDecodingWorkMem"></param>
+        /// <param name="pgStatStatementsMax"></param>
+        /// <param name="pgNetBatchSize"></param>
+        /// <param name="autovacuumMaxWorkers"></param>
+        /// <param name="autovacuumWorkMem"></param>
         /// <param name="cronLogStatement"></param>
         /// <param name="logAutovacuumMinDuration">
         /// Default unit: ms
@@ -300,6 +328,10 @@ namespace Supabase
         public PostgresConfigResponseOutput(
             string? effectiveCacheSize,
             string? logicalDecodingWorkMem,
+            int? pgStatStatementsMax,
+            int? pgNetBatchSize,
+            int? autovacuumMaxWorkers,
+            string? autovacuumWorkMem,
             bool? cronLogStatement,
             string? logAutovacuumMinDuration,
             bool? logCheckpoints,
@@ -339,6 +371,10 @@ namespace Supabase
         {
             this.EffectiveCacheSize = effectiveCacheSize;
             this.LogicalDecodingWorkMem = logicalDecodingWorkMem;
+            this.PgStatStatementsMax = pgStatStatementsMax;
+            this.PgNetBatchSize = pgNetBatchSize;
+            this.AutovacuumMaxWorkers = autovacuumMaxWorkers;
+            this.AutovacuumWorkMem = autovacuumWorkMem;
             this.CronLogStatement = cronLogStatement;
             this.LogAutovacuumMinDuration = logAutovacuumMinDuration;
             this.LogCheckpoints = logCheckpoints;

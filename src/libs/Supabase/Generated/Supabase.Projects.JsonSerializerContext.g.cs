@@ -77,28 +77,28 @@ namespace Supabase
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectResponseOutputStatus), TypeInfoPropertyName = "V1ProjectResponseOutputStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutput))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendations))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroup))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroupCode), TypeInfoPropertyName = "RegionsInfoOutputRecommendationsSmartGroupCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroupType), TypeInfoPropertyName = "RegionsInfoOutputRecommendationsSmartGroupType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.RegionsInfoOutputRecommendationsSpecificItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemCode), TypeInfoPropertyName = "RegionsInfoOutputRecommendationsSpecificItemCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemType), TypeInfoPropertyName = "RegionsInfoOutputRecommendationsSpecificItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemProvider), TypeInfoPropertyName = "RegionsInfoOutputRecommendationsSpecificItemProvider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemStatus), TypeInfoPropertyName = "RegionsInfoOutputRecommendationsSpecificItemStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAll))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.RegionsInfoOutputAllSmartGroupItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItemCode), TypeInfoPropertyName = "RegionsInfoOutputAllSmartGroupItemCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItemType), TypeInfoPropertyName = "RegionsInfoOutputAllSmartGroupItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.RegionsInfoOutputAllSpecificItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSpecificItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSpecificItemCode), TypeInfoPropertyName = "RegionsInfoOutputAllSpecificItemCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSpecificItemType), TypeInfoPropertyName = "RegionsInfoOutputAllSpecificItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSpecificItemProvider), TypeInfoPropertyName = "RegionsInfoOutputAllSpecificItemProvider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSpecificItemStatus), TypeInfoPropertyName = "RegionsInfoOutputAllSpecificItemStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1Output))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendations))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroup))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupCode), TypeInfoPropertyName = "RegionsInfoV1OutputRecommendationsSmartGroupCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupType), TypeInfoPropertyName = "RegionsInfoV1OutputRecommendationsSmartGroupType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemCode), TypeInfoPropertyName = "RegionsInfoV1OutputRecommendationsSpecificItemCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemType), TypeInfoPropertyName = "RegionsInfoV1OutputRecommendationsSpecificItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemProvider), TypeInfoPropertyName = "RegionsInfoV1OutputRecommendationsSpecificItemProvider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemStatus), TypeInfoPropertyName = "RegionsInfoV1OutputRecommendationsSpecificItemStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAll))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.RegionsInfoV1OutputAllSmartGroupItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItemCode), TypeInfoPropertyName = "RegionsInfoV1OutputAllSmartGroupItemCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItemType), TypeInfoPropertyName = "RegionsInfoV1OutputAllSmartGroupItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.RegionsInfoV1OutputAllSpecificItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemCode), TypeInfoPropertyName = "RegionsInfoV1OutputAllSpecificItemCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemType), TypeInfoPropertyName = "RegionsInfoV1OutputAllSpecificItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemProvider), TypeInfoPropertyName = "RegionsInfoV1OutputAllSpecificItemProvider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemStatus), TypeInfoPropertyName = "RegionsInfoV1OutputAllSpecificItemStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkBanResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkBanResponseEnrichedOutput))]
@@ -252,18 +252,18 @@ namespace Supabase
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1CreateProjectBodyDesiredInstanceSize?), TypeInfoPropertyName = "NullableV1CreateProjectBodyDesiredInstanceSize2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectResponseOutputStatus?), TypeInfoPropertyName = "NullableV1ProjectResponseOutputStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroupCode?), TypeInfoPropertyName = "NullableRegionsInfoOutputRecommendationsSmartGroupCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroupType?), TypeInfoPropertyName = "NullableRegionsInfoOutputRecommendationsSmartGroupType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemCode?), TypeInfoPropertyName = "NullableRegionsInfoOutputRecommendationsSpecificItemCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemType?), TypeInfoPropertyName = "NullableRegionsInfoOutputRecommendationsSpecificItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemProvider?), TypeInfoPropertyName = "NullableRegionsInfoOutputRecommendationsSpecificItemProvider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemStatus?), TypeInfoPropertyName = "NullableRegionsInfoOutputRecommendationsSpecificItemStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItemCode?), TypeInfoPropertyName = "NullableRegionsInfoOutputAllSmartGroupItemCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItemType?), TypeInfoPropertyName = "NullableRegionsInfoOutputAllSmartGroupItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSpecificItemCode?), TypeInfoPropertyName = "NullableRegionsInfoOutputAllSpecificItemCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSpecificItemType?), TypeInfoPropertyName = "NullableRegionsInfoOutputAllSpecificItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSpecificItemProvider?), TypeInfoPropertyName = "NullableRegionsInfoOutputAllSpecificItemProvider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoOutputAllSpecificItemStatus?), TypeInfoPropertyName = "NullableRegionsInfoOutputAllSpecificItemStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupCode?), TypeInfoPropertyName = "NullableRegionsInfoV1OutputRecommendationsSmartGroupCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupType?), TypeInfoPropertyName = "NullableRegionsInfoV1OutputRecommendationsSmartGroupType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemCode?), TypeInfoPropertyName = "NullableRegionsInfoV1OutputRecommendationsSpecificItemCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemType?), TypeInfoPropertyName = "NullableRegionsInfoV1OutputRecommendationsSpecificItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemProvider?), TypeInfoPropertyName = "NullableRegionsInfoV1OutputRecommendationsSpecificItemProvider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemStatus?), TypeInfoPropertyName = "NullableRegionsInfoV1OutputRecommendationsSpecificItemStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItemCode?), TypeInfoPropertyName = "NullableRegionsInfoV1OutputAllSmartGroupItemCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItemType?), TypeInfoPropertyName = "NullableRegionsInfoV1OutputAllSmartGroupItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemCode?), TypeInfoPropertyName = "NullableRegionsInfoV1OutputAllSpecificItemCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemType?), TypeInfoPropertyName = "NullableRegionsInfoV1OutputAllSpecificItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemProvider?), TypeInfoPropertyName = "NullableRegionsInfoV1OutputAllSpecificItemProvider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemStatus?), TypeInfoPropertyName = "NullableRegionsInfoV1OutputAllSpecificItemStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsResponseOutputEntitlement?), TypeInfoPropertyName = "NullableNetworkRestrictionsResponseOutputEntitlement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsResponseOutputStatus?), TypeInfoPropertyName = "NullableNetworkRestrictionsResponseOutputStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsV2ResponseOutputEntitlement?), TypeInfoPropertyName = "NullableNetworkRestrictionsV2ResponseOutputEntitlement2")]
@@ -313,9 +313,9 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<string, global::System.Collections.Generic.IList<global::Supabase.V1GetServicesHealthServicesVariant2Item>>?), TypeInfoPropertyName = "NullableAnyOfStringIListV1GetServicesHealthServicesVariant2Item2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1GetServicesHealthServicesVariant2Item?), TypeInfoPropertyName = "NullableV1GetServicesHealthServicesVariant2Item2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1GetAllProjectsForOrganizationSort?), TypeInfoPropertyName = "NullableV1GetAllProjectsForOrganizationSort2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.RegionsInfoOutputRecommendationsSpecificItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.RegionsInfoOutputAllSmartGroupItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.RegionsInfoOutputAllSpecificItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.RegionsInfoV1OutputAllSmartGroupItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.RegionsInfoV1OutputAllSpecificItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.NetworkBanResponseEnrichedOutputBannedIpv4Addresse>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.NetworkRestrictionsV2ResponseOutputConfigDbAllowedCidr>))]
@@ -472,53 +472,53 @@ namespace Supabase
 
                     || typeToConvert == typeof(global::Supabase.V1ProjectResponseOutputStatus?)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroupCode)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupCode)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroupCode?)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupCode?)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroupType)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupType)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroupType?)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupType?)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemCode)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemCode)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemCode?)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemCode?)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemType)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemType)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemType?)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemType?)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemProvider)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemProvider)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemProvider?)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemProvider?)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemStatus)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemStatus)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemStatus?)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemStatus?)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItemCode)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItemCode)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItemCode?)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItemCode?)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItemType)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItemType)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItemType?)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItemType?)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemCode)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemCode)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemCode?)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemCode?)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemType)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemType)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemType?)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemType?)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemProvider)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemProvider)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemProvider?)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemProvider?)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemStatus)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemStatus)
 
-                    || typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemStatus?)
+                    || typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemStatus?)
 
                     || typeToConvert == typeof(global::Supabase.NetworkRestrictionsResponseOutputEntitlement)
 
@@ -799,124 +799,124 @@ namespace Supabase
                     return new global::Supabase.JsonConverters.V1ProjectResponseOutputStatusNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroupCode))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupCode))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputRecommendationsSmartGroupCodeJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputRecommendationsSmartGroupCodeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroupCode?))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupCode?))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputRecommendationsSmartGroupCodeNullableJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputRecommendationsSmartGroupCodeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroupType))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupType))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputRecommendationsSmartGroupTypeJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputRecommendationsSmartGroupTypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSmartGroupType?))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupType?))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputRecommendationsSmartGroupTypeNullableJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputRecommendationsSmartGroupTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemCode))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemCode))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputRecommendationsSpecificItemCodeJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputRecommendationsSpecificItemCodeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemCode?))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemCode?))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputRecommendationsSpecificItemCodeNullableJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputRecommendationsSpecificItemCodeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemType))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemType))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputRecommendationsSpecificItemTypeJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputRecommendationsSpecificItemTypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemType?))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemType?))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputRecommendationsSpecificItemTypeNullableJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputRecommendationsSpecificItemTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemProvider))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemProvider))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputRecommendationsSpecificItemProviderJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputRecommendationsSpecificItemProviderJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemProvider?))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemProvider?))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputRecommendationsSpecificItemProviderNullableJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputRecommendationsSpecificItemProviderNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemStatus))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemStatus))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputRecommendationsSpecificItemStatusJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputRecommendationsSpecificItemStatusJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputRecommendationsSpecificItemStatus?))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemStatus?))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputRecommendationsSpecificItemStatusNullableJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputRecommendationsSpecificItemStatusNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItemCode))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItemCode))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputAllSmartGroupItemCodeJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputAllSmartGroupItemCodeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItemCode?))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItemCode?))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputAllSmartGroupItemCodeNullableJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputAllSmartGroupItemCodeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItemType))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItemType))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputAllSmartGroupItemTypeJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputAllSmartGroupItemTypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSmartGroupItemType?))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSmartGroupItemType?))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputAllSmartGroupItemTypeNullableJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputAllSmartGroupItemTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemCode))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemCode))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputAllSpecificItemCodeJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputAllSpecificItemCodeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemCode?))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemCode?))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputAllSpecificItemCodeNullableJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputAllSpecificItemCodeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemType))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemType))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputAllSpecificItemTypeJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputAllSpecificItemTypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemType?))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemType?))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputAllSpecificItemTypeNullableJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputAllSpecificItemTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemProvider))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemProvider))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputAllSpecificItemProviderJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputAllSpecificItemProviderJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemProvider?))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemProvider?))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputAllSpecificItemProviderNullableJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputAllSpecificItemProviderNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemStatus))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemStatus))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputAllSpecificItemStatusJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputAllSpecificItemStatusJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Supabase.RegionsInfoOutputAllSpecificItemStatus?))
+                if (typeToConvert == typeof(global::Supabase.RegionsInfoV1OutputAllSpecificItemStatus?))
                 {
-                    return new global::Supabase.JsonConverters.RegionsInfoOutputAllSpecificItemStatusNullableJsonConverter();
+                    return new global::Supabase.JsonConverters.RegionsInfoV1OutputAllSpecificItemStatusNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsResponseOutputEntitlement))

@@ -36,7 +36,7 @@ namespace Supabase
             ref string? entrypointPath,
             ref string? importMapPath,
             ref string? ezbrSha256,
-            global::Supabase.V1UpdateFunctionBody request);
+            global::Supabase.V1UpdateFunctionBodyJson request);
         partial void PrepareV1UpdateAFunctionWithJsonRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
@@ -49,7 +49,7 @@ namespace Supabase
             string? entrypointPath,
             string? importMapPath,
             string? ezbrSha256,
-            global::Supabase.V1UpdateFunctionBody request);
+            global::Supabase.V1UpdateFunctionBodyJson request);
         partial void ProcessV1UpdateAFunctionWithJsonResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -98,7 +98,7 @@ namespace Supabase
             string @ref,
             string functionSlug,
 
-            global::Supabase.V1UpdateFunctionBody request,
+            global::Supabase.V1UpdateFunctionBodyJson request,
             string? slug = default,
             string? name = default,
             string? verifyJwt = default,
@@ -166,7 +166,7 @@ namespace Supabase
             string @ref,
             string functionSlug,
 
-            global::Supabase.V1UpdateFunctionBody request,
+            global::Supabase.V1UpdateFunctionBodyJson request,
             string? slug = default,
             string? name = default,
             string? verifyJwt = default,
@@ -740,7 +740,7 @@ namespace Supabase
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Supabase.V1UpdateFunctionBody
+            var __request = new global::Supabase.V1UpdateFunctionBodyJson
             {
                 Name = requestName,
                 Body = body,
