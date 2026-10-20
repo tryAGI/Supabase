@@ -43,7 +43,7 @@ namespace Supabase
             string @ref,
             string functionSlug,
 
-            global::Supabase.V1UpdateFunctionBody request,
+            global::Supabase.V1UpdateFunctionBodyJson request,
             string? slug = default,
             string? name = default,
             string? verifyJwt = default,
@@ -92,7 +92,7 @@ namespace Supabase
             string @ref,
             string functionSlug,
 
-            global::Supabase.V1UpdateFunctionBody request,
+            global::Supabase.V1UpdateFunctionBodyJson request,
             string? slug = default,
             string? name = default,
             string? verifyJwt = default,

@@ -60,7 +60,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.RegionsInfoOutput> V1GetAvailableRegionsAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.RegionsInfoV1Output> V1GetAvailableRegionsAsync(
             string organizationSlug,
             global::Supabase.V1GetAvailableRegionsContinent? continent = default,
             global::Supabase.V1GetAvailableRegionsDesiredInstanceSize? desiredInstanceSize = default,
@@ -92,7 +92,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfoOutput>> V1GetAvailableRegionsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfoV1Output>> V1GetAvailableRegionsAsResponseAsync(
             string organizationSlug,
             global::Supabase.V1GetAvailableRegionsContinent? continent = default,
             global::Supabase.V1GetAvailableRegionsDesiredInstanceSize? desiredInstanceSize = default,
@@ -381,9 +381,9 @@ namespace Supabase
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Supabase.RegionsInfoOutput.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Supabase.RegionsInfoV1Output.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfoOutput>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfoV1Output>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -413,9 +413,9 @@ namespace Supabase
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Supabase.RegionsInfoOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Supabase.RegionsInfoV1Output.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfoOutput>(
+                                    return new global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfoV1Output>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Supabase.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

@@ -580,6 +580,10 @@ namespace Supabase
         /// </param>
         /// <param name="effectiveCacheSize"></param>
         /// <param name="logicalDecodingWorkMem"></param>
+        /// <param name="pgStatStatementsMax"></param>
+        /// <param name="pgNetBatchSize"></param>
+        /// <param name="autovacuumMaxWorkers"></param>
+        /// <param name="autovacuumWorkMem"></param>
         /// <param name="cronLogStatement"></param>
         /// <param name="logAutovacuumMinDuration">
         /// Default unit: ms
@@ -634,6 +638,10 @@ namespace Supabase
             string @ref,
             string? effectiveCacheSize = default,
             string? logicalDecodingWorkMem = default,
+            int? pgStatStatementsMax = default,
+            int? pgNetBatchSize = default,
+            int? autovacuumMaxWorkers = default,
+            string? autovacuumWorkMem = default,
             bool? cronLogStatement = default,
             string? logAutovacuumMinDuration = default,
             bool? logCheckpoints = default,
@@ -678,6 +686,10 @@ namespace Supabase
             {
                 EffectiveCacheSize = effectiveCacheSize,
                 LogicalDecodingWorkMem = logicalDecodingWorkMem,
+                PgStatStatementsMax = pgStatStatementsMax,
+                PgNetBatchSize = pgNetBatchSize,
+                AutovacuumMaxWorkers = autovacuumMaxWorkers,
+                AutovacuumWorkMem = autovacuumWorkMem,
                 CronLogStatement = cronLogStatement,
                 LogAutovacuumMinDuration = logAutovacuumMinDuration,
                 LogCheckpoints = logCheckpoints,

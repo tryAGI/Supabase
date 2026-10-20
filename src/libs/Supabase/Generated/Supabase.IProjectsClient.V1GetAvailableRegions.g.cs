@@ -19,7 +19,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.RegionsInfoOutput> V1GetAvailableRegionsAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.RegionsInfoV1Output> V1GetAvailableRegionsAsync(
             string organizationSlug,
             global::Supabase.V1GetAvailableRegionsContinent? continent = default,
             global::Supabase.V1GetAvailableRegionsDesiredInstanceSize? desiredInstanceSize = default,
@@ -40,7 +40,7 @@ namespace Supabase
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Supabase.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfoOutput>> V1GetAvailableRegionsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Supabase.AutoSDKHttpResponse<global::Supabase.RegionsInfoV1Output>> V1GetAvailableRegionsAsResponseAsync(
             string organizationSlug,
             global::Supabase.V1GetAvailableRegionsContinent? continent = default,
             global::Supabase.V1GetAvailableRegionsDesiredInstanceSize? desiredInstanceSize = default,

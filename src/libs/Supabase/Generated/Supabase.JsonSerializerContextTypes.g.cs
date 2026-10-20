@@ -185,91 +185,91 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutput? Type38 { get; set; }
+        public global::Supabase.RegionsInfoV1Output? Type38 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputRecommendations? Type39 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputRecommendations? Type39 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputRecommendationsSmartGroup? Type40 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroup? Type40 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputRecommendationsSmartGroupCode? Type41 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupCode? Type41 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputRecommendationsSmartGroupType? Type42 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputRecommendationsSmartGroupType? Type42 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.RegionsInfoOutputRecommendationsSpecificItem>? Type43 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItem>? Type43 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputRecommendationsSpecificItem? Type44 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItem? Type44 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputRecommendationsSpecificItemCode? Type45 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemCode? Type45 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputRecommendationsSpecificItemType? Type46 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemType? Type46 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputRecommendationsSpecificItemProvider? Type47 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemProvider? Type47 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputRecommendationsSpecificItemStatus? Type48 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItemStatus? Type48 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputAll? Type49 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputAll? Type49 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.RegionsInfoOutputAllSmartGroupItem>? Type50 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.RegionsInfoV1OutputAllSmartGroupItem>? Type50 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputAllSmartGroupItem? Type51 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputAllSmartGroupItem? Type51 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputAllSmartGroupItemCode? Type52 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputAllSmartGroupItemCode? Type52 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputAllSmartGroupItemType? Type53 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputAllSmartGroupItemType? Type53 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Supabase.RegionsInfoOutputAllSpecificItem>? Type54 { get; set; }
+        public global::System.Collections.Generic.IList<global::Supabase.RegionsInfoV1OutputAllSpecificItem>? Type54 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputAllSpecificItem? Type55 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputAllSpecificItem? Type55 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputAllSpecificItemCode? Type56 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputAllSpecificItemCode? Type56 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputAllSpecificItemType? Type57 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputAllSpecificItemType? Type57 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputAllSpecificItemProvider? Type58 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputAllSpecificItemProvider? Type58 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.RegionsInfoOutputAllSpecificItemStatus? Type59 { get; set; }
+        public global::Supabase.RegionsInfoV1OutputAllSpecificItemStatus? Type59 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1873,7 +1873,7 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public global::Supabase.V1UpdateFunctionBody? Type460 { get; set; }
+        public global::Supabase.V1UpdateFunctionBodyJson? Type460 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2670,15 +2670,15 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.RegionsInfoOutputRecommendationsSpecificItem>? ListType0 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.RegionsInfoV1OutputRecommendationsSpecificItem>? ListType0 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.RegionsInfoOutputAllSmartGroupItem>? ListType1 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.RegionsInfoV1OutputAllSmartGroupItem>? ListType1 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Supabase.RegionsInfoOutputAllSpecificItem>? ListType2 { get; set; }
+        public global::System.Collections.Generic.List<global::Supabase.RegionsInfoV1OutputAllSpecificItem>? ListType2 { get; set; }
         /// <summary>
         ///
         /// </summary>
