@@ -40,6 +40,7 @@ namespace Supabase
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     #pragma warning restore CS0618
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchDetailResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
@@ -542,7 +543,6 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OneOf<global::Supabase.DiskRequestBodyAttributesVariant1, global::Supabase.DiskRequestBodyAttributesVariant2>), TypeInfoPropertyName = "OneOfDiskRequestBodyAttributesVariant1DiskRequestBodyAttributesVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskRequestBodyAttributesVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskRequestBodyAttributesVariant1Type), TypeInfoPropertyName = "DiskRequestBodyAttributesVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskRequestBodyAttributesVariant2))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -577,6 +577,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?>?), TypeInfoPropertyName = "V1RemoveProjectAddonAddonVariantVariant4_673f0ab69673f26f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10_eff41163d08da137")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant4_ac0117ef55dfe715")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskRequestBodyAttributesVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskRequestBodyAttributesVariant2Type), TypeInfoPropertyName = "DiskRequestBodyAttributesVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskUtilMetricsResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DiskUtilMetricsResponseOutputMetrics))]
@@ -1078,7 +1079,6 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.UpdateJitAccessBodyRoleAllowedNetworksAllowedCidrsV6Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitAccessBodyRole>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitAccessBodyRoleAllowedNetworksAllowedCidr>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitAccessBodyRoleAllowedNetworksAllowedCidrsV6Item>))]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1113,6 +1113,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.V1RemoveProjectAddonAddonVariantVariant1?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant2?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant3?, global::Supabase.V1RemoveProjectAddonAddonVariantVariant4?>?), TypeInfoPropertyName = "V1RemoveProjectAddonAddonVariantVariant4_673f0ab69673f26f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10_eff41163d08da137")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant4_ac0117ef55dfe715")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitAccessBodyRoleAllowedNetworksAllowedCidrsV6Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitResponseOutputUserRole>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitResponseOutputUserRoleAllowedNetworksAllowedCidr>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.InviteExternalUserJitResponseOutputUserRoleAllowedNetworksAllowedCidrsV6Item>))]
