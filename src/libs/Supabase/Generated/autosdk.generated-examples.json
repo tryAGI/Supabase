@@ -644,7 +644,7 @@
       "Slug": "v1-update-project-api-key",
       "Description": "Generated from OpenAPI examples.",
       "Language": "http",
-      "Code": "### Updates an API key for the project\n# @name v1-update-project-api-key\nPATCH {{host}}/v1/projects/{{ref}}/api-keys/{{id}}?reveal={{reveal}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022name\u0022: \u0022ci_secret_key_rotated\u0022,\n  \u0022description\u0022: \u0022Rotated after March release\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded",
+      "Code": "### Updates an API key for the project\n# @name v1-update-project-api-key\nPATCH {{host}}/v1/projects/{{ref}}/api-keys/{{id}}?reveal={{reveal}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022name\u0022: \u0022ci_secret_key_rotated\u0022,\n  \u0022description\u0022: \u0022Rotated after March release\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 404\n# Description: API key not found for project\n# 429\n# Description: Rate limit exceeded",
       "Format": "http",
       "OperationId": "v1-update-project-api-key",
       "Setup": null
