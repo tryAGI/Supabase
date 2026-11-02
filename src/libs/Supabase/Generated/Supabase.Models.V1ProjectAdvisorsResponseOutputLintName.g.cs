@@ -147,6 +147,10 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
+        RealtimeConcurrentUsersNearLimit,
+        /// <summary>
+        ///
+        /// </summary>
         RealtimePostgresChangesSpike,
         /// <summary>
         ///
@@ -232,6 +236,7 @@ namespace Supabase
                 V1ProjectAdvisorsResponseOutputLintName.PolicyExistsRlsDisabled => "policy_exists_rls_disabled",
                 V1ProjectAdvisorsResponseOutputLintName.ProjectNotActive => "project_not_active",
                 V1ProjectAdvisorsResponseOutputLintName.RealtimeAuthorizationTimeouts => "realtime_authorization_timeouts",
+                V1ProjectAdvisorsResponseOutputLintName.RealtimeConcurrentUsersNearLimit => "realtime_concurrent_users_near_limit",
                 V1ProjectAdvisorsResponseOutputLintName.RealtimePostgresChangesSpike => "realtime_postgres_changes_spike",
                 V1ProjectAdvisorsResponseOutputLintName.RlsDisabledInPublic => "rls_disabled_in_public",
                 V1ProjectAdvisorsResponseOutputLintName.RlsEnabledNoPolicy => "rls_enabled_no_policy",
@@ -286,6 +291,7 @@ namespace Supabase
                 "policy_exists_rls_disabled" => V1ProjectAdvisorsResponseOutputLintName.PolicyExistsRlsDisabled,
                 "project_not_active" => V1ProjectAdvisorsResponseOutputLintName.ProjectNotActive,
                 "realtime_authorization_timeouts" => V1ProjectAdvisorsResponseOutputLintName.RealtimeAuthorizationTimeouts,
+                "realtime_concurrent_users_near_limit" => V1ProjectAdvisorsResponseOutputLintName.RealtimeConcurrentUsersNearLimit,
                 "realtime_postgres_changes_spike" => V1ProjectAdvisorsResponseOutputLintName.RealtimePostgresChangesSpike,
                 "rls_disabled_in_public" => V1ProjectAdvisorsResponseOutputLintName.RlsDisabledInPublic,
                 "rls_enabled_no_policy" => V1ProjectAdvisorsResponseOutputLintName.RlsEnabledNoPolicy,
