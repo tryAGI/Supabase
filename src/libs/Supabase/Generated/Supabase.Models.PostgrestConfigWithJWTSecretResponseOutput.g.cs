@@ -42,6 +42,18 @@ namespace Supabase
         public long? DbPoolAcquisitionTimeout { get; set; }
 
         /// <summary>
+        /// If `null`, the value is automatically configured to 1800.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_pool_max_lifetime")]
+        public int? DbPoolMaxLifetime { get; set; }
+
+        /// <summary>
+        /// If `null`, the value is automatically configured to 30.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_pool_max_idletime")]
+        public int? DbPoolMaxIdletime { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("jwt_secret")]
@@ -65,6 +77,12 @@ namespace Supabase
         /// <param name="dbPoolAcquisitionTimeout">
         /// If `null`, the value is automatically configured to 10.
         /// </param>
+        /// <param name="dbPoolMaxLifetime">
+        /// If `null`, the value is automatically configured to 1800.
+        /// </param>
+        /// <param name="dbPoolMaxIdletime">
+        /// If `null`, the value is automatically configured to 30.
+        /// </param>
         /// <param name="jwtSecret"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -75,6 +93,8 @@ namespace Supabase
             string dbExtraSearchPath,
             long? dbPool,
             long? dbPoolAcquisitionTimeout,
+            int? dbPoolMaxLifetime,
+            int? dbPoolMaxIdletime,
             string? jwtSecret)
         {
             this.DbSchema = dbSchema ?? throw new global::System.ArgumentNullException(nameof(dbSchema));
@@ -82,6 +102,8 @@ namespace Supabase
             this.DbExtraSearchPath = dbExtraSearchPath ?? throw new global::System.ArgumentNullException(nameof(dbExtraSearchPath));
             this.DbPool = dbPool;
             this.DbPoolAcquisitionTimeout = dbPoolAcquisitionTimeout;
+            this.DbPoolMaxLifetime = dbPoolMaxLifetime;
+            this.DbPoolMaxIdletime = dbPoolMaxIdletime;
             this.JwtSecret = jwtSecret;
         }
 

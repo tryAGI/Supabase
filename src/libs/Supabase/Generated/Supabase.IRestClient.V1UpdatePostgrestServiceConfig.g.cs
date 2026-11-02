@@ -47,6 +47,8 @@ namespace Supabase
         /// <param name="maxRows"></param>
         /// <param name="dbPool"></param>
         /// <param name="dbPoolAcquisitionTimeout"></param>
+        /// <param name="dbPoolMaxLifetime"></param>
+        /// <param name="dbPoolMaxIdletime"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -57,6 +59,8 @@ namespace Supabase
             int? maxRows = default,
             int? dbPool = default,
             int? dbPoolAcquisitionTimeout = default,
+            int? dbPoolMaxLifetime = default,
+            int? dbPoolMaxIdletime = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

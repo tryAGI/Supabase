@@ -39,6 +39,18 @@ namespace Supabase
         public int? DbPoolAcquisitionTimeout { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_pool_max_lifetime")]
+        public int? DbPoolMaxLifetime { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("db_pool_max_idletime")]
+        public int? DbPoolMaxIdletime { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -52,6 +64,8 @@ namespace Supabase
         /// <param name="maxRows"></param>
         /// <param name="dbPool"></param>
         /// <param name="dbPoolAcquisitionTimeout"></param>
+        /// <param name="dbPoolMaxLifetime"></param>
+        /// <param name="dbPoolMaxIdletime"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -60,13 +74,17 @@ namespace Supabase
             string? dbSchema,
             int? maxRows,
             int? dbPool,
-            int? dbPoolAcquisitionTimeout)
+            int? dbPoolAcquisitionTimeout,
+            int? dbPoolMaxLifetime,
+            int? dbPoolMaxIdletime)
         {
             this.DbExtraSearchPath = dbExtraSearchPath;
             this.DbSchema = dbSchema;
             this.MaxRows = maxRows;
             this.DbPool = dbPool;
             this.DbPoolAcquisitionTimeout = dbPoolAcquisitionTimeout;
+            this.DbPoolMaxLifetime = dbPoolMaxLifetime;
+            this.DbPoolMaxIdletime = dbPoolMaxIdletime;
         }
 
         /// <summary>
