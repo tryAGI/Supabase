@@ -352,7 +352,7 @@ namespace Supabase
 
                                 throw global::Supabase.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -371,13 +371,13 @@ namespace Supabase
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_402 = global::Supabase.PlanGateErrorBody.FromJson(__content_402, JsonSerializerContext);
+                                        __value_402 = __content_402 is not { Length: > 0 } ? null : global::Supabase.PlanGateErrorBody.FromJson(__content_402, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_402 = global::Supabase.PlanGateErrorBody.FromJson(__content_402, JsonSerializerContext);
+                                        __value_402 = __content_402 is not { Length: > 0 } ? null : global::Supabase.PlanGateErrorBody.FromJson(__content_402, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -388,7 +388,7 @@ namespace Supabase
 
                                 throw global::Supabase.ApiException<global::Supabase.PlanGateErrorBody>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_402 is { Length: > 0 } ? __content_402 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_402,
                                     responseBody: __content_402,
                                     responseObject: __value_402,
@@ -421,7 +421,7 @@ namespace Supabase
 
                                 throw global::Supabase.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_403 is { Length: > 0 } ? __content_403 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
                                     responseBody: __content_403,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -453,7 +453,7 @@ namespace Supabase
 
                                 throw global::Supabase.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_404 is { Length: > 0 } ? __content_404 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
                                     responseBody: __content_404,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -485,7 +485,7 @@ namespace Supabase
 
                                 throw global::Supabase.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_429 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_429 is { Length: > 0 } ? __content_429 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_429,
                                     responseBody: __content_429,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -517,7 +517,7 @@ namespace Supabase
 
                                 throw global::Supabase.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_500 is { Length: > 0 } ? __content_500 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_500,
                                     responseBody: __content_500,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -559,7 +559,7 @@ namespace Supabase
                                 {
                                     throw global::Supabase.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -604,7 +604,7 @@ namespace Supabase
 
                                     throw global::Supabase.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
