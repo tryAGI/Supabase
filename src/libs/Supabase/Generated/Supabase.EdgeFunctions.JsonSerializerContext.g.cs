@@ -19,6 +19,9 @@ namespace Supabase
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     #pragma warning restore CS0618
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode), TypeInfoPropertyName = "PlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.FunctionResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.FunctionResponseOutputStatus), TypeInfoPropertyName = "FunctionResponseOutputStatus2")]
@@ -45,6 +48,7 @@ namespace Supabase
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     #pragma warning restore CS0618
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode?), TypeInfoPropertyName = "NullablePlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.FunctionResponseOutputStatus?), TypeInfoPropertyName = "NullableFunctionResponseOutputStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BulkUpdateFunctionBodyItemStatus?), TypeInfoPropertyName = "NullableBulkUpdateFunctionBodyItemStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BulkUpdateFunctionResponseOutputFunctionStatus?), TypeInfoPropertyName = "NullableBulkUpdateFunctionResponseOutputFunctionStatus2")]
@@ -153,7 +157,11 @@ namespace Supabase
             public override bool CanConvert(global::System.Type typeToConvert)
             {
                 return
-                    typeToConvert == typeof(global::Supabase.FunctionResponseOutputStatus)
+                    typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode)
+
+                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?)
+
+                    || typeToConvert == typeof(global::Supabase.FunctionResponseOutputStatus)
 
                     || typeToConvert == typeof(global::Supabase.FunctionResponseOutputStatus?)
 
@@ -178,6 +186,16 @@ namespace Supabase
                 global::System.Type typeToConvert,
                 global::System.Text.Json.JsonSerializerOptions options)
             {
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Supabase.FunctionResponseOutputStatus))
                 {
                     return new global::Supabase.JsonConverters.FunctionResponseOutputStatusJsonConverter();

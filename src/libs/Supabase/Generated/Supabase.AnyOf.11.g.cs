@@ -6,7 +6,7 @@ namespace Supabase
     /// <summary>
     ///
     /// </summary>
-    public readonly partial struct AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> : global::System.IEquatable<AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>>
+    public readonly partial struct AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> : global::System.IEquatable<AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>>
     {
         /// <summary>
         ///
@@ -377,15 +377,52 @@ namespace Supabase
         public T10 PickValue10() => Value10 is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Value10' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(T1 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>((T1?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator T1?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> @this) => @this.Value1;
+#if NET6_0_OR_GREATER
+        public T11? Value11 { get; init; }
+#else
+        public T11? Value11 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value11))]
+#endif
+        public bool IsValue11 => Value11 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickValue11(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T11? value)
+        {
+            value = Value11;
+            return IsValue11;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public T11 PickValue11() => Value11 is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value11' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(T1 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>((T1?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator T1?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> @this) => @this.Value1;
 
         /// <summary>
         ///
@@ -398,17 +435,17 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> FromValue1(T1? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(value);
+        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> FromValue1(T1? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(T2 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>((T2?)value);
+        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(T2 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>((T2?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator T2?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> @this) => @this.Value2;
+        public static implicit operator T2?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> @this) => @this.Value2;
 
         /// <summary>
         ///
@@ -421,17 +458,17 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> FromValue2(T2? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(value);
+        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> FromValue2(T2? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(T3 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>((T3?)value);
+        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(T3 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>((T3?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator T3?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> @this) => @this.Value3;
+        public static implicit operator T3?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> @this) => @this.Value3;
 
         /// <summary>
         ///
@@ -444,17 +481,17 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> FromValue3(T3? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(value);
+        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> FromValue3(T3? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(T4 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>((T4?)value);
+        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(T4 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>((T4?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator T4?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> @this) => @this.Value4;
+        public static implicit operator T4?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> @this) => @this.Value4;
 
         /// <summary>
         ///
@@ -467,17 +504,17 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> FromValue4(T4? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(value);
+        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> FromValue4(T4? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(T5 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>((T5?)value);
+        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(T5 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>((T5?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator T5?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> @this) => @this.Value5;
+        public static implicit operator T5?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> @this) => @this.Value5;
 
         /// <summary>
         ///
@@ -490,17 +527,17 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> FromValue5(T5? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(value);
+        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> FromValue5(T5? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(T6 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>((T6?)value);
+        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(T6 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>((T6?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator T6?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> @this) => @this.Value6;
+        public static implicit operator T6?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> @this) => @this.Value6;
 
         /// <summary>
         ///
@@ -513,17 +550,17 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> FromValue6(T6? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(value);
+        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> FromValue6(T6? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(T7 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>((T7?)value);
+        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(T7 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>((T7?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator T7?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> @this) => @this.Value7;
+        public static implicit operator T7?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> @this) => @this.Value7;
 
         /// <summary>
         ///
@@ -536,17 +573,17 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> FromValue7(T7? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(value);
+        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> FromValue7(T7? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(T8 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>((T8?)value);
+        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(T8 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>((T8?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator T8?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> @this) => @this.Value8;
+        public static implicit operator T8?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> @this) => @this.Value8;
 
         /// <summary>
         ///
@@ -559,17 +596,17 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> FromValue8(T8? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(value);
+        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> FromValue8(T8? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(T9 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>((T9?)value);
+        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(T9 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>((T9?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator T9?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> @this) => @this.Value9;
+        public static implicit operator T9?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> @this) => @this.Value9;
 
         /// <summary>
         ///
@@ -582,17 +619,17 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> FromValue9(T9? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(value);
+        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> FromValue9(T9? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(T10 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>((T10?)value);
+        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(T10 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>((T10?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator T10?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> @this) => @this.Value10;
+        public static implicit operator T10?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> @this) => @this.Value10;
 
         /// <summary>
         ///
@@ -605,7 +642,30 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> FromValue10(T10? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(value);
+        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> FromValue10(T10? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(T11 value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>((T11?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator T11?(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> @this) => @this.Value11;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AnyOf(T11? value)
+        {
+            Value11 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> FromValue11(T11? value) => new AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(value);
 
         /// <summary>
         ///
@@ -620,7 +680,8 @@ namespace Supabase
             T7? value7,
             T8? value8,
             T9? value9,
-            T10? value10
+            T10? value10,
+            T11? value11
             )
         {
             Value1 = value1;
@@ -633,12 +694,14 @@ namespace Supabase
             Value8 = value8;
             Value9 = value9;
             Value10 = value10;
+            Value11 = value11;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
+            Value11 as object ??
             Value10 as object ??
             Value9 as object ??
             Value8 as object ??
@@ -664,7 +727,8 @@ namespace Supabase
             Value7?.ToString() ??
             Value8?.ToString() ??
             Value9?.ToString() ??
-            Value10?.ToString()
+            Value10?.ToString() ??
+            Value11?.ToString()
             ;
 
         /// <summary>
@@ -672,7 +736,7 @@ namespace Supabase
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 || IsValue2 || IsValue3 || IsValue4 || IsValue5 || IsValue6 || IsValue7 || IsValue8 || IsValue9 || IsValue10;
+            return IsValue1 || IsValue2 || IsValue3 || IsValue4 || IsValue5 || IsValue6 || IsValue7 || IsValue8 || IsValue9 || IsValue10 || IsValue11;
         }
 
         /// <summary>
@@ -689,6 +753,7 @@ namespace Supabase
             global::System.Func<T8, TResult>? value8 = null,
             global::System.Func<T9, TResult>? value9 = null,
             global::System.Func<T10, TResult>? value10 = null,
+            global::System.Func<T11, TResult>? value11 = null,
             bool validate = true)
         {
             if (validate)
@@ -736,6 +801,10 @@ namespace Supabase
             {
                 return value10(__value9);
             }
+            else if (Value11 is { } __value10 && value11 != null)
+            {
+                return value11(__value10);
+            }
 
             return default(TResult);
         }
@@ -763,6 +832,8 @@ namespace Supabase
             global::System.Action<T9>? value9 = null,
 
             global::System.Action<T10>? value10 = null,
+
+            global::System.Action<T11>? value11 = null,
             bool validate = true)
         {
             if (validate)
@@ -809,6 +880,10 @@ namespace Supabase
             else if (Value10 is { } __value9)
             {
                 value10?.Invoke(__value9);
+            }
+            else if (Value11 is { } __value10)
+            {
+                value11?.Invoke(__value10);
             }
         }
 
@@ -826,6 +901,7 @@ namespace Supabase
             global::System.Action<T8>? value8 = null,
             global::System.Action<T9>? value9 = null,
             global::System.Action<T10>? value10 = null,
+            global::System.Action<T11>? value11 = null,
             bool validate = true)
         {
             if (validate)
@@ -872,6 +948,10 @@ namespace Supabase
             else if (Value10 is { } __value9)
             {
                 value10?.Invoke(__value9);
+            }
+            else if (Value11 is { } __value10)
+            {
+                value11?.Invoke(__value10);
             }
         }
 
@@ -902,6 +982,8 @@ namespace Supabase
                 typeof(T9),
                 Value10,
                 typeof(T10),
+                Value11,
+                typeof(T11),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -915,7 +997,7 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        public bool Equals(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> other)
+        public bool Equals(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<T1?>.Default.Equals(Value1, other.Value1) &&
@@ -927,22 +1009,23 @@ namespace Supabase
                 global::System.Collections.Generic.EqualityComparer<T7?>.Default.Equals(Value7, other.Value7) &&
                 global::System.Collections.Generic.EqualityComparer<T8?>.Default.Equals(Value8, other.Value8) &&
                 global::System.Collections.Generic.EqualityComparer<T9?>.Default.Equals(Value9, other.Value9) &&
-                global::System.Collections.Generic.EqualityComparer<T10?>.Default.Equals(Value10, other.Value10)
+                global::System.Collections.Generic.EqualityComparer<T10?>.Default.Equals(Value10, other.Value10) &&
+                global::System.Collections.Generic.EqualityComparer<T11?>.Default.Equals(Value11, other.Value11)
                 ;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static bool operator ==(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> obj1, AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> obj2)
+        public static bool operator ==(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> obj1, AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> obj2)
         {
-            return global::System.Collections.Generic.EqualityComparer<AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>>.Default.Equals(obj1, obj2);
+            return global::System.Collections.Generic.EqualityComparer<AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>>.Default.Equals(obj1, obj2);
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static bool operator !=(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> obj1, AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> obj2)
+        public static bool operator !=(AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> obj1, AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> obj2)
         {
             return !(obj1 == obj2);
         }
@@ -952,7 +1035,7 @@ namespace Supabase
         /// </summary>
         public override bool Equals(object? obj)
         {
-            return obj is AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> o && Equals(o);
+            return obj is AnyOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> o && Equals(o);
         }
     }
 }

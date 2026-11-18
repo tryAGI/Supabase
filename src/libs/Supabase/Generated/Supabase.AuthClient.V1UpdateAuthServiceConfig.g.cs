@@ -380,6 +380,43 @@ namespace Supabase
                                         h => h.Key,
                                         h => h.Value));
                             }
+                            // An auth setting in the request is not available on the organization plan
+                            if ((int)__response.StatusCode == 402)
+                            {
+                                string? __content_402 = null;
+                                global::System.Exception? __exception_402 = null;
+                                global::Supabase.PlanGateErrorBody? __value_402 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_402 = __content_402 is not { Length: > 0 } ? null : global::Supabase.PlanGateErrorBody.FromJson(__content_402, JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_402 = __content_402 is not { Length: > 0 } ? null : global::Supabase.PlanGateErrorBody.FromJson(__content_402, JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_402 = __ex;
+                                }
+
+
+                                throw global::Supabase.ApiException<global::Supabase.PlanGateErrorBody>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_402 is { Length: > 0 } ? __content_402 : __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_402,
+                                    responseBody: __content_402,
+                                    responseObject: __value_402,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
                             //
                             if ((int)__response.StatusCode == 403)
                             {
@@ -631,6 +668,7 @@ namespace Supabase
         /// <param name="samlEnabled"></param>
         /// <param name="samlExternalUrl"></param>
         /// <param name="securitySbForwardedForEnabled"></param>
+        /// <param name="externalEmailMagicLinkDisabled"></param>
         /// <param name="securityCaptchaEnabled"></param>
         /// <param name="securityCaptchaProvider"></param>
         /// <param name="securityCaptchaSecret"></param>
@@ -879,6 +917,7 @@ namespace Supabase
             bool? samlEnabled = default,
             string? samlExternalUrl = default,
             bool? securitySbForwardedForEnabled = default,
+            bool? externalEmailMagicLinkDisabled = default,
             bool? securityCaptchaEnabled = default,
             global::Supabase.UpdateAuthConfigBodySecurityCaptchaProvider? securityCaptchaProvider = default,
             string? securityCaptchaSecret = default,
@@ -1119,6 +1158,7 @@ namespace Supabase
                 SamlEnabled = samlEnabled,
                 SamlExternalUrl = samlExternalUrl,
                 SecuritySbForwardedForEnabled = securitySbForwardedForEnabled,
+                ExternalEmailMagicLinkDisabled = externalEmailMagicLinkDisabled,
                 SecurityCaptchaEnabled = securityCaptchaEnabled,
                 SecurityCaptchaProvider = securityCaptchaProvider,
                 SecurityCaptchaSecret = securityCaptchaSecret,

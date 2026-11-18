@@ -50,7 +50,7 @@
       "Slug": "v1-update-auth-service-config",
       "Description": "Generated from OpenAPI examples.",
       "Language": "http",
-      "Code": "### Updates a project\u0027s auth config\n# @name v1-update-auth-service-config\nPATCH {{host}}/v1/projects/{{ref}}/config/auth\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022site_url\u0022: \u0022https://app.example.com\u0022,\n  \u0022disable_signup\u0022: false,\n  \u0022jwt_exp\u0022: 3600\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update project\u0027s auth config",
+      "Code": "### Updates a project\u0027s auth config\n# @name v1-update-auth-service-config\nPATCH {{host}}/v1/projects/{{ref}}/config/auth\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022site_url\u0022: \u0022https://app.example.com\u0022,\n  \u0022disable_signup\u0022: false,\n  \u0022jwt_exp\u0022: 3600\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 402\n# Description: An auth setting in the request is not available on the organization plan\n# Content-Type: application/json\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update project\u0027s auth config",
       "Format": "http",
       "OperationId": "v1-update-auth-service-config",
       "Setup": null
@@ -156,6 +156,17 @@
     },
     {
       "Order": 15,
+      "Title": "Partially updates project\u0027s Postgres config",
+      "Slug": "v1-patch-postgres-config",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### Partially updates project\u0027s Postgres config\n# @name v1-patch-postgres-config\nPATCH {{host}}/v1/projects/{{ref}}/config/database/postgres\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022max_connections\u0022: 120,\n  \u0022shared_buffers\u0022: \u0022256MB\u0022,\n  \u0022work_mem\u0022: \u00224MB\u0022,\n  \u0022statement_timeout\u0022: \u002260000ms\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update project\u0027s Postgres config",
+      "Format": "http",
+      "OperationId": "v1-patch-postgres-config",
+      "Setup": null
+    },
+    {
+      "Order": 16,
       "Title": "Run a sql query as supabase_read_only_user",
       "Slug": "v1-read-only-query",
       "Description": "All entity references must be schema qualified.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -166,7 +177,7 @@
       "Setup": null
     },
     {
-      "Order": 16,
+      "Order": 17,
       "Title": "Remove a read replica",
       "Slug": "v1-remove-a-read-replica",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -177,7 +188,7 @@
       "Setup": null
     },
     {
-      "Order": 17,
+      "Order": 18,
       "Title": "Restores a physical backup for a database",
       "Slug": "v1-restore-physical-backup",
       "Description": "Generated from OpenAPI examples.",
@@ -188,7 +199,7 @@
       "Setup": null
     },
     {
-      "Order": 18,
+      "Order": 19,
       "Title": "Restores a PITR backup for a database",
       "Slug": "v1-restore-pitr-backup",
       "Description": "Generated from OpenAPI examples.",
@@ -199,7 +210,7 @@
       "Setup": null
     },
     {
-      "Order": 19,
+      "Order": 20,
       "Title": "Run sql query",
       "Slug": "v1-run-a-query",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -210,7 +221,7 @@
       "Setup": null
     },
     {
-      "Order": 20,
+      "Order": 21,
       "Title": "Set up a read replica",
       "Slug": "v1-setup-a-read-replica",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -221,7 +232,7 @@
       "Setup": null
     },
     {
-      "Order": 21,
+      "Order": 22,
       "Title": "Initiates an undo to a given restore point",
       "Slug": "v1-undo",
       "Description": "Generated from OpenAPI examples.",
@@ -232,7 +243,7 @@
       "Setup": null
     },
     {
-      "Order": 22,
+      "Order": 23,
       "Title": "Updates the backup schedule time for a project",
       "Slug": "v1-update-backup-schedule",
       "Description": "Sets the time at which the daily backup runs. The change takes effect on the next backup window that includes the new time. If the new time has already passed for today, the first backup at the new time will occur the following day. It can only be updated 3 times per 24 hours.",
@@ -243,7 +254,7 @@
       "Setup": null
     },
     {
-      "Order": 23,
+      "Order": 24,
       "Title": "Updates the database password",
       "Slug": "v1-update-database-password",
       "Description": "Generated from OpenAPI examples.",
@@ -254,7 +265,7 @@
       "Setup": null
     },
     {
-      "Order": 24,
+      "Order": 25,
       "Title": "Updates a user mapping for JIT access",
       "Slug": "v1-update-jit-access",
       "Description": "Modifies the roles that can be assumed and for how long",
@@ -265,7 +276,7 @@
       "Setup": null
     },
     {
-      "Order": 25,
+      "Order": 26,
       "Title": "Update project\u0027s temporary access configuration.",
       "Slug": "v1-update-jit-access-config",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -276,7 +287,7 @@
       "Setup": null
     },
     {
-      "Order": 26,
+      "Order": 27,
       "Title": "Updates project\u0027s supavisor config",
       "Slug": "v1-update-pooler-config",
       "Description": "Generated from OpenAPI examples.",
@@ -287,7 +298,7 @@
       "Setup": null
     },
     {
-      "Order": 27,
+      "Order": 28,
       "Title": "Updates project\u0027s Postgres config",
       "Slug": "v1-update-postgres-config",
       "Description": "Generated from OpenAPI examples.",
@@ -298,7 +309,7 @@
       "Setup": null
     },
     {
-      "Order": 28,
+      "Order": 29,
       "Title": "Update project\u0027s SSL enforcement configuration.",
       "Slug": "v1-update-ssl-enforcement-config",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -309,7 +320,7 @@
       "Setup": null
     },
     {
-      "Order": 29,
+      "Order": 30,
       "Title": "Upsert a database migration without applying",
       "Slug": "v1-upsert-a-migration",
       "Description": "Generated from OpenAPI examples.",
@@ -320,7 +331,7 @@
       "Setup": null
     },
     {
-      "Order": 30,
+      "Order": 31,
       "Title": "Activates a vanity subdomain for a project.",
       "Slug": "v1-activate-vanity-subdomain-config",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -331,7 +342,7 @@
       "Setup": null
     },
     {
-      "Order": 31,
+      "Order": 32,
       "Title": "Checks vanity subdomain availability",
       "Slug": "v1-check-vanity-subdomain-availability",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -342,7 +353,7 @@
       "Setup": null
     },
     {
-      "Order": 32,
+      "Order": 33,
       "Title": "Updates project\u0027s custom hostname configuration",
       "Slug": "v1-update-hostname-config",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -353,29 +364,29 @@
       "Setup": null
     },
     {
-      "Order": 33,
+      "Order": 34,
       "Title": "Bulk update functions",
       "Slug": "v1-bulk-update-functions",
       "Description": "Bulk update functions. It will create a new function or replace existing. The operation is idempotent. NOTE: You will need to manually bump the version.",
       "Language": "http",
-      "Code": "### Bulk update functions\n# @name v1-bulk-update-functions\nPUT {{host}}/v1/projects/{{ref}}/functions\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n[\n  {\n    \u0022id\u0022: \u00223c078cce-ad70-4148-9f37-4da362789053\u0022,\n    \u0022slug\u0022: \u0022hello-world\u0022,\n    \u0022name\u0022: \u0022Hello World\u0022,\n    \u0022status\u0022: \u0022ACTIVE\u0022,\n    \u0022version\u0022: 2,\n    \u0022verify_jwt\u0022: true,\n    \u0022entrypoint_path\u0022: \u0022index.ts\u0022\n  }\n]\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 402\n# Description: Maximum number of functions reached for Plan\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update functions",
+      "Code": "### Bulk update functions\n# @name v1-bulk-update-functions\nPUT {{host}}/v1/projects/{{ref}}/functions\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n[\n  {\n    \u0022id\u0022: \u00223c078cce-ad70-4148-9f37-4da362789053\u0022,\n    \u0022slug\u0022: \u0022hello-world\u0022,\n    \u0022name\u0022: \u0022Hello World\u0022,\n    \u0022status\u0022: \u0022ACTIVE\u0022,\n    \u0022version\u0022: 2,\n    \u0022verify_jwt\u0022: true,\n    \u0022entrypoint_path\u0022: \u0022index.ts\u0022\n  }\n]\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 402\n# Description: Maximum number of functions reached for Plan\n# Content-Type: application/json\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update functions",
       "Format": "http",
       "OperationId": "v1-bulk-update-functions",
       "Setup": null
     },
     {
-      "Order": 34,
+      "Order": 35,
       "Title": "Deploy a function",
       "Slug": "v1-deploy-a-function",
       "Description": "A new endpoint to deploy functions. It will create if function does not exist.",
       "Language": "http",
-      "Code": "### Deploy a function\n# @name v1-deploy-a-function\nPOST {{host}}/v1/projects/{{ref}}/functions/deploy?slug={{slug}}\u0026bundleOnly={{bundleOnly}}\nAuthorization: Bearer {{token}}\nContent-Type: multipart/form-data; boundary=AutoSDKBoundary\nAccept: application/json\n\n--AutoSDKBoundary\nContent-Disposition: form-data; name=\u0022file\u0022; filename=\u0022file.bin\u0022\nContent-Type: application/octet-stream\n\n\u003C ./file.bin\n--AutoSDKBoundary\nContent-Disposition: form-data; name=\u0022metadata\u0022\n\nstring\n--AutoSDKBoundary--\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 402\n# Description: Maximum number of functions reached for Plan\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to deploy function",
+      "Code": "### Deploy a function\n# @name v1-deploy-a-function\nPOST {{host}}/v1/projects/{{ref}}/functions/deploy?slug={{slug}}\u0026bundleOnly={{bundleOnly}}\nAuthorization: Bearer {{token}}\nContent-Type: multipart/form-data; boundary=AutoSDKBoundary\nAccept: application/json\n\n--AutoSDKBoundary\nContent-Disposition: form-data; name=\u0022file\u0022; filename=\u0022file.bin\u0022\nContent-Type: application/octet-stream\n\n\u003C ./file.bin\n--AutoSDKBoundary\nContent-Disposition: form-data; name=\u0022metadata\u0022\n\nstring\n--AutoSDKBoundary--\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 402\n# Description: Maximum number of functions reached for Plan\n# Content-Type: application/json\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to deploy function",
       "Format": "http",
       "OperationId": "v1-deploy-a-function",
       "Setup": null
     },
     {
-      "Order": 35,
+      "Order": 36,
       "Title": "Update a function",
       "Slug": "v1-update-a-function",
       "Description": "Updates a function with the specified slug and project.",
@@ -386,18 +397,18 @@
       "Setup": null
     },
     {
-      "Order": 36,
+      "Order": 37,
       "Title": "Create a database branch",
       "Slug": "v1-create-a-branch",
       "Description": "Creates a database branch from the specified project.",
       "Language": "http",
-      "Code": "### Create a database branch\n# @name v1-create-a-branch\nPOST {{host}}/v1/projects/{{ref}}/branches\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022branch_name\u0022: \u0022preview-login-page\u0022,\n  \u0022git_branch\u0022: \u0022feature/login-page\u0022,\n  \u0022persistent\u0022: true,\n  \u0022with_data\u0022: false,\n  \u0022notify_url\u0022: \u0022https://example.com/webhooks/branches\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to create database branch",
+      "Code": "### Create a database branch\n# @name v1-create-a-branch\nPOST {{host}}/v1/projects/{{ref}}/branches\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022branch_name\u0022: \u0022preview-login-page\u0022,\n  \u0022git_branch\u0022: \u0022feature/login-page\u0022,\n  \u0022persistent\u0022: true,\n  \u0022with_data\u0022: false,\n  \u0022notify_url\u0022: \u0022https://example.com/webhooks/branches\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 402\n# Description: Branching or persistent branches are not available on the organization plan\n# Content-Type: application/json\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to create database branch",
       "Format": "http",
       "OperationId": "v1-create-a-branch",
       "Setup": null
     },
     {
-      "Order": 37,
+      "Order": 38,
       "Title": "Merges a database branch",
       "Slug": "v1-merge-a-branch",
       "Description": "Merges the specified database branch",
@@ -408,7 +419,7 @@
       "Setup": null
     },
     {
-      "Order": 38,
+      "Order": 39,
       "Title": "Pushes a database branch",
       "Slug": "v1-push-a-branch",
       "Description": "Pushes the specified database branch",
@@ -419,7 +430,7 @@
       "Setup": null
     },
     {
-      "Order": 39,
+      "Order": 40,
       "Title": "Resets a database branch",
       "Slug": "v1-reset-a-branch",
       "Description": "Resets the specified database branch",
@@ -430,18 +441,18 @@
       "Setup": null
     },
     {
-      "Order": 40,
+      "Order": 41,
       "Title": "Update database branch config",
       "Slug": "v1-update-a-branch-config",
       "Description": "Updates the configuration of the specified database branch",
       "Language": "http",
-      "Code": "### Update database branch config\n# @name v1-update-a-branch-config\nPATCH {{host}}/v1/branches/{{branch_id_or_ref}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022branch_name\u0022: \u0022preview-login-page\u0022,\n  \u0022git_branch\u0022: \u0022feature/login-page\u0022,\n  \u0022persistent\u0022: true,\n  \u0022request_review\u0022: true,\n  \u0022notify_url\u0022: \u0022https://example.com/webhooks/branches\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update database branch",
+      "Code": "### Update database branch config\n# @name v1-update-a-branch-config\nPATCH {{host}}/v1/branches/{{branch_id_or_ref}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022branch_name\u0022: \u0022preview-login-page\u0022,\n  \u0022git_branch\u0022: \u0022feature/login-page\u0022,\n  \u0022persistent\u0022: true,\n  \u0022request_review\u0022: true,\n  \u0022notify_url\u0022: \u0022https://example.com/webhooks/branches\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 402\n# Description: Persistent branches are not available on the organization plan\n# Content-Type: application/json\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update database branch",
       "Format": "http",
       "OperationId": "v1-update-a-branch-config",
       "Setup": null
     },
     {
-      "Order": 41,
+      "Order": 42,
       "Title": "Update the status of an action run",
       "Slug": "v1-update-action-run-status",
       "Description": "Updates the status of an ongoing action run.",
@@ -452,7 +463,7 @@
       "Setup": null
     },
     {
-      "Order": 42,
+      "Order": 43,
       "Title": "Exchange auth code for user\u0027s access and refresh token",
       "Slug": "v1-exchange-oauth-token",
       "Description": "Supports \u0060authorization_code\u0060, \u0060refresh_token\u0060, and \u0060urn:ietf:params:oauth:grant-type:jwt-bearer\u0060 grant types. The \u0060jwt-bearer\u0060 grant type (IDJAG \u2014 identity-directed JWT assertion) is in beta and available on Team and Enterprise plans only.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -463,7 +474,7 @@
       "Setup": null
     },
     {
-      "Order": 43,
+      "Order": 44,
       "Title": "Revoke oauth app authorization and it\u0027s corresponding tokens",
       "Slug": "v1-revoke-token",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -474,7 +485,7 @@
       "Setup": "This example assumes \u0060using Supabase;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     },
     {
-      "Order": 44,
+      "Order": 45,
       "Title": "Create an organization",
       "Slug": "v1-create-an-organization",
       "Description": "Generated from OpenAPI examples.",
@@ -485,7 +496,7 @@
       "Setup": "This example assumes \u0060using Supabase;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     },
     {
-      "Order": 45,
+      "Order": 46,
       "Title": "Create a project",
       "Slug": "v1-create-a-project",
       "Description": "Generated from OpenAPI examples.",
@@ -496,7 +507,7 @@
       "Setup": "This example assumes \u0060using Supabase;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     },
     {
-      "Order": 46,
+      "Order": 47,
       "Title": "Remove network bans.",
       "Slug": "v1-delete-network-bans",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -507,18 +518,18 @@
       "Setup": null
     },
     {
-      "Order": 47,
+      "Order": 48,
       "Title": "Modify database disk",
       "Slug": "v1-modify-database-disk",
       "Description": "Generated from OpenAPI examples.",
       "Language": "http",
-      "Code": "### Modify database disk\n# @name v1-modify-database-disk\nPOST {{host}}/v1/projects/{{ref}}/config/disk\nAuthorization: Bearer {{token}}\nContent-Type: application/json\n\n{\n  \u0022attributes\u0022: {\n    \u0022type\u0022: \u0022gp3\u0022,\n    \u0022size_gb\u0022: 100,\n    \u0022iops\u0022: 3000,\n    \u0022throughput_mibps\u0022: 125\n  }\n}\n\n## Responses\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to modify database disk",
+      "Code": "### Modify database disk\n# @name v1-modify-database-disk\nPOST {{host}}/v1/projects/{{ref}}/config/disk\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022attributes\u0022: {\n    \u0022type\u0022: \u0022gp3\u0022,\n    \u0022size_gb\u0022: 100,\n    \u0022iops\u0022: 3000,\n    \u0022throughput_mibps\u0022: 125\n  }\n}\n\n## Responses\n# 401\n# Description: Unauthorized\n# 402\n# Description: Disk modifications are not available on the organization plan\n# Content-Type: application/json\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to modify database disk",
       "Format": "http",
       "OperationId": "v1-modify-database-disk",
       "Setup": null
     },
     {
-      "Order": 48,
+      "Order": 49,
       "Title": "Updates project\u0027s network restrictions by adding or removing CIDRs",
       "Slug": "v1-patch-network-restrictions",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Alpha** stage.",
@@ -529,7 +540,18 @@
       "Setup": null
     },
     {
-      "Order": 49,
+      "Order": 50,
+      "Title": "Applies or rejects the change in review in a project\u0027s network restrictions",
+      "Slug": "v1-review-network-restrictions",
+      "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Alpha** stage.",
+      "Language": "http",
+      "Code": "### Applies or rejects the change in review in a project\u0027s network restrictions\n# @name v1-review-network-restrictions\nPOST {{host}}/v1/projects/{{ref}}/network-restrictions/review\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022action\u0022: \u0022apply\u0022,\n  \u0022requested_at\u0022: \u00222026-10-21T20:31:51.116\\u002B00:00\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to resolve the network restrictions review",
+      "Format": "http",
+      "OperationId": "v1-review-network-restrictions",
+      "Setup": null
+    },
+    {
+      "Order": 51,
       "Title": "Updates the given project",
       "Slug": "v1-update-a-project",
       "Description": "Generated from OpenAPI examples.",
@@ -540,7 +562,7 @@
       "Setup": null
     },
     {
-      "Order": 50,
+      "Order": 52,
       "Title": "Updates project\u0027s network restrictions",
       "Slug": "v1-update-network-restrictions",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -551,7 +573,7 @@
       "Setup": null
     },
     {
-      "Order": 51,
+      "Order": 53,
       "Title": "Upgrades the project\u0027s Postgres version",
       "Slug": "v1-upgrade-postgres-version",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -562,7 +584,7 @@
       "Setup": null
     },
     {
-      "Order": 52,
+      "Order": 54,
       "Title": "Updates realtime configuration",
       "Slug": "v1-update-realtime-config",
       "Description": "Generated from OpenAPI examples.",
@@ -573,7 +595,7 @@
       "Setup": null
     },
     {
-      "Order": 53,
+      "Order": 55,
       "Title": "Updates project\u0027s postgrest config",
       "Slug": "v1-update-postgrest-service-config",
       "Description": "Generated from OpenAPI examples.",
@@ -584,7 +606,7 @@
       "Setup": null
     },
     {
-      "Order": 54,
+      "Order": 56,
       "Title": "Bulk create secrets",
       "Slug": "v1-bulk-create-secrets",
       "Description": "Creates multiple secrets and adds them to the specified project.",
@@ -595,7 +617,7 @@
       "Setup": null
     },
     {
-      "Order": 55,
+      "Order": 57,
       "Title": "Bulk delete secrets",
       "Slug": "v1-bulk-delete-secrets",
       "Description": "Deletes all secrets with the given names from the specified project",
@@ -606,18 +628,18 @@
       "Setup": null
     },
     {
-      "Order": 56,
+      "Order": 58,
       "Title": "Creates a new API key for the project",
       "Slug": "v1-create-project-api-key",
       "Description": "Generated from OpenAPI examples.",
       "Language": "http",
-      "Code": "### Creates a new API key for the project\n# @name v1-create-project-api-key\nPOST {{host}}/v1/projects/{{ref}}/api-keys?reveal={{reveal}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022type\u0022: \u0022secret\u0022,\n  \u0022name\u0022: \u0022ci_secret_key\u0022,\n  \u0022description\u0022: \u0022CI deploy key\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded",
+      "Code": "### Creates a new API key for the project\n# @name v1-create-project-api-key\nPOST {{host}}/v1/projects/{{ref}}/api-keys?reveal={{reveal}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022type\u0022: \u0022secret\u0022,\n  \u0022name\u0022: \u0022ci_secret_key\u0022,\n  \u0022description\u0022: \u0022CI deploy key\u0022\n}\n\n## Responses\n# 201\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 402\n# Description: Custom JWT templates for secret API keys are not available on the organization plan\n# Content-Type: application/json\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded",
       "Format": "http",
       "OperationId": "v1-create-project-api-key",
       "Setup": null
     },
     {
-      "Order": 57,
+      "Order": 59,
       "Title": "Gets project\u0027s pgsodium config",
       "Slug": "v1-get-pgsodium-config",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -628,7 +650,7 @@
       "Setup": null
     },
     {
-      "Order": 58,
+      "Order": 60,
       "Title": "Updates project\u0027s pgsodium config. Updating the root_key can cause all data encrypted with the older key to become inaccessible.",
       "Slug": "v1-update-pgsodium-config",
       "Description": "This is an **experimental** endpoint. It is subject to change or removal in future versions. Use it with caution, as it may not remain supported or stable.\n\nThis endpoint is currently in its **Beta** stage.",
@@ -639,23 +661,23 @@
       "Setup": null
     },
     {
-      "Order": 59,
+      "Order": 61,
       "Title": "Updates an API key for the project",
       "Slug": "v1-update-project-api-key",
       "Description": "Generated from OpenAPI examples.",
       "Language": "http",
-      "Code": "### Updates an API key for the project\n# @name v1-update-project-api-key\nPATCH {{host}}/v1/projects/{{ref}}/api-keys/{{id}}?reveal={{reveal}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022name\u0022: \u0022ci_secret_key_rotated\u0022,\n  \u0022description\u0022: \u0022Rotated after March release\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 404\n# Description: API key not found for project\n# 429\n# Description: Rate limit exceeded",
+      "Code": "### Updates an API key for the project\n# @name v1-update-project-api-key\nPATCH {{host}}/v1/projects/{{ref}}/api-keys/{{id}}?reveal={{reveal}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022name\u0022: \u0022ci_secret_key_rotated\u0022,\n  \u0022description\u0022: \u0022Rotated after March release\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# 402\n# Description: Custom JWT templates for secret API keys are not available on the organization plan\n# Content-Type: application/json\n# 403\n# Description: Forbidden action\n# 404\n# Description: API key not found for project\n# 429\n# Description: Rate limit exceeded",
       "Format": "http",
       "OperationId": "v1-update-project-api-key",
       "Setup": null
     },
     {
-      "Order": 60,
+      "Order": 62,
       "Title": "Updates project\u0027s storage config",
       "Slug": "v1-update-storage-config",
       "Description": "Generated from OpenAPI examples.",
       "Language": "http",
-      "Code": "### Updates project\u0027s storage config\n# @name v1-update-storage-config\nPATCH {{host}}/v1/projects/{{ref}}/config/storage\nAuthorization: Bearer {{token}}\nContent-Type: application/json\n\n{\n  \u0022fileSizeLimit\u0022: 10485760,\n  \u0022features\u0022: {\n    \u0022imageTransformation\u0022: {\n      \u0022enabled\u0022: true\n    }\n  }\n}\n\n## Responses\n# 401\n# Description: Unauthorized\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update project\u0027s storage config",
+      "Code": "### Updates project\u0027s storage config\n# @name v1-update-storage-config\nPATCH {{host}}/v1/projects/{{ref}}/config/storage\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022fileSizeLimit\u0022: 10485760,\n  \u0022features\u0022: {\n    \u0022imageTransformation\u0022: {\n      \u0022enabled\u0022: true\n    }\n  }\n}\n\n## Responses\n# 401\n# Description: Unauthorized\n# 402\n# Description: A storage feature or file size limit in the request is not available on the organization plan\n# Content-Type: application/json\n# 403\n# Description: Forbidden action\n# 429\n# Description: Rate limit exceeded\n# 500\n# Description: Failed to update project\u0027s storage config",
       "Format": "http",
       "OperationId": "v1-update-storage-config",
       "Setup": null

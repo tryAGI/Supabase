@@ -95,6 +95,7 @@ namespace Supabase
         /// <param name="samlEnabled"></param>
         /// <param name="samlExternalUrl"></param>
         /// <param name="securitySbForwardedForEnabled"></param>
+        /// <param name="externalEmailMagicLinkDisabled"></param>
         /// <param name="securityCaptchaEnabled"></param>
         /// <param name="securityCaptchaProvider"></param>
         /// <param name="securityCaptchaSecret"></param>
@@ -343,6 +344,7 @@ namespace Supabase
             bool? samlEnabled = default,
             string? samlExternalUrl = default,
             bool? securitySbForwardedForEnabled = default,
+            bool? externalEmailMagicLinkDisabled = default,
             bool? securityCaptchaEnabled = default,
             global::Supabase.UpdateAuthConfigBodySecurityCaptchaProvider? securityCaptchaProvider = default,
             string? securityCaptchaSecret = default,

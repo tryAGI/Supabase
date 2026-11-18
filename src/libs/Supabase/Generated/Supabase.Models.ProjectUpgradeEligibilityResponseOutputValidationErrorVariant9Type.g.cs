@@ -11,7 +11,7 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        X86Architecture,
+        TableUsingRegType,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Supabase
         {
             return value switch
             {
-                ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9Type.X86Architecture => "x86_architecture",
+                ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9Type.TableUsingRegType => "table_using_reg_type",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Supabase
         {
             return value switch
             {
-                "x86_architecture" => ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9Type.X86Architecture,
+                "table_using_reg_type" => ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9Type.TableUsingRegType,
                 _ => null,
             };
         }

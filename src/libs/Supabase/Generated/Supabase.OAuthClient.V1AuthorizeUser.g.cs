@@ -36,6 +36,7 @@ namespace Supabase
             ref string? codeChallenge,
             ref global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod,
             ref string? organizationSlug,
+            ref string? projectRef,
             ref string? targetFlow,
             ref string? resource);
         partial void PrepareV1AuthorizeUserRequest(
@@ -50,6 +51,7 @@ namespace Supabase
             string? codeChallenge,
             global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod,
             string? organizationSlug,
+            string? projectRef,
             string? targetFlow,
             string? resource);
         partial void ProcessV1AuthorizeUserResponse(
@@ -88,6 +90,9 @@ namespace Supabase
         /// <param name="organizationSlug">
         /// Example: tsrqponmlkjihgfedcba
         /// </param>
+        /// <param name="projectRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="targetFlow"></param>
         /// <param name="resource">
         /// Example: https://mcp.supabase.com/projects
@@ -105,6 +110,7 @@ namespace Supabase
             string? codeChallenge = default,
             global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod = default,
             string? organizationSlug = default,
+            string? projectRef = default,
             string? targetFlow = default,
             string? resource = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -120,6 +126,7 @@ namespace Supabase
                 codeChallenge: codeChallenge,
                 codeChallengeMethod: codeChallengeMethod,
                 organizationSlug: organizationSlug,
+                projectRef: projectRef,
                 targetFlow: targetFlow,
                 resource: resource,
                 requestOptions: requestOptions,
@@ -158,6 +165,9 @@ namespace Supabase
         /// <param name="organizationSlug">
         /// Example: tsrqponmlkjihgfedcba
         /// </param>
+        /// <param name="projectRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="targetFlow"></param>
         /// <param name="resource">
         /// Example: https://mcp.supabase.com/projects
@@ -175,6 +185,7 @@ namespace Supabase
             string? codeChallenge = default,
             global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod = default,
             string? organizationSlug = default,
+            string? projectRef = default,
             string? targetFlow = default,
             string? resource = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -193,6 +204,7 @@ namespace Supabase
                 codeChallenge: ref codeChallenge,
                 codeChallengeMethod: ref codeChallengeMethod,
                 organizationSlug: ref organizationSlug,
+                projectRef: ref projectRef,
                 targetFlow: ref targetFlow,
                 resource: ref resource);
 
@@ -232,6 +244,7 @@ namespace Supabase
                                 .AddOptionalParameter("code_challenge", codeChallenge)
                                 .AddOptionalParameter("code_challenge_method", codeChallengeMethod?.ToValueString())
                                 .AddOptionalParameter("organization_slug", organizationSlug)
+                                .AddOptionalParameter("project_ref", projectRef)
                                 .AddOptionalParameter("target_flow", targetFlow)
                                 .AddOptionalParameter("resource", resource)
                                 ;
@@ -284,6 +297,7 @@ namespace Supabase
                     codeChallenge: codeChallenge,
                     codeChallengeMethod: codeChallengeMethod,
                     organizationSlug: organizationSlug,
+                    projectRef: projectRef,
                     targetFlow: targetFlow,
                     resource: resource);
 

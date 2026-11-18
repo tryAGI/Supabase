@@ -18,6 +18,10 @@ namespace Supabase
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     #pragma warning restore CS0618
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode), TypeInfoPropertyName = "PlanGateErrorBodyErrorCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JsonValueOutput), TypeInfoPropertyName = "JsonValueOutput2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.JsonValueOutput?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Supabase.JsonValueOutput?>))]
@@ -31,27 +35,23 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.UpdateCustomHostnameResponseOutputDataResultSslValidationError>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameResponseOutputDataResultSslValidationError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameResponseOutputDataResultOwnershipVerification))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.VanitySubdomainConfigResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.VanitySubdomainConfigResponseOutputStatus), TypeInfoPropertyName = "VanitySubdomainConfigResponseOutputStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBody))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode), TypeInfoPropertyName = "PlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.VanitySubdomainBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SubdomainAvailabilityResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ActivateVanitySubdomainResponseOutput))]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     #pragma warning restore CS0618
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode?), TypeInfoPropertyName = "NullablePlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JsonValueOutput?), TypeInfoPropertyName = "NullableJsonValueOutput2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateCustomHostnameResponseOutputStatus?), TypeInfoPropertyName = "NullableUpdateCustomHostnameResponseOutputStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.VanitySubdomainConfigResponseOutputStatus?), TypeInfoPropertyName = "NullableVanitySubdomainConfigResponseOutputStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode?), TypeInfoPropertyName = "NullablePlanGateErrorBodyErrorCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.JsonValueOutput?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.UpdateCustomHostnameResponseOutputDataResultSslValidationRecord>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.UpdateCustomHostnameResponseOutputDataResultSslValidationError>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     internal sealed partial class DomainsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -151,23 +151,33 @@ namespace Supabase
             public override bool CanConvert(global::System.Type typeToConvert)
             {
                 return
-                    typeToConvert == typeof(global::Supabase.UpdateCustomHostnameResponseOutputStatus)
+                    typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode)
+
+                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?)
+
+                    || typeToConvert == typeof(global::Supabase.UpdateCustomHostnameResponseOutputStatus)
 
                     || typeToConvert == typeof(global::Supabase.UpdateCustomHostnameResponseOutputStatus?)
 
                     || typeToConvert == typeof(global::Supabase.VanitySubdomainConfigResponseOutputStatus)
 
-                    || typeToConvert == typeof(global::Supabase.VanitySubdomainConfigResponseOutputStatus?)
-
-                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode)
-
-                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?);
+                    || typeToConvert == typeof(global::Supabase.VanitySubdomainConfigResponseOutputStatus?);
             }
 
             public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
                 global::System.Type typeToConvert,
                 global::System.Text.Json.JsonSerializerOptions options)
             {
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Supabase.UpdateCustomHostnameResponseOutputStatus))
                 {
                     return new global::Supabase.JsonConverters.UpdateCustomHostnameResponseOutputStatusJsonConverter();
@@ -186,16 +196,6 @@ namespace Supabase
                 if (typeToConvert == typeof(global::Supabase.VanitySubdomainConfigResponseOutputStatus?))
                 {
                     return new global::Supabase.JsonConverters.VanitySubdomainConfigResponseOutputStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode))
-                {
-                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?))
-                {
-                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter();
                 }
                 throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
             }

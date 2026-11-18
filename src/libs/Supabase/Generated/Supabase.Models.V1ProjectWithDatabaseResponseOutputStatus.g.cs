@@ -43,6 +43,10 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
+        Promoting,
+        /// <summary>
+        ///
+        /// </summary>
         Removed,
         /// <summary>
         ///
@@ -90,6 +94,7 @@ namespace Supabase
                 V1ProjectWithDatabaseResponseOutputStatus.InitFailed => "INIT_FAILED",
                 V1ProjectWithDatabaseResponseOutputStatus.PauseFailed => "PAUSE_FAILED",
                 V1ProjectWithDatabaseResponseOutputStatus.Pausing => "PAUSING",
+                V1ProjectWithDatabaseResponseOutputStatus.Promoting => "PROMOTING",
                 V1ProjectWithDatabaseResponseOutputStatus.Removed => "REMOVED",
                 V1ProjectWithDatabaseResponseOutputStatus.Resizing => "RESIZING",
                 V1ProjectWithDatabaseResponseOutputStatus.Restarting => "RESTARTING",
@@ -115,6 +120,7 @@ namespace Supabase
                 "INIT_FAILED" => V1ProjectWithDatabaseResponseOutputStatus.InitFailed,
                 "PAUSE_FAILED" => V1ProjectWithDatabaseResponseOutputStatus.PauseFailed,
                 "PAUSING" => V1ProjectWithDatabaseResponseOutputStatus.Pausing,
+                "PROMOTING" => V1ProjectWithDatabaseResponseOutputStatus.Promoting,
                 "REMOVED" => V1ProjectWithDatabaseResponseOutputStatus.Removed,
                 "RESIZING" => V1ProjectWithDatabaseResponseOutputStatus.Resizing,
                 "RESTARTING" => V1ProjectWithDatabaseResponseOutputStatus.Restarting,

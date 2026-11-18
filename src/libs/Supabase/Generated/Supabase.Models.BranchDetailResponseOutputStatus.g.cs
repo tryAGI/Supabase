@@ -43,6 +43,10 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
+        Promoting,
+        /// <summary>
+        ///
+        /// </summary>
         Removed,
         /// <summary>
         ///
@@ -90,6 +94,7 @@ namespace Supabase
                 BranchDetailResponseOutputStatus.InitFailed => "INIT_FAILED",
                 BranchDetailResponseOutputStatus.PauseFailed => "PAUSE_FAILED",
                 BranchDetailResponseOutputStatus.Pausing => "PAUSING",
+                BranchDetailResponseOutputStatus.Promoting => "PROMOTING",
                 BranchDetailResponseOutputStatus.Removed => "REMOVED",
                 BranchDetailResponseOutputStatus.Resizing => "RESIZING",
                 BranchDetailResponseOutputStatus.Restarting => "RESTARTING",
@@ -115,6 +120,7 @@ namespace Supabase
                 "INIT_FAILED" => BranchDetailResponseOutputStatus.InitFailed,
                 "PAUSE_FAILED" => BranchDetailResponseOutputStatus.PauseFailed,
                 "PAUSING" => BranchDetailResponseOutputStatus.Pausing,
+                "PROMOTING" => BranchDetailResponseOutputStatus.Promoting,
                 "REMOVED" => BranchDetailResponseOutputStatus.Removed,
                 "RESIZING" => BranchDetailResponseOutputStatus.Resizing,
                 "RESTARTING" => BranchDetailResponseOutputStatus.Restarting,

@@ -9,18 +9,18 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10_c7ad6d01eecebf91")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10_aeeae7ce956d9eed")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11_8f652dd3fa54769e")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11_178f2d5d9e5bd3bd")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7ObjTypeVariant1?, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7ObjTypeVariant2?>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7ObjTypeVariant2_ccea029553b3d28c")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant4_38150868936ca389")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant4_d3da284f845875ea")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant5>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant5_abaae1529b7afd1b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant5>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant5_5fa984560166774c")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.V1ServiceHealthResponseOutputInfoVariant1, global::Supabase.V1ServiceHealthResponseOutputInfoVariant2, global::Supabase.V1ServiceHealthResponseOutputInfoVariant3>), TypeInfoPropertyName = "V1ServiceHealthResponseOutputInfoVariant3_3fd4e2d7b287599a")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10>?), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10_8a3df8a5a5fe7e9e")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11>?), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11_39a7d5d938f69f24")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7ObjTypeVariant1?, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7ObjTypeVariant2?>?), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7ObjTypeVariant2_fe7705efeea5c4b6")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4>?), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant4_3850de25de72b1fd")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant5>?), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant5_54bebb33d4812884")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.V1ServiceHealthResponseOutputInfoVariant1, global::Supabase.V1ServiceHealthResponseOutputInfoVariant2, global::Supabase.V1ServiceHealthResponseOutputInfoVariant3>?), TypeInfoPropertyName = "V1ServiceHealthResponseOutputInfoVariant3_9b1ccfe9da0c7c8b")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10_eff41163d08da137")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant4_ac0117ef55dfe715")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.AnyOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11_1fe1f512756da72b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.OneOf<global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant5>>), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant5_f56a25783cab9512")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
@@ -41,6 +41,9 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode), TypeInfoPropertyName = "PlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectWithDatabaseResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectWithDatabaseResponseOutputStatus), TypeInfoPropertyName = "V1ProjectWithDatabaseResponseOutputStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectWithDatabaseResponseOutputDatabase))]
@@ -110,6 +113,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsResponseOutputEntitlement), TypeInfoPropertyName = "NetworkRestrictionsResponseOutputEntitlement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsResponseOutputConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsResponseOutputOldConfig))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsResponseOutputPendingConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsResponseOutputStatus), TypeInfoPropertyName = "NetworkRestrictionsResponseOutputStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsPatchRequest))]
@@ -126,6 +130,8 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsV2ResponseOutputOldConfigDbAllowedCidr))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsV2ResponseOutputOldConfigDbAllowedCidrType), TypeInfoPropertyName = "NetworkRestrictionsV2ResponseOutputOldConfigDbAllowedCidrType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsV2ResponseOutputStatus), TypeInfoPropertyName = "NetworkRestrictionsV2ResponseOutputStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsReviewRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsReviewRequestAction), TypeInfoPropertyName = "NetworkRestrictionsReviewRequestAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectRefResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1UpdateProjectBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpgradeDatabaseBody))]
@@ -159,6 +165,8 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9Type), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10Type), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11Type), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1Type), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2))]
@@ -167,6 +175,8 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3Type), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4Type), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant4Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant5))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant5Type), TypeInfoPropertyName = "ProjectUpgradeEligibilityResponseOutputWarningVariant5Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DatabaseUpgradeStatusResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DatabaseUpgradeStatusResponseOutputDatabaseUpgradeStatus))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DatabaseUpgradeStatusResponseOutputDatabaseUpgradeStatusError), TypeInfoPropertyName = "DatabaseUpgradeStatusResponseOutputDatabaseUpgradeStatusError2")]
@@ -229,6 +239,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode?), TypeInfoPropertyName = "NullablePlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ProjectWithDatabaseResponseOutputStatus?), TypeInfoPropertyName = "NullableV1ProjectWithDatabaseResponseOutputStatus2")]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1CreateProjectBodyPlan?), TypeInfoPropertyName = "NullableV1CreateProjectBodyPlan2")]
@@ -271,6 +282,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsV2ResponseOutputConfigDbAllowedCidrType?), TypeInfoPropertyName = "NullableNetworkRestrictionsV2ResponseOutputConfigDbAllowedCidrType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsV2ResponseOutputOldConfigDbAllowedCidrType?), TypeInfoPropertyName = "NullableNetworkRestrictionsV2ResponseOutputOldConfigDbAllowedCidrType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsV2ResponseOutputStatus?), TypeInfoPropertyName = "NullableNetworkRestrictionsV2ResponseOutputStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.NetworkRestrictionsReviewRequestAction?), TypeInfoPropertyName = "NullableNetworkRestrictionsReviewRequestAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpgradeDatabaseBodyReleaseChannel?), TypeInfoPropertyName = "NullableUpgradeDatabaseBodyReleaseChannel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputCurrentAppVersionReleaseChannel?), TypeInfoPropertyName = "NullableProjectUpgradeEligibilityResponseOutputCurrentAppVersionReleaseChannel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputTargetUpgradeVersionPostgresVersion?), TypeInfoPropertyName = "NullableProjectUpgradeEligibilityResponseOutputTargetUpgradeVersionPostgresVersion2")]
@@ -287,10 +299,12 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8Type?), TypeInfoPropertyName = "NullableProjectUpgradeEligibilityResponseOutputValidationErrorVariant8Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9Type?), TypeInfoPropertyName = "NullableProjectUpgradeEligibilityResponseOutputValidationErrorVariant9Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10Type?), TypeInfoPropertyName = "NullableProjectUpgradeEligibilityResponseOutputValidationErrorVariant10Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11Type?), TypeInfoPropertyName = "NullableProjectUpgradeEligibilityResponseOutputValidationErrorVariant11Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1Type?), TypeInfoPropertyName = "NullableProjectUpgradeEligibilityResponseOutputWarningVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2Type?), TypeInfoPropertyName = "NullableProjectUpgradeEligibilityResponseOutputWarningVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3Type?), TypeInfoPropertyName = "NullableProjectUpgradeEligibilityResponseOutputWarningVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4Type?), TypeInfoPropertyName = "NullableProjectUpgradeEligibilityResponseOutputWarningVariant4Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant5Type?), TypeInfoPropertyName = "NullableProjectUpgradeEligibilityResponseOutputWarningVariant5Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DatabaseUpgradeStatusResponseOutputDatabaseUpgradeStatusError?), TypeInfoPropertyName = "NullableDatabaseUpgradeStatusResponseOutputDatabaseUpgradeStatusError2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DatabaseUpgradeStatusResponseOutputDatabaseUpgradeStatusProgress?), TypeInfoPropertyName = "NullableDatabaseUpgradeStatusResponseOutputDatabaseUpgradeStatusProgress2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1ServiceHealthResponseOutputName?), TypeInfoPropertyName = "NullableV1ServiceHealthResponseOutputName2")]
@@ -379,9 +393,9 @@ namespace Supabase
             #pragma warning disable CS0618 // Converter references a deprecated API model.
             options.Converters.Add(new global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.V1CreateProjectBodyRegionSelectionVariant1, global::Supabase.V1CreateProjectBodyRegionSelectionVariant2>());
             #pragma warning restore CS0618
-            options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10>());
+            options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant5, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant6, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant8, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant9, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11>());
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7ObjTypeVariant1?, global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant7ObjTypeVariant2?>());
-            options.Converters.Add(new global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4>());
+            options.Converters.Add(new global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant2, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant3, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4, global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant5>());
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.V1ServiceHealthResponseOutputInfoVariant1, global::Supabase.V1ServiceHealthResponseOutputInfoVariant2, global::Supabase.V1ServiceHealthResponseOutputInfoVariant3>());
             options.Converters.Add(new global::Supabase.JsonConverters.AnyOfJsonConverter<global::Supabase.DiskResponseOutputAttributesVariant1, global::Supabase.DiskResponseOutputAttributesVariant2>());
             options.Converters.Add(new global::Supabase.JsonConverters.OneOfJsonConverter<global::Supabase.DiskRequestBodyAttributesVariant1, global::Supabase.DiskRequestBodyAttributesVariant2>());
@@ -437,7 +451,11 @@ namespace Supabase
             public override bool CanConvert(global::System.Type typeToConvert)
             {
                 return
-                    typeToConvert == typeof(global::Supabase.V1ProjectWithDatabaseResponseOutputStatus)
+                    typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode)
+
+                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?)
+
+                    || typeToConvert == typeof(global::Supabase.V1ProjectWithDatabaseResponseOutputStatus)
 
                     || typeToConvert == typeof(global::Supabase.V1ProjectWithDatabaseResponseOutputStatus?)
 
@@ -545,6 +563,10 @@ namespace Supabase
 
                     || typeToConvert == typeof(global::Supabase.NetworkRestrictionsV2ResponseOutputStatus?)
 
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsReviewRequestAction)
+
+                    || typeToConvert == typeof(global::Supabase.NetworkRestrictionsReviewRequestAction?)
+
                     || typeToConvert == typeof(global::Supabase.UpgradeDatabaseBodyReleaseChannel)
 
                     || typeToConvert == typeof(global::Supabase.UpgradeDatabaseBodyReleaseChannel?)
@@ -609,6 +631,10 @@ namespace Supabase
 
                     || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10Type?)
 
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11Type?)
+
                     || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1Type)
 
                     || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1Type?)
@@ -624,6 +650,10 @@ namespace Supabase
                     || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4Type)
 
                     || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4Type?)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant5Type)
+
+                    || typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant5Type?)
 
                     || typeToConvert == typeof(global::Supabase.DatabaseUpgradeStatusResponseOutputDatabaseUpgradeStatusError)
 
@@ -710,6 +740,16 @@ namespace Supabase
                 global::System.Type typeToConvert,
                 global::System.Text.Json.JsonSerializerOptions options)
             {
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Supabase.V1ProjectWithDatabaseResponseOutputStatus))
                 {
                     return new global::Supabase.JsonConverters.V1ProjectWithDatabaseResponseOutputStatusJsonConverter();
@@ -980,6 +1020,16 @@ namespace Supabase
                     return new global::Supabase.JsonConverters.NetworkRestrictionsV2ResponseOutputStatusNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsReviewRequestAction))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsReviewRequestActionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.NetworkRestrictionsReviewRequestAction?))
+                {
+                    return new global::Supabase.JsonConverters.NetworkRestrictionsReviewRequestActionNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Supabase.UpgradeDatabaseBodyReleaseChannel))
                 {
                     return new global::Supabase.JsonConverters.UpgradeDatabaseBodyReleaseChannelJsonConverter();
@@ -1140,6 +1190,16 @@ namespace Supabase
                     return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10TypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseOutputValidationErrorVariant11TypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant1Type))
                 {
                     return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseOutputWarningVariant1TypeJsonConverter();
@@ -1178,6 +1238,16 @@ namespace Supabase
                 if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant4Type?))
                 {
                     return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseOutputWarningVariant4TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant5Type))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseOutputWarningVariant5TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.ProjectUpgradeEligibilityResponseOutputWarningVariant5Type?))
+                {
+                    return new global::Supabase.JsonConverters.ProjectUpgradeEligibilityResponseOutputWarningVariant5TypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Supabase.DatabaseUpgradeStatusResponseOutputDatabaseUpgradeStatusError))

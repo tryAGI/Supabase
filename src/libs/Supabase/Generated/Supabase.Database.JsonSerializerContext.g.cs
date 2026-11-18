@@ -29,9 +29,13 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode), TypeInfoPropertyName = "PlanGateErrorBodyErrorCode2")]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     #pragma warning restore CS0618
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SnippetListOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Supabase.SnippetListOutputDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SnippetListOutputDataItem))]
@@ -47,7 +51,6 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SnippetResponseOutputOwner))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SnippetResponseOutputUpdatedBy))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SnippetResponseOutputContent))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessRequestRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessRequestRequestState), TypeInfoPropertyName = "JitAccessRequestRequestState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SslEnforcementResponseOutput))]
@@ -55,9 +58,6 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SslEnforcementRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SslEnforcementRequestRequestedConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.TypescriptResponseOutput))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBody))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode), TypeInfoPropertyName = "PlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ReadOnlyStatusResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SetUpReadReplicaBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SetUpReadReplicaBodyReadReplicaRegion), TypeInfoPropertyName = "SetUpReadReplicaBodyReadReplicaRegion2")]
@@ -192,12 +192,12 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode?), TypeInfoPropertyName = "NullablePlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SnippetListOutputDataItemType?), TypeInfoPropertyName = "NullableSnippetListOutputDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SnippetListOutputDataItemVisibility?), TypeInfoPropertyName = "NullableSnippetListOutputDataItemVisibility2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SnippetResponseOutputType?), TypeInfoPropertyName = "NullableSnippetResponseOutputType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SnippetResponseOutputVisibility?), TypeInfoPropertyName = "NullableSnippetResponseOutputVisibility2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.JitAccessRequestRequestState?), TypeInfoPropertyName = "NullableJitAccessRequestRequestState2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode?), TypeInfoPropertyName = "NullablePlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SetUpReadReplicaBodyReadReplicaRegion?), TypeInfoPropertyName = "NullableSetUpReadReplicaBodyReadReplicaRegion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.DeleteRolesResponseOutputMessage?), TypeInfoPropertyName = "NullableDeleteRolesResponseOutputMessage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.AnyOf<global::Supabase.JitListAccessResponseOutputItemVariant1, global::Supabase.JitListAccessResponseOutputItemVariant2>?), TypeInfoPropertyName = "NullableAnyOfJitListAccessResponseOutputItemVariant1JitListAccessResponseOutputItemVariant22")]
@@ -217,8 +217,8 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OneOf<global::Supabase.V1UpdateJitAccessConfigResponseVariant1, global::Supabase.V1UpdateJitAccessConfigResponseVariant2>?), TypeInfoPropertyName = "NullableOneOfV1UpdateJitAccessConfigResponseVariant1V1UpdateJitAccessConfigResponseVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1UpdateJitAccessConfigResponseVariant1State?), TypeInfoPropertyName = "NullableV1UpdateJitAccessConfigResponseVariant1State2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1UpdateJitAccessConfigResponseVariant2UnavailableReason?), TypeInfoPropertyName = "NullableV1UpdateJitAccessConfigResponseVariant2UnavailableReason2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.SnippetListOutputDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.SnippetListOutputDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.V1ListMigrationsResponseOutputItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.GetProjectDbMetadataResponseOutputDatabase>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.GetProjectDbMetadataResponseOutputDatabaseSchema>))]
@@ -346,7 +346,11 @@ namespace Supabase
             public override bool CanConvert(global::System.Type typeToConvert)
             {
                 return
-                    typeToConvert == typeof(global::Supabase.SnippetListOutputDataItemType)
+                    typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode)
+
+                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?)
+
+                    || typeToConvert == typeof(global::Supabase.SnippetListOutputDataItemType)
 
                     || typeToConvert == typeof(global::Supabase.SnippetListOutputDataItemType?)
 
@@ -365,10 +369,6 @@ namespace Supabase
                     || typeToConvert == typeof(global::Supabase.JitAccessRequestRequestState)
 
                     || typeToConvert == typeof(global::Supabase.JitAccessRequestRequestState?)
-
-                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode)
-
-                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?)
 
                     || typeToConvert == typeof(global::Supabase.SetUpReadReplicaBodyReadReplicaRegion)
 
@@ -439,6 +439,16 @@ namespace Supabase
                 global::System.Type typeToConvert,
                 global::System.Text.Json.JsonSerializerOptions options)
             {
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Supabase.SnippetListOutputDataItemType))
                 {
                     return new global::Supabase.JsonConverters.SnippetListOutputDataItemTypeJsonConverter();
@@ -487,16 +497,6 @@ namespace Supabase
                 if (typeToConvert == typeof(global::Supabase.JitAccessRequestRequestState?))
                 {
                     return new global::Supabase.JsonConverters.JitAccessRequestRequestStateNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode))
-                {
-                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?))
-                {
-                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Supabase.SetUpReadReplicaBodyReadReplicaRegion))
