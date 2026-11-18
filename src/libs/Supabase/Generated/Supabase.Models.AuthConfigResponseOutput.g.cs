@@ -1162,6 +1162,12 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("external_email_magic_link_disabled")]
+        public bool? ExternalEmailMagicLinkDisabled { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("security_captcha_enabled")]
         public bool? SecurityCaptchaEnabled { get; set; }
 
@@ -1653,6 +1659,7 @@ namespace Supabase
         /// <param name="samlExternalUrl"></param>
         /// <param name="samlAllowEncryptedAssertions"></param>
         /// <param name="securitySbForwardedForEnabled"></param>
+        /// <param name="externalEmailMagicLinkDisabled"></param>
         /// <param name="securityCaptchaEnabled"></param>
         /// <param name="securityCaptchaProvider"></param>
         /// <param name="securityCaptchaSecret"></param>
@@ -1895,6 +1902,7 @@ namespace Supabase
             string? samlExternalUrl,
             bool? samlAllowEncryptedAssertions,
             bool? securitySbForwardedForEnabled,
+            bool? externalEmailMagicLinkDisabled,
             bool? securityCaptchaEnabled,
             global::Supabase.AuthConfigResponseOutputSecurityCaptchaProvider? securityCaptchaProvider,
             string? securityCaptchaSecret,
@@ -2129,6 +2137,7 @@ namespace Supabase
             this.SamlExternalUrl = samlExternalUrl;
             this.SamlAllowEncryptedAssertions = samlAllowEncryptedAssertions;
             this.SecuritySbForwardedForEnabled = securitySbForwardedForEnabled;
+            this.ExternalEmailMagicLinkDisabled = externalEmailMagicLinkDisabled;
             this.SecurityCaptchaEnabled = securityCaptchaEnabled;
             this.SecurityCaptchaProvider = securityCaptchaProvider;
             this.SecurityCaptchaSecret = securityCaptchaSecret;

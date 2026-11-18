@@ -36,6 +36,20 @@ namespace Supabase
         public global::Supabase.OAuthTokenResponseOutputTokenType TokenType { get; set; }
 
         /// <summary>
+        /// Space-delimited scopes granted to the token. Omitted when no scopes were granted.<br/>
+        /// Example: projects:read projects:write
+        /// </summary>
+        /// <example>projects:read projects:write</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
+        public string? Scope { get; set; }
+
+        /// <summary>
+        /// Project refs the token is limited to. `null` means all projects.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("project_refs")]
+        public global::System.Collections.Generic.IList<string>? ProjectRefs { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -50,6 +64,13 @@ namespace Supabase
         /// The `urn:ietf:params:oauth:grant-type:jwt-bearer` grant type issues access tokens only, no refresh token is returned and the token cannot be revoked via `/v1/oauth/revoke`.
         /// </param>
         /// <param name="tokenType"></param>
+        /// <param name="scope">
+        /// Space-delimited scopes granted to the token. Omitted when no scopes were granted.<br/>
+        /// Example: projects:read projects:write
+        /// </param>
+        /// <param name="projectRefs">
+        /// Project refs the token is limited to. `null` means all projects.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -57,12 +78,16 @@ namespace Supabase
             string accessToken,
             long expiresIn,
             string? refreshToken,
-            global::Supabase.OAuthTokenResponseOutputTokenType tokenType)
+            global::Supabase.OAuthTokenResponseOutputTokenType tokenType,
+            string? scope,
+            global::System.Collections.Generic.IList<string>? projectRefs)
         {
             this.AccessToken = accessToken ?? throw new global::System.ArgumentNullException(nameof(accessToken));
             this.RefreshToken = refreshToken;
             this.ExpiresIn = expiresIn;
             this.TokenType = tokenType;
+            this.Scope = scope;
+            this.ProjectRefs = projectRefs;
         }
 
         /// <summary>

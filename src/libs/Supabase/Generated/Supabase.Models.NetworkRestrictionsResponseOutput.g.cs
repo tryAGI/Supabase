@@ -34,6 +34,20 @@ namespace Supabase
         public global::Supabase.NetworkRestrictionsResponseOutputOldConfig? OldConfig { get; set; }
 
         /// <summary>
+        /// Present when a change that was never applied is waiting for review. `config` is the list the project enforces. Apply or reject the change with `POST /v1/projects/{ref}/network-restrictions/review`; submitting a new config also replaces it.<br/>
+        /// Example: {"dbAllowedCidrs":["203.0.113.0/24"],"dbAllowedCidrsV6":["2001:db8::/32"]}
+        /// </summary>
+        /// <example>{"dbAllowedCidrs":["203.0.113.0/24"],"dbAllowedCidrsV6":["2001:db8::/32"]}</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pending_config")]
+        public global::Supabase.NetworkRestrictionsResponseOutputPendingConfig? PendingConfig { get; set; }
+
+        /// <summary>
+        /// When the change in `pending_config` was requested. Send it as `requested_at` to the review endpoint.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pending_requested_at")]
+        public global::System.DateTime? PendingRequestedAt { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
@@ -72,6 +86,13 @@ namespace Supabase
         /// Populated when a new config has been received, but not registered as successfully applied to a project.<br/>
         /// Example: {"dbAllowedCidrs":["203.0.113.0/24"],"dbAllowedCidrsV6":["2001:db8::/32"]}
         /// </param>
+        /// <param name="pendingConfig">
+        /// Present when a change that was never applied is waiting for review. `config` is the list the project enforces. Apply or reject the change with `POST /v1/projects/{ref}/network-restrictions/review`; submitting a new config also replaces it.<br/>
+        /// Example: {"dbAllowedCidrs":["203.0.113.0/24"],"dbAllowedCidrsV6":["2001:db8::/32"]}
+        /// </param>
+        /// <param name="pendingRequestedAt">
+        /// When the change in `pending_config` was requested. Send it as `requested_at` to the review endpoint.
+        /// </param>
         /// <param name="updatedAt"></param>
         /// <param name="appliedAt"></param>
 #if NET7_0_OR_GREATER
@@ -82,12 +103,16 @@ namespace Supabase
             global::Supabase.NetworkRestrictionsResponseOutputConfig config,
             global::Supabase.NetworkRestrictionsResponseOutputStatus status,
             global::Supabase.NetworkRestrictionsResponseOutputOldConfig? oldConfig,
+            global::Supabase.NetworkRestrictionsResponseOutputPendingConfig? pendingConfig,
+            global::System.DateTime? pendingRequestedAt,
             global::System.DateTime? updatedAt,
             global::System.DateTime? appliedAt)
         {
             this.Entitlement = entitlement;
             this.Config = config ?? throw new global::System.ArgumentNullException(nameof(config));
             this.OldConfig = oldConfig;
+            this.PendingConfig = pendingConfig;
+            this.PendingRequestedAt = pendingRequestedAt;
             this.Status = status;
             this.UpdatedAt = updatedAt;
             this.AppliedAt = appliedAt;

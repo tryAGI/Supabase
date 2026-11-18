@@ -13,7 +13,7 @@ namespace Supabase
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.DateTime Timestamp { get; set; }
+        public required string Timestamp { get; set; }
 
         /// <summary>
         ///
@@ -61,13 +61,13 @@ namespace Supabase
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public V1GetUsageApiCountResponseOutputResultItem(
-            global::System.DateTime timestamp,
+            string timestamp,
             double totalAuthRequests,
             double totalRealtimeRequests,
             double totalRestRequests,
             double totalStorageRequests)
         {
-            this.Timestamp = timestamp;
+            this.Timestamp = timestamp ?? throw new global::System.ArgumentNullException(nameof(timestamp));
             this.TotalAuthRequests = totalAuthRequests;
             this.TotalRealtimeRequests = totalRealtimeRequests;
             this.TotalRestRequests = totalRestRequests;

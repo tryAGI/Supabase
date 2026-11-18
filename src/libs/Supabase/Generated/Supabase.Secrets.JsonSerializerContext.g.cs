@@ -24,16 +24,19 @@ namespace Supabase
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode), TypeInfoPropertyName = "PlanGateErrorBodyErrorCode2")]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     #pragma warning restore CS0618
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ApiKeyResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ApiKeyResponseOutputType), TypeInfoPropertyName = "ApiKeyResponseOutputType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.LegacyApiKeysResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateApiKeyBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateApiKeyBodyType), TypeInfoPropertyName = "CreateApiKeyBodyType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateApiKeyBody))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PgsodiumConfigResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdatePgsodiumConfigBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SecretResponseOutput))]
@@ -46,6 +49,7 @@ namespace Supabase
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode?), TypeInfoPropertyName = "NullablePlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.ApiKeyResponseOutputType?), TypeInfoPropertyName = "NullableApiKeyResponseOutputType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateApiKeyBodyType?), TypeInfoPropertyName = "NullableCreateApiKeyBodyType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
@@ -150,7 +154,11 @@ namespace Supabase
             public override bool CanConvert(global::System.Type typeToConvert)
             {
                 return
-                    typeToConvert == typeof(global::Supabase.ApiKeyResponseOutputType)
+                    typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode)
+
+                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?)
+
+                    || typeToConvert == typeof(global::Supabase.ApiKeyResponseOutputType)
 
                     || typeToConvert == typeof(global::Supabase.ApiKeyResponseOutputType?)
 
@@ -163,6 +171,16 @@ namespace Supabase
                 global::System.Type typeToConvert,
                 global::System.Text.Json.JsonSerializerOptions options)
             {
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Supabase.ApiKeyResponseOutputType))
                 {
                     return new global::Supabase.JsonConverters.ApiKeyResponseOutputTypeJsonConverter();

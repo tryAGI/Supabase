@@ -21,6 +21,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OAuthTokenBodyGrantType), TypeInfoPropertyName = "OAuthTokenBodyGrantType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OAuthTokenResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OAuthTokenResponseOutputTokenType), TypeInfoPropertyName = "OAuthTokenResponseOutputTokenType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.OAuthRevokeTokenBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1AuthorizeUserResponseType), TypeInfoPropertyName = "V1AuthorizeUserResponseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1AuthorizeUserCodeChallengeMethod), TypeInfoPropertyName = "V1AuthorizeUserCodeChallengeMethod2")]
@@ -34,6 +35,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1AuthorizeUserCodeChallengeMethod?), TypeInfoPropertyName = "NullableV1AuthorizeUserCodeChallengeMethod2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1OauthAuthorizeProjectClaimResponseType?), TypeInfoPropertyName = "NullableV1OauthAuthorizeProjectClaimResponseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1OauthAuthorizeProjectClaimCodeChallengeMethod?), TypeInfoPropertyName = "NullableV1OauthAuthorizeProjectClaimCodeChallengeMethod2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     internal sealed partial class OAuthSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

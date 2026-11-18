@@ -36,6 +36,9 @@ namespace Supabase
         /// <param name="organizationSlug">
         /// Example: tsrqponmlkjihgfedcba
         /// </param>
+        /// <param name="projectRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="targetFlow"></param>
         /// <param name="resource">
         /// Example: https://mcp.supabase.com/projects
@@ -53,6 +56,7 @@ namespace Supabase
             string? codeChallenge = default,
             global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod = default,
             string? organizationSlug = default,
+            string? projectRef = default,
             string? targetFlow = default,
             string? resource = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,
@@ -89,6 +93,9 @@ namespace Supabase
         /// <param name="organizationSlug">
         /// Example: tsrqponmlkjihgfedcba
         /// </param>
+        /// <param name="projectRef">
+        /// Example: abcdefghijklmnopqrst
+        /// </param>
         /// <param name="targetFlow"></param>
         /// <param name="resource">
         /// Example: https://mcp.supabase.com/projects
@@ -106,6 +113,7 @@ namespace Supabase
             string? codeChallenge = default,
             global::Supabase.V1AuthorizeUserCodeChallengeMethod? codeChallengeMethod = default,
             string? organizationSlug = default,
+            string? projectRef = default,
             string? targetFlow = default,
             string? resource = default,
             global::Supabase.AutoSDKRequestOptions? requestOptions = default,

@@ -38,6 +38,9 @@ namespace Supabase
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchResponseOutputPreviewProjectStatus), TypeInfoPropertyName = "BranchResponseOutputPreviewProjectStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode), TypeInfoPropertyName = "PlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchDeleteResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchDeleteResponseOutputMessage), TypeInfoPropertyName = "BranchDeleteResponseOutputMessage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchActionBody))]
@@ -91,6 +94,7 @@ namespace Supabase
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchResponseOutputPreviewProjectStatus?), TypeInfoPropertyName = "NullableBranchResponseOutputPreviewProjectStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode?), TypeInfoPropertyName = "NullablePlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchDeleteResponseOutputMessage?), TypeInfoPropertyName = "NullableBranchDeleteResponseOutputMessage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchUpdateResponseOutputMessage?), TypeInfoPropertyName = "NullableBranchUpdateResponseOutputMessage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.BranchRestoreResponseOutputMessage?), TypeInfoPropertyName = "NullableBranchRestoreResponseOutputMessage2")]
@@ -228,6 +232,10 @@ namespace Supabase
 
                     || typeToConvert == typeof(global::Supabase.BranchResponseOutputPreviewProjectStatus?)
 
+                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode)
+
+                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?)
+
                     || typeToConvert == typeof(global::Supabase.BranchDeleteResponseOutputMessage)
 
                     || typeToConvert == typeof(global::Supabase.BranchDeleteResponseOutputMessage?)
@@ -343,6 +351,16 @@ namespace Supabase
                 if (typeToConvert == typeof(global::Supabase.BranchResponseOutputPreviewProjectStatus?))
                 {
                     return new global::Supabase.JsonConverters.BranchResponseOutputPreviewProjectStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Supabase.BranchDeleteResponseOutputMessage))

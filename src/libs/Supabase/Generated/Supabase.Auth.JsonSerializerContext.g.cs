@@ -31,6 +31,9 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode), TypeInfoPropertyName = "PlanGateErrorBodyErrorCode2")]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     #pragma warning restore CS0618
@@ -154,6 +157,7 @@ namespace Supabase
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode?), TypeInfoPropertyName = "NullablePlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SigningKeyResponseOutputAlgorithm?), TypeInfoPropertyName = "NullableSigningKeyResponseOutputAlgorithm2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.SigningKeyResponseOutputStatus?), TypeInfoPropertyName = "NullableSigningKeyResponseOutputStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.CreateSigningKeyBodyAlgorithm?), TypeInfoPropertyName = "NullableCreateSigningKeyBodyAlgorithm2")]
@@ -311,7 +315,11 @@ namespace Supabase
             public override bool CanConvert(global::System.Type typeToConvert)
             {
                 return
-                    typeToConvert == typeof(global::Supabase.SigningKeyResponseOutputAlgorithm)
+                    typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode)
+
+                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?)
+
+                    || typeToConvert == typeof(global::Supabase.SigningKeyResponseOutputAlgorithm)
 
                     || typeToConvert == typeof(global::Supabase.SigningKeyResponseOutputAlgorithm?)
 
@@ -484,6 +492,16 @@ namespace Supabase
                 global::System.Type typeToConvert,
                 global::System.Text.Json.JsonSerializerOptions options)
             {
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Supabase.SigningKeyResponseOutputAlgorithm))
                 {
                     return new global::Supabase.JsonConverters.SigningKeyResponseOutputAlgorithmJsonConverter();

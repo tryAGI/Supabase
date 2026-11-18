@@ -11,7 +11,7 @@ namespace Supabase
         /// <summary>
         ///
         /// </summary>
-        ProjectHibernating,
+        X86Architecture,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Supabase
         {
             return value switch
             {
-                ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10Type.ProjectHibernating => "project_hibernating",
+                ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10Type.X86Architecture => "x86_architecture",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Supabase
         {
             return value switch
             {
-                "project_hibernating" => ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10Type.ProjectHibernating,
+                "x86_architecture" => ProjectUpgradeEligibilityResponseOutputValidationErrorVariant10Type.X86Architecture,
                 _ => null,
             };
         }

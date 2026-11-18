@@ -19,6 +19,9 @@ namespace Supabase
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     #pragma warning restore CS0618
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode), TypeInfoPropertyName = "PlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.V1StorageBucketResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.StorageConfigResponseOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.StorageConfigResponseOutputFeatures))]
@@ -44,6 +47,7 @@ namespace Supabase
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     #pragma warning restore CS0618
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.PlanGateErrorBodyErrorCode?), TypeInfoPropertyName = "NullablePlanGateErrorBodyErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.StorageConfigResponseOutputExternalUpstreamTarget?), TypeInfoPropertyName = "NullableStorageConfigResponseOutputExternalUpstreamTarget2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Supabase.UpdateStorageConfigBodyExternalUpstreamTarget?), TypeInfoPropertyName = "NullableUpdateStorageConfigBodyExternalUpstreamTarget2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Supabase.V1StorageBucketResponseOutput>))]
@@ -145,7 +149,11 @@ namespace Supabase
             public override bool CanConvert(global::System.Type typeToConvert)
             {
                 return
-                    typeToConvert == typeof(global::Supabase.StorageConfigResponseOutputExternalUpstreamTarget)
+                    typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode)
+
+                    || typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?)
+
+                    || typeToConvert == typeof(global::Supabase.StorageConfigResponseOutputExternalUpstreamTarget)
 
                     || typeToConvert == typeof(global::Supabase.StorageConfigResponseOutputExternalUpstreamTarget?)
 
@@ -158,6 +166,16 @@ namespace Supabase
                 global::System.Type typeToConvert,
                 global::System.Text.Json.JsonSerializerOptions options)
             {
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Supabase.PlanGateErrorBodyErrorCode?))
+                {
+                    return new global::Supabase.JsonConverters.PlanGateErrorBodyErrorCodeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Supabase.StorageConfigResponseOutputExternalUpstreamTarget))
                 {
                     return new global::Supabase.JsonConverters.StorageConfigResponseOutputExternalUpstreamTargetJsonConverter();
